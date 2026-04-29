@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文章攻略｜速豹集運 - 台灣寄大陸必讀指南</title>
+  <meta name="description" content="台灣寄大陸必讀攻略。包含寄件教學、運費比較、敏感貨寄送指南、海關規定等實用資訊。">
+  <link rel="canonical" href="https://www.subao.tw/article-list">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root{--primary:#0066CC;--primary-dark:#004C99;--primary-light:#E6F0FA;--secondary:#FF6600;--secondary-dark:#CC5200;--line-green:#00B900;--bg-white:#FFF;--bg-gray:#F5F7FA;--bg-dark:#1A1A2E;--text-dark:#333;--text-light:#666;--text-white:#fff;--border:#E0E0E0;--shadow:0 2px 8px rgba(0,0,0,0.1);--shadow-lg:0 8px 24px rgba(0,0,0,0.15);--radius:8px;--radius-lg:16px;--transition:all 0.3s ease}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Noto Sans+TC',sans-serif;color:var(--text-dark);line-height:1.6;font-size:16px;background:var(--bg-gray)}
+    a{text-decoration:none;color:inherit}
+    .header{position:fixed;top:0;left:0;right:0;height:70px;background:var(--bg-white);z-index:1000;box-shadow:var(--shadow)}
+    .header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
+    .container{max-width:1200px;margin:0 auto;padding:0 20px}
+    .logo{font-size:24px;font-weight:700;color:var(--primary)}
+    .nav{display:flex;gap:32px}
+    .nav a{font-weight:500;color:var(--text-dark);transition:var(--transition);position:relative;padding:8px 0}
+    .nav a:hover,.nav a.active{color:var(--primary)}
+    .nav a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--primary);transition:var(--transition)}
+    .nav a:hover::after,.nav a.active::after{width:100%}
+    .header-btn{display:flex;align-items:center;gap:16px}
+    .btn{display:inline-block;padding:10px 20px;border-radius:var(--radius);font-weight:700;font-size:14px;cursor:pointer;border:none;transition:var(--transition)}
+    .btn-line{background:var(--line-green);color:#fff}.btn-line:hover{background:#009900}
+    .page-hero{padding:120px 0 60px;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);color:var(--text-white);text-align:center}
+    .page-hero h1{font-size:40px;font-weight:700;margin-bottom:16px}
+    .page-hero p{font-size:18px;opacity:0.9;max-width:600px;margin:0 auto}
+    .section{padding:60px 0}
+    .section-title{font-size:28px;font-weight:700;margin-bottom:40px;color:var(--text-dark);text-align:center}
+    .section-title::after{content:'';display:block;width:60px;height:4px;background:var(--secondary);margin:16px auto 0;border-radius:2px}
+    .articles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:24px}
+    .article-card{background:var(--bg-white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);transition:var(--transition)}
+    .article-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+    .article-card .card-body{padding:24px}
+    .article-card .category{display:inline-block;background:var(--primary-light);color:var(--primary);font-size:12px;padding:4px 12px;border-radius:20px;margin-bottom:12px;font-weight:500}
+    .article-card h3{font-size:18px;font-weight:700;color:var(--text-dark);margin-bottom:12px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .article-card p{font-size:14px;color:var(--text-light);line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:16px}
+    .article-card .meta{font-size:12px;color:var(--text-light);display:flex;align-items:center;gap:16px}
+    .article-card .read-more{color:var(--primary);font-weight:600;font-size:14px;display:inline-flex;align-items:center;gap:6px}
+    .article-card .read-more:hover{color:var(--primary-dark)}
+    .article-card .read-more i{font-size:12px;transition:var(--transition)}
+    .article-card:hover .read-more i{transform:translateX(4px)}
+    .categories{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:40px}
+    .cat-btn{display:inline-block;padding:10px 20px;background:var(--bg-white);border:2px solid var(--border);border-radius:var(--radius);font-size:14px;font-weight:500;cursor:pointer;transition:var(--transition)}
+    .cat-btn:hover,.cat-btn.active{background:var(--primary);border-color:var(--primary);color:#fff}
+    .footer{background:var(--bg-dark);color:rgba(255,255,255,0.8);padding:40px 0 20px}
+    .footer .container{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+    .footer h3{color:#fff;margin-bottom:16px;font-size:16px}
+    .footer a{display:block;margin-bottom:10px;color:rgba(255,255,255,0.7);font-size:14px}
+    .footer a:hover{color:#fff}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:20px;margin-top:20px;text-align:center;color:rgba(255,255,255,0.5);font-size:13px}
+    .line-button{position:fixed;bottom:30px;right:30px;width:60px;height:60px;background:var(--line-green);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-lg);z-index:999;transition:var(--transition)}
+    .line-button:hover{transform:scale(1.1)}
+    .line-button i{font-size:32px;color:#fff}
+    .cta-section{background:linear-gradient(135deg,var(--secondary) 0%,var(--secondary-dark) 100%);color:#fff;text-align:center;padding:60px 0}
+    .cta-section h2{font-size:28px;margin-bottom:12px}
+    .cta-section p{font-size:18px;margin-bottom:24px;opacity:0.9}
+    @media(max-width:992px){.nav{display:none}.footer .container{grid-template-columns:1fr 1fr}}
+    @media(max-width:768px){.page-hero h1{font-size:28px}.articles-grid{grid-template-columns:1fr}.footer .container{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo"><i class="fas fa-shipping-fast"></i> 速豹集運</a>
+      <nav class="nav">
+        <a href="tw-to-cn.html">台灣發大陸</a>
+        <a href="pricing.html">運費說明</a>
+        <a href="article-list.html" class="active">文章攻略</a>
+        <a href="faq.html">常見問題</a>
+        <a href="about.html">關於我們</a>
+      </nav>
+      <div class="header-btn">
+        <a href="https://line.me/ti/p/@subao" class="btn btn-line" target="_blank"><i class="fab fa-line"></i> 加入LINE</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>文章攻略</h1>
+      <p>台灣寄大陸必讀指南，完整涵蓋寄件流程、運費比較、敏感貨寄送、海關規定等實用資訊</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">新手入門</h2>
+      <div class="articles-grid">
+        <a href="blog/taiwan-to-china-guide.html" class="article-card">
+          <div class="card-body">
+            <div class="category">必讀指南</div>
+            <h3>2026台灣寄大陸最新指南：流程、費用、時效一次搞懂</h3>
+            <p>完整介紹台灣寄大陸的基本流程、可以寄什麼商品、各渠道費用與時效對比，適合第一次寄件的新手閱讀。</p>
+            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+          </div>
+        </a>
+        <a href="blog/tw-to-cn-cost.html" class="article-card">
+          <div class="card-body">
+            <div class="category">運費比較</div>
+            <h3>台灣寄大陸多少錢？2026各渠道運費完整比較</h3>
+            <p>詳細分析經濟專線、快件專線、敏感貨專線的價格差異，幫你找到最適合預算的寄件方案。</p>
+            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+          </div>
+        </a>
+        <a href="blog/tw-to-cn-logistics-comparison.html" class="article-card">
+          <div class="card-body">
+            <div class="category">時效對比</div>
+            <h3>兩岸物流速度對比：快遞/專線/海運哪個快？</h3>
+            <p>經濟專線7-14天、快件專線3-5天、敏感貨專線5-10天，各渠道時效完整解析，選擇最適合你的速度。</p>
+            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--bg-white)">
+    <div class="container">
+      <h2 class="section-title">敏感貨專區</h2>
+      <div class="articles-grid">
+        <a href="blog/health-products-shipping.html" class="article-card">
+          <div class="card-body">
+            <div class="category">保健品</div>
+            <h3>台灣寄保健品到大陸：魚油、燕窩、維他命可以寄嗎？</h3>
+            <p>保健品寄送完整攻略，含魚油、燕窩、維他命、膠原蛋白等商品的海關規定、包裝要求與快遞推薦。</p>
+            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+          </div>
+        </a>
+        <a href="blog/tea-shipping-guide.html" class="article-card">
+          <div class="card-body">
+            <div class="category">茶葉</div>
+            <h3>台灣茶葉寄大陸：高山茶、烏龍茶、紅茶快遞完整指南</h3>
+            <p>茶葉寄送要注意什麼？包裝要求、數量限制、費用參考完整說明，讓你的高山茶安全送達大陸。</p>
+            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+          </div>
+        </a>
+        <a href="blog/cosmetics-shipping.html" class="article-card">
+          <div class="card-body">
+            <div class="category">化妝品</div>
+            <h3>台灣化妝品寄大陸：面膜、保養品快遞攻略與品牌限制</h3>
+            <p>面膜、精華液、乳液可以寄嗎？化妝品寄送的品牌限制、包裝要求與快遞選擇完整攻略。</p>
+            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+          </div>
+        </a>
+        <a href="blog/food-shipping-guide.html" class="article-card">
+          <div class="card-body">
+            <div class="category">食品</div>
+            <h3>台灣食品寄大陸指南：肉鬆、蛋黃酥、零食可以寄嗎？</h3>
+            <p>台灣美食寄大陸完整指南。肉鬆、月餅、零食等食品的包裝要求、海關注意事項與寄送推薦。</p>
+            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">電商專區</h2>
+      <div class="articles-grid">
+        <a href="blog/shopee-shipping.html" class="article-card">
+          <div class="card-body">
+            <div class="category">蝦皮賣家</div>
+            <h3>蝦皮賣家發貨到大陸：流程、費用與物流選擇完整指南</h3>
+            <p>蝦皮賣家如何發貨到大陸？跨境物流成本計算、渠道選擇、注意事項完整解析，幫你拓展大陸市場。</p>
+            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+          </div>
+        </a>
+        <a href="blog/tw-to-cn-express-comparison.html" class="article-card">
+          <div class="card-body">
+            <div class="category">快遞比較</div>
+            <h3>兩岸快遞比較：中華郵政/順豐/專線物流哪個好？</h3>
+            <p>各大兩岸快遞服務完整比較，分析價格、時效、敏感貨處理能力，幫你選擇最適合的快遞方案。</p>
+            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--bg-white)">
+    <div class="container">
+      <h2 class="section-title">疑難解決</h2>
+      <div class="articles-grid">
+        <a href="blog/tw-to-cn-returned.html" class="article-card">
+          <div class="card-body">
+            <div class="category">退件處理</div>
+            <h3>台灣寄大陸被退件？常見原因與解決方案完整解析</h3>
+            <p>包裹被退件是最崩潰的事。了解常見退件原因、清關失敗處理、預防方法，讓你的包裹順利送達。</p>
+            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>還有其他問題？</h2>
+      <p>直接加入 LINE，告訴我們你的寄件需求，3 分鐘內得到答覆</p>
+      <a href="https://line.me/ti/p/@subao" class="btn btn-primary" target="_blank" style="background:#fff;color:var(--secondary);font-size:16px;padding:14px 32px;"><i class="fab fa-line"></i> 加入 LINE 客服</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <h3><i class="fas fa-shipping-fast"></i> 速豹集運</h3>
+        <p style="font-size:14px;color:rgba(255,255,255,0.6);">專業台灣到大陸快遞服務，專營敏感貨專線</p>
+      </div>
+      <div>
+        <h3>服務</h3>
+        <a href="tw-to-cn.html">台灣發大陸</a>
+        <a href="pricing.html">運費說明</a>
+        <a href="article-list.html">文章攻略</a>
+        <a href="faq.html">常見問題</a>
+      </div>
+      <div>
+        <h3>幫助</h3>
+        <a href="about.html">關於我們</a>
+        <a href="https://line.me/ti/p/@subao" target="_blank">LINE：@subao</a>
+      </div>
+      <div>
+        <h3>聯繫</h3>
+        <a href="https://line.me/ti/p/@subao" target="_blank"><i class="fab fa-line"></i> LINE：@subao</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 速豹集運 Subao Logistics. All rights reserved.</div>
+  </footer>
+
+  <a href="https://line.me/ti/p/@subao" class="line-button" target="_blank"><i class="fab fa-line"></i></a>
+</body>
+</html>
