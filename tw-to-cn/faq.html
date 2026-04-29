@@ -5,168 +5,278 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>常見問題｜速豹集運｜台灣寄大陸快問答</title>
   <meta name="description" content="速豹集運整理台灣寄大陸常見問題：敏感貨能不能寄、運費多少天、海關被扣怎麼辦、退件處理，所有疑問一次解答。">
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root{--primary:#0066CC;--primary-dark:#004C99;--primary-light:#E6F0FA;--secondary:#FF6600;--secondary-dark:#CC5200;--line-green:#00B900;--bg-white:#FFF;--bg-gray:#F5F7FA;--bg-dark:#1A1A2E;--text-dark:#333;--text-light:#666;--text-white:#fff;--border:#E0E0E0;--shadow:0 2px 8px rgba(0,0,0,0.1);--shadow-lg:0 8px 24px rgba(0,0,0,0.15);--radius:8px;--radius-lg:16px;--transition:all 0.3s ease}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Noto Sans TC',sans-serif;color:var(--text-dark);line-height:1.6;font-size:16px}
+    a{text-decoration:none;color:inherit}
+    ul{list-style:none}
+    .container{max-width:900px;margin:0 auto;padding:0 20px}
+    .header{position:fixed;top:0;left:0;right:0;height:70px;background:var(--bg-white);z-index:1000;box-shadow:var(--shadow)}
+    .header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
+    .logo{font-size:24px;font-weight:700;color:var(--primary)}
+    .nav{display:flex;gap:32px}
+    .nav a{font-weight:500;color:var(--text-dark);transition:var(--transition);position:relative;padding:8px 0}
+    .nav a:hover,.nav a.active{color:var(--primary)}
+    .nav a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--primary);transition:var(--transition)}
+    .nav a:hover::after,.nav a.active::after{width:100%}
+    .header-btn{display:flex;align-items:center;gap:16px}
+    .btn{display:inline-block;padding:12px 28px;border-radius:var(--radius);font-weight:700;font-size:16px;cursor:pointer;border:none;transition:var(--transition);text-align:center}
+    .btn-primary{background:var(--primary);color:var(--text-white)}.btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px)}
+    .btn-line{background:var(--line-green);color:var(--text-white)}.btn-line:hover{background:#009900;transform:translateY(-2px)}
+    .page-hero{padding:120px 0 60px;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);color:var(--text-white)}
+    .page-hero h1{font-size:40px;font-weight:700;margin-bottom:16px}
+    .page-hero p{font-size:18px;opacity:0.9}
+    .section{padding:60px 0}
+    .faq-list{display:flex;flex-direction:column;gap:16px}
+    .faq-item{background:var(--bg-white);border-radius:var(--radius-lg);box-shadow:var(--shadow);overflow:hidden;transition:var(--transition)}
+    .faq-item:hover{box-shadow:var(--shadow-lg)}
+    .faq-question{display:flex;align-items:center;justify-content:space-between;padding:24px 28px;cursor:pointer;transition:var(--transition)}
+    .faq-question:hover{background:var(--bg-gray)}
+    .faq-q{font-size:17px;font-weight:600;color:var(--text-dark);flex:1;padding-right:16px}
+    .faq-icon{width:32px;height:32px;border-radius:50%;background:var(--primary-light);display:flex;align-items:center;justify-content:center;transition:var(--transition);flex-shrink:0}
+    .faq-icon i{color:var(--primary);font-size:14px;transition:var(--transition)}
+    .faq-item.open .faq-icon{background:var(--primary);transform:rotate(180deg)}
+    .faq-item.open .faq-icon i{color:#fff;transform:rotate(180deg)}
+    .faq-answer{display:none;padding:0 28px 24px}
+    .faq-item.open .faq-answer{display:block}
+    .faq-answer-content{background:var(--bg-gray);border-radius:var(--radius);padding:20px 24px}
+    .faq-answer p{margin-bottom:12px;color:var(--text-dark);line-height:1.8}
+    .faq-answer p:last-child{margin-bottom:0}
+    .faq-answer strong{color:var(--primary)}
+    .faq-answer ul{margin:12px 0;padding-left:20px}
+    .faq-answer ul li{position:relative;padding-left:16px;margin-bottom:8px;color:var(--text-light);line-height:1.7}
+    .faq-answer ul li::before{content:'•';position:absolute;left:0;color:var(--primary)}
+    .faq-answer a{color:var(--primary);text-decoration:underline}
+    .faq-answer a:hover{color:var(--primary-dark)}
+    .faq-cta{text-align:center;padding:40px;background:var(--bg-gray);border-radius:var(--radius-lg);margin-top:40px}
+    .faq-cta h3{font-size:20px;font-weight:700;color:var(--text-dark);margin-bottom:8px}
+    .faq-cta p{color:var(--text-light);margin-bottom:20px}
+    .cta-section{background:linear-gradient(135deg,var(--secondary) 0%,var(--secondary-dark) 100%);color:#fff;text-align:center;padding:60px 0}
+    .cta-section h2{font-size:28px;margin-bottom:12px}
+    .cta-section p{font-size:18px;margin-bottom:24px;opacity:0.9}
+    .footer{background:var(--bg-dark);color:rgba(255,255,255,0.8);padding:40px 0 20px}
+    .footer .container{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+    .footer h3{color:#fff;margin-bottom:16px;font-size:16px}
+    .footer a{display:block;margin-bottom:10px;color:rgba(255,255,255,0.7);font-size:14px;transition:var(--transition)}
+    .footer a:hover{color:#fff}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:20px;margin-top:20px;text-align:center;color:rgba(255,255,255,0.5);font-size:13px}
+    .line-button{position:fixed;bottom:30px;right:30px;width:60px;height:60px;background:var(--line-green);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-lg);z-index:999;transition:var(--transition)}
+    .line-button:hover{transform:scale(1.1)}
+    .line-button i{font-size:32px;color:#fff}
+    @media(max-width:992px){.nav{display:none}}
+    @media(max-width:768px){.page-hero h1{font-size:32px}.faq-question{padding:20px}.faq-q{font-size:15px}.footer .container{grid-template-columns:1fr 1fr}}
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">速豹集運</div>
-      <ul class="nav-links">
-        <li><a href="index.html">首頁</a></li>
-        <li><a href="tw-to-cn.html">台灣寄大陸</a></li>
-        <li><a href="cn-to-tw.html">大陸寄台灣</a></li>
-        <li><a href="pricing.html">運費說明</a></li>
-        <li><a href="faq.html" class="active">常見問題</a></li>
-        <li><a href="about.html">關於我們</a></li>
-      </ul>
-      <a href="https://line.me/ti/p/~YOUR_LINE_ID" target="_blank" class="header-cta">LINE 客服</a>
-    </nav>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo"><i class="fas fa-shipping-fast"></i> 速豹集運</a>
+      <nav class="nav">
+        <a href="tw-to-cn.html">台灣發大陸</a>
+        <a href="pricing.html">運費說明</a>
+        <a href="faq.html" class="active">常見問題</a>
+        <a href="about.html">關於我們</a>
+      </nav>
+      <div class="header-btn">
+        <a href="https://line.me/ti/p/@subao" class="btn btn-line" target="_blank"><i class="fab fa-line"></i> 加入LINE</a>
+      </div>
+    </div>
   </header>
-
   <section class="page-hero">
     <div class="container">
-      <h1>常見問題<span class="highlight">｜快速解答</span></h1>
-      <p class="subtitle">點擊問題查看答案，如有其他疑問歡迎 LINE 查詢</p>
+      <h1>常見問題｜快速解答</h1>
+      <p>點擊問題查看答案，如有其他疑問歡迎 LINE 查詢</p>
     </div>
   </section>
-
-  <section class="faq-section">
+  <section class="section">
     <div class="container">
       <div class="faq-list">
-
-        <details class="faq-item">
-          <summary>哪些東西不能寄到大陸？</summary>
-          <div class="faq-answer">
-            <p><strong>嚴禁：</strong>槍械、毒品、違禁藥品、涉及政治的印刷品</p>
-            <p><strong>高風險：</strong>肉類製品（含肉鬆、肉乾）、鮮水果、植物種子、活體動物</p>
-            <p><strong>需特殊許可：</strong>藥品（需處方或許可文件）、大量現金、醫療器材</p>
-            <p>不確定的商品，請先傳照片到 LINE 詢問，避免白白寄出被退件。</p>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <div class="faq-q">哪些東西不能寄到大陸？</div>
+            <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
           </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>保健品（魚油、維骨力、燕窩）可以寄嗎？</summary>
           <div class="faq-answer">
-            <p><strong>可以。</strong>保健品屬於敏感貨，我們有專門的敏感貨專線通道，提高通關率。</p>
-            <p>建議：</p>
-            <ul>
-              <li>原廠包裝、未拆封為佳</li>
-              <li>附上購買憑證（有利通關）</li>
-              <li>單筆寄送數量不建議過大（自用範圍內）</li>
-            </ul>
-            <p>LINE 傳圖過來，先幫你評估能不能寄、再報價。</p>
+            <div class="faq-answer-content">
+              <p><strong>嚴禁：</strong>槍械、毒品、違禁藥品、涉及政治的印刷品</p>
+              <p><strong>高風險：</strong>肉類製品（含肉鬆、肉乾）、鮮水果、植物種子、活體動物</p>
+              <p><strong>需特殊許可：</strong>藥品（需處方或許可文件）、大量現金、醫療器材</p>
+              <p>不確定的商品，請先傳照片到 LINE 詢問，避免白白寄出被退件。</p>
+            </div>
           </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>茶葉（高山茶、烏龍茶）能寄嗎？</summary>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <div class="faq-q">保健品（魚油、維骨力、燕窩）可以寄嗎？</div>
+            <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
           <div class="faq-answer">
-            <p><strong>可以。</strong>茶葉是大陸親友最常收的台灣禮品之一。</p>
-            <p>建議：</p>
-            <ul>
-              <li>真空包裝（防潮、防壓）</li>
-              <li>每包不超過 5kg</li>
-              <li>附上成分說明（小包裝最佳）</li>
-            </ul>
+            <div class="faq-answer-content">
+              <p><strong>可以。</strong>保健品屬於敏感貨，我們有專門的敏感貨專線通道，提高通關率。</p>
+              <p>建議：</p>
+              <ul>
+                <li>原廠包裝、未拆封為佳</li>
+                <li>附上購買憑證（有利通關）</li>
+                <li>單筆寄送數量不建議過大（自用範圍內）</li>
+              </ul>
+              <p>LINE 傳圖過來，先幫你評估能不能寄、再報價。</p>
+            </div>
           </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>面膜、化妝品可以寄到大陸嗎？</summary>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <div class="faq-q">茶葉（高山茶、烏龍茶）能寄嗎？</div>
+            <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
           <div class="faq-answer">
-            <p><strong>可以。</strong>面膜、乳液、精華液、化妝品都可以走敏感貨專線。</p>
-            <p>注意：</p>
-            <ul>
-              <li>液體單件不超過 100ml（民航規定）</li>
-              <li>噴霧類產品無法寄送</li>
-              <li>含動物成分（胎盤素、蜂王乳）需個案確認</li>
-            </ul>
+            <div class="faq-answer-content">
+              <p><strong>可以。</strong>茶葉是大陸親友最常收的台灣禮品之一。</p>
+              <p>建議：</p>
+              <ul>
+                <li>真空包裝（防潮、防壓）</li>
+                <li>每包不超過 5kg</li>
+                <li>附上成分說明（小包裝最佳）</li>
+              </ul>
+            </div>
           </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>運費怎麼算？是到貨付錢嗎？</summary>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <div class="faq-q">面膜、化妝品可以寄到大陸嗎？</div>
+            <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
           <div class="faq-answer">
-            <p>運費以<strong>實際重量</strong>計算，方式如下：</p>
-            <ul>
-              <li>下單後預付部分運費（支持銀行轉帳、ATM）</li>
-              <li>剩餘運費到貨後支付（支付寶/微信/銀行轉帳）</li>
-              <li>具體付款方式 LINE 協調</li>
-            </ul>
-            <p>具體費用見 <a href="pricing.html">運費說明</a>，或直接傳重量來問。</p>
+            <div class="faq-answer-content">
+              <p><strong>可以。</strong>面膜、乳液、精華液、化妝品都可以走敏感貨專線。</p>
+              <p>注意：</p>
+              <ul>
+                <li>液體單件不超過 100ml（民航規定）</li>
+                <li>噴霧類產品無法寄送</li>
+                <li>含動物成分（胎盤素、蜂王乳）需個案確認</li>
+              </ul>
+            </div>
           </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>大概幾天能到？</summary>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <div class="faq-q">運費怎麼算？是到貨付錢嗎？</div>
+            <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
           <div class="faq-answer">
-            <p><strong>一般商品：</strong>3-5 個工作天送達</p>
-            <p><strong>敏感貨專線：</strong>5-8 個工作天</p>
-            <p>偏遠地區（新疆、西藏、內蒙古等）額外加 2-3 天</p>
-            <p>旺季（春節、雙十一）可能延遲 3-5 天，請提前安排</p>
+            <div class="faq-answer-content">
+              <p>運費以<strong>實際重量</strong>計算，方式如下：</p>
+              <ul>
+                <li>下單後預付部分運費（支持銀行轉帳、ATM）</li>
+                <li>剩餘運費到貨後支付（支付寶/微信/銀行轉帳）</li>
+                <li>具體付款方式 LINE 協調</li>
+              </ul>
+              <p>具體費用見 <a href="pricing.html">運費說明</a>，或直接傳重量來問。</p>
+            </div>
           </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>海關扣貨了怎麼辦？</summary>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <div class="faq-q">大概幾天能到？</div>
+            <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
           <div class="faq-answer">
-            <p>海關扣貨有三種情況：</p>
-            <ul>
-              <li><strong>正常查驗：</strong>補交發票或說明即可，多數 1-3 天放行</li>
-              <li><strong>補繳關稅：</strong>由收件方支付，我們會第一時間通知協商</li>
-              <li><strong>退件處理：</strong>若無法通關，我們協助安排退貨並退還部分費用</li>
-            </ul>
-            <p>我們全程跟蹤，主動 LINE 通知進度，不讓你乾等。</p>
+            <div class="faq-answer-content">
+              <p><strong>一般商品：</strong>3-5 個工作天送達</p>
+              <p><strong>敏感貨專線：</strong>5-8 個工作天</p>
+              <p>偏遠地區（新疆、西藏、內蒙古等）額外加 2-3 天</p>
+              <p>旺季（春節、雙十一）可能延遲 3-5 天，請提前安排</p>
+            </div>
           </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>可以到付嗎？大陸那邊家人不方便付款怎麼辦？</summary>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <div class="faq-q">海關扣貨了怎麼辦？</div>
+            <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
           <div class="faq-answer">
-            <p><strong>支持支付寶/微信/銀行轉帳</strong>，到大陸後聯絡快遞員說明情況即可。少數偏遠地區可能需要先墊付，之後再轉帳還你。</p>
+            <div class="faq-answer-content">
+              <p>海關扣貨有三種情況：</p>
+              <ul>
+                <li><strong>正常查驗：</strong>補交發票或說明即可，多數 1-3 天放行</li>
+                <li><strong>補繳關稅：</strong>由收件方支付，我們會第一時間通知協商</li>
+                <li><strong>退件處理：</strong>若無法通關，我們協助安排退貨並退還部分費用</li>
+              </ul>
+              <p>我們全程跟蹤，主動 LINE 通知進度，不讓你乾等。</p>
+            </div>
           </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>東西寄丟了怎麼辦？</summary>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <div class="faq-q">可以寄到大陸哪些城市？</div>
+            <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
           <div class="faq-answer">
-            <p>我們對每一筆貨件提供<strong>基本保險</strong>：</p>
-            <ul>
-              <li>申報價值 NT$ 3,000 以內：免費理賠</li>
-              <li>超過 NT$ 3,000：可加購保價服務（運費的 3%）</li>
-            </ul>
-            <p>理賠申請請提供：運單號、照片、相關憑證。</p>
+            <div class="faq-answer-content">
+              <p><strong>全境可達：</strong>北京、上海、廣州、深圳及各省城市均可送達</p>
+              <p><strong>偏遠地區：</strong>新疆、西藏、內蒙古、甘肅、青海、寧夏偏遠鄉鎮，可能加收偏遠附加費，具體報關時確認</p>
+              <p><strong>不派送區域：</strong>軍事管制區、政府機關特殊地址（請先 LINE 確認）</p>
+            </div>
           </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>可以寄到大陸哪些城市？</summary>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <div class="faq-q">東西寄丟了怎麼辦？</div>
+            <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
           <div class="faq-answer">
-            <p><strong>全境可達：</strong>北京、上海、廣州、深圳及各省城市均可送達</p>
-            <p><strong>偏遠地區：</strong>新疆、西藏、內蒙古、甘肅、青海、寧夏偏遠鄉鎮，可能加收偏遠附加費，具體報關時確認</p>
-            <p><strong>不派送區域：</strong>軍事管制區、政府機關特殊地址（請先 LINE 確認）</p>
+            <div class="faq-answer-content">
+              <p>我們對每一筆貨件提供<strong>基本保險</strong>：</p>
+              <ul>
+                <li>申報價值 NT$ 3,000 以內：免費理賠</li>
+                <li>超過 NT$ 3,000：可加購保價服務（運費的 3%）</li>
+              </ul>
+              <p>理賠申請請提供：運單號、照片、相關憑證。</p>
+            </div>
           </div>
-        </details>
-
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <div class="faq-q">到大陸後如何付款？</div>
+            <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p><strong>支持支付寶/微信/銀行轉帳</strong>，到大陸後聯絡快遞員說明情況即可。少數偏遠地區可能需要先墊付，之後再轉帳還你。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="faq-cta">
+        <h3>還有其他問題？</h3>
+        <p>LINE 一對一解答，3 分鐘內回覆</p>
+        <a href="https://line.me/ti/p/@subao" class="btn btn-primary" target="_blank"><i class="fab fa-line"></i> 立即加 LINE 詢問</a>
       </div>
     </div>
   </section>
-
   <section class="cta-section">
     <div class="container">
-      <h2>還有其他問題？</h2>
-      <p>LINE 一對一解答，3 分鐘內回覆</p>
-      <a href="https://line.me/ti/p/~YOUR_LINE_ID" target="_blank" class="cta-btn">💬 立即加 LINE 詢問</a>
+      <h2>開始使用速豹集運</h2>
+      <p>LINE 直接諮詢，5 分鐘內完成下單</p>
+      <a href="https://line.me/ti/p/@subao" class="btn btn-primary" target="_blank" style="background:#fff;color:var(--secondary);"><i class="fab fa-line"></i> 加入 LINE 開始寄件</a>
     </div>
   </section>
-
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <p>© 2026 速豹集運｜台灣發貨到大陸專業物流</p>
-      <p>LINE：<a href="https://line.me/ti/p/~YOUR_LINE_ID" target="_blank">@YOUR_LINE_ID</a></p>
+      <div><h3><i class="fas fa-shipping-fast"></i> 速豹集運</h3><p style="font-size:14px;color:rgba(255,255,255,0.6);">專業台灣到大陸快遞服務，專營敏感貨專線</p></div>
+      <div><h3>服務</h3><a href="tw-to-cn.html">台灣發大陸</a><a href="pricing.html">運費說明</a><a href="faq.html">常見問題</a></div>
+      <div><h3>幫助</h3><a href="about.html">關於我們</a><a href="https://line.me/ti/p/@subao" target="_blank">LINE：@subao</a></div>
+      <div><h3>聯系</h3><a href="https://line.me/ti/p/@subao" target="_blank"><i class="fab fa-line"></i> LINE：@subao</a></div>
     </div>
+    <div class="footer-bottom">© 2026 速豹集運 Subao Logistics. All rights reserved.</div>
   </footer>
-
-  <a href="https://line.me/ti/p/~YOUR_LINE_ID" target="_blank" class="line-float">💬 LINE 客服</a>
+  <a href="https://line.me/ti/p/@subao" class="line-button" target="_blank"><i class="fab fa-line"></i></a>
+  <script>
+    function toggleFaq(item){document.querySelectorAll('.faq-item').forEach(function(i){if(i!==item)i.classList.remove('open')});item.classList.toggle('open')}
+  </script>
 </body>
 </html>
