@@ -1,4 +1,456 @@
-<p>輸入商品類型和重量，馬上知道參考運費</p>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>運費說明｜速豹集運｜台灣寄大陸最低價</title>
+  <meta name="description" content="速豹集運台灣寄大陸運費透明公開，保健品、茶葉、化妝品、食品各品項一口價，兩岸快遞3-5天抵達，LINE一對一查件。">
+  <meta name="keywords" content="台灣寄大陸運費,兩岸快遞價格,台灣到大陸多少錢,台灣寄大陸保健品運費">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .pricing-hero {
+      position: relative;
+      padding: 120px 0 60px;
+      background: linear-gradient(135deg, #0D1B2A 0%, #1B3A4B 100%);
+      text-align: center;
+    }
+    .pricing-hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(232, 93, 4, 0.15) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .pricing-hero h1 {
+      font-size: 42px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 16px;
+      position: relative;
+    }
+    .pricing-hero h1 .highlight { color: #E85D04; }
+    .pricing-hero .subtitle {
+      font-size: 18px;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 32px;
+      position: relative;
+    }
+    .service-selector {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+    .service-card {
+      background: rgba(255,255,255,0.05);
+      border: 2px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 24px 40px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      min-width: 200px;
+    }
+    .service-card:hover { border-color: rgba(232, 93, 4, 0.5); transform: translateY(-2px); }
+    .service-card.active { background: rgba(232, 93, 4, 0.15); border-color: #E85D04; }
+    .service-card .service-icon { font-size: 36px; margin-bottom: 8px; }
+    .service-card .service-name { font-size: 18px; font-weight: 600; color: #fff; margin-bottom: 4px; }
+    .service-card .service-time { font-size: 14px; color: rgba(255,255,255,0.6); }
+    .service-card.active .service-time { color: #E85D04; }
+    .category-legend {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .legend-dot { width: 12px; height: 12px; border-radius: 50%; }
+    .legend-dot.type-a { background: #3B82F6; }
+    .legend-dot.type-b { background: #10B981; }
+    .legend-dot.type-c { background: #F59E0B; }
+    .legend-dot.type-d { background: #8B5CF6; }
+    .legend-label { font-size: 14px; color: #374151; font-weight: 500; }
+    .region-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+    .region-card {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+    }
+    .region-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.12); transform: translateY(-2px); }
+    .region-header {
+      background: linear-gradient(135deg, #1B3A4B, #0D1B2A);
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .region-icon { font-size: 24px; }
+    .region-name { font-size: 16px; font-weight: 600; color: #fff; }
+    .region-provinces { font-size: 12px; color: rgba(255,255,255,0.6); }
+    .region-body { padding: 16px 20px; }
+    .price-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .price-row:last-child { border-bottom: none; }
+    .price-type { display: flex; align-items: center; gap: 8px; }
+    .price-type-badge {
+      width: 28px; height: 28px;
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; font-weight: 700; color: #fff;
+    }
+    .price-type-badge.type-a { background: #3B82F6; }
+    .price-type-badge.type-b { background: #10B981; }
+    .price-type-badge.type-c { background: #F59E0B; }
+    .price-type-badge.type-d { background: #8B5CF6; }
+    .price-type-name { font-size: 14px; color: #6B7280; }
+    .price-value { font-size: 18px; font-weight: 700; color: #E85D04; }
+    .price-unit { font-size: 12px; color: #9CA3AF; font-weight: 400; }
+    .calculator-section {
+      background: linear-gradient(135deg, #fff5ed 0%, #fff 100%);
+      border: 2px solid rgba(232, 93, 4, 0.1);
+      border-radius: 20px;
+      padding: 40px;
+      margin-bottom: 48px;
+    }
+    .calc-header { text-align: center; margin-bottom: 32px; }
+    .calc-header h3 { font-size: 24px; font-weight: 700; color: #1B263B; margin-bottom: 8px; }
+    .calc-header p { font-size: 14px; color: #6B7280; }
+    .calc-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr auto;
+      gap: 16px;
+      align-items: end;
+    }
+    .calc-field { display: flex; flex-direction: column; gap: 8px; }
+    .calc-field label { font-size: 14px; font-weight: 500; color: #374151; }
+    .calc-field select, .calc-field input {
+      padding: 14px 16px;
+      border: 2px solid #E5E7EB;
+      border-radius: 10px;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      background: #fff;
+    }
+    .calc-field select:focus, .calc-field input:focus {
+      outline: none;
+      border-color: #E85D04;
+      box-shadow: 0 0 0 3px rgba(232, 93, 4, 0.1);
+    }
+    .calc-btn {
+      padding: 14px 32px;
+      background: linear-gradient(135deg, #E85D04, #F77F00);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+    .calc-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(232, 93, 4, 0.4); }
+    .calc-result-box {
+      display: none;
+      margin-top: 24px;
+      padding: 24px;
+      background: #fff;
+      border-radius: 12px;
+      text-align: center;
+      border: 2px dashed #E85D04;
+    }
+    .calc-result-box.show { display: block; }
+    .calc-result-label { font-size: 14px; color: #6B7280; margin-bottom: 8px; }
+    .calc-result-value { font-size: 36px; font-weight: 700; color: #E85D04; }
+    .calc-result-detail { font-size: 13px; color: #9CA3AF; margin-top: 8px; }
+    .notes-section { background: #F8FAFC; padding: 60px 0; }
+    .notes-section h2 { text-align: center; font-size: 28px; font-weight: 700; color: #1B263B; margin-bottom: 40px; }
+    .notes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .note-card { background: #fff; border-radius: 16px; padding: 28px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); border-left: 4px solid; }
+    .note-card.delivery { border-left-color: #3B82F6; }
+    .note-card.packaging { border-left-color: #10B981; }
+    .note-card.claims { border-left-color: #F59E0B; }
+    .note-card.prohibited { border-left-color: #EF4444; }
+    .note-card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+    .note-card-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px; }
+    .note-card.delivery .note-card-icon { background: rgba(59, 130, 246, 0.1); }
+    .note-card.packaging .note-card-icon { background: rgba(16, 185, 129, 0.1); }
+    .note-card.claims .note-card-icon { background: rgba(245, 158, 11, 0.1); }
+    .note-card.prohibited .note-card-icon { background: rgba(239, 68, 68, 0.1); }
+    .note-card-title { font-size: 18px; font-weight: 600; color: #1B263B; }
+    .note-card ul { list-style: none; }
+    .note-card li { position: relative; padding-left: 20px; margin-bottom: 10px; font-size: 14px; color: #6B7280; line-height: 1.6; }
+    .note-card li::before { content: '•'; position: absolute; left: 0; color: #9CA3AF; }
+    .notes-vat { text-align: center; color: #EF4444; font-size: 14px; font-weight: 500; margin-top: 32px; }
+    .cta-section { padding: 80px 0; background: linear-gradient(135deg, #E85D04, #F77F00); text-align: center; }
+    .cta-section h2 { font-size: 32px; font-weight: 700; color: #fff; margin-bottom: 12px; }
+    .cta-section p { font-size: 18px; color: rgba(255,255,255,0.9); margin-bottom: 32px; }
+    .cta-btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 16px 40px;
+      background: #fff; color: #E85D04;
+      font-size: 16px; font-weight: 600;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+    .pricing-content { display: none; }
+    .pricing-content.active { display: block; }
+    @media (max-width: 992px) {
+      .pricing-hero h1 { font-size: 32px; }
+      .service-selector { flex-direction: column; align-items: center; }
+      .service-card { width: 100%; max-width: 300px; }
+      .calc-form { grid-template-columns: 1fr; }
+      .calc-btn { width: 100%; }
+      .notes-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      .region-grid { grid-template-columns: 1fr; }
+      .category-legend { gap: 12px; }
+      .legend-item { padding: 6px 12px; }
+      .calculator-section { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">速豹集運</div>
+      <ul class="nav-links">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="tw-to-cn.html">台灣寄大陸</a></li>
+        <li><a href="pricing.html" class="active">運費說明</a></li>
+        <li><a href="faq.html">常見問題</a></li>
+        <li><a href="about.html">關於我們</a></li>
+      </ul>
+      <a href="https://line.me/ti/p/~@subao" target="_blank" class="header-cta">LINE 客服</a>
+    </nav>
+  </header>
+
+  <section class="pricing-hero">
+    <div class="container">
+      <h1>運費說明 <span class="highlight">｜透明一口價</span></h1>
+      <p class="subtitle">所有費用主動如實申報，海關透明公開，LINE 即時查件</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 40px;">
+    <div class="container">
+      <div class="service-selector">
+        <div class="service-card active" onclick="switchService('economy', this)">
+          <div class="service-icon">🚢</div>
+          <div class="service-name">經濟專線</div>
+          <div class="service-time">海運約兩週到貨</div>
+        </div>
+        <div class="service-card" onclick="switchService('express', this)">
+          <div class="service-icon">✈️</div>
+          <div class="service-name">快件專線</div>
+          <div class="service-time">空運約一週到貨</div>
+        </div>
+      </div>
+
+      <div class="category-legend">
+        <div class="legend-item">
+          <div class="legend-dot type-a"></div>
+          <span class="legend-label">A類 藥品/奶粉/美妝/保健品/食品</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot type-b"></div>
+          <span class="legend-label">B類 液體/粉末保健品</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot type-c"></div>
+          <span class="legend-label">C類 中西藥</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot type-d"></div>
+          <span class="legend-label">D類 電器</span>
+        </div>
+      </div>
+
+      <!-- Economy Pricing -->
+      <div id="pricing-economy" class="pricing-content active">
+        <div class="region-grid">
+          <div class="region-card">
+            <div class="region-header">
+              <span class="region-icon">🌴</span>
+              <div><div class="region-name">華南地區</div><div class="region-provinces">福建、廣東</div></div>
+            </div>
+            <div class="region-body">
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-a">A</div><span class="price-type-name">藥品/奶粉/美妝/保健品</span></div><div class="price-value">NT$320<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-b">B</div><span class="price-type-name">液體/粉末保健品</span></div><div class="price-value">NT$410<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-c">C</div><span class="price-type-name">中西藥</span></div><div class="price-value">NT$560<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-d">D</div><span class="price-type-name">電器</span></div><div class="price-value">NT$880<span class="price-unit">/kg</span></div></div>
+            </div>
+          </div>
+          <div class="region-card">
+            <div class="region-header">
+              <span class="region-icon">🏙️</span>
+              <div><div class="region-name">華東地區</div><div class="region-provinces">浙江、上海</div></div>
+            </div>
+            <div class="region-body">
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-a">A</div><span class="price-type-name">藥品/奶粉/美妝/保健品</span></div><div class="price-value">NT$340<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-b">B</div><span class="price-type-name">液體/粉末保健品</span></div><div class="price-value">NT$430<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-c">C</div><span class="price-type-name">中西藥</span></div><div class="price-value">NT$600<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-d">D</div><span class="price-type-name">電器</span></div><div class="price-value">NT$880<span class="price-unit">/kg</span></div></div>
+            </div>
+          </div>
+          <div class="region-card">
+            <div class="region-header">
+              <span class="region-icon">🌾</span>
+              <div><div class="region-name">華中地區</div><div class="region-provinces">江西、湖南、湖北、安徽</div></div>
+            </div>
+            <div class="region-body">
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-a">A</div><span class="price-type-name">藥品/奶粉/美妝/保健品</span></div><div class="price-value">NT$360<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-b">B</div><span class="price-type-name">液體/粉末保健品</span></div><div class="price-value">NT$440<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-c">C</div><span class="price-type-name">中西藥</span></div><div class="price-value">NT$600<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-d">D</div><span class="price-type-name">電器</span></div><div class="price-value">NT$890<span class="price-unit">/kg</span></div></div>
+            </div>
+          </div>
+          <div class="region-card">
+            <div class="region-header">
+              <span class="region-icon">❄️</span>
+              <div><div class="region-name">華北地區</div><div class="region-provinces">山東、山西、天津、北京、河北、河南</div></div>
+            </div>
+            <div class="region-body">
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-a">A</div><span class="price-type-name">藥品/奶粉/美妝/保健品</span></div><div class="price-value">NT$440<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-b">B</div><span class="price-type-name">液體/粉末保健品</span></div><div class="price-value">NT$850<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-c">C</div><span class="price-type-name">中西藥</span></div><div class="price-value">NT$440<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-d">D</div><span class="price-type-name">電器</span></div><div class="price-value">NT$600<span class="price-unit">/kg</span></div></div>
+            </div>
+          </div>
+          <div class="region-card">
+            <div class="region-header">
+              <span class="region-icon">🏔️</span>
+              <div><div class="region-name">西南地區</div><div class="region-provinces">四川、重慶、貴州、雲南、廣西、海南</div></div>
+            </div>
+            <div class="region-body">
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-a">A</div><span class="price-type-name">藥品/奶粉/美妝/保健品</span></div><div class="price-value">NT$480<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-b">B</div><span class="price-type-name">液體/粉末保健品</span></div><div class="price-value">NT$620<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-c">C</div><span class="price-type-name">中西藥</span></div><div class="price-value">NT$370<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-d">D</div><span class="price-type-name">電器</span></div><div class="price-value">NT$460<span class="price-unit">/kg</span></div></div>
+            </div>
+          </div>
+          <div class="region-card">
+            <div class="region-header">
+              <span class="region-icon">🌌</span>
+              <div><div class="region-name">東北/西北地區</div><div class="region-provinces">陝西、遼寧、黑龍江、吉林、甘肅、青海、寧夏、內蒙古、西藏、新疆</div></div>
+            </div>
+            <div class="region-body">
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-a">A</div><span class="price-type-name">藥品/奶粉/美妝/保健品</span></div><div class="price-value">NT$410<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-b">B</div><span class="price-type-name">液體/粉末保健品</span></div><div class="price-value">NT$650<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-c">C</div><span class="price-type-name">中西藥</span></div><div class="price-value">NT$490<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-d">D</div><span class="price-type-name">電器</span></div><div class="price-value">NT$710<span class="price-unit">/kg</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Express Pricing -->
+      <div id="pricing-express" class="pricing-content">
+        <div class="region-grid">
+          <div class="region-card">
+            <div class="region-header">
+              <span class="region-icon">🌴</span>
+              <div><div class="region-name">華南地區</div><div class="region-provinces">福建、廣東</div></div>
+            </div>
+            <div class="region-body">
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-a">A</div><span class="price-type-name">藥品/奶粉/美妝/保健品</span></div><div class="price-value">NT$440<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-b">B</div><span class="price-type-name">液體/粉末保健品</span></div><div class="price-value">NT$510<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-c">C</div><span class="price-type-name">中西藥</span></div><div class="price-value">NT$990<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-d">D</div><span class="price-type-name">電器</span></div><div class="price-value">NT$1,370<span class="price-unit">/kg</span></div></div>
+            </div>
+          </div>
+          <div class="region-card">
+            <div class="region-header">
+              <span class="region-icon">🏙️</span>
+              <div><div class="region-name">華東地區</div><div class="region-provinces">浙江、上海</div></div>
+            </div>
+            <div class="region-body">
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-a">A</div><span class="price-type-name">藥品/奶粉/美妝/保健品</span></div><div class="price-value">NT$580<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-b">B</div><span class="price-type-name">液體/粉末保健品</span></div><div class="price-value">NT$700<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-c">C</div><span class="price-type-name">中西藥</span></div><div class="price-value">NT$1,000<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-d">D</div><span class="price-type-name">電器</span></div><div class="price-value">NT$1,370<span class="price-unit">/kg</span></div></div>
+            </div>
+          </div>
+          <div class="region-card">
+            <div class="region-header">
+              <span class="region-icon">🌾</span>
+              <div><div class="region-name">華中地區</div><div class="region-provinces">江西、湖南、湖北、安徽</div></div>
+            </div>
+            <div class="region-body">
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-a">A</div><span class="price-type-name">藥品/奶粉/美妝/保健品</span></div><div class="price-value">NT$590<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-b">B</div><span class="price-type-name">液體/粉末保健品</span></div><div class="price-value">NT$700<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-c">C</div><span class="price-type-name">中西藥</span></div><div class="price-value">NT$1,000<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-d">D</div><span class="price-type-name">電器</span></div><div class="price-value">NT$1,370<span class="price-unit">/kg</span></div></div>
+            </div>
+          </div>
+          <div class="region-card">
+            <div class="region-header">
+              <span class="region-icon">❄️</span>
+              <div><div class="region-name">華北地區</div><div class="region-provinces">山東、山西、天津、北京、河北、河南</div></div>
+            </div>
+            <div class="region-body">
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-a">A</div><span class="price-type-name">藥品/奶粉/美妝/保健品</span></div><div class="price-value">NT$440<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-b">B</div><span class="price-type-name">液體/粉末保健品</span></div><div class="price-value">NT$700<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-c">C</div><span class="price-type-name">中西藥</span></div><div class="price-value">NT$460<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-d">D</div><span class="price-type-name">電器</span></div><div class="price-value">NT$600<span class="price-unit">/kg</span></div></div>
+            </div>
+          </div>
+          <div class="region-card">
+            <div class="region-header">
+              <span class="region-icon">🏔️</span>
+              <div><div class="region-name">西南地區</div><div class="region-provinces">四川、重慶、貴州、雲南、廣西、海南</div></div>
+            </div>
+            <div class="region-body">
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-a">A</div><span class="price-type-name">藥品/奶粉/美妝/保健品</span></div><div class="price-value">NT$480<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-b">B</div><span class="price-type-name">液體/粉末保健品</span></div><div class="price-value">NT$510<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-c">C</div><span class="price-type-name">中西藥</span></div><div class="price-value">NT$370<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-d">D</div><span class="price-type-name">電器</span></div><div class="price-value">NT$700<span class="price-unit">/kg</span></div></div>
+            </div>
+          </div>
+          <div class="region-card">
+            <div class="region-header">
+              <span class="region-icon">🌌</span>
+              <div><div class="region-name">東北/西北地區</div><div class="region-provinces">陝西、遼寧、黑龍江、吉林、甘肅、青海、寧夏、內蒙古、西藏、新疆</div></div>
+            </div>
+            <div class="region-body">
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-a">A</div><span class="price-type-name">藥品/奶粉/美妝/保健品</span></div><div class="price-value">NT$410<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-b">B</div><span class="price-type-name">液體/粉末保健品</span></div><div class="price-value">NT$650<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-c">C</div><span class="price-type-name">中西藥</span></div><div class="price-value">NT$490<span class="price-unit">/kg</span></div></div>
+              <div class="price-row"><div class="price-type"><div class="price-type-badge type-d">D</div><span class="price-type-name">電器</span></div><div class="price-value">NT$710<span class="price-unit">/kg</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p style="text-align: center; color: #6B7280; font-size: 14px; margin-top: 24px;">※ 以上為每公斤參考價格，含清關費用及派送費用｜實際費用依商品類型及海關核價為準，請先與 LINE 客服確認</p>
+
+      <div class="calculator-section">
+        <div class="calc-header">
+          <h3>⚡ 快速試算運費</h3>
+          <p>輸入商品類型和重量，馬上知道參考運費</p>
         </div>
         <div class="calc-form">
           <div class="calc-field">
@@ -36,7 +488,6 @@
     </div>
   </section>
 
-  <!-- Notes Section -->
   <section class="notes-section">
     <div class="container">
       <h2>📋 買家須知</h2>
@@ -89,7 +540,6 @@
     </div>
   </section>
 
-  <!-- CTA Section -->
   <section class="cta-section">
     <div class="container">
       <h2>想知道你的商品運費多少？</h2>
@@ -110,7 +560,6 @@
   <a href="https://line.me/ti/p/~@subao" target="_blank" class="line-float">💬 LINE 客服</a>
 
   <script>
-    // Pricing data
     var pricingData = {
       economy: {
         south: { A: 320, B: 410, C: 560, D: 880 },
@@ -134,14 +583,9 @@
 
     function switchService(service, elem) {
       currentService = service;
-      document.querySelectorAll('.service-card').forEach(function(card) {
-        card.classList.remove('active');
-      });
+      document.querySelectorAll('.service-card').forEach(function(card) { card.classList.remove('active'); });
       elem.classList.add('active');
-
-      document.querySelectorAll('.pricing-content').forEach(function(content) {
-        content.classList.remove('active');
-      });
+      document.querySelectorAll('.pricing-content').forEach(function(content) { content.classList.remove('active'); });
       document.getElementById('pricing-' + service).classList.add('active');
     }
 
@@ -149,25 +593,17 @@
       var type = document.getElementById('calc-type').value;
       var weight = parseFloat(document.getElementById('calc-weight').value);
       var region = document.getElementById('calc-region').value;
-
-      if (!weight || weight <= 0) {
-        alert('請輸入有效的重量');
-        return;
-      }
-
+      if (!weight || weight <= 0) { alert('請輸入有效的重量'); return; }
       var rates = pricingData[currentService][region];
       var rate = rates[type];
       var cost = weight * rate;
       var surcharge = weight < 10 ? 100 : 0;
       var total = cost + surcharge;
-
       var resultBox = document.getElementById('calc-result');
       var resultValue = document.getElementById('calc-result-value');
       var resultDetail = document.getElementById('calc-result-detail');
-
       resultValue.textContent = 'NT$ ' + Math.round(total).toLocaleString();
       resultDetail.textContent = weight + ' kg × NT$' + rate + '/kg' + (surcharge > 0 ? ' + NT$ 100 派送費（不足10kg）' : '（滿10kg免派送費）') + '｜精確費用以LINE客服報價為準';
-
       resultBox.classList.add('show');
     }
   </script>
