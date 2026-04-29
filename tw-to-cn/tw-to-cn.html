@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台灣發大陸 | 速豹集運 - 敏感貨專線 3-5天送達</title>
+  <meta name="description" content="台灣發大陸快遞服務，保健品、茶葉、化妝品統統可寄。空運3-5天送達，LINE即時客服，運費透明。速豹集運專業敏感貨專線。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root{--primary:#0066CC;--primary-dark:#004C99;--primary-light:#E6F0FA;--secondary:#FF6600;--secondary-dark:#CC5200;--line-green:#00B900;--bg-white:#FFF;--bg-gray:#F5F7FA;--bg-dark:#1A1A2E;--text-dark:#333;--text-light:#666;--text-white:#fff;--border:#E0E0E0;--shadow:0 2px 8px rgba(0,0,0,0.1);--shadow-lg:0 8px 24px rgba(0,0,0,0.15);--radius:8px;--radius-lg:16px;--transition:all 0.3s ease;--header-height:70px}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Noto Sans TC',sans-serif;color:var(--text-dark);line-height:1.6;font-size:16px}
+    a{text-decoration:none;color:inherit}
+    ul{list-style:none}
+    .container{max-width:1200px;margin:0 auto;padding:0 20px}
+    .btn{display:inline-block;padding:12px 28px;border-radius:var(--radius);font-weight:700;font-size:16px;cursor:pointer;border:none;transition:var(--transition);text-align:center}
+    .btn-primary{background:var(--primary);color:var(--text-white)}.btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px)}
+    .btn-secondary{background:var(--secondary);color:var(--text-white)}.btn-secondary:hover{background:var(--secondary-dark);transform:translateY(-2px)}
+    .btn-line{background:var(--line-green);color:var(--text-white)}.btn-line:hover{background:#009900;transform:translateY(-2px)}
+    .header{position:fixed;top:0;left:0;right:0;height:var(--header-height);background:var(--bg-white);z-index:1000;box-shadow:var(--shadow)}
+    .header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
+    .logo{font-size:24px;font-weight:700;color:var(--primary)}
+    .nav{display:flex;gap:32px}
+    .nav a{font-weight:500;color:var(--text-dark);transition:var(--transition);position:relative}
+    .nav a:hover,.nav a.active{color:var(--primary)}
+    .nav a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--primary);transition:var(--transition)}
+    .nav a:hover::after,.nav a.active::after{width:100%}
+    .header-btn{display:flex;align-items:center;gap:16px}
+    .header .btn-line{padding:10px 20px;font-size:14px}
+    .page-hero{padding:120px 0 60px;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);color:var(--text-white)}
+    .page-hero h1{font-size:40px;font-weight:700;margin-bottom:16px}
+    .page-hero p{font-size:18px;opacity:0.9}
+    .section{padding:60px 0}
+    .section-title{font-size:28px;font-weight:700;margin-bottom:32px;color:var(--text-dark)}
+    .channels{background:var(--bg-gray)}
+    .channel-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .channel-card{background:var(--bg-white);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);transition:var(--transition)}
+    .channel-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+    .channel-card h3{font-size:18px;color:var(--primary);margin-bottom:8px}
+    .channel-card .price{font-size:24px;font-weight:700;color:var(--secondary);margin-bottom:4px}
+    .channel-card .period{color:var(--text-light);font-size:14px;margin-bottom:12px}
+    .channel-card p{color:var(--text-light);font-size:14px}
+    .channel-card .tag{display:inline-block;background:var(--primary-light);color:var(--primary);font-size:12px;padding:2px 8px;border-radius:10px;margin-bottom:8px}
+    .channel-card .tag.hot{background:#fff3e0;color:var(--secondary)}
+    .goods-table{background:var(--bg-white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow)}
+    .goods-table table{width:100%;border-collapse:collapse}
+    .goods-table th{background:var(--primary);color:var(--text-white);padding:16px 20px;text-align:left;font-size:15px}
+    .goods-table td{padding:14px 20px;border-bottom:1px solid var(--border);font-size:15px}
+    .goods-table tr:last-child td{border-bottom:none}
+    .goods-table .yes{color:#27ae60;font-weight:600}
+    .goods-table .no{color:#e74c3c}
+    .goods-table tr:nth-child(even){background:var(--bg-gray)}
+    .steps{background:var(--bg-white)}
+    .steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+    .step-card{text-align:center;padding:32px 20px;background:var(--bg-gray);border-radius:var(--radius);position:relative}
+    .step-card::after{content:'→';position:absolute;top:50%;right:-14px;transform:translateY(-50%);font-size:24px;color:var(--primary)}
+    .step-card:last-child::after{display:none}
+    .step-num{width:40px;height:40px;background:var(--primary);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;margin:0 auto 16px;font-size:18px}
+    .step-card h4{font-size:16px;margin-bottom:8px}
+    .step-card p{color:var(--text-light);font-size:14px}
+    .cta-section{background:linear-gradient(135deg,var(--secondary) 0%,var(--secondary-dark) 100%);color:#fff;text-align:center;padding:60px 0}
+    .cta-section h2{font-size:28px;margin-bottom:12px}
+    .cta-section p{font-size:18px;margin-bottom:24px;opacity:0.9}
+    .line-button{position:fixed;bottom:30px;right:30px;width:60px;height:60px;background:var(--line-green);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-lg);z-index:999;transition:var(--transition)}
+    .line-button:hover{transform:scale(1.1)}
+    .line-button i{font-size:32px;color:#fff}
+    .footer{background:var(--bg-dark);color:rgba(255,255,255,0.8);padding:40px 0 20px}
+    .footer .container{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+    .footer h3{color:#fff;margin-bottom:16px;font-size:16px}
+    .footer a{display:block;margin-bottom:10px;color:rgba(255,255,255,0.7);font-size:14px}
+    .footer a:hover{color:#fff}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:20px;margin-top:20px;text-align:center;color:rgba(255,255,255,0.5);font-size:13px}
+    @media(max-width:992px){.nav{display:none}.channel-grid,.steps-grid{grid-template-columns:1fr 1fr}.footer .container{grid-template-columns:1fr 1fr}}
+    @media(max-width:768px){.channel-grid,.footer .container{grid-template-columns:1fr}.page-hero h1{font-size:32px}}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo"><i class="fas fa-shipping-fast"></i> 速豹集運</a>
+      <nav class="nav">
+        <a href="tw-to-cn.html" class="active">台灣發大陸</a>
+        <a href="pricing.html">運費報價</a>
+        <a href="article-list.html">文章攻略</a>
+        <a href="faq.html">常見問題</a>
+        <a href="about.html">關於我們</a>
+      </nav>
+      <div class="header-btn">
+        <a href="https://line.me/ti/p/@subao" class="btn btn-line" target="_blank"><i class="fab fa-line"></i> 加入LINE</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>台灣發大陸：最快3-5天送達</h1>
+      <p>敏感貨專線 | 保健品、茶葉、化妝品全部可寄 | LINE即時客服</p>
+    </div>
+  </section>
+
+  <section class="section channels">
+    <div class="container">
+      <h2 class="section-title">四種渠道，總有一款適合你</h2>
+      <div class="channel-grid">
+        <div class="channel-card"><span class="tag hot">🔥 性價比最高</span><h3>經濟專線</h3><div class="price">NT$80/kg起</div><div class="period">7-12個工作天</div><p>適合衣物、生活用品、非緊急包裹</p></div>
+        <div class="channel-card"><h3>標準專線</h3><div class="price">NT$120/kg起</div><div class="period">5-7個工作天</div><p>CP值最高，適合一般商品、保養品</p></div>
+        <div class="channel-card"><span class="tag">⚡ 最快</span><h3>快速專線</h3><div class="price">NT$180/kg起</div><div class="period">3-5個工作天</div><p>緊急件、高單價商品</p></div>
+        <div class="channel-card"><span class="tag">🌿 敏感貨專用</span><h3>敏感貨專線</h3><div class="price">NT$150/kg起</div><div class="period">5-8個工作天</div><p>保健品、茶葉、化妝品、食品</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">敏感貨可寄品項</h2>
+      <div class="goods-table">
+        <table>
+          <thead><tr><th>商品類型</th><th>可寄？</th><th>推薦渠道</th><th>包裝要求</th></tr></thead>
+          <tbody>
+            <tr><td>魚油、Omega-3膠囊</td><td class="yes">✅ 可</td><td>敏感貨專線</td><td>原廠包裝，單件不超10瓶</td></tr>
+            <tr><td>維他命（口服膠囊/錠狀）</td><td class="yes">✅ 可</td><td>敏感貨專線</td><td>原廠包裝</td></tr>
+            <tr><td>燕窩（罐裝）</td><td class="yes">✅ 可</td><td>敏感貨專線</td><td>商業包裝</td></tr>
+            <tr><td>高山烏龍茶、紅茶</td><td class="yes">✅ 可</td><td>敏感貨專線</td><td>密封包裝，不超2kg/件</td></tr>
+            <tr><td>片裝面膜（鋁箔包裝）</td><td class="yes">✅ 可</td><td>敏感貨專線</td><td>單件不超10片</td></tr>
+            <tr><td>精華液、乳液（100ml以下）</td><td class="yes">✅ 可</td><td>敏感貨專線</td><td>原廠密封，防漏包裝</td></tr>
+            <tr><td>肉鬆、蛋黃酥（工廠包裝）</td><td class="yes">✅ 可</td><td>敏感貨專線</td><td>完整密封包裝</td></tr>
+            <tr><td>中藥材（人參、枸杞）</td><td class="no">❌ 禁止</td><td>—</td><td>屬禁運品，請勿寄送</td></tr>
+            <tr><td>指甲油、噴霧</td><td class="no">❌ 禁止</td><td>—</td><td>易燃液體/壓縮氣體，禁運</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section steps">
+    <div class="container">
+      <h2 class="section-title">寄件流程</h2>
+      <div class="steps-grid">
+        <div class="step-card"><div class="step-num">1</div><h4>LINE咨詢</h4><p>加入LINE，告知商品品項與重量，客服評估是否可寄</p></div>
+        <div class="step-card"><div class="step-num">2</div><h4>寄至倉庫</h4><p>將商品寄至速豹集運台灣倉庫，台北/高雄可安排面交</p></div>
+        <div class="step-card"><div class="step-num">3</div><h4>支付運費</h4><p>倉庫收貨確認，支付運費後立即發貨，全程追蹤</p></div>
+        <div class="step-card"><div class="step-num">4</div><h4>送達通知</h4><p>3-5天送至大陸收件人，LINE主動通知送達</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>你的商品能不能寄？</h2>
+      <p>加入LINE，發圖片給我們，立即評估！</p>
+      <a href="https://line.me/ti/p/@subao" class="btn btn-primary" target="_blank" style="background:#fff;color:var(--primary);"><i class="fab fa-line"></i> 加入LINE咨詢</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div><h3>速豹集運</h3><p style="font-size:14px;color:rgba(255,255,255,0.6);">專業台灣到大陸快遞服務，專營敏感貨專線</p></div>
+      <div><h3>服務</h3><a href="tw-to-cn.html">台灣發大陸</a><a href="pricing.html">運費試算</a><a href="article-list.html">文章攻略</a></div>
+      <div><h3>幫助</h3><a href="faq.html">常見問題</a><a href="about.html">關於我們</a></div>
+      <div><h3>聯系</h3><a href="https://line.me/ti/p/@subao" target="_blank">LINE：@subao</a></div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 速豹集運 Subao Logistics. All rights reserved.</div>
+  </footer>
+  <a href="https://line.me/ti/p/@subao" class="line-button" target="_blank"><i class="fab fa-line"></i></a>
+</body>
+</html>
