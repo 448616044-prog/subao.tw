@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /blog/medicine-shipping-draft.html
+
+Sitemap: https://subao.tw/sitemap.xml
