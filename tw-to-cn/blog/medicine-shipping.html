@@ -54,6 +54,19 @@
     .cta p{opacity:0.9;margin-bottom:24px;font-size:1.05rem}
     .cta-btn{display:inline-block;background:#fff;color:var(--primary);font-weight:700;font-size:1.1rem;padding:14px 40px;border-radius:50px;text-decoration:none;transition:transform 0.2s,box-shadow 0.2s}
     .cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.2)}
+
+    /* RELATED ARTICLES */
+    .related-articles{margin:48px 0;border-top:2px solid var(--border);padding-top:40px}
+    .related-title{font-size:1.3rem;font-weight:700;color:var(--accent);margin-bottom:24px;text-align:center}
+    .related-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .related-card{display:block;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px 20px;text-decoration:none;transition:all 0.2s}
+    .related-card:hover{border-color:var(--primary);box-shadow:0 4px 16px rgba(26,86,219,0.12);transform:translateY(-2px)}
+    .related-card-inner{display:flex;flex-direction:column;gap:4px}
+    .related-card-title{font-weight:700;color:var(--primary);font-size:15px}
+    .related-card-desc{font-size:13px;color:var(--muted);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .related-card-arrow{color:var(--primary);font-size:14px;margin-top:4px}
+    @media(max-width:600px){.related-grid{grid-template-columns:1fr}}
+
     /* FOOTER */
     footer{background:var(--card);border-top:1px solid var(--border);padding:24px 0;text-align:center;color:var(--muted);font-size:14px}
   </style>
