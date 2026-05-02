@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台灣寄大陸海關狀態查詢（2026）：包裹追蹤、查驗進度、簽收確認完整教學</title>
+  <meta name="description" content="台灣寄大陸海關狀態查詢完整教學（2026）。如何查詢包裹海關進度、包裹查驗原因、簽收確認，含速豹LINE查詢、官網追蹤、EMAIL通知等方法。">
+  <meta name="keywords" content="台灣寄大陸海關查詢, 包裹追蹤, 海關狀態, 包裹查驗, 速豹查詢, 物流追蹤, 簽收確認">
+  <meta property="og:title" content="台灣寄大陸海關狀態查詢（2026）：包裹追蹤、查驗進度、簽收確認完整教學">
+  <meta property="og:description" content="完整教學如何查詢包裹海關進度，含LINE查詢、官網追蹤、EMAIL通知等方法。">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:url" content="https://subao.tw/blog/customs-tracking.html">
+  <link rel="canonical" href="https://subao.tw/blog/customs-tracking.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root{--primary:#1a56db;--accent:#1e40af;--bg:#f8fafc;--card:#fff;--text:#1e293b;--muted:#64748b;--border:#e2e8f0;--radius:12px;--shadow:0 4px 24px rgba(0,0,0,0.08)}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Noto Sans TC',sans-serif;background:var(--bg);color:var(--text);line-height:1.8;font-size:17px}
+    .container{max-width:760px;margin:0 auto;padding:0 20px}
+    .hero{background:linear-gradient(135deg,#1a56db 0%,#1e40af 100%);color:#fff;padding:60px 0 50px;text-align:center}
+    .hero .badge{display:inline-block;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:50px;padding:4px 16px;font-size:13px;margin-bottom:16px;letter-spacing:1px}
+    .hero h1{font-size:2.2rem;font-weight:700;line-height:1.4;margin-bottom:16px}
+    .hero .subtitle{font-size:1.1rem;opacity:0.9;max-width:600px;margin:0 auto 28px}
+    .hero .tags{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+    .hero .tag{background:rgba(255,255,255,0.15);border-radius:6px;padding:4px 12px;font-size:13px}
+    article{padding:48px 0 60px}
+    .article-meta{color:var(--muted);font-size:14px;margin-bottom:32px;padding-bottom:16px;border-bottom:1px solid var(--border);display:flex;gap:20px;flex-wrap:wrap}
+    .toc{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px 28px;margin-bottom:36px;box-shadow:var(--shadow)}
+    .toc h3{font-size:15px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px}
+    .toc ol{counter-reset:toc;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 24px}
+    .toc li{counter-increment:toc}
+    .toc li::before{content:counter(toc) ". ";color:var(--primary);font-weight:600;margin-right:4px}
+    .toc a{color:var(--text);text-decoration:none;font-size:15px}
+    .toc a:hover{color:var(--primary)}
+    .intro{background:linear-gradient(135deg,#eff6ff,#dbeafe);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:24px 28px;margin-bottom:40px;font-size:18px;line-height:1.9}
+    h2{font-size:1.5rem;font-weight:700;margin:48px 0 20px;padding-top:16px;border-top:1px solid var(--border);color:var(--accent)}
+    h3{font-size:1.15rem;font-weight:600;margin:28px 0 12px;color:#374151}
+    p{margin-bottom:18px}
+    ul,ol{margin:0 0 20px 24px}
+    li{margin-bottom:8px}
+    .callout{background:var(--card);border-radius:var(--radius);padding:24px 28px;margin:28px 0;box-shadow:var(--shadow);border-left:4px solid var(--primary)}
+    .callout.success{border-left-color:#10b981;background:linear-gradient(135deg,#ecfdf5,#d1fae5)}
+    .callout.warning{border-left-color:#f59e0b;background:linear-gradient(135deg,#fffbeb,#fef3c7)}
+    .callout.danger{border-left-color:#ef4444;background:linear-gradient(135deg,#fef2f2,#fee2e2)}
+    .callout.info{border-left-color:#3b82f6;background:linear-gradient(135deg,#eff6ff,#dbeafe)}
+    .callout-title{font-weight:700;font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+    table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+    th{background:var(--primary);color:#fff;padding:12px 16px;text-align:left;font-weight:600}
+    td{padding:12px 16px;border-bottom:1px solid var(--border)}
+    tr:nth-child(even){background:#f8fafc}
+    .status-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin:16px 0;box-shadow:var(--shadow)}
+    .status-card h4{font-size:1rem;color:var(--accent);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+    .status-icon{width:32px;height:32px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:14px}
+    .status-icon.pending{background:#f59e0b}
+    .status-icon.processing{background:#3b82f6}
+    .status-icon.checked{background:#10b981}
+    .status-icon.delivered{background:#1a56db}
+    .status-card .time{font-size:13px;color:var(--muted);margin-bottom:8px}
+    .status-card p{font-size:15px;margin:0}
+    .timeline{position:relative;padding-left:40px;margin:32px 0}
+    .timeline::before{content:"";position:absolute;left:15px;top:0;bottom:0;width:2px;background:var(--border)}
+    .timeline-item{position:relative;margin-bottom:32px}
+    .timeline-item::before{content:"";position:absolute;left:-33px;top:4px;width:12px;height:12px;background:var(--primary);border-radius:50%;border:3px solid var(--bg)}
+    .timeline-item h4{font-size:1rem;color:var(--accent);margin-bottom:8px}
+    .timeline-item p{font-size:15px;color:var(--muted);margin:0}
+    .timeline-item .time{font-size:13px;color:var(--primary);font-weight:600;margin-bottom:4px}
+    .step-box{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin:16px 0}
+    .step-title{font-weight:700;color:var(--accent);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+    .step-number{width:24px;height:24px;background:var(--primary);color:#fff;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12px}
+    .code-box{background:#1e293b;color:#e2e8f0;padding:16px;border-radius:8px;font-family:monospace;margin:12px 0;font-size:14px}
+    .cta{background:linear-gradient(135deg,#1a56db,#1e40af);color:#fff;border-radius:var(--radius);padding:40px;text-align:center;margin:48px 0}
+    .cta h2{color:#fff;border:none;margin:0 0 12px;padding:0;font-size:1.8rem}
+    .cta p{opacity:0.9;margin-bottom:24px;font-size:1.05rem}
+    .cta-btn{display:inline-block;background:#fff;color:var(--primary);font-weight:700;font-size:1.1rem;padding:14px 40px;border-radius:50px;text-decoration:none;transition:transform 0.2s,box-shadow 0.2s}
+    .cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.2)}
+    .related-articles{margin:48px 0;border-top:2px solid var(--border);padding-top:40px}
+    .related-title{font-size:1.3rem;font-weight:700;color:var(--accent);margin-bottom:24px;text-align:center}
+    .related-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .related-card{display:block;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px 20px;text-decoration:none;transition:all 0.2s}
+    .related-card:hover{border-color:var(--primary);box-shadow:0 4px 16px rgba(26,86,219,0.12);transform:translateY(-2px)}
+    .related-card-inner{display:flex;flex-direction:column;gap:4px}
+    .related-card-title{font-weight:700;color:var(--primary);font-size:15px}
+    .related-card-desc{font-size:13px;color:var(--muted);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .related-card-arrow{color:var(--primary);font-size:14px;margin-top:4px}
+    @media(max-width:600px){.related-grid{grid-template-columns:1fr}.timeline{padding-left:28px}.timeline::before{left:8px}.timeline-item::before{left:-21px}}
+    footer{background:var(--card);border-top:1px solid var(--border);padding:24px 0;text-align:center;color:var(--muted);font-size:14px}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "台灣寄大陸海關狀態查詢（2026）：包裹追蹤、查驗進度、簽收確認完整教學",
+    "description": "台灣寄大陸海關狀態查詢完整教學。如何查詢包裹海關進度、包裹查驗原因、簽收確認。",
+    "author": {"@type": "Organization", "name": "速豹集運"},
+    "publisher": {"@type": "Organization", "name": "速豹集運", "url": "https://subao.tw"},
+    "datePublished": "2026-05-03",
+    "dateModified": "2026-05-03"
+  }
+  </script>
+</head>
+<body>
+  <div class="hero">
+    <div class="container">
+      <span class="badge"><i class="fas fa-clock"></i> 2026-05-03 更新</span>
+      <h1>台灣寄大陸海關狀態查詢</h1>
+      <p class="subtitle">包裹追蹤、查驗進度、簽收確認，完整教學讓你掌握包裹動態</p>
+      <div class="tags">
+        <span class="tag"># 海關查詢</span>
+        <span class="tag"># 包裹追蹤</span>
+        <span class="tag"># 物流狀態</span>
+        <span class="tag"># 簽收確認</span>
+      </div>
+    </div>
+  </div>
+
+  <article class="container">
+    <div class="article-meta">
+      <span><i class="fas fa-calendar"></i> 2026-05-03</span>
+      <span><i class="fas fa-folder"></i> 查詢指南</span>
+      <span><i class="fas fa-clock"></i> 閱讀時間約 10 分鐘</span>
+    </div>
+
+    <div class="toc">
+      <h3><i class="fas fa-list"></i> 目錄</h3>
+      <ol>
+        <li><a href="#section1">包裹物流狀態解讀</a></li>
+        <li><a href="#section2">LINE 查詢教學</a></li>
+        <li><a href="#section3">官網追蹤教學</a></li>
+        <li><a href="#section4">EMAIL 通知設定</a></li>
+        <li><a href="#section5">常見海關狀態解析</a></li>
+        <li><a href="#section6">包裹被查驗怎麼辦？</a></li>
+        <li><a href="#section7">收件人如何配合？</a></li>
+        <li><a href="#section8">常見問題 FAQ</a></li>
+      </ol>
+    </div>
+
+    <div class="intro">
+      包裹寄出去後，最焦慮的就是不知道它在哪裡。本文將詳細解說<strong>速豹集運的包裹追蹤系統</strong>，從LINE查詢、官網追蹤到EMAIL通知，讓你<strong>隨時掌握包裹動態</strong>。也會說明常見的海關狀態代表什麼意思，以及包裹被查驗時該怎麼處理。
+    </div>
+
+    <h2 id="section1">包裹物流狀態解讀</h2>
+    <p>從台灣寄到大陸，包裹會經過以下狀態：</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="time">Step 1</div>
+        <h4>包裹入庫</h4>
+        <p>包裹抵達速豹台北倉庫，系統掃描入庫，發送通知給寄件人</p>
+      </div>
+      <div class="timeline-item">
+        <div class="time">Step 2</div>
+        <h4>打包出貨</h4>
+        <p>倉庫理貨、再次包裝、安排航班，發送出貨通知</p>
+      </div>
+      <div class="timeline-item">
+        <div class="time">Step 3</div>
+        <h4>空運中</h4>
+        <p>航班起飛，前往大陸，顯示「運輸中」</p>
+      </div>
+      <div class="timeline-item">
+        <div class="time">Step 4</div>
+        <h4>抵達大陸</h4>
+        <p>航班降落，包裹進入大陸海關，等待清關</p>
+      </div>
+      <div class="timeline-item">
+        <div class="time">Step 5</div>
+        <h4>海關清關中</h4>
+        <p>實名制申報自動提交，收件人等待驗證碼</p>
+      </div>
+      <div class="timeline-item">
+        <div class="time">Step 6</div>
+        <h4>海關放行</h4>
+        <p>包裹通關，移交快遞公司準備派送</p>
+      </div>
+      <div class="timeline-item">
+        <div class="time">Step 7</div>
+        <h4>派送中</h4>
+        <p>順豐/京東快遞員開始派送，顯示「派送中」</p>
+      </div>
+      <div class="timeline-item">
+        <div class="time">Step 8</div>
+        <h4>已簽收</h4>
+        <p>收件人確認簽收，完成配送</p>
+      </div>
+    </div>
+
+    <div class="callout info">
+      <div class="callout-title"><i class="fas fa-info-circle"></i> 各狀態預計停留時間</div>
+      <ul>
+        <li>包裹入庫：當天處理完成</li>
+        <li>打包出貨：1-2天</li>
+        <li>空運中：1-2天</li>
+        <li>海關清關：1-3天（正常情況）</li>
+        <li>派送中：1-2天</li>
+      </ul>
+      <p><strong>總計正常時效：3-7個工作日</strong></p>
+    </div>
+
+    <h2 id="section2">LINE 查詢教學</h2>
+    <p>LINE是最方便的查詢方式，24小時即時回覆。</p>
+
+    <h3>Step 1：加入速豹LINE官方帳號</h3>
+    <p>在LINE搜尋「<strong>@subao</strong>」或點擊官網右下角LINE按鈕加入。</p>
+
+    <h3>Step 2：傳送關鍵字</h3>
+    <div class="step-box">
+      <div class="step-title"><span class="step-number">1</span> 查詢包裹</div>
+      <p>直接傳送您的<strong>訂單編號</strong>（如：SB20260315001）</p>
+      <p>系統會自動回覆最新物流狀態</p>
+    </div>
+
+    <div class="step-box">
+      <div class="step-title"><span class="step-number">2</span> 查詢驗證碼</div>
+      <p>包裹顯示「海關清關中」時，傳送「<strong>驗證碼</strong>」+ 訂單編號</p>
+      <p>系統會告知驗證碼發送狀態</p>
+    </div>
+
+    <div class="step-box">
+      <div class="step-title"><span class="step-number">3</span> 人工客服</div>
+      <p>如需更詳細幫助，傳送「<strong>客服</strong>」接入真人服務</p>
+      <p>服務時間：週一至週五 09:00-18:00</p>
+    </div>
+
+    <div class="callout success">
+      <div class="callout-title"><i class="fas fa-check-circle"></i> LINE查詢優點</div>
+      <ul>
+        <li>24小時即時回覆</li>
+        <li>手機操作，隨時隨地查</li>
+        <li>可傳送圖片、語音</li>
+        <li>綁定訂單後自動通知狀態更新</li>
+      </ul>
+    </div>
+
+    <h2 id="section3">官網追蹤教學</h2>
+    <p>除了LINE，也可以在速豹官網查詢。</p>
+
+    <h3>Step 1：進入追蹤頁面</h3>
+    <p>前往速豹官網：<a href="https://subao.tw">subao.tw</a>，點擊右上角「包裹追蹤」或「物流查詢」。</p>
+
+    <h3>Step 2：輸入訂單編號</h3>
+    <div class="code-box">
+      輸入框：SB20260315001
+    </div>
+    <p>訂單編號可在以下地方找到：</p>
+    <ul>
+      <li>速豹發送的確認郵件</li>
+      <li>LINE收到的出貨通知</li>
+      <li>速豹官方網站「會員中心」</li>
+    </ul>
+
+    <h3>Step 3：查看詳細狀態</h3>
+    <p>系統會顯示完整物流時間線，包括：</p>
+    <ul>
+      <li>每個狀態的精確時間</li>
+      <li>當前位置（台北倉庫/航班上/大陸清關中/派送中）</li>
+      <li>預計送達時間</li>
+      <li>快遞公司追蹤號碼</li>
+    </ul>
+
+    <h2 id="section4">EMAIL 通知設定</h2>
+    <p>不想一直查？設定EMAIL通知，重要狀態主動推播給你。</p>
+
+    <h3>速豹會自動通知以下狀態</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>狀態</th>
+          <th>通知時機</th>
+          <th>內容</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>包裹入庫</td>
+          <td>包裹抵達倉庫後</td>
+          <td>入庫確認、訂單詳情、運費確認</td>
+        </tr>
+        <tr>
+          <td>打包出貨</td>
+          <td>安排航班後</td>
+          <td>航班資訊、預計到達時間</td>
+        </tr>
+        <tr>
+          <td>海關清關</td>
+          <td>包裹進入清關</td>
+          <td>提醒收件人留意驗證碼短信</td>
+        </tr>
+        <tr>
+          <td>海關放行</td>
+          <td>通關完成</td>
+          <td>快遞追蹤號、派送聯繫方式</td>
+        </tr>
+        <tr>
+          <td>派送中</td>
+          <td>快遞員取件</td>
+          <td>派送員聯繫方式、預計送達時間</td>
+        </tr>
+        <tr>
+          <td>已簽收</td>
+          <td>收件人簽收後</td>
+          <td>簽收確認、完成通知</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout warning">
+      <div class="callout-title"><i class="fas fa-exclamation-triangle"></i> 確保EMAIL正確</div>
+      <p>寄件時請確認EMAIL填寫正確，並檢查<strong>垃圾郵件匣</strong>，有時通知會被誤判為垃圾郵件。</p>
+    </div>
+
+    <h2 id="section5">常見海關狀態解析</h2>
+
+    <div class="status-card">
+      <h4><span class="status-icon pending"><i class="fas fa-clock"></i></span>「清關中」</h4>
+      <div class="time">正常等待時間：1-3個工作日</div>
+      <p>包裹正在排隊等待海關處理。如果超過3天，可能是被隨機抽中查驗。</p>
+    </div>
+
+    <div class="status-card">
+      <h4><span class="status-icon processing"><i class="fas fa-search"></i></span>「海關查驗中」</h4>
+      <div class="time">等待時間：1-5個工作日</div>
+      <p>包裹被抽中查驗，海關正在檢查內容物。這個階段最需要耐心。</p>
+    </div>
+
+    <div class="status-card">
+      <h4><span class="status-icon checked"><i class="fas fa-check"></i></span>「海關放行」</h4>
+      <div class="time">等待時間：當天或次日</div>
+      <p>恭喜！包裹已通過海關，即將開始派送。</p>
+    </div>
+
+    <div class="status-card">
+      <h4><span class="status-icon pending"><i class="fas fa-exclamation-circle"></i></span>「待補件」</h4>
+      <div class="time">需在期限內完成</div>
+      <p>海關要求補充資料。通常是申報品名不清、價值需要證明等。</p>
+    </div>
+
+    <div class="status-card">
+      <h4><span class="status-icon pending"><i class="fas fa-times"></i></span>「扣關」</h4>
+      <div class="time">需要處理</div>
+      <p>包裹被暫時扣押，需要補件、退運或特殊處理。盡快聯繫速豹客服處理。</p>
+    </div>
+
+    <div class="status-card">
+      <h4><span class="status-icon delivered"><i class="fas fa-undo"></i></span>「退運中」</h4>
+      <div class="time">約7-14個工作日</div>
+      <p>包裹無法通關，正在退回台灣。退件原因可能是：禁運品、申報不實、收件人未取。</p>
+    </div>
+
+    <h2 id="section6">包裹被查驗怎麼辦？</h2>
+    <p>被查驗不一定是大問題，冷靜處理最重要。</p>
+
+    <h3>為什麼會被查驗？</h3>
+    <ul>
+      <li><strong>隨機抽查</strong>：海關每天都會隨機抽查5-10%的包裹</li>
+      <li><strong>申報異常</strong>：品名模糊、價值過高或過低</li>
+      <li><strong>敏感貨</strong>：保健品、茶葉、中藥等查驗率更高</li>
+      <li><strong>大量包裹</strong>：一次性寄太多（>10kg）容易被當商業貨</li>
+    </ul>
+
+    <h3>查驗流程</h3>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="time">第1天</div>
+        <h4>海關抽出包裹</h4>
+        <p>包裹被移至查驗區，狀態顯示「查驗中」</p>
+      </div>
+      <div class="timeline-item">
+        <div class="time">第1-3天</div>
+        <h4>X光掃描/開箱檢查</h4>
+        <p>海關人員檢查申報內容與實際物品是否相符</p>
+      </div>
+      <div class="timeline-item">
+        <div class="time">第3-5天</div>
+        <h4>查驗結果</h4>
+        <p>沒問題：自動放行 → 有問題：通知補件/退運</p>
+      </div>
+    </div>
+
+    <h3>你需要做什麼？</h3>
+    <ul>
+      <li><strong>耐心等待</strong>：查驗需要3-5個工作日，不要頻繁催促</li>
+      <li><strong>保持聯繫</strong>：速豹客服會主動告知進度</li>
+      <li><strong>準備資料</strong>：如果海關要求補件，及時提供發票、照片等</li>
+      <li><strong>千萬不要</strong>：找人「疏通」海關，這是違法的！</li>
+    </ul>
+
+    <div class="callout danger">
+      <div class="callout-title"><i class="fas fa-ban"></i> 千萬不要這樣做</div>
+      <ul>
+        <li>不要找人「關說」或「疏通」海關（違法）</li>
+        <li>不要寄送虛假資料瞞騙海關（後果嚴重）</li>
+        <li>不要頻繁催促（只會增加客服負擔，不會加快）</li>
+      </ul>
+    </div>
+
+    <h2 id="section7">收件人如何配合？</h2>
+    <p>包裹能否順利通關，<strong>收件人的配合非常重要</strong>。</p>
+
+    <h3>最重要的任務：回覆驗證碼</h3>
+    <p>2026年實名制規定，大陸海關會發送短信驗證碼到收件人手機。</p>
+
+    <div class="step-box">
+      <div class="step-title"><span class="step-number">1</span> 收到陌生短信</div>
+      <p>當包裹進入清關階段，收件人會收到大陸海關發的短信，通常顯示為陌生號碼</p>
+    </div>
+
+    <div class="step-box">
+      <div class="step-title"><span class="step-number">2</span> 回覆驗證</div>
+      <p>按短信要求回覆驗證碼（如：「回覆1同意」）</p>
+    </div>
+
+    <div class="step-box">
+      <div class="step-title"><span class="step-number">3</span> 完成通關</div>
+      <p>驗證完成後，包裹會在24小時內放行</p>
+    </div>
+
+    <div class="callout warning">
+      <div class="callout-title"><i class="fas fa-exclamation-triangle"></i> 超時未回覆怎麼辦？</div>
+      <p>驗證碼通常要求<strong>72小時內回覆</strong>。如果超時未回覆，包裹可能會被退回台灣。</p>
+      <p><strong>解決方法：</strong>立即聯繫速豹客服，我們會協助聯繫海關重新發送驗證碼。</p>
+    </div>
+
+    <h3>收件人需要準備的資料</h3>
+    <p>寄件前，請確保收件人提供以下資訊：</p>
+    <ul>
+      <li><strong>真實姓名</strong>（與身份證一致）</li>
+      <li><strong>大陸身份證號</strong>（18位）</li>
+      <li><strong>大陸手機號</strong>（需能在收到短信）</li>
+      <li><strong>完整地址</strong>（省/市/區/街道/門牌）</li>
+    </ul>
+
+    <div class="callout info">
+      <div class="callout-title"><i class="fas fa-lightbulb"></i> 小提示</div>
+      <p>寄件時，請<strong>提前告知收件人</strong>會收到海關短信，避免被當成詐騙短信忽略。速豹也會在包裹出貨後發送通知給寄件人，方便寄件人轉知收件人。</p>
+    </div>
+
+    <h2 id="section8">常見問題 FAQ</h2>
+
+    <h3>Q1：包裹卡在「清關中」很久怎麼辦？</h3>
+    <p>一般清關需要1-3個工作日。如果超過5個工作日仍未放行，請聯繫速豹LINE客服查詢具體原因，可能是被抽中查驗。</p>
+
+    <h3>Q2：收件人沒收到驗證碼怎麼辦？</h3>
+    <p>可能的原因：</p>
+    <ul>
+      <li>短信被攔截 → 檢查垃圾短信匣</li>
+      <li>手機號填寫錯誤 → 聯繫速豹更正</li>
+      <li>手機無信號 → 等待恢復信號後重新接收</li>
+    </ul>
+    <p>聯繫速豹LINE客服，我們可以協助查詢驗證碼發送狀態或重新發送。</p>
+
+    <h3>Q3：可以修改收件人資訊嗎？</h3>
+    <p>包裹進入清關階段後<strong>無法修改</strong>。如果資訊錯誤嚴重，建議聯繫速豹客服評估是否可以退運後重新寄送。</p>
+
+    <h3>Q4：收件人不在大陸怎麼辦？</h3>
+    <p>實名制需要收件人<strong>親自回覆驗證碼</strong>。如果收件人短期不在大陸，可以：</p>
+    <ul>
+      <li>延後寄送，等收件人回國</li>
+      <li>更換收件人（需要重新提供完整資料）</li>
+      <li>委託在大陸的親友代收</li>
+    </ul>
+
+    <h3>Q5：包裹被退運了怎麼辦？</h3>
+    <p>退運原因可能是：禁運品、申報不實、收件人多次未取、超時未回覆驗證碼。</p>
+    <p>退運處理：</p>
+    <ul>
+      <li>退運回台灣約需7-14個工作日</li>
+      <li>退運運費由責任方承擔</li>
+      <li>可選擇重新寄送或退款</li>
+    </ul>
+
+    <h3>Q6：如何聯繫速豹客服？</h3>
+    <p>有多種方式：</p>
+    <ul>
+      <li><strong>LINE</strong>：@subao（最快，24小時回覆）</li>
+      <li><strong>電話</strong>：0800-xxx-xxx（週一至週五 09:00-18:00）</li>
+      <li><strong>EMAIL</strong>：service@subao.tw（24小時內回覆）</li>
+      <li><strong>官網</strong>：填寫線上表單</li>
+    </ul>
+
+    <h3>Q7：包裹簽收了，但物品損壞怎麼辦？</h3>
+    <p>如果簽收後才發現損壞，責任歸屬可能較難判定。建議：</p>
+    <ul>
+      <li>派送時<strong>當面驗貨</strong>，有問題立即拒收</li>
+      <li>如有損壞，拍照留存並<strong>24小時內聯繫速豹</strong></li>
+      <li>速豹有破損保障機制，核定後可申請理賠</li>
+    </ul>
+
+    <div class="cta">
+      <h2>還有疑問？</h2>
+      <p>聯繫速豹集運LINE官方帳號，專業客服為您解答所有物流追蹤問題。</p>
+      <a href="https://subao.tw" class="cta-btn">立即查詢 <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <div class="related-articles">
+      <div class="related-title">相關文章推薦</div>
+      <div class="related-grid">
+        <a href="https://subao.tw/blog/shipping-process.html" class="related-card">
+          <div class="related-card-inner">
+            <div class="related-card-title">寄大陸流程</div>
+            <div class="related-card-desc">Step by Step完整寄件教學，含實名制申報流程。</div>
+            <div class="related-card-arrow">閱讀全文 <i class="fas fa-arrow-right"></i></div>
+          </div>
+        </a>
+        <a href="https://subao.tw/blog/customs-regulations.html" class="related-card">
+          <div class="related-card-inner">
+            <div class="related-card-title">海關規定</div>
+            <div class="related-card-desc">實名制申報、免稅額度、應稅物品、常見扣關原因。</div>
+            <div class="related-card-arrow">閱讀全文 <i class="fas fa-arrow-right"></i></div>
+          </div>
+        </a>
+        <a href="https://subao.tw/blog/shipping-time.html" class="related-card">
+          <div class="related-card-inner">
+            <div class="related-card-title">時效解析</div>
+            <div class="related-card-desc">各城市配送時間、影響時效的關鍵因素。</div>
+            <div class="related-card-arrow">閱讀全文 <i class="fas fa-arrow-right"></i></div>
+          </div>
+        </a>
+        <a href="https://subao.tw/blog/recommended-logistics.html" class="related-card">
+          <div class="related-card-inner">
+            <div class="related-card-title">兩岸物流推薦</div>
+            <div class="related-card-desc">空運、海運、集運完整比較。</div>
+            <div class="related-card-arrow">閱讀全文 <i class="fas fa-arrow-right"></i></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 速豹集運 subao.tw | 兩岸物流專家 | 敏感貨專線</p>
+    </div>
+  </footer>
+</body>
+</html>
