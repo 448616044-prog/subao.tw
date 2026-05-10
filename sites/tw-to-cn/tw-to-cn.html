@@ -9,6 +9,108 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- SEO 结构化数据 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "速豹集運",
+    "alternateName": "Subao Logistics",
+    "url": "https://subao-tw.com",
+    "logo": "https://subao-tw.com/images/subao-logo.png",
+    "description": "專業台灣到大陸快遞服務商，專營敏感貨專線，5年兩岸物流經驗",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "availableLanguage": ["Chinese", "Chinese Traditional"]
+    }
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "國際快遞",
+    "provider": {
+      "@type": "Organization",
+      "name": "速豹集運"
+    },
+    "areaServed": [
+      {
+        "@type": "Country",
+        "name": "台灣"
+      },
+      {
+        "@type": "Country",
+        "name": "中國大陸"
+      }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "兩岸快遞服務",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "敏感貨專線",
+            "description": "保健品、茶葉、化妝品3-5天送達"
+          },
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "370",
+            "priceCurrency": "TWD",
+            "unitCode": "KGM"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "快件專線",
+            "description": "5-7個工作天送達"
+          },
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "440",
+            "priceCurrency": "TWD",
+            "unitCode": "KGM"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "經濟專線",
+            "description": "7-14個工作天送達"
+          },
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "320",
+            "priceCurrency": "TWD",
+            "unitCode": "KGM"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "藥品專線",
+            "description": "中藥材、西藥適用"
+          },
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "560",
+            "priceCurrency": "TWD",
+            "unitCode": "KGM"
+          }
+        }
+      ]
+    }
+  }
+  </script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
   <script>
