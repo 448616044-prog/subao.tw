@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首頁 | 兩岸物流專家 - 品牌名</title>
+  <meta name="description" content="專業兩岸物流服務商，提供台灣到大陸、大陸到台灣雙向快遞集運服務，敏感貨、茶葉、保健品統統可寄。時效穩定，價格實惠。">
+  <meta name="keywords" content="兩岸物流, 台灣寄大陸, 大陸寄台灣, 集運, 快遞, 敏感貨">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="品牌名 - 兩岸物流，一站搞定">
+  <meta property="og:description" content="專業兩岸物流服務商，台灣到大陸、大陸到台灣雙向快遞集運，敏感貨專線。">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- 圖標庫 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* ============================================
+       CSS變量 - 設計系統
+       ============================================ */
+    :root {
+      --primary: #0066CC;
+      --primary-dark: #004C99;
+      --primary-light: #E6F0FA;
+      --secondary: #FF6600;
+      --secondary-dark: #CC5200;
+      --line-green: #00B900;
+      --bg-white: #FFFFFF;
+      --bg-gray: #F5F7FA;
+      --bg-dark: #1A1A2E;
+      --text-dark: #333333;
+      --text-light: #666666;
+      --text-white: #FFFFFF;
+      --border: #E0E0E0;
+      --shadow: 0 2px 8px rgba(0,0,0,0.1);
+      --shadow-lg: 0 8px 24px rgba(0,0,0,0.15);
+      --radius: 8px;
+      --radius-lg: 16px;
+      --transition: all 0.3s ease;
+      --header-height: 70px;
+    }
+
+    /* ============================================
+       重置與基礎
+       ============================================ */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+      color: var(--text-dark);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    /* ============================================
+       通用組件
+       ============================================ */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: var(--radius);
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      transition: var(--transition);
+      text-align: center;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--text-white);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: var(--secondary);
+      color: var(--text-white);
+    }
+
+    .btn-secondary:hover {
+      background: var(--secondary-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-line {
+      background: var(--line-green);
+      color: var(--text-white);
+    }
+
+    .btn-line:hover {
+      background: #009900;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+
+    .btn-outline:hover {
+      background: var(--primary);
+      color: var(--text-white);
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--text-dark);
+    }
+
+    .section-subtitle {
+      text-align: center;
+      font-size: 18px;
+      color: var(--text-light);
+      margin-bottom: 48px;
+    }
+
+    /* ============================================
+       HEADER 導航
+       ============================================ */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: var(--header-height);
+      background: var(--bg-white);
+      z-index: 1000;
+      transition: var(--transition);
+    }
+
+    .header.scrolled {
+      box-shadow: var(--shadow);
+    }
+
+    .header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .nav {
+      display: flex;
+      gap: 32px;
+    }
+
+    .nav a {
+      font-weight: 500;
+      color: var(--text-dark);
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .nav a:hover,
+    .nav a.active {
+      color: var(--primary);
+    }
+
+    .nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: var(--transition);
+    }
+
+    .nav a:hover::after,
+    .nav a.active::after {
+      width: 100%;
+    }
+
+    .header-btn {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .header .btn-line {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: var(--text-dark);
+    }
+
+    /* ============================================
+       HERO 區域
+       ============================================ */
+    .hero {
+      padding: 140px 0 80px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: var(--text-white);
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      opacity: 0.9;
+      margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    /* ============================================
+       服務卡片
+       ============================================ */
+    .service-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: -60px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .service-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      box-shadow: var(--shadow-lg);
+      transition: var(--transition);
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .service-card.twin {
+      border-top: 4px solid var(--primary);
+    }
+
+    .service-card.mainland {
+      border-top: 4px solid var(--secondary);
+    }
+
+    .service-card h3 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: var(--text-light);
+      margin-bottom: 24px;
+    }
+
+    .service-card .btn {
+      width: 100%;
+    }
+
+    .service-icon {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .twin .service-icon {
+      color: var(--primary);
+    }
+
+    .mainland .service-icon {
+      color: var(--secondary);
+    }
+
+    /* ============================================
+       優勢區域
+       ============================================ */
+    .features {
+      background: var(--bg-gray);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+    }
+
+    .feature-item {
+      text-align: center;
+      padding: 32px 20px;
+      background: var(--bg-white);
+      border-radius: var(--radius);
+      transition: var(--transition);
+    }
+
+    .feature-item:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .feature-icon {
+      font-size: 40px;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .feature-item h4 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .feature-item p {
+      font-size: 14px;
+      color: var(--text-light);
+    }
+
+    /* ============================================
+       流程區域
+       ============================================ */
+    .process-steps {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      position: relative;
+    }
+
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 80px;
+      right: 80px;
+      height: 2px;
+      background: var(--border);
+      z-index: 0;
+    }
+
+    .process-step {
+      flex: 1;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .step-number {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-size: 32px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      border: 4px solid var(--bg-white);
+    }
+
+    .process-step h4 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .process-step p {
+      font-size: 14px;
+      color: var(--text-light);
+    }
+
+    /* ============================================
+       FAQ折疊
+       ============================================ */
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 20px 0;
+      background: none;
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 500;
+      text-align: left;
+      font-family: inherit;
+    }
+
+    .faq-question .icon {
+      transition: var(--transition);
+      color: var(--primary);
+    }
+
+    .faq-item.active .faq-question .icon {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .faq-answer p {
+      padding: 0 0 20px;
+      color: var(--text-light);
+      line-height: 1.8;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+    }
+
+    /* ============================================
+       CTA區域
+       ============================================ */
+    .cta-section {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: var(--text-white);
+      text-align: center;
+      padding: 80px 0;
+    }
+
+    .cta-section h2 {
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+
+    .cta-section p {
+      font-size: 18px;
+      opacity: 0.9;
+      margin-bottom: 32px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    /* ============================================
+       FOOTER
+       ============================================ */
+    .footer {
+      background: var(--bg-dark);
+      color: var(--text-white);
+      padding: 60px 0 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-col h4 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .footer-col p,
+    .footer-col a {
+      display: block;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+
+    .footer-col a:hover {
+      color: var(--text-white);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 20px 0;
+      text-align: center;
+      font-size: 14px;
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* ============================================
+       LINE懸浮按鈕
+       ============================================ */
+    .line-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 999;
+    }
+
+    .line-float a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--line-green);
+      color: var(--text-white);
+      font-size: 28px;
+      box-shadow: 0 4px 12px rgba(0,185,0,0.4);
+      transition: var(--transition);
+    }
+
+    .line-float a:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 16px rgba(0,185,0,0.5);
+    }
+
+    /* ============================================
+       運費計算器
+       ============================================ */
+    .calculator {
+      background: var(--bg-white);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--shadow);
+      max-width: 500px;
+    }
+
+    .calculator h3 {
+      font-size: 24px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 8px;
+      color: var(--text-dark);
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 16px;
+      font-family: inherit;
+      transition: var(--transition);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-light);
+    }
+
+    .calculator .btn {
+      width: 100%;
+      padding: 14px;
+      font-size: 18px;
+    }
+
+    .result-box {
+      margin-top: 24px;
+      padding: 20px;
+      background: var(--primary-light);
+      border-radius: var(--radius);
+      text-align: center;
+      display: none;
+    }
+
+    .result-box.show {
+      display: block;
+    }
+
+    .result-box .price {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .result-box .days {
+      font-size: 16px;
+      color: var(--text-light);
+      margin-top: 8px;
+    }
+
+    /* ============================================
+       響應式設計
+       ============================================ */
+    @media (max-width: 1024px) {
+      .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --header-height: 60px;
+      }
+
+      .nav {
+        display: none;
+        position: absolute;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        background: var(--bg-white);
+        flex-direction: column;
+        padding: 20px;
+        gap: 16px;
+        box-shadow: var(--shadow);
+      }
+
+      .nav.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .header-btn {
+        display: none;
+      }
+
+      .hero {
+        padding: 120px 0 60px;
+        min-height: auto;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .service-cards {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-steps {
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .process-steps::before {
+        display: none;
+      }
+
+      .section {
+        padding: 60px 0;
+      }
+
+      .section-title {
+        font-size: 28px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
+
+    /* ============================================
+       動畫
+       ============================================ */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 0.6s ease forwards;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="/" class="logo"><img src="sites/tw-to-cn/images/subao-logo.png" alt="速豹集運" height="40"></a>
+      <nav class="nav" id="nav">
+        <a href="/" class="active">首頁</a>
+        <a href="tw-to-cn.html">台灣發大陸</a>
+        <a href="cn-to-tw.html">大陸發台灣</a>
+        <a href="pricing.html">運費報價</a>
+        <a href="faq.html">常見問題</a>
+        <a href="about.html">關於我們</a>
+      </nav>
+      <div class="header-btn">
+        <a href="LINE連結" class="btn btn-line">加LINE</a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="選單">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>兩岸物流，一站搞定</h1>
+        <p>專業兩岸物流服務商，提供台灣到大陸、大陸到台灣雙向快遞集運服務。敏感貨、茶葉、保健品統統可寄，時效穩定，價格實惠。</p>
+        <div class="hero-buttons">
+          <a href="#calculator" class="btn btn-secondary">計算運費</a>
+          <a href="LINE連結" class="btn btn-line">立即咨詢</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 服務卡片 -->
+  <section class="section">
+    <div class="container">
+      <div class="service-cards">
+        <!-- 台灣發大陸 -->
+        <div class="service-card twin fade-in-up">
+          <div class="service-icon">
+            <i class="fas fa-plane-arrival"></i>
+          </div>
+          <h3>台灣 → 大陸</h3>
+          <p>敏感貨專線通道，茶葉、保健品、化妝品統統可寄。空運3-5天到達，海快7-10天，價格實惠。</p>
+          <a href="tw-to-cn.html" class="btn btn-primary">了解詳情</a>
+        </div>
+        <!-- 大陸發台灣 -->
+        <div class="service-card mainland fade-in-up">
+          <div class="service-icon">
+            <i class="fas fa-box-open"></i>
+          </div>
+          <h3>大陸 → 台灣</h3>
+          <p>淘寶、京東、拼多多輕鬆寄。90天免費倉儲，集運打包，宅配到家。</p>
+          <a href="cn-to-tw.html" class="btn btn-secondary">了解詳情</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 優勢 -->
+  <section class="section features">
+    <div class="container">
+      <h2 class="section-title">為什麼選擇我們</h2>
+      <p class="section-subtitle">專業、可靠、快速的兩岸物流服務</p>
+      <div class="features-grid">
+        <div class="feature-item fade-in-up">
+          <div class="feature-icon">
+            <i class="fas fa-gem"></i>
+          </div>
+          <h4>敏感貨專線</h4>
+          <p>茶葉、保健品、化妝品、食品...別人寄不了的我們可以</p>
+        </div>
+        <div class="feature-item fade-in-up">
+          <div class="feature-icon">
+            <i class="fas fa-tags"></i>
+          </div>
+          <h4>價格實惠</h4>
+          <p>直接對接客戶，無中間商差價，價格透明合理</p>
+        </div>
+        <div class="feature-item fade-in-up">
+          <div class="feature-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h4>時效穩定</h4>
+          <p>空運3-5天，海快7-10天，定時發車，不拖延</p>
+        </div>
+        <div class="feature-item fade-in-up">
+          <div class="feature-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h4>一對一客服</h4>
+          <p>台灣本地客服，及時回覆，解決您的所有問題</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 服務流程 -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">服務流程</h2>
+      <p class="section-subtitle">簡單四步，輕鬆寄件</p>
+      <div class="process-steps">
+        <div class="process-step fade-in-up">
+          <div class="step-number">1</div>
+          <h4>聯繫咨詢</h4>
+          <p>通過LINE或電話聯繫我們，評估報價</p>
+        </div>
+        <div class="process-step fade-in-up">
+          <div class="step-number">2</div>
+          <h4>安排寄件</h4>
+          <p>送件到倉庫或安排上門取件</p>
+        </div>
+        <div class="process-step fade-in-up">
+          <div class="step-number">3</div>
+          <h4>支付運費</h4>
+          <p>確認費用後支付運費</p>
+        </div>
+        <div class="process-step fade-in-up">
+          <div class="step-number">4</div>
+          <h4>等待收貨</h4>
+          <p>坐等收貨，全程物流追蹤</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 運費計算器 -->
+  <section class="section" id="calculator" style="background: var(--bg-gray);">
+    <div class="container">
+      <h2 class="section-title">運費計算</h2>
+      <p class="section-subtitle">輸入重量，一鍵估價</p>
+      <div style="display: flex; justify-content: center;">
+        <div class="calculator">
+          <h3>快速計算運費</h3>
+          <form id="shippingForm">
+            <div class="form-group">
+              <label for="direction">服務方向</label>
+              <select id="direction">
+                <option value="tw-cn">台灣 → 大陸</option>
+                <option value="cn-tw">大陸 → 台灣</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="weight">重量 (kg)</label>
+              <input type="number" id="weight" min="0.1" step="0.1" placeholder="請輸入重量" required>
+            </div>
+            <div class="form-group">
+              <label for="type">物品類型</label>
+              <select id="type">
+                <option value="normal">普通貨物</option>
+                <option value="sensitive">敏感貨物（食品/保健品等）</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">計算運費</button>
+          </form>
+          <div class="result-box" id="resultBox">
+            <div class="price" id="resultPrice">-</div>
+            <div class="days" id="resultDays">參考時效</div>
+            <a href="LINE連結" class="btn btn-line" style="margin-top: 16px;">詳細咨詢</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">常見問題</h2>
+      <p class="section-subtitle">點擊展開查看答案</p>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>寄到大陸需要多久？</span>
+            <span class="icon"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>空運專線約3-5個工作天，海快專線約7-10個工作天。實際時效受海關通關情況影響，我們會全程追蹤並通知您。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>哪些東西不能寄？</span>
+            <span class="icon"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>毒品、武器、現金、違禁品等無法寄送。詳細禁寄名錄請咨詢客服。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>保健品可以寄嗎？</span>
+            <span class="icon"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>可以！我們有敏感貨專線，专门接收保健品、茶葉、化妝品、食品等。請提前告知客服具體品名以便評估。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>關稅怎麼計算？</span>
+            <span class="icon"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>海關可能對部分商品徵收關稅，具體金額由海關核定。我們會協助您申報，確保通關順暢。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>如何追蹤物流？</span>
+            <span class="icon"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>發貨後我們會提供追蹤單號，您可以通過LINE實時查詢物流進度，我們也會主動更新狀態。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>還有其他問題？</h2>
+      <p>我們的客服團隊隨時為您解答</p>
+      <div class="cta-buttons">
+        <a href="LINE連結" class="btn btn-secondary">加LINE咨詢</a>
+        <a href="pricing.html" class="btn btn-outline" style="border-color: white; color: white;">查看運費</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>品牌名</h4>
+          <p>專業兩岸物流服務商<br>兩岸物流，一站搞定</p>
+          <p style="margin-top: 16px;">
+            <a href="LINE連結"><i class="fab fa-line"></i> LINE：@xxxxxx</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>快速連結</h4>
+          <a href="tw-to-cn.html">台灣發大陸</a>
+          <a href="cn-to-tw.html">大陸發台灣</a>
+          <a href="pricing.html">運費報價</a>
+          <a href="faq.html">常見問題</a>
+        </div>
+        <div class="footer-col">
+          <h4>聯繫我們</h4>
+          <p>電話：XXX-XXXX-XXXX</p>
+          <p>信箱：business@videotvai.com</p>
+          <p>時間：週一至週六 9:00-18:00</p>
+        </div>
+        <div class="footer-col">
+          <h4>關注我們</h4>
+          <a href="#"><i class="fab fa-line"></i> LINE</a>
+          <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+          <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 品牌名 版權所有 | 統一編號：XXXXXXXX</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LINE懸浮按鈕 -->
+  <div class="line-float">
+    <a href="LINE連結" title="加LINE咨詢">
+      <i class="fab fa-line"></i>
+    </a>
+  </div>
+
+  <script>
+    // ============================================
+    // JavaScript交互
+    // ============================================
+
+    // Header滾動效果
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // 手機選單
+    const menuToggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('nav');
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      const icon = menuToggle.querySelector('i');
+      if (nav.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+      } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
+    });
+
+    // FAQ折疊
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        // 關閉其他展開的
+        faqItems.forEach(other => {
+          if (other !== item && other.classList.contains('active')) {
+            other.classList.remove('active');
+          }
+        });
+        // 切換當前
+        item.classList.toggle('active');
+      });
+    });
+
+    // 運費計算
+    const shippingForm = document.getElementById('shippingForm');
+    const resultBox = document.getElementById('resultBox');
+    const resultPrice = document.getElementById('resultPrice');
+    const resultDays = document.getElementById('resultDays');
+
+    shippingForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const direction = document.getElementById('direction').value;
+      const weight = parseFloat(document.getElementById('weight').value);
+      const type = document.getElementById('type').value;
+
+      // 這裡是假數據，實際需要根據你們的價格表調整
+      let basePrice = 0;
+      let days = '';
+
+      if (direction === 'tw-cn') {
+        // 台灣發大陸
+        if (type === 'sensitive') {
+          basePrice = weight * 85; // 敏感貨單價
+          days = '空運 5-7 工作天';
+        } else {
+          basePrice = weight * 65; // 普通貨單價
+          days = '空運 3-5 工作天';
+        }
+      } else {
+        // 大陸發台灣
+        if (type === 'sensitive') {
+          basePrice = weight * 75;
+          days = '空運 5-7 工作天';
+        } else {
+          basePrice = weight * 55;
+          days = '空運 3-5 工作天';
+        }
+      }
+
+      resultPrice.textContent = '¥' + Math.round(basePrice);
+      resultDays.textContent = days;
+      resultBox.classList.add('show');
+    });
+
+    // 滾動動畫
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in-up');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.feature-item, .process-step, .service-card').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
