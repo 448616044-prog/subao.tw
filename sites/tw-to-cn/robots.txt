@@ -1,0 +1,5 @@
+# 速豹集運 robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://subao.tw/sitemap.xml
