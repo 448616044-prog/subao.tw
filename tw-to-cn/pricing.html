@@ -10,6 +10,36 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- SEO 结构化数据 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "速豹集運",
+    "alternateName": "Subao Logistics",
+    "url": "https://subao.tw",
+    "logo": "https://subao.tw/images/subao-logo-new.png",
+    "description": "專業台灣到大陸快遞服務商，專營敏感貨專線"
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "速豹集運運費試算",
+    "description": "台灣寄大陸快遞運費透明公開，各品項一口價"
+  }
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X2T4LGTKJ1');
+  </script>
   <style>
     :root{--primary:#0066CC;--primary-dark:#004C99;--primary-light:#E6F0FA;--secondary:#FF6600;--secondary-dark:#CC5200;--line-green:#00B900;--bg-white:#FFF;--bg-gray:#F5F7FA;--bg-dark:#1A1A2E;--text-dark:#333;--text-light:#666;--text-white:#fff;--border:#E0E0E0;--shadow:0 2px 8px rgba(0,0,0,0.1);--shadow-lg:0 8px 24px rgba(0,0,0,0.15);--radius:8px;--radius-lg:16px;--transition:all 0.3s ease}
     *{margin:0;padding:0;box-sizing:border-box}
@@ -122,68 +152,22 @@
     @media(max-width:992px){.nav{display:none}.service-toggle{flex-direction:column;align-items:center}.service-btn{width:100%;max-width:300px}.calc-form{grid-template-columns:1fr}.calc-btn{width:100%}.notes-grid{grid-template-columns:1fr}.footer .container{grid-template-columns:1fr 1fr}}
     @media(max-width:768px){.pricing-grid{grid-template-columns:1fr}.category-legend{gap:12px}.footer .container{grid-template-columns:1fr}.page-hero h1{font-size:32px}.calculator{padding:24px}}
   </style>
-  <link rel="canonical" href="https://subao.tw/pricing.html">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "台灣寄到大陸運費怎麼計算？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "依實際重量與體積重量（長×寬×高÷6000）取其較大值計算。經濟專線（海運）約 NT$320/kg 起，快件專線（空運）約 NT$440/kg 起，詳見運費表。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "保健品可以從台灣寄到大陸嗎？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "可以。速豹設有敏感貨專線，保健品、茶葉、化妝品均可寄送。需為個人自用量，並如實申報品名。海關核價 NT$800 以內較容易通關。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "台灣寄大陸需要多久？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "一般商品空運約 3-5 個工作天，海運約 7-12 個工作天。敏感貨專線時效穩定，如有延誤可申請理賠。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "哪些東西不能從台灣寄到大陸？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "槍械、毒品、現金、軍火、爆裂物等禁運品嚴禁寄送。食品、藥品、保健品需符合個人自用量規範，並如實申報。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "包裹被大陸海關扣住怎麼辦？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "請第一時間聯繫速豹 LINE 客服，提供申報發票與包裹單號，我們會協助與清關行溝通，盡量爭取放行。"
-      }
-    }
-  ]
-}
-</script>
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <a href="index.html" class="logo"><i class="fas fa-shipping-fast"></i> 速豹集運</a>
+      
+      <a href="index.html" class="logo">速豹集運</a>
       <nav class="nav">
-        <a href="tw-to-cn.html">台灣發大陸</a>
+        <a href="tw.html">台灣發大陸</a>
+        <a href="cn.html">大陸寄台灣</a>
         <a href="pricing.html" class="active">運費說明</a>
         <a href="faq.html">常見問題</a>
+        <a href="line.html">LINE 聯繫</a>
         <a href="about.html">關於我們</a>
       </nav>
       <div class="header-btn">
-        <a href="https://line.me/ti/p/@subao" class="btn btn-line" target="_blank"><i class="fab fa-line"></i> 加入LINE</a>
+        <a href="https://line.me/R/ti/p/@mmmppp004" class="btn btn-line" target="_blank"><i class="fab fa-line"></i> 加入LINE</a>
       </div>
     </div>
   </header>
@@ -254,9 +238,9 @@
       <p class="notes-vat">※ 以上報價不含國內加成型營業稅 5%（VAT）</p>
     </div>
   </section>
-  <section class="cta-section"><div class="container"><h2>想知道你的商品運費多少？</h2><p>直接加入 LINE，傳商品照片給我們，3 分鐘內報價</p><a href="https://line.me/ti/p/@subao" class="btn btn-primary" target="_blank" style="background:#fff;color:var(--secondary);"><i class="fab fa-line"></i> 加入 LINE 客服</a></div></section>
-  <footer class="footer"><div class="container"><div><h3><i class="fas fa-shipping-fast"></i> 速豹集運</h3><p style="font-size:14px;color:rgba(255,255,255,0.6);">專業台灣到大陸快遞服務，專營敏感貨專線</p></div><div><h3>服務</h3><a href="tw-to-cn.html">台灣發大陸</a><a href="pricing.html">運費說明</a><a href="faq.html">常見問題</a></div><div><h3>幫助</h3><a href="about.html">關於我們</a><a href="https://line.me/ti/p/@subao" target="_blank">LINE：@subao</a></div><div><h3>聯系</h3><a href="https://line.me/ti/p/@subao" target="_blank"><i class="fab fa-line" style="color:#00B900;"></i> LINE：@subao</a><a href="mailto:business@videotvai.com"><i class="fas fa-envelope" style="color:#FF6600;"></i> Email</a></div></div><div class="footer-bottom">© 2026 速豹集運 Subao Logistics. All rights reserved.</div></footer>
-  <a href="https://line.me/ti/p/@subao" class="line-button" target="_blank"><i class="fab fa-line"></i></a>
+  <section class="cta-section"><div class="container"><h2>想知道你的商品運費多少？</h2><p>直接加入 LINE，傳商品照片給我們，3 分鐘內報價</p><a href="https://line.me/R/ti/p/@mmmppp004" class="btn btn-primary" target="_blank" style="background:#fff;color:var(--secondary);"><i class="fab fa-line"></i> 加入 LINE 客服</a></div></section>
+  <footer class="footer"><div class="container"><div><h3><i class="fas fa-shipping-fast"></i> 速豹集運</h3><p style="font-size:14px;color:rgba(255,255,255,0.6);">專業台灣到大陸快遞服務，專營敏感貨專線</p></div><div><h3>服務</h3><a href="tw-to-cn.html">台灣發大陸</a><a href="pricing.html">運費說明</a><a href="faq.html">常見問題</a></div><div><h3>幫助</h3><a href="about.html">關於我們</a><a href="https://line.me/R/ti/p/@mmmppp004" target="_blank">LINE：@mmmppp004</a></div><div><h3>聯系</h3><a href="https://line.me/R/ti/p/@mmmppp004" target="_blank"><i class="fab fa-line"></i> LINE：@mmmppp004</a></div></div><div class="footer-bottom">© 2026 速豹集運 Subao Logistics. All rights reserved.</div></footer>
+  <a href="https://line.me/R/ti/p/@mmmppp004" class="line-button" target="_blank"><i class="fab fa-line"></i></a>
   <script>
     var pricingData={economy:{south:{A:320,B:410,C:560,D:880},east:{A:340,B:430,C:600,D:880},center:{A:360,B:440,C:600,D:890},north:{A:440,B:850,C:440,D:600},southwest:{A:480,B:620,C:370,D:460},other:{A:410,B:650,C:490,D:710}},express:{south:{A:440,B:510,C:990,D:1370},east:{A:580,B:700,C:1000,D:1370},center:{A:590,B:700,C:1000,D:1370},north:{A:440,B:700,C:460,D:600},southwest:{A:480,B:510,C:370,D:700},other:{A:410,B:650,C:490,D:710}}};
     var currentService='economy';
