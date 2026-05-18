@@ -6,3 +6,12 @@ https://www.subao.tw/* https://subao.tw/:splat 301
 
 # Redirect index.html to root (301 permanent)
 /index.html / 301
+
+# Old article pages (permanently removed, return 410 Gone)
+/article-01.html / 410
+/article-04.html / 410
+/article-05.html / 410
+/article-10.html / 410
+
+# Old medicine-shipping page (merged into taiwan-medicine-to-china)
+/blog/medicine-shipping.html /blog/taiwan-medicine-to-china.html 301
