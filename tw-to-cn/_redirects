@@ -1,0 +1,8 @@
+# Cloudflare Pages Redirect Rules
+# Format: source destination [code]
+
+# Redirect www to non-www (301 permanent)
+https://www.subao.tw/* https://subao.tw/:splat 301
+
+# Redirect index.html to root (301 permanent)
+/index.html / 301
