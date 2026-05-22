@@ -33,10 +33,19 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
+    "name": "台灣到大陸快遞服務",
     "serviceType": "國際快遞",
     "provider": {
       "@type": "Organization",
-      "name": "速豹集運"
+      "name": "速豹集運",
+      "url": "https://subao.tw",
+      "logo": "https://subao.tw/images/subao-logo-new.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "availableLanguage": ["Chinese", "Chinese Traditional"],
+        "url": "https://line.me/R/ti/p/@mmmppp004"
+      }
     },
     "areaServed": [
       {
@@ -48,6 +57,7 @@
         "name": "中國大陸"
       }
     ],
+    "description": "台灣到大陸敏感貨快遞服務，支援保健品、茶葉、化妝品、藥品等敏感货物，3-5天送達，LINE即時客服",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "兩岸快遞服務",
@@ -109,6 +119,16 @@
           }
         }
       ]
+    },
+    "potentialAction": {
+      "@type": "ContactAction",
+      "name": "LINE諮詢",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://line.me/R/ti/p/@mmmppp004",
+        "contentType": "text"
+      },
+      "description": "透過LINE聯繫速豹集運客服"
     }
   }
   </script>
