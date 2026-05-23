@@ -154,6 +154,14 @@ h1, h2, h3, h4, h5, h6 {
     gap: 8px;
 }
 
+.logo img {
+    background: #fff;
+    max-height: 50px;
+    max-width: 200px;
+    width: auto;
+    display: block;
+}
+
 .logo-icon { font-size: 28px; }
 
 .logo-text {
