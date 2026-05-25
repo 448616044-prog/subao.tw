@@ -1,0 +1,34 @@
+# Cloudflare Pages 301 重定向规则
+# 将 .html 后缀 URL 永久重定向到无后缀版本（避免重复内容）
+
+# Blog 文章页面
+/blog/cosmetics-shipping.html /blog/cosmetics-shipping 301
+/blog/food-shipping-guide.html /blog/food-shipping-guide 301
+/blog/health-products-shipping.html /blog/health-products-shipping 301
+/blog/medicine-shipping.html /blog/medicine-shipping 301
+/blog/mid-autumn-mooncake-shipping.html /blog/mid-autumn-mooncake-shipping 301
+/blog/shopee-shipping.html /blog/shopee-shipping 301
+/blog/taiwan-medicine-to-china.html /blog/taiwan-medicine-to-china 301
+/blog/taiwan-to-china-guide.html /blog/taiwan-to-china-guide 301
+/blog/taiwan-to-china-shipping-time.html /blog/taiwan-to-china-shipping-time 301
+/blog/taobao-consolidated-shipping.html /blog/taobao-consolidated-shipping 301
+/blog/tea-shipping-guide.html /blog/tea-shipping-guide 301
+/blog/tw-to-cn-cost.html /blog/tw-to-cn-cost 301
+/blog/tw-to-cn-customs.html /blog/tw-to-cn-customs 301
+/blog/tw-to-cn-express-comparison.html /blog/tw-to-cn-express-comparison 301
+/blog/tw-to-cn-logistics-comparison.html /blog/tw-to-cn-logistics-comparison 301
+/blog/tw-to-cn-logistics-recommend.html /blog/tw-to-cn-logistics-recommend 301
+/blog/tw-to-cn-prohibited-items.html /blog/tw-to-cn-prohibited-items 301
+/blog/tw-to-cn-returned.html /blog/tw-to-cn-returned 301
+/blog/tw-to-cn-shipping-guide.html /blog/tw-to-cn-shipping-guide 301
+/blog/tw-to-cn-shipping-methods.html /blog/tw-to-cn-shipping-methods 301
+
+# 根目录页面
+/index.html / 301
+/about.html /about 301
+/pricing.html /pricing 301
+/faq.html /faq 301
+/article-list.html /article-list 301
+/tw-to-cn.html /tw-to-cn 301
+/pricing-calculator.html /pricing-calculator 301
+/line.html /line 301
