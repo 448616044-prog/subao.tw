@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我们_速豹集运_专注两岸快递12年 - 速豹集运</title>
+  <meta name="description" content="速豹集运专注两岸快递12年，主营台湾寄大陆敏感货专线，已服务超过5000位客户，清关成功率99%。">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://subaotw.cn/about">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root{--primary:#0066CC;--primary-dark:#004C99;--primary-light:#E6F0FA;--secondary:#FF6600;--line-green:#00B900;--bg-white:#FFF;--bg-gray:#F5F7FA;--bg-dark:#1A1A2E;--text-dark:#333;--text-light:#666;--text-white:#fff;--border:#E0E0E0;--shadow:0 2px 8px rgba(0,0,0,0.1);--shadow-lg:0 8px 24px rgba(0,0,0,0.15);--radius:8px;--radius-lg:16px;--transition:all 0.3s ease}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Noto Sans SC',sans-serif;color:var(--text-dark);line-height:1.8;font-size:16px;background:var(--bg-gray)}
+    a{text-decoration:none;color:inherit}
+    .header{position:fixed;top:0;left:0;right:0;height:70px;background:var(--bg-white);z-index:1000;box-shadow:var(--shadow)}
+    .header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
+    .container{max-width:800px;margin:0 auto;padding:0 20px}
+    .logo{font-size:24px;font-weight:700;color:var(--primary)}.logo span{color:var(--secondary)}
+    .nav{display:flex;gap:32px}
+    .nav a{font-weight:500;color:var(--text-dark);transition:var(--transition);position:relative;padding:8px 0}
+    .nav a:hover,.nav a.active{color:var(--primary)}
+    .nav a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--primary);transition:var(--transition)}
+    .nav a:hover::after,.nav a.active::after{width:100%}
+    .header-btn{display:flex;align-items:center;gap:12px}
+    .btn{display:inline-block;padding:10px 20px;border-radius:var(--radius);font-weight:700;font-size:14px;cursor:pointer;border:none;transition:var(--transition);text-decoration:none}
+    .btn-line{background:var(--line-green);color:#fff}.btn-line:hover{background:#009900}
+    .btn-primary{background:var(--primary);color:#fff}.btn-primary:hover{background:var(--primary-dark)}
+    .page-hero{padding:130px 0 60px;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);color:var(--text-white);text-align:center}
+    .page-hero h1{font-size:36px;font-weight:700;margin-bottom:12px}
+    .page-hero p{font-size:18px;opacity:0.9}
+    .section{padding:60px 0;background:var(--bg-white)}
+    .section.alt{background:var(--bg-gray)}
+    .about-story{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+    .about-text h2{font-size:24px;font-weight:700;color:var(--text-dark);margin-bottom:16px}
+    .about-text p{color:var(--text-light);font-size:15px;margin-bottom:12px}
+    .about-img{background:linear-gradient(135deg,var(--primary-light),var(--primary));border-radius:var(--radius-lg);height:280px;display:flex;align-items:center;justify-content:center;font-size:80px}
+    .values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .value-card{background:var(--bg-white);border-radius:var(--radius-lg);padding:28px;text-align:center;box-shadow:var(--shadow);transition:var(--transition)}
+    .value-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+    .value-icon{width:56px;height:56px;background:var(--primary-light);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:24px;color:var(--primary)}
+    .value-card h3{font-size:16px;font-weight:700;margin-bottom:8px;color:var(--text-dark)}
+    .value-card p{font-size:13px;color:var(--text-light)}
+    .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin:40px 0}
+    .stat-item{text-align:center;padding:24px;background:var(--bg-white);border-radius:var(--radius-lg);box-shadow:var(--shadow)}
+    .stat-num{font-size:36px;font-weight:700;color:var(--primary)}
+    .stat-label{font-size:14px;color:var(--text-light);margin-top:4px}
+    .timeline{position:relative;padding-left:32px}
+    .timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:2px;background:var(--border)}
+    .timeline-item{margin-bottom:32px;position:relative}
+    .timeline-item::before{content:'';position:absolute;left:-28px;top:6px;width:12px;height:12px;background:var(--primary);border-radius:50%}
+    .timeline-year{font-size:14px;font-weight:700;color:var(--primary);margin-bottom:4px}
+    .timeline-text{font-size:14px;color:var(--text-dark)}
+    .cta-section{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);padding:60px 0;text-align:center;color:#fff}
+    .cta-section h2{font-size:28px;font-weight:700;margin-bottom:12px}
+    .cta-section p{font-size:16px;opacity:0.9;margin-bottom:24px}
+    .cta-section .btn{background:#fff;color:var(--primary);font-size:16px;padding:14px 40px}
+    .footer{background:var(--bg-dark);color:rgba(255,255,255,0.8);padding:40px 0 20px}
+    .footer .container{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+    .footer h3{color:#fff;margin-bottom:16px;font-size:16px}
+    .footer a{display:block;margin-bottom:10px;color:rgba(255,255,255,0.7);font-size:14px}
+    .footer a:hover{color:#fff}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:20px;margin-top:20px;text-align:center;color:rgba(255,255,255,0.5);font-size:13px}
+    .line-button{position:fixed;bottom:30px;right:30px;width:60px;height:60px;background:var(--line-green);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-lg);z-index:999;transition:var(--transition)}
+    .line-button:hover{transform:scale(1.1)}
+    .line-button i{font-size:32px;color:#fff}
+    @media(max-width:768px){.nav{display:none}.about-story{grid-template-columns:1fr}.values-grid{grid-template-columns:1fr}.stats-row{grid-template-columns:repeat(2,1fr)}.footer .container{grid-template-columns:1fr 1fr}.page-hero h1{font-size:26px}}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "速豹集运",
+      "description": "专注两岸快递服务12年，主营台湾寄大陆敏感货专线",
+      "url": "https://subaotw.cn",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "availableLanguage": ["Chinese", "Mandarin"],
+        "email": "business@videotvai.com"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">速豹<span>集运</span></a>
+      <nav class="nav">
+        <a href="/tw-to-cn">台湾寄大陆</a>
+        <a href="/cn-to-tw">大陆寄台湾</a>
+        <a href="/pricing">运费说明</a>
+        <a href="/article-list">物品攻略</a>
+        <a href="/faq">常见问题</a>
+        <a href="/about">关于我们</a>
+      </nav>
+      <div class="header-btn">
+        <a href="https://line.me/ti/p/~mmmppp004" class="btn btn-line" target="_blank"><i class="fab fa-line"></i> 咨询</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>关于我们</h1>
+      <p>专注两岸快递12年，让台湾寄大陆变得简单</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-story">
+        <div class="about-text">
+          <h2>你在台湾，我来收货</h2>
+          <p>速豹集运成立于2014年，深耕两岸快递服务12年。我们深知台湾亲友寄东西回大陆的不便——语言不通、渠道不清、海关规定复杂。</p>
+          <p>我们的核心优势是「你在台湾，我来收货」：台湾有仓库，大陆有需求，我们用一条龙服务把台湾的好东西安全送到大陆亲人手中。</p>
+          <p>主营敏感货专线12年，茶叶、保健品、化妆品、食品......普通快递寄不了的，我们帮你解决。</p>
+        </div>
+        <div class="about-img">🏍️</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-num">12+</div>
+          <div class="stat-label">年两岸快递经验</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">5000+</div>
+          <div class="stat-label">累计服务客户</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">99%</div>
+          <div class="stat-label">清关成功率</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">30min</div>
+          <div class="stat-label">平均回复时间</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title" style="text-align:center;margin-bottom:32px">
+        <h2>我们的价值观</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>安全第一</h3>
+          <p>每个包裹全程追踪，清关合规操作，丢件必赔</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-coins"></i></div>
+          <h3>价格透明</h3>
+          <p>运费=重量×单价，无隐藏费用，报价即结算价</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-comments"></i></div>
+          <h3>服务到位</h3>
+          <p>LINE客服30分钟内回复，包裹状态主动通报</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-title" style="text-align:center;margin-bottom:32px">
+        <h2>发展历程</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">2014年</div>
+          <div class="timeline-text">速豹集运成立，开始主营台湾至大陆快递业务</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2016年</div>
+          <div class="timeline-text">推出敏感货专线，成为台湾少数可寄送保健品/茶叶的物流商</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2019年</div>
+          <div class="timeline-text">服务客户突破3000人，台湾仓库升级，扩大仓储容量</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2022年</div>
+          <div class="timeline-text">数字化升级，LINE客服系统上线，包裹追踪更便捷</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2026年</div>
+          <div class="timeline-text">线上平台全面升级，推出空运/海运/经济线三轨并行服务</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>有寄件需求？</h2>
+      <p>LINE客服30分钟内回复，欢迎随时咨询</p>
+      <a href="https://line.me/ti/p/~mmmppp004" class="btn" target="_blank"><i class="fab fa-line"></i> LINE立即咨询</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <h3>速豹集运 Subao.tw</h3>
+        <p>专注两岸快递服务，主营台湾寄大陆敏感货专线</p>
+        <p><i class="fab fa-line" style="color:#00B900;"></i> LINE：mmmppp004</p>
+      </div>
+      <div>
+        <h3>服务项目</h3>
+        <a href="/tw-to-cn">台湾寄大陆</a>
+        <a href="/cn-to-tw">大陆寄台湾</a>
+        <a href="/pricing">运费说明</a>
+        <a href="/article-list">物品攻略</a>
+        <a href="/faq">常见问题</a>
+      </div>
+      <div>
+        <h3>敏感货专线</h3>
+        <a href="/blog/health-products-shipping">保健品寄大陆</a>
+        <a href="/blog/tea-shipping-guide">茶叶寄大陆</a>
+        <a href="/blog/cosmetics-shipping">化妆品寄大陆</a>
+        <a href="/blog/food-shipping-guide">食品寄大陆</a>
+      </div>
+      <div>
+        <h3>联系我们</h3>
+        <a href="https://line.me/ti/p/~mmmppp004" target="_blank">LINE：mmmppp004</a>
+        <a href="mailto:business@videotvai.com">Email</a>
+        <a href="/about">关于我们</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 速豹集运 subaotw.cn All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="https://line.me/ti/p/~mmmppp004" class="line-button" target="_blank">
+    <i class="fab fa-line"></i>
+  </a>
+</body>
+</html>
