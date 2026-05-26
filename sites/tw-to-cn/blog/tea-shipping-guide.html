@@ -138,6 +138,21 @@
     .method-icon{font-size:28px}
     .method-name{font-weight:700;color:var(--text-dark);font-size:17px}
     @media(max-width:768px){.nav{display:none}.article-hero h1{font-size:24px}.article-content{padding:24px;margin:-10px 10px 20px}.related-grid{grid-template-columns:1fr}.footer .container{grid-template-columns:1fr}}
+
+    /* 浮动底栏 */
+    .float-bar{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,#00B900 0%,#009900 100%);padding:12px 20px;z-index:998;display:none;align-items:center;justify-content:center;gap:16px;box-shadow:0 -4px 20px rgba(0,0,0,0.2)}
+    .float-bar.show{display:flex}
+    .float-bar-text{flex:1;max-width:600px}
+    .float-bar-text p{color:#fff;font-size:15px;font-weight:500;margin:0}
+    .float-bar-text small{color:rgba(255,255,255,0.8);font-size:12px}
+    .float-bar .btn-line-bar{background:#fff;color:#00B900;font-weight:700;padding:10px 24px;border-radius:24px;font-size:15px;white-space:nowrap}
+    .float-bar .btn-line-bar:hover{background:#f0f0f0}
+    /* 文中间距CTA */
+    .mid-cta{background:linear-gradient(135deg,#FFF9F0 0%,#FFF3E0 100%);border:2px solid #FF9800;border-radius:12px;padding:24px;margin:32px 0;text-align:center}
+    .mid-cta h4{color:#E65100;font-size:17px;margin-bottom:8px}
+    .mid-cta p{color:#666;font-size:14px;margin-bottom:16px}
+    .mid-cta .btn{background:#FF6600;color:#fff;font-size:15px;padding:12px 28px;border-radius:24px}
+    .mid-cta .btn:hover{background:#E65100}
   </style>
 </head>
 <body>
@@ -431,10 +446,10 @@
       <p>有些業者報價便宜但走普通渠道，茶葉可能被海關退件或扣押，來回運費反而更貴。選擇有敏感貨清關經驗的轉運，性價比更高。</p>
     </div>
 
-    <div class="cta-box">
-      <h4>想寄茶葉給大陸親友或客戶？</h4>
-      <p>告訴我們茶葉種類、重量和目的地，最快5分鐘內幫你估價！</p>
-      <a href="https://line.me/ti/p/~mmmppp004" class="btn" target="_blank"><i class="fab fa-line"></i> 加入LINE免費估價</a>
+        <div class="cta-box">
+      <h4>不確定你的物品能不能寄？</h4>
+      <p>把物品照片、成分表傳到LINE，<strong>30分鐘內回覆</strong>，馬上幫你確認能不能寄、多少錢</p>
+      <a href="https://line.me/ti/p/~mmmppp004" class="btn" target="_blank"><i class="fab fa-line"></i> 傳照片問一下</a>
     </div>
 
     <h2>八、常見問題 FAQ</h2>
@@ -549,5 +564,23 @@
   <a href="https://line.me/ti/p/~mmmppp004" class="line-button" target="_blank">
     <i class="fab fa-line"></i>
   </a>
+  <!-- 浮动底栏 -->
+  <div class="float-bar" id="floatBar">
+    <div class="float-bar-text">
+      <p>📦 不确定能不能寄？<strong>传照片免费评估</strong></p>
+      <small>LINE：@subao　平均30分钟内回复</small>
+    </div>
+    <a href="https://line.me/ti/p/~mmmppp004" class="btn btn-line-bar" target="_blank">
+      <i class="fab fa-line"></i> 免费评估
+    </a>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      var bar = document.getElementById('floatBar');
+      if (window.scrollY > 400) { bar.classList.add('show'); }
+      else { bar.classList.remove('show'); }
+    });
+  </script>
 </body>
 </html>
