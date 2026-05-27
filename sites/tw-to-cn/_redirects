@@ -26,6 +26,7 @@
 # =================== 根目录页面 ===================
 /index.html / 301
 /about.html /about 301
+/tw /tw-to-cn 301
 /pricing.html /pricing 301
 /faq.html /faq 301
 /article-list.html /article-list 301
