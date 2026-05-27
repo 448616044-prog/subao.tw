@@ -1,7 +1,7 @@
 # Cloudflare Pages 301 重定向规则
 # 将 .html 后缀 URL 永久重定向到无后缀版本（避免重复内容）
 
-# Blog 文章页面
+# =================== Blog 文章页面 ===================
 /blog/cosmetics-shipping.html /blog/cosmetics-shipping 301
 /blog/food-shipping-guide.html /blog/food-shipping-guide 301
 /blog/health-products-shipping.html /blog/health-products-shipping 301
@@ -23,7 +23,7 @@
 /blog/tw-to-cn-shipping-guide.html /blog/tw-to-cn-shipping-guide 301
 /blog/tw-to-cn-shipping-methods.html /blog/tw-to-cn-shipping-methods 301
 
-# 根目录页面
+# =================== 根目录页面 ===================
 /index.html / 301
 /about.html /about 301
 /pricing.html /pricing 301
@@ -32,3 +32,32 @@
 /tw-to-cn.html /tw-to-cn 301
 /pricing-calculator.html /pricing-calculator 301
 /line.html /line 301
+
+# =================== 修复GSC备用页面问题 ===================
+# 旧文章URL（根目录已删除的文件）→ 301到blog对应页面
+/food-shipping-guide /blog/food-shipping-guide 301
+/taiwan-to-china-guide /blog/taiwan-to-china-guide 301
+
+# 旧article文件（已删除）→ 301到文章列表
+/article-01.html /article-list 301
+/article-05.html /article-list 301
+/article-10.html /article-list 301
+
+# 嵌套blog路径（GSC中大量备用页面来源）→ 301到单层blog
+/blog/blog/* /blog/:splat 301
+
+# blog目录下不存在的页面（重定向到根目录对应页面）
+/blog/pricing /pricing 301
+/blog/pricing-calculator /pricing-calculator 301
+/blog/about /about 301
+/blog/faq /faq 301
+/blog/line /line 301
+/blog/article-list /article-list 301
+/blog/tw-to-cn /tw-to-cn 301
+/blog/shipping-process /blog/tw-to-cn-shipping-guide 301
+
+# 旧文件名（prohibited-items已改名为tw-to-cn-prohibited-items）
+/blog/prohibited-items.html /blog/tw-to-cn-prohibited-items 301
+
+# 旧文件名（customs-regulations已改名）
+/blog/customs-regulations.html /blog/tw-to-cn-customs 301
