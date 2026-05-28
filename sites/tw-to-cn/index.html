@@ -28,7 +28,7 @@
     "alternateName": "Subao Logistics",
     "url": "https://subao.tw",
     "logo": "https://subao.tw/images/subao-logo-new.png",
-    "description": "專業台灣到大陸快遞服務商，專營敏感貨專線，5年兩岸物流經驗",
+    "description": "專業台灣到大陸快遞服務商，專營敏感貨專線，6年兩岸物流經驗",
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "customer service",
@@ -244,7 +244,13 @@
     .article-card h3 { font-size: 16px; color: var(--primary); margin-bottom: 12px; }
     .article-card p { color: var(--text-light); font-size: 14px; line-height: 1.6; }
     .article-card .tag { display: inline-block; background: var(--primary-light); color: var(--primary); font-size: 12px; padding: 2px 8px; border-radius: 10px; margin-bottom: 8px; }
-    @media (max-width: 992px) {
+    .stats-bar { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); padding: 32px 0; color: var(--text-white); }
+    .stats-bar .container { display: flex; justify-content: center; gap: 64px; flex-wrap: wrap; }
+    .stats-bar .stat-item { text-align: center; }
+    .stats-bar .stat-num { font-size: 36px; font-weight: 700; display: block; }
+    .stats-bar .stat-label { font-size: 14px; opacity: 0.85; }
+    .testimonial-new { border: 2px solid var(--primary); position: relative; }
+    .testimonial-new::before { content: '最新'; position: absolute; top: -1px; right: -1px; background: var(--primary); color: white; font-size: 11px; padding: 2px 8px; border-radius: 0 0 0 8px; font-weight: 700; }
       .nav { display: none; }
       .menu-toggle { display: block; }
 
@@ -335,6 +341,7 @@
   <div class="mobile-menu" id="mobileMenu">
     <a href="/tw-to-cn" class="mobile-nav-link active">台灣發大陸</a>
     <a href="/pricing" class="mobile-nav-link">運費報價</a>
+    <a href="/pricing-calculator" class="mobile-nav-link">運費試算</a>
     <a href="/article-list" class="mobile-nav-link">文章攻略</a>
     <a href="/faq" class="mobile-nav-link">常見問題</a>
     <a href="/about" class="mobile-nav-link">關於我們</a>
@@ -382,7 +389,7 @@
   <section class="section features">
     <div class="container">
       <h2 class="section-title">為什麼選擇速豹集運？</h2>
-      <p class="section-subtitle">5年兩岸物流經驗，專營敏感貨專線</p>
+      <p class="section-subtitle">6年兩岸物流經驗，專營敏感貨專線</p>
       <div class="features-grid">
         <div class="feature-item">
           <div class="feature-icon"><i class="fas fa-leaf"></i></div>
@@ -478,11 +485,44 @@
     </div>
   </section>
 
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stat-item">
+        <span class="stat-num">2000+</span>
+        <span class="stat-label">累計服務客戶</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">99%</span>
+        <span class="stat-label">客戶滿意度</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">6年+</span>
+        <span class="stat-label">兩岸物流經驗</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">LINE</span>
+        <span class="stat-label">平均30分鐘回覆</span>
+      </div>
+    </div>
+  </div>
+
   <section class="section testimonials">
     <div class="container">
       <h2 class="section-title">客戶真實評價</h2>
       <p class="section-subtitle">他們都在用速豹集運</p>
       <div class="testimonial-cards">
+        <div class="testimonial-card testimonial-new">
+          <div class="testimonial-content">
+            <p>「面膜寄深圳，20多盒約7.5公斤，客服很快就回了報價，過程很順利！第一次用速豹，感覺很專業，之後有需要會再找他們。」</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#7c3aed;">A</div>
+            <div class="author-info">
+              <h4>Amy（香江）</h4>
+              <p>新北市．美妝代購</p>
+            </div>
+          </div>
+        </div>
         <div class="testimonial-card">
           <div class="testimonial-content">
             <p>「魚油和維他命寄到大陸成功了！本來擔心會被退件，LINE問了之後客服說可以寄，果然3天就到了，爸媽收到很滿意。下次還用速豹！」</p>
@@ -588,7 +628,7 @@
       <div class="footer-content">
         <div class="footer-section">
           <h3>速豹集運</h3>
-          <p>專業台灣到大陸快遞服務商，專營敏感貨專線，5年兩岸物流經驗。</p>
+          <p>專業台灣到大陸快遞服務商，專營敏感貨專線，6年兩岸物流經驗。</p>
           <p><i class="fab fa-line" style="color:#00B900;"></i> LINE：mmmppp004</p>
         </div>
         <div class="footer-section">
