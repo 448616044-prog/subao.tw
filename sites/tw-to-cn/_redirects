@@ -45,11 +45,17 @@
 /article-10.html /article-list 301
 
 # 嵌套blog路径 → 精确301到正确blog页面（避免 /blog/blog/ 残留）
+# 三层嵌套（/blog/blog/blog/X）
 /blog/blog/blog/about /about 301
 /blog/blog/blog/cosmetics-shipping /blog/cosmetics-shipping 301
 /blog/blog/blog/food-shipping-guide /blog/food-shipping-guide 301
+# 二层嵌套（/blog/blog/X）
+/blog/blog/about /about 301
 /blog/blog/cosmetics-shipping /blog/cosmetics-shipping 301
 /blog/blog/food-shipping-guide /blog/food-shipping-guide 301
+
+# 兜底规则：任何其他 /blog/blog/X → /blog/X
+/blog/blog/* /blog/:splat 301
 
 # blog目录下不存在的页面（重定向到根目录对应页面）
 /blog/pricing /pricing 301
