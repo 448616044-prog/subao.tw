@@ -189,16 +189,18 @@
           <div class="calc-group">
             <label>商品類型</label>
             <select id="productType">
-              <option value="general">一般商品（衣物、電子產品、書籍等）</option>
-              <option value="sensitive">敏感貨（保健品、茶葉、化妝品）</option>
-              <option value="food">食品（零食、餅乾、不含肉類）</option>
-              <option value="medicine">中藥材（人參、枸杞等，不含動物成分）</option>
+              <option value="A">A類 藥品/奶粉/美妝/保健品</option>
+              <option value="B">B類 液體/粉末保健品</option>
+              <option value="C">C類 中西藥</option>
+              <option value="D">D類 電器</option>
             </select>
           </div>
           <div class="calc-group">
-            <label>重量（公斤）</label>
-            <input type="number" id="weight" placeholder="例如：2.5" min="0.1" max="30" step="0.1">
-            <span class="hint">单次最高30公斤，超重请分批或联系我们</span>
+            <label>快遞線路</label>
+            <select id="serviceType">
+              <option value="economy">🚢 經濟專線（海運，約兩週到貨）</option>
+              <option value="express">✈️ 快件專線（空運，約一週到貨）</option>
+            </select>
           </div>
         </div>
 
@@ -206,30 +208,31 @@
           <div class="calc-group">
             <label>目的地區域</label>
             <select id="region">
-              <option value="mainland">大陸主要城市（北上廣深等）</option>
-              <option value="remote">大陸偏遠地區（新疆、西藏、雲南偏鄉等）</option>
+              <option value="south">🌴 華南（福建、廣東）</option>
+              <option value="east">🏙️ 華東（浙江、上海）</option>
+              <option value="center">🌾 華中（江西、湖南、湖北、安徽）</option>
+              <option value="north">❄️ 華北（山東、山西、天津、北京、河北、河南）</option>
+              <option value="southwest">🏔️ 西南（四川、重慶、貴州、雲南、廣西、海南）</option>
+              <option value="other">🌌 東北/西北地區</option>
             </select>
           </div>
           <div class="calc-group">
-            <label>快遞速度</label>
-            <select id="speed">
-              <option value="fast">快速專線（3-5天）</option>
-              <option value="standard">標準專線（5-7天）</option>
-              <option value="economy">經濟專線（7-12天）</option>
-            </select>
+            <label>重量（公斤）</label>
+            <input type="number" id="weight" placeholder="例如：2.5" min="0.1" max="1000" step="0.1">
+            <span class="hint">10kg 以下需加 NT$100 派送費</span>
           </div>
         </div>
 
         <div id="resultPanel" class="result-panel">
-          <div class="result-label">參考運費區間</div>
+          <div class="result-label">參考運費（含清關及派送）</div>
           <div class="result-price" id="resultPrice">—</div>
           <div class="result-delivery" id="resultDelivery"></div>
-          <div class="result-note">實際費用以客服報價為準，此為參考區間</div>
+          <div class="result-note">實際費用以 LINE 客服最終報價為準</div>
         </div>
 
         <div class="info-box">
           <h4>💡 計費說明</h4>
-          <p>速豹集運按實際重量與體積重量（長×寬×高÷6000）取較大值計算。LINE聯繫客服可獲得精確報價，包含運費、海關申報費、保險等全部費用，絕無隱藏收費。</p>
+          <p>速豹參考運費已含清關費及派送費。10kg 以下加收 NT$100 派送費，滿 10kg 免收。重量以實際重量與體積重量（長×寬×高÷6000）取較大值計算。LINE 聯繫客服可獲得精確報價，包含所有費用，絕無隱藏收費。</p>
         </div>
 
         <div class="cta-box">
@@ -243,37 +246,46 @@
             <tr>
               <th>專線類型</th>
               <th>參考時效</th>
-              <th>每公斤參考價</th>
+              <th>每公斤參考價（華南為例）</th>
               <th>適合商品</th>
             </tr>
           </thead>
           <tbody>
             <tr class="recommended">
-              <td>敏感貨專線 <span class="badge">熱門</span></td>
-              <td>5-10天</td>
-              <td class="price">NT$80-120/kg</td>
-              <td>保健品、茶葉、化妝品</td>
+              <td>敏感貨專線（經濟） <span class="badge">熱門</span></td>
+              <td>約兩週</td>
+              <td class="price">NT$320-480/kg</td>
+              <td>A類保健品/美妝/藥品</td>
             </tr>
             <tr>
-              <td>空運快遞</td>
-              <td>3-5天</td>
-              <td class="price">NT$120-180/kg</td>
-              <td>緊急商品、一般商品</td>
+              <td>敏感貨專線（快件）</td>
+              <td>約一週</td>
+              <td class="price">NT$440-590/kg</td>
+              <td>需快速通關的敏感貨</td>
             </tr>
             <tr>
-              <td>標準專線</td>
-              <td>5-7天</td>
-              <td class="price">NT$60-90/kg</td>
-              <td>衣物、書籍、日用品</td>
+              <td>液體/粉末保健品線</td>
+              <td>約一週～兩週</td>
+              <td class="price">NT$410-700/kg</td>
+              <td>B類液體/粉末保健品</td>
             </tr>
             <tr>
-              <td>經濟專線</td>
-              <td>7-12天</td>
-              <td class="price">NT$40-70/kg</td>
-              <td>非緊急商品、普貨</td>
+              <td>中西藥专线</td>
+              <td>約一週～兩週</td>
+              <td class="price">NT$370-1000/kg</td>
+              <td>C類中藥/西藥</td>
+            </tr>
+            <tr>
+              <td>電器專線</td>
+              <td>約一週～兩週</td>
+              <td class="price">NT$460-1370/kg</td>
+              <td>D類電器（注意海關核價）</td>
             </tr>
           </tbody>
         </table>
+        <p style="font-size:13px;color:#888;text-align:center;margin-top:12px;">
+          ※ 偏遠地區（東北/西北/西南）運費較高，請以試算結果為準｜10kg 以下加收 NT$100 派送費
+        </p>
       </div>
     </div>
   </section>
@@ -315,44 +327,70 @@
   </a>
 
   <script>
-    const rates = {
-      general: { economy: [40, 70], standard: [60, 90], fast: [120, 180] },
-      sensitive: { economy: [60, 90], standard: [80, 120], fast: [140, 200] },
-      food: { economy: [50, 80], standard: [70, 100], fast: [130, 190] },
-      medicine: { economy: [55, 85], standard: [75, 110], fast: [135, 195] }
+    // 参考 pricing.html 的真实定价数据
+    const pricingData = {
+      economy: {
+        south:  { A: 320, B: 410, C: 560, D: 880 },
+        east:   { A: 340, B: 430, C: 600, D: 880 },
+        center: { A: 360, B: 440, C: 600, D: 890 },
+        north:  { A: 440, B: 850, C: 440, D: 600 },
+        southwest: { A: 480, B: 620, C: 370, D: 460 },
+        other:  { A: 410, B: 650, C: 490, D: 710 }
+      },
+      express: {
+        south:  { A: 440, B: 510, C: 990, D: 1370 },
+        east:   { A: 580, B: 700, C: 1000, D: 1370 },
+        center: { A: 590, B: 700, C: 1000, D: 1370 },
+        north:  { A: 440, B: 700, C: 460, D: 600 },
+        southwest: { A: 480, B: 510, C: 370, D: 700 },
+        other:  { A: 410, B: 650, C: 490, D: 710 }
+      }
     };
 
-    const deliveryText = {
-      economy: '7-12個工作天送達',
-      standard: '5-7個工作天送達',
-      fast: '3-5個工作天送達'
+    const regionNames = {
+      south: '🌴 華南（福建、廣東）',
+      east: '🏙️ 華東（浙江、上海）',
+      center: '🌾 華中（江西、湖南、湖北、安徽）',
+      north: '❄️ 華北（山東、山西、天津、北京、河北、河南）',
+      southwest: '🏔️ 西南（四川、重慶、貴州、雲南、廣西、海南）',
+      other: '🌌 東北/西北地區'
     };
 
-    const regionMultipler = { mainland: 1, remote: 1.2 };
+    const serviceNames = {
+      economy: '🚢 經濟專線（海運約兩週）',
+      express: '✈️ 快件專線（空運約一週）'
+    };
+
+    const typeNames = {
+      A: 'A類 藥品/奶粉/美妝/保健品',
+      B: 'B類 液體/粉末保健品',
+      C: 'C類 中西藥',
+      D: 'D類 電器'
+    };
 
     function calculate() {
       const type = document.getElementById('productType').value;
       const weight = parseFloat(document.getElementById('weight').value);
       const region = document.getElementById('region').value;
-      const speed = document.getElementById('speed').value;
+      const service = document.getElementById('serviceType').value;
 
       if (!weight || weight <= 0) {
         document.getElementById('resultPanel').classList.remove('show');
         return;
       }
 
-      const [minRate, maxRate] = rates[type][speed];
-      const multiplier = regionMultipler[region];
-      const minPrice = Math.round(minRate * weight * multiplier);
-      const maxPrice = Math.round(maxRate * weight * multiplier);
+      const rate = pricingData[service][region][type];
+      const baseCost = weight * rate;
+      const surcharge = weight < 10 ? 100 : 0;
+      const total = baseCost + surcharge;
 
-      document.getElementById('resultPrice').textContent =
-        'NT$ ' + minPrice.toLocaleString() + ' - NT$ ' + maxPrice.toLocaleString();
-      document.getElementById('resultDelivery').textContent = '📦 ' + deliveryText[speed];
+      document.getElementById('resultPrice').textContent = 'NT$ ' + Math.round(total).toLocaleString();
+      document.getElementById('resultDelivery').textContent =
+        serviceNames[service] + '｜' + regionNames[region];
       document.getElementById('resultPanel').classList.add('show');
     }
 
-    ['productType', 'weight', 'region', 'speed'].forEach(function(id) {
+    ['productType', 'weight', 'region', 'serviceType'].forEach(function(id) {
       document.getElementById(id).addEventListener('change', calculate);
       document.getElementById(id).addEventListener('input', calculate);
     });
