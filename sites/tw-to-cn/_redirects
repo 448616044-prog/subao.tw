@@ -39,6 +39,30 @@
 /food-shipping-guide /blog/food-shipping-guide 301
 /taiwan-to-china-guide /blog/taiwan-to-china-guide 301
 
+# 根目录旧blog页面URL（无.html后缀）→ 301到/blog/对应页面（修复404问题）
+# 这些页面在根目录不存在，但用户/外链可能访问
+/tea-shipping-guide /blog/tea-shipping-guide 301
+/cosmetics-shipping /blog/cosmetics-shipping 301
+/health-products-shipping /blog/health-products-shipping 301
+/shopee-shipping /blog/shopee-shipping 301
+/taiwan-medicine-to-china /blog/taiwan-medicine-to-china 301
+/mid-autumn-mooncake-shipping /blog/mid-autumn-mooncake-shipping 301
+/taobao-consolidated-shipping /blog/taobao-consolidated-shipping 301
+/tw-to-cn-cost /blog/tw-to-cn-cost 301
+/tw-to-cn-customs /blog/tw-to-cn-customs 301
+/tw-to-cn-express-comparison /blog/tw-to-cn-express-comparison 301
+/tw-to-cn-logistics-comparison /blog/tw-to-cn-logistics-comparison 301
+/tw-to-cn-logistics-recommend /blog/tw-to-cn-logistics-recommend 301
+/tw-to-cn-prohibited-items /blog/tw-to-cn-prohibited-items 301
+/tw-to-cn-returned /blog/tw-to-cn-returned 301
+/tw-to-cn-shipping-guide /blog/tw-to-cn-shipping-guide 301
+/tw-to-cn-shipping-methods /blog/tw-to-cn-shipping-methods 301
+/taiwan-products-jd-tmall /blog/taiwan-products-jd-tmall 301
+/taiwan-to-china-shipping-time /blog/taiwan-to-china-shipping-time 301
+
+# 旧GSC覆盖的 /food-shipping-guide（已有→/blog/food-shipping-guide，上移确认）
+# ↑ 已在上方第39-40行定义，此处重复已删除
+
 # 旧article文件（已删除）→ 301到文章列表
 /article-01.html /article-list 301
 /article-05.html /article-list 301
