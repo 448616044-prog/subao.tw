@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>运费说明_台湾寄大陆快递费用查询_敏感货专线价格 - 速豹集运</title>
-  <meta name="description" content="速豹集运台湾寄大陆运费透明公开，空运专线NT$280/kg起，海运专线NT$120/kg起，经济线NT$180/kg起。运费=重量×单价+附加费，无隐藏收费。">
+  <meta name="description" content="速豹集运台湾寄大陆运费透明公开，空运专线NT$380/kg起，海运专线NT$290/kg起，经济线NT$290/kg起。运费=重量×单价+附加费，无隐藏收费。">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://subaotw.cn/pricing">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -81,14 +81,14 @@
     "@context": "https://schema.org",
     "@type": "PriceSpecification",
     "name": "台湾寄大陆快递运费",
-    "description": "速豹集运台湾寄大陆运费表，空运NT$280/kg，海运NT$120/kg，经济线NT$180/kg",
+    "description": "速豹集运台湾寄大陆运费表，空运NT$380/kg，海运NT$290/kg，经济线NT$290/kg",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "台湾寄大陆运费",
       "itemListElement": [
-        {"@type": "Offer", "itemOffered":{"@type":"Service","name":"空运专线"}, "price":"280", "priceCurrency":"TWD", "unitText":"kg"},
-        {"@type": "Offer", "itemOffered":{"@type":"Service","name":"海运专线"}, "price":"120", "priceCurrency":"TWD", "unitText":"kg"},
-        {"@type": "Offer", "itemOffered":{"@type":"Service","name":"经济线"}, "price":"180", "priceCurrency":"TWD", "unitText":"kg"}
+        {"@type": "Offer", "itemOffered":{"@type":"Service","name":"空运专线"}, "price":"380", "priceCurrency":"TWD", "unitText":"kg"},
+        {"@type": "Offer", "itemOffered":{"@type":"Service","name":"海运专线"}, "price":"290", "priceCurrency":"TWD", "unitText":"kg"},
+        {"@type": "Offer", "itemOffered":{"@type":"Service","name":"经济线"}, "price":"290", "priceCurrency":"TWD", "unitText":"kg"}
       ]
     }
   }
@@ -138,21 +138,21 @@
         <tbody>
           <tr>
             <td><span class="method-badge badge-air">✈️ 空运专线</span></td>
-            <td><strong>NT$280/kg</strong></td>
+            <td><strong>NT$380/kg</strong></td>
             <td>NT$400</td>
             <td>3-5个工作日</td>
             <td>茶叶/保健品/化妆品/食品（敏感货）</td>
           </tr>
           <tr class="highlight">
             <td><span class="method-badge badge-sea">🚢 海运专线</span></td>
-            <td><strong>NT$120/kg</strong></td>
+            <td><strong>NT$290/kg</strong></td>
             <td>NT$600</td>
             <td>7-12个工作日</td>
             <td>大件重货/家具/机器/批量商品</td>
           </tr>
           <tr>
             <td><span class="method-badge badge-economy">📦 经济线</span></td>
-            <td><strong>NT$180/kg</strong></td>
+            <td><strong>NT$290/kg</strong></td>
             <td>NT$300</td>
             <td>5-8个工作日</td>
             <td>普货/日用品/服饰（不接敏感货）</td>
@@ -177,9 +177,9 @@
         <div class="calc-row">
           <label>选择渠道</label>
           <select id="channel">
-            <option value="280">空运专线（NT$280/kg）</option>
-            <option value="120">海运专线（NT$120/kg）</option>
-            <option value="180">经济线（NT$180/kg）</option>
+            <option value="380">空运专线（NT$380/kg）</option>
+            <option value="291">海运专线（NT$290/kg）</option>
+            <option value="290">经济线（NT$290/kg）</option>
           </select>
         </div>
         <div class="calc-row">
@@ -339,7 +339,7 @@
       var weight = parseFloat(document.getElementById('weight').value) || 0;
       var type = document.getElementById('type').value;
       var surcharge = type === 'sensitive' ? 50 : (type === 'highvalue' ? 100 : 0);
-      var minCharge = channel === 280 ? 400 : (channel === 120 ? 600 : 300);
+      var minCharge = channel === 380 ? 400 : (channel === 291 ? 600 : 300);
       var base = weight * channel;
       var total = Math.max(base, minCharge) + surcharge;
       document.getElementById('result').textContent = 'NT$' + total.toLocaleString();
