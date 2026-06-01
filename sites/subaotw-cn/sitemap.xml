@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://subaotw.cn/</loc><priority>1.0</priority></url>
-  <url><loc>https://subaotw.cn/equipment/</loc><priority>0.9</priority></url>
-  <url><loc>https://subaotw.cn/tw-to-cn/</loc><priority>0.9</priority></url>
-  <url><loc>https://subaotw.cn/guide/</loc><priority>0.8</priority></url>
-  <url><loc>https://subaotw.cn/faq</loc><priority>0.7</priority></url>
-  <url><loc>https://subaotw.cn/about</loc><priority>0.6</priority></url>
-  <url><loc>https://subaotw.cn/contact</loc><priority>0.6</priority></url>
-  <url><loc>https://subaotw.cn/equipment/cnc-export-taiwan</loc><priority>0.8</priority></url>
-  <url><loc>https://subaotw.cn/equipment/injection-molding</loc><priority>0.8</priority></url>
-  <url><loc>https://subaotw.cn/equipment/press-machine</loc><priority>0.8</priority></url>
-  <url><loc>https://subaotw.cn/equipment/packaging-equipment</loc><priority>0.7</priority></url>
-  <url><loc>https://subaotw.cn/equipment/medical-instruments</loc><priority>0.8</priority></url>
-  <url><loc>https://subaotw.cn/equipment/industrial-robot</loc><priority>0.7</priority></url>
-  <url><loc>https://subaotw.cn/guide/equipment-export-process</loc><priority>0.8</priority></url>
-  <url><loc>https://subaotw.cn/tw-to-cn/food-shipping</loc><priority>0.8</priority></url>
+  <url><loc>https://www.subaotw.cn/</loc><priority>1.0</priority></url>
+  <url><loc>https://www.subaotw.cn/equipment/</loc><priority>0.9</priority></url>
+  <url><loc>https://www.subaotw.cn/tw-to-cn/</loc><priority>0.9</priority></url>
+  <url><loc>https://www.subaotw.cn/guide/</loc><priority>0.8</priority></url>
+  <url><loc>https://www.subaotw.cn/faq</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/about</loc><priority>0.6</priority></url>
+  <url><loc>https://www.subaotw.cn/contact</loc><priority>0.6</priority></url>
+  <url><loc>https://www.subaotw.cn/tw-to-cn/food-shipping</loc><priority>0.8</priority></url>
+  <url><loc>https://www.subaotw.cn/guide/equipment-export-process</loc><priority>0.8</priority></url>
+  <!-- 大件设备品类页（15页） -->
+  <url><loc>https://www.subaotw.cn/equipment/cnc-export-taiwan</loc><priority>0.8</priority></url>
+  <url><loc>https://www.subaotw.cn/equipment/injection-molding</loc><priority>0.8</priority></url>
+  <url><loc>https://www.subaotw.cn/equipment/press-machine</loc><priority>0.8</priority></url>
+  <url><loc>https://www.subaotw.cn/equipment/packaging-equipment</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/equipment/agricultural-machinery</loc><priority>0.8</priority></url>
+  <url><loc>https://www.subaotw.cn/equipment/textile-machinery</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/equipment/printing-equipment</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/equipment/construction-machinery</loc><priority>0.8</priority></url>
+  <url><loc>https://www.subaotw.cn/equipment/food-processing</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/equipment/plastic-machinery</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/equipment/woodworking</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/equipment/mining-equipment</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/equipment/mold-tooling</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/equipment/car-engine</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/equipment/mechanical-parts</loc><priority>0.7</priority></url>
 </urlset>

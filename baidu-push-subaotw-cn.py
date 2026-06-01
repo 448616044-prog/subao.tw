@@ -4,7 +4,7 @@ import requests
 import os
 
 # 百度站长平台 — 主动推送 API（备案通过后在百度站长平台获取）
-BAIDU_API_URL = "http://data.zz.baidu.com/urls?site=https://subaotw.cn&token=YOUR_BAIDU_TOKEN"
+BAIDU_API_URL = "http://data.zz.baidu.com/urls?site=https://www.subaotw.cn&token=K4kVPs6NwjtWr4ij"
 
 SITE_DIR = "/Users/mac/WorkBuddy/Claw/物流項目/sites/subaotw-cn"
 
@@ -15,9 +15,9 @@ def find_html_files():
             if f.endswith('.html'):
                 rel = os.path.relpath(os.path.join(root, f), SITE_DIR)
                 if rel == 'index.html':
-                    urls.append('https://subaotw.cn/')
+                    urls.append('https://www.subaotw.cn/')
                 else:
-                    url = 'https://subaotw.cn/' + rel.replace('.html', '').replace('/index', '')
+                    url = 'https://www.subaotw.cn/' + rel.replace('.html', '').replace('/index', '')
                     urls.append(url)
     return sorted(urls)
 

@@ -10,13 +10,26 @@
 | 页面 | URL | 状态 |
 |------|-----|------|
 | 首页 | / | ✅ 双线入口 |
-| 设备总览 | /equipment/ | ✅ 12品类卡片 |
+| 设备总览 | /equipment/ | ✅ 19品类卡片（2026-06-01更新） |
 | CNC机床 | /equipment/cnc-export-taiwan | ✅ |
 | 注塑机 | /equipment/injection-molding | ✅ |
 | 冲床/折弯机 | /equipment/press-machine | ✅ |
 | 包装机械 | /equipment/packaging-equipment | ✅ |
 | 医疗仪器 | /equipment/medical-instruments | ✅ |
 | 工业机器人 | /equipment/industrial-robot | ✅ |
+| 纺织设备 | /equipment/textile-machinery | ✅ 2026-06-01新增 |
+| 印刷机械 | /equipment/printing-equipment | ✅ 2026-06-01新增 |
+| 电力设备 | /equipment/electrical-equipment | ✅ 2026-06-01新增 |
+| 工程机械 | /equipment/construction-machinery | ✅ 2026-06-01新增 |
+| 食品加工 | /equipment/food-processing | ✅ 2026-06-01新增 |
+| 塑料机械 | /equipment/plastic-machinery | ✅ 2026-06-01新增 |
+| 木工机械 | /equipment/woodworking | ✅ 2026-06-01新增 |
+| 金属加工 | /equipment/metal-processing | ✅ 2026-06-01新增 |
+| 矿山设备 | /equipment/mining-equipment | ✅ 2026-06-01新增 |
+| 发电机 | /equipment/generator | ✅ 2026-06-01新增 |
+| 泵阀设备 | /equipment/pump-valve | ✅ 2026-06-01新增 |
+| 模具工装 | /equipment/mold-tooling | ✅ 2026-06-01新增 |
+| 实验室设备 | /equipment/lab-equipment | ✅ 2026-06-01新增 |
 | 设备出口流程 | /guide/equipment-export-process | ✅ |
 | 台湾食品寄大陆 | /tw-to-cn/food-shipping | ✅ |
 | 关于我们 | /about | ✅ |
@@ -25,7 +38,7 @@
 | 运费估算 | /pricing | ⚠️ 需更新为大件定价 |
 | 台湾寄大陆总览 | /tw-to-cn | ⚠️ 需更新内容 |
 
-**已完成：14/16 页**
+**已完成：27/29 页** 🔺
 
 ---
 
@@ -33,11 +46,11 @@
 
 | 项目 | 状态 | 说明 |
 |------|------|------|
-| sitemap.xml | ✅ | 16个URL |
+| sitemap.xml | ✅ | 29个URL（2026-06-01更新） |
 | robots.txt | ✅ | 允许百度蜘蛛 |
-| 百度推送脚本 | ✅ | baidu-push-subaotw-cn.py |
+| 百度推送脚本 | ✅ | baidu-push-subaotw-cn.py（待获取百度token） |
 | 部署脚本 | ✅ | deploy-subaotw-cn.sh |
-| Schema结构化数据 | ⚠️ | 首页已加，其余待补 |
+| Schema结构化数据 | ✅ | equipment/index ItemList(19项) |
 
 ---
 
@@ -78,10 +91,9 @@ python3 baidu-push-subaotw-cn.py
 
 | 优先级 | 页面 | 说明 |
 |--------|------|------|
-| P0 | /equipment/ 剩余13个品类页 | 纺织/印刷/电力/工程/食品/塑料等 |
+| P0 | /equipment/ 剩余13个品类页 | ✅ 2026-06-01已全部完成 |
 | P0 | /tw-to-cn/ 9个敏感货页 | 茶叶/保健品/化妆品/药品等 |
 | P1 | /guide/ 9个知识页 | 报关文件/关税/包装标准/ECFA等 |
-| P1 | /cases/ 5个案例页 | CNC→东莞/注塑机→深圳等 |
-| P1 | /equipment/index.html | 需补充Schema(ItemList) |
-| P2 | 百度站长验证 | 添加验证文件 |
-| P2 | 全站Schema补齐 | Article+FAQPage+HowTo |
+| P1 | /cases/ 6个案例页 | CNC→东莞/注塑机→深圳等 |
+| P2 | 百度站长验证 | 🔴 需要登录 zhanzhang.baidu.com 添加站点 |
+| P2 | 百度推送token获取 | 验证通过后在站长平台获取 |
