@@ -23,6 +23,10 @@
 /blog/tw-to-cn-shipping-guide.html /blog/tw-to-cn-shipping-guide 301
 /blog/tw-to-cn-shipping-methods.html /blog/tw-to-cn-shipping-methods 301
 
+# =================== 2026-06 新增文章 ===================
+/blog/chinese-medicine-shipping.html /blog/chinese-medicine-shipping 301
+/blog/can-it-be-shipped.html /blog/can-it-be-shipped 301
+
 # =================== 根目录页面 ===================
 /index.html / 301
 /about.html /about 301
@@ -77,6 +81,9 @@
 /blog/blog/about /about 301
 /blog/blog/cosmetics-shipping /blog/cosmetics-shipping 301
 /blog/blog/food-shipping-guide /blog/food-shipping-guide 301
+
+# GSC已发现的404修复（深层blog嵌套→直接301，避免链式重定向）
+/blog/blog/blog/article-list /article-list 301
 
 # 兜底规则：任何其他 /blog/blog/X → /blog/X
 /blog/blog/* /blog/:splat 301
