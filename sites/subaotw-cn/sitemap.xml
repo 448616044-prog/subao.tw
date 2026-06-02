@@ -25,4 +25,31 @@
   <url><loc>https://www.subaotw.cn/equipment/mold-tooling</loc><priority>0.7</priority></url>
   <url><loc>https://www.subaotw.cn/equipment/car-engine</loc><priority>0.7</priority></url>
   <url><loc>https://www.subaotw.cn/equipment/mechanical-parts</loc><priority>0.7</priority></url>
+  <!-- 台湾寄大陆敏感货（9页） -->
+  <url><loc>https://www.subaotw.cn/tw-to-cn/food-shipping</loc><priority>0.8</priority></url>
+  <url><loc>https://www.subaotw.cn/tw-to-cn/tea-shipping</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/tw-to-cn/health-products</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/tw-to-cn/cosmetics-shipping</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/tw-to-cn/medicine-shipping</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/tw-to-cn/mooncake-shipping</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/tw-to-cn/clothing-shipping</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/tw-to-cn/books-shipping</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/tw-to-cn/baby-products</loc><priority>0.7</priority></url>
+  <!-- 物流指南（10页） -->
+  <url><loc>https://www.subaotw.cn/guide/customs-documents</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/guide/taiwan-import-tax</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/guide/packaging-standard</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/guide/oversize-permit</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/guide/ecfa-tariff</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/guide/shipping-methods</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/guide/insurance-guide</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/guide/weight-calculation</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/guide/tw-cn-logistics-terms</loc><priority>0.7</priority></url>
+  <!-- 客户案例（6页） -->
+  <url><loc>https://www.subaotw.cn/cases/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/cases/case-cnc-dongguan</loc><priority>0.6</priority></url>
+  <url><loc>https://www.subaotw.cn/cases/case-injection-shenzhen</loc><priority>0.6</priority></url>
+  <url><loc>https://www.subaotw.cn/cases/case-press-foshan</loc><priority>0.6</priority></url>
+  <url><loc>https://www.subaotw.cn/cases/case-textile-xiamen</loc><priority>0.6</priority></url>
+  <url><loc>https://www.subaotw.cn/cases/case-mold-kunshan</loc><priority>0.6</priority></url>
 </urlset>
