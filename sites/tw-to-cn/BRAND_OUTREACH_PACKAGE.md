@@ -75,7 +75,7 @@
 ---
 
 速豹集运 subao.tw
-LINE：@subao（台湾专线客服）
+LINE：@subaotw5988（台湾专线客服）
 Email: business@videotvai.com
 
 ---
@@ -108,7 +108,7 @@ Email: business@videotvai.com
 ---
 
 速豹集运
-LINE：@subao
+LINE：@subaotw5988
 Email: business@videotvai.com
 
 ---
@@ -138,7 +138,7 @@ Would you be open to a brief call or email exchange? I'd be happy to share more 
 Best regards,
 
 速豹集运 / subao.tw
-LINE: @subao
+LINE: @subaotw5988
 Email: business@videotvai.com
 
 ---
@@ -151,7 +151,7 @@ Best regards,
 速豹集運 · subao.tw
 跨境物流专家 | 台湾 ↔ 大陆专线
 ━━━━━━━━━━━━━━━━━━━━━━
-📱 LINE：@subao（直接点击添加：https://line.me/ti/p/~subaotw5988）
+📱 LINE：@subaotw5988（直接点击添加：https://line.me/ti/p/~subaotw5988）
 📧 Email：business@videotvai.com
 🌐 网站：https://subao.tw
 ```
