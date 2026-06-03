@@ -26,6 +26,8 @@
 # =================== 2026-06 新增文章 ===================
 /blog/chinese-medicine-shipping.html /blog/chinese-medicine-shipping 301
 /blog/can-it-be-shipped.html /blog/can-it-be-shipped 301
+/blog/electronics-shipping.html /blog/electronics-shipping 301
+/blog/personal-belongings-shipping.html /blog/personal-belongings-shipping 301
 
 # =================== 根目录页面 ===================
 /index / 301

@@ -7,6 +7,8 @@
   <url><loc>https://www.subaotw.cn/faq</loc><priority>0.7</priority></url>
   <url><loc>https://www.subaotw.cn/about</loc><priority>0.6</priority></url>
   <url><loc>https://www.subaotw.cn/contact</loc><priority>0.6</priority></url>
+  <url><loc>https://www.subaotw.cn/article-list</loc><priority>0.6</priority></url>
+  <url><loc>https://www.subaotw.cn/tw-to-cn</loc><priority>0.8</priority></url>
   <url><loc>https://www.subaotw.cn/tw-to-cn/food-shipping</loc><priority>0.8</priority></url>
   <url><loc>https://www.subaotw.cn/guide/equipment-export-process</loc><priority>0.8</priority></url>
   <!-- 大件设备品类页（15页） -->
