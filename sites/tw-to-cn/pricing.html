@@ -262,7 +262,7 @@
     function calculatePrice(){var type=document.getElementById('calc-type').value;var weight=parseFloat(document.getElementById('calc-weight').value);var region=document.getElementById('calc-region').value;if(!weight||weight<=0){alert('請輸入有效的重量');return;}var rates=pricingData[currentService][region];var rate=rates[type];var cost=weight*rate;var surcharge=weight<10?100:0;var total=cost+surcharge;var resultBox=document.getElementById('calc-result');var resultValue=document.getElementById('calc-result-value');var resultDetail=document.getElementById('calc-result-detail');resultValue.textContent='NT$ '+Math.round(total).toLocaleString();resultDetail.textContent=weight+' kg × NT$'+rate+'/kg'+(surcharge>0?' + NT$ 100 派送費（不足10kg）':'（滿10kg免派送費）')+'｜精確費用以LINE客服報價為準';resultBox.classList.add('show');}
   </script>
 <!-- LINE BACKUP FALLBACK -->
-<span style="position:fixed;bottom:70px;right:20px;z-index:9996;font-size:11px;color:#888;background:rgba(255,255,255,0.9);padding:2px 8px;border-radius:4px">
+<span style="position:fixed;bottom:5px;right:20px;z-index:9996;font-size:11px;color:#888;background:rgba(255,255,255,0.9);padding:2px 8px;border-radius:4px">
   <a href="/contact-form" style="color:#666;text-decoration:underline">LINE打不開？點這留言</a>
 </span>
 </body>
