@@ -32,6 +32,7 @@
 /index.html / 301
 /about.html /about 301
 /tw /tw-to-cn 301
+/cn /tw-to-cn 301
 /pricing.html /pricing 301
 /faq.html /faq 301
 /article-list.html /article-list 301
@@ -110,3 +111,6 @@
 
 # 旧文件名（customs-regulations已改名）
 /blog/customs-regulations.html /blog/tw-to-cn-customs 301
+
+# 旧文件名（recommended-logistics已改名）
+/blog/recommended-logistics.html /blog/tw-to-cn-logistics-recommend 301
