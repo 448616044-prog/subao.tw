@@ -41,6 +41,7 @@
 /tw-to-cn.html /tw-to-cn 301
 /pricing-calculator.html /pricing-calculator 301
 /line.html /line 301
+/contact-form.html /contact-form 301
 
 # =================== 修复GSC备用页面问题 ===================
 # 旧文章URL（根目录已删除的文件）→ 301到blog对应页面

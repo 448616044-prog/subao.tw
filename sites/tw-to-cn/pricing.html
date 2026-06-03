@@ -261,5 +261,9 @@
     function switchService(service){currentService=service;document.querySelectorAll('.service-btn').forEach(function(btn){btn.classList.remove('active')});document.querySelectorAll('.pricing-grid').forEach(function(grid){grid.classList.remove('active')});if(service==='economy'){document.querySelector('.service-btn:nth-child(1)').classList.add('active');document.getElementById('pricing-economy').classList.add('active');}else{document.querySelector('.service-btn:nth-child(2)').classList.add('active');document.getElementById('pricing-express').classList.add('active');}}
     function calculatePrice(){var type=document.getElementById('calc-type').value;var weight=parseFloat(document.getElementById('calc-weight').value);var region=document.getElementById('calc-region').value;if(!weight||weight<=0){alert('請輸入有效的重量');return;}var rates=pricingData[currentService][region];var rate=rates[type];var cost=weight*rate;var surcharge=weight<10?100:0;var total=cost+surcharge;var resultBox=document.getElementById('calc-result');var resultValue=document.getElementById('calc-result-value');var resultDetail=document.getElementById('calc-result-detail');resultValue.textContent='NT$ '+Math.round(total).toLocaleString();resultDetail.textContent=weight+' kg × NT$'+rate+'/kg'+(surcharge>0?' + NT$ 100 派送費（不足10kg）':'（滿10kg免派送費）')+'｜精確費用以LINE客服報價為準';resultBox.classList.add('show');}
   </script>
+<!-- LINE BACKUP FALLBACK -->
+<a href="/contact-form" style="position:fixed;bottom:80px;right:20px;z-index:9997;background:#fff;color:#666;border:1px solid #e0e0e0;padding:6px 12px;border-radius:16px;font-size:11px;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,0.08);transition:all 0.2s" onmouseover="this.style.borderColor='var(--primary)';this.style.color='var(--primary)'" onmouseout="this.style.borderColor='#e0e0e0';this.style.color='#666'">
+  🔒 LINE打不開？<span style="text-decoration:underline;font-weight:500">點這留言</span>
+</a>
 </body>
 </html>
