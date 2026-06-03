@@ -151,7 +151,7 @@ Best regards,
 速豹集運 · subao.tw
 跨境物流专家 | 台湾 ↔ 大陆专线
 ━━━━━━━━━━━━━━━━━━━━━━
-📱 LINE：@subao（直接点击添加：https://line.me/ti/p/~mmmppp004）
+📱 LINE：@subao（直接点击添加：https://line.me/ti/p/~subaotw5988）
 📧 Email：business@videotvai.com
 🌐 网站：https://subao.tw
 ```
