@@ -733,7 +733,7 @@
 
 <!-- 悬浮LINE CTA -->
 <style>
-.floating-cta{position:fixed;bottom:65px;left:50%;transform:translateX(-50%);z-index:9999;background:linear-gradient(135deg,#00B900,#009900);color:#fff;padding:14px 28px;border-radius:30px;font-weight:700;font-size:15px;box-shadow:0 4px 20px rgba(0,185,0,0.4);text-decoration:none;display:flex;align-items:center;gap:8px;animation:pulse 2s infinite;white-space:nowrap}
+.floating-cta{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:9999;background:linear-gradient(135deg,#00B900,#009900);color:#fff;padding:14px 28px;border-radius:30px;font-weight:700;font-size:15px;box-shadow:0 4px 20px rgba(0,185,0,0.4);text-decoration:none;display:flex;align-items:center;gap:8px;animation:pulse 2s infinite;white-space:nowrap}
 .floating-cta:hover{transform:translateX(-50%) translateY(-2px);box-shadow:0 6px 24px rgba(0,185,0,0.5)}
 @keyframes pulse{0%,100%{box-shadow:0 4px 20px rgba(0,185,0,0.4)}50%{box-shadow:0 4px 30px rgba(0,185,0,0.7)}}
 @media(min-width:769px){.floating-cta{left:auto;right:30px;transform:none}.floating-cta:hover{transform:translateY(-2px)}}
@@ -745,8 +745,8 @@
 </span>
 
 <!-- LINE BACKUP FALLBACK -->
-<a href="/contact-form" style="position:fixed;bottom:20px;right:20px;z-index:9996;background:#fff;color:#555;border:1px solid #ddd;padding:10px 16px;border-radius:24px;font-size:13px;text-decoration:none;box-shadow:0 2px 12px rgba(0,0,0,0.12);white-space:nowrap;transition:all 0.25s;display:flex;align-items:center;gap:6px" onmouseover="this.style.borderColor='var(--primary)';this.style.color='var(--primary)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='#ddd';this.style.color='#555';this.style.transform='translateY(0)'">
-  <span style="font-size:15px">🔒</span> LINE打不開？<span style="text-decoration:underline;font-weight:600">點這留言</span>
-</a>
+<span style="position:fixed;bottom:15px;right:20px;z-index:9996;font-size:10px;color:#aaa">
+  <a href="/contact-form" style="color:#aaa;text-decoration:underline">LINE打不開？點這留言</a>
+</span>
 </body>
 </html>
