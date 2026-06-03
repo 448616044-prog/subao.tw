@@ -28,6 +28,7 @@
 /blog/can-it-be-shipped.html /blog/can-it-be-shipped 301
 
 # =================== 根目录页面 ===================
+/index / 301
 /index.html / 301
 /about.html /about 301
 /tw /tw-to-cn 301
@@ -73,19 +74,25 @@
 /article-10.html /article-list 301
 
 # 嵌套blog路径 → 精确301到正确blog页面（避免 /blog/blog/ 残留）
-# 三层嵌套（/blog/blog/blog/X）
+# =================== 三层嵌套（/blog/blog/blog/X）===================
+# 直接301到最终目标，避免链式重定向
 /blog/blog/blog/about /about 301
+/blog/blog/blog/article-list /article-list 301
 /blog/blog/blog/cosmetics-shipping /blog/cosmetics-shipping 301
 /blog/blog/blog/food-shipping-guide /blog/food-shipping-guide 301
-# 二层嵌套（/blog/blog/X）
+/blog/blog/blog/faq /faq 301
+/blog/blog/blog/pricing /pricing 301
+# 兜底：未列出的三层嵌套 → 二层
+/blog/blog/blog/* /blog/:splat 301
+
+# =================== 二层嵌套（/blog/blog/X）===================
+# 直接301到最终目标，避免链式重定向
 /blog/blog/about /about 301
 /blog/blog/cosmetics-shipping /blog/cosmetics-shipping 301
 /blog/blog/food-shipping-guide /blog/food-shipping-guide 301
-
-# GSC已发现的404修复（深层blog嵌套→直接301，避免链式重定向）
-/blog/blog/blog/article-list /article-list 301
-
-# 兜底规则：任何其他 /blog/blog/X → /blog/X
+/blog/blog/faq /faq 301
+/blog/blog/pricing /pricing 301
+# 兜底：未列出的二层嵌套 → 一层
 /blog/blog/* /blog/:splat 301
 
 # blog目录下不存在的页面（重定向到根目录对应页面）
