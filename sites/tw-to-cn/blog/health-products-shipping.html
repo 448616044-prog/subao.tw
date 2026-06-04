@@ -751,7 +751,7 @@
 <a href="https://line.me/ti/p/~subaotw5988" class="floating-cta" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><i class="fab fa-line"></i> LINE 免費估價</a>
 <!-- 悬浮按钮组 -->
 <style>
-.floating-bar{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:row;align-items:flex-end;gap:12px}
+.floating-bar{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
 .floating-bar .icon-btn{width:52px;height:52px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px;transition:all .3s}
 .floating-bar .line-btn{background:#00B900;color:#fff;box-shadow:0 4px 16px rgba(0,185,0,0.35);text-decoration:none}
 .floating-bar .line-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(0,185,0,0.5)}
@@ -811,7 +811,7 @@ function closeContactModal(){document.getElementById('contactModal').classList.r
 function submitContactForm(e){e.preventDefault();var n=document.getElementById('cfName').value,c=document.getElementById('cfContact').value,i=document.getElementById('cfItem').value||'未填',m=document.getElementById('cfMsg').value||'未填';gtag('event','contact_form_submit',{event_category:'conversion',event_label:'floating_contact'});document.getElementById('contactFormWrap').style.display='none';document.getElementById('successMsg').style.display='block';fetch('https://formsubmit.co/ajax/business@videotvai.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,contact:c,item:i,message:m,_subject:'[速豹官網留言] '+n,})}).catch(function(){})}
 </script><!-- 悬浮按钮组 -->
 <style>
-.floating-bar{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:row;align-items:flex-end;gap:12px}
+.floating-bar{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
 .floating-bar .icon-btn{width:52px;height:52px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px;transition:all .3s}
 .floating-bar .line-btn{background:#00B900;color:#fff;box-shadow:0 4px 16px rgba(0,185,0,0.35);text-decoration:none}
 .floating-bar .line-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(0,185,0,0.5)}
