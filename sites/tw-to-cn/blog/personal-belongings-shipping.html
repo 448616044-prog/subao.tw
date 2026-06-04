@@ -410,14 +410,15 @@
   </script>
 
   <a href="https://line.me/ti/p/~subaotw5988" class="floating-cta" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><i class="fab fa-line"></i> LINE 免費估價</a>
-<!-- 悬浮留言入口 -->
+<!-- 悬浮按钮组 -->
 <style>
-.floating-contact{position:fixed;bottom:24px;right:24px;z-index:9999}
-.floating-contact .icon-btn{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#FF6600,#FF8800);color:#fff;border:none;cursor:pointer;box-shadow:0 4px 16px rgba(255,102,0,0.4);display:flex;align-items:center;justify-content:center;font-size:24px;transition:all .3s;animation:pulse 2s infinite}
-.floating-contact .icon-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(255,102,0,0.5)}
+.floating-bar{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:row;align-items:flex-end;gap:12px}
+.floating-bar .icon-btn{width:52px;height:52px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px;transition:all .3s}
+.floating-bar .line-btn{background:#00B900;color:#fff;box-shadow:0 4px 16px rgba(0,185,0,0.35);text-decoration:none}
+.floating-bar .line-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(0,185,0,0.5)}
+.floating-bar .msg-btn{background:linear-gradient(135deg,#FF6600,#FF8800);color:#fff;box-shadow:0 4px 16px rgba(255,102,0,0.4);animation:pulse 2s infinite}
+.floating-bar .msg-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(255,102,0,0.5)}
 @keyframes pulse{0%,100%{box-shadow:0 4px 16px rgba(255,102,0,0.4)}50%{box-shadow:0 4px 24px rgba(255,102,0,0.6)}}
-.floating-contact .tooltip{position:absolute;right:64px;top:14px;background:#333;color:#fff;font-size:12px;padding:6px 12px;border-radius:6px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}
-.floating-contact:hover .tooltip{opacity:1}
 .contact-modal{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:10000;align-items:center;justify-content:center}
 .contact-modal.active{display:flex}
 .contact-modal .modal-box{background:#fff;border-radius:16px;padding:32px;max-width:400px;width:90%;position:relative;animation:slideUp .3s}
@@ -432,15 +433,15 @@
 .contact-modal .field textarea{height:80px;resize:none}
 .contact-modal .submit-btn{width:100%;padding:12px;background:linear-gradient(135deg,#FF6600,#FF8800);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
 .contact-modal .submit-btn:hover{transform:translateY(-1px)}
-.contact-modal .line-fallback{text-align:center;margin-top:14px;font-size:13px;color:#999}
-.contact-modal .line-fallback a{color:#00B900;font-weight:600}
 .contact-modal .success-msg{display:none;text-align:center;padding:20px 0}
 .contact-modal .success-msg .check{font-size:48px;color:#10b981;margin-bottom:12px}
 .contact-modal .success-msg p{font-size:15px;color:#555}
 </style>
-<div class="floating-contact" id="floatingContact">
-  <span class="tooltip">有問題？點我留言</span>
-  <button class="icon-btn" onclick="openContactModal()" aria-label="留言咨询">
+<div class="floating-bar">
+  <a href="https://line.me/ti/p/~subaotw5988" target="_blank" class="icon-btn line-btn" title="LINE即时咨询" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'floating_line'})">
+    <i class="fab fa-line"></i>
+  </a>
+  <button class="icon-btn msg-btn" onclick="openContactModal()" aria-label="留言咨询" title="留言给我们">
     <i class="fas fa-envelope"></i>
   </button>
 </div>
@@ -457,7 +458,6 @@
         <div class="field"><label>備註</label><textarea id="cfMsg" placeholder="大概重量、目的地等資訊（選填）"></textarea></div>
         <button type="submit" class="submit-btn">送出留言</button>
       </form>
-      <div class="line-fallback">或用 <a href="https://line.me/ti/p/~subaotw5988" onclick="gtag('event','line_click',{event_category:'conversion'})">LINE 即時諮詢 →</a></div>
     </div>
     <div class="success-msg" id="successMsg">
       <div class="check">✅</div>
@@ -470,14 +470,15 @@
 function openContactModal(){document.getElementById('contactModal').classList.add('active')}
 function closeContactModal(){document.getElementById('contactModal').classList.remove('active');setTimeout(function(){document.getElementById('contactFormWrap').style.display='block';document.getElementById('successMsg').style.display='none';document.getElementById('contactMsgForm').reset()},300)}
 function submitContactForm(e){e.preventDefault();var n=document.getElementById('cfName').value,c=document.getElementById('cfContact').value,i=document.getElementById('cfItem').value||'未填',m=document.getElementById('cfMsg').value||'未填';gtag('event','contact_form_submit',{event_category:'conversion',event_label:'floating_contact'});document.getElementById('contactFormWrap').style.display='none';document.getElementById('successMsg').style.display='block';fetch('https://formsubmit.co/ajax/business@videotvai.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,contact:c,item:i,message:m,_subject:'[速豹官網留言] '+n,})}).catch(function(){})}
-</script><!-- 悬浮留言入口 -->
+</script><!-- 悬浮按钮组 -->
 <style>
-.floating-contact{position:fixed;bottom:24px;right:24px;z-index:9999}
-.floating-contact .icon-btn{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#FF6600,#FF8800);color:#fff;border:none;cursor:pointer;box-shadow:0 4px 16px rgba(255,102,0,0.4);display:flex;align-items:center;justify-content:center;font-size:24px;transition:all .3s;animation:pulse 2s infinite}
-.floating-contact .icon-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(255,102,0,0.5)}
+.floating-bar{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:row;align-items:flex-end;gap:12px}
+.floating-bar .icon-btn{width:52px;height:52px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px;transition:all .3s}
+.floating-bar .line-btn{background:#00B900;color:#fff;box-shadow:0 4px 16px rgba(0,185,0,0.35);text-decoration:none}
+.floating-bar .line-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(0,185,0,0.5)}
+.floating-bar .msg-btn{background:linear-gradient(135deg,#FF6600,#FF8800);color:#fff;box-shadow:0 4px 16px rgba(255,102,0,0.4);animation:pulse 2s infinite}
+.floating-bar .msg-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(255,102,0,0.5)}
 @keyframes pulse{0%,100%{box-shadow:0 4px 16px rgba(255,102,0,0.4)}50%{box-shadow:0 4px 24px rgba(255,102,0,0.6)}}
-.floating-contact .tooltip{position:absolute;right:64px;top:14px;background:#333;color:#fff;font-size:12px;padding:6px 12px;border-radius:6px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}
-.floating-contact:hover .tooltip{opacity:1}
 .contact-modal{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:10000;align-items:center;justify-content:center}
 .contact-modal.active{display:flex}
 .contact-modal .modal-box{background:#fff;border-radius:16px;padding:32px;max-width:400px;width:90%;position:relative;animation:slideUp .3s}
@@ -492,15 +493,15 @@ function submitContactForm(e){e.preventDefault();var n=document.getElementById('
 .contact-modal .field textarea{height:80px;resize:none}
 .contact-modal .submit-btn{width:100%;padding:12px;background:linear-gradient(135deg,#FF6600,#FF8800);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
 .contact-modal .submit-btn:hover{transform:translateY(-1px)}
-.contact-modal .line-fallback{text-align:center;margin-top:14px;font-size:13px;color:#999}
-.contact-modal .line-fallback a{color:#00B900;font-weight:600}
 .contact-modal .success-msg{display:none;text-align:center;padding:20px 0}
 .contact-modal .success-msg .check{font-size:48px;color:#10b981;margin-bottom:12px}
 .contact-modal .success-msg p{font-size:15px;color:#555}
 </style>
-<div class="floating-contact" id="floatingContact">
-  <span class="tooltip">有問題？點我留言</span>
-  <button class="icon-btn" onclick="openContactModal()" aria-label="留言咨询">
+<div class="floating-bar">
+  <a href="https://line.me/ti/p/~subaotw5988" target="_blank" class="icon-btn line-btn" title="LINE即时咨询" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'floating_line'})">
+    <i class="fab fa-line"></i>
+  </a>
+  <button class="icon-btn msg-btn" onclick="openContactModal()" aria-label="留言咨询" title="留言给我们">
     <i class="fas fa-envelope"></i>
   </button>
 </div>
@@ -517,7 +518,6 @@ function submitContactForm(e){e.preventDefault();var n=document.getElementById('
         <div class="field"><label>備註</label><textarea id="cfMsg" placeholder="大概重量、目的地等資訊（選填）"></textarea></div>
         <button type="submit" class="submit-btn">送出留言</button>
       </form>
-      <div class="line-fallback">或用 <a href="https://line.me/ti/p/~subaotw5988" onclick="gtag('event','line_click',{event_category:'conversion'})">LINE 即時諮詢 →</a></div>
     </div>
     <div class="success-msg" id="successMsg">
       <div class="check">✅</div>
