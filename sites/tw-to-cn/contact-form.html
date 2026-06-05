@@ -39,12 +39,11 @@
     .info-card h3{font-size:16px;margin-bottom:8px}
     .info-card p{font-size:13px;color:var(--text-light)}
     .form-wrapper{background:#fff;border-radius:12px;box-shadow:var(--shadow);overflow:hidden}
-    .form-wrapper iframe{width:100%;height:900px;border:none}
     .footer-bar{text-align:center;padding:24px;background:#fff;border-radius:12px;margin-top:16px;box-shadow:var(--shadow)}
     .footer-bar p{font-size:14px;color:var(--text-light);margin-bottom:12px}
     .btn-back{display:inline-flex;align-items:center;gap:6px;background:var(--primary);color:#fff;padding:10px 20px;border-radius:8px;font-weight:700;transition:all 0.3s}
     .btn-back:hover{background:var(--primary-dark)}
-    @media(max-width:768px){.nav{display:none}.hero h1{font-size:22px}.form-wrapper iframe{height:750px}}
+    @media(max-width:768px){.nav{display:none}.hero h1{font-size:22px}}
   </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
@@ -92,8 +91,35 @@
         </div>
       </div>
 
-      <div class="form-wrapper">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWCJlK4al14Sy555CSpXjSiR0ZPDoJBzHvWX-8zdwpVTBfRA/viewform?embedded=true" title="寄件諮詢表單" loading="lazy"></iframe>
+      <div class="form-wrapper" id="mainFormWrapper">
+        <div id="mainFormWrap" style="padding:32px">
+          <h3 style="font-size:20px;font-weight:700;color:var(--text-dark);margin-bottom:4px">📬 給我們留言</h3>
+          <p style="font-size:13px;color:var(--text-light);margin-bottom:24px">填寫後我們會盡快回覆（LINE打不開也不用擔心）</p>
+          <form id="mainContactForm" onsubmit="submitMainForm(event)">
+            <div style="margin-bottom:16px">
+              <label style="display:block;font-size:13px;font-weight:600;color:#555;margin-bottom:4px">怎麼稱呼</label>
+              <input type="text" id="mName" placeholder="例如：張先生" required style="width:100%;padding:10px 14px;border:1px solid #e2e8f0;border-radius:8px;font-size:14px;font-family:inherit;outline:none">
+            </div>
+            <div style="margin-bottom:16px">
+              <label style="display:block;font-size:13px;font-weight:600;color:#555;margin-bottom:4px">聯繫方式</label>
+              <input type="text" id="mContact" placeholder="LINE ID / 微信 / 手機 / Email" required style="width:100%;padding:10px 14px;border:1px solid #e2e8f0;border-radius:8px;font-size:14px;font-family:inherit;outline:none">
+            </div>
+            <div style="margin-bottom:16px">
+              <label style="display:block;font-size:13px;font-weight:600;color:#555;margin-bottom:4px">想寄什麼</label>
+              <input type="text" id="mItem" placeholder="例如：保健品、茶葉、化妝品" style="width:100%;padding:10px 14px;border:1px solid #e2e8f0;border-radius:8px;font-size:14px;font-family:inherit;outline:none">
+            </div>
+            <div style="margin-bottom:16px">
+              <label style="display:block;font-size:13px;font-weight:600;color:#555;margin-bottom:4px">備註</label>
+              <textarea id="mMsg" placeholder="大概重量、目的地等資訊（選填）" style="width:100%;padding:10px 14px;border:1px solid #e2e8f0;border-radius:8px;font-size:14px;font-family:inherit;outline:none;height:100px;resize:none"></textarea>
+            </div>
+            <button type="submit" style="width:100%;padding:14px;background:linear-gradient(135deg,#FF6600,#FF8800);color:#fff;border:none;border-radius:10px;font-size:16px;font-weight:700;cursor:pointer">送出留言</button>
+          </form>
+        </div>
+        <div id="mainSuccessWrap" style="display:none;padding:60px 32px;text-align:center">
+          <div style="font-size:48px;color:#10b981;margin-bottom:12px">✅</div>
+          <p style="font-size:15px;color:#555">留言已送出！<br>我們會盡快聯繫您。</p>
+          <button onclick="document.getElementById('mainFormWrap').style.display='block';document.getElementById('mainSuccessWrap').style.display='none';document.getElementById('mainContactForm').reset()" style="margin-top:16px;padding:12px 32px;background:linear-gradient(135deg,#FF6600,#FF8800);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer">填寫新留言</button>
+        </div>
       </div>
 
       <div class="footer-bar">
@@ -162,5 +188,6 @@
 function openContactModal(){document.getElementById('contactModal').classList.add('active')}
 function closeContactModal(){document.getElementById('contactModal').classList.remove('active');setTimeout(function(){document.getElementById('contactFormWrap').style.display='block';document.getElementById('successMsg').style.display='none';document.getElementById('contactMsgForm').reset()},300)}
 function submitContactForm(e){e.preventDefault();var n=document.getElementById('cfName').value,c=document.getElementById('cfContact').value,i=document.getElementById('cfItem').value||'未填',m=document.getElementById('cfMsg').value||'未填';gtag('event','contact_form_submit',{event_category:'conversion',event_label:'floating_contact'});document.getElementById('contactFormWrap').style.display='none';document.getElementById('successMsg').style.display='block';fetch('https://formsubmit.co/ajax/business@videotvai.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,contact:c,item:i,message:m,_subject:'[速豹官網留言] '+n,})}).catch(function(){})}
+function submitMainForm(e){e.preventDefault();var n=document.getElementById('mName').value,c=document.getElementById('mContact').value,i=document.getElementById('mItem').value||'未填',m=document.getElementById('mMsg').value||'未填';gtag('event','contact_form_submit',{event_category:'conversion',event_label:'main_contact_form'});document.getElementById('mainFormWrap').style.display='none';document.getElementById('mainSuccessWrap').style.display='block';fetch('https://formsubmit.co/ajax/business@videotvai.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,contact:c,item:i,message:m,_subject:'[速豹官網留言] '+n,})}).catch(function(){})}
 </script></body>
 </html>
