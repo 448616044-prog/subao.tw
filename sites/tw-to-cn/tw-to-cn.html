@@ -153,6 +153,11 @@
     a{text-decoration:none;color:inherit}
     ul{list-style:none}
     .container{max-width:1200px;margin:0 auto;padding:0 20px}
+        .dropdown{position:relative;display:flex;align-items:center}
+    .dropdown-menu{display:none;position:absolute;top:100%;left:0;background:var(--bg-white);border-radius:var(--radius);box-shadow:var(--shadow-lg);min-width:160px;padding:8px 0;z-index:1001}
+    .dropdown:hover .dropdown-menu{display:block}
+    .dropdown-menu a{display:block;padding:10px 20px;font-size:14px;white-space:nowrap;transition:var(--transition)}
+    .dropdown-menu a:hover{background:var(--primary-light);color:var(--primary)}
     .btn{display:inline-block;padding:12px 28px;border-radius:var(--radius);font-weight:700;font-size:16px;cursor:pointer;border:none;transition:var(--transition);text-align:center}
     .btn-primary{background:var(--primary);color:var(--text-white)}.btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px)}
     .btn-secondary{background:var(--secondary);color:var(--text-white)}.btn-secondary:hover{background:var(--secondary-dark);transform:translateY(-2px)}
@@ -218,9 +223,9 @@
     .m-dropdown-links{display:none;padding-left:16px}
     .m-dropdown.open .m-dropdown-links{display:block}
     .m-dropdown-links a{display:block;padding:10px 8px;font-size:14px;color:var(--text-dark);text-decoration:none;border-bottom:1px solid #f0f0f0}
-    .btn-line{display:inline-flex;padding:10px 20px;background:var(--line-green);color:#fff;border-radius:6px;font-size:14px;font-weight:600;text-decoration:none;align-items:center;gap:6px;transition:var(--transition);white-space:nowrap}
+    .btn-line{display:inline-flex;padding:10px 20px;background:var(--line-green);color:#fff;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;align-items:center;gap:6px;transition:var(--transition);white-space:nowrap}
     .btn-line:hover{background:#009900;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,185,0,0.25)}
-    .header-cta{display:flex;align-items:center;gap:12px}
+    
     .menu-toggle{display:none;background:none;border:none;font-size:22px;cursor:pointer;color:var(--text-dark);padding:4px}
     @media(max-width:992px){.nav{display:none}.channel-grid,.steps-grid{grid-template-columns:1fr 1fr}.footer .container{grid-template-columns:1fr 1fr}}
     @media(max-width:768px){.channel-grid,.footer .container{grid-template-columns:1fr}.page-hero h1{font-size:32px}}
@@ -241,7 +246,7 @@
         <a href="/about">關於我們</a>
       </nav>
       <div class="header-cta">
-        <a href="https://line.me/ti/p/~subaotw5988" class="btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
+        <a href="https://line.me/ti/p/~subaotw5988" class="btn btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
           <i class="fab fa-line"></i> LINE 咨詢
         </a>
       </div>

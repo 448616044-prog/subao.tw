@@ -101,13 +101,20 @@
     body{font-family:'Noto Sans TC',sans-serif;color:var(--text-dark);line-height:1.8;font-size:16px;background:var(--bg-gray)}
     a{text-decoration:none;color:inherit}
     .header{position:fixed;top:0;left:0;right:0;height:70px;background:var(--bg-white);z-index:1000;box-shadow:var(--shadow)}
-    .header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
+    .header .container{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:1200px}
     .container{max-width:900px;margin:0 auto;padding:0 20px}
     .logo{font-size:24px;font-weight:700;color:var(--primary)}
     .nav{display:flex;gap:32px}
-    .nav>a{display:flex;align-items:center;padding:8px 14px;font-size:14.5px;font-weight:500;color:var(--text-dark);text-decoration:none;border-radius:6px;transition:var(--transition);white-space:nowrap}
-    .nav>a:hover,.nav .dropdown:hover>a{background:var(--primary-light);color:var(--primary)}
-            .btn{display:inline-block;padding:10px 20px;border-radius:var(--radius);font-weight:700;font-size:14px;cursor:pointer;border:none;transition:var(--transition)}
+    .nav>a{font-weight:500;color:var(--text-dark);font-size:15px;white-space:nowrap;position:relative}
+    .nav a:hover,.nav a.active{color:var(--primary)}
+    .nav>a::after{content:"";position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--primary);transition:var(--transition)}
+    .nav>a:hover::after,.nav>a.active::after{width:100%}
+                .dropdown{position:relative;display:flex;align-items:center}
+    .dropdown-menu{display:none;position:absolute;top:100%;left:0;background:var(--bg-white);border-radius:var(--radius);box-shadow:var(--shadow-lg);min-width:160px;padding:8px 0;z-index:1001}
+    .dropdown:hover .dropdown-menu{display:block}
+    .dropdown-menu a{display:block;padding:10px 20px;font-size:14px;white-space:nowrap;transition:var(--transition)}
+    .dropdown-menu a:hover{background:var(--primary-light);color:var(--primary)}
+    .btn{display:inline-block;padding:10px 20px;border-radius:var(--radius);font-weight:700;font-size:14px;cursor:pointer;border:none;transition:var(--transition)}
     .btn-line{background:var(--line-green);color:#fff}.btn-line:hover{background:#009900}
     .article-hero{padding:120px 0 40px;background:linear-gradient(135deg,var(--health-green) 0%,#1B5E20 100%);color:var(--text-white)}
     .article-hero h1{font-size:32px;font-weight:700;margin-bottom:16px;line-height:1.4}
@@ -177,7 +184,7 @@
     .m-dropdown-links{display:none;padding-left:16px}
     .m-dropdown.open .m-dropdown-links{display:block}
     .m-dropdown-links a{display:block;padding:10px 8px;font-size:14px;color:var(--text-dark);text-decoration:none;border-bottom:1px solid #f0f0f0}
-    .btn-line{display:inline-flex;padding:10px 20px;background:var(--line-green);color:#fff;border-radius:6px;font-size:14px;font-weight:600;text-decoration:none;align-items:center;gap:6px;transition:var(--transition);white-space:nowrap}
+    .btn-line{display:inline-flex;padding:10px 20px;background:var(--line-green);color:#fff;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;align-items:center;gap:6px;transition:var(--transition);white-space:nowrap}
     .btn-line:hover{background:#009900;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,185,0,0.25)}
     .header-cta{display:flex;align-items:center;gap:12px}
     .menu-toggle{display:none;background:none;border:none;font-size:22px;cursor:pointer;color:var(--text-dark);padding:4px}
@@ -210,7 +217,7 @@
 <body>
   <header class="header" id="header">
     <div class="container">
-      <a href="/" class="logo"><img src="images/subao-logo-new.png" alt="速豹集運" height="40"></a>
+      <a href="/" class="logo"><img src="/images/subao-logo-new.png" alt="速豹集運" height="40"></a>
       <nav class="nav" id="desktopNav">
         <a href="/tw-to-cn">台灣發大陸</a>
         <div class="dropdown"><a href="/pricing">運費</a>
@@ -222,7 +229,7 @@
         <a href="/about">關於我們</a>
       </nav>
       <div class="header-cta">
-        <a href="https://line.me/ti/p/~subaotw5988" class="btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
+        <a href="https://line.me/ti/p/~subaotw5988" class="btn btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
           <i class="fab fa-line"></i> LINE 咨詢
         </a>
       </div>

@@ -84,6 +84,11 @@
     a{text-decoration:none;color:inherit}
     ul{list-style:none}
     .container{max-width:1200px;margin:0 auto;padding:0 20px}
+        .dropdown{position:relative;display:flex;align-items:center}
+    .dropdown-menu{display:none;position:absolute;top:100%;left:0;background:var(--bg-white);border-radius:var(--radius);box-shadow:var(--shadow-lg);min-width:160px;padding:8px 0;z-index:1001}
+    .dropdown:hover .dropdown-menu{display:block}
+    .dropdown-menu a{display:block;padding:10px 20px;font-size:14px;white-space:nowrap;transition:var(--transition)}
+    .dropdown-menu a:hover{background:var(--primary-light);color:var(--primary)}
     .btn{display:inline-block;padding:12px 28px;border-radius:var(--radius);font-weight:700;font-size:16px;cursor:pointer;border:none;transition:var(--transition);text-align:center}
     .btn-primary{background:var(--primary);color:var(--text-white)}.btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px)}
     .btn-secondary{background:var(--secondary);color:var(--text-white)}.btn-secondary:hover{background:var(--secondary-dark);transform:translateY(-2px)}
@@ -152,7 +157,7 @@
     .footer-section a:hover{color:var(--text-white)}
     .footer-bottom{border-top:1px solid rgba(255,255,255,0.2);padding-top:30px;text-align:center;color:rgba(255,255,255,0.6)}
 
-    @media(max-width:992px){.nav{display:none}.menu-toggle{display:block}.flow-cards{grid-template-columns:1fr 1fr}.flow-card::after{display:none}}
+    @media(max-width:992px){.nav{display:none}.flow-cards{grid-template-columns:1fr 1fr}.flow-card::after{display:none}}
     @media(max-width:768px){.flow-cards,.footer-content{grid-template-columns:1fr}.page-hero h1{font-size:28px}}
   </style>
   <!-- Google tag (gtag.js) -->
@@ -179,7 +184,7 @@
         <a href="/about">關於我們</a>
       </nav>
       <div class="header-cta">
-        <a href="https://line.me/ti/p/~subaotw5988" class="btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
+        <a href="https://line.me/ti/p/~subaotw5988" class="btn btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
           <i class="fab fa-line"></i> LINE 咨詢
         </a>
       </div>
