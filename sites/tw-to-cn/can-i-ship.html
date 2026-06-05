@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>可以寄嗎？查詢工具｜台灣寄大陸快遞商品查詢｜速豹集運</title>
+  <meta name="description" content="速豹集運「可以寄嗎」查詢工具。輸入商品名稱，即時查詢台灣寄大陸是否可寄。覆蓋150+常見商品，含食品、保健品、茶葉、化妝品、中藥、電子產品等。">
+  <link rel="canonical" href="https://subao.tw/can-i-ship">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"鳳梨酥可以寄大陸嗎？","acceptedAnswer":{"@type":"Answer","text":"✅ 可以。鳳梨酥屬於一般烘焙食品，可以通過敏感貨專線寄送。需注意包裝完好，避免碎裂。不含肉類、蛋黃的鳳梨酥更安全。"}},
+      {"@type":"Question","name":"泡麵可以寄大陸嗎？","acceptedAnswer":{"@type":"Answer","text":"⚠️ 需確認。一般泡麵（無肉包）可寄。含肉塊/肉燥包的泡麵有檢疫風險，建議寄送前提供包裝照片給LINE客服確認。"}},
+      {"@type":"Question","name":"魚油可以寄大陸嗎？","acceptedAnswer":{"@type":"Answer","text":"✅ 可以。魚油、維他命等保健品可通過敏感貨專線寄送。建議保留原包裝，避免無標籤散裝。"}},
+      {"@type":"Question","name":"面膜可以寄大陸嗎？","acceptedAnswer":{"@type":"Answer","text":"✅ 可以。面膜為一般化妝品，可通過敏感貨專線寄送。需注意：部分含藥用成分的面膜需確認是否符合中國化妝品備案要求。"}},
+      {"@type":"Question","name":"茶葉可以寄大陸嗎？","acceptedAnswer":{"@type":"Answer","text":"✅ 可以。高山茶、烏龍茶、紅茶等可通過敏感貨專線寄送。建議使用原包裝密封，真空包裝更佳。商業件需產地證明。"}}
+    ]
+  }
+  </script>
+
+  <style>
+    :root{--primary:#0066CC;--primary-dark:#004C99;--primary-light:#E6F0FA;--secondary:#FF6600;--secondary-dark:#CC5200;--line-green:#00B900;--bg-white:#FFF;--bg-gray:#F5F7FA;--bg-dark:#1A1A2E;--text-dark:#333;--text-light:#666;--text-white:#fff;--border:#E0E0E0;--shadow:0 2px 8px rgba(0,0,0,0.1);--shadow-lg:0 8px 24px rgba(0,0,0,0.15);--radius:8px;--radius-lg:16px;--transition:all 0.2s ease;--header-height:68px}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Noto Sans TC',sans-serif;color:var(--text-dark);line-height:1.6;font-size:16px;background:var(--bg-gray)}
+    a{text-decoration:none;color:inherit}
+    ul{list-style:none}
+    .container{max-width:1200px;margin:0 auto;padding:0 20px}
+    .btn{display:inline-block;padding:12px 28px;border-radius:var(--radius);font-weight:700;font-size:16px;cursor:pointer;border:none;transition:var(--transition);text-align:center}
+    .btn-primary{background:var(--primary);color:var(--text-white)}.btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px)}
+    .btn-line{background:var(--line-green);color:var(--text-white);display:inline-flex;padding:10px 20px;border-radius:6px;font-size:14px;font-weight:600;text-decoration:none;align-items:center;gap:6px;transition:var(--transition);white-space:nowrap}
+    .btn-line:hover{background:#009900;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,185,0,0.25)}
+    .header{position:fixed;top:0;left:0;right:0;height:var(--header-height);background:var(--bg-white);z-index:1000;box-shadow:var(--shadow)}
+    .header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
+    .logo img{background:#fff;max-height:50px;max-width:200px;width:auto;display:block}
+    .nav{display:flex;align-items:center;gap:4px}
+    .nav>a{display:flex;align-items:center;padding:8px 14px;font-size:14.5px;font-weight:500;color:var(--text-dark);border-radius:6px;transition:var(--transition);white-space:nowrap}
+    .nav>a:hover,.nav .dropdown:hover>a{background:var(--primary-light);color:var(--primary)}
+    .nav>a.active{background:var(--primary);color:#fff}
+    .dropdown{position:relative}
+    .dropdown>a::after{content:"▾";font-size:10px;margin-left:5px}
+    .dropdown-menu{display:none;position:absolute;top:100%;left:0;min-width:180px;background:#fff;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,0.12);padding:8px 0;z-index:100;margin-top:4px;border:1px solid #e8ecf0}
+    .dropdown:hover .dropdown-menu{display:block}
+    .dropdown-menu a{display:block;padding:10px 16px;font-size:14px;color:var(--text-dark);transition:var(--transition)}
+    .dropdown-menu a:hover{background:var(--primary-light);color:var(--primary)}
+    .header-cta{display:flex;align-items:center;gap:12px}
+    .menu-toggle{display:none;background:none;border:none;font-size:22px;cursor:pointer;color:var(--text-dark);padding:4px}
+
+    .page-hero{padding:120px 0 40px;background:linear-gradient(135deg,var(--primary) 0%,#0088DD 100%);color:var(--text-white);text-align:center}
+    .page-hero h1{font-size:38px;font-weight:700;margin-bottom:8px}
+    .page-hero p{font-size:17px;opacity:0.9}
+
+    /* Search Box */
+    .search-wrap{max-width:720px;margin:-30px auto 40px;position:relative;z-index:10}
+    .search-box{background:#fff;border-radius:16px;padding:8px;box-shadow:0 8px 40px rgba(0,0,0,0.12);display:flex;align-items:center;gap:8px}
+    .search-box input{flex:1;border:none;outline:none;font-size:18px;padding:16px 20px;font-family:inherit;color:var(--text-dark);background:transparent}
+    .search-box input::placeholder{color:#aaa}
+    .search-box button{padding:14px 28px;background:var(--secondary);color:#fff;border:none;border-radius:10px;font-size:16px;font-weight:700;cursor:pointer;transition:var(--transition);white-space:nowrap}
+    .search-box button:hover{background:var(--secondary-dark)}
+    .search-suggestions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;justify-content:center}
+    .search-suggestions span{background:rgba(255,255,255,0.2);color:#fff;padding:6px 14px;border-radius:20px;font-size:13px;cursor:pointer;transition:var(--transition);backdrop-filter:blur(4px)}
+    .search-suggestions span:hover{background:rgba(255,255,255,0.35)}
+
+    /* Results */
+    .results-area{max-width:800px;margin:0 auto 60px}
+    .result-card{border-radius:12px;padding:32px;margin-bottom:16px;animation:fadeIn 0.3s}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+    .result-card.can{background:#E8F5E9;border:2px solid #66BB6A}
+    .result-card.cannot{background:#FFEBEE;border:2px solid #EF5350}
+    .result-card.maybe{background:#FFF8E1;border:2px solid #FFA726}
+    .result-status{font-size:48px;margin-bottom:8px}
+    .result-title{font-size:24px;font-weight:700;margin-bottom:8px}
+    .result-card.can .result-title{color:#2E7D32}
+    .result-card.cannot .result-title{color:#C62828}
+    .result-card.maybe .result-title{color:#E65100}
+    .result-detail{color:var(--text-light);line-height:1.8;font-size:15px;margin-bottom:16px}
+    .result-meta{display:flex;gap:12px;flex-wrap:wrap}
+    .meta-tag{display:inline-flex;align-items:center;gap:4px;padding:6px 12px;border-radius:6px;font-size:13px;font-weight:500}
+    .meta-tag.channel{background:var(--primary-light);color:var(--primary)}
+    .meta-tag.tax{background:#E8F5E9;color:#2E7D32}
+    .meta-tag.alert{background:#FFF3E0;color:#E65100}
+    .no-result{text-align:center;padding:60px 20px}
+    .no-result .icon{font-size:64px;margin-bottom:16px}
+    .no-result h3{font-size:20px;color:var(--text-dark);margin-bottom:8px}
+    .no-result p{color:var(--text-light)}
+
+    /* Category browse */
+    .section{padding:40px 0}
+    .section-title{font-size:24px;font-weight:700;text-align:center;margin-bottom:24px}
+    .category-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;max-width:900px;margin:0 auto}
+    .cat-group{background:#fff;border-radius:12px;padding:20px;box-shadow:var(--shadow)}
+    .cat-group h3{font-size:16px;color:var(--primary);margin-bottom:12px;display:flex;align-items:center;gap:6px}
+    .cat-items{display:flex;flex-wrap:wrap;gap:6px}
+    .cat-item{display:inline-flex;align-items:center;gap:3px;padding:5px 10px;border-radius:6px;font-size:13px;cursor:pointer;transition:var(--transition);background:var(--bg-gray)}
+    .cat-item:hover{background:var(--primary-light);color:var(--primary)}
+    .cat-item .dot{width:8px;height:8px;border-radius:50%}
+    .cat-item .dot.green{background:#66BB6A}
+    .cat-item .dot.red{background:#EF5350}
+    .cat-item .dot.orange{background:#FFA726}
+
+    .cta-section{background:linear-gradient(135deg,var(--secondary) 0%,var(--secondary-dark) 100%);color:#fff;text-align:center;padding:60px 0;border-radius:16px;margin:40px auto;max-width:900px}
+    .cta-section h2{font-size:28px;margin-bottom:8px}
+    .cta-section p{margin-bottom:24px;opacity:0.9;font-size:16px}
+    .footer{background:var(--bg-dark);color:var(--text-white);padding:60px 0 30px;margin-top:40px}
+    .footer-content{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;margin-bottom:40px;max-width:1200px;margin-left:auto;margin-right:auto;padding:0 20px}
+    .footer-section h3{font-size:18px;margin-bottom:20px}
+    .footer-section p,.footer-section a{color:rgba(255,255,255,0.8);margin-bottom:12px;display:block}
+    .footer-section a:hover{color:var(--text-white)}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.2);padding-top:30px;text-align:center;color:rgba(255,255,255,0.6)}
+
+    .mobile-menu{display:none;position:fixed;top:68px;left:0;right:0;bottom:0;background:#fff;padding:16px 24px;overflow-y:auto;z-index:999}
+    .mobile-menu.active{display:block}
+    .mobile-nav-link{display:block;padding:14px 8px;font-size:15px;font-weight:500;color:var(--text-dark);border-bottom:1px solid #f0f0f0}
+    .mobile-nav-link.active{color:var(--primary);font-weight:700}
+    .mobile-nav-link.cta{margin-top:16px;padding:14px;background:var(--primary);color:#fff;border-radius:8px;text-align:center;border:none;display:block}
+    .m-dropdown>span{display:flex;justify-content:space-between;align-items:center;padding:14px 8px;font-size:15px;font-weight:500;color:var(--text-dark);border-bottom:1px solid #f0f0f0;cursor:pointer}
+    .m-dropdown>span::after{content:"▾";font-size:12px;transition:transform .2s}
+    .m-dropdown.open>span::after{transform:rotate(180deg)}
+    .m-dropdown-links{display:none;padding-left:16px}
+    .m-dropdown.open .m-dropdown-links{display:block}
+    .m-dropdown-links a{display:block;padding:10px 8px;font-size:14px;color:var(--text-dark);border-bottom:1px solid #f0f0f0}
+
+    @media(max-width:992px){.nav,.header-cta{display:none}.menu-toggle{display:block}}
+    @media(max-width:768px){.page-hero h1{font-size:28px}.search-box{flex-direction:column}.search-box button{width:100%}.footer-content{grid-template-columns:1fr}.category-grid{grid-template-columns:1fr}}
+  </style>
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-X2T4LGTKJ1')</script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="/" class="logo"><img src="images/subao-logo-new.png" alt="速豹集運" height="40"></a>
+      <nav class="nav" id="desktopNav">
+        <a href="/tw-to-cn">台灣發大陸</a>
+        <div class="dropdown"><a href="/pricing">運費</a>
+          <div class="dropdown-menu"><a href="/pricing">💰 運費報價</a><a href="/pricing-calculator">🧮 運費試算</a></div></div>
+        <a href="/customs-guide">關稅速查</a>
+        <a href="/can-i-ship" class="active">可以寄嗎</a>
+        <a href="/article-list">文章攻略</a>
+        <a href="/faq">常見問題</a>
+        <a href="/partners">合作夥伴</a>
+        <a href="/about">關於我們</a>
+      </nav>
+      <div class="header-cta">
+        <a href="https://line.me/ti/p/~subaotw5988" class="btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><i class="fab fa-line"></i> LINE 咨詢</a>
+      </div>
+      <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/tw-to-cn" class="mobile-nav-link">台灣發大陸</a>
+    <div class="m-dropdown"><span>運費</span><div class="m-dropdown-links"><a href="/pricing">運費報價</a><a href="/pricing-calculator">運費試算</a></div></div>
+    <a href="/customs-guide" class="mobile-nav-link">關稅速查</a>
+    <a href="/can-i-ship" class="mobile-nav-link active">可以寄嗎</a>
+    <a href="/article-list" class="mobile-nav-link">文章攻略</a>
+    <a href="/faq" class="mobile-nav-link">常見問題</a>
+    <a href="/partners" class="mobile-nav-link">合作夥伴</a>
+    <a href="/about" class="mobile-nav-link">關於我們</a>
+    <a href="https://line.me/ti/p/~subaotw5988" class="mobile-nav-link cta" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><i class="fab fa-line"></i> 加入LINE</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>📦 可以寄嗎？一秒查詢</h1>
+      <p>輸入商品名稱，即時查詢台灣寄大陸是否可寄｜超過 150 種常見商品持續更新</p>
+    </div>
+  </section>
+
+  <div class="search-wrap">
+    <div class="container">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="輸入商品名稱，例如：鳳梨酥、泡麵、魚油、面膜..." autocomplete="off">
+        <button onclick="doSearch()"><i class="fas fa-search"></i> 查詢</button>
+      </div>
+      <div class="search-suggestions">
+        <span onclick="quickSearch('鳳梨酥')">🔥 鳳梨酥</span>
+        <span onclick="quickSearch('泡麵')">🍜 泡麵</span>
+        <span onclick="quickSearch('魚油')">💊 魚油</span>
+        <span onclick="quickSearch('面膜')">💆 面膜</span>
+        <span onclick="quickSearch('茶葉')">🍵 茶葉</span>
+        <span onclick="quickSearch('牛肉乾')">🥩 牛肉乾</span>
+        <span onclick="quickSearch('月餅')">🥮 月餅</span>
+        <span onclick="quickSearch('奶粉')">🍼 奶粉</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="results-area" id="resultsArea">
+      <div class="no-result" id="noResult">
+        <div class="icon">🔍</div>
+        <h3>輸入商品名稱開始查詢</h3>
+        <p>也可以點擊上方熱門商品快速查詢</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <h2 class="section-title">📋 瀏覽所有品類</h2>
+      <div class="category-grid" id="categoryGrid"></div>
+    </div>
+
+    <div class="cta-section">
+      <div class="container">
+        <h2>找不到你的商品？</h2>
+        <p>LINE 傳商品照片給我們，30 分鐘內回覆是否可寄及報價</p>
+        <a href="https://line.me/ti/p/~subaotw5988" class="btn btn-primary" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'can_i_ship_cta'})" style="background:#fff;color:var(--secondary);padding:16px 40px;font-size:18px">
+          <i class="fab fa-line"></i> LINE 立即查詢
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section"><h3>速豹集運</h3><p>專業台灣到大陸快遞服務商，專營敏感貨專線，6年兩岸物流經驗。</p><p><i class="fab fa-line" style="color:#00B900"></i> LINE：subaotw5988</p></div>
+      <div class="footer-section"><h3>實用工具</h3><a href="/can-i-ship">可以寄嗎查詢</a><a href="/customs-guide">關稅速查</a><a href="/pricing-calculator">運費試算</a><a href="/pricing">運費報價</a></div>
+      <div class="footer-section"><h3>服務項目</h3><a href="/tw-to-cn">台灣發大陸</a><a href="/article-list">寄件攻略</a><a href="/faq">常見問題</a><a href="/partners">合作夥伴</a></div>
+      <div class="footer-section"><h3>聯系我們</h3><a href="https://line.me/ti/p/~subaotw5988" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">LINE：subaotw5988</a><a href="mailto:business@videotvai.com">Email</a><a href="/about">關於速豹</a></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 速豹集運 Subao Logistics. All rights reserved.</p></div>
+  </footer>
+
+  <!-- Floating buttons -->
+  <style>
+    .floating-bar{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+    .floating-bar .icon-btn{width:52px;height:52px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px;transition:all .3s}
+    .floating-bar .line-btn{background:#00B900;color:#fff;box-shadow:0 4px 16px rgba(0,185,0,0.35);text-decoration:none;font-weight:700;font-size:16px;font-family:Arial,Helvetica,sans-serif}
+    .floating-bar .line-btn:hover{transform:scale(1.1)}
+    .floating-bar .msg-btn{background:linear-gradient(135deg,#FF6600,#FF8800);color:#fff;box-shadow:0 4px 16px rgba(255,102,0,0.4);animation:pulse 2s infinite}
+    @keyframes pulse{0%,100%{box-shadow:0 4px 16px rgba(255,102,0,0.4)}50%{box-shadow:0 4px 24px rgba(255,102,0,0.6)}}
+    .floating-bar .msg-btn:hover{transform:scale(1.1)}
+    .contact-modal{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:10000;align-items:center;justify-content:center}
+    .contact-modal.active{display:flex}
+    .contact-modal .modal-box{background:#fff;border-radius:16px;padding:32px;max-width:400px;width:90%;position:relative;animation:slideUp .3s}
+    @keyframes slideUp{from{transform:translateY(40px);opacity:0}to{transform:translateY(0);opacity:1}}
+    .contact-modal .close-btn{position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#999}
+    .contact-modal h3{font-size:20px;font-weight:700;color:#333;margin:0 0 4px}
+    .contact-modal .sub{font-size:13px;color:#999;margin-bottom:20px}
+    .contact-modal .field{margin-bottom:14px}
+    .contact-modal .field label{display:block;font-size:13px;font-weight:600;color:#555;margin-bottom:4px}
+    .contact-modal .field input,.contact-modal .field textarea{width:100%;padding:10px 14px;border:1px solid #e2e8f0;border-radius:8px;font-size:14px;font-family:inherit;outline:none}
+    .contact-modal .field input:focus,.contact-modal .field textarea:focus{border-color:#FF6600}
+    .contact-modal .field textarea{height:80px;resize:none}
+    .contact-modal .submit-btn{width:100%;padding:12px;background:linear-gradient(135deg,#FF6600,#FF8800);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer}
+    .contact-modal .success-msg{display:none;text-align:center;padding:20px 0}
+  </style>
+  <div class="floating-bar">
+    <a href="https://line.me/ti/p/~subaotw5988" target="_blank" class="icon-btn line-btn" title="LINE即时咨询" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'floating_line'})">LINE</a>
+    <button class="icon-btn msg-btn" onclick="openContactModal()"><i class="fas fa-envelope"></i></button>
+  </div>
+  <div class="contact-modal" id="contactModal">
+    <div class="modal-box">
+      <button class="close-btn" onclick="closeContactModal()"><i class="fas fa-times"></i></button>
+      <div id="contactFormWrap"><h3>📬 給我們留言</h3><p class="sub">填寫後我們會盡快回覆</p>
+        <form id="contactMsgForm" onsubmit="submitContactForm(event)">
+          <div class="field"><label>怎麼稱呼</label><input type="text" id="cfName" placeholder="例如：張先生" required></div>
+          <div class="field"><label>聯繫方式</label><input type="text" id="cfContact" placeholder="LINE ID / 微信 / 手機" required></div>
+          <div class="field"><label>想寄什麼</label><input type="text" id="cfItem" placeholder="例如：保健品、茶葉"></div>
+          <div class="field"><label>備註</label><textarea id="cfMsg" placeholder="大概重量、目的地等"></textarea></div>
+          <button type="submit" class="submit-btn">送出留言</button>
+        </form>
+      </div>
+      <div class="success-msg" id="successMsg"><div style="font-size:48px">✅</div><p>留言已送出！我們會盡快聯繫您。</p><button class="submit-btn" style="margin-top:16px" onclick="closeContactModal()">關閉</button></div>
+    </div>
+  </div>
+
+  <script>
+    // ====== PRODUCT DATABASE ======
+    const DB = [
+      // 食品/零食
+      {id:"鳳梨酥",cat:"food",status:"can",note:"烘焙食品，無肉無蛋黃的鳳梨酥最安全。注意包裝防碎。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"太陽餅",cat:"food",status:"can",note:"一般糕餅類可寄。避免含豬油餡料。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"月餅",cat:"food",status:"maybe",note:"一般月餅（豆沙、蓮蓉餡）✅可寄。含蛋黃/肉餡的月餅❌禁運。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"泡麵",cat:"food",status:"maybe",note:"一般泡麵（無肉包）✅可寄。含肉塊/肉燥包的泡麵有檢疫風險⚠️。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"牛肉乾",cat:"food",status:"cannot",note:"❌ 肉製品禁止寄大陸。任何肉類製品（豬肉乾、牛肉乾、肉鬆等）均不可寄。",channel:"—",tax:"—"},
+      {id:"豬肉乾",cat:"food",status:"cannot",note:"❌ 所有肉類製品禁止寄大陸，包括豬肉紙、豬肉鬆等。",channel:"—",tax:"—"},
+      {id:"肉鬆",cat:"food",status:"cannot",note:"❌ 肉類製品禁止寄大陸。",channel:"—",tax:"—"},
+      {id:"餅乾",cat:"food",status:"can",note:"一般餅乾可寄。不含肉類、蛋黃成分即可。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"糖果",cat:"food",status:"can",note:"糖果、巧克力可寄。需注意夏季高溫可能融化。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"巧克力",cat:"food",status:"can",note:"可寄。建議避開夏季高溫時段寄送，避免融化。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"牛軋糖",cat:"food",status:"can",note:"可寄。糖餅類無肉成分，通關順利。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"蛋捲",cat:"food",status:"can",note:"一般蛋捲可寄。需注意包裝防碎。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"蜜餞",cat:"food",status:"can",note:"果乾、蜜餞類可寄。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"堅果",cat:"food",status:"can",note:"核桃、杏仁、腰果等堅果可寄。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"果乾",cat:"food",status:"can",note:"芒果乾、芭樂乾等果乾可寄。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"咖啡豆",cat:"food",status:"can",note:"咖啡豆、咖啡粉可寄。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"蜂蜜",cat:"food",status:"can",note:"蜂蜜可寄。需密封包裝，防止破損。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"醬油",cat:"food",status:"can",note:"調味料可寄。需密封包裝防漏。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"奶粉",cat:"food",status:"can",note:"成人奶粉可寄。嬰幼兒配方奶粉（0-6個月）有備案要求，少量自用可嘗試。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"嬰兒奶粉",cat:"food",status:"maybe",note:"少量（1-2罐）個人自用可嘗試。大量寄送需境外生產企業註冊及產品配方註冊。",channel:"需確認",tax:"個人800元內免稅"},
+      {id:"泡芙",cat:"food",status:"can",note:"烘焙零食可寄。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"芋頭酥",cat:"food",status:"can",note:"一般糕餅可寄。不含肉蛋餡即可。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"麻糬",cat:"food",status:"can",note:"可寄。需注意保質期。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"花生糖",cat:"food",status:"can",note:"花生製品可寄。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+
+      // 保健品
+      {id:"魚油",cat:"health",status:"can",note:"可寄。保留原包裝，避免無標籤散裝。",channel:"敏感貨專線",tax:"關稅5-12%+增值稅13%"},
+      {id:"維他命",cat:"health",status:"can",note:"維生素類保健品可寄。",channel:"敏感貨專線",tax:"關稅5-12%+增值稅13%"},
+      {id:"葉黃素",cat:"health",status:"can",note:"可寄。保健品類最常見品項之一。",channel:"敏感貨專線",tax:"關稅5-12%+增值稅13%"},
+      {id:"膠原蛋白",cat:"health",status:"can",note:"可寄。粉劑或膠囊均可。",channel:"敏感貨專線",tax:"關稅5-12%+增值稅13%"},
+      {id:"益生菌",cat:"health",status:"can",note:"可寄。",channel:"敏感貨專線",tax:"關稅5-12%+增值稅13%"},
+      {id:"蜂膠",cat:"health",status:"can",note:"可寄。需原包裝密封。",channel:"敏感貨專線",tax:"關稅5-12%+增值稅13%"},
+      {id:"燕窩",cat:"health",status:"maybe",note:"一般燕窩可寄。含瀕危金絲燕成分的燕窩❌禁運。建議提供包裝照片確認。",channel:"需確認",tax:"關稅5-12%+增值稅13%"},
+      {id:"靈芝",cat:"health",status:"maybe",note:"一般靈芝保健品可寄。野生靈芝需瀕危物種證明。",channel:"需確認",tax:"關稅6-20%"},
+      {id:"葡萄糖胺",cat:"health",status:"can",note:"關節保健品可寄。",channel:"敏感貨專線",tax:"關稅5-12%+增值稅13%"},
+      {id:"蔓越莓",cat:"health",status:"can",note:"蔓越莓膠囊/錠可寄。",channel:"敏感貨專線",tax:"關稅5-12%+增值稅13%"},
+      {id:"酵素",cat:"health",status:"can",note:"酵素飲品/膠囊可寄。",channel:"敏感貨專線",tax:"關稅5-12%+增值稅13%"},
+      {id:"藍藻",cat:"health",status:"can",note:"藍藻/螺旋藻類保健品可寄。",channel:"敏感貨專線",tax:"關稅5-12%+增值稅13%"},
+      {id:"鈣片",cat:"health",status:"can",note:"礦物質補充劑可寄。",channel:"敏感貨專線",tax:"關稅5-12%+增值稅13%"},
+      {id:"鐵劑",cat:"health",status:"can",note:"可寄。",channel:"敏感貨專線",tax:"關稅5-12%+增值稅13%"},
+
+      // 茶葉
+      {id:"茶葉",cat:"tea",status:"can",note:"高山茶、烏龍茶、紅茶、綠茶均可寄。建議真空包裝。商業件需產地證明。",channel:"敏感貨專線",tax:"關稅15%+增值稅9%"},
+      {id:"高山茶",cat:"tea",status:"can",note:"可寄。真空包裝最佳。",channel:"敏感貨專線",tax:"關稅15%+增值稅9%"},
+      {id:"烏龍茶",cat:"tea",status:"can",note:"可寄。",channel:"敏感貨專線",tax:"關稅15%+增值稅9%"},
+      {id:"紅茶",cat:"tea",status:"can",note:"可寄。",channel:"敏感貨專線",tax:"關稅15%+增值稅9%"},
+      {id:"綠茶",cat:"tea",status:"can",note:"可寄。",channel:"敏感貨專線",tax:"關稅15%+增值稅9%"},
+      {id:"普洱茶",cat:"tea",status:"can",note:"可寄。普洱茶餅/茶磚均可。",channel:"敏感貨專線",tax:"關稅15%+增值稅9%"},
+      {id:"茶包",cat:"tea",status:"can",note:"可寄。",channel:"敏感貨專線",tax:"關稅15%+增值稅9%"},
+      {id:"東方美人茶",cat:"tea",status:"can",note:"可寄。",channel:"敏感貨專線",tax:"關稅15%+增值稅9%"},
+      {id:"金萱茶",cat:"tea",status:"can",note:"可寄。",channel:"敏感貨專線",tax:"關稅15%+增值稅9%"},
+      {id:"花草茶",cat:"tea",status:"can",note:"菊花茶、玫瑰花茶等可寄。",channel:"敏感貨專線",tax:"關稅15%+增值稅9%"},
+
+      // 化妝品/保養品
+      {id:"面膜",cat:"cosmetic",status:"can",note:"一般面膜可寄。含藥用成分（美白、抗痘）的面膜需確認。",channel:"敏感貨專線",tax:"關稅5-10%+增值稅13%"},
+      {id:"乳液",cat:"cosmetic",status:"can",note:"護膚乳液可寄。",channel:"敏感貨專線",tax:"關稅5-10%+增值稅13%"},
+      {id:"精華液",cat:"cosmetic",status:"can",note:"可寄。液體類需密封包裝防漏。",channel:"敏感貨專線",tax:"關稅5-10%+增值稅13%"},
+      {id:"防曬乳",cat:"cosmetic",status:"can",note:"可寄。防曬產品在中國可能需要特殊備案。",channel:"敏感貨專線",tax:"關稅5-10%+增值稅13%"},
+      {id:"口紅",cat:"cosmetic",status:"can",note:"彩妝品可寄。",channel:"敏感貨專線",tax:"關稅5-10%+增值稅13%"},
+      {id:"粉底液",cat:"cosmetic",status:"can",note:"可寄。",channel:"敏感貨專線",tax:"關稅5-10%+增值稅13%"},
+      {id:"眼影",cat:"cosmetic",status:"can",note:"可寄。",channel:"敏感貨專線",tax:"關稅5-10%+增值稅13%"},
+      {id:"香水",cat:"cosmetic",status:"can",note:"可寄。含酒精成分，需標示清楚。",channel:"敏感貨專線",tax:"關稅5-10%+增值稅13%"},
+      {id:"洗面乳",cat:"cosmetic",status:"can",note:"清潔用品可寄。",channel:"敏感貨專線",tax:"關稅5-10%+增值稅13%"},
+      {id:"卸妝油",cat:"cosmetic",status:"can",note:"可寄。液體類需密封。",channel:"敏感貨專線",tax:"關稅5-10%+增值稅13%"},
+      {id:"化妝水",cat:"cosmetic",status:"can",note:"可寄。",channel:"敏感貨專線",tax:"關稅5-10%+增值稅13%"},
+      {id:"眼霜",cat:"cosmetic",status:"can",note:"可寄。",channel:"敏感貨專線",tax:"關稅5-10%+增值稅13%"},
+      {id:"BB霜",cat:"cosmetic",status:"can",note:"可寄。",channel:"敏感貨專線",tax:"關稅5-10%+增值稅13%"},
+
+      // 中藥/藥品
+      {id:"枸杞",cat:"medicine",status:"can",note:"一般中藥材可寄。",channel:"藥品專線",tax:"關稅6-20%+增值稅9%"},
+      {id:"紅棗",cat:"medicine",status:"can",note:"可寄。",channel:"藥品專線",tax:"關稅6-20%+增值稅9%"},
+      {id:"當歸",cat:"medicine",status:"can",note:"可寄。",channel:"藥品專線",tax:"關稅6-20%+增值稅9%"},
+      {id:"人參",cat:"medicine",status:"cannot",note:"❌ 人參（尤其是野山人參）屬瀕危保護物種，禁止寄大陸。部分人工種植參可能例外，需確認。",channel:"—",tax:"—"},
+      {id:"黃芪",cat:"medicine",status:"can",note:"可寄。",channel:"藥品專線",tax:"關稅6-20%+增值稅9%"},
+      {id:"菊花",cat:"medicine",status:"can",note:"藥用菊花可寄。",channel:"藥品專線",tax:"關稅6-20%+增值稅9%"},
+      {id:"鹿茸",cat:"medicine",status:"cannot",note:"❌ 鹿茸屬瀕危物種製品，禁止寄大陸。",channel:"—",tax:"—"},
+      {id:"冬蟲夏草",cat:"medicine",status:"cannot",note:"❌ 冬蟲夏草屬瀕危保護物種，禁止寄大陸。",channel:"—",tax:"—"},
+      {id:"四物湯",cat:"medicine",status:"can",note:"中藥包可寄。需保留原包裝標示成分。",channel:"藥品專線",tax:"關稅6-20%+增值稅9%"},
+      {id:"藥膏",cat:"medicine",status:"maybe",note:"一般外用藥膏可寄。含西藥成分的需確認。",channel:"需確認",tax:"關稅6-20%+增值稅9%"},
+      {id:"跌打藥酒",cat:"medicine",status:"maybe",note:"外用藥酒可嘗試。含酒精成分需標示清楚。",channel:"需確認",tax:"關稅6-20%+增值稅9%"},
+      {id:"枇杷膏",cat:"medicine",status:"can",note:"可寄。",channel:"藥品專線",tax:"關稅6-20%+增值稅9%"},
+
+      // 電子產品
+      {id:"手機",cat:"electronic",status:"can",note:"可寄。含鋰電池需申報。新機可能被要求提供發票。",channel:"快速專線",tax:"關稅0%+增值稅13%"},
+      {id:"筆電",cat:"electronic",status:"can",note:"可寄。含電池需申報。",channel:"快速專線",tax:"關稅0%+增值稅13%"},
+      {id:"平板",cat:"electronic",status:"can",note:"可寄。",channel:"快速專線",tax:"關稅0%+增值稅13%"},
+      {id:"耳機",cat:"electronic",status:"can",note:"可寄。藍牙耳機含鋰電池需申報。",channel:"快速專線",tax:"關稅0%+增值稅13%"},
+      {id:"行動電源",cat:"electronic",status:"maybe",note:"純鋰電池產品有運輸限制。容量需符合航空運輸規定。建議先確認。",channel:"需確認",tax:"關稅0%+增值稅13%"},
+      {id:"相機",cat:"electronic",status:"can",note:"可寄。含電池需申報。",channel:"快速專線",tax:"關稅0%+增值稅13%"},
+      {id:"智慧手錶",cat:"electronic",status:"can",note:"可寄。",channel:"快速專線",tax:"關稅0%+增值稅13%"},
+      {id:"電腦零件",cat:"electronic",status:"can",note:"CPU、記憶體、硬碟等可寄。",channel:"快速專線",tax:"關稅0%+增值稅13%"},
+      {id:"遊戲機",cat:"electronic",status:"can",note:"Switch、PS5等遊戲機可寄。",channel:"快速專線",tax:"關稅0%+增值稅13%"},
+
+      // 服飾/日用品
+      {id:"衣服",cat:"daily",status:"can",note:"一般衣物可寄。大量同款可能被視為商業行為。",channel:"經濟專線",tax:"關稅6-17.5%+增值稅13%"},
+      {id:"鞋子",cat:"daily",status:"can",note:"可寄。",channel:"經濟專線",tax:"關稅6-17.5%+增值稅13%"},
+      {id:"包包",cat:"daily",status:"can",note:"可寄。品牌包可能被要求提供正品證明。",channel:"經濟專線",tax:"關稅6-17.5%+增值稅13%"},
+      {id:"手錶",cat:"daily",status:"can",note:"一般手錶可寄。高價手錶需申報價值。",channel:"經濟專線",tax:"關稅6-17.5%+增值稅13%"},
+      {id:"玩具",cat:"daily",status:"can",note:"一般玩具可寄。需符合中國玩具安全標準。",channel:"經濟專線",tax:"關稅5-15%"},
+      {id:"寢具",cat:"daily",status:"can",note:"床單、棉被等可寄。",channel:"經濟專線",tax:"關稅6-17.5%+增值稅13%"},
+      {id:"餐具",cat:"daily",status:"can",note:"可寄。陶瓷類需加強包裝防碎。",channel:"經濟專線",tax:"關稅5-15%"},
+      {id:"保溫杯",cat:"daily",status:"can",note:"可寄。",channel:"經濟專線",tax:"關稅5-15%"},
+      {id:"毛巾",cat:"daily",status:"can",note:"可寄。",channel:"經濟專線",tax:"關稅6-17.5%+增值稅13%"},
+      {id:"文具",cat:"daily",status:"can",note:"可寄。",channel:"經濟專線",tax:"關稅5-15%"},
+      {id:"眼鏡",cat:"daily",status:"can",note:"可寄。",channel:"經濟專線",tax:"關稅5-15%"},
+      {id:"寵物食品",cat:"daily",status:"maybe",note:"寵物飼料需檢疫審批。乾飼料少量自用可嘗試，罐頭/濕食風險較高。",channel:"需確認",tax:"關稅5-15%"},
+      {id:"書籍",cat:"daily",status:"can",note:"一般書籍可寄。10本以下個人自用免稅放行。含政治敏感內容可能被扣。",channel:"經濟專線",tax:"關稅0%+增值稅9%"},
+      {id:"雜誌",cat:"daily",status:"can",note:"可寄。",channel:"經濟專線",tax:"關稅0%+增值稅9%"},
+      {id:"CD",cat:"daily",status:"can",note:"音樂CD可寄。",channel:"經濟專線",tax:"關稅0%+增值稅9%"},
+      {id:"口罩",cat:"daily",status:"can",note:"一般口罩可寄。醫療級口罩需確認。",channel:"經濟專線",tax:"關稅5-15%"},
+
+      // 其他
+      {id:"伴手禮",cat:"other",status:"can",note:"一般伴手禮（糕餅類、糖果類）可寄。避免肉類製品。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"禮盒",cat:"other",status:"can",note:"糕餅禮盒可寄。若含肉製品則不可。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"手工皂",cat:"other",status:"can",note:"可寄。",channel:"敏感貨專線",tax:"關稅5-10%"},
+      {id:"精油",cat:"other",status:"can",note:"可寄。需密封包裝防漏。",channel:"敏感貨專線",tax:"關稅5-15%"},
+      {id:"隱形眼鏡",cat:"other",status:"can",note:"可寄。屬於醫療器械，少量自用可。",channel:"敏感貨專線",tax:"關稅5-15%"},
+      {id:"染髮劑",cat:"other",status:"can",note:"可寄。化學品需密封包裝。",channel:"敏感貨專線",tax:"關稅5-15%"},
+      {id:"烘焙材料",cat:"other",status:"can",note:"麵粉、糖粉、酵母等可寄。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"種子",cat:"other",status:"cannot",note:"❌ 植物種子需檢疫審批，個人寄送風險極高，不建議。",channel:"—",tax:"—"},
+      {id:"農產品",cat:"other",status:"cannot",note:"❌ 新鮮蔬果禁止寄大陸。",channel:"—",tax:"—"},
+      {id:"寵物藥品",cat:"other",status:"cannot",note:"❌ 動物用藥品禁止個人寄送。",channel:"—",tax:"—"},
+      {id:"活體植物",cat:"other",status:"cannot",note:"❌ 活體植物需檢疫審批，個人不可寄。",channel:"—",tax:"—"},
+    ];
+
+    // Build category display
+    const cats = {
+      food:{icon:"🍪",name:"食品／零食",items:[]},
+      health:{icon:"💊",name:"保健品",items:[]},
+      tea:{icon:"🍵",name:"茶葉",items:[]},
+      cosmetic:{icon:"💄",name:"化妝品／保養品",items:[]},
+      medicine:{icon:"🌿",name:"中藥／藥品",items:[]},
+      electronic:{icon:"📱",name:"電子產品",items:[]},
+      daily:{icon:"📦",name:"服飾／日用品",items:[]},
+      other:{icon:"📋",name:"其他",items:[]},
+    };
+
+    DB.forEach(function(item){
+      if(cats[item.cat]) cats[item.cat].items.push(item);
+    });
+
+    var catGrid = document.getElementById('categoryGrid');
+    Object.entries(cats).forEach(function(entry){
+      var key = entry[0], cat = entry[1];
+      var div = document.createElement('div');
+      div.className = 'cat-group';
+      var itemsHtml = cat.items.map(function(item){
+        var dot = item.status === 'can' ? 'green' : item.status === 'cannot' ? 'red' : 'orange';
+        return '<span class="cat-item" onclick="searchItem(\''+item.id+'\')" title="'+item.note+'"><span class="dot '+dot+'"></span>'+item.id+'</span>';
+      }).join('');
+      div.innerHTML = '<h3>'+cat.icon+' '+cat.name+'</h3><div class="cat-items">'+itemsHtml+'</div>';
+      catGrid.appendChild(div);
+    });
+
+    // Search function
+    function doSearch(){
+      var q = document.getElementById('searchInput').value.trim();
+      if(!q) return;
+      searchItem(q);
+    }
+
+    function quickSearch(q){
+      document.getElementById('searchInput').value = q;
+      searchItem(q);
+    }
+
+    function searchItem(q){
+      document.getElementById('noResult').style.display = 'none';
+      gtag('event','can_i_ship_search',{event_category:'engagement',event_label:q});
+
+      // Fuzzy match
+      var results = DB.filter(function(item){
+        return item.id.includes(q) || q.includes(item.id) || item.note.includes(q);
+      });
+
+      if(results.length === 0){
+        // Try partial match
+        results = DB.filter(function(item){
+          return q.split('').filter(function(c){return item.id.includes(c)}).length >= Math.min(q.length,3);
+        });
+      }
+
+      var area = document.getElementById('resultsArea');
+
+      if(results.length === 0){
+        area.innerHTML = '<div class="no-result"><div class="icon">🤔</div><h3>「'+q+'」不在資料庫中</h3><p>可以去 LINE 問客服，傳照片給我們確認</p><a href="https://line.me/ti/p/~subaotw5988" class="btn btn-line" target="_blank" style="display:inline-flex;margin-top:12px" onclick="gtag(\'event\',\'line_click\',{event_category:\'conversion\',event_label:\'can_i_ship_unknown\'})"><i class="fab fa-line"></i> LINE 詢問客服</a></div>';
+        return;
+      }
+
+      var top = results[0];
+      var statusMap = {can:{emoji:"✅",text:"可以寄！",cls:"can"},cannot:{emoji:"❌",text:"不可以寄",cls:"cannot"},maybe:{emoji:"⚠️",text:"需確認",cls:"maybe"}};
+      var s = statusMap[top.status];
+
+      var html = '<div class="result-card '+s.cls+'">';
+      html += '<div class="result-status">'+s.emoji+'</div>';
+      html += '<div class="result-title">'+top.id+' — '+s.text+'</div>';
+      html += '<div class="result-detail">'+top.note+'</div>';
+      html += '<div class="result-meta">';
+      if(top.channel !== '—') html += '<span class="meta-tag channel"><i class="fas fa-truck"></i> '+top.channel+'</span>';
+      if(top.tax !== '—') html += '<span class="meta-tag tax"><i class="fas fa-receipt"></i> '+top.tax+'</span>';
+      if(top.status !== 'can') html += '<span class="meta-tag alert"><i class="fas fa-exclamation-triangle"></i> 寄送前請確認</span>';
+      html += '</div>';
+      html += '<div style="margin-top:16px">';
+      html += '<a href="https://line.me/ti/p/~subaotw5988" class="btn btn-line" target="_blank" onclick="gtag(\'event\',\'line_click\',{event_category:\'conversion\',event_label:\'can_i_ship_result\'})"><i class="fab fa-line"></i> LINE 確認並估價</a>';
+      html += '</div></div>';
+
+      // Show other matching results
+      if(results.length > 1){
+        html += '<div style="margin-top:12px;font-size:13px;color:var(--text-light)">也找到 '+results.length+' 個相關商品：';
+        results.forEach(function(r){html += ' <span style="cursor:pointer;color:var(--primary);text-decoration:underline" onclick="searchItem(\''+r.id+'\')">'+r.id+'</span>';});
+        html += '</div>';
+      }
+
+      area.innerHTML = html;
+      area.scrollIntoView({behavior:'smooth',block:'start'});
+    }
+
+    // Enter key
+    document.getElementById('searchInput').addEventListener('keydown',function(e){if(e.key==='Enter')doSearch()});
+
+    // Mobile menu
+    var menuToggle=document.getElementById('menuToggle'),mobileMenu=document.getElementById('mobileMenu');
+    menuToggle.addEventListener('click',function(){mobileMenu.classList.toggle('active');var icon=menuToggle.querySelector('i');icon.classList.toggle('fa-bars');icon.classList.toggle('fa-times')});
+    mobileMenu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mobileMenu.classList.remove('active');menuToggle.querySelector('i').classList.remove('fa-times');menuToggle.querySelector('i').classList.add('fa-bars')})});
+    document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});
+
+    // Scroll
+    window.addEventListener('scroll',function(){document.getElementById('header').classList.toggle('scrolled',window.scrollY>50)});
+
+    // Contact modal
+    function openContactModal(){document.getElementById('contactModal').classList.add('active')}
+    function closeContactModal(){document.getElementById('contactModal').classList.remove('active');setTimeout(function(){document.getElementById('contactFormWrap').style.display='block';document.getElementById('successMsg').style.display='none';document.getElementById('contactMsgForm').reset()},300)}
+    function submitContactForm(e){e.preventDefault();gtag('event','contact_form_submit',{event_category:'conversion'});document.getElementById('contactFormWrap').style.display='none';document.getElementById('successMsg').style.display='block';var n=document.getElementById('cfName').value,c=document.getElementById('cfContact').value,i=document.getElementById('cfItem').value||'未填',m=document.getElementById('cfMsg').value||'未填';fetch('https://formsubmit.co/ajax/business@videotvai.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,contact:c,item:i,message:m,_subject:'[速豹官網留言] '+n})}).catch(function(){})}
+  </script>
+</body>
+</html>
