@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>运费估算 / 材积计算器｜两岸设备/快递运费预估｜速豹集运</title>
+  <meta name="description" content="速豹集运在线运费估算工具。输入货物重量、尺寸、类型，快速预估大陆→台湾设备运费和台湾→大陆快递费用。支持一般货物、敏感货、大件设备三种模式。">
+  <link rel="canonical" href="https://www.subaotw.cn/pricing-calculator">
+  <style>
+    :root{--p:#1a56db;--pd:#1e40af;--a:#f97316;--g:#10b981;--bg:#f8fafc;--c:#fff;--t:#1e293b;--l:#64748b;--b:#e2e8f0;--r:12px;--shadow-sm:0 1px 2px rgba(0,0,0,0.05);--shadow-md:0 4px 12px rgba(0,0,0,0.08);--shadow-lg:0 10px 30px rgba(0,0,0,0.1)}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:var(--t);line-height:1.7;background:var(--bg)}
+    .container{max-width:1200px;margin:0 auto;padding:0 24px}
+    .header{background:rgba(255,255,255,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--b);position:sticky;top:0;z-index:100}
+    .header .container{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .logo{font-size:22px;font-weight:800;color:var(--p);text-decoration:none}
+    .nav{display:flex;gap:8px;align-items:center}
+    .nav a{color:var(--l);font-weight:500;font-size:14px;text-decoration:none;padding:6px 14px;border-radius:8px;transition:all .2s}
+    .nav a:hover,.nav a.active{color:var(--p);background:#eff6ff}
+    .burger{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--t);padding:4px}
+    a{text-decoration:none;color:inherit}
+    .hero{background:linear-gradient(135deg,var(--p) 0%,#1e3a8a 100%);color:#fff;padding:80px 0 50px;text-align:center}
+    .hero h1{font-size:36px;font-weight:800;margin-bottom:8px}
+    .hero p{font-size:17px;opacity:0.85}
+    .section{padding:60px 0}
+    .btn{display:inline-block;padding:12px 28px;border-radius:8px;font-weight:600;font-size:15px;cursor:pointer;border:none;transition:all .2s}
+    .btn-primary{background:var(--p);color:#fff}.btn-primary:hover{background:var(--pd)}
+    .btn-accent{background:var(--a);color:#fff}.btn-accent:hover{background:#ea580c}
+    .btn-green{background:var(--g);color:#fff}.btn-green:hover{background:#059669}
+    .card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow-md);padding:32px;margin-bottom:24px}
+    .card h2{font-size:22px;margin-bottom:20px;color:var(--t)}
+    .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .field{margin-bottom:20px}
+    .field label{display:block;font-size:14px;font-weight:600;color:var(--t);margin-bottom:6px}
+    .field input,.field select{width:100%;padding:12px 16px;border:1px solid var(--b);border-radius:8px;font-size:15px;font-family:inherit;outline:none;transition:border .2s}
+    .field input:focus,.field select:focus{border-color:var(--p);box-shadow:0 0 0 3px rgba(26,86,219,0.1)}
+    .result-box{background:linear-gradient(135deg,#f0fdf4,#ecfdf5);border:2px solid var(--g);border-radius:var(--r);padding:28px;text-align:center;margin-top:20px}
+    .result-box .price{font-size:42px;font-weight:800;color:var(--g)}
+    .result-box .note{font-size:13px;color:var(--l);margin-top:8px}
+    .tab-row{display:flex;gap:8px;margin-bottom:32px}
+    .tab-btn{padding:10px 24px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;border:1px solid var(--b);background:#fff;transition:all .2s}
+    .tab-btn.active{background:var(--p);color:#fff;border-color:var(--p)}
+    .tag{display:inline-block;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600}
+    .tag-green{background:#dcfce7;color:#166534}
+    .tag-orange{background:#fff7ed;color:#c2410c}
+    .tag-blue{background:#eff6ff;color:#1e40af}
+    .footer{background:var(--t);color:#94a3b8;padding:40px 0;text-align:center;margin-top:40px;font-size:14px}
+    .footer a{color:#cbd5e1}
+    .footer a:hover{color:#fff}
+    .mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;bottom:0;background:#fff;padding:24px;z-index:99;overflow-y:auto}
+    .mobile-menu.active{display:block}
+    .mobile-menu a{display:block;padding:14px 0;font-size:16px;font-weight:500;color:var(--t);border-bottom:1px solid var(--b)}
+    .mobile-menu a.active{color:var(--p)}
+    @media(max-width:768px){.nav{display:none}.burger{display:block}.hero h1{font-size:28px}.grid2,.grid3{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">速豹集运</a>
+      <nav class="nav" id="desktopNav">
+        <a href="/equipment/">设备运输</a>
+        <a href="/tw-to-cn/">台湾寄大陆</a>
+        <a href="/pricing-calculator" class="active">运费估算</a>
+        <a href="/guide/">物流指南</a>
+        <a href="/cases/">客户案例</a>
+        <a href="/faq">常见问题</a>
+        <a href="/about">关于我们</a>
+        <a href="/contact">联系我们</a>
+      </nav>
+      <button class="burger" id="burgerBtn">☰</button>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/equipment/">设备运输</a>
+    <a href="/tw-to-cn/">台湾寄大陆</a>
+    <a href="/pricing-calculator" class="active">运费估算</a>
+    <a href="/guide/">物流指南</a>
+    <a href="/cases/">客户案例</a>
+    <a href="/faq">常见问题</a>
+    <a href="/about">关于我们</a>
+    <a href="/contact">联系我们</a>
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <h1>📊 两岸运费估算</h1>
+      <p>输入货物信息，快速预估设备运输/快递费用 · 结果仅供参考，实际以报价为准</p>
+    </div>
+  </section>
+
+  <div class="section" style="padding-top:40px">
+    <div class="container">
+      <!-- Mode tabs -->
+      <div class="tab-row" id="modeTabs">
+        <button class="tab-btn active" data-mode="express" onclick="switchMode('express')">📦 快递模式（台湾→大陆）</button>
+        <button class="tab-btn" data-mode="equipment" onclick="switchMode('equipment')">🏗️ 设备运输（大陆→台湾）</button>
+      </div>
+
+      <!-- Express mode -->
+      <div id="expressMode">
+        <div class="card">
+          <h2>📦 快递费用估算</h2>
+          <div class="grid2">
+            <div class="field"><label>货物类型</label>
+              <select id="expressType"><option value="general">一般货物</option><option value="sensitive">敏感货（食品/保健品/化妆品/茶叶）</option><option value="medicine">药品/中药</option><option value="electronic">电子产品</option></select></div>
+            <div class="field"><label>实际重量 (kg)</label><input type="number" id="expressWeight" placeholder="例如：5" min="0.1" step="0.1" value="5"></div>
+          </div>
+          <div class="grid3">
+            <div class="field"><label>长 (cm)</label><input type="number" id="expressL" placeholder="cm" min="1" value="30"></div>
+            <div class="field"><label>宽 (cm)</label><input type="number" id="expressW" placeholder="cm" min="1" value="20"></div>
+            <div class="field"><label>高 (cm)</label><input type="number" id="expressH" placeholder="cm" min="1" value="15"></div>
+          </div>
+          <p style="font-size:12px;color:var(--l);margin-top:8px">💡 体积重量 = 长×宽×高÷6000，与实际重量取较大值计费</p>
+          <button class="btn btn-primary" style="width:100%;margin-top:16px" onclick="calcExpress()">开始估算</button>
+          <div class="result-box" id="expressResult" style="display:none">
+            <div style="font-size:14px;color:var(--l)">预估运费区间</div>
+            <div class="price" id="expressPrice"></div>
+            <div class="note" id="expressDetail"></div>
+            <div style="margin-top:12px">
+              <a href="/contact" class="btn btn-accent" style="padding:10px 24px;font-size:14px">获取精准报价</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Equipment mode -->
+      <div id="equipmentMode" style="display:none">
+        <div class="card">
+          <h2>🏗️ 设备运输费用估算</h2>
+          <div class="grid2">
+            <div class="field"><label>设备类型</label>
+              <select id="equipType"><option value="cnc">CNC/加工中心</option><option value="injection">注塑机</option><option value="press">冲床/压力机</option><option value="textile">纺织机械</option><option value="plastic">塑料机械</option><option value="printing">印刷设备</option><option value="mold">模具</option><option value="parts">机械配件</option><option value="other">其他设备</option></select></div>
+            <div class="field"><label>设备重量 (吨)</label><input type="number" id="equipWeight" placeholder="例如：5" min="0.1" step="0.1" value="5"></div>
+          </div>
+          <div class="grid3">
+            <div class="field"><label>长 (米)</label><input type="number" id="equipL" placeholder="m" min="0.1" step="0.1" value="3"></div>
+            <div class="field"><label>宽 (米)</label><input type="number" id="equipW" placeholder="m" min="0.1" step="0.1" value="2"></div>
+            <div class="field"><label>高 (米)</label><input type="number" id="equipH" placeholder="m" min="0.1" step="0.1" value="2.5"></div>
+          </div>
+          <div class="field"><label>起运地/目的地</label>
+            <select id="equipRoute"><option value="sc-fj">华南（广东/福建）→ 台湾</option><option value="hd-zj">华东（浙江/上海）→ 台湾</option><option value="hz">华中（湖南/湖北/江西）→ 台湾</option><option value="hb">华北（山东/天津/北京）→ 台湾</option><option value="other">其他地区 → 台湾</option></select></div>
+          <p style="font-size:12px;color:var(--l);margin-top:8px">💡 设备运输费用含：提货+报关+海运/陆运+清关+台湾本地配送。不含关税。</p>
+          <button class="btn btn-primary" style="width:100%;margin-top:16px" onclick="calcEquipment()">开始估算</button>
+          <div class="result-box" id="equipResult" style="display:none">
+            <div style="font-size:14px;color:var(--l)">预估运费区间（人民币）</div>
+            <div class="price" id="equipPrice"></div>
+            <div class="note" id="equipDetail"></div>
+            <div style="margin-top:12px">
+              <a href="/contact" class="btn btn-accent" style="padding:10px 24px;font-size:14px">获取精准报价</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick tips -->
+      <div class="card" style="background:linear-gradient(135deg,#eff6ff,#f0f9ff)">
+        <h2>💡 运费计算说明</h2>
+        <div class="grid3">
+          <div><span class="tag tag-blue">计费重量</span><p style="font-size:13px;margin-top:4px">实际重量与体积重量（长×宽×高÷6000）取大值</p></div>
+          <div><span class="tag tag-green">免税额</span><p style="font-size:13px;margin-top:4px">个人自用800元以下免关税</p></div>
+          <div><span class="tag tag-orange">设备运输</span><p style="font-size:13px;margin-top:4px">按立方米或吨计费，含报关清关全包</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 速豹集运 · 两岸物流专线</p>
+    <p style="margin-top:8px"><a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">湘ICP备2026016030号-2</a> · 客服：<a href="tel:13026603164">13026603164</a></p>
+  </footer>
+
+  <script>
+    function switchMode(mode){
+      document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active')});
+      document.querySelector('[data-mode="'+mode+'"]').classList.add('active');
+      document.getElementById('expressMode').style.display = mode === 'express' ? 'block' : 'none';
+      document.getElementById('equipmentMode').style.display = mode === 'equipment' ? 'block' : 'none';
+    }
+
+    function calcExpress(){
+      var type = document.getElementById('expressType').value;
+      var w = parseFloat(document.getElementById('expressWeight').value) || 0;
+      var l = parseFloat(document.getElementById('expressL').value) || 0;
+      var wi = parseFloat(document.getElementById('expressW').value) || 0;
+      var h = parseFloat(document.getElementById('expressH').value) || 0;
+      var volWeight = (l * wi * h) / 6000;
+      var billWeight = Math.max(w, volWeight);
+
+      var rateMap = {general:{low:180,high:280},sensitive:{low:290,high:380},medicine:{low:500,high:600},electronic:{low:250,high:450}};
+      var rate = rateMap[type] || rateMap.general;
+      var names = {general:'一般货物',sensitive:'敏感货',medicine:'药品/中药',electronic:'电子产品'};
+
+      var low = Math.round(billWeight * rate.low);
+      var high = Math.round(billWeight * rate.high);
+
+      document.getElementById('expressResult').style.display = 'block';
+      document.getElementById('expressPrice').textContent = 'NT$'+low.toLocaleString()+' ~ NT$'+high.toLocaleString();
+      document.getElementById('expressDetail').innerHTML = '计费重量：'+billWeight.toFixed(1)+'kg（实重 '+w.toFixed(1)+'kg，体-积重 '+volWeight.toFixed(1)+'kg）<br>类型：'+names[type]+' · 含税含派送';
+    }
+
+    function calcEquipment(){
+      var wt = parseFloat(document.getElementById('equipWeight').value) || 0;
+      var l = parseFloat(document.getElementById('equipL').value) || 0;
+      var wi = parseFloat(document.getElementById('equipW').value) || 0;
+      var h = parseFloat(document.getElementById('equipH').value) || 0;
+      var vol = l * wi * h;
+      var route = document.getElementById('equipRoute').value;
+
+      var routeMul = {1.0:'sc-fj',1.1:'hd-zj',1.2:'hz',1.35:'hb',1.5:'other'};
+      var mul = 1.0;
+      for(var k in routeMul){if(routeMul[k]===route){mul=parseFloat(k);break}}
+
+      var volCost = vol * 800 * mul;
+      var wtCost = wt * 1200 * mul;
+      var baseCost = Math.max(volCost, wtCost, 3000);
+
+      var low = Math.round(baseCost * 0.85);
+      var high = Math.round(baseCost * 1.15);
+
+      document.getElementById('equipResult').style.display = 'block';
+      document.getElementById('equipPrice').textContent = '¥'+low.toLocaleString()+' ~ ¥'+high.toLocaleString();
+      document.getElementById('equipDetail').innerHTML = '设备体积：'+vol.toFixed(1)+'m³ · 重量：'+wt.toFixed(1)+'吨<br>含提货+报关+运输+清关+台湾配送（不含关税）';
+    }
+
+    // Mobile
+    var burgerBtn=document.getElementById('burgerBtn'),mobileMenu=document.getElementById('mobileMenu');
+    burgerBtn.addEventListener('click',function(){mobileMenu.classList.toggle('active')});
+    mobileMenu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mobileMenu.classList.remove('active')})});
+  </script>
+</body>
+</html>
