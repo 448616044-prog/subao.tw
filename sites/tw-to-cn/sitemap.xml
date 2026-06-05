@@ -31,6 +31,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://subao.tw/volume-calculator</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://subao.tw/article-list</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
