@@ -98,7 +98,7 @@
     .header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
     .logo{font-size:24px;font-weight:700;color:var(--primary)}
     .logo img{background:#fff;max-height:50px;max-width:200px;width:auto;display:block}
-    .nav{display:flex;gap:32px}
+    .nav{display:flex;gap:12px}
     .nav>a{display:flex;align-items:center;padding:8px 14px;font-size:14.5px;font-weight:500;color:var(--text-dark);text-decoration:none;border-radius:6px;transition:var(--transition);white-space:nowrap}
     .nav>a:hover,.nav .dropdown:hover>a{background:var(--primary-light);color:var(--primary)}
             .header-cta{display:flex;align-items:center;gap:16px}
@@ -176,10 +176,10 @@
       <nav class="nav" id="desktopNav">
         <a href="/tw-to-cn">台灣發大陸</a>
         <div class="dropdown"><a href="/pricing">運費</a>
-      <div class="dropdown-menu"><a href="/pricing">💰 運費報價</a><a href="/pricing-calculator">🧮 運費試算</a></div></div>
+        <div class="dropdown-menu"><a href="/pricing">運費報價</a><a href="/pricing-calculator">運費試算</a></div></div>
         <a href="/customs-guide" class="active">關稅速查</a>
-    <a href="/can-i-ship" class="mobile-nav-link">可以寄嗎</a>
-    <a href="/volume-calculator" class="mobile-nav-link">材積計算</a>
+        <a href="/can-i-ship">可以寄嗎</a>
+        <a href="/volume-calculator">材積計算</a>
         <a href="/article-list">文章攻略</a>
         <a href="/faq">常見問題</a>
         <a href="/partners">合作夥伴</a>
@@ -196,13 +196,6 @@
 
     <div class="mobile-menu" id="mobileMenu">
     <a href="/tw-to-cn" class="mobile-nav-link">台灣發大陸</a>
-    <a href="/customs-guide" class="mobile-nav-link active">關稅速查</a>
-    <a href="/can-i-ship" class="mobile-nav-link">可以寄嗎</a>
-    <a href="/volume-calculator" class="mobile-nav-link">材積計算</a>
-    <a href="/article-list" class="mobile-nav-link">文章攻略</a>
-    <a href="/faq" class="mobile-nav-link">常見問題</a>
-    <a href="/partners" class="mobile-nav-link">合作夥伴</a>
-    <a href="/about" class="mobile-nav-link">關於我們</a>
     <div class="m-dropdown">
       <span>運費</span>
       <div class="m-dropdown-links">
@@ -210,6 +203,13 @@
         <a href="/pricing-calculator">運費試算</a>
       </div>
     </div>
+    <a href="/customs-guide" class="mobile-nav-link" class="active">關稅速查</a>
+    <a href="/can-i-ship" class="mobile-nav-link">可以寄嗎</a>
+    <a href="/volume-calculator" class="mobile-nav-link">材積計算</a>
+    <a href="/article-list" class="mobile-nav-link">文章攻略</a>
+    <a href="/faq" class="mobile-nav-link">常見問題</a>
+    <a href="/partners" class="mobile-nav-link">合作夥伴</a>
+    <a href="/about" class="mobile-nav-link">關於我們</a>
     <a href="https://line.me/ti/p/~subaotw5988" class="mobile-nav-link cta" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
       <i class="fab fa-line"></i> 加入LINE
     </a>
@@ -510,11 +510,6 @@
           <a href="/pricing">運費報價</a>
           <a href="/pricing-calculator">運費試算</a>
           <a href="/customs-guide">關稅速查</a>
-    <a href="/can-i-ship" class="mobile-nav-link">可以寄嗎</a>
-    <a href="/volume-calculator" class="mobile-nav-link">材積計算</a>
-        <a href="/can-i-ship">可以寄嗎</a>
-    <a href="/volume-calculator" class="mobile-nav-link">材積計算</a>
-        <a href="/volume-calculator">材積計算</a>
           <a href="/article-list">寄件攻略</a>
           <a href="/faq">常見問題</a>
           <a href="/partners">合作夥伴</a>
