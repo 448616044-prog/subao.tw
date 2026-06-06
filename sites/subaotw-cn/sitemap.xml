@@ -55,4 +55,11 @@
   <url><loc>https://www.subaotw.cn/cases/case-press-foshan</loc><priority>0.6</priority></url>
   <url><loc>https://www.subaotw.cn/cases/case-textile-xiamen</loc><priority>0.6</priority></url>
   <url><loc>https://www.subaotw.cn/cases/case-mold-kunshan</loc><priority>0.6</priority></url>
+  <url>
+    <loc>https://www.subaotw.cn/guide/export-compliance</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
