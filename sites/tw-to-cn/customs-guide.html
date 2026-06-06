@@ -241,6 +241,18 @@
         <button class="tab-btn" data-cat="books">📚 書籍／文具</button>
       </div>
 
+      <!-- 文中CTA -->
+      <div style="background:linear-gradient(135deg,#00B900,#009900);color:#fff;padding:16px 20px;border-radius:12px;margin-bottom:28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;box-shadow:0 3px 12px rgba(0,185,0,0.3)">
+        <div style="flex:1;min-width:200px">
+          <p style="margin:0;font-size:15px;font-weight:700">📋 不確定你的商品要繳多少關稅？</p>
+          <p style="margin:4px 0 0;font-size:13px;opacity:0.9">LINE傳商品照片，30分鐘內幫你估算費用</p>
+        </div>
+        <a href="https://line.me/ti/p/~subaotw5988" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#fff;color:#00B900;padding:10px 22px;border-radius:24px;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,0.15)" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'customs_mid_cta'})">
+          <i class="fab fa-line"></i> 免費查詢
+        </a>
+      </div>
+      <p style="text-align:center;margin-top:4px;margin-bottom:24px;font-size:12px;color:#999">🔒 LINE出問題？<a href="/contact-form" style="color:var(--primary);text-decoration:underline">點這留言，我們主動聯繫你 →</a></p>
+
       <!-- 內容區域 -->
       <div id="categoryContent">
         <!-- 保健品 -->
@@ -639,6 +651,44 @@
     function openContactModal(){document.getElementById('contactModal').classList.add('active')}
     function closeContactModal(){document.getElementById('contactModal').classList.remove('active');setTimeout(function(){document.getElementById('contactFormWrap').style.display='block';document.getElementById('successMsg').style.display='none';document.getElementById('contactMsgForm').reset()},300)}
     function submitContactForm(e){e.preventDefault();gtag('event','contact_form_submit',{event_category:'conversion'});document.getElementById('contactFormWrap').style.display='none';document.getElementById('successMsg').style.display='block';var n=document.getElementById('cfName').value;var c=document.getElementById('cfContact').value;var i=document.getElementById('cfItem').value||'未填';var m=document.getElementById('cfMsg').value||'未填';fetch('https://formsubmit.co/ajax/business@videotvai.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,contact:c,item:i,message:m,_subject:'[速豹官網留言] '+n})}).catch(function(){})}
+
+  // 滚动浮动底栏
+  window.addEventListener('scroll', function() {
+    var bar = document.getElementById('floatBar');
+    if (bar) {
+      if (window.scrollY > 600) { bar.classList.add('show'); }
+      else { bar.classList.remove('show'); }
+    }
+  });
   </script>
+
+  <!-- 浮动底栏 -->
+  <style>
+  .float-bar{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,#00B900 0%,#009900 100%);padding:12px 20px;z-index:998;display:none;align-items:center;justify-content:center;gap:16px;box-shadow:0 -4px 20px rgba(0,0,0,0.2)}
+  .float-bar.show{display:flex}
+  .float-bar-text{flex:1;max-width:600px}
+  .float-bar-text p{color:#fff;font-size:15px;font-weight:500;margin:0}
+  .float-bar-text small{color:rgba(255,255,255,0.8);font-size:12px}
+  .btn-line-bar{background:#fff;color:#00B900;font-weight:700;padding:10px 24px;border-radius:24px;font-size:15px;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+  .btn-line-bar:hover{background:#f0f0f0}
+  </style>
+  <div class="float-bar" id="floatBar">
+    <div class="float-bar-text">
+      <p>📋 不確定關稅多少？<strong>LINE傳照片免費估算</strong></p>
+      <small>LINE：subaotw5988　平均30分鐘內回覆</small>
+    </div>
+    <a href="https://line.me/ti/p/~subaotw5988" class="btn-line-bar" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'customs_float_bar'})">
+      <i class="fab fa-line"></i> 免費查詢
+    </a>
+  </div>
+
+  <!-- 悬浮LINE按钮 -->
+  <style>
+  .floating-cta{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:9999;background:linear-gradient(135deg,#00B900,#009900);color:#fff;padding:14px 28px;border-radius:30px;font-weight:700;font-size:15px;box-shadow:0 4px 20px rgba(0,185,0,0.4);text-decoration:none;display:flex;align-items:center;gap:8px;animation:pulse 2s infinite;white-space:nowrap}
+  .floating-cta:hover{transform:translateX(-50%) translateY(-2px);box-shadow:0 6px 24px rgba(0,185,0,0.5)}
+  @keyframes pulse{0%,100%{box-shadow:0 4px 20px rgba(0,185,0,0.4)}50%{box-shadow:0 4px 30px rgba(0,185,0,0.7)}}
+  @media(min-width:769px){.floating-cta{left:auto;right:30px;transform:none}.floating-cta:hover{transform:translateY(-2px)}}
+  </style>
+  <a href="https://line.me/ti/p/~subaotw5988" class="floating-cta" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'customs_floating_cta'})"><i class="fab fa-line"></i> LINE 免費查詢</a>
 </body>
 </html>
