@@ -339,6 +339,12 @@
   </script>
 </head>
 <body>
+  <!-- 公告栏 P1-1 -->
+  <div id="announcementBar" style="background:linear-gradient(135deg,#FF6600,#FF8800);color:#fff;text-align:center;padding:10px 16px;font-size:14px;position:relative;z-index:1001;display:flex;align-items:center;justify-content:center;gap:12px">
+    <span>📢 敏感貨專線正常收件｜LINE即時報價，30分鐘內回覆</span>
+    <a href="https://line.me/ti/p/~subaotw5988" target="_blank" style="color:#fff;font-weight:700;text-decoration:underline" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'announcement_bar'})">立即諮詢 →</a>
+    <button onclick="document.getElementById('announcementBar').style.display='none'" style="position:absolute;right:12px;background:none;border:none;color:#fff;cursor:pointer;font-size:18px;padding:0 8px">&times;</button>
+  </div>
   <header class="header" id="header">
     <div class="container">
       <a href="/" class="logo"><img src="images/subao-logo-new.png" alt="速豹集運" height="40"></a>
@@ -389,6 +395,11 @@
     <div class="container">
       <div class="hero-content">
         <h1>台灣寄大陸<br>最快3-5天送達</h1>
+        <p style="font-size:14px;opacity:0.85;margin-bottom:16px;margin-top:-12px;display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+          <span style="background:rgba(255,255,255,0.2);padding:4px 12px;border-radius:20px">🇹🇼 台灣合法立案</span>
+          <span style="background:rgba(255,255,255,0.2);padding:4px 12px;border-radius:20px">6年+兩岸物流經驗</span>
+          <span style="background:rgba(255,255,255,0.2);padding:4px 12px;border-radius:20px">2000+客戶信任</span>
+        </p>
         <p>速豹集運專營台灣到大陸快遞服務，保健品、茶葉、化妝品統統可寄。LINE即時客服，運費透明，無隱藏費用。</p>
         <div class="hero-buttons">
           <a href="/tw-to-cn" class="btn btn-secondary">
@@ -398,6 +409,29 @@
             <i class="fas fa-calculator"></i> 查詢運費
           </a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 快捷入口 P2-1 -->
+  <section style="padding:40px 0 0;">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:900px;margin:0 auto">
+        <a href="/can-i-ship" style="background:var(--bg-white);padding:24px;border-radius:var(--radius-lg);text-align:center;box-shadow:var(--shadow);transition:var(--transition);display:block" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+          <div style="font-size:36px;margin-bottom:8px">🔍</div>
+          <h4 style="font-weight:700;font-size:16px;margin:0 0 4px">可以寄嗎</h4>
+          <p style="font-size:13px;color:var(--text-light);margin:0">一秒查詢商品能不能寄</p>
+        </a>
+        <a href="/pricing" style="background:var(--bg-white);padding:24px;border-radius:var(--radius-lg);text-align:center;box-shadow:var(--shadow);transition:var(--transition);display:block" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+          <div style="font-size:36px;margin-bottom:8px"><i class="fas fa-tag"></i></div>
+          <h4 style="font-weight:700;font-size:16px;margin:0 0 4px">運費報價</h4>
+          <p style="font-size:13px;color:var(--text-light);margin:0">透明定價，無隱藏費用</p>
+        </a>
+        <a href="/pricing-calculator" style="background:var(--bg-white);padding:24px;border-radius:var(--radius-lg);text-align:center;box-shadow:var(--shadow);transition:var(--transition);display:block" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+          <div style="font-size:36px;margin-bottom:8px">🧮</div>
+          <h4 style="font-weight:700;font-size:16px;margin:0 0 4px">運費試算</h4>
+          <p style="font-size:13px;color:var(--text-light);margin:0">30秒快速估算運費</p>
+        </a>
       </div>
     </div>
   </section>
@@ -417,6 +451,49 @@
           <p>告訴我們你的商品與重量，30分鐘內提供精確報價。經濟/標準/快速/敏感貨四種方案，總有一款適合你。</p>
           <a href="/pricing" class="btn btn-secondary">立即試算</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ P0-2 -->
+  <section class="section" style="background:var(--bg-gray);">
+    <div class="container" style="max-width:800px;">
+      <h2 class="section-title">常見問題</h2>
+      <p class="section-subtitle">第一次寄？這裡有你想要的答案</p>
+      <style>
+      .faq-item{border-bottom:1px solid var(--border)}
+      .faq-q{width:100%;background:none;border:none;padding:20px 0;font-size:16px;font-weight:600;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:var(--text-dark);font-family:inherit}
+      .faq-q:hover{color:var(--primary)}
+      .faq-q .arrow{transition:transform .3s;font-size:12px}
+      .faq-q.open .arrow{transform:rotate(180deg)}
+      .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+      .faq-a.open{max-height:300px}
+      .faq-a p{padding-bottom:20px;color:var(--text-light);font-size:15px;line-height:1.8}
+      </style>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">保健品可以寄大陸嗎？<span class="arrow">▼</span></button>
+          <div class="faq-a"><p>魚油、維他命、葉黃素等保健品皆可透過敏感貨專線寄送。寄前傳照片到LINE，30分鐘內確認。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">運費怎麼計算？<span class="arrow">▼</span></button>
+          <div class="faq-a"><p>按實際重量與材積重量（長×寬×高÷6000）取大值計費。LINE提供即時含稅報價，透明無隱藏費用。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">多久會送到？<span class="arrow">▼</span></button>
+          <div class="faq-a"><p>敏感貨專線3-7個工作天。一般貨品可走經濟渠道7-12天。實際時間受海關影響，我們全程追蹤通知。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">哪些東西不能寄？<span class="arrow">▼</span></button>
+          <div class="faq-a"><p>新鮮肉類、新鲜水果、含未檢疫肉類製品禁運。不確定？傳照片到LINE我們幫你判斷。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">包稅是什麼意思？<span class="arrow">▼</span></button>
+          <div class="faq-a"><p>包稅方案由速豹協助處理進口關稅，你不需要擔心額外費用。實際以海關核定為準，詳情請LINE諮詢。</p></div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:32px">
+        <a href="/faq" style="color:var(--primary);font-weight:600">查看完整FAQ →</a>
       </div>
     </div>
   </section>
@@ -445,6 +522,11 @@
           <div class="feature-icon"><i class="fab fa-line"></i></div>
           <h4>LINE客服</h4>
           <p>平均30分鐘內回覆，語音/圖片皆可</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+          <h4>貨物保障</h4>
+          <p>每筆訂單提供基本理賠，寄得更安心</p>
         </div>
       </div>
     </div>
@@ -479,6 +561,11 @@
           <h4 class="step-title">送達大陸</h4>
           <p class="step-description">3-5天送至收件人手中，LINE通知送達</p>
         </div>
+      </div>
+      <div style="text-align:center;margin-top:36px">
+        <a href="https://line.me/ti/p/~subaotw5988" class="btn btn-secondary" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'home_process_cta'})">
+          <i class="fab fa-line"></i> LINE 開始寄件
+        </a>
       </div>
     </div>
   </section>
@@ -687,6 +774,7 @@
           <h3>聯系我們</h3>
           <a href="https://line.me/ti/p/~subaotw5988" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">LINE：subaotw5988</a>
           <a href="mailto:business@videotvai.com">Email：business@videotvai.com</a>
+          <p style="font-size:14px;color:rgba(255,255,255,0.7);margin-top:8px;margin-bottom:0"><i class="fas fa-phone"></i> 電話：13026603164</p>
           <a href="/about">關於速豹</a>
         </div>
       </div>
