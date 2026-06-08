@@ -61,6 +61,8 @@
     .header-cta{display:flex;align-items:center;gap:12px;flex-shrink:0}
     .btn-line:hover{background:#009900;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,185,0,.25)}
     .mobile-menu{display:none}
+
+.menu-toggle{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text-dark)}
     @media(max-width:992px){.nav,.header-cta{display:none}.menu-toggle{display:block}}
     .article-hero{padding:120px 0 40px;background:linear-gradient(135deg,#2E7D32 0%,#1B5E20 100%);color:var(--text-white)}
     .article-hero h1{font-size:32px;font-weight:700;margin-bottom:16px;line-height:1.4}
@@ -255,7 +257,7 @@
 .contact-modal .success-msg p{font-size:15px;color:#555}
 </style>
 <div class="floating-bar">
-  <a href="https://line.me/ti/p/~subaotw5988" target="_blank" class="icon-btn line-btn" title="LINE即时咨询" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'floating_line'})"><i class="fab fa-line"></i></a>
+  <a href="https://line.me/ti/p/~subaotw5988" target="_blank" class="icon-btn line-btn" title="LINE即时咨询" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'floating_line'})">LINE</a>
   <button class="icon-btn msg-btn" onclick="openContactModal()" aria-label="留言咨询" title="留言给我们"><i class="fas fa-envelope"></i></button>
 </div>
 <div class="contact-modal" id="contactModal">
