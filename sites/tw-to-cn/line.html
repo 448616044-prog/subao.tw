@@ -72,7 +72,27 @@
     }
 
     /* Section */
-    .section { padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
+    
+    .header{position:fixed;top:0;left:0;right:0;height:70px;background:var(--bg-white);z-index:1000;transition:box-shadow .3s}
+    .header.scrolled{box-shadow:var(--shadow)}
+    .header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
+    .logo{font-size:24px;font-weight:700;color:var(--primary);flex-shrink:0}
+    .logo img{background:#fff;max-height:50px;max-width:200px;width:auto;display:block}
+    .nav{display:flex;align-items:center;gap:24px}
+    .nav a,.nav-dropdown>a{font-weight:500;color:var(--text-dark);transition:var(--transition);position:relative;font-size:14px;white-space:nowrap}
+    .nav a:hover,.nav a.active{color:var(--primary)}
+    .nav a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--primary);transition:var(--transition)}
+    .nav a:hover::after,.nav a.active::after{width:100%}
+    .nav-dropdown{position:relative;display:flex;align-items:center}
+    .dd-arrow{font-size:9px;margin-left:4px;display:inline-block}
+    .dd-menu{display:none;position:absolute;top:100%;left:0;min-width:170px;background:#fff;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,.12);padding:8px 0;z-index:100;margin-top:8px;border:1px solid #e8ecf0}
+    .nav-dropdown:hover .dd-menu,.nav-dropdown:focus-within .dd-menu{display:block}
+    .dd-menu a{display:block;padding:10px 16px;font-size:13px;color:var(--text-dark);transition:var(--transition)}
+    .dd-menu a:hover{background:var(--primary-light);color:var(--primary)}
+    .header-cta{display:flex;align-items:center;gap:12px;flex-shrink:0}
+    .btn-line:hover{background:#009900;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,185,0,.25)}
+    @media(max-width:992px){.nav,.header-cta{display:none}.menu-toggle{display:block}}
+.section { padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
     .section h2 {
       font-size: 1.7rem;
       color: #222;
@@ -226,30 +246,7 @@
     .bottom-cta p { opacity: 0.9; margin-bottom: 28px; font-size: 1.05rem; }
 
     /* Dropdown nav */
-    .nav-dropdown{position:relative;display:flex;align-items:center}
-    .dropdown>a::after{content:"▾";font-size:10px;margin-left:5px}
-    .dropdown-menu{display:none;position:absolute;top:100%;left:0;min-width:180px;background:#fff;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,0.12);padding:8px 0;z-index:100;margin-top:4px;border:1px solid #e8ecf0}
-    .dropdown:hover .dropdown-menu,.dropdown:focus-within .dropdown-menu{display:block}
-    .dropdown-menu a{display:block;padding:10px 16px;font-size:14px;color:var(--text-dark);text-decoration:none;transition:var(--transition)}
-    .dd-menu a:hover{background:var(--primary-light);color:var(--primary)}
     .dropdown-menu a.active{background:var(--primary-light);color:var(--primary);font-weight:600}
-    
-
-    .mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;bottom:0;background:#fff;padding:24px;overflow-y:auto;z-index:999;box-shadow:0 4px 12px rgba(0,0,0,.1)}
-    .mobile-menu.active{display:block}
-    .mobile-nav-link{display:block;padding:16px 0;font-size:16px;font-weight:500;color:var(--text-dark);border-bottom:1px solid #e0e0e0}
-    .mobile-nav-link.active{color:var(--primary);font-weight:700}
-    .mobile-nav-link.cta{margin-top:24px;padding:16px 24px;background:var(--primary);color:#fff;border-radius:8px;text-align:center;border:none}
-    .m-dropdown>span{display:flex;justify-content:space-between;align-items:center;padding:16px 0;font-size:16px;font-weight:500;color:var(--text-dark);border-bottom:1px solid #e0e0e0;cursor:pointer}
-    .m-dropdown>span::after{content:"▾";font-size:12px;transition:transform .2s}
-    .m-dropdown.open>span::after{transform:rotate(180deg)}
-    .m-dropdown-links{display:none;padding-left:16px}
-    .m-dropdown.open .m-dropdown-links{display:block}
-    .m-dropdown-links a{display:block;padding:12px 8px;font-size:14px;color:var(--text-dark);border-bottom:1px solid #f0f0f0}
-    .btn-line{display:inline-flex;padding:10px 20px;background:var(--line-green);color:#fff;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;align-items:center;gap:6px;transition:var(--transition);white-space:nowrap}
-    .btn-line:hover{background:#009900;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,185,0,0.25)}
-    .header-cta{display:flex;align-items:center;gap:12px}
-    .menu-toggle{display:none;background:none;border:none;font-size:22px;cursor:pointer;color:var(--text-dark);padding:4px}
     @media (max-width: 600px) {
       .line-hero h1 { font-size: 1.8rem; }
       .qr-section { padding: 24px 16px; }
@@ -275,20 +272,14 @@
 <header class="header" id="header">
     <div class="container">
       <a href="/" class="logo"><img src="images/subao-logo-new.png" alt="速豹集運" height="40"></a>
-            <nav class="nav" id="desktopNav">
+                  <nav class="nav" id="desktopNav">
         <a href="/tw-to-cn" data-nav="tw-to-cn">台灣發大陸</a>
         <div class="nav-dropdown"><a href="/pricing" data-nav="pricing">運費<span class="dd-arrow">▾</span></a>
         <div class="dd-menu"><a href="/pricing">運費報價</a><a href="/pricing-calculator">運費試算</a></div></div>
         <a href="/can-i-ship" data-nav="can-i-ship">可以寄嗎</a>
+        <a href="/customs-guide" data-nav="customs-guide">關稅速查</a>
+        <a href="/volume-calculator" data-nav="volume-calculator">材積計算</a>
         <a href="/article-list" data-nav="article-list">文章攻略</a>
-        <div class="nav-dropdown"><a href="#more">更多<span class="dd-arrow">▾</span></a>
-        <div class="dd-menu">
-          <a href="/customs-guide">關稅速查</a>
-          <a href="/volume-calculator">材積計算</a>
-          <a href="/faq">常見問題</a>
-          <a href="/partners">合作夥伴</a>
-          <a href="/about">關於我們</a>
-        </div></div>
       </nav>
       <div class="header-cta">
         <a href="https://line.me/ti/p/~subaotw5988" class="btn btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
@@ -528,6 +519,18 @@
 .contact-modal .success-msg{display:none;text-align:center;padding:20px 0}
 .contact-modal .success-msg .check{font-size:48px;color:#10b981;margin-bottom:12px}
 .contact-modal .success-msg p{font-size:15px;color:#555}
+
+    .mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;bottom:0;background:#fff;padding:24px;overflow-y:auto;z-index:999;box-shadow:0 4px 12px rgba(0,0,0,.1)}
+    .mobile-menu.active{display:block}
+    .mobile-nav-link{display:block;padding:16px 0;font-size:16px;font-weight:500;color:var(--text-dark);border-bottom:1px solid var(--border)}
+    .mobile-nav-link.active{color:var(--primary);font-weight:700}
+    .mobile-nav-link.cta{margin-top:24px;padding:16px 24px;background:var(--primary);color:#fff;border-radius:8px;text-align:center;border:none}
+    .m-dropdown>span{display:flex;justify-content:space-between;align-items:center;padding:16px 0;font-size:16px;font-weight:500;color:var(--text-dark);border-bottom:1px solid var(--border);cursor:pointer}
+    .m-dropdown>span::after{content:"▾";font-size:12px;transition:transform .2s}
+    .m-dropdown.open>span::after{transform:rotate(180deg)}
+    .m-dropdown-links{display:none;padding-left:16px}
+    .m-dropdown.open .m-dropdown-links{display:block}
+    .m-dropdown-links a{display:block;padding:12px 8px;font-size:14px;color:var(--text-dark);border-bottom:1px solid #f0f0f0}
 </style>
 <div class="floating-bar">
   <a href="https://line.me/ti/p/~subaotw5988" target="_blank" class="icon-btn line-btn" title="LINE即时咨询" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'floating_line'})">
