@@ -10,8 +10,8 @@ CANONICAL_HEADER = """    .header{position:fixed;top:0;left:0;right:0;height:70p
     .header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
     .logo{font-size:24px;font-weight:700;color:var(--primary);flex-shrink:0}
     .logo img{background:#fff;max-height:50px;max-width:200px;width:auto;display:block}
-    .nav{display:flex;align-items:center;gap:24px}
-    .nav a,.nav-dropdown>a{font-weight:500;color:var(--text-dark);transition:var(--transition);position:relative;font-size:14px;white-space:nowrap}
+    .nav{display:flex;align-items:center;gap:32px}
+    .nav a,.nav-dropdown>a{font-weight:500;color:var(--text-dark);transition:var(--transition);position:relative;font-size:16px;white-space:nowrap}
     .nav a:hover,.nav a.active{color:var(--primary)}
     .nav a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--primary);transition:var(--transition)}
     .nav a:hover::after,.nav a.active::after{width:100%}

@@ -28,8 +28,8 @@
     .header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
     .logo{font-size:24px;font-weight:700;color:var(--primary);flex-shrink:0}
     .logo img{background:#fff;max-height:50px;max-width:200px;width:auto;display:block}
-    .nav{display:flex;align-items:center;gap:24px}
-    .nav a,.nav-dropdown>a{font-weight:500;color:var(--text-dark);transition:var(--transition);position:relative;font-size:14px;white-space:nowrap}
+    .nav{display:flex;align-items:center;gap:32px}
+    .nav a,.nav-dropdown>a{font-weight:500;color:var(--text-dark);transition:var(--transition);position:relative;font-size:16px;white-space:nowrap}
     .nav a:hover,.nav a.active{color:var(--primary)}
     .nav a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--primary);transition:var(--transition)}
     .nav a:hover::after,.nav a.active::after{width:100%}
@@ -277,6 +277,8 @@
         <a href="/customs-guide" data-nav="customs-guide">關稅速查</a>
         <a href="/volume-calculator" data-nav="volume-calculator">材積計算</a>
         <a href="/article-list" data-nav="article-list">文章攻略</a>
+        <div class="nav-dropdown"><a href="#" onclick="return false" style="cursor:default">更多<span class="dd-arrow">▾</span></a>
+        <div class="dd-menu"><a href="/faq">常見問題</a><a href="/partners">合作夥伴</a><a href="/about">關於我們</a></div></div>
       </nav>
       <div class="header-cta">
         <a href="https://line.me/ti/p/~subaotw5988" class="btn btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
