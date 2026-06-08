@@ -325,4 +325,11 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://subao.tw/blog/computer-equipment-shipping-guide</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
