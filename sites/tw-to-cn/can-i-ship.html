@@ -460,7 +460,6 @@
     }
 
     function searchItem(q){
-      document.getElementById('noResult').style.display = 'none';
       gtag('event','can_i_ship_search',{event_category:'engagement',event_label:q});
 
       // Fuzzy match
@@ -476,34 +475,34 @@
       }
 
       var area = document.getElementById('resultsArea');
+      var html = '';
 
       if(results.length === 0){
-        area.innerHTML = '<div class="no-result"><div class="icon">🤔</div><h3>「'+q+'」不在資料庫中</h3><p>可以去 LINE 問客服，傳照片給我們確認</p><a href="https://line.me/ti/p/~subaotw5988" class="btn btn-line" target="_blank" style="display:inline-flex;margin-top:12px" onclick="gtag(\'event\',\'line_click\',{event_category:\'conversion\',event_label:\'can_i_ship_unknown\'})"><i class="fab fa-line"></i> LINE 詢問客服</a></div>';
-        return;
-      }
+        html = '<div class="no-result"><div class="icon">🤔</div><h3>「'+q+'」不在資料庫中</h3><p>可以去 LINE 問客服，傳照片給我們確認</p><a href="https://line.me/ti/p/~subaotw5988" class="btn btn-line" target="_blank" style="display:inline-flex;margin-top:12px" onclick="gtag(\'event\',\'line_click\',{event_category:\'conversion\',event_label:\'can_i_ship_unknown\'})"><i class="fab fa-line"></i> LINE 詢問客服</a></div>';
+      } else {
+        var top = results[0];
+        var statusMap = {can:{emoji:"✅",text:"可以寄！",cls:"can"},cannot:{emoji:"❌",text:"不可以寄",cls:"cannot"},maybe:{emoji:"⚠️",text:"需確認",cls:"maybe"}};
+        var s = statusMap[top.status];
 
-      var top = results[0];
-      var statusMap = {can:{emoji:"✅",text:"可以寄！",cls:"can"},cannot:{emoji:"❌",text:"不可以寄",cls:"cannot"},maybe:{emoji:"⚠️",text:"需確認",cls:"maybe"}};
-      var s = statusMap[top.status];
-
-      var html = '<div class="result-card '+s.cls+'">';
-      html += '<div class="result-status">'+s.emoji+'</div>';
-      html += '<div class="result-title">'+top.id+' — '+s.text+'</div>';
-      html += '<div class="result-detail">'+top.note+'</div>';
-      html += '<div class="result-meta">';
-      if(top.channel !== '—') html += '<span class="meta-tag channel"><i class="fas fa-truck"></i> '+top.channel+'</span>';
-      if(top.tax !== '—') html += '<span class="meta-tag tax"><i class="fas fa-receipt"></i> '+top.tax+'</span>';
-      if(top.status !== 'can') html += '<span class="meta-tag alert"><i class="fas fa-exclamation-triangle"></i> 寄送前請確認</span>';
-      html += '</div>';
-      html += '<div style="margin-top:16px">';
-      html += '<a href="https://line.me/ti/p/~subaotw5988" class="btn btn-line" target="_blank" onclick="gtag(\'event\',\'line_click\',{event_category:\'conversion\',event_label:\'can_i_ship_result\'})"><i class="fab fa-line"></i> LINE 確認並估價</a>';
-      html += '</div></div>';
-
-      // Show other matching results
-      if(results.length > 1){
-        html += '<div style="margin-top:12px;font-size:13px;color:var(--text-light)">也找到 '+results.length+' 個相關商品：';
-        results.forEach(function(r){html += ' <span style="cursor:pointer;color:var(--primary);text-decoration:underline" onclick="searchItem(\''+r.id+'\')">'+r.id+'</span>';});
+        html += '<div class="result-card '+s.cls+'">';
+        html += '<div class="result-status">'+s.emoji+'</div>';
+        html += '<div class="result-title">'+top.id+' — '+s.text+'</div>';
+        html += '<div class="result-detail">'+top.note+'</div>';
+        html += '<div class="result-meta">';
+        if(top.channel !== '—') html += '<span class="meta-tag channel"><i class="fas fa-truck"></i> '+top.channel+'</span>';
+        if(top.tax !== '—') html += '<span class="meta-tag tax"><i class="fas fa-receipt"></i> '+top.tax+'</span>';
+        if(top.status !== 'can') html += '<span class="meta-tag alert"><i class="fas fa-exclamation-triangle"></i> 寄送前請確認</span>';
         html += '</div>';
+        html += '<div style="margin-top:16px">';
+        html += '<a href="https://line.me/ti/p/~subaotw5988" class="btn btn-line" target="_blank" onclick="gtag(\'event\',\'line_click\',{event_category:\'conversion\',event_label:\'can_i_ship_result\'})"><i class="fab fa-line"></i> LINE 確認並估價</a>';
+        html += '</div></div>';
+
+        // Show other matching results
+        if(results.length > 1){
+          html += '<div style="margin-top:12px;font-size:13px;color:var(--text-light)">也找到 '+results.length+' 個相關商品：';
+          results.forEach(function(r){html += ' <span style="cursor:pointer;color:var(--primary);text-decoration:underline" onclick="searchItem(\''+r.id+'\')">'+r.id+'</span>';});
+          html += '</div>';
+        }
       }
 
       area.innerHTML = html;
