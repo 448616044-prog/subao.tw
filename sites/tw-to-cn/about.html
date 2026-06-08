@@ -100,8 +100,8 @@
     .nav a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--primary);transition:var(--transition)}
     .nav a:hover::after,.nav a.active::after{width:100%}
     .nav-dropdown{position:relative;display:flex;align-items:center}
-    .dd-arrow{font-size:9px;margin-left:4px;display:inline-block}
-    .dd-menu{display:none;position:absolute;top:100%;left:0;min-width:170px;background:#fff;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,.12);padding:8px 0;z-index:100;margin-top:8px;border:1px solid #e8ecf0}
+    .nav-dropdown>a{padding-bottom:8px;margin-bottom:-8px}
+    .dd-menu{display:none;position:absolute;top:100%;left:0;min-width:170px;background:#fff;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,.12);padding:8px 0;z-index:100;margin-top:4px;border:1px solid #e8ecf0}
     .nav-dropdown:hover .dd-menu,.nav-dropdown:focus-within .dd-menu{display:block}
     .dd-menu a{display:block;padding:10px 16px;font-size:13px;color:var(--text-dark);transition:var(--transition)}
     .dd-menu a:hover{background:var(--primary-light);color:var(--primary)}
@@ -167,13 +167,13 @@
       <a href="/" class="logo"><img src="images/subao-logo-new.png" alt="速豹集運" height="40"></a>
                   <nav class="nav" id="desktopNav">
         <a href="/tw-to-cn" data-nav="tw-to-cn">台灣發大陸</a>
-        <div class="nav-dropdown"><a href="/pricing" data-nav="pricing">運費<span class="dd-arrow">▾</span></a>
+        <div class="nav-dropdown"><a href="/pricing" data-nav="pricing">運費</a>
         <div class="dd-menu"><a href="/pricing">運費報價</a><a href="/pricing-calculator">運費試算</a></div></div>
         <a href="/can-i-ship" data-nav="can-i-ship">可以寄嗎</a>
         <a href="/customs-guide" data-nav="customs-guide">關稅速查</a>
         <a href="/volume-calculator" data-nav="volume-calculator">材積計算</a>
         <a href="/article-list" data-nav="article-list">文章攻略</a>
-        <div class="nav-dropdown"><a href="#" onclick="return false" style="cursor:default">更多<span class="dd-arrow">▾</span></a>
+        <div class="nav-dropdown"><a href="#" onclick="return false" style="cursor:default">更多</a>
         <div class="dd-menu"><a href="/faq">常見問題</a><a href="/partners">合作夥伴</a><a href="/about">關於我們</a></div></div>
       </nav>
       <div class="header-cta">
