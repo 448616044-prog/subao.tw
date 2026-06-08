@@ -29,14 +29,14 @@
     *{margin:0;padding:0;box-sizing:border-box}
     body{font-family:'Noto Sans TC',sans-serif;color:var(--text-dark);line-height:1.8;font-size:16px;background:var(--bg-gray)}
     a{text-decoration:none;color:inherit}.container{max-width:1200px;margin:0 auto;padding:0 20px}
-    .header{position:fixed;top:0;left:0;right:0;height:70px;background:var(--bg-white);z-index:1000;box-shadow:var(--shadow)}
+    .header{position:fixed;top:0;left:0;right:0;height:70px;background:var(--bg-white);z-index:1000;transition:box-shadow .3s}.header.scrolled{box-shadow:var(--shadow)}.header .container{display:flex;align-items:center;justify-content:space-between;height:100%}.logo{font-size:24px;font-weight:700;color:var(--primary);flex-shrink:0}.logo img{background:#fff;max-height:50px;max-width:200px;width:auto;display:block}
     .header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
     .logo img{background:#fff;max-height:50px}
     .nav{display:flex;gap:12px}.nav>a{display:flex;align-items:center;padding:8px 14px;font-size:14.5px;font-weight:500;color:var(--text-dark);border-radius:6px;white-space:nowrap}
     .nav>a:hover{background:var(--primary-light);color:var(--primary)}
-    .nav>a.active{background:var(--primary);color:#fff}.dropdown{position:relative;display:flex;align-items:center}
-    .dropdown-menu{display:none;position:absolute;top:100%;left:0;background:var(--bg-white);border-radius:var(--radius);box-shadow:var(--shadow-lg);min-width:160px;padding:8px 0;z-index:1001}
-    .dropdown:hover .dropdown-menu{display:block}.dropdown-menu a{display:block;padding:10px 20px;font-size:14px;white-space:nowrap}.dropdown-menu a:hover{background:var(--primary-light);color:var(--primary)}
+    .nav>a.active{background:var(--primary);color:#fff}.nav-dropdown{position:relative;display:flex;align-items:center}
+    .dd-menu{display:none;position:absolute;top:100%;left:0;min-width:170px;background:#fff;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,.12);padding:8px 0;z-index:100;margin-top:8px;border:1px solid #e8ecf0}
+    .nav-dropdown:hover .dd-menu,.nav-dropdown:focus-within .dd-menu{display:block}.dropdown-menu a{display:block;padding:10px 20px;font-size:14px;white-space:nowrap}.dd-menu a:hover{background:var(--primary-light);color:var(--primary)}
     .btn{display:inline-block;padding:10px 20px;border-radius:var(--radius);font-weight:700;font-size:14px;cursor:pointer;border:none;transition:var(--transition)}
     .btn-line{background:var(--line-green);color:#fff}.btn-line:hover{background:#009900}
     .header-cta{display:flex;align-items:center;gap:12px}.menu-toggle{display:none;background:none;border:none;font-size:22px;cursor:pointer;color:var(--text-dark)}
@@ -65,7 +65,7 @@
     <a href="/" class="logo"><img src="images/subao-logo-new.png" alt="速豹集運" height="40"></a>
     <nav class="nav">
       <a href="/tw-to-cn">台灣發大陸</a>
-      <div class="dropdown"><a href="/pricing">運費</a><div class="dropdown-menu"><a href="/pricing">運費報價</a><a href="/pricing-calculator">運費試算</a><a href="/fast-shipping" class="active">快速專線</a><a href="/economy-shipping">經濟專線</a></div></div>
+      <div class="nav-dropdown"><a href="/pricing">運費</a><div class="dd-menu"><a href="/pricing">運費報價</a><a href="/pricing-calculator">運費試算</a><a href="/fast-shipping" class="active">快速專線</a><a href="/economy-shipping">經濟專線</a></div></div>
       <a href="/customs-guide">關稅速查</a><a href="/can-i-ship">可以寄嗎</a><a href="/volume-calculator">材積計算</a>
       <a href="/article-list">文章攻略</a><a href="/faq">常見問題</a><a href="/partners">合作夥伴</a><a href="/about">關於我們</a>
     </nav>
