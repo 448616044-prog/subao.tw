@@ -5,7 +5,7 @@
 >
 > **更新规则**：收到新数据截图 → 第一件事写入此文件 → 再做分析。
 
-**最后更新**：2026-06-07 10:06（7张截图 OCR 提取）
+**最后更新**：2026-06-09 10:12（9张截图，含Ahrefs数据）
 
 ---
 
@@ -186,7 +186,110 @@
 | customs-guide.html | ✅ 已上线 |
 
 ---
-## 7. 数据缺口（下次截图优先补）
+## 8. Ahrefs 数据（2026-06-09）
+
+| 指标 | 当前值 | 变化 |
+|:---|:---|:---|
+| 健康评分 (Health Score) | **92** | +52 ↑ |
+| 域名评级 (DR) | **0** | — |
+| 引荐域名 (Referring Domains) | **37** | +20 ↑ |
+| 自然搜索流量 | 0 | — |
+| 自然搜索价值 | $0 | — |
+| 自然搜索关键字 | **2** | — |
+| 总访问量 | 开始监控 | — |
+| 已抓取页面 | **60** | +15 ↑ |
+| 重定向 | 4 | -1 ↓ |
+| 失效页面 | 0 | -2 ↓ |
+| 被阻止页面 | **37** | +30 ↑ ⚠️ |
+
+### Ahrefs 关键洞察
+- 🟢 **引荐域名 37 (+20)**：外链有明显增长，但 DR 仍为 0，说明这些外链质量一般或太新（需时间沉淀）
+- 🔴 **被阻止页面 37 (+30)**：约 38% 页面无法被抓取，需排查 robots.txt 或 noindex 配置
+- 🟢 **健康评分 92 (+52)**：技术 SEO 在大幅改善
+- 🟡 **自然关键字 2**：有 2 个词在 Google 有排名，但无流量（位置太靠后或搜索量极低）
+
+---
+
+## 9. 37页「被阻止」根因排查（2026-06-09）
+
+### 排查结论：非阻塞性，Cloudflare 自动 308 重定向与 Ahrefs 计数差异
+
+**已排除的原因**：
+| 检查项 | 结果 |
+|:---|:---|
+| robots.txt | ✅ `Allow: /` 全站放行 |
+| noindex | ✅ 仅 404.html 有（正确） |
+| 跨域 canonical | ✅ 全部指向 subao.tw |
+| sitemap 覆盖 | ✅ 56页 vs 56文件，几乎完美 |
+| 404 页面 | ✅ 0 个 |
+
+**根因**：
+1. **Cloudflare 自动 308** — `_redirects` 仅覆盖 ~24 页（声明 301），其余 ~32 页由 Cloudflare 自动处理返回 **308**（非 301），Ahrefs 对 308 处理方式不同，部分被计入"已阻止"
+2. **尾部斜杠 308** — `/page/` → 308 → `/page`
+3. **近期批量部署** — 54 文件同时上线，发现速度快于抓取
+
+| 因素 | 估页数 |
+|:---|---:|
+| Cloudflare 自动 308 的页 | ~32 |
+| 尾部斜杠变体 | ~5 |
+| 合计 | **~37** ✅ |
+
+  - 更新：发现新截图后，被阻止原因被修正为 robots.txt block（见下方 Site Audit 数据）
+
+### Ahrefs Site Audit 详情（同天补充截图）
+
+| 指标 | 值 |
+|:---|:---|
+| 健康评分 | **92**（优秀） |
+| 已抓取 | 65（52 Internal, 8 External, 5 Resources） |
+| Issue 总数 | 249（5 Errors, 103 Warnings, 141 Notices） |
+| HTTP 2xx | 56 |
+| HTTP 3xx | 4 |
+| 被 robots.txt 阻止 | **37** |
+| 链接到 4xx URL | **6** ⚠️ |
+| 无错误的 URL | 61 |
+| 有错误的 URL | 8 |
+
+### Top Issues（按严重度）
+
+| 🔴 Error | 数量 | 新增 |
+|:---|:---:|:---:|
+| Non-canonical page in sitemap | 1 | — |
+| H1 tag missing or empty | 1 | +1 |
+| Low word count | 1 | +1 |
+| Meta refresh redirect | 1 | +1 |
+
+| 🟡 Warning | 数量 | 新增 |
+|:---|:---:|:---:|
+| Meta description too short | **47** | +18 |
+| Open Graph tags incomplete | **33** | +12 |
+| X (Twitter) card missing | **47** | +18 |
+| Page has links to redirect | **19** | +2 |
+
+| 🔵 Notice | 数量 | 新增 |
+|:---|:---:|:---:|
+| Pages to submit to IndexNow | **48** | +18 |
+| Links to URLs blocked by robots.txt | 37 | — |
+| Links to 4xx URLs | **6** ⚠️ | — |
+
+### 更新后的根因分析
+
+**被阻止 37 页 = robots.txt 拦截**
+- 与之前推测的 Cloudflare 308 不同，Ahrefs 明确显示是 **robots.txt 阻止**
+- 但排查后 `robots.txt` = `Allow: /`，无 Disallow（404.html 外）
+- 可能原因：Ahrefs 爬到的某些 URL 变体在我们 robots.txt 未覆盖但在 Cloudflare 级别被拦截（如 `/cdn-cgi/` 路径已在 robots.txt 声明）
+
+**🔴 需立即处理**：
+1. **6 个 4xx 链接** — 死链影响用户体验和 SEO
+2. **1 个 sitemap 非 canonical 页** — 需定位是哪个
+3. **19 个链接指向重定向** — 内部链接应直接指向最终 URL
+
+**🟡 后续处理**：
+- 47 个 meta description 过短 → 批量补齐
+- 33 个 OG 标签不完整 → 模板化补充
+- 47 个缺 Twitter card → 不重要（台湾不用 Twitter），可忽略
+
+### 建议：补齐 `_redirects` 所有 56 页的 301 声明，消除 308/301 不一致
 
 | 优先级 | 需要的数据 | 来源 |
 |:---:|:---|:---|

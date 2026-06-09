@@ -100,6 +100,16 @@
 # 兜底：未列出的二层嵌套 → 一层
 /blog/blog/* /blog/:splat 301
 
+# =================== SEO 修复 (2026-06-09) ===================
+# 重定向页（原 meta refresh）→ 服务端 301
+/blog/medicine-shipping /blog/taiwan-medicine-to-china 301
+
+# .htm 后缀 → .html（外部链接/笔误保护）
+/blog/food-shipping-guide.htm /blog/food-shipping-guide 301
+/blog/tw-to-cn-customs.htm /blog/tw-to-cn-customs 301
+/blog/shopee-shipping.htm /blog/shopee-shipping 301
+/blog/*.htm /blog/:splat 301
+
 # blog目录下不存在的页面（重定向到根目录对应页面）
 /blog/pricing /pricing 301
 /blog/pricing-calculator /pricing-calculator 301
