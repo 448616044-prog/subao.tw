@@ -1,4 +1,4 @@
-name: Deploy to Cloudflare Pages
+name: Deploy
 
 on:
   push:
@@ -6,7 +6,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  deploy-tw:
+    name: Deploy subao.tw → Cloudflare Pages
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,3 +21,22 @@ jobs:
           projectName: subao-tw
           directory: ./sites/tw-to-cn
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+  deploy-cn:
+    name: Deploy subaotw.cn → CVM
+    runs-on: ubuntu-latest
+    needs: deploy-tw
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to CVM via SCP
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.CVM_HOST }}
+          username: ${{ secrets.CVM_USER }}
+          key: ${{ secrets.CVM_SSH_KEY }}
+          port: 22
+          source: "sites/subaotw-cn/*"
+          target: "/var/www/subaotw-cn/"
+          strip_components: 2
+          overwrite: true
