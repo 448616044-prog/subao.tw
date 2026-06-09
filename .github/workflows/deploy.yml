@@ -25,7 +25,6 @@ jobs:
   deploy-cn:
     name: Deploy subaotw.cn → CVM
     runs-on: ubuntu-latest
-    needs: deploy-tw
     steps:
       - uses: actions/checkout@v4
 
