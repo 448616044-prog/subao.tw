@@ -39,16 +39,19 @@
   <url><loc>https://www.subaotw.cn/tw-to-cn/clothing-shipping</loc><priority>0.7</priority></url>
   <url><loc>https://www.subaotw.cn/tw-to-cn/books-shipping</loc><priority>0.7</priority></url>
   <url><loc>https://www.subaotw.cn/tw-to-cn/baby-products</loc><priority>0.7</priority></url>
-  <!-- 物流指南（10页） -->
+  <!-- 出口指南（12页） -->
+  <url><loc>https://www.subaotw.cn/guide/</loc><priority>0.8</priority></url>
+  <url><loc>https://www.subaotw.cn/guide/equipment-export-process</loc><priority>0.8</priority></url>
   <url><loc>https://www.subaotw.cn/guide/customs-documents</loc><priority>0.7</priority></url>
   <url><loc>https://www.subaotw.cn/guide/taiwan-import-tax</loc><priority>0.7</priority></url>
   <url><loc>https://www.subaotw.cn/guide/packaging-standard</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/guide/oversize-permit</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/guide/shipping-compare</loc><priority>0.7</priority></url>
   <url><loc>https://www.subaotw.cn/guide/ecfa-tariff</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/guide/shipping-methods</loc><priority>0.7</priority></url>
   <url><loc>https://www.subaotw.cn/guide/insurance-guide</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/guide/weight-calculation</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/guide/tw-cn-logistics-terms</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/guide/old-equipment-export</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/guide/prohibited-items</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/guide/cost-calculator</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/guide/export-faq</loc><priority>0.7</priority></url>
   <!-- 客户案例（6页） -->
   <url><loc>https://www.subaotw.cn/cases/</loc><priority>0.7</priority></url>
   <url><loc>https://www.subaotw.cn/cases/case-cnc-dongguan</loc><priority>0.6</priority></url>
@@ -56,11 +59,6 @@
   <url><loc>https://www.subaotw.cn/cases/case-press-foshan</loc><priority>0.6</priority></url>
   <url><loc>https://www.subaotw.cn/cases/case-textile-xiamen</loc><priority>0.6</priority></url>
   <url><loc>https://www.subaotw.cn/cases/case-mold-kunshan</loc><priority>0.6</priority></url>
-  <url>
-    <loc>https://www.subaotw.cn/guide/export-compliance</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+
 
 </urlset>
