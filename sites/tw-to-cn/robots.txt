@@ -1,6 +1,6 @@
 # 速豹集運 robots.txt
 User-agent: *
 Allow: /
-Disallow: /cdn-cgi/l/email-protection
+Disallow: /cdn-cgi/
 
 Sitemap: https://subao.tw/sitemap.xml
