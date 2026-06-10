@@ -3,6 +3,8 @@ name: Deploy subaotw.cn to CVM
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'sites/subaotw-cn/**'
   workflow_dispatch:
 
 jobs:
