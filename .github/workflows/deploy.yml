@@ -19,7 +19,7 @@ jobs:
           username: ${{ secrets.CVM_USER }}
           key: ${{ secrets.CVM_SSH_KEY }}
           port: 22
-          source: "sites/subaotw-cn/*"
+          source: "sites/subaotw-cn/**"
           target: "/var/www/subaotw-cn/"
           strip_components: 2
           overwrite: true
