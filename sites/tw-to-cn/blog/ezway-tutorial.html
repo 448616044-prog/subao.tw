@@ -127,7 +127,22 @@
     .btn-line{display:inline-flex;padding:10px 20px;background:var(--line-green);color:#fff;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;align-items:center;gap:6px;transition:var(--transition);white-space:nowrap}
     .btn-line:hover{background:#009900;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,185,0,0.25)}
     @media (max-width:768px){.hero h1{font-size:24px}.article-content{max-width:780px;margin:0 auto;padding:24px 16px}}
-  </style>
+  
+.pillar-hero{padding:140px 0 60px;background:linear-gradient(135deg,#1A1A2E 0%,#2D2D44 50%,#FF6600 150%);color:#fff;text-align:center;position:relative;overflow:hidden}
+.pillar-hero::before{content:'';position:absolute;top:-30%;right:-15%;width:500px;height:500px;border-radius:50%;background:rgba(255,102,0,.12);pointer-events:none}
+.pillar-hero::after{content:'';position:absolute;bottom:-20%;left:-10%;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,.05);pointer-events:none}
+.pillar-hero .container{position:relative;z-index:1}
+.pillar-hero .badge-row{display:flex;justify-content:center;gap:10px;margin-bottom:20px;flex-wrap:wrap}
+.pillar-hero .badge{display:inline-flex;align-items:center;gap:6px;padding:6px 16px;background:rgba(255,255,255,.15);border-radius:var(--radius-pill);font-size:13px;border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(4px)}
+.pillar-hero h1{font-size:42px;font-weight:800;line-height:1.25;margin-bottom:16px;letter-spacing:-0.5px;max-width:800px;margin-left:auto;margin-right:auto}
+.pillar-hero .subtitle{font-size:18px;opacity:.85;max-width:650px;margin:0 auto 32px;font-weight:400}
+.pillar-hero .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.pillar-hero .btn-primary-hero{display:inline-flex;align-items:center;gap:8px;padding:16px 36px;background:var(--line-green);color:#fff;border-radius:var(--radius-pill);font-size:16px;font-weight:700;transition:var(--transition)}
+.pillar-hero .btn-primary-hero:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,185,0,.4)}
+.pillar-hero .btn-outline-hero{display:inline-flex;align-items:center;gap:8px;padding:16px 36px;background:rgba(255,255,255,.1);color:#fff;border-radius:var(--radius-pill);font-size:16px;font-weight:600;border:1px solid rgba(255,255,255,.3);transition:var(--transition)}
+.pillar-hero .btn-outline-hero:hover{background:rgba(255,255,255,.2)}
+
+</style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-X2T4LGTKJ1');</script>
 </head>
@@ -183,14 +198,20 @@
   </div>
 
   <div class="content-wrapper">
-    <div class="hero">
-      <div class="container">
-        <h1>EZWay 易利委完整教學｜實名認證步驟圖解（2026）</h1>
-        <p class="subtitle">海關實名認證一次搞定，收大陸包裹不再卡關</p>
-      </div>
+    <section class="pillar-hero">
+  <div class="container">
+    <div class="badge-row">
+      <span class="badge"><i class="fas fa-star"></i> 2026年6月更新</span>
+      <span class="badge"><i class="fas fa-box"></i> 真實客戶委託</span>
     </div>
-
-    <div class="blog-body">
+    <h1>台灣寄大陸EZWay教學2026</h1>
+    <p class="subtitle">台灣寄大陸EZWay教學2026｜易利委實名認證步驟+常見問題。LINE即時諮詢，免費估價，最快3-5天送達。</p>
+    <div class="cta-row">
+      <a href="https://line.me/ti/p/~subaotw5988" class="btn-primary-hero" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'hero_cta'})"><i class="fab fa-line"></i> LINE 免費估價</a>
+      <a href="/pricing-calculator" class="btn-outline-hero"><i class="fas fa-calculator"></i> 運費試算</a>
+    </div>
+  </div>
+</section><div class="blog-body">
       <div class="container">
         <article class="article-content">
           <div class="meta">更新時間：2026年5月31日｜閱讀時間：6分鐘</div>
