@@ -214,6 +214,8 @@
         <span onclick="quickSearch('牛肉乾')">🥩 牛肉乾</span>
         <span onclick="quickSearch('月餅')">🥮 月餅</span>
         <span onclick="quickSearch('奶粉')">🍼 奶粉</span>
+        <span onclick="quickSearch('液體')">💧 液體</span>
+        <span onclick="quickSearch('粉末')">🧂 粉末</span>
       </div>
     </div>
   </div>
@@ -426,6 +428,19 @@
       {id:"CD",cat:"daily",status:"can",note:"音樂CD可寄。",channel:"經濟專線",tax:"關稅0%+增值稅9%"},
       {id:"口罩",cat:"daily",status:"can",note:"一般口罩可寄。醫療級口罩需確認。",channel:"經濟專線",tax:"關稅5-15%"},
 
+      // 液體/粉末/膏狀 — 真實客服高頻問詢
+      {id:"液體",cat:"liquid",status:"maybe",note:"需看具體類型。化妝水、精華液可寄（敏感貨專線）；汽油、酒精、油漆等危險液體❌禁運。單瓶建議不超100ml。",channel:"敏感貨專線/需確認",tax:"依品項"},
+      {id:"粉末",cat:"liquid",status:"maybe",note:"奶粉、蛋白粉、膠原蛋白粉可寄。白色不明粉末❌禁運。粉末需原廠密封包裝，附完整成分標示。",channel:"敏感貨專線/需確認",tax:"關稅5-15%"},
+      {id:"膏狀物",cat:"liquid",status:"maybe",note:"牙膏、藥膏、保養品膏狀可寄。檳榔灰、不明膏狀物❌不行。液體/半流動狀膏體需做好防漏包裝，單件不超100ml。",channel:"敏感貨專線/需確認",tax:"依品項"},
+      {id:"檳榔灰",cat:"liquid",status:"cannot",note:"❌ 檳榔灰為液體/膏狀不明物質，無法寄送。液體狀、膏狀不明物質均不可寄大陸。",channel:"—",tax:"—"},
+      {id:"牙膏",cat:"liquid",status:"can",note:"可寄。一般日用品牙膏不受限。含藥用成分的牙膏需確認。",channel:"敏感貨專線",tax:"關稅5-10%"},
+      {id:"辣椒醬",cat:"liquid",status:"maybe",note:"一般辣椒醬、調味醬可寄。需密封包裝防漏。含肉類成分的醬料❌不行。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"醬料",cat:"liquid",status:"maybe",note:"一般調味醬（醬油、醋、辣椒醬）可寄。含肉類或動物油脂的醬料❌禁運。液體需密封防漏。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"精油",cat:"liquid",status:"can",note:"可寄。需密封包裝防漏。",channel:"敏感貨專線",tax:"關稅5-15%"},
+      {id:"膠水",cat:"liquid",status:"cannot",note:"❌ 工業用膠水、強力膠屬危險品，禁止寄送。",channel:"—",tax:"—"},
+      {id:"酒精",cat:"liquid",status:"cannot",note:"❌ 酒精、酒精棉片、含酒精消毒液禁止寄送（易燃液體）。",channel:"—",tax:"—"},
+      {id:"香水",cat:"liquid",status:"can",note:"可寄。含酒精成分，需標示清楚。少量自用可走敏感貨專線。",channel:"敏感貨專線",tax:"關稅5-10%+增值稅13%"},
+
       // 其他
       {id:"伴手禮",cat:"other",status:"can",note:"一般伴手禮（糕餅類、糖果類）可寄。避免肉類製品。",channel:"敏感貨專線",tax:"個人800元內免稅"},
       {id:"禮盒",cat:"other",status:"can",note:"糕餅禮盒可寄。若含肉製品則不可。",channel:"敏感貨專線",tax:"個人800元內免稅"},
@@ -447,6 +462,7 @@
       tea:{icon:"🍵",name:"茶葉",items:[]},
       cosmetic:{icon:"💄",name:"化妝品／保養品",items:[]},
       medicine:{icon:"🌿",name:"中藥／藥品",items:[]},
+      liquid:{icon:"💧",name:"液體／粉末／膏狀",items:[]},
       electronic:{icon:"📱",name:"電子產品",items:[]},
       daily:{icon:"📦",name:"服飾／日用品",items:[]},
       other:{icon:"📋",name:"其他",items:[]},
