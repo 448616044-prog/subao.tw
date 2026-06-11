@@ -76,7 +76,9 @@
     .btn{display:inline-block;padding:10px 20px;border-radius:var(--radius);font-weight:700;font-size:14px;cursor:pointer;border:none;transition:var(--transition)}
     .btn-line{background:var(--line-green);color:#fff}.btn-line:hover{background:#009900;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,185,0,.25)}
     .menu-toggle{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text-dark)}
-    @media(max-width:992px){.nav,.header-cta{display:none}.menu-toggle{display:block}}
+.mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;bottom:0;background:var(--bg-white);z-index:999;padding:20px 24px;overflow-y:auto}
+.mobile-menu.open{display:block}
+@media(max-width:992px){.nav,.header-cta{display:none}.menu-toggle{display:block}}
 
 .pillar-hero{padding:140px 0 60px;background:linear-gradient(135deg,#1A1A2E 0%,#2D2D44 50%,#FF6600 150%);color:#fff;text-align:center;position:relative;overflow:hidden}
 .pillar-hero::before{content:'';position:absolute;top:-30%;right:-15%;width:500px;height:500px;border-radius:50%;background:rgba(255,102,0,.12);pointer-events:none}
@@ -130,6 +132,10 @@
 .mid-cta h4{color:#E65100;font-size:17px;margin-bottom:8px}
 .mid-cta p{color:#666;font-size:14px;margin-bottom:16px}
 .mid-cta .btn{background:#FF6600;color:#fff;font-size:15px;padding:12px 28px;border-radius:24px}
+.floating-cta{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:9999;background:linear-gradient(135deg,#00B900,#009900);color:#fff;padding:14px 28px;border-radius:30px;font-weight:700;font-size:15px;box-shadow:0 4px 20px rgba(0,185,0,0.4);text-decoration:none;display:flex;align-items:center;gap:8px;animation:pulse 2s infinite;white-space:nowrap}
+.floating-cta:hover{transform:translateX(-50%) translateY(-2px);box-shadow:0 6px 24px rgba(0,185,0,0.5)}
+@keyframes pulse{0%,100%{box-shadow:0 4px 20px rgba(0,185,0,0.4)}50%{box-shadow:0 4px 30px rgba(0,185,0,0.7)}}
+@media(min-width:769px){.floating-cta{left:auto;right:30px;transform:none}.floating-cta:hover{transform:translateY(-2px)}}
 .breadcrumb{padding:100px 0 0;font-size:13px;color:var(--text-light)}
 .breadcrumb a{color:var(--primary)}
 .mobile-nav-link{display:block;padding:16px 0;font-size:16px;font-weight:500;color:var(--text-dark);border-bottom:1px solid var(--border)}
@@ -364,14 +370,12 @@
   </div>
 
   <a href="https://line.me/ti/p/~subaotw5988" class="floating-cta" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><i class="fab fa-line"></i> LINE 預約取件</a>
-  <style>
-  .floating-cta{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:9999;background:linear-gradient(135deg,#00B900,#009900);color:#fff;padding:14px 28px;border-radius:30px;font-weight:700;font-size:15px;box-shadow:0 4px 20px rgba(0,185,0,0.4);text-decoration:none;display:flex;align-items:center;gap:8px;animation:pulse 2s infinite;white-space:nowrap}
-  .floating-cta:hover{transform:translateX(-50%) translateY(-2px);box-shadow:0 6px 24px rgba(0,185,0,0.5)}
-  @keyframes pulse{0%,100%{box-shadow:0 4px 20px rgba(0,185,0,0.4)}50%{box-shadow:0 4px 30px rgba(0,185,0,0.7)}}
-  @media(min-width:769px){.floating-cta{left:auto;right:30px;transform:none}.floating-cta:hover{transform:translateY(-2px)}}
-  </style>
 
   <script>
+    // 移动端菜单切换
+    document.getElementById('menuToggle').addEventListener('click',function(){
+      document.getElementById('mobileMenu').classList.toggle('open');
+    });
     document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});
     window.addEventListener('scroll', function() {
       var bar = document.getElementById('floatBar');
