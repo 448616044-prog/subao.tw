@@ -19,97 +19,6 @@
   }
   </script>
   <link rel="stylesheet" href="/style.css">
-<style>
-    :root{--p:#1a56db;--pd:#1e40af;--a:#f97316;--g:#10b981;--bg:#f8fafc;--c:#fff;--t:#1e293b;--l:#64748b;--b:#e2e8f0;--r:12px;--shadow-sm:0 1px 2px rgba(0,0,0,0.05);--shadow-md:0 4px 12px rgba(0,0,0,0.08);--shadow-lg:0 10px 30px rgba(0,0,0,0.1)}
-    *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:var(--t);line-height:1.7;background:var(--bg);-webkit-font-smoothing:antialiased}
-    .container{max-width:1200px;margin:0 auto;padding:0 24px}
-
-    /* Header */
-    .header{background:rgba(255,255,255,0.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--b);position:sticky;top:0;z-index:100}
-    .header .container{display:flex;align-items:center;justify-content:space-between;height:64px}
-    .logo{font-size:22px;font-weight:800;color:var(--p);text-decoration:none;letter-spacing:-0.5px}
-    .logo span{color:var(--a);font-size:12px;font-weight:500;margin-left:8px;padding:2px 8px;background:#fff7ed;border-radius:20px}
-    .nav{display:flex;gap:8px;align-items:center}
-    .nav a{color:var(--l);font-weight:500;font-size:14px;text-decoration:none;padding:6px 14px;border-radius:8px;transition:all .2s}
-    .nav a:hover,.nav a.active{color:var(--p);background:#eff6ff}
-    .burger{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--t);padding:4px}
-
-    /* Hero */
-    .hero{background:linear-gradient(135deg,var(--p) 0%,#1e3a8a 100%);color:#fff;padding:90px 0 70px;text-align:center;position:relative;overflow:hidden}
-    .hero::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;background:rgba(255,255,255,0.03);border-radius:50%}
-    .hero::after{content:'';position:absolute;bottom:-30%;left:-10%;width:400px;height:400px;background:rgba(255,255,255,0.03);border-radius:50%}
-    .hero .container{position:relative;z-index:1}
-    .hero h1{font-size:42px;font-weight:800;margin-bottom:16px;letter-spacing:-1.5px;line-height:1.2}
-    .hero p{font-size:18px;opacity:0.85;max-width:600px;margin:0 auto;line-height:1.6}
-    .hero-stats{display:flex;justify-content:center;gap:64px;margin-top:44px}
-    .stat{text-align:center}
-    .stat-num{font-size:36px;font-weight:800;line-height:1}
-    .stat-label{font-size:13px;opacity:0.7;margin-top:8px;letter-spacing:0.5px}
-    .stat-divider{width:1px;background:rgba(255,255,255,0.2)}@media(max-width:768px){.stat-divider{display:none}}
-
-    /* Sections */
-    .section{padding:80px 0}
-    .section-title{font-size:30px;font-weight:800;text-align:center;margin-bottom:12px;letter-spacing:-1px}
-    .section-subtitle{text-align:center;color:var(--l);font-size:16px;margin-bottom:48px;max-width:500px;margin-left:auto;margin-right:auto}
-
-    /* Dual Cards */
-    .dual-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-    .dual-card{background:var(--c);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--b);transition:all .3s cubic-bezier(.4,0,.2,1)}
-    .dual-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:#c7d2fe}
-    .dual-card-header{padding:32px 32px 0;text-align:center}
-    .dual-card-header .icon{font-size:44px;margin-bottom:14px;line-height:1}
-    .dual-card-header h3{font-size:22px;color:var(--p);margin-bottom:10px;font-weight:700}
-    .dual-card-header p{color:var(--l);font-size:14px}
-    .dual-card-body{padding:24px 32px 28px}
-    .dual-card-body a{display:flex;align-items:center;justify-content:space-between;padding:13px 16px;margin-bottom:6px;background:var(--bg);border-radius:10px;text-decoration:none;color:var(--t);font-size:15px;transition:all .2s;border:1px solid transparent}
-    .dual-card-body a:hover{background:var(--p);color:#fff;border-color:var(--p);transform:translateX(4px)}
-    .dual-card-body a .arrow{color:var(--p);font-weight:600;transition:all .2s}.dual-card-body a:hover .arrow{color:#fff}
-
-    /* Equipment Grid */
-    .eq-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-    .eq-card{background:var(--c);border-radius:14px;padding:22px 16px;text-align:center;box-shadow:var(--shadow-sm);text-decoration:none;color:inherit;transition:all .25s;border:1px solid var(--b);display:flex;flex-direction:column;align-items:center;gap:10px}
-    .eq-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:#93c5fd}
-    .eq-card .eq-icon{font-size:30px;line-height:1;transition:transform .25s}
-    .eq-card:hover .eq-icon{transform:scale(1.15)}
-    .eq-card h4{font-size:15px;color:var(--t);font-weight:600}
-
-    /* Trust Bar */
-    .trust-bar{background:linear-gradient(135deg,#1e293b 0%,#0f172a 100%);padding:48px 0}
-    .trust-grid{display:flex;justify-content:center;gap:80px;max-width:900px;margin:0 auto}
-    .trust-item{text-align:center}
-    .trust-num{font-size:32px;font-weight:800;color:#fff;line-height:1}
-    .trust-label{font-size:13px;color:#94a3b8;margin-top:8px;letter-spacing:0.5px}
-    .trust-icon{font-size:20px;margin-bottom:8px;display:block}
-
-    /* CTA */
-    .cta{background:linear-gradient(135deg,var(--a) 0%,#ea580c 100%);color:#fff;text-align:center;padding:72px 0;position:relative;overflow:hidden}
-    .cta::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 30% 50%,rgba(255,255,255,0.08) 0%,transparent 50%)}
-    .cta .container{position:relative;z-index:1}
-    .cta h2{font-size:32px;font-weight:800;margin-bottom:14px;letter-spacing:-0.5px}
-    .cta p{font-size:17px;margin-bottom:28px;opacity:0.9}
-    .btn{display:inline-block;padding:15px 36px;border-radius:10px;font-weight:700;font-size:16px;text-decoration:none;transition:all .25s;border:none;cursor:pointer}
-    .btn-white{background:#fff;color:var(--a);box-shadow:0 4px 14px rgba(0,0,0,0.15)}
-    .btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(0,0,0,0.2)}
-    .btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.5);margin-left:12px}
-    .btn-outline:hover{background:rgba(255,255,255,0.1);border-color:#fff;transform:translateY(-2px)}
-
-    /* Footer */
-    .footer{background:#0f172a;color:#94a3b8;padding:48px 0 24px;text-align:center;font-size:13px}
-    .footer a{color:#64748b;text-decoration:none;transition:color .2s}
-    .footer a:hover{color:#94a3b8}
-    .footer .footer-divider{width:40px;height:2px;background:var(--a);margin:16px auto;border-radius:1px}
-
-    /* Mobile */
-    @media(max-width:768px){
-      .dual-grid,.eq-grid{grid-template-columns:1fr}
-      .hero-stats{gap:32px;flex-wrap:wrap}.hero h1{font-size:28px}.hero{padding:60px 0 50px}
-      .nav{display:none}.nav.open{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:var(--c);border-bottom:1px solid var(--b);padding:12px;gap:4px}
-      .burger{display:block}
-      .trust-grid{flex-wrap:wrap;gap:36px}
-      .cta h2{font-size:24px}
-    }
-  </style>
 
   <meta property="og:title" content="速豹集运 — 大件设备两岸专线 | 台湾寄大陆快递 | subaotw.cn">
   <meta property="og:description" content="速豹集运专注两岸物流：大件设备出口台湾专线（CNC/注塑机/冲床/纺织/印刷等15大品类）+ 台湾寄大陆敏感货快递（食品/茶叶/保健品）。6年经验，500+工厂信赖。 提供大陆→台湾大件设备运输（CNC/注塑机/冲床等15品类）和台湾→大陆敏感货快递（食品/茶叶/保健品），免费获取运费报价。">
@@ -121,7 +30,7 @@
 <body>
     <header class="header">
     <div class="container">
-      <a href="/" class="active" class="logo">速豹集运<span>大件设备·两岸快递</span></a>
+      <a href="/" class="logo">速豹集运<span>大件设备·两岸快递</span></a>
       <button class="burger" aria-label="菜单" onclick="this.nextElementSibling.classList.toggle('open')">☰</button>
       <nav class="nav">
         <a href="/equipment/">设备运输</a>
