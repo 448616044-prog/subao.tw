@@ -120,8 +120,12 @@ img{max-width:100%;height:auto}
 .eq-card h4{font-size:15px;color:var(--text);font-weight:600}
 
 /* Equipment grid (3-col, equipment/index.html) */
-.equipment-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-@media(max-width:768px){.equipment-grid{grid-template-columns:1fr}}
+.equipment-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.equipment-item{background:var(--card-bg);border-radius:var(--radius-sm);padding:16px 10px;text-align:center;text-decoration:none;color:var(--text);border:1px solid var(--border);transition:all .2s;display:flex;flex-direction:column;align-items:center;gap:8px;font-size:28px}
+.equipment-item span{font-size:13px;font-weight:600;color:var(--text)}
+.equipment-item:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:var(--primary)}
+@media(max-width:900px){.equipment-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.equipment-grid{grid-template-columns:repeat(2,1fr)}}
 
 /* Category card grid (tw-to-cn/index) */
 .cat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
@@ -351,14 +355,36 @@ table tr:last-child td{border-bottom:none}
 
 /* ---------- Calculator Components ---------- */
 
-/* Card (pricing-calculator, volume-calculator) */
-.card{background:var(--card-bg);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm);border:1px solid var(--border);margin-bottom:24px}
-.card h2{font-size:22px;font-weight:700;color:var(--text);margin-bottom:20px}
+/* Calculator container — centered, max-width */
+.calculator-container{max-width:720px;margin:0 auto}
 
-/* Form grids for calculators */
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
-@media(max-width:768px){.grid2,.grid3{grid-template-columns:1fr}}
+/* Calculator tabs */
+.calc-tabs{display:flex;gap:0;margin-bottom:28px;border-radius:var(--radius);overflow:hidden;border:2px solid var(--border)}
+.calc-tab{flex:1;padding:14px 20px;text-align:center;font-size:14px;font-weight:600;cursor:pointer;background:var(--card-bg);color:var(--text-light);border:none;transition:all .2s;line-height:1.4}
+.calc-tab span{font-size:11px;font-weight:400;display:block;margin-top:2px;opacity:.7}
+.calc-tab.active{background:var(--primary);color:#fff}
+.calc-tab.active span{opacity:.85}
+.calc-tab:hover:not(.active){background:var(--primary-light);color:var(--primary)}
+
+/* Calculator card */
+.calc-card{background:var(--card-bg);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow-sm);border:1px solid var(--border);margin-bottom:24px}
+.calc-card h2{font-size:20px;font-weight:700;color:var(--text);margin-bottom:24px}
+.calc-panel{display:block}
+
+/* Calculator form grids */
+.calc-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.calc-grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+@media(max-width:600px){.calc-grid-2,.calc-grid-3{grid-template-columns:1fr}}
+
+/* Full-width button */
+.btn-full{width:100%;margin-top:20px;text-align:center;padding:16px 24px;font-size:16px}
+
+/* Calculator tips section */
+.calc-tips{background:linear-gradient(135deg,#eff6ff,#f0f9ff);border-radius:var(--radius);padding:28px 32px}
+.calc-tips h3{font-size:18px;font-weight:700;color:var(--primary);margin:0 0 0}
+.tip-card{padding:12px 0}
+.tip-card p{font-size:13px;color:var(--text-light);margin-top:8px}
+@media(max-width:600px){.calc-tips{padding:20px}}
 
 /* Form fields */
 .field{margin-bottom:12px}
@@ -366,13 +392,20 @@ table tr:last-child td{border-bottom:none}
 .field input,.field select{width:100%;padding:10px 14px;border:1px solid var(--border);border-radius:var(--radius-sm);font-size:15px;color:var(--text);background:var(--card-bg);transition:border-color .2s}
 .field input:focus,.field select:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(26,86,219,.1)}
 
-/* Result box */
+/* Result box (pricing-calculator) */
 .result-box{margin-top:20px;padding:20px;background:linear-gradient(135deg,var(--primary-light) 0%,#dbeafe 100%);border-radius:var(--radius);text-align:center}
 .result-box .price{font-size:28px;font-weight:800;color:var(--primary);margin:8px 0}
 .result-box .note{font-size:13px;color:var(--text-light);margin:4px 0}
-.result-card{margin:12px 0;padding:16px;background:var(--card-bg);border-radius:var(--radius-sm);border:1px solid var(--border)}
-.result-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);font-size:14px}
-.result-row:last-child{border-bottom:none}
+
+/* Result card (volume-calculator) */
+.result-card{padding:20px;background:var(--card-bg);border-radius:var(--radius-sm);border:2px solid var(--border);text-align:center;transition:all .2s}
+
+/* Result row (volume-calculator) */
+.result-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}
+.result-row .result-card.winner{border-color:var(--green);background:#f0fdf4}
+.result-row .result-card.winner .win-badge{display:inline-block}
+.result-row .result-card:not(.winner) .win-badge{display:none}
+@media(max-width:600px){.result-row{grid-template-columns:1fr}}
 
 /* Calculator card formula */
 .card-formula{padding:16px;background:var(--bg);border-radius:var(--radius-sm);margin:12px 0;font-size:14px}
@@ -462,3 +495,25 @@ table tr:last-child td{border-bottom:none}
 .text-center{text-align:center}
 .mt-0{margin-top:0}.mt-2{margin-top:16px}.mt-3{margin-top:24px}.mt-4{margin-top:32px}
 .mb-0{margin-bottom:0}.mb-2{margin-bottom:16px}.mb-3{margin-bottom:24px}
+
+/* ---------- About Page ---------- */
+.about-content{max-width:800px;margin:0 auto;padding:0 24px}
+.about-content h2{font-size:26px;font-weight:800;margin:48px 0 20px;color:var(--text);padding-bottom:8px;border-bottom:2px solid #dbeafe}
+.about-content h2:first-child{margin-top:0}
+.about-content p{font-size:16px;color:var(--text);margin-bottom:16px;line-height:1.8}
+
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:24px 0}
+.about-card{background:var(--card-bg);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm);border:1px solid var(--border)}
+.about-card-icon{font-size:40px;line-height:1;margin-bottom:12px}
+.about-card h3{font-size:20px;font-weight:700;color:var(--primary);margin-bottom:10px}
+.about-card p{font-size:15px;color:var(--text-light);line-height:1.6;margin-bottom:12px}
+.about-card ul{list-style:none;padding:0;margin:0}
+.about-card li{font-size:14px;color:var(--text);padding:6px 0;padding-left:20px;position:relative}
+.about-card li::before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:700}
+
+.about-features{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}
+.about-feature{display:flex;gap:14px;align-items:flex-start;padding:18px;background:var(--bg);border-radius:var(--radius-sm)}
+.about-feature-icon{flex-shrink:0;width:36px;height:36px;display:flex;align-items:center;justify-content:center;font-size:18px}
+.about-feature strong{display:block;font-size:15px;color:var(--text);margin-bottom:4px}
+.about-feature p{font-size:13px;color:var(--text-light);margin:0;line-height:1.5}
+@media(max-width:768px){.about-grid,.about-features{grid-template-columns:1fr}.about-content h2{font-size:22px}}
