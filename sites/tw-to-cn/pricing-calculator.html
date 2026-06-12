@@ -246,10 +246,10 @@
           <div class="calc-group">
             <label>商品類型</label>
             <select id="productType">
-              <option value="A">A類 藥品/奶粉/美妝/保健品</option>
-              <option value="B">B類 液體/粉末保健品</option>
-              <option value="C">C類 中西藥</option>
-              <option value="D">D類 電器</option>
+              <option value="A">A類 奶粉/舊衣服/日用雜物/食品</option>
+              <option value="B">B類 美妝/保健品/保養品/貼布</option>
+              <option value="C">C類 電器類（含電池產品）</option>
+              <option value="D">D類 中西藥</option>
             </select>
           </div>
           <div class="calc-group">
@@ -266,11 +266,12 @@
             <label>目的地區域</label>
             <select id="region">
               <option value="south">🌴 華南（福建、廣東）</option>
-              <option value="east">🏙️ 華東（浙江、上海）</option>
+              <option value="east">🏙️ 華東（浙江、上海、江蘇）</option>
               <option value="center">🌾 華中（江西、湖南、湖北、安徽）</option>
               <option value="north">❄️ 華北（山東、山西、天津、北京、河北、河南）</option>
               <option value="southwest">🏔️ 西南（四川、重慶、貴州、雲南、廣西、海南）</option>
-              <option value="other">🌌 東北/西北地區</option>
+              <option value="northeast">🌌 東北（陝西、遼寧、黑龍江、吉林）</option>
+              <option value="northwest">🏜️ 西北（甘肅、青海、寧夏、內蒙古、西藏、新疆）</option>
             </select>
           </div>
           <div class="calc-group">
@@ -311,32 +312,32 @@
             <tr class="recommended">
               <td>敏感貨專線（經濟） <span class="badge">熱門</span></td>
               <td>約兩週</td>
-              <td class="price">NT$290-380/kg</td>
-              <td>A類保健品/美妝/藥品</td>
+              <td class="price">NT$290-410/kg</td>
+              <td>A+B類 食品/美妝/保健品</td>
             </tr>
             <tr>
               <td>敏感貨專線（快件）</td>
               <td>約一週</td>
-              <td class="price">NT$380-450/kg</td>
-              <td>需快速通關的敏感貨</td>
+              <td class="price">NT$380-530/kg</td>
+              <td>A+B類 需快速通關的敏感貨</td>
             </tr>
             <tr>
-              <td>液體/粉末保健品線</td>
-              <td>約一週～兩週</td>
-              <td class="price">NT$360-500/kg</td>
-              <td>B類液體/粉末保健品</td>
+              <td>電器專線（經濟）</td>
+              <td>約兩週</td>
+              <td class="price">NT$500-570/kg</td>
+              <td>C類 電器/含電池產品</td>
             </tr>
             <tr>
-              <td>中西藥专线</td>
-              <td>約一週～兩週</td>
-              <td class="price">NT$500-660/kg</td>
-              <td>C類中藥/西藥</td>
+              <td>電器專線（快件）</td>
+              <td>約一週</td>
+              <td class="price">NT$590-660/kg</td>
+              <td>C類 電器（含電池）快件</td>
             </tr>
             <tr>
-              <td>電器專線</td>
+              <td>中西藥專線</td>
               <td>約一週～兩週</td>
               <td class="price">NT$780-1170/kg</td>
-              <td>D類電器（注意海關核價）</td>
+              <td>D類 中藥/西藥</td>
             </tr>
           </tbody>
         </table>
@@ -391,26 +392,29 @@
         east:   { A: 290, B: 360, C: 500, D: 780 },
         center: { A: 300, B: 380, C: 530, D: 780 },
         north:  { A: 320, B: 390, C: 530, D: 780 },
-        southwest: { A: 330, B: 410, C: 540, D: 780 },
-        other:  { A: 360, B: 440, C: 570, D: 1080 }
+        southwest: { A: 330, B: 410, C: 540, D: 1080 },
+        northeast:  { A: 350, B: 420, C: 560, D: 1080 },
+        northwest:  { A: 360, B: 440, C: 570, D: 1080 }
       },
       express: {
         south:  { A: 380, B: 450, C: 590, D: 870 },
         east:   { A: 380, B: 450, C: 590, D: 870 },
-        center: { A: 390, B: 470, C: 620, D: 870 },
-        north:  { A: 410, B: 480, C: 620, D: 870 },
-        southwest: { A: 420, B: 500, C: 630, D: 870 },
-        other:  { A: 450, B: 530, C: 660, D: 1170 }
+        center: { A: 390, B: 470, C: 600, D: 930 },
+        north:  { A: 410, B: 480, C: 620, D: 990 },
+        southwest: { A: 420, B: 500, C: 630, D: 1050 },
+        northeast:  { A: 440, B: 510, C: 650, D: 1110 },
+        northwest:  { A: 450, B: 530, C: 660, D: 1170 }
       }
     };
 
     const regionNames = {
       south: '🌴 華南（福建、廣東）',
-      east: '🏙️ 華東（浙江、上海）',
+      east: '🏙️ 華東（浙江、上海、江蘇）',
       center: '🌾 華中（江西、湖南、湖北、安徽）',
       north: '❄️ 華北（山東、山西、天津、北京、河北、河南）',
       southwest: '🏔️ 西南（四川、重慶、貴州、雲南、廣西、海南）',
-      other: '🌌 東北/西北地區'
+      northeast: '🌌 東北（陝西、遼寧、黑龍江、吉林）',
+      northwest: '🏜️ 西北（甘肅、青海、寧夏、內蒙古、西藏、新疆）'
     };
 
     const serviceNames = {
@@ -419,10 +423,10 @@
     };
 
     const typeNames = {
-      A: 'A類 藥品/奶粉/美妝/保健品',
-      B: 'B類 液體/粉末保健品',
-      C: 'C類 中西藥',
-      D: 'D類 電器'
+      A: 'A類 奶粉/舊衣服/日用雜物/食品',
+      B: 'B類 美妝/保健品/保養品/貼布',
+      C: 'C類 電器類（含電池產品）',
+      D: 'D類 中西藥'
     };
 
     function calculate() {
