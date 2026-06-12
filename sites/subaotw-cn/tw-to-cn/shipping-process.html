@@ -18,53 +18,22 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://www.subaotw.cn/"},{"@type":"ListItem","position":2,"name":"台湾寄大陆","item":"https://www.subaotw.cn/tw-to-cn/"},{"@type":"ListItem","position":3,"name":"寄大陆流程"}]}
   </script>
-  <style>
-    :root{--primary:#1a56db;--accent:#f97316;--bg:#f8fafc;--card:#fff;--text:#1e293b;--text-light:#64748b;--border:#e2e8f0;--radius:12px}
-    *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;color:var(--text);line-height:1.7;background:var(--bg);-webkit-font-smoothing:antialiased}
-    .container{max-width:900px;margin:0 auto;padding:0 20px}
-    .header{background:rgba(255,255,255,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
-    .header .container{display:flex;align-items:center;justify-content:space-between;height:64px;max-width:1200px}
-    .logo{font-size:20px;font-weight:800;color:var(--primary);text-decoration:none}
-    .logo span{color:var(--accent);font-size:12px;font-weight:500;margin-left:6px;padding:2px 8px;background:#fff7ed;border-radius:20px}
-    .breadcrumb{padding:20px 0;font-size:14px;color:var(--text-light)}
-    .breadcrumb a{color:var(--primary);text-decoration:none}
-    article{padding-bottom:60px}
-    article h1{font-size:32px;font-weight:800;margin-bottom:8px;line-height:1.3}
-    article .date{font-size:13px;color:var(--text-light);margin-bottom:24px}
-    article h2{font-size:24px;font-weight:700;margin:40px 0 16px;color:var(--primary);padding-bottom:8px;border-bottom:2px solid #dbeafe}
-    article h3{font-size:18px;font-weight:700;margin:24px 0 12px}
-    article p{font-size:16px;margin-bottom:16px;color:var(--text)}
-    article ul,article ol{margin:12px 0 16px 24px;color:var(--text)}
-    article li{margin-bottom:8px}
-    .step{display:flex;gap:16px;background:var(--card);border-radius:var(--radius);padding:20px;margin-bottom:12px;align-items:flex-start;box-shadow:0 1px 3px rgba(0,0,0,0.04);border:1px solid var(--border)}
-    .step-num{flex-shrink:0;width:44px;height:44px;background:var(--primary);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px}
-    .step-content h3{margin:0 0 6px;font-size:17px;color:var(--text)}
-    .step-content p{font-size:14px;color:var(--text-light);margin:0}
-    .tip-box{background:#eff6ff;border:1px solid #bfdbfe;border-radius:var(--radius);padding:20px 24px;margin:24px 0;font-size:15px}
-    .tip-box strong{display:block;color:var(--primary);margin-bottom:8px;font-size:16px}
-    .inline-cta{background:var(--primary);color:#fff;padding:20px 24px;border-radius:var(--radius);margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
-    .inline-cta p{margin:0;color:#fff;font-size:16px}
-    .inline-cta a{display:inline-flex;align-items:center;gap:6px;background:#fff;color:var(--primary);padding:10px 20px;border-radius:24px;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap}
-    .cta{background:linear-gradient(135deg,var(--accent) 0%,#ea580c 100%);color:#fff;text-align:center;padding:48px 20px;border-radius:var(--radius);margin:40px 0}
-    .cta h2{color:#fff;margin-top:0;border:none;padding:0;font-size:22px}
-    .btn{display:inline-block;padding:14px 32px;border-radius:10px;font-weight:700;font-size:16px;text-decoration:none;transition:all 0.2s}
-    .btn-primary{background:#fff;color:var(--accent);box-shadow:0 4px 14px rgba(0,0,0,0.15)}
-    .btn-primary:hover{transform:translateY(-2px)}
-    .related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:24px 0}
-    .related-card{background:var(--card);border-radius:var(--radius);padding:18px;text-decoration:none;color:var(--text);box-shadow:0 1px 3px rgba(0,0,0,0.06);transition:all 0.2s;border:1px solid var(--border)}
-    .related-card:hover{border-color:var(--primary);transform:translateY(-2px)}
-    .related-card h4{font-size:15px;color:var(--primary);margin-bottom:4px}
-    .related-card p{font-size:13px;color:var(--text-light);margin:0}
-    .footer{background:#0f172a;color:#94a3b8;padding:40px 0 20px;text-align:center;font-size:13px}
-    .footer a{color:#64748b;text-decoration:none}
-    @media(max-width:768px){article h1{font-size:26px}.step{flex-direction:column}}
-  </style>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <header class="header">
+    <header class="header">
     <div class="container">
-      <a href="/" class="logo">速豹集运<span>两岸集运</span></a>
+      <a href="/" class="logo">速豹集运<span>大件设备·两岸快递</span></a>
+      <button class="burger" aria-label="菜单" onclick="this.nextElementSibling.classList.toggle('open')">☰</button>
+      <nav class="nav">
+        <a href="/equipment/">设备运输</a>
+        <a href="/tw-to-cn/" class="active">台湾寄大陆</a>
+        <a href="/pricing-calculator">运费估算</a>
+        <a href="/volume-calculator">材积计算</a>
+        <a href="/guide/">物流指南</a>
+        <a href="/contact">询价报价</a>
+        <a href="/about">关于我们</a>
+      </nav>
     </div>
   </header>
 
@@ -179,9 +148,36 @@
     </article>
   </div>
 
-  <footer class="footer">
-    <p>© 2026 速豹集运 Subao Logistics | 大件设备+两岸快递</p>
-    <p style="margin-top:4px">微信：13026603164 | 电话：13026603164</p>
+    <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h3>速豹集运</h3>
+        <p style="color:#64748b;margin:0;font-size:13px">大件设备两岸专线 · 台湾寄大陆快递<br>6年经验，500+工厂信赖</p>
+      </div>
+      <div>
+        <h3>服务项目</h3>
+        <a href="/equipment/">大件设备运输</a>
+        <a href="/tw-to-cn/">台湾寄大陆快递</a>
+        <a href="/pricing-calculator">运费估算</a>
+        <a href="/volume-calculator">材积计算</a>
+      </div>
+      <div>
+        <h3>帮助中心</h3>
+        <a href="/guide/">物流指南</a>
+        <a href="/faq">常见问题</a>
+        <a href="/about">关于我们</a>
+        <a href="/contact">询价报价</a>
+      </div>
+      <div>
+        <h3>联系我们</h3>
+        <a href="tel:13026603164">📞 13026603164</a>
+        <a href="/contact">💬 在线留言</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 速豹集运 Subao Logistics. All rights reserved.</p>
+      <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">湘ICP备2026016030号-2</a></p>
+    </div>
   </footer>
 
   <script>

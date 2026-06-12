@@ -6,54 +6,7 @@
   <title>运费估算 / 材积计算器｜两岸设备/快递运费预估｜速豹集运</title>
   <meta name="description" content="速豹集运在线运费估算工具。输入货物重量、尺寸、类型，快速预估大陆→台湾设备运费和台湾→大陆快递费用。支持一般货物、敏感货、大件设备三种模式。 支持一般货物、敏感货、大件设备三种运费模式，30秒获取预估价格。速豹集运6年两岸物流经验。">
   <link rel="canonical" href="https://www.subaotw.cn/pricing-calculator">
-  <style>
-    :root{--p:#1a56db;--pd:#1e40af;--a:#f97316;--g:#10b981;--bg:#f8fafc;--c:#fff;--t:#1e293b;--l:#64748b;--b:#e2e8f0;--r:12px;--shadow-sm:0 1px 2px rgba(0,0,0,0.05);--shadow-md:0 4px 12px rgba(0,0,0,0.08);--shadow-lg:0 10px 30px rgba(0,0,0,0.1)}
-    *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:var(--t);line-height:1.7;background:var(--bg)}
-    .container{max-width:1200px;margin:0 auto;padding:0 24px}
-    .header{background:rgba(255,255,255,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--b);position:sticky;top:0;z-index:100}
-    .header .container{display:flex;align-items:center;justify-content:space-between;height:64px}
-    .logo{font-size:22px;font-weight:800;color:var(--p);text-decoration:none}
-    .nav{display:flex;gap:8px;align-items:center}
-    .nav a{color:var(--l);font-weight:500;font-size:14px;text-decoration:none;padding:6px 14px;border-radius:8px;transition:all .2s}
-    .nav a:hover,.nav a.active{color:var(--p);background:#eff6ff}
-    .burger{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--t);padding:4px}
-    a{text-decoration:none;color:inherit}
-    .hero{background:linear-gradient(135deg,var(--p) 0%,#1e3a8a 100%);color:#fff;padding:80px 0 50px;text-align:center}
-    .hero h1{font-size:36px;font-weight:800;margin-bottom:8px}
-    .hero p{font-size:17px;opacity:0.85}
-    .section{padding:60px 0}
-    .btn{display:inline-block;padding:12px 28px;border-radius:8px;font-weight:600;font-size:15px;cursor:pointer;border:none;transition:all .2s}
-    .btn-primary{background:var(--p);color:#fff}.btn-primary:hover{background:var(--pd)}
-    .btn-accent{background:var(--a);color:#fff}.btn-accent:hover{background:#ea580c}
-    .btn-green{background:var(--g);color:#fff}.btn-green:hover{background:#059669}
-    .card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow-md);padding:32px;margin-bottom:24px}
-    .card h2{font-size:22px;margin-bottom:20px;color:var(--t)}
-    .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .field{margin-bottom:20px}
-    .field label{display:block;font-size:14px;font-weight:600;color:var(--t);margin-bottom:6px}
-    .field input,.field select{width:100%;padding:12px 16px;border:1px solid var(--b);border-radius:8px;font-size:15px;font-family:inherit;outline:none;transition:border .2s}
-    .field input:focus,.field select:focus{border-color:var(--p);box-shadow:0 0 0 3px rgba(26,86,219,0.1)}
-    .result-box{background:linear-gradient(135deg,#f0fdf4,#ecfdf5);border:2px solid var(--g);border-radius:var(--r);padding:28px;text-align:center;margin-top:20px}
-    .result-box .price{font-size:42px;font-weight:800;color:var(--g)}
-    .result-box .note{font-size:13px;color:var(--l);margin-top:8px}
-    .tab-row{display:flex;gap:8px;margin-bottom:32px}
-    .tab-btn{padding:10px 24px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;border:1px solid var(--b);background:#fff;transition:all .2s}
-    .tab-btn.active{background:var(--p);color:#fff;border-color:var(--p)}
-    .tag{display:inline-block;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600}
-    .tag-green{background:#dcfce7;color:#166534}
-    .tag-orange{background:#fff7ed;color:#c2410c}
-    .tag-blue{background:#eff6ff;color:#1e40af}
-    .footer{background:var(--t);color:#94a3b8;padding:40px 0;text-align:center;margin-top:40px;font-size:14px}
-    .footer a{color:#cbd5e1}
-    .footer a:hover{color:#fff}
-    .mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;bottom:0;background:#fff;padding:24px;z-index:99;overflow-y:auto}
-    .mobile-menu.active{display:block}
-    .mobile-menu a{display:block;padding:14px 0;font-size:16px;font-weight:500;color:var(--t);border-bottom:1px solid var(--b)}
-    .mobile-menu a.active{color:var(--p)}
-    @media(max-width:768px){.nav{display:none}.burger{display:block}.hero h1{font-size:28px}.grid2,.grid3{grid-template-columns:1fr}}
-  </style>
+  <link rel="stylesheet" href="/style.css">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://www.subaotw.cn/"},{"@type":"ListItem","position":2,"name":"运费计算"}]}
   </script>
@@ -66,20 +19,19 @@
   <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-  <header class="header">
+    <header class="header">
     <div class="container">
-      <a href="/" class="logo">速豹集运</a>
-      <nav class="nav" id="desktopNav">
+      <a href="/" class="logo">速豹集运<span>大件设备·两岸快递</span></a>
+      <button class="burger" aria-label="菜单" onclick="this.nextElementSibling.classList.toggle('open')">☰</button>
+      <nav class="nav">
         <a href="/equipment/">设备运输</a>
         <a href="/tw-to-cn/">台湾寄大陆</a>
         <a href="/pricing-calculator" class="active">运费估算</a>
+        <a href="/volume-calculator">材积计算</a>
         <a href="/guide/">物流指南</a>
-        <a href="/cases/">客户案例</a>
-        <a href="/faq">常见问题</a>
+        <a href="/contact">询价报价</a>
         <a href="/about">关于我们</a>
-        <a href="/contact">联系我们</a>
       </nav>
-      <button class="burger" id="burgerBtn">☰</button>
     </div>
   </header>
   <div class="mobile-menu" id="mobileMenu">
@@ -176,9 +128,36 @@
     </div>
   </div>
 
-  <footer class="footer">
-    <p>© 2026 速豹集运 · 两岸物流专线</p>
-    <p style="margin-top:8px"><a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">湘ICP备2026016030号-2</a> · 客服：<a href="tel:13026603164">13026603164</a></p>
+    <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h3>速豹集运</h3>
+        <p style="color:#64748b;margin:0;font-size:13px">大件设备两岸专线 · 台湾寄大陆快递<br>6年经验，500+工厂信赖</p>
+      </div>
+      <div>
+        <h3>服务项目</h3>
+        <a href="/equipment/">大件设备运输</a>
+        <a href="/tw-to-cn/">台湾寄大陆快递</a>
+        <a href="/pricing-calculator">运费估算</a>
+        <a href="/volume-calculator">材积计算</a>
+      </div>
+      <div>
+        <h3>帮助中心</h3>
+        <a href="/guide/">物流指南</a>
+        <a href="/faq">常见问题</a>
+        <a href="/about">关于我们</a>
+        <a href="/contact">询价报价</a>
+      </div>
+      <div>
+        <h3>联系我们</h3>
+        <a href="tel:13026603164">📞 13026603164</a>
+        <a href="/contact">💬 在线留言</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 速豹集运 Subao Logistics. All rights reserved.</p>
+      <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">湘ICP备2026016030号-2</a></p>
+    </div>
   </footer>
 
   <script>
