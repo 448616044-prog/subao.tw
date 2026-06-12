@@ -303,6 +303,7 @@
       .testimonial-cards { grid-template-columns: 1fr; }
       .footer-content { grid-template-columns: repeat(2, 1fr); }
       .article-grid { grid-template-columns: 1fr; }
+      .quick-entry-grid { grid-template-columns: repeat(2, 1fr) !important; }
     }
     @media (max-width: 768px) {
       .hero h1 { font-size: 36px; }
@@ -342,7 +343,7 @@
         <a href="/volume-calculator" data-nav="volume-calculator">材積計算</a>
         <a href="/article-list" data-nav="article-list">文章攻略</a>
         <div class="nav-dropdown"><a href="#" onclick="return false" style="cursor:default">更多</a>
-        <div class="dd-menu"><a href="/faq">常見問題</a><a href="/partners">合作夥伴</a><a href="/about">關於我們</a></div></div>
+        <div class="dd-menu"><a href="/faq">常見問題</a><a href="/express-comparison">快遞對比</a><a href="/partners">合作夥伴</a><a href="/about">關於我們</a></div></div>
       </nav>
       <div class="header-cta">
         <a href="https://line.me/ti/p/~subaotw5988" class="btn btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
@@ -371,6 +372,7 @@
       <span>更多</span>
       <div class="m-dropdown-links">
         <a href="/faq">常見問題</a>
+        <a href="/express-comparison">快遞對比</a>
         <a href="/partners">合作夥伴</a>
         <a href="/about">關於我們</a>
       </div>
@@ -405,7 +407,7 @@
   <!-- 快捷入口 P2-1 -->
   <section style="padding:40px 0 0;">
     <div class="container">
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:900px;margin:0 auto">
+      <div class="quick-entry-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:900px;margin:0 auto">
         <a href="/can-i-ship" style="background:var(--bg-white);padding:24px;border-radius:var(--radius-lg);text-align:center;box-shadow:var(--shadow);transition:var(--transition);display:block" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
           <div style="font-size:36px;margin-bottom:8px">🔍</div>
           <h4 style="font-weight:700;font-size:16px;margin:0 0 4px">可以寄嗎</h4>
@@ -415,6 +417,11 @@
           <div style="font-size:36px;margin-bottom:8px"><i class="fas fa-tag"></i></div>
           <h4 style="font-weight:700;font-size:16px;margin:0 0 4px">運費報價</h4>
           <p style="font-size:13px;color:var(--text-light);margin:0">透明定價，無隱藏費用</p>
+        </a>
+        <a href="/express-comparison" style="background:linear-gradient(135deg,#fef3c7,#fde68a);padding:24px;border-radius:var(--radius-lg);text-align:center;box-shadow:var(--shadow);transition:var(--transition);display:block;border:2px solid #f59e0b" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+          <div style="font-size:36px;margin-bottom:8px">🏆</div>
+          <h4 style="font-weight:700;font-size:16px;margin:0 0 4px;color:#92400e">快遞對比</h4>
+          <p style="font-size:13px;color:var(--text-light);margin:0">5大渠道終極評比</p>
         </a>
         <a href="/pricing-calculator" style="background:var(--bg-white);padding:24px;border-radius:var(--radius-lg);text-align:center;box-shadow:var(--shadow);transition:var(--transition);display:block" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
           <div style="font-size:36px;margin-bottom:8px">🧮</div>
