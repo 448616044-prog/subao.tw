@@ -65,4 +65,17 @@
   <url><loc>https://www.subaotw.cn/cases/case-mold-kunshan</loc><priority>0.6</priority></url>
 
 
+  <url>
+    <loc>https://www.subaotw.cn/tw-to-cn/hair-care-shipping.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.subaotw.cn/tw-to-cn/electronics-shipping.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
