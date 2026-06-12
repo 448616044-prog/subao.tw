@@ -30,7 +30,7 @@
   <url><loc>https://www.subaotw.cn/equipment/mold-tooling</loc><priority>0.7</priority></url>
   <url><loc>https://www.subaotw.cn/equipment/car-engine</loc><priority>0.7</priority></url>
   <url><loc>https://www.subaotw.cn/equipment/mechanical-parts</loc><priority>0.7</priority></url>
-  <!-- 台湾寄大陆敏感货（9页） -->
+  <!-- 台湾寄大陆敏感货（12页） -->
   <url><loc>https://www.subaotw.cn/tw-to-cn/tea-shipping</loc><priority>0.7</priority></url>
   <url><loc>https://www.subaotw.cn/tw-to-cn/health-products</loc><priority>0.7</priority></url>
   <url><loc>https://www.subaotw.cn/tw-to-cn/cosmetics-shipping</loc><priority>0.7</priority></url>
@@ -40,6 +40,9 @@
   <url><loc>https://www.subaotw.cn/tw-to-cn/clothing-shipping</loc><priority>0.7</priority></url>
   <url><loc>https://www.subaotw.cn/tw-to-cn/books-shipping</loc><priority>0.7</priority></url>
   <url><loc>https://www.subaotw.cn/tw-to-cn/baby-products</loc><priority>0.7</priority></url>
+  <url><loc>https://www.subaotw.cn/tw-to-cn/souvenir-shipping</loc><priority>0.8</priority></url>
+  <url><loc>https://www.subaotw.cn/tw-to-cn/shipping-process</loc><priority>0.8</priority></url>
+  <url><loc>https://www.subaotw.cn/tw-to-cn/ezway-tutorial</loc><priority>0.7</priority></url>
   <!-- 出口指南（12页） -->
   <url><loc>https://www.subaotw.cn/guide/</loc><priority>0.8</priority></url>
   <url><loc>https://www.subaotw.cn/guide/equipment-export-process</loc><priority>0.8</priority></url>
