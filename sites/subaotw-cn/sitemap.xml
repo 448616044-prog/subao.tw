@@ -43,7 +43,8 @@
   <url><loc>https://www.subaotw.cn/tw-to-cn/souvenir-shipping</loc><priority>0.8</priority></url>
   <url><loc>https://www.subaotw.cn/tw-to-cn/shipping-process</loc><priority>0.8</priority></url>
   <url><loc>https://www.subaotw.cn/tw-to-cn/ezway-tutorial</loc><priority>0.7</priority></url>
-  <!-- 出口指南（12页） -->
+  <!-- 出口指南（13页） -->
+  <url><loc>https://www.subaotw.cn/guide/equipment-repair-return</loc><priority>0.8</priority></url>
   <url><loc>https://www.subaotw.cn/guide/</loc><priority>0.8</priority></url>
   <url><loc>https://www.subaotw.cn/guide/equipment-export-process</loc><priority>0.8</priority></url>
   <url><loc>https://www.subaotw.cn/guide/customs-documents</loc><priority>0.7</priority></url>
