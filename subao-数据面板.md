@@ -85,3 +85,21 @@
 
 **数据采集时间**: 2026-06-12 13:36
 **数据来源**: GA4 / GSC截图
+
+---
+
+## 📋 最後更新日誌
+
+| 日期 | 動作 |
+|------|------|
+| 6/13 | P0: 索引修复 — food/cosmetics补内链到新页面 + sitemap刷新13页 |
+| 6/13 | P1: 凤梨酥CTR优化 — food-shipping-guide标题直答「可以寄大陆！」 |
+| 6/13 | P1: 外链 — 5目录提交清单更新（bizpages需登录，其余待手动提交） |
+| 6/13 | P2: 敏感貨pillar page上线 — /sensitive-goods-shipping 品类总览+FAQ+全站接入 |
+| 6/12 | 端午节粽子/洗护髮攻略/空拍機禁運/food-cosmetics meta优化/定价重构/WebP压缩 |
+| 6/11 | LINE咨询驱动内容增强/上门取件/8页title扩容 |
+| 6/10 | CPU散热器+电脑配件/肉鬆FAQ/tw-to-cn title扩容 |
+| 6/09 | express-comparison pillar page上线 + 血糖仪 |
+| 6/08 | 电脑设备+玩具娃娃集运文章 |
+| 6/07 | 杭州专线+两岸双向物流+电池产品 |
+| 6/06 | sitemap建立50条URL |
