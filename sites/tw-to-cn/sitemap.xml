@@ -401,4 +401,23 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://subao.tw/blog/used-electronics-repair-shipping</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://subao.tw/blog/homemade-food-shipping</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://subao.tw/blog/product-return-shipping</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
