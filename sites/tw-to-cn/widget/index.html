@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>嵌入運費計算器 - 速豹集運</title>
+<style>
+  body{font-family:system-ui,-apple-system,sans-serif;max-width:700px;margin:60px auto;padding:0 24px;color:#333;line-height:1.8}
+  h1{color:#0066CC}
+  textarea{width:100%;height:80px;padding:12px;border:2px solid #e2e8f0;border-radius:8px;font-family:monospace;font-size:13px;resize:none}
+  .preview{border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:24px 0}
+  .btn-copy{padding:10px 20px;background:#0066CC;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600}
+  .btn-copy:hover{background:#004C99}
+</style>
+</head>
+<body>
+<h1>📦 免費嵌入運費計算器</h1>
+<p>將台灣寄大陸運費快算器嵌入您的網站，完全免費，無需註冊。</p>
+
+<h3>嵌入代碼</h3>
+<textarea readonly id="embedCode"><iframe src="https://subao.tw/widget/shipping-calculator.html" width="100%" height="520" frameborder="0" style="border-radius:12px" title="台灣寄大陸運費快算器"></iframe></textarea>
+<br><br>
+<button class="btn-copy" onclick="navigator.clipboard.writeText(document.getElementById('embedCode').value);this.textContent='已複製！'">複製代碼</button>
+
+<h3 style="margin-top:40px">預覽效果</h3>
+<div class="preview">
+  <iframe src="shipping-calculator.html" width="100%" height="520" frameborder="0" style="border-radius:12px"></iframe>
+</div>
+
+<p style="margin-top:40px;font-size:14px;color:#999">
+  由 <a href="https://subao.tw" style="color:#0066CC">速豹集運</a> 提供 — 專業台灣↔大陸跨境物流服務
+</p>
+</body>
+</html>
