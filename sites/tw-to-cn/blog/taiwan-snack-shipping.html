@@ -212,5 +212,67 @@
     </div>
   </footer>
   <script>window.addEventListener("scroll",function(){var h=document.getElementById("header");if(h)h.classList.toggle("scrolled",window.scrollY>10)})</script>
+
+<style>
+.floating-bar{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+.floating-bar .icon-btn{width:52px;height:52px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px;transition:all .3s}
+.floating-bar .line-btn{background:#00B900;color:#fff;box-shadow:0 4px 16px rgba(0,185,0,0.35);text-decoration:none;font-weight:700;font-size:16px;font-family:Arial,Helvetica,sans-serif}
+.floating-bar .line-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(0,185,0,0.5)}
+.floating-bar .msg-btn{background:linear-gradient(135deg,#FF6600,#FF8800);color:#fff;box-shadow:0 4px 16px rgba(255,102,0,0.4);animation:pulse 2s infinite}
+.floating-bar .msg-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(255,102,0,0.5)}
+@keyframes pulse{0%,100%{box-shadow:0 4px 16px rgba(255,102,0,0.4)}50%{box-shadow:0 4px 24px rgba(255,102,0,0.6)}}
+.contact-modal{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:10000;align-items:center;justify-content:center}
+.contact-modal.active{display:flex}
+.contact-modal .modal-box{background:#fff;border-radius:16px;padding:32px;max-width:400px;width:90%;position:relative;animation:slideUp .3s}
+@keyframes slideUp{from{transform:translateY(40px);opacity:0}to{transform:translateY(0);opacity:1}}
+.contact-modal .close-btn{position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#999}
+.contact-modal h3{font-size:20px;font-weight:700;color:#333;margin:0 0 4px}
+.contact-modal .sub{font-size:13px;color:#999;margin-bottom:20px}
+.contact-modal .field{margin-bottom:14px}
+.contact-modal .field label{display:block;font-size:13px;font-weight:600;color:#555;margin-bottom:4px}
+.contact-modal .field input,.contact-modal .field textarea{width:100%;padding:10px 14px;border:1px solid #e2e8f0;border-radius:8px;font-size:14px;font-family:inherit;outline:none;transition:border .2s}
+.contact-modal .field input:focus,.contact-modal .field textarea:focus{border-color:#FF6600}
+.contact-modal .field textarea{height:80px;resize:none}
+.contact-modal .submit-btn{width:100%;padding:12px;background:linear-gradient(135deg,#FF6600,#FF8800);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
+.contact-modal .submit-btn:hover{transform:translateY(-1px)}
+.contact-modal .success-msg{display:none;text-align:center;padding:20px 0}
+.contact-modal .success-msg .check{font-size:48px;color:#10b981;margin-bottom:12px}
+.contact-modal .success-msg p{font-size:15px;color:#555}
+</style>
+<div class="floating-bar">
+  <a href="https://line.me/ti/p/~subaotw5988" target="_blank" class="icon-btn line-btn" title="LINE即时咨询" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'floating_line'})">
+    LINE
+  </a>
+  <button class="icon-btn msg-btn" onclick="openContactModal()" aria-label="留言咨询" title="留言给我们">
+    <i class="fas fa-envelope"></i>
+  </button>
+</div>
+<div class="contact-modal" id="contactModal">
+  <div class="modal-box">
+    <button class="close-btn" onclick="closeContactModal()"><i class="fas fa-times"></i></button>
+    <div id="contactFormWrap">
+      <h3>📬 給我們留言</h3>
+      <p class="sub">填寫後我們會盡快回覆（LINE打不開也不用擔心）</p>
+      <form id="contactMsgForm" onsubmit="submitContactForm(event)">
+        <div class="field"><label>怎麼稱呼</label><input type="text" id="cfName" placeholder="例如：張先生" required></div>
+        <div class="field"><label>聯繫方式</label><input type="text" id="cfContact" placeholder="LINE ID / 微信 / 手機" required></div>
+        <div class="field"><label>想寄什麼</label><input type="text" id="cfItem" placeholder="例如：保健品、茶葉、化妝品"></div>
+        <div class="field"><label>備註</label><textarea id="cfMsg" placeholder="大概重量、目的地等資訊（選填）"></textarea></div>
+        <button type="submit" class="submit-btn">送出留言</button>
+      </form>
+    </div>
+    <div class="success-msg" id="successMsg">
+      <div class="check">✅</div>
+      <p>留言已送出！<br>我們會盡快聯繫您。</p>
+      <button class="submit-btn" style="margin-top:16px" onclick="closeContactModal()">關閉</button>
+    </div>
+  </div>
+</div>
+
+<script>
+function openContactModal(){document.getElementById('contactModal').classList.add('active')}
+function closeContactModal(){document.getElementById('contactModal').classList.remove('active');setTimeout(function(){document.getElementById('contactFormWrap').style.display='block';document.getElementById('successMsg').style.display='none';document.getElementById('contactMsgForm').reset()},300)}
+function submitContactForm(e){e.preventDefault();var n=document.getElementById('cfName').value,c=document.getElementById('cfContact').value,i=document.getElementById('cfItem').value||'未填',m=document.getElementById('cfMsg').value||'未填';gtag('event','contact_form_submit',{event_category:'conversion',event_label:'floating_contact'});document.getElementById('contactFormWrap').style.display='none';document.getElementById('successMsg').style.display='block';fetch('https://formsubmit.co/ajax/business@videotvai.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,contact:c,item:i,message:m,_subject:'[速豹官網留言] '+n,})}).catch(function(){})}
+</script>
 </body>
 </html>
