@@ -168,3 +168,7 @@
 /blog/used-electronics-repair-shipping.html /blog/used-electronics-repair-shipping 301
 /blog/homemade-food-shipping.html /blog/homemade-food-shipping 301
 /blog/product-return-shipping.html /blog/product-return-shipping 301
+
+# =================== 2026-06-16 補漏 .html → clean URL ===================
+/express-comparison.html /express-comparison 301
+/blog/jewelry-crystal-shipping.html /blog/jewelry-crystal-shipping 301
