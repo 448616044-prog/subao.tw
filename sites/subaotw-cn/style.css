@@ -523,3 +523,38 @@ table tr:last-child td{border-bottom:none}
 .about-feature strong{display:block;font-size:16px;color:var(--text);margin-bottom:4px}
 .about-feature p{font-size:14px;color:var(--text-light);margin:0;line-height:1.6}
 @media(max-width:768px){.about-grid,.about-features{grid-template-columns:1fr}.about-content h2{font-size:22px}.about-card{padding:24px}}
+
+/* 右侧悬浮联系栏 */
+.float-contact{position:fixed;right:12px;bottom:120px;z-index:9999;display:flex;flex-direction:column;gap:10px}
+.float-contact a{display:flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;color:#fff;text-decoration:none;font-size:22px;box-shadow:0 4px 12px rgba(0,0,0,.2);transition:all .25s;position:relative}
+.float-contact a:hover{transform:scale(1.1);box-shadow:0 6px 20px rgba(0,0,0,.3)}
+.float-contact .fc-tel{background:linear-gradient(135deg,#2563eb,#1d4ed8)}
+.float-contact .fc-wechat{background:linear-gradient(135deg,#07c160,#06ad56)}
+.float-contact .fc-wechat .fc-tooltip{position:absolute;right:62px;bottom:0;background:#fff;color:#333;border-radius:10px;padding:10px;font-size:13px;white-space:nowrap;box-shadow:0 4px 16px rgba(0,0,0,.15);opacity:0;pointer-events:none;transition:opacity .2s;text-align:center;line-height:1.5}
+.float-contact .fc-wechat:hover .fc-tooltip{opacity:1}
+.float-contact .fc-wechat .fc-tooltip strong{display:block;font-size:15px;color:#1a56db;margin-bottom:4px}
+.float-contact .fc-wechat .fc-tooltip .fc-copy{cursor:pointer;color:#07c160;font-weight:700;font-size:12px;margin-top:4px;display:inline-block;padding:2px 8px;border:1px solid #07c160;border-radius:4px}
+.fc-text{position:absolute;right:62px;background:rgba(0,0,0,.85);color:#fff;padding:6px 14px;border-radius:6px;font-size:13px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}
+.float-contact a:hover .fc-text{opacity:1}
+
+/* 内嵌咨询CTA条 */
+.inline-cta{margin:32px 0;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:1px solid #bfdbfe;border-radius:12px;padding:24px;text-align:center}
+.inline-cta h3{font-size:18px;color:#1a56db;margin:0 0 8px}
+.inline-cta p{font-size:14px;color:#475569;margin:0 0 16px}
+.inline-cta .cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.inline-cta .cta-btn{display:inline-flex;align-items:center;gap:6px;padding:10px 24px;border-radius:8px;font-size:15px;font-weight:600;text-decoration:none;transition:all .2s}
+.inline-cta .cta-btn-primary{background:#1a56db;color:#fff}
+.inline-cta .cta-btn-primary:hover{background:#1e40af;transform:translateY(-1px)}
+.inline-cta .cta-btn-secondary{background:#fff;color:#1a56db;border:2px solid #1a56db}
+.inline-cta .cta-btn-secondary:hover{background:#eff6ff;transform:translateY(-1px)}
+
+/* 底部大CTA条 */
+.bottom-cta{background:linear-gradient(135deg,#1a56db,#1e40af);color:#fff;padding:48px 0;text-align:center;margin-top:0}
+.bottom-cta h2{font-size:24px;font-weight:700;margin:0 0 12px}
+.bottom-cta p{font-size:16px;opacity:.9;margin:0 0 20px;line-height:1.6}
+.bottom-cta .cta-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.bottom-cta .cta-btn-white{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:10px;font-size:16px;font-weight:600;text-decoration:none;transition:all .2s;background:#fff;color:#1a56db}
+.bottom-cta .cta-btn-white:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(255,255,255,.3)}
+.bottom-cta .cta-btn-outline{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:10px;border:2px solid rgba(255,255,255,.6);color:#fff;font-size:16px;font-weight:600;text-decoration:none;transition:all .2s}
+.bottom-cta .cta-btn-outline:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}
+@media(max-width:768px){.float-contact{right:8px;bottom:80px;gap:8px}.float-contact a{width:44px;height:44px;font-size:18px}.bottom-cta{padding:32px 16px}.bottom-cta h2{font-size:20px}}

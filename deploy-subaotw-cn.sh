@@ -22,24 +22,8 @@ scp -i "$SSH_KEY" -o StrictHostKeyChecking=no /tmp/subaotw-cn.tar.gz "$SERVER:/t
 # 4. 解压
 ssh -i "$SSH_KEY" -o StrictHostKeyChecking=no "$SERVER" "sudo tar -xzf /tmp/subaotw-cn.tar.gz -C $SITE_DIR && sudo rm /tmp/subaotw-cn.tar.gz"
 
-# 5. 设置 nginx（如果还没设置）
-ssh -i "$SSH_KEY" -o StrictHostKeyChecking=no "$SERVER" "sudo tee /etc/nginx/sites-available/subaotw-cn << 'NGINX'
-server {
-    listen 80;
-    server_name subaotw.cn www.subaotw.cn;
-    root $SITE_DIR;
-    index index.html;
-    location / {
-        try_files \$uri \$uri/ \$uri.html =404;
-    }
-    location ~* \.(jpg|jpeg|png|gif|ico|css|js|svg|woff|woff2|ttf|eot)$ {
-        expires 30d;
-        add_header Cache-Control 'public, immutable';
-    }
-}
-NGINX
-sudo ln -sf /etc/nginx/sites-available/subaotw-cn /etc/nginx/sites-enabled/
-sudo nginx -t && sudo systemctl reload nginx"
+# 5. 重新加载 nginx（不再覆盖配置，SSL由certbot管理）
+ssh -i "$SSH_KEY" -o StrictHostKeyChecking=no "$SERVER" "sudo nginx -t && sudo systemctl reload nginx"
 
 echo ""
 echo "✅ 部署完成！"

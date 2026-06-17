@@ -1,82 +1,82 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.subaotw.cn/</loc><priority>1.0</priority></url>
-  <url><loc>https://www.subaotw.cn/equipment/</loc><priority>0.9</priority></url>
-  <url><loc>https://www.subaotw.cn/tw-to-cn/</loc><priority>0.9</priority></url>
-  <url><loc>https://www.subaotw.cn/tw-to-cn/complete-guide</loc><priority>0.9</priority></url>
-  <url><loc>https://www.subaotw.cn/guide/</loc><priority>0.8</priority></url>
-  <url><loc>https://www.subaotw.cn/faq</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/pricing-calculator</loc><priority>0.9</priority></url>
-  <url><loc>https://www.subaotw.cn/volume-calculator</loc><priority>0.8</priority></url>
-  <url><loc>https://www.subaotw.cn/about</loc><priority>0.6</priority></url>
-  <url><loc>https://www.subaotw.cn/contact</loc><priority>0.6</priority></url>
-  <url><loc>https://www.subaotw.cn/article-list</loc><priority>0.6</priority></url>
-  <url><loc>https://www.subaotw.cn/tw-to-cn</loc><priority>0.8</priority></url>
-  <url><loc>https://www.subaotw.cn/tw-to-cn/food-shipping</loc><priority>0.8</priority></url>
-  <url><loc>https://www.subaotw.cn/guide/equipment-export-process</loc><priority>0.8</priority></url>
-  <!-- 大件设备品类页（15页） -->
-  <url><loc>https://www.subaotw.cn/equipment/cnc-export-taiwan</loc><priority>0.8</priority></url>
-  <url><loc>https://www.subaotw.cn/equipment/injection-molding</loc><priority>0.8</priority></url>
-  <url><loc>https://www.subaotw.cn/equipment/press-machine</loc><priority>0.8</priority></url>
-  <url><loc>https://www.subaotw.cn/equipment/packaging-equipment</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/equipment/agricultural-machinery</loc><priority>0.8</priority></url>
-  <url><loc>https://www.subaotw.cn/equipment/textile-machinery</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/equipment/printing-equipment</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/equipment/construction-machinery</loc><priority>0.8</priority></url>
-  <url><loc>https://www.subaotw.cn/equipment/food-processing</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/equipment/plastic-machinery</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/equipment/woodworking</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/equipment/mining-equipment</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/equipment/mold-tooling</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/equipment/car-engine</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/equipment/mechanical-parts</loc><priority>0.7</priority></url>
-  <!-- 台湾寄大陆敏感货（12页） -->
-  <url><loc>https://www.subaotw.cn/tw-to-cn/tea-shipping</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/tw-to-cn/health-products</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/tw-to-cn/cosmetics-shipping</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/tw-to-cn/medicine-shipping</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/tw-to-cn/mooncake-shipping</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/tw-to-cn/prohibited-items</loc><priority>0.8</priority></url>
-  <url><loc>https://www.subaotw.cn/tw-to-cn/clothing-shipping</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/tw-to-cn/books-shipping</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/tw-to-cn/baby-products</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/tw-to-cn/souvenir-shipping</loc><priority>0.8</priority></url>
-  <url><loc>https://www.subaotw.cn/tw-to-cn/shipping-process</loc><priority>0.8</priority></url>
-  <url><loc>https://www.subaotw.cn/tw-to-cn/ezway-tutorial</loc><priority>0.7</priority></url>
-  <!-- 出口指南（13页） -->
-  <url><loc>https://www.subaotw.cn/guide/equipment-repair-return</loc><priority>0.8</priority></url>
-  <url><loc>https://www.subaotw.cn/guide/</loc><priority>0.8</priority></url>
-  <url><loc>https://www.subaotw.cn/guide/equipment-export-process</loc><priority>0.8</priority></url>
-  <url><loc>https://www.subaotw.cn/guide/customs-documents</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/guide/taiwan-import-tax</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/guide/packaging-standard</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/guide/shipping-compare</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/guide/ecfa-tariff</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/guide/insurance-guide</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/guide/old-equipment-export</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/guide/prohibited-items</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/guide/cost-calculator</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/guide/export-faq</loc><priority>0.7</priority></url>
-  <!-- 客户案例（6页） -->
-  <url><loc>https://www.subaotw.cn/cases/</loc><priority>0.7</priority></url>
-  <url><loc>https://www.subaotw.cn/cases/case-cnc-dongguan</loc><priority>0.6</priority></url>
-  <url><loc>https://www.subaotw.cn/cases/case-injection-shenzhen</loc><priority>0.6</priority></url>
-  <url><loc>https://www.subaotw.cn/cases/case-press-foshan</loc><priority>0.6</priority></url>
-  <url><loc>https://www.subaotw.cn/cases/case-textile-xiamen</loc><priority>0.6</priority></url>
-  <url><loc>https://www.subaotw.cn/cases/case-mold-kunshan</loc><priority>0.6</priority></url>
+<?xml version='1.0' encoding='UTF-8'?>
+<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <ns0:url><ns0:loc>https://www.subaotw.cn/</ns0:loc><ns0:priority>1.0</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/equipment/</ns0:loc><ns0:priority>0.9</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/tw-to-cn/</ns0:loc><ns0:priority>0.9</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/tw-to-cn/complete-guide</ns0:loc><ns0:priority>0.9</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/guide/</ns0:loc><ns0:priority>0.8</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/faq</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/pricing-calculator</ns0:loc><ns0:priority>0.9</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/volume-calculator</ns0:loc><ns0:priority>0.8</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/about</ns0:loc><ns0:priority>0.6</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/contact</ns0:loc><ns0:priority>0.6</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/article-list</ns0:loc><ns0:priority>0.6</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/tw-to-cn</ns0:loc><ns0:priority>0.8</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/tw-to-cn/food-shipping</ns0:loc><ns0:priority>0.8</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/guide/equipment-export-process</ns0:loc><ns0:priority>0.8</ns0:priority></ns0:url>
+  
+  <ns0:url><ns0:loc>https://www.subaotw.cn/equipment/cnc-export-taiwan</ns0:loc><ns0:priority>0.8</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/equipment/injection-molding</ns0:loc><ns0:priority>0.8</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/equipment/press-machine</ns0:loc><ns0:priority>0.8</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/equipment/packaging-equipment</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/equipment/agricultural-machinery</ns0:loc><ns0:priority>0.8</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/equipment/textile-machinery</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/equipment/printing-equipment</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/equipment/construction-machinery</ns0:loc><ns0:priority>0.8</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/equipment/food-processing</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/equipment/plastic-machinery</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/equipment/woodworking</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/equipment/mining-equipment</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/equipment/mold-tooling</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/equipment/car-engine</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/equipment/mechanical-parts</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  
+  <ns0:url><ns0:loc>https://www.subaotw.cn/tw-to-cn/tea-shipping</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/tw-to-cn/health-products</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/tw-to-cn/cosmetics-shipping</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/tw-to-cn/medicine-shipping</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/tw-to-cn/mooncake-shipping</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/tw-to-cn/prohibited-items</ns0:loc><ns0:priority>0.8</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/tw-to-cn/clothing-shipping</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/tw-to-cn/books-shipping</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/tw-to-cn/baby-products</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/tw-to-cn/souvenir-shipping</ns0:loc><ns0:priority>0.8</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/tw-to-cn/shipping-process</ns0:loc><ns0:priority>0.8</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/tw-to-cn/ezway-tutorial</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  
+  <ns0:url><ns0:loc>https://www.subaotw.cn/guide/equipment-repair-return</ns0:loc><ns0:priority>0.8</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/guide/</ns0:loc><ns0:priority>0.8</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/guide/equipment-export-process</ns0:loc><ns0:priority>0.8</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/guide/customs-documents</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/guide/taiwan-import-tax</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/guide/packaging-standard</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/guide/shipping-compare</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/guide/ecfa-tariff</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/guide/insurance-guide</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/guide/old-equipment-export</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/guide/prohibited-items</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/guide/cost-calculator</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/guide/export-faq</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  
+  <ns0:url><ns0:loc>https://www.subaotw.cn/cases/</ns0:loc><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/cases/case-cnc-dongguan</ns0:loc><ns0:priority>0.6</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/cases/case-injection-shenzhen</ns0:loc><ns0:priority>0.6</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/cases/case-press-foshan</ns0:loc><ns0:priority>0.6</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/cases/case-textile-xiamen</ns0:loc><ns0:priority>0.6</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://www.subaotw.cn/cases/case-mold-kunshan</ns0:loc><ns0:priority>0.6</ns0:priority></ns0:url>
 
 
-  <url>
-    <loc>https://www.subaotw.cn/tw-to-cn/hair-care-shipping.html</loc>
-    <lastmod>2026-06-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.subaotw.cn/tw-to-cn/electronics-shipping.html</loc>
-    <lastmod>2026-06-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <ns0:url>
+    <ns0:loc>https://www.subaotw.cn/tw-to-cn/hair-care-shipping.html</ns0:loc>
+    <ns0:lastmod>2026-06-13</ns0:lastmod>
+    <ns0:changefreq>monthly</ns0:changefreq>
+    <ns0:priority>0.7</ns0:priority>
+  </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://www.subaotw.cn/tw-to-cn/electronics-shipping.html</ns0:loc>
+    <ns0:lastmod>2026-06-13</ns0:lastmod>
+    <ns0:changefreq>monthly</ns0:changefreq>
+    <ns0:priority>0.8</ns0:priority>
+  </ns0:url>
 
-</urlset>
+<url><loc>https://www.subaotw.cn/moving-taiwan</loc><priority>0.9</priority></url><url><loc>https://www.subaotw.cn/moving-from-taiwan</loc><priority>0.9</priority></url><url><loc>https://www.subaotw.cn/furniture-shipping</loc><priority>0.9</priority></url><url><loc>https://www.subaotw.cn/luggage-shipping</loc><priority>0.8</priority></url><url><loc>https://www.subaotw.cn/appliance-shipping</loc><priority>0.8</priority></url><url><loc>https://www.subaotw.cn/moving-cost</loc><priority>0.8</priority></url><url><loc>https://www.subaotw.cn/bulk-cargo-taiwan</loc><priority>0.9</priority></url><url><loc>https://www.subaotw.cn/building-materials-taiwan</loc><priority>0.9</priority></url><url><loc>https://www.subaotw.cn/commercial-cargo</loc><priority>0.8</priority></url></ns0:urlset>

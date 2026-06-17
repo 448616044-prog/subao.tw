@@ -426,4 +426,23 @@
     <ns0:priority>0.9</ns0:priority>
   </ns0:url>
 
-<url><loc>https://subao.tw/blog/car-parts-shipping</loc><priority>0.8</priority></url></ns0:urlset>
+<url><loc>https://subao.tw/blog/car-parts-shipping</loc><priority>0.8</priority></url>
+  <ns0:url>
+    <ns0:loc>https://subao.tw/blog/books-culture-shipping</ns0:loc>
+    <ns0:lastmod>2026-06-17</ns0:lastmod>
+    <ns0:changefreq>monthly</ns0:changefreq>
+    <ns0:priority>0.8</ns0:priority>
+  </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://subao.tw/blog/baby-products-shipping</ns0:loc>
+    <ns0:lastmod>2026-06-17</ns0:lastmod>
+    <ns0:changefreq>monthly</ns0:changefreq>
+    <ns0:priority>0.8</ns0:priority>
+  </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://subao.tw/blog/clothing-shoes-shipping</ns0:loc>
+    <ns0:lastmod>2026-06-17</ns0:lastmod>
+    <ns0:changefreq>monthly</ns0:changefreq>
+    <ns0:priority>0.8</ns0:priority>
+  </ns0:url>
+</ns0:urlset>
