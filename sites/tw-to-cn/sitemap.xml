@@ -426,7 +426,24 @@
     <ns0:priority>0.9</ns0:priority>
   </ns0:url>
 
-<url><loc>https://subao.tw/blog/car-parts-shipping</loc><priority>0.8</priority></url>
+  <ns0:url>
+    <ns0:loc>https://subao.tw/blog/car-parts-shipping</ns0:loc>
+    <ns0:lastmod>2026-06-17</ns0:lastmod>
+    <ns0:changefreq>monthly</ns0:changefreq>
+    <ns0:priority>0.8</ns0:priority>
+  </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://subao.tw/widget</ns0:loc>
+    <ns0:lastmod>2026-06-17</ns0:lastmod>
+    <ns0:changefreq>monthly</ns0:changefreq>
+    <ns0:priority>0.6</ns0:priority>
+  </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://subao.tw/widget/shipping-calculator</ns0:loc>
+    <ns0:lastmod>2026-06-17</ns0:lastmod>
+    <ns0:changefreq>monthly</ns0:changefreq>
+    <ns0:priority>0.6</ns0:priority>
+  </ns0:url>
   <ns0:url>
     <ns0:loc>https://subao.tw/blog/books-culture-shipping</ns0:loc>
     <ns0:lastmod>2026-06-17</ns0:lastmod>
@@ -459,6 +476,12 @@
   </ns0:url>
   <ns0:url>
     <ns0:loc>https://subao.tw/blog/post-office-vs-express-speed</ns0:loc>
+    <ns0:lastmod>2026-06-17</ns0:lastmod>
+    <ns0:changefreq>monthly</ns0:changefreq>
+    <ns0:priority>0.8</ns0:priority>
+  </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://subao.tw/blog/medical-supplies-shipping</ns0:loc>
     <ns0:lastmod>2026-06-17</ns0:lastmod>
     <ns0:changefreq>monthly</ns0:changefreq>
     <ns0:priority>0.8</ns0:priority>
