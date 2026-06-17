@@ -156,6 +156,20 @@
 
     .btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
     .btn-outline:hover { background: var(--primary); color: var(--text-white); }
+    .vs-strip { background: #fff; border-bottom: 1px solid #eee; }
+    .vs-strip .container { max-width: 1000px; padding: 28px 20px; }
+    .vs-strip-header { text-align: center; margin-bottom: 20px; }
+    .vs-strip-header h2 { font-size: 18px; font-weight: 700; color: #1a1a2e; margin: 0; }
+    .vs-strip-header h2 span { color: #e65100; }
+    .vs-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .vs-card { background: #fffcf7; border: 1px solid #e0d8cc; border-radius: 12px; padding: 16px; text-align: center; }
+    .vs-card .vs-label { font-size: 12px; color: #c62828; font-weight: 700; margin-bottom: 6px; text-transform: uppercase; letter-spacing: .5px; }
+    .vs-card .vs-problem { font-size: 13px; color: #666; margin-bottom: 8px; }
+    .vs-card .vs-solution { font-size: 14px; color: #2e7d32; font-weight: 700; }
+    .vs-link { text-align: center; margin-top: 16px; }
+    .vs-link a { font-size: 14px; color: var(--primary); font-weight: 700; text-decoration: none; border-bottom: 2px solid var(--primary); padding-bottom: 2px; }
+    .vs-link a:hover { opacity: .8; }
+    @media(max-width:768px){ .vs-cards{grid-template-columns:1fr} }
     .section { padding: 80px 0; }
     .section-title { text-align: center; font-size: 32px; font-weight: 700; margin-bottom: 16px; color: var(--text-dark); }
     .section-subtitle { text-align: center; font-size: 18px; color: var(--text-light); margin-bottom: 48px; }
@@ -407,6 +421,34 @@
       </div>
     </div>
   </section>
+
+  <div class="vs-strip">
+    <div class="container">
+      <div class="vs-strip-header">
+        <h2>為什麼不選<span>中華郵政</span>，要選<span>速豹集運</span>？</h2>
+      </div>
+      <div class="vs-cards">
+        <div class="vs-card">
+          <div class="vs-label">郵局不收的</div>
+          <div class="vs-problem">食品、保健品、化妝品、電子產品，郵局櫃檯直接拒絕</div>
+          <div class="vs-solution">→ 速豹敏感貨專線全收</div>
+        </div>
+        <div class="vs-card">
+          <div class="vs-label">郵局太慢</div>
+          <div class="vs-problem">航空包裹等2週，陸空等到1個月，清關還可能卡關</div>
+          <div class="vs-solution">→ 速豹最快3天送達</div>
+        </div>
+        <div class="vs-card">
+          <div class="vs-label">郵局不包稅</div>
+          <div class="vs-problem">收件人可能被大陸海關課稅，被退件運費也不退</div>
+          <div class="vs-solution">→ 速豹雙清包稅零隱藏費</div>
+        </div>
+      </div>
+      <div class="vs-link">
+        <a href="/blog/post-office-vs-subao-comparison">查看完整對比：價格·時效·通關·客服 全面PK →</a>
+      </div>
+    </div>
+  </div>
 
   <!-- 快捷入口 P2-1 -->
   <section style="padding:40px 0 0;">
