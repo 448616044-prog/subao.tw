@@ -90,13 +90,13 @@
     .dd-menu a{display:block;padding:10px 16px;font-size:13px;color:var(--text-dark);transition:var(--transition)}
     .dd-menu a:hover{background:var(--primary-light);color:var(--primary)}
     .header-cta{display:flex;align-items:center;gap:12px;flex-shrink:0}
-    .btn-line:hover{background:#009900;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,185,0,.25)}
+    .btn-line:hover{background:#007000;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,138,0,.25)}
     .mobile-menu{display:none}
 
 .menu-toggle{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text-dark)}
     @media(max-width:992px){.nav,.header-cta{display:none}.menu-toggle{display:block}}
     .btn{display:inline-block;padding:10px 20px;border-radius:var(--radius);font-weight:700;font-size:14px;cursor:pointer;border:none;transition:var(--transition)}
-    .btn-line{background:var(--line-green);color:#fff}.btn-line:hover{background:#009900}
+    .btn-line{background:var(--line-green);color:#fff}.btn-line:hover{background:#007000}
     .article-hero{padding:120px 0 40px;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);color:var(--text-white)}
     .article-hero h1{font-size:32px;font-weight:700;margin-bottom:16px;line-height:1.4}
     .article-hero .meta{font-size:14px;opacity:0.8}
@@ -145,7 +145,7 @@
 .pillar-hero .subtitle{font-size:18px;opacity:.85;max-width:650px;margin:0 auto 32px;font-weight:400}
 .pillar-hero .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 .pillar-hero .btn-primary-hero{display:inline-flex;align-items:center;gap:8px;padding:16px 36px;background:var(--line-green);color:#fff;border-radius:var(--radius-pill);font-size:16px;font-weight:700;transition:var(--transition)}
-.pillar-hero .btn-primary-hero:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,185,0,.4)}
+.pillar-hero .btn-primary-hero:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,138,0,.4)}
 .pillar-hero .btn-outline-hero{display:inline-flex;align-items:center;gap:8px;padding:16px 36px;background:rgba(255,255,255,.1);color:#fff;border-radius:var(--radius-pill);font-size:16px;font-weight:600;border:1px solid rgba(255,255,255,.3);transition:var(--transition)}
 .pillar-hero .btn-outline-hero:hover{background:rgba(255,255,255,.2)}
 
@@ -293,7 +293,7 @@
         <p style="margin:0;font-size:16px;font-weight:700">🔄 雙向物流需求？</p>
         <p style="margin:4px 0 0;font-size:13px;opacity:0.9">不論哪個方向，LINE諮詢立即確認能否寄送+報價！</p>
       </div>
-      <a href="https://line.me/ti/p/~subaotw5988" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#fff;color:#00B900;padding:10px 20px;border-radius:24px;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
+      <a href="https://line.me/ti/p/~subaotw5988" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#fff;color:#008A00;padding:10px 20px;border-radius:24px;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
         <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> 立即諮詢
       </a>
     </div>
@@ -399,9 +399,9 @@
   </footer>
 
   <style>
-.floating-cta{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:9999;background:linear-gradient(135deg,#00B900,#009900);color:#fff;padding:14px 28px;border-radius:30px;font-weight:700;font-size:15px;box-shadow:0 4px 20px rgba(0,185,0,0.4);text-decoration:none;display:flex;align-items:center;gap:8px;animation:pulse 2s infinite}
+.floating-cta{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:9999;background:linear-gradient(135deg,#00B900,#009900);color:#fff;padding:14px 28px;border-radius:30px;font-weight:700;font-size:15px;box-shadow:0 4px 20px rgba(0,138,0,0.4);text-decoration:none;display:flex;align-items:center;gap:8px;animation:pulse 2s infinite}
 .floating-cta:hover{transform:translateX(-50%) translateY(-2px)}
-@keyframes pulse{0%,100%{box-shadow:0 4px 20px rgba(0,185,0,0.4)}50%{box-shadow:0 4px 30px rgba(0,185,0,0.7)}}
+@keyframes pulse{0%,100%{box-shadow:0 4px 20px rgba(0,138,0,0.4)}50%{box-shadow:0 4px 30px rgba(0,138,0,0.7)}}
 @media(min-width:769px){.floating-cta{left:auto;right:30px;transform:none}.floating-cta:hover{transform:translateY(-2px)}}
   </style>
   <a href="https://line.me/ti/p/~subaotw5988" class="floating-cta" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 免費估價</a>
