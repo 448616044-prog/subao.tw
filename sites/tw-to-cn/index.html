@@ -348,8 +348,8 @@
   <!-- 公告栏 P1-1 -->
   <div id="announcementBar" style="background:linear-gradient(135deg,#E65100,#E65100);color:#fff;text-align:center;padding:10px 16px;font-size:14px;position:relative;z-index:1001;display:flex;align-items:center;justify-content:center;gap:12px">
     <span>📢 敏感貨專線正常收件｜LINE即時報價，30分鐘內回覆</span>
-    <a href="https://line.me/ti/p/~subaotw5988" target="_blank" style="color:#fff;font-weight:700;text-decoration:underline" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'announcement_bar'})">立即諮詢 →</a>
-    <button onclick="document.getElementById('announcementBar').style.display='none'" style="position:absolute;right:12px;background:none;border:none;color:#fff;cursor:pointer;font-size:18px;padding:0 8px">&times;</button>
+    <a href="https://line.me/ti/p/~subaotw5988" target="_blank" style="color:#fff;font-weight:700;text-decoration:underline;display:inline-flex;align-items:center;min-height:48px" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'announcement_bar'})">立即諮詢 →</a>
+    <button onclick="document.getElementById('announcementBar').style.display='none'" style="position:absolute;right:12px;background:none;border:none;color:#fff;cursor:pointer;font-size:18px;min-width:48px;min-height:48px;display:inline-flex;align-items:center;justify-content:center">&times;</button>
   </div>
   <header class="header" id="header">
     <div class="container">
@@ -410,7 +410,7 @@
     </a>
   </div>
 
-  <section class="hero">
+  <section class="hero" role="main" aria-label="主要內容">
     <div class="container">
       <div class="hero-content">
         <h1>台灣寄大陸<br>最快3-5天送達</h1>
