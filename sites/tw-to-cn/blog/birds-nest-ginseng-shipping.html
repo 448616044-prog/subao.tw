@@ -10,14 +10,19 @@
   <meta name="description" content="台灣燕窩寄大陸2026｜冬蟲夏草/蔘茸/魚翅寄送攻略。LINE即時諮詢，免費估價，最快3-5天送達。">
   <meta property="og:title" content="台灣燕窩寄大陸2026｜冬蟲夏草/蔘茸/魚翅寄送攻略｜速豹集運">
   <meta property="og:description" content="台灣燕窩寄大陸2026｜冬蟲夏草/蔘茸/魚翅寄送攻略。LINE即時諮詢，免費估價，最快3-5天送達。">
-  <meta property="og:image" content="https://subao.tw/images/subao-logo-new.png">
+  <meta property="og:image" content="https://subao.tw/images/subao-logo-new.webp">
   <meta property="og:url" content="https://subao.tw/blog/birds-nest-ginseng-shipping">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="zh_TW">
   <link rel="canonical" href="https://subao.tw/blog/birds-nest-ginseng-shipping">  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preload" as="image" href="/images/subao-logo-new.webp" fetchpriority="high">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" as="style" fetchpriority="high">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"></noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
 
   <script type="application/ld+json">
   {
@@ -216,7 +221,12 @@
 <body>
   <header class="header" id="header">
     <div class="container">
-      <a href="/" class="logo"><img src="/images/subao-logo-new.png" alt="速豹集運" height="40"></a>
+      <a href="/" class="logo">
+        <picture>
+          <source srcset="/images/subao-logo-new.webp" type="image/webp">
+          <img src="/images/subao-logo-new.png" alt="速豹集運" width="200" height="50" fetchpriority="high" decoding="async">
+        </picture>
+      </a>
                   <nav class="nav" id="desktopNav">
         <a href="/tw-to-cn" data-nav="tw-to-cn">台灣發大陸</a>
         <div class="nav-dropdown"><a href="/pricing" data-nav="pricing">運費</a>
@@ -233,7 +243,7 @@
           <i class="fab fa-line"></i> LINE 咨詢
         </a>
       </div>
-      <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+      <button class="menu-toggle" id="menuToggle" aria-label="選單"><i class="fas fa-bars"></i></button>
     </div>
   </header>
 

@@ -9,7 +9,7 @@
   <meta name="description" content="台灣中藥寄大陸2026｜草藥粉/中藥粉規定+通關攻略。LINE即時諮詢，免費估價，最快3-5天送達。">
   <meta property="og:title" content="台灣中藥寄大陸2026｜草藥粉/中藥粉規定+通關攻略｜速豹集運">
   <meta property="og:description" content="台灣中藥寄大陸2026｜草藥粉/中藥粉規定+通關攻略。LINE即時諮詢，免費估價，最快3-5天送達。">
-  <meta property="og:image" content="https://subao.tw/images/subao-logo-new.png">
+  <meta property="og:image" content="https://subao.tw/images/subao-logo-new.webp">
   <meta property="og:url" content="https://subao.tw/blog/taiwan-medicine-to-china">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="zh_TW">
@@ -18,8 +18,13 @@
   <meta name="keywords" content="台灣中藥寄大陸,中藥材寄送,人參寄大陸,枸杞寄大陸,中藥數量限制,科學中藥寄大陸,中藥申報,兩岸中藥寄送,龜鹿二仙膠寄送,草藥粉寄大陸,中藥粉寄送">  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preload" as="image" href="/images/subao-logo-new.webp" fetchpriority="high">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" as="style" fetchpriority="high">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"></noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
   <style>
     :root{--primary:#2E7D32;--primary-dark:#1B5E20;--primary-light:#E8F5E9;--secondary:#FF6600;--secondary-dark:#CC5200;--line-green:#00B900;--bg-white:#FFF;--bg-gray:#F5F7FA;--bg-dark:#1A1A2E;--text-dark:#333;--text-light:#666;--text-white:#fff;--border:#E0E0E0;--shadow:0 2px 8px rgba(0,0,0,0.1);--shadow-lg:0 8px 24px rgba(0,0,0,0.15);--radius:8px;--radius-lg:16px;--transition:all 0.3s ease}
     *{margin:0;padding:0;box-sizing:border-box}
@@ -285,7 +290,12 @@
 <body>
   <header class="header" id="header">
     <div class="container">
-      <a href="/" class="logo"><img src="/images/subao-logo-new.png" alt="速豹集運" height="40"></a>
+      <a href="/" class="logo">
+        <picture>
+          <source srcset="/images/subao-logo-new.webp" type="image/webp">
+          <img src="/images/subao-logo-new.png" alt="速豹集運" width="200" height="50" fetchpriority="high" decoding="async">
+        </picture>
+      </a>
                   <nav class="nav" id="desktopNav">
         <a href="/tw-to-cn" data-nav="tw-to-cn">台灣發大陸</a>
         <div class="nav-dropdown"><a href="/pricing" data-nav="pricing">運費</a>
@@ -302,7 +312,7 @@
           <i class="fab fa-line"></i> LINE 咨詢
         </a>
       </div>
-      <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+      <button class="menu-toggle" id="menuToggle" aria-label="選單"><i class="fas fa-bars"></i></button>
     </div>
   </header>
 
