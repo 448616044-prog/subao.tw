@@ -22,8 +22,6 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" as="style" crossorigin fetchpriority="high">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"></noscript>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -69,6 +67,7 @@
   }
   </script>
   <style>
+    .icon{width:1em;height:1em;display:inline-block;vertical-align:-0.125em;fill:currentColor}
     :root{--primary:#0066CC;--primary-dark:#004C99;--primary-light:#E6F0FA;--secondary:#E65100;--secondary-dark:#CC5200;--line-green:#00B900;--bg-white:#FFF;--bg-gray:#F5F7FA;--bg-dark:#1A1A2E;--text-dark:#333;--text-light:#666;--text-white:#fff;--border:#E0E0E0;--shadow:0 2px 8px rgba(0,0,0,0.1);--shadow-lg:0 8px 24px rgba(0,0,0,0.15);--radius:8px;--radius-lg:16px;--transition:all 0.3s ease}
     *{margin:0;padding:0;box-sizing:border-box}
     .container{max-width:1280px;margin:0 auto;padding:0 24px}
@@ -163,6 +162,8 @@
   </script>
 </head>
 <body>
+
+
   <header class="header" id="header">
     <div class="container">
       <a href="/" class="logo">
@@ -184,10 +185,10 @@
       </nav>
       <div class="header-cta">
         <a href="https://line.me/ti/p/~subaotw5988" class="btn btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
-          <i class="fab fa-line"></i> LINE 咨詢
+          <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 咨詢
         </a>
       </div>
-      <button class="menu-toggle" id="menuToggle" aria-label="選單"><i class="fas fa-bars"></i></button>
+      <button class="menu-toggle" id="menuToggle" aria-label="選單"><svg class="icon" aria-hidden="true" ><use href="#bars"/></svg></button>
     </div>
   </header>
 
@@ -215,21 +216,21 @@
       </div>
     </div>
     <a href="https://line.me/ti/p/~subaotw5988" class="mobile-nav-link cta" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
-      <i class="fab fa-line"></i> 加入LINE
+      <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> 加入LINE
     </a>
   </div>
 
   <section class="pillar-hero">
   <div class="container">
     <div class="badge-row">
-      <span class="badge"><i class="fas fa-star"></i> 2026年6月更新</span>
-      <span class="badge"><i class="fas fa-box"></i> 真實客戶委託</span>
+      <span class="badge"><svg class="icon" aria-hidden="true" ><use href="#star"/></svg> 2026年6月更新</span>
+      <span class="badge"><svg class="icon" aria-hidden="true" ><use href="#box"/></svg> 真實客戶委託</span>
     </div>
     <h1>兩岸雙向物流2026</h1>
     <p class="subtitle">兩岸雙向物流2026｜台灣寄大陸+大陸寄台灣 完整比較攻略。LINE即時諮詢，免費估價，最快3-5天送達。</p>
     <div class="cta-row">
-      <a href="https://line.me/ti/p/~subaotw5988" class="btn-primary-hero" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'hero_cta'})"><i class="fab fa-line"></i> LINE 免費估價</a>
-      <a href="/pricing-calculator" class="btn-outline-hero"><i class="fas fa-calculator"></i> 運費試算</a>
+      <a href="https://line.me/ti/p/~subaotw5988" class="btn-primary-hero" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'hero_cta'})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 免費估價</a>
+      <a href="/pricing-calculator" class="btn-outline-hero"><svg class="icon" aria-hidden="true" ><use href="#calculator"/></svg> 運費試算</a>
     </div>
   </div>
 </section>
@@ -293,7 +294,7 @@
         <p style="margin:4px 0 0;font-size:13px;opacity:0.9">不論哪個方向，LINE諮詢立即確認能否寄送+報價！</p>
       </div>
       <a href="https://line.me/ti/p/~subaotw5988" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#fff;color:#00B900;padding:10px 20px;border-radius:24px;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
-        <i class="fab fa-line"></i> 立即諮詢
+        <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> 立即諮詢
       </a>
     </div>
 
@@ -323,7 +324,7 @@
     <div class="cta-box">
       <h3>不論哪個方向，速豹幫你搞定！</h3>
       <p>台灣⇄大陸雙向物流，傳物品照片30分鐘內回覆確認</p>
-      <a href="https://line.me/ti/p/~subaotw5988" class="btn" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><i class="fab fa-line"></i> LINE 免費評估</a>
+      <a href="https://line.me/ti/p/~subaotw5988" class="btn" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 免費評估</a>
     </div>
   </div>
 
@@ -391,7 +392,7 @@
       </div>
       <div>
         <h3>聯繫</h3>
-        <a href="https://line.me/ti/p/~subaotw5988" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><i class="fab fa-line"></i> LINE</a>
+        <a href="https://line.me/ti/p/~subaotw5988" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE</a>
       </div>
     </div>
     <div class="footer-bottom">© 2026 速豹集運. All rights reserved.</div>
@@ -403,7 +404,15 @@
 @keyframes pulse{0%,100%{box-shadow:0 4px 20px rgba(0,185,0,0.4)}50%{box-shadow:0 4px 30px rgba(0,185,0,0.7)}}
 @media(min-width:769px){.floating-cta{left:auto;right:30px;transform:none}.floating-cta:hover{transform:translateY(-2px)}}
   </style>
-  <a href="https://line.me/ti/p/~subaotw5988" class="floating-cta" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><i class="fab fa-line"></i> LINE 免費估價</a>
+  <a href="https://line.me/ti/p/~subaotw5988" class="floating-cta" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 免費估價</a>
 <script>window.addEventListener("scroll",function(){var h=document.getElementById("header");if(h)h.classList.toggle("scrolled",window.scrollY>10)})</script>
+
+<svg style="display:none" aria-hidden="true">
+<symbol id="bars" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2z"/></symbol>
+<symbol id="box" viewBox="0 0 24 24"><path fill="currentColor" d="M21 16V8a2 2 0 00-1-1.7l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.7l7 4a2 2 0 002 0l7-4a2 2 0 001-1.7zM5.2 8L12 4.2 18.8 8 12 11.8 5.2 8zm1.8 7.5V10l5 2.8 5-2.8v5.5l-5 2.8-5-2.8z"/></symbol>
+<symbol id="calculator" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10a2 2 0 012 2v16a2 2 0 01-2 2H7a2 2 0 01-2-2V4a2 2 0 012-2zm0 2v4h10V4H7zm2 6v2h2v-2H9zm4 0v2h2v-2h-2zm-4 4v2h2v-2H9zm4 0v2h2v-2h-2zm-4 4v2h2v-2H9zm4 0v2h2v-2h-2z"/></symbol>
+<symbol id="line" viewBox="0 0 24 24"><path fill="currentColor" d="M19.4 9.8c0-3.7-3.6-6.8-8-6.8S3.4 6 3.4 9.8c0 3.4 3 6.2 7 6.7.3 0 .6.2.7.5l.2 1c0 .2 0 .4-.2.5l-.6.7c-.1.1-.1.3 0 .4.2.1.3.1.5 0 .6-.5 3.6-2.1 4.9-3.6.8-1 1.5-2.1 1.5-3.2zM8.6 11h-.4a.4.4 0 01-.4-.4V9.2c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4v1.4c0 .3-.2.4-.4.4zm1.5-1.9v1.5a.4.4 0 01-.4.4h-.4a.4.4 0 01-.4-.4V9.1c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4zm4.1 0c0-.2-.2-.4-.4-.4h-.6V9c0-.2-.2-.4-.4-.4h-.4a.4.4 0 00-.4.4v1.5c0 .2.2.4.4.4H12.4c.2 0 .4-.2.4-.4v-.4h.6v.4c0 .2.2.4.4.4h.4a.4.4 0 00.4-.4V9.1z"/></symbol>
+<symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.3-6.2 3.3 1.2-6.8-5-4.9 6.9-1L12 2z"/></symbol>
+</svg>
 </body>
 </html>

@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <!-- LINE brand icon -->
+  <symbol id="line" viewBox="0 0 24 24"><path fill="currentColor" d="M19.4 9.8c0-3.7-3.6-6.8-8-6.8S3.4 6 3.4 9.8c0 3.4 3 6.2 7 6.7.3 0 .6.2.7.5l.2 1c0 .2 0 .4-.2.5l-.6.7c-.1.1-.1.3 0 .4.2.1.3.1.5 0 .6-.5 3.6-2.1 4.9-3.6.8-1 1.5-2.1 1.5-3.2zM8.6 11h-.4a.4.4 0 01-.4-.4V9.2c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4v1.4c0 .3-.2.4-.4.4zm1.5-1.9v1.5a.4.4 0 01-.4.4h-.4a.4.4 0 01-.4-.4V9.1c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4zm4.1 0c0-.2-.2-.4-.4-.4h-.6V9c0-.2-.2-.4-.4-.4h-.4a.4.4 0 00-.4.4v1.5c0 .2.2.4.4.4H12.4c.2 0 .4-.2.4-.4v-.4h.6v.4c0 .2.2.4.4.4h.4a.4.4 0 00.4-.4V9.1z"/></symbol>
+
+  <!-- times / close -->
+  <symbol id="times" viewBox="0 0 24 24"><path fill="currentColor" d="M18.3 5.7a1 1 0 00-1.4 0L12 10.6 7.1 5.7a1 1 0 00-1.4 1.4L10.6 12l-4.9 4.9a1 1 0 001.4 1.4L12 13.4l4.9 4.9a1 1 0 001.4-1.4L13.4 12l4.9-4.9a1 1 0 000-1.4z"/></symbol>
+
+  <!-- bars / hamburger menu -->
+  <symbol id="bars" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2z"/></symbol>
+
+  <!-- envelope -->
+  <symbol id="envelope" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4.2l-8 5.8-8-5.8V6l8 5.8L20 6v2.2z"/></symbol>
+
+  <!-- arrow-right -->
+  <symbol id="arrow-right" viewBox="0 0 24 24"><path fill="currentColor" d="M14.8 5.3a1 1 0 00-1.4 1.4L17.6 11H4a1 1 0 000 2h13.6l-4.2 4.3a1 1 0 001.4 1.4l6-6a1 1 0 000-1.4l-6-6z"/></symbol>
+
+  <!-- arrow-left -->
+  <symbol id="arrow-left" viewBox="0 0 24 24"><path fill="currentColor" d="M9.2 5.3a1 1 0 011.4 1.4L6.4 11H20a1 1 0 010 2H6.4l4.2 4.3a1 1 0 01-1.4 1.4l-6-6a1 1 0 010-1.4l6-6z"/></symbol>
+
+  <!-- arrow-down -->
+  <symbol id="arrow-down" viewBox="0 0 24 24"><path fill="currentColor" d="M5.3 9.2a1 1 0 011.4-1.4L11 12.6V4a1 1 0 012 0v8.6l4.3-4.2a1 1 0 011.4 1.4l-6 6a1 1 0 01-1.4 0l-6-6z"/></symbol>
+
+  <!-- calculator -->
+  <symbol id="calculator" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10a2 2 0 012 2v16a2 2 0 01-2 2H7a2 2 0 01-2-2V4a2 2 0 012-2zm0 2v4h10V4H7zm2 6v2h2v-2H9zm4 0v2h2v-2h-2zm-4 4v2h2v-2H9zm4 0v2h2v-2h-2zm-4 4v2h2v-2H9zm4 0v2h2v-2h-2z"/></symbol>
+
+  <!-- star -->
+  <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.3-6.2 3.3 1.2-6.8-5-4.9 6.9-1L12 2z"/></symbol>
+
+  <!-- box -->
+  <symbol id="box" viewBox="0 0 24 24"><path fill="currentColor" d="M21 16V8a2 2 0 00-1-1.7l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.7l7 4a2 2 0 002 0l7-4a2 2 0 001-1.7zM5.2 8L12 4.2 18.8 8 12 11.8 5.2 8zm1.8 7.5V10l5 2.8 5-2.8v5.5l-5 2.8-5-2.8z"/></symbol>
+
+  <!-- chevron-down -->
+  <symbol id="chevron-down" viewBox="0 0 24 24"><path fill="currentColor" d="M5.3 8.3a1 1 0 011.4 0L12 13.6l5.3-5.3a1 1 0 111.4 1.4l-6 6a1 1 0 01-1.4 0l-6-6a1 1 0 010-1.4z"/></symbol>
+
+  <!-- shipping-fast / truck -->
+  <symbol id="shipping-fast" viewBox="0 0 24 24"><path fill="currentColor" d="M1 3h13a2 2 0 012 2v1h4a1 1 0 01.7.3l3 4A2 2 0 0124 11v5a2 2 0 01-2 2h-1a3 3 0 01-6 0h-4a3 3 0 01-6 0H4a2 2 0 01-2-2V5a2 2 0 012-2H1zm16 4v3h3.6l-2.2-3H17zM5.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm11 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></symbol>
+
+  <!-- truck -->
+  <symbol id="truck" viewBox="0 0 24 24"><path fill="currentColor" d="M1 3h13a2 2 0 012 2v1h4a1 1 0 01.7.3l3 4A2 2 0 0124 11v5a2 2 0 01-2 2h-1a3 3 0 01-6 0h-4a3 3 0 01-6 0H4a2 2 0 01-2-2V5a2 2 0 012-2H1zm16 4v3h3.6l-2.2-3H17zM5.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm11 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></symbol>
+
+  <!-- truck-fast -->
+  <symbol id="truck-fast" viewBox="0 0 24 24"><path fill="currentColor" d="M1 3h11a2 2 0 012 2v1h4a1 1 0 01.7.3l3 4A2 2 0 0122 11v5a2 2 0 01-2 2h-1a3 3 0 01-6 0h-4a3 3 0 01-6 0H4a2 2 0 01-2-2V5a2 2 0 012-2H1zM.5 8h4a.5.5 0 010 1h-4a.5.5 0 010-1zm0 2h3a.5.5 0 010 1h-3a.5.5 0 010-1zm0 2h2a.5.5 0 010 1h-2a.5.5 0 010-1zM15 7v3h3.6l-2.2-3H15zM5.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm11 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></symbol>
+
+  <!-- check-circle -->
+  <symbol id="check-circle" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 100 20 10 10 0 000-20zm4.7 7.7L11 15.4l-3.7-3.7a1 1 0 011.4-1.4l2.3 2.3 4.3-4.3a1 1 0 111.4 1.4z"/></symbol>
+
+  <!-- check -->
+  <symbol id="check" viewBox="0 0 24 24"><path fill="currentColor" d="M9.3 16.7L4.6 12a1 1 0 011.4-1.4l3.3 3.3 8.7-8.7a1 1 0 011.4 1.4l-9.4 9.4a1 1 0 01-.7.3 1 1 0 01-.7-.3z"/></symbol>
+
+  <!-- question-circle -->
+  <symbol id="question-circle" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 16a1 1 0 110-2 1 1 0 010 2zm1-4.6V14a1 1 0 01-2 0v-1.5a1 1 0 01.6-.9A2.5 2.5 0 0013 9a1 1 0 10-2 0 1 1 0 01-2 0 3 3 0 116 0 3.6 3.6 0 01-2 2.4z"/></symbol>
+
+  <!-- shield-alt -->
+  <symbol id="shield-alt" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l8 4v6c0 5.6-3.8 10.7-8 12-4.2-1.3-8-6.4-8-12V6l8-4zm0 2.2L6 6.3V12c0 4.3 2.8 8.4 6 9.6 3.2-1.2 6-5.3 6-9.6V6.3l-6-4.1zM11 7h2v6h-2V7zm0 8h2v2h-2v-2z"/></symbol>
+
+  <!-- plane -->
+  <symbol id="plane" viewBox="0 0 24 24"><path fill="currentColor" d="M21.9 2.1a7.4 7.4 0 00-10.4 0l-.7.7 2.8 2.8-2.5 1.1L9.3 5l-1.8 1.8 2.8 2.8-10.3 10.3 2.1 2.1 10.3-10.3 2.8 2.8 1.8-1.8-1.7-1.8 1.1-2.5 2.8 2.8.7-.7a7.4 7.4 0 000-10.4z"/></symbol>
+
+  <!-- tag -->
+  <symbol id="tag" viewBox="0 0 24 24"><path fill="currentColor" d="M20.5 2h-7.8a2 2 0 00-1.4.6l-9.6 9.6a2 2 0 000 2.8l7.7 7.7a2 2 0 002.8 0l9.6-9.6a2 2 0 00.6-1.4V3.5a2 2 0 00-2-2zM18 8a2 2 0 110-4 2 2 0 010 4z"/></symbol>
+
+  <!-- tags -->
+  <symbol id="tags" viewBox="0 0 24 24"><path fill="currentColor" d="M20.5 2h-7.8a2 2 0 00-1.4.6l-9.6 9.6a2 2 0 000 2.8l7.7 7.7a2 2 0 002.8 0l9.6-9.6a2 2 0 00.6-1.4V3.5a2 2 0 00-2-2zM18 8a2 2 0 110-4 2 2 0 010 4zM4 10l6-6h4l-6 6H4z"/></symbol>
+
+  <!-- paper-plane -->
+  <symbol id="paper-plane" viewBox="0 0 24 24"><path fill="currentColor" d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></symbol>
+
+  <!-- headset -->
+  <symbol id="headset" viewBox="0 0 24 24"><path fill="currentColor" d="M5 11a7 7 0 0114 0v2h-3a1 1 0 00-1 1v4a1 1 0 001 1h3a3 3 0 003-3v-5a10 10 0 00-20 0v5a3 3 0 003 3h3a1 1 0 001-1v-4a1 1 0 00-1-1H5v-2z"/></symbol>
+
+  <!-- coins -->
+  <symbol id="coins" viewBox="0 0 24 24"><path fill="currentColor" d="M0 12a6 6 0 1112 0 6 6 0 01-12 0zm6 4a4 4 0 100-8 4 4 0 000 8zm8-10a5 5 0 110 10h-4a7 7 0 004-14zm4 3a4 4 0 110 8 4 4 0 010-8zM2 12a3 3 0 113 3 3 3 0 01-3-3z"/></symbol>
+
+  <!-- clock -->
+  <symbol id="clock" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm1-13h-2v6l5.2 3.1.8-1.3-4-2.4V7z"/></symbol>
+
+  <!-- building -->
+  <symbol id="building" viewBox="0 0 24 24"><path fill="currentColor" d="M4 21h3v-3H4v3zm5 0h3v-3H9v3zm5 0h3v-3h-3v3zM4 16h3v-3H4v3zm5 0h3v-3H9v3zm5 0h3v-3h-3v3zM4 11h3V8H4v3zm5 0h3V8H9v3zm5-3v3h3V8h-3zM2 3h20v18h-3V5H5v16H2V3z"/></symbol>
+
+  <!-- box-open -->
+  <symbol id="box-open" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1l9 4.5v4.3L12 14 .2 9.8V5.5L12 1zM3 6.2l3 1.5L12 10l6-2.3 3-1.5L12 3 3 6.2zm19 4v11l-10 5-10-5v-11l2 1v9l8 4 8-4v-9l2-1z"/></symbol>
+
+  <!-- yen-sign -->
+  <symbol id="yen-sign" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l-6 8h4v2H4v2h6v2H4v2h6v4h4v-4h6v-2h-6v-2h6v-2h-6v-2h4l-6-8z"/></symbol>
+
+  <!-- wallet -->
+  <symbol id="wallet" viewBox="0 0 24 24"><path fill="currentColor" d="M2 6a2 2 0 012-2h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6zm2 0v12h16V6H4zm12 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3z"/></symbol>
+
+  <!-- users -->
+  <symbol id="users" viewBox="0 0 24 24"><path fill="currentColor" d="M9 11a4 4 0 100-8 4 4 0 000 8zm-7 8a4 4 0 014-4h6a4 4 0 014 4v1a1 1 0 11-2 0v-1a2 2 0 00-2-2H6a2 2 0 00-2 2v1a1 1 0 11-2 0v-1zm13-7a3 3 0 100-6 3 3 0 000 6zm5 7a3 3 0 00-3-3 1 1 0 110-2 5 5 0 015 5v1a1 1 0 11-2 0v-1z"/></symbol>
+
+  <!-- undo-alt -->
+  <symbol id="undo-alt" viewBox="0 0 24 24"><path fill="currentColor" d="M5.3 2.3a1 1 0 011.4 1.4L4.4 6H14a8 8 0 010 16H4a1 1 0 010-2h10a6 6 0 000-12H4.4l2.3 2.3a1 1 0 01-1.4 1.4l-4-4a1 1 0 010-1.4l4-4z"/></symbol>
+
+  <!-- ship -->
+  <symbol id="ship" viewBox="0 0 24 24"><path fill="currentColor" d="M4 10a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H6a2 2 0 01-2-2v-8zm2 0v8h12v-8H6zm3-7h6v2H9V3zM1 20h2l1 2h2l1-2h10l1 2h2l1-2h2a1 1 0 010 2h-1l-1 2h-2l-1-2H9l-1 2H6l-1-2H1a1 1 0 010-2z"/></symbol>
+
+  <!-- search -->
+  <symbol id="search" viewBox="0 0 24 24"><path fill="currentColor" d="M10 2a8 8 0 105.3 14.3l5.7 5.7-1.4 1.4-5.7-5.7A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/></symbol>
+
+  <!-- receipt -->
+  <symbol id="receipt" viewBox="0 0 24 24"><path fill="currentColor" d="M3 22V2l1.5 1L6 2l1.5 1L9 2l1.5 1L12 2l1.5 1L15 2l1.5 1L18 2l1.5 1L21 2v20l-1.5-1L18 22l-1.5-1L15 22l-1.5-1L12 22l-1.5-1L9 22l-1.5-1L6 22l-1.5-1L3 22zm2-2h14V4H5v16zm2-10h10v2H7v-2zm0 4h7v2H7v-2zm0-8h10v2H7V6z"/></symbol>
+
+  <!-- link -->
+  <symbol id="link" viewBox="0 0 24 24"><path fill="currentColor" d="M10 17.5l-4.3-4.3a5 5 0 017-7l1.6 1.6a1 1 0 01-1.4 1.4l-1.6-1.6a3 3 0 00-4.2 4.2l4.3 4.3a3 3 0 004.2 0l1.6-1.6a1 1 0 011.4 1.4l-1.6 1.6a5 5 0 01-7 0zm8-9.5l-4.3-4.3a5 5 0 00-7 7l1.6 1.6a1 1 0 001.4-1.4L8 9.3a3 3 0 014.2-4.2l4.3 4.3a3 3 0 010 4.2l-1.6 1.6a1 1 0 001.4 1.4l1.6-1.6a5 5 0 000-7z"/></symbol>
+
+  <!-- leaf -->
+  <symbol id="leaf" viewBox="0 0 24 24"><path fill="currentColor" d="M17 2C8 2 2 8 2 17c0 2.8 2.2 5 5 5 4.6 0 9.2-2.5 11.5-6.5C20.8 11 20 5 17 2zm-1.5 14.5C13.5 18 10 20 7 20c-1.7 0-3-1.3-3-3 0-5.5 3.3-10.6 8.5-12.5L12 3l.5 1.5c.5 1.6 1.3 4.5.5 7.5L15 9l-1 4 3.5-2c-1.5 2.5-3 4-2 5.5z"/></symbol>
+
+  <!-- landmark -->
+  <symbol id="landmark" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1L3 6v1h18V6l-9-5zM4 9v9h1v-9H4zm3 0v9h2v-9H7zm4 0v9h2v-9h-2zm4 0v9h2v-9h-2zm3 0v9h1v-9h-1zM2 20h20v2H2v-2z"/></symbol>
+
+  <!-- gem -->
+  <symbol id="gem" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1L6 7H1l5 11h12l5-11h-5l-6-6zM4.5 5L12 3l3.3 2H4.5zM3.5 7h17l-3 7H6.5l-3-7z"/></symbol>
+
+  <!-- flask -->
+  <symbol id="flask" viewBox="0 0 24 24"><path fill="currentColor" d="M16 2v5.5c0 1 .4 2 1 2.8l4 5.2A3 3 0 0118 20H6a3 3 0 01-3-4.5l4-5.2c.6-.8 1-1.8 1-2.8V2h8zm-2 2h-4v3.5c0 1.6-.6 3.2-1.8 4.3L5.5 15h13l-2.7-3.2c-1.2-1.1-1.8-2.7-1.8-4.3V4z"/></symbol>
+
+  <!-- first-aid -->
+  <symbol id="first-aid" viewBox="0 0 24 24"><path fill="currentColor" d="M8 2h8v4h4a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h4V2zm2 2v4h4V4h-4zM4 8v12h16V8H4zm7 2h2v3h3v2h-3v3h-2v-3H8v-2h3v-3z"/></symbol>
+
+  <!-- file-invoice-dollar -->
+  <symbol id="file-invoice-dollar" viewBox="0 0 24 24"><path fill="currentColor" d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zM6 20V4h7v5h5v11H6zm10-4l-1.5-2.6c.4-.4.5-1 .5-1.4a2.5 2.5 0 00-5 0c0 .5.2 1 .5 1.4L9 16h2v2h2v-2h3z"/></symbol>
+
+  <!-- file-invoice -->
+  <symbol id="file-invoice" viewBox="0 0 24 24"><path fill="currentColor" d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zM6 20V4h7v5h5v11H6zm2-8h8v2H8v-2zm0 4h5v2H8v-2z"/></symbol>
+
+  <!-- exclamation-triangle -->
+  <symbol id="exclamation-triangle" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2L1 21h22L12 2zm0 4l7.5 13h-15L12 6zm-1 4h2v5h-2v-5zm0 7h2v2h-2v-2z"/></symbol>
+
+  <!-- download -->
+  <symbol id="download" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a1 1 0 011 1v11.6l4.3-4.3a1 1 0 011.4 1.4l-6 6a1 1 0 01-1.4 0l-6-6a1 1 0 011.4-1.4L11 14.6V3a1 1 0 011-1zM3 19h18a1 1 0 010 2H3a1 1 0 010-2z"/></symbol>
+
+  <!-- chart-bar -->
+  <symbol id="chart-bar" viewBox="0 0 24 24"><path fill="currentColor" d="M3 20V10h4v10H3zm7 0V4h4v16h-4zm7 0v-8h4v8h-4z"/></symbol>
+
+  <!-- camera -->
+  <symbol id="camera" viewBox="0 0 24 24"><path fill="currentColor" d="M12 8a4 4 0 100 8 4 4 0 000-8zm0 6a2 2 0 110-4 2 2 0 010 4zM9 2L7.2 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2h-3.2L15 2H9zM4 6h16v12H4V6z"/></symbol>
+
+  <!-- calendar -->
+  <symbol id="calendar" viewBox="0 0 24 24"><path fill="currentColor" d="M7 1v2H3a2 2 0 00-2 2v15a2 2 0 002 2h18a2 2 0 002-2V5a2 2 0 00-2-2h-4V1h-2v2H7V1zm-4 6h18v13H3V7zm5 3v2h2v-2H8zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2z"/></symbol>
+
+  <!-- bell -->
+  <symbol id="bell" viewBox="0 0 24 24"><path fill="currentColor" d="M12 22a2 2 0 002-2h-4a2 2 0 002 2zm8-4v-5c0-3.5-2-6.5-5.5-7.3V4.5a2.5 2.5 0 00-5 0v1.2C6 6.5 4 9.5 4 13v5l-2 2v1h20v-1l-2-2z"/></symbol>
+
+  <!-- comment-dots -->
+  <symbol id="comment-dots" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 00-8.7 14.9L2.1 20.5a.5.5 0 00.6.7l4.5-1A10 10 0 1012 2zM8 11a1 1 0 110-2 1 1 0 010 2zm4 0a1 1 0 110-2 1 1 0 010 2zm4 0a1 1 0 110-2 1 1 0 010 2z"/></symbol>
+</svg>

@@ -22,8 +22,6 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" as="style" crossorigin fetchpriority="high">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"></noscript>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
 
   <script type="application/ld+json">
   {
@@ -171,6 +169,7 @@
   </script>
 
   <style>
+    .icon{width:1em;height:1em;display:inline-block;vertical-align:-0.125em;fill:currentColor}
     :root{--primary:#0066CC;--primary-dark:#004C99;--primary-light:#E6F0FA;--secondary:#E65100;--secondary-dark:#CC5200;--line-green:#00B900;--bg-white:#FFF;--bg-gray:#F5F7FA;--bg-dark:#1A1A2E;--text-dark:#333;--text-light:#666;--text-white:#fff;--border:#E0E0E0;--shadow:0 2px 8px rgba(0,0,0,0.1);--shadow-lg:0 8px 24px rgba(0,0,0,0.15);--radius:8px;--radius-lg:16px;--transition:all 0.3s ease}
     *{margin:0;padding:0;box-sizing:border-box}
     body{font-family:'Noto Sans TC',sans-serif;color:var(--text-dark);line-height:1.6;font-size:16px;background:var(--bg-gray)}
@@ -252,6 +251,8 @@
 
 </head>
 <body>
+
+
   <header class="header" id="header">
     <div class="container">
       <a href="/" class="logo">
@@ -273,10 +274,10 @@
       </nav>
       <div class="header-cta">
         <a href="https://line.me/ti/p/~subaotw5988" class="btn btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
-          <i class="fab fa-line"></i> LINE 咨詢
+          <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 咨詢
         </a>
       </div>
-      <button class="menu-toggle" id="menuToggle" aria-label="選單"><i class="fas fa-bars"></i></button>
+      <button class="menu-toggle" id="menuToggle" aria-label="選單"><svg class="icon" aria-hidden="true" ><use href="#bars"/></svg></button>
     </div>
   </header>
 
@@ -303,7 +304,7 @@
       </div>
     </div>
     <a href="https://line.me/ti/p/~subaotw5988" class="mobile-nav-link cta" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
-      <i class="fab fa-line"></i> 加入LINE
+      <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> 加入LINE
     </a>
   </div>
 
@@ -330,12 +331,12 @@
 
       <!-- 費用相關 -->
       <div class="faq-category" data-category="fee" id="fee">
-        <div class="faq-cat-title"><i class="fas fa-coins"></i> 費用相關</div>
+        <div class="faq-cat-title"><svg class="icon" aria-hidden="true" ><use href="#coins"/></svg> 費用相關</div>
         <div class="faq-list">
           <div class="faq-item">
             <div class="faq-question">
               <div class="faq-q">運費怎麼計算？</div>
-              <i class="fas fa-chevron-down faq-icon"></i>
+              <svg class="icon faq-icon" aria-hidden="true" ><use href="#chevron-down"/></svg>
             </div>
             <div class="faq-answer">
               <p>按實際重量與體積重量（長×寬×高÷6000）取較大值計算。LINE告訴我們商品與重量，<strong>30分鐘內提供含稅報價</strong>。</p>
@@ -347,7 +348,7 @@
           <div class="faq-item">
             <div class="faq-question">
               <div class="faq-q">有沒有最低消費？</div>
-              <i class="fas fa-chevron-down faq-icon"></i>
+              <svg class="icon faq-icon" aria-hidden="true" ><use href="#chevron-down"/></svg>
             </div>
             <div class="faq-answer">
               <p>最低消費為NT$200（經濟/標準專線）或NT$350（快速專線）。即使不到1公斤也有基本運費，包含了包裝材料、海關申報等基礎服務費用。</p>
@@ -356,7 +357,7 @@
           <div class="faq-item">
             <div class="faq-question">
               <div class="faq-q">包裹被退件，運費會退嗎？</div>
-              <i class="fas fa-chevron-down faq-icon"></i>
+              <svg class="icon faq-icon" aria-hidden="true" ><use href="#chevron-down"/></svg>
             </div>
             <div class="faq-answer">
               <p>一般來說，退件費用由寄件人承擔，且國際運費不會退還。建議寄件前先透過LINE確認商品合規性，避免損失。</p>
@@ -367,12 +368,12 @@
 
       <!-- 商品規定 -->
       <div class="faq-category" data-category="goods" id="goods">
-        <div class="faq-cat-title"><i class="fas fa-box-open"></i> 商品規定</div>
+        <div class="faq-cat-title"><svg class="icon" aria-hidden="true" ><use href="#box-open"/></svg> 商品規定</div>
         <div class="faq-list">
           <div class="faq-item">
             <div class="faq-question">
               <div class="faq-q">保健品可以寄到大陸嗎？</div>
-              <i class="fas fa-chevron-down faq-icon"></i>
+              <svg class="icon faq-icon" aria-hidden="true" ><use href="#chevron-down"/></svg>
             </div>
             <div class="faq-answer">
               <p>魚油、維他命、蜂膠、燕窩等<strong>動物源性保健品</strong>屬禁運，請勿寄送。工廠化生產的植物/礦物質保健品（不含動物成分）在合理數量內可寄。</p>
@@ -384,7 +385,7 @@
           <div class="faq-item">
             <div class="faq-question">
               <div class="faq-q">茶葉可以寄到大陸嗎？</div>
-              <i class="fas fa-chevron-down faq-icon"></i>
+              <svg class="icon faq-icon" aria-hidden="true" ><use href="#chevron-down"/></svg>
             </div>
             <div class="faq-answer">
               <p><strong>可以。</strong>茶葉屬敏感貨，通過敏感貨專線寄送。建議每件不超過50元人民幣價值，保留購買發票，包裝建議真空包裝防潮。</p>
@@ -393,7 +394,7 @@
           <div class="faq-item">
             <div class="faq-question">
               <div class="faq-q">化妝品可以寄到大陸嗎？</div>
-              <i class="fas fa-chevron-down faq-icon"></i>
+              <svg class="icon faq-icon" aria-hidden="true" ><use href="#chevron-down"/></svg>
             </div>
             <div class="faq-answer">
               <p>一般護膚品、面膜、精華液、乳液在<strong>合理自用範圍（24件以內）</strong>可以寄送。含胎盤素、汞超標美白產品屬管制範圍，不建議寄送。</p>
@@ -402,7 +403,7 @@
           <div class="faq-item">
             <div class="faq-question">
               <div class="faq-q">肉乾、臘腸可以寄嗎？</div>
-              <i class="fas fa-chevron-down faq-icon"></i>
+              <svg class="icon faq-icon" aria-hidden="true" ><use href="#chevron-down"/></svg>
             </div>
             <div class="faq-answer">
               <p><strong>不行。</strong>所有肉類製品無論是否真空包裝、商業加工都屬禁運。大陸海關對肉類製品查驗非常嚴格，一經查到立即扣押銷毀。</p>
@@ -414,7 +415,7 @@
           <div class="faq-item">
             <div class="faq-question">
               <div class="faq-q">書籍可以寄到大陸嗎？</div>
-              <i class="fas fa-chevron-down faq-icon"></i>
+              <svg class="icon faq-icon" aria-hidden="true" ><use href="#chevron-down"/></svg>
             </div>
             <div class="faq-answer">
               <p>可以。不含政治敏感、色情、邪教等違禁內容的普通書籍，在合理數量內可少量寄送。建議使用海運，費用較快遞便宜。</p>
@@ -425,13 +426,13 @@
 
       <!-- 寄送流程 -->
       <div class="faq-category" data-category="shipping">
-        <div class="faq-cat-title"><i class="fas fa-truck"></i> 寄送流程</div>
+        <div class="faq-cat-title"><svg class="icon" aria-hidden="true" ><use href="#truck"/></svg> 寄送流程</div>
         <p style="color:var(--text-light);font-size:13px;margin-bottom:12px">📖 詳細教學：<a href="/blog/shipping-process-guide" style="color:var(--primary);font-weight:700">5步驟寄件流程指南</a> | <a href="/blog/shipping-packaging-guide" style="color:var(--primary);font-weight:700">包裝完全指南</a></p>
         <div class="faq-list">
           <div class="faq-item">
             <div class="faq-question">
               <div class="faq-q">需要多久送達？</div>
-              <i class="fas fa-chevron-down faq-icon"></i>
+              <svg class="icon faq-icon" aria-hidden="true" ><use href="#chevron-down"/></svg>
             </div>
             <div class="faq-answer">
               <p>快速專線<strong>3-5天</strong>，標準專線<strong>5-7天</strong>，經濟專線<strong>7-12天</strong>。實際時效受海關通關速度影響，我們會主動追蹤並通知進度。</p>
@@ -440,7 +441,7 @@
           <div class="faq-item">
             <div class="faq-question">
               <div class="faq-q">可以上門取件嗎？</div>
-              <i class="fas fa-chevron-down faq-icon"></i>
+              <svg class="icon faq-icon" aria-hidden="true" ><use href="#chevron-down"/></svg>
             </div>
             <div class="faq-answer">
               <p>台灣本島部分地區提供上門取件服務（部分地區收費）。您也可以選擇自行寄送至我們的倉庫（台北或高雄可面交）。LINE告訴我們您的地址，馬上確認。</p>
@@ -449,7 +450,7 @@
           <div class="faq-item">
             <div class="faq-question">
               <div class="faq-q">如何追蹤包裹？</div>
-              <i class="fas fa-chevron-down faq-icon"></i>
+              <svg class="icon faq-icon" aria-hidden="true" ><use href="#chevron-down"/></svg>
             </div>
             <div class="faq-answer">
               <p>包裹發出後我們會提供追蹤號碼，可在大陸快遞官網即時查詢。我們也會<strong>主動透過LINE回報</strong>海關狀態和派送進度，無需自行追問。</p>
@@ -460,12 +461,12 @@
 
       <!-- 海關通關 -->
       <div class="faq-category" data-category="customs">
-        <div class="faq-cat-title"><i class="fas fa-landmark"></i> 海關通關</div>
+        <div class="faq-cat-title"><svg class="icon" aria-hidden="true" ><use href="#landmark"/></svg> 海關通關</div>
         <div class="faq-list">
           <div class="faq-item">
             <div class="faq-question">
               <div class="faq-q">包裹被大陸海關扣住怎麼辦？</div>
-              <i class="fas fa-chevron-down faq-icon"></i>
+              <svg class="icon faq-icon" aria-hidden="true" ><use href="#chevron-down"/></svg>
             </div>
             <div class="faq-answer">
               <p>速豹集運提供<strong>寄件前合規審查</strong>，大幅降低扣件機率。若不幸扣件，我們會主動通知並協助準備補件文件，多數情況補件後可放行。</p>
@@ -474,7 +475,7 @@
           <div class="faq-item">
             <div class="faq-question">
               <div class="faq-q">個人物品免稅額是多少？</div>
-              <i class="fas fa-chevron-down faq-icon"></i>
+              <svg class="icon faq-icon" aria-hidden="true" ><use href="#chevron-down"/></svg>
             </div>
             <div class="faq-answer">
               <p>大陸海關對個人物品有<strong>800元人民幣免稅額</strong>（電商包裹不適用）。超過免稅額需繳納進口稅，税率根據商品類別不同（通常10%-20%）。</p>
@@ -483,7 +484,7 @@
           <div class="faq-item">
             <div class="faq-question">
               <div class="faq-q">寄送前需要申報嗎？</div>
-              <i class="fas fa-chevron-down faq-icon"></i>
+              <svg class="icon faq-icon" aria-hidden="true" ><use href="#chevron-down"/></svg>
             </div>
             <div class="faq-answer">
               <p>是的，所有包裹都必須如實填寫申報單。海關會隨機查驗，瞞報或虛報一旦被查到，後果嚴重（扣押、罰款甚至法律責任）。如實申報可減少很多麻煩。</p>
@@ -494,12 +495,12 @@
 
       <!-- 售後服務 -->
       <div class="faq-category" data-category="service">
-        <div class="faq-cat-title"><i class="fas fa-headset"></i> 售後服務</div>
+        <div class="faq-cat-title"><svg class="icon" aria-hidden="true" ><use href="#headset"/></svg> 售後服務</div>
         <div class="faq-list">
           <div class="faq-item">
             <div class="faq-question">
               <div class="faq-q">包裹丟件或損壞怎麼辦？</div>
-              <i class="fas fa-chevron-down faq-icon"></i>
+              <svg class="icon faq-icon" aria-hidden="true" ><use href="#chevron-down"/></svg>
             </div>
             <div class="faq-answer">
               <p>每筆貨件提供<strong>基本保險</strong>，丟件最高理賠運費三倍。如發現問題，請在收到包裹後24小時內拍照通知我們，並提供運單號。</p>
@@ -508,7 +509,7 @@
           <div class="faq-item">
             <div class="faq-question">
               <div class="faq-q">如何聯繫客服？</div>
-              <i class="fas fa-chevron-down faq-icon"></i>
+              <svg class="icon faq-icon" aria-hidden="true" ><use href="#chevron-down"/></svg>
             </div>
             <div class="faq-answer">
               <p>主要管道是LINE（@subaotw5988），平均30分鐘內回覆，語音、圖片、截圖都可以傳。我們不回官腔，回覆快又直接。</p>
@@ -517,7 +518,7 @@
           <div class="faq-item">
             <div class="faq-question">
               <div class="faq-q">可以到付嗎？</div>
-              <i class="fas fa-chevron-down faq-icon"></i>
+              <svg class="icon faq-icon" aria-hidden="true" ><use href="#chevron-down"/></svg>
             </div>
             <div class="faq-answer">
               <p><strong>可以。</strong>到大陸後支付，方便大陸親友。支持支付寶、微信支付、銀行轉帳。具體方式可以和客服確認。</p>
@@ -529,7 +530,7 @@
       <div class="line-cta">
         <h3>還有其他問題？</h3>
         <p>LINE直接問，30分鐘內得到專業答覆</p>
-        <a href="https://line.me/ti/p/~subaotw5988" class="btn" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><i class="fab fa-line"></i> 加入 LINE 客服</a>
+        <a href="https://line.me/ti/p/~subaotw5988" class="btn" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> 加入 LINE 客服</a>
       </div>
 
     </div>
@@ -540,7 +541,7 @@
       <div>
         <h3>速豹集運</h3>
         <p>專業台灣到大陸快遞服務，專營敏感貨專線</p>
-        <p><i class="fab fa-line" style="color:#00B900;"></i> LINE：subaotw5988</p>
+        <p><svg class="icon" aria-hidden="true" style="color:#00B900;"><use href="#line"/></svg> LINE：subaotw5988</p>
       </div>
       <div>
         <h3>服務項目</h3>
@@ -645,12 +646,12 @@
     LINE
   </a>
   <button class="icon-btn msg-btn" onclick="openContactModal()" aria-label="留言咨询" title="留言给我们">
-    <i class="fas fa-envelope"></i>
+    <svg class="icon" aria-hidden="true" ><use href="#envelope"/></svg>
   </button>
 </div>
 <div class="contact-modal" id="contactModal">
   <div class="modal-box">
-    <button class="close-btn" onclick="closeContactModal()"><i class="fas fa-times"></i></button>
+    <button class="close-btn" onclick="closeContactModal()"><svg class="icon" aria-hidden="true" ><use href="#times"/></svg></button>
     <div id="contactFormWrap">
       <h3>📬 給我們留言</h3>
       <p class="sub">填寫後我們會盡快回覆（LINE打不開也不用擔心）</p>
@@ -675,5 +676,18 @@ function closeContactModal(){document.getElementById('contactModal').classList.r
 function submitContactForm(e){e.preventDefault();var n=document.getElementById('cfName').value,c=document.getElementById('cfContact').value,i=document.getElementById('cfItem').value||'未填',m=document.getElementById('cfMsg').value||'未填';gtag('event','contact_form_submit',{event_category:'conversion',event_label:'floating_contact'});document.getElementById('contactFormWrap').style.display='none';document.getElementById('successMsg').style.display='block';fetch('https://formsubmit.co/ajax/business@videotvai.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,contact:c,item:i,message:m,_subject:'[速豹官網留言] '+n,})}).catch(function(){})}
 </script>
     document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});
+
+<svg style="display:none" aria-hidden="true">
+<symbol id="bars" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2z"/></symbol>
+<symbol id="box-open" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1l9 4.5v4.3L12 14 .2 9.8V5.5L12 1zM3 6.2l3 1.5L12 10l6-2.3 3-1.5L12 3 3 6.2zm19 4v11l-10 5-10-5v-11l2 1v9l8 4 8-4v-9l2-1z"/></symbol>
+<symbol id="chevron-down" viewBox="0 0 24 24"><path fill="currentColor" d="M5.3 8.3a1 1 0 011.4 0L12 13.6l5.3-5.3a1 1 0 111.4 1.4l-6 6a1 1 0 01-1.4 0l-6-6a1 1 0 010-1.4z"/></symbol>
+<symbol id="coins" viewBox="0 0 24 24"><path fill="currentColor" d="M0 12a6 6 0 1112 0 6 6 0 01-12 0zm6 4a4 4 0 100-8 4 4 0 000 8zm8-10a5 5 0 110 10h-4a7 7 0 004-14zm4 3a4 4 0 110 8 4 4 0 010-8zM2 12a3 3 0 113 3 3 3 0 01-3-3z"/></symbol>
+<symbol id="envelope" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4.2l-8 5.8-8-5.8V6l8 5.8L20 6v2.2z"/></symbol>
+<symbol id="headset" viewBox="0 0 24 24"><path fill="currentColor" d="M5 11a7 7 0 0114 0v2h-3a1 1 0 00-1 1v4a1 1 0 001 1h3a3 3 0 003-3v-5a10 10 0 00-20 0v5a3 3 0 003 3h3a1 1 0 001-1v-4a1 1 0 00-1-1H5v-2z"/></symbol>
+<symbol id="landmark" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1L3 6v1h18V6l-9-5zM4 9v9h1v-9H4zm3 0v9h2v-9H7zm4 0v9h2v-9h-2zm4 0v9h2v-9h-2zm3 0v9h1v-9h-1zM2 20h20v2H2v-2z"/></symbol>
+<symbol id="line" viewBox="0 0 24 24"><path fill="currentColor" d="M19.4 9.8c0-3.7-3.6-6.8-8-6.8S3.4 6 3.4 9.8c0 3.4 3 6.2 7 6.7.3 0 .6.2.7.5l.2 1c0 .2 0 .4-.2.5l-.6.7c-.1.1-.1.3 0 .4.2.1.3.1.5 0 .6-.5 3.6-2.1 4.9-3.6.8-1 1.5-2.1 1.5-3.2zM8.6 11h-.4a.4.4 0 01-.4-.4V9.2c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4v1.4c0 .3-.2.4-.4.4zm1.5-1.9v1.5a.4.4 0 01-.4.4h-.4a.4.4 0 01-.4-.4V9.1c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4zm4.1 0c0-.2-.2-.4-.4-.4h-.6V9c0-.2-.2-.4-.4-.4h-.4a.4.4 0 00-.4.4v1.5c0 .2.2.4.4.4H12.4c.2 0 .4-.2.4-.4v-.4h.6v.4c0 .2.2.4.4.4h.4a.4.4 0 00.4-.4V9.1z"/></symbol>
+<symbol id="times" viewBox="0 0 24 24"><path fill="currentColor" d="M18.3 5.7a1 1 0 00-1.4 0L12 10.6 7.1 5.7a1 1 0 00-1.4 1.4L10.6 12l-4.9 4.9a1 1 0 001.4 1.4L12 13.4l4.9 4.9a1 1 0 001.4-1.4L13.4 12l4.9-4.9a1 1 0 000-1.4z"/></symbol>
+<symbol id="truck" viewBox="0 0 24 24"><path fill="currentColor" d="M1 3h13a2 2 0 012 2v1h4a1 1 0 01.7.3l3 4A2 2 0 0124 11v5a2 2 0 01-2 2h-1a3 3 0 01-6 0h-4a3 3 0 01-6 0H4a2 2 0 01-2-2V5a2 2 0 012-2H1zm16 4v3h3.6l-2.2-3H17zM5.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm11 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></symbol>
+</svg>
 </body>
 </html>

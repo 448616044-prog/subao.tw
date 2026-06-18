@@ -21,9 +21,8 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" as="style" crossorigin fetchpriority="high">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"></noscript>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
   <style>
+    .icon{width:1em;height:1em;display:inline-block;vertical-align:-0.125em;fill:currentColor}
 :root{--primary:#E65100;--primary-dark:#E65100;--secondary:#00B900;--bg:#F8F9FA;--bg-white:#fff;--bg-dark:#1a1a2e;--text:#333;--text-light:#666;--border:#e0e0e0;--radius:12px;--radius-lg:16px;--shadow:0 2px 12px rgba(0,0,0,0.08);--shadow-lg:0 4px 24px rgba(0,0,0,0.12)}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Noto Sans TC',-apple-system,sans-serif;color:var(--text);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased}
@@ -110,6 +109,8 @@ tr:nth-child(even){background:#fafafa}
 </head>
 <body>
 
+
+
 <!-- Announcement Bar -->
 <div id="announcementBar" style="background:#00695C;color:#fff;text-align:center;padding:8px 16px;font-size:14px;position:relative">
   <span>🍘 端午粽子寄大陸 · 敏感貨專線正常收件，3-5天送達，節日心意隨時可寄</span>
@@ -136,10 +137,10 @@ tr:nth-child(even){background:#fafafa}
     </nav>
     <div class="header-cta">
       <a href="https://line.me/ti/p/~subaotw5988" class="btn btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
-        <i class="fab fa-line"></i> LINE 咨詢
+        <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 咨詢
       </a>
     </div>
-    <button class="menu-toggle" id="menuToggle" aria-label="選單"><i class="fas fa-bars"></i></button>
+    <button class="menu-toggle" id="menuToggle" aria-label="選單"><svg class="icon" aria-hidden="true" ><use href="#bars"/></svg></button>
   </div>
 </header>
 
@@ -152,7 +153,7 @@ tr:nth-child(even){background:#fafafa}
   <a href="/customs-guide" class="mobile-nav-link">關稅速查</a>
   <a href="/article-list" class="mobile-nav-link">文章攻略</a>
   <a href="https://line.me/ti/p/~subaotw5988" class="mobile-nav-link cta" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
-    <i class="fab fa-line"></i> 加入LINE
+    <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> 加入LINE
   </a>
 </div>
 
@@ -162,7 +163,7 @@ tr:nth-child(even){background:#fafafa}
     <h1>台灣粽子寄大陸 · 完整寄送攻略</h1>
     <p class="subtitle">肉粽、素粽、粿粽、甜粽 — 各種粽子寄送攻略<br>敏感貨專線，真空包裝 OK，3-5 天送達 · 節日心意隨時可寄</p>
     <div class="hero-cta-row">
-      <a href="https://line.me/ti/p/~subaotw5988" class="btn btn-primary" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'hero_dragon'})"><i class="fab fa-line"></i> LINE 即時估價</a>
+      <a href="https://line.me/ti/p/~subaotw5988" class="btn btn-primary" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'hero_dragon'})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 即時估價</a>
     </div>
   </div>
 </section>
@@ -202,7 +203,7 @@ tr:nth-child(even){background:#fafafa}
   <div class="cta-box">
     <h3>📲 確定要寄粽子？現在就估價</h3>
     <p>傳照片到 LINE，告訴我們粽子種類和數量<br>30 分鐘內回覆運費，隨時可寄、3-5 天送達！</p>
-    <a href="https://line.me/ti/p/~subaotw5988" class="btn btn-primary" style="background:#fff;color:var(--primary)" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'mid_dragon'})"><i class="fab fa-line"></i> LINE 免費估價</a>
+    <a href="https://line.me/ti/p/~subaotw5988" class="btn btn-primary" style="background:#fff;color:var(--primary)" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'mid_dragon'})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 免費估價</a>
     <p style="margin:8px 0 0;font-size:12px;opacity:0.8">🔒 LINE打不開？<a href="/contact-form" style="color:#fff;text-decoration:underline">點這留言，我們主動聯繫</a></p>
   </div>
 
@@ -248,7 +249,7 @@ tr:nth-child(even){background:#fafafa}
   <div class="cta-box" style="margin-top:48px">
     <h3>🍘 端午粽子寄大陸 · 節日心意隨時可寄</h3>
     <p>不確定你的粽子能不能寄？<br>加入 LINE，傳粽子照片給我們，30 分鐘內回覆！</p>
-    <a href="https://line.me/ti/p/~subaotw5988" class="btn btn-primary" style="background:#fff;color:var(--primary);font-size:18px;padding:16px 40px" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'bottom_dragon'})"><i class="fab fa-line"></i> LINE 免費估價</a>
+    <a href="https://line.me/ti/p/~subaotw5988" class="btn btn-primary" style="background:#fff;color:var(--primary);font-size:18px;padding:16px 40px" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'bottom_dragon'})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 免費估價</a>
   </div>
 
   <!-- Related -->
@@ -297,7 +298,7 @@ tr:nth-child(even){background:#fafafa}
 <!-- Floating bar -->
 <div class="floating-bar">
   <a href="https://line.me/ti/p/~subaotw5988" target="_blank" class="icon-btn line-btn" title="LINE即时咨询" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'floating_line'})">LINE</a>
-  <button class="icon-btn msg-btn" onclick="openContactModal()" aria-label="留言咨询" title="留言给我们"><i class="fas fa-envelope"></i></button>
+  <button class="icon-btn msg-btn" onclick="openContactModal()" aria-label="留言咨询" title="留言给我们"><svg class="icon" aria-hidden="true" ><use href="#envelope"/></svg></button>
 </div>
 
 <!-- Mobile Nav Toggle -->
@@ -308,5 +309,11 @@ document.getElementById('menuToggle').addEventListener('click',function(){docume
 <!-- GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-X2T4LGTKJ1');</script>
+
+<svg style="display:none" aria-hidden="true">
+<symbol id="bars" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2z"/></symbol>
+<symbol id="envelope" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4.2l-8 5.8-8-5.8V6l8 5.8L20 6v2.2z"/></symbol>
+<symbol id="line" viewBox="0 0 24 24"><path fill="currentColor" d="M19.4 9.8c0-3.7-3.6-6.8-8-6.8S3.4 6 3.4 9.8c0 3.4 3 6.2 7 6.7.3 0 .6.2.7.5l.2 1c0 .2 0 .4-.2.5l-.6.7c-.1.1-.1.3 0 .4.2.1.3.1.5 0 .6-.5 3.6-2.1 4.9-3.6.8-1 1.5-2.1 1.5-3.2zM8.6 11h-.4a.4.4 0 01-.4-.4V9.2c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4v1.4c0 .3-.2.4-.4.4zm1.5-1.9v1.5a.4.4 0 01-.4.4h-.4a.4.4 0 01-.4-.4V9.1c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4zm4.1 0c0-.2-.2-.4-.4-.4h-.6V9c0-.2-.2-.4-.4-.4h-.4a.4.4 0 00-.4.4v1.5c0 .2.2.4.4.4H12.4c.2 0 .4-.2.4-.4v-.4h.6v.4c0 .2.2.4.4.4h.4a.4.4 0 00.4-.4V9.1z"/></symbol>
+</svg>
 </body>
 </html>

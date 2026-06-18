@@ -22,8 +22,6 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" as="style" crossorigin fetchpriority="high">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"></noscript>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -59,6 +57,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
   <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[];gtag('js',new Date());gtag('config','G-X2T4LGTKJ1')</script>
 <style>
+    .icon{width:1em;height:1em;display:inline-block;vertical-align:-0.125em;fill:currentColor}
 :root{--primary:#E65100;--primary-light:#FFF0E6;--primary-dark:#CC5500;--line-green:#00B900;--bg-white:#fff;--bg-light:#F8FAFB;--text-dark:#1A1A2E;--text-light:#6B7280;--text-secondary:#4B5563;--border:#E5E7EB;--shadow:0 2px 12px rgba(0,0,0,.08);--shadow-lg:0 8px 40px rgba(0,0,0,.12);--radius:12px;--radius-pill:50px;--transition:all .25s cubic-bezier(.4,0,.2,1);--font:'Noto Sans TC',sans-serif;--header-height:70px}
 *,::before,::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:var(--font);color:var(--text-dark);line-height:1.7;background:var(--bg-white);-webkit-font-smoothing:antialiased}
@@ -138,6 +137,8 @@ tr:nth-child(even){background:var(--bg-light)}
 </style>
 </head>
 <body>
+
+
   <header class="header" id="header">
   <div class="container">
     <a href="/" class="logo"><img src="/images/subao-logo-new.png" alt="速豹集運" width="200" height="50" style="height:50px;width:auto"></a>
@@ -159,23 +160,23 @@ tr:nth-child(even){background:var(--bg-light)}
       <a href="/article-list">文章攻略</a>
     </nav>
     <div class="header-cta">
-      <a href="https://line.me/ti/p/~subaotw5988" class="btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><i class="fab fa-line"></i> LINE 咨詢</a>
+      <a href="https://line.me/ti/p/~subaotw5988" class="btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 咨詢</a>
     </div>
-    <button class="menu-toggle" id="menuToggle" aria-label="選單"><i class="fas fa-bars"></i></button>
+    <button class="menu-toggle" id="menuToggle" aria-label="選單"><svg class="icon" aria-hidden="true" ><use href="#bars"/></svg></button>
   </div>
 </header>
 
   <section class="pillar-hero">
   <div class="container">
     <div class="badge-row">
-      <span class="badge"><i class="fas fa-star"></i> 2026年6月更新</span>
-      <span class="badge"><i class="fas fa-box"></i> 真實客戶委託</span>
+      <span class="badge"><svg class="icon" aria-hidden="true" ><use href="#star"/></svg> 2026年6月更新</span>
+      <span class="badge"><svg class="icon" aria-hidden="true" ><use href="#box"/></svg> 真實客戶委託</span>
     </div>
     <h1>台灣CPU散熱器寄大陸2026</h1>
     <p class="subtitle">台灣CPU散熱器寄大陸完整攻略：電腦配件可以寄嗎？風扇/水冷/機殼/記憶體怎麼寄？海關規定+包裝教學+費用估算，LINE免費估價3-5天送達。</p>
     <div class="cta-row">
-      <a href="https://line.me/ti/p/~subaotw5988" class="btn-primary-hero" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'hero_cta'})"><i class="fab fa-line"></i> LINE 免費估價</a>
-      <a href="/pricing-calculator" class="btn-outline-hero"><i class="fas fa-calculator"></i> 運費試算</a>
+      <a href="https://line.me/ti/p/~subaotw5988" class="btn-primary-hero" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'hero_cta'})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 免費估價</a>
+      <a href="/pricing-calculator" class="btn-outline-hero"><svg class="icon" aria-hidden="true" ><use href="#calculator"/></svg> 運費試算</a>
     </div>
   </div>
 </section>
@@ -215,7 +216,7 @@ tr:nth-child(even){background:var(--bg-light)}
     <div class="cta-box">
       <p><strong>📦 不確定你的CPU散熱器能不能寄？</strong></p>
       <p>傳照片到 LINE，免費確認 + 估價</p>
-      <a href="https://line.me/ti/p/~subaotw5988" class="line-btn" target="_blank" rel="noopener" onclick="gtag('event','line_click',{event_category:'line',event_label:'cta_box'})"><i class="fab fa-line"></i> LINE 立即諮詢</a>
+      <a href="https://line.me/ti/p/~subaotw5988" class="line-btn" target="_blank" rel="noopener" onclick="gtag('event','line_click',{event_category:'line',event_label:'cta_box'})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 立即諮詢</a>
     </div>
 
     <h2>電腦配件批量寄送方案</h2>
@@ -261,34 +262,34 @@ tr:nth-child(even){background:var(--bg-light)}
     <h2>常見問題</h2>
 
     <div class="faq-item">
-      <div class="faq-q"><i class="fas fa-question-circle" style="color:var(--primary)"></i> CPU散熱器可以寄大陸嗎？</div>
+      <div class="faq-q"><svg class="icon" aria-hidden="true" style="color:var(--primary)"><use href="#question-circle"/></svg> CPU散熱器可以寄大陸嗎？</div>
       <div class="faq-a">可以。CPU散熱器屬於電腦配件，不屬於管制品。塔式風冷和水冷散熱器均可透過速豹敏感貨專線寄送。風冷散熱器含金屬散熱片，水冷散熱器含少量液體但密封在冷排內，只要不洩漏即可順利通關。建議包裝時額外加氣泡紙保護散熱鰭片，避免擠壓變形。</div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-q"><i class="fas fa-question-circle" style="color:var(--primary)"></i> 電腦風扇可以寄大陸嗎？</div>
+      <div class="faq-q"><svg class="icon" aria-hidden="true" style="color:var(--primary)"><use href="#question-circle"/></svg> 電腦風扇可以寄大陸嗎？</div>
       <div class="faq-a">可以，機殼風扇、CPU風扇、顯卡風扇等標準電腦風扇均可寄送。風扇含小型馬達屬於常規電腦配件，無管制限制。但大型工業風扇（功率>750W）可能受兩用物項管制，需事先確認。</div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-q"><i class="fas fa-question-circle" style="color:var(--primary)"></i> 水冷散熱器寄大陸有特殊規定嗎？</div>
+      <div class="faq-q"><svg class="icon" aria-hidden="true" style="color:var(--primary)"><use href="#question-circle"/></svg> 水冷散熱器寄大陸有特殊規定嗎？</div>
       <div class="faq-a">一體式水冷散熱器（AIO）可以寄送，內部液體已密封在冷排中。建議：① 確保包裝防漏（原廠盒裝最佳）；② 在包裹內襯防水塑膠袋防止意外洩漏；③ 申報時寫「電腦散熱器」而非「水冷」，走敏感貨專線。分體式水冷建議排乾液體後再寄送。</div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-q"><i class="fas fa-question-circle" style="color:var(--primary)"></i> 電腦配件寄大陸要多久？</div>
+      <div class="faq-q"><svg class="icon" aria-hidden="true" style="color:var(--primary)"><use href="#question-circle"/></svg> 電腦配件寄大陸要多久？</div>
       <div class="faq-a">速豹集運敏感貨專線約3-5個工作天送達。包含台灣收件、出口報關、空運、大陸清關、末端派送全程。廣東、福建等沿海省份約3天，內陸城市約5-7天。</div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-q"><i class="fas fa-question-circle" style="color:var(--primary)"></i> 17kg的CPU散熱器怎麼寄最划算？</div>
+      <div class="faq-q"><svg class="icon" aria-hidden="true" style="color:var(--primary)"><use href="#question-circle"/></svg> 17kg的CPU散熱器怎麼寄最划算？</div>
       <div class="faq-a">17kg約等於10-15顆高階塔式散熱器，已經屬於商業件量級。建議走速豹商業大宗專線，不僅單價更低，報關服務也更完整。直接聯繫LINE報大宗優惠價，比零散寄送每件省20-40%。</div>
     </div>
 
     <div class="cta-box">
       <p><strong>🖥️ 有電腦零件要寄到大陸？</strong></p>
       <p>傳清單或照片到LINE，3分鐘內免費估價</p>
-      <a href="https://line.me/ti/p/~subaotw5988" class="line-btn" target="_blank" rel="noopener" onclick="gtag('event','line_click',{event_category:'line',event_label:'cta_box_bottom'})"><i class="fab fa-line"></i> LINE 立即估價</a>
+      <a href="https://line.me/ti/p/~subaotw5988" class="line-btn" target="_blank" rel="noopener" onclick="gtag('event','line_click',{event_category:'line',event_label:'cta_box_bottom'})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 立即估價</a>
     </div>
   </div>
 
@@ -317,10 +318,10 @@ tr:nth-child(even){background:var(--bg-light)}
   <footer class="footer">
     <div class="container">
       <div>
-        <h3><i class="fas fa-shipping-fast"></i> 速豹集運</h3>
+        <h3><svg class="icon" aria-hidden="true" ><use href="#shipping-fast"/></svg> 速豹集運</h3>
         <p style="font-size:13px;color:rgba(255,255,255,.7)">6+年兩岸物流經驗<br>2000+客戶信賴<br>敏感貨專線｜3-5天送達</p>
         <div class="social-links">
-          <a href="https://line.me/ti/p/~subaotw5988" target="_blank" rel="noopener" onclick="gtag('event','line_click',{event_category:'line',event_label:'footer'})"><i class="fab fa-line"></i> LINE</a>
+          <a href="https://line.me/ti/p/~subaotw5988" target="_blank" rel="noopener" onclick="gtag('event','line_click',{event_category:'line',event_label:'footer'})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE</a>
         </div>
       </div>
       <div>
@@ -376,12 +377,12 @@ tr:nth-child(even){background:var(--bg-light)}
     LINE
   </a>
   <button class="icon-btn msg-btn" onclick="openContactModal()" aria-label="留言咨询" title="留言给我们">
-    <i class="fas fa-envelope"></i>
+    <svg class="icon" aria-hidden="true" ><use href="#envelope"/></svg>
   </button>
 </div>
 <div class="contact-modal" id="contactModal">
   <div class="modal-box">
-    <button class="close-btn" onclick="closeContactModal()"><i class="fas fa-times"></i></button>
+    <button class="close-btn" onclick="closeContactModal()"><svg class="icon" aria-hidden="true" ><use href="#times"/></svg></button>
     <div id="contactFormWrap">
       <h3>📬 給我們留言</h3>
       <p class="sub">填寫後我們會盡快回覆（LINE打不開也不用擔心）</p>
@@ -406,5 +407,17 @@ function openContactModal(){document.getElementById('contactModal').classList.ad
 function closeContactModal(){document.getElementById('contactModal').classList.remove('active');setTimeout(function(){document.getElementById('contactFormWrap').style.display='block';document.getElementById('successMsg').style.display='none';document.getElementById('contactMsgForm').reset()},300)}
 function submitContactForm(e){e.preventDefault();var n=document.getElementById('cfName').value,c=document.getElementById('cfContact').value,i=document.getElementById('cfItem').value||'未填',m=document.getElementById('cfMsg').value||'未填';gtag('event','contact_form_submit',{event_category:'conversion',event_label:'floating_contact'});document.getElementById('contactFormWrap').style.display='none';document.getElementById('successMsg').style.display='block';fetch('https://formsubmit.co/ajax/business@videotvai.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,contact:c,item:i,message:m,_subject:'[速豹官網留言] '+n,})}).catch(function(){})}
 </script>
+
+<svg style="display:none" aria-hidden="true">
+<symbol id="bars" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2z"/></symbol>
+<symbol id="box" viewBox="0 0 24 24"><path fill="currentColor" d="M21 16V8a2 2 0 00-1-1.7l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.7l7 4a2 2 0 002 0l7-4a2 2 0 001-1.7zM5.2 8L12 4.2 18.8 8 12 11.8 5.2 8zm1.8 7.5V10l5 2.8 5-2.8v5.5l-5 2.8-5-2.8z"/></symbol>
+<symbol id="calculator" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10a2 2 0 012 2v16a2 2 0 01-2 2H7a2 2 0 01-2-2V4a2 2 0 012-2zm0 2v4h10V4H7zm2 6v2h2v-2H9zm4 0v2h2v-2h-2zm-4 4v2h2v-2H9zm4 0v2h2v-2h-2zm-4 4v2h2v-2H9zm4 0v2h2v-2h-2z"/></symbol>
+<symbol id="envelope" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4.2l-8 5.8-8-5.8V6l8 5.8L20 6v2.2z"/></symbol>
+<symbol id="line" viewBox="0 0 24 24"><path fill="currentColor" d="M19.4 9.8c0-3.7-3.6-6.8-8-6.8S3.4 6 3.4 9.8c0 3.4 3 6.2 7 6.7.3 0 .6.2.7.5l.2 1c0 .2 0 .4-.2.5l-.6.7c-.1.1-.1.3 0 .4.2.1.3.1.5 0 .6-.5 3.6-2.1 4.9-3.6.8-1 1.5-2.1 1.5-3.2zM8.6 11h-.4a.4.4 0 01-.4-.4V9.2c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4v1.4c0 .3-.2.4-.4.4zm1.5-1.9v1.5a.4.4 0 01-.4.4h-.4a.4.4 0 01-.4-.4V9.1c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4zm4.1 0c0-.2-.2-.4-.4-.4h-.6V9c0-.2-.2-.4-.4-.4h-.4a.4.4 0 00-.4.4v1.5c0 .2.2.4.4.4H12.4c.2 0 .4-.2.4-.4v-.4h.6v.4c0 .2.2.4.4.4h.4a.4.4 0 00.4-.4V9.1z"/></symbol>
+<symbol id="question-circle" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 16a1 1 0 110-2 1 1 0 010 2zm1-4.6V14a1 1 0 01-2 0v-1.5a1 1 0 01.6-.9A2.5 2.5 0 0013 9a1 1 0 10-2 0 1 1 0 01-2 0 3 3 0 116 0 3.6 3.6 0 01-2 2.4z"/></symbol>
+<symbol id="shipping-fast" viewBox="0 0 24 24"><path fill="currentColor" d="M1 3h13a2 2 0 012 2v1h4a1 1 0 01.7.3l3 4A2 2 0 0124 11v5a2 2 0 01-2 2h-1a3 3 0 01-6 0h-4a3 3 0 01-6 0H4a2 2 0 01-2-2V5a2 2 0 012-2H1zm16 4v3h3.6l-2.2-3H17zM5.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm11 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></symbol>
+<symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.3-6.2 3.3 1.2-6.8-5-4.9 6.9-1L12 2z"/></symbol>
+<symbol id="times" viewBox="0 0 24 24"><path fill="currentColor" d="M18.3 5.7a1 1 0 00-1.4 0L12 10.6 7.1 5.7a1 1 0 00-1.4 1.4L10.6 12l-4.9 4.9a1 1 0 001.4 1.4L12 13.4l4.9 4.9a1 1 0 001.4-1.4L13.4 12l4.9-4.9a1 1 0 000-1.4z"/></symbol>
+</svg>
 </body>
 </html>

@@ -20,8 +20,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="image" href="images/subao-logo-new.webp" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -53,6 +51,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
   <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[];gtag('js',new Date());gtag('config','G-X2T4LGTKJ1')</script>
 <style>
+    .icon{width:1em;height:1em;display:inline-block;vertical-align:-0.125em;fill:currentColor}
 :root{--primary:#E65100;--primary-light:#FFF0E6;--primary-dark:#CC5500;--line-green:#00B900;--bg-white:#fff;--bg-light:#F8FAFB;--text-dark:#1A1A2E;--text-light:#6B7280;--text-secondary:#4B5563;--border:#E5E7EB;--shadow:0 2px 12px rgba(0,0,0,.08);--shadow-lg:0 8px 40px rgba(0,0,0,.12);--radius:12px;--radius-pill:50px;--transition:all .25s cubic-bezier(.4,0,.2,1);--font:'Noto Sans TC',sans-serif;--header-height:70px}
 *,::before,::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;font-size:16px}
@@ -111,17 +110,19 @@ body{font-family:var(--font);color:var(--text-dark);line-height:1.7;background:v
 </head>
 <body>
 
+
+
 <header class="header">
   <div class="container">
     <a href="/" class="logo"><img src="/images/subao-logo-new.png" alt="速豹集運" width="200" height="50"><span>速豹集運</span></a>
-    <button class="menu-toggle" aria-label="選單"><i class="fas fa-bars"></i></button>
+    <button class="menu-toggle" aria-label="選單"><svg class="icon" aria-hidden="true" ><use href="#bars"/></svg></button>
     <ul class="nav">
       <li><a href="/tw-to-cn">服務項目</a></li>
       <li><a href="/pricing">運費說明</a></li>
       <li><a href="/sensitive-goods-shipping">敏感貨攻略</a></li>
       <li><a href="/can-i-ship">可以寄嗎</a></li>
       <li><a href="/article-list">文章攻略</a></li>
-      <li><a href="https://line.me/ti/p/~subaotw5988" target="_blank" rel="noopener" class="cta-btn"><i class="fab fa-line"></i>LINE 免費估價</a></li>
+      <li><a href="https://line.me/ti/p/~subaotw5988" target="_blank" rel="noopener" class="cta-btn"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg>LINE 免費估價</a></li>
     </ul>
   </div>
 </header>
@@ -148,7 +149,7 @@ body{font-family:var(--font);color:var(--text-dark);line-height:1.7;background:v
           </div>
         </div>
         <div class="item-reason">鮮肉月餅、金華火腿月餅、含生肉的酥餅餡料——大陸海關對進口肉類有嚴格檢疫要求，未經檢疫的肉類製品一率退回或銷毀。</div>
-        <div class="item-fix"><i class="fas fa-check-circle"></i> 正確寄法：選擇蛋黃酥、鳳梨酥、綠豆椪等不含生肉的加工糕點。肉鬆、肉乾只寄真空工廠包裝版本。</div>
+        <div class="item-fix"><svg class="icon" aria-hidden="true" ><use href="#check-circle"/></svg> 正確寄法：選擇蛋黃酥、鳳梨酥、綠豆椪等不含生肉的加工糕點。肉鬆、肉乾只寄真空工廠包裝版本。</div>
       </div>
 
       <div class="rank-item">
@@ -160,7 +161,7 @@ body{font-family:var(--font);color:var(--text-dark);line-height:1.7;background:v
           </div>
         </div>
         <div class="item-reason">2026年起海關逐票查驗含肉/含蛋製品。申報寫「餅乾」，開箱發現含蛋黃的鳳梨酥——直接退件。僥倖心理的代價是來回運費全損。</div>
-        <div class="item-fix"><i class="fas fa-check-circle"></i> 正確寄法：如實申報。鳳梨酥就寫鳳梨酥，蛋黃酥就寫蛋黃酥。成分明細越清楚越好。</div>
+        <div class="item-fix"><svg class="icon" aria-hidden="true" ><use href="#check-circle"/></svg> 正確寄法：如實申報。鳳梨酥就寫鳳梨酥，蛋黃酥就寫蛋黃酥。成分明細越清楚越好。</div>
       </div>
 
       <div class="rank-item">
@@ -172,7 +173,7 @@ body{font-family:var(--font);color:var(--text-dark);line-height:1.7;background:v
           </div>
         </div>
         <div class="item-reason">散裝茶葉沒有真空封口，海關可能判定為「不明植物材料」扣關檢驗。受潮變質也是常見問題。</div>
-        <div class="item-fix"><i class="fas fa-check-circle"></i> 正確寄法：買茶時請店家真空封口，分成100-150g一包。不要買散裝自己分。</div>
+        <div class="item-fix"><svg class="icon" aria-hidden="true" ><use href="#check-circle"/></svg> 正確寄法：買茶時請店家真空封口，分成100-150g一包。不要買散裝自己分。</div>
       </div>
 
       <div class="rank-item">
@@ -184,7 +185,7 @@ body{font-family:var(--font);color:var(--text-dark);line-height:1.7;background:v
           </div>
         </div>
         <div class="item-reason">部分收斂水、香水、指甲油酒精濃度高於24%，被歸類為危險品。普通快遞和部分專線拒收。</div>
-        <div class="item-fix"><i class="fas fa-check-circle"></i> 正確寄法：寄前確認產品酒精濃度。≤24%正常寄送，>24%需特別申報，部分口岸仍可通關。</div>
+        <div class="item-fix"><svg class="icon" aria-hidden="true" ><use href="#check-circle"/></svg> 正確寄法：寄前確認產品酒精濃度。≤24%正常寄送，>24%需特別申報，部分口岸仍可通關。</div>
       </div>
 
       <div class="rank-item">
@@ -196,7 +197,7 @@ body{font-family:var(--font);color:var(--text-dark);line-height:1.7;background:v
           </div>
         </div>
         <div class="item-reason">NMN在2025年被中國海關列入「需特別審查」清單。目前處於灰色地帶，部分口岸放行、部分扣關。</div>
-        <div class="item-fix"><i class="fas fa-check-circle"></i> 正確寄法：目前不建議寄送NMN類產品。如果一定要寄，先諮詢物流公司確認當前口岸政策。</div>
+        <div class="item-fix"><svg class="icon" aria-hidden="true" ><use href="#check-circle"/></svg> 正確寄法：目前不建議寄送NMN類產品。如果一定要寄，先諮詢物流公司確認當前口岸政策。</div>
       </div>
 
       <div class="rank-item">
@@ -208,7 +209,7 @@ body{font-family:var(--font);color:var(--text-dark);line-height:1.7;background:v
           </div>
         </div>
         <div class="item-reason">海關對「個人合理自用」的判斷標準約為12瓶以內。一次寄50瓶魚油，直接歸類為商業用途，需走正式報關流程。</div>
-        <div class="item-fix"><i class="fas fa-check-circle"></i> 正確寄法：單次不超過12瓶，總重≤5kg。大量保健品分批寄送，每批間隔一週以上。</div>
+        <div class="item-fix"><svg class="icon" aria-hidden="true" ><use href="#check-circle"/></svg> 正確寄法：單次不超過12瓶，總重≤5kg。大量保健品分批寄送，每批間隔一週以上。</div>
       </div>
 
       <div class="rank-item">
@@ -220,7 +221,7 @@ body{font-family:var(--font);color:var(--text-dark);line-height:1.7;background:v
           </div>
         </div>
         <div class="item-reason">純鋰電池和行動電源屬於危險品，國際快遞普遍禁運。部分口岸對含電池設備也有嚴格限制。</div>
-        <div class="item-fix"><i class="fas fa-check-circle"></i> 正確寄法：電池必須安裝在設備內（手機、筆電、藍牙耳機），不可單獨寄送電池。DJI空拍機全面禁運。</div>
+        <div class="item-fix"><svg class="icon" aria-hidden="true" ><use href="#check-circle"/></svg> 正確寄法：電池必須安裝在設備內（手機、筆電、藍牙耳機），不可單獨寄送電池。DJI空拍機全面禁運。</div>
       </div>
 
       <div class="rank-item">
@@ -232,7 +233,7 @@ body{font-family:var(--font);color:var(--text-dark);line-height:1.7;background:v
           </div>
         </div>
         <div class="item-reason">冬蟲夏草、野生人參、部分蘭科藥材屬於CITES公約保護物種，進出口需瀕危物種證明書。沒有證明=扣關。</div>
-        <div class="item-fix"><i class="fas fa-check-circle"></i> 正確寄法：寄前確認是否為CITES附錄物種。人工培植的通常可寄，野生的需證明文件。</div>
+        <div class="item-fix"><svg class="icon" aria-hidden="true" ><use href="#check-circle"/></svg> 正確寄法：寄前確認是否為CITES附錄物種。人工培植的通常可寄，野生的需證明文件。</div>
       </div>
 
       <div class="rank-item">
@@ -244,7 +245,7 @@ body{font-family:var(--font);color:var(--text-dark);line-height:1.7;background:v
           </div>
         </div>
         <div class="item-reason">茶葉、食品禮盒包裝上的政治敏感旗幟、地圖、文字，可能在通關時觸發海關的敏感內容檢查。</div>
-        <div class="item-fix"><i class="fas fa-check-circle"></i> 正確寄法：選購簡潔包裝的商品。如果已有包裝偏敏感，可以取出內容物換到無標識密封袋。</div>
+        <div class="item-fix"><svg class="icon" aria-hidden="true" ><use href="#check-circle"/></svg> 正確寄法：選購簡潔包裝的商品。如果已有包裝偏敏感，可以取出內容物換到無標識密封袋。</div>
       </div>
 
       <div class="rank-item">
@@ -256,7 +257,7 @@ body{font-family:var(--font);color:var(--text-dark);line-height:1.7;background:v
           </div>
         </div>
         <div class="item-reason">因兩用物項出口管制，DJI全系列空拍機及配件於2025年底列入管制清單。無論新舊、無論用途，全面禁運。</div>
-        <div class="item-fix"><i class="fas fa-check-circle"></i> 正確寄法：目前無法寄送。不建議嘗試，被查到不止退件，可能面臨法律責任。</div>
+        <div class="item-fix"><svg class="icon" aria-hidden="true" ><use href="#check-circle"/></svg> 正確寄法：目前無法寄送。不建議嘗試，被查到不止退件，可能面臨法律責任。</div>
       </div>
 
     </div>
@@ -264,7 +265,7 @@ body{font-family:var(--font);color:var(--text-dark);line-height:1.7;background:v
     <div class="cta-block">
       <h3>不確定你的東西會不會被退？</h3>
       <p>傳照片到LINE，30秒告訴你能不能寄——不收諮詢費</p>
-      <a href="https://line.me/ti/p/~subaotw5988" target="_blank" rel="noopener" class="btn-line" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'top10_cta'})"><i class="fab fa-line"></i> LINE 免費查詢</a>
+      <a href="https://line.me/ti/p/~subaotw5988" target="_blank" rel="noopener" class="btn-line" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'top10_cta'})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 免費查詢</a>
       <p style="font-size:13px;opacity:.7;margin-top:12px">📊 延伸閱讀：<a href="/cross-strait-logistics-report-2026" style="color:#fff;text-decoration:underline">2026兩岸敏感貨物流市場報告</a></p>
     </div>
 
@@ -274,7 +275,7 @@ body{font-family:var(--font);color:var(--text-dark);line-height:1.7;background:v
 <footer class="footer">
   <div class="container">
     <div>
-      <h3><i class="fas fa-shipping-fast"></i> 速豹集運</h3>
+      <h3><svg class="icon" aria-hidden="true" ><use href="#shipping-fast"/></svg> 速豹集運</h3>
       <p style="font-size:14px;color:rgba(255,255,255,0.6);">專業台灣到大陸快遞服務<br>專營敏感貨專線</p>
     </div>
     <div>
@@ -293,5 +294,12 @@ body{font-family:var(--font);color:var(--text-dark);line-height:1.7;background:v
   </div>
 </footer>
 
+
+<svg style="display:none" aria-hidden="true">
+<symbol id="bars" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2z"/></symbol>
+<symbol id="check-circle" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 100 20 10 10 0 000-20zm4.7 7.7L11 15.4l-3.7-3.7a1 1 0 011.4-1.4l2.3 2.3 4.3-4.3a1 1 0 111.4 1.4z"/></symbol>
+<symbol id="line" viewBox="0 0 24 24"><path fill="currentColor" d="M19.4 9.8c0-3.7-3.6-6.8-8-6.8S3.4 6 3.4 9.8c0 3.4 3 6.2 7 6.7.3 0 .6.2.7.5l.2 1c0 .2 0 .4-.2.5l-.6.7c-.1.1-.1.3 0 .4.2.1.3.1.5 0 .6-.5 3.6-2.1 4.9-3.6.8-1 1.5-2.1 1.5-3.2zM8.6 11h-.4a.4.4 0 01-.4-.4V9.2c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4v1.4c0 .3-.2.4-.4.4zm1.5-1.9v1.5a.4.4 0 01-.4.4h-.4a.4.4 0 01-.4-.4V9.1c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4zm4.1 0c0-.2-.2-.4-.4-.4h-.6V9c0-.2-.2-.4-.4-.4h-.4a.4.4 0 00-.4.4v1.5c0 .2.2.4.4.4H12.4c.2 0 .4-.2.4-.4v-.4h.6v.4c0 .2.2.4.4.4h.4a.4.4 0 00.4-.4V9.1z"/></symbol>
+<symbol id="shipping-fast" viewBox="0 0 24 24"><path fill="currentColor" d="M1 3h13a2 2 0 012 2v1h4a1 1 0 01.7.3l3 4A2 2 0 0124 11v5a2 2 0 01-2 2h-1a3 3 0 01-6 0h-4a3 3 0 01-6 0H4a2 2 0 01-2-2V5a2 2 0 012-2H1zm16 4v3h3.6l-2.2-3H17zM5.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm11 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></symbol>
+</svg>
 </body>
 </html>

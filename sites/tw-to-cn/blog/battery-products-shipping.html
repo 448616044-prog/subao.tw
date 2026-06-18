@@ -21,8 +21,6 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" as="style" crossorigin fetchpriority="high">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"></noscript>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
   <link rel="stylesheet" href="/style.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
   <script>
@@ -79,6 +77,7 @@
   </script>
 
   <style>
+    .icon{width:1em;height:1em;display:inline-block;vertical-align:-0.125em;fill:currentColor}
     :root{--primary:#0066CC;--primary-dark:#004C99;--primary-light:#E6F0FA;--secondary:#E65100;--line-green:#00B900;--bg-white:#FFF;--bg-gray:#F5F7FA;--bg-dark:#1A1A2E;--text-dark:#333;--text-light:#666;--text-white:#fff;--border:#E0E0E0;--shadow:0 2px 8px rgba(0,0,0,0.1);--radius:8px;--transition:all 0.3s ease}
     *{margin:0;padding:0;box-sizing:border-box}
     body{font-family:'Noto Sans TC',sans-serif}
@@ -130,6 +129,8 @@
 
 </head>
 <body>
+
+
   <!-- HEADER -->
   <header class="header" id="header">
   <div class="container">
@@ -152,9 +153,9 @@
       <a href="/article-list">文章攻略</a>
     </nav>
     <div class="header-cta">
-      <a href="https://line.me/ti/p/~subaotw5988" class="btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><i class="fab fa-line"></i> LINE 咨詢</a>
+      <a href="https://line.me/ti/p/~subaotw5988" class="btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 咨詢</a>
     </div>
-    <button class="menu-toggle" id="menuToggle" aria-label="選單"><i class="fas fa-bars"></i></button>
+    <button class="menu-toggle" id="menuToggle" aria-label="選單"><svg class="icon" aria-hidden="true" ><use href="#bars"/></svg></button>
   </div>
 </header>
 
@@ -182,7 +183,7 @@
       </div>
     </div>
     <a href="https://line.me/ti/p/~subaotw5988" class="mobile-nav-link cta" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
-      <i class="fab fa-line"></i> 加入LINE
+      <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> 加入LINE
     </a>
   </div>
 
@@ -271,7 +272,7 @@
   <div style="background:#FFF8E1;border-radius:8px;padding:16px;margin:20px 0;border:1px solid #FFE082">
     <p style="font-size:17px;font-weight:700;color:#E65100;margin:0 0 8px">📦 有電池產品想寄大陸？不確定能不能寄？</p>
     <p style="margin:0 0 8px">把產品型號和照片傳到LINE，<strong>30分鐘內告訴你能不能寄</strong>、多少錢！</p>
-    <a href="https://line.me/ti/p/~subaotw5988" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#00B900;color:#fff;padding:10px 20px;border-radius:24px;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><i class="fab fa-line"></i> LINE：subaotw5988</a>
+    <a href="https://line.me/ti/p/~subaotw5988" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#00B900;color:#fff;padding:10px 20px;border-radius:24px;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE：subaotw5988</a>
   </div>
 
       <h2>二、為什麼獨立鋰電池不能寄？UN3480 vs UN3481</h2>
@@ -362,13 +363,13 @@
         <h3>不確定你的電池產品能不能寄？</h3>
         <p>把產品型號、照片傳到LINE，<strong>30分鐘內回覆</strong>，馬上幫你確認能不能寄、多少錢</p>
         <a href="https://line.me/ti/p/~subaotw5988" target="_blank" class="btn-cta" style="display:inline-flex;align-items:center;gap:6px;background:#00B900;color:#fff;padding:12px 28px;border-radius:24px;font-weight:700;font-size:15px;text-decoration:none;margin-top:8px" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
-          <i class="fab fa-line"></i> LINE 免費評估
+          <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 免費評估
         </a>
       </div>
 
       <p style="margin:0;font-size:16px;font-weight:700">📦 不確定能不能寄？</p>
       <p style="margin:4px 0 0;font-size:13px;opacity:0.9">傳照片到LINE，30分鐘內免費評估！</p>
-  <a href="https://line.me/ti/p/~subaotw5988" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#fff;color:#00B900;padding:10px 20px;border-radius:24px;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,0.15)" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><i class="fab fa-line"></i> 傳照片確認</a>
+  <a href="https://line.me/ti/p/~subaotw5988" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#fff;color:#00B900;padding:10px 20px;border-radius:24px;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,0.15)" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> 傳照片確認</a>
 
       <div style="margin:24px 0;display:flex;flex-wrap:wrap;gap:12px">
         <a href="/blog/tw-to-cn-prohibited-items" class="related-card" style="background:#fff;padding:16px;border-radius:8px;text-decoration:none;color:#1a56db;font-weight:500;box-shadow:0 1px 3px rgba(0,0,0,0.08);flex:1;min-width:200px">
@@ -400,7 +401,7 @@
 
     <a href="/contact-form" class="floating-contact" style="position:fixed;bottom:24px;right:24px;background:#fff;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,0.12);padding:12px 20px;display:flex;align-items:center;gap:12px;text-decoration:none;z-index:999">
       <span style="font-size:14px;font-weight:700;color:#333">📦 LINE打不開？<br><small style="color:#888">點這留言</small></span>
-      <span style="background:#00B900;color:#fff;padding:8px 16px;border-radius:20px;font-weight:700;font-size:14px;white-space:nowrap"><i class="fab fa-line"></i> LINE客服</span>
+      <span style="background:#00B900;color:#fff;padding:8px 16px;border-radius:20px;font-weight:700;font-size:14px;white-space:nowrap"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE客服</span>
     </a>
   </main>
 
@@ -409,7 +410,7 @@
       <p>© 2026 速豹集運 | <a href="/about">關於我們</a> | <a href="/partners">合作夥伴</a></p>
       <p style="margin-top:8px">📱 LINE：subaotw5988 | 📧 business@videotvai.com</p>
       <p>📦 不确定能不能寄？<strong>传照片免费评估</strong></p>
-<a href="https://line.me/ti/p/~subaotw5988" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#00B900;color:#fff;padding:10px 22px;border-radius:24px;font-weight:700;font-size:14px;text-decoration:none" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><i class="fab fa-line"></i> LINE 即時評估</a>
+<a href="https://line.me/ti/p/~subaotw5988" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#00B900;color:#fff;padding:10px 22px;border-radius:24px;font-weight:700;font-size:14px;text-decoration:none" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 即時評估</a>
     </div>
   </footer>
 
@@ -454,12 +455,12 @@
     LINE
   </a>
   <button class="icon-btn msg-btn" onclick="openContactModal()" aria-label="留言咨询" title="留言给我们">
-    <i class="fas fa-envelope"></i>
+    <svg class="icon" aria-hidden="true" ><use href="#envelope"/></svg>
   </button>
 </div>
 <div class="contact-modal" id="contactModal">
   <div class="modal-box">
-    <button class="close-btn" onclick="closeContactModal()"><i class="fas fa-times"></i></button>
+    <button class="close-btn" onclick="closeContactModal()"><svg class="icon" aria-hidden="true" ><use href="#times"/></svg></button>
     <div id="contactFormWrap">
       <h3>📬 給我們留言</h3>
       <p class="sub">填寫後我們會盡快回覆（LINE打不開也不用擔心）</p>
@@ -484,5 +485,12 @@ function openContactModal(){document.getElementById('contactModal').classList.ad
 function closeContactModal(){document.getElementById('contactModal').classList.remove('active');setTimeout(function(){document.getElementById('contactFormWrap').style.display='block';document.getElementById('successMsg').style.display='none';document.getElementById('contactMsgForm').reset()},300)}
 function submitContactForm(e){e.preventDefault();var n=document.getElementById('cfName').value,c=document.getElementById('cfContact').value,i=document.getElementById('cfItem').value||'未填',m=document.getElementById('cfMsg').value||'未填';gtag('event','contact_form_submit',{event_category:'conversion',event_label:'floating_contact'});document.getElementById('contactFormWrap').style.display='none';document.getElementById('successMsg').style.display='block';fetch('https://formsubmit.co/ajax/business@videotvai.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,contact:c,item:i,message:m,_subject:'[速豹官網留言] '+n,})}).catch(function(){})}
 </script>
+
+<svg style="display:none" aria-hidden="true">
+<symbol id="bars" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2z"/></symbol>
+<symbol id="envelope" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4.2l-8 5.8-8-5.8V6l8 5.8L20 6v2.2z"/></symbol>
+<symbol id="line" viewBox="0 0 24 24"><path fill="currentColor" d="M19.4 9.8c0-3.7-3.6-6.8-8-6.8S3.4 6 3.4 9.8c0 3.4 3 6.2 7 6.7.3 0 .6.2.7.5l.2 1c0 .2 0 .4-.2.5l-.6.7c-.1.1-.1.3 0 .4.2.1.3.1.5 0 .6-.5 3.6-2.1 4.9-3.6.8-1 1.5-2.1 1.5-3.2zM8.6 11h-.4a.4.4 0 01-.4-.4V9.2c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4v1.4c0 .3-.2.4-.4.4zm1.5-1.9v1.5a.4.4 0 01-.4.4h-.4a.4.4 0 01-.4-.4V9.1c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4zm4.1 0c0-.2-.2-.4-.4-.4h-.6V9c0-.2-.2-.4-.4-.4h-.4a.4.4 0 00-.4.4v1.5c0 .2.2.4.4.4H12.4c.2 0 .4-.2.4-.4v-.4h.6v.4c0 .2.2.4.4.4h.4a.4.4 0 00.4-.4V9.1z"/></symbol>
+<symbol id="times" viewBox="0 0 24 24"><path fill="currentColor" d="M18.3 5.7a1 1 0 00-1.4 0L12 10.6 7.1 5.7a1 1 0 00-1.4 1.4L10.6 12l-4.9 4.9a1 1 0 001.4 1.4L12 13.4l4.9 4.9a1 1 0 001.4-1.4L13.4 12l4.9-4.9a1 1 0 000-1.4z"/></symbol>
+</svg>
 </body>
 </html>

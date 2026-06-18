@@ -22,8 +22,6 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" as="style" crossorigin fetchpriority="high">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"></noscript>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
   
   <!-- SEO 结构化数据 -->
   <script type="application/ld+json">
@@ -59,6 +57,7 @@
   }
   </script>
   <style>
+    .icon{width:1em;height:1em;display:inline-block;vertical-align:-0.125em;fill:currentColor}
     :root{--primary:#0066CC;--primary-dark:#004C99;--primary-light:#E6F0FA;--secondary:#E65100;--secondary-dark:#CC5200;--line-green:#00B900;--bg-white:#FFF;--bg-gray:#F5F7FA;--bg-dark:#1A1A2E;--text-dark:#333;--text-light:#666;--text-white:#fff;--border:#E0E0E0;--shadow:0 2px 8px rgba(0,0,0,0.1);--shadow-lg:0 8px 24px rgba(0,0,0,0.15);--radius:8px;--radius-lg:16px;--transition:all 0.3s ease}
     *{margin:0;padding:0;box-sizing:border-box}
     body{font-family:'Noto Sans+TC',sans-serif;color:var(--text-dark);line-height:1.6;font-size:16px;background:var(--bg-gray)}
@@ -137,6 +136,8 @@
 
 </head>
 <body>
+
+
   <header class="header" id="header">
     <div class="container">
       <a href="/" class="logo">
@@ -158,10 +159,10 @@
       </nav>
       <div class="header-cta">
         <a href="https://line.me/ti/p/~subaotw5988" class="btn btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
-          <i class="fab fa-line"></i> LINE 咨詢
+          <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 咨詢
         </a>
       </div>
-      <button class="menu-toggle" id="menuToggle" aria-label="選單"><i class="fas fa-bars"></i></button>
+      <button class="menu-toggle" id="menuToggle" aria-label="選單"><svg class="icon" aria-hidden="true" ><use href="#bars"/></svg></button>
     </div>
   </header>
 
@@ -188,7 +189,7 @@
       </div>
     </div>
     <a href="https://line.me/ti/p/~subaotw5988" class="mobile-nav-link cta" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
-      <i class="fab fa-line"></i> 加入LINE
+      <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> 加入LINE
     </a>
   </div>
 
@@ -208,7 +209,7 @@
             <div class="category">🔍 快速查詢</div>
             <h3>台灣寄大陸可以寄嗎？20種常見商品快速查詢</h3>
             <p>鳳梨酥、泡麵、肉乾、茶葉、保健品、化妝品一次查。寄送規定、注意事項完整對照表。</p>
-            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/hangzhou-shipping-guide" class="article-card">
@@ -216,7 +217,7 @@
             <div class="category">城市專線</div>
             <h3>台灣寄杭州2026｜費用、時效、流程完整攻略</h3>
             <p>台灣寄杭州3-5天送達！保健品、茶葉、食品均可寄。運費首公斤NT$290起，LINE即時報價。</p>
-            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
       </div>
@@ -232,7 +233,7 @@
             <div class="category">🆕 新文章</div>
             <h3>台灣電子產品寄大陸【可以寄嗎】手機/筆電/Switch郵寄攻略</h3>
             <p>手機、筆電、藍牙耳機、Switch遊戲機可以寄嗎？含電池走敏感貨專線，運費參考一覽。</p>
-            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/computer-accessories-shipping" class="article-card">
@@ -240,7 +241,7 @@
             <div class="category">🆕 新文章</div>
             <h3>台灣CPU散熱器寄大陸｜電腦配件/風扇/水冷/3C零件集運攻略</h3>
             <p>CPU散熱器可以寄嗎？風扇、水冷、機殼、記憶體怎麼寄？17kg大宗電腦零件最省運費方案。</p>
-            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/door-pickup-service" class="article-card">
@@ -248,7 +249,7 @@
             <div class="category">🆕 新文章</div>
             <h3>台灣寄大陸上門取件攻略｜比自己去郵局還便宜？費用流程一次看懂</h3>
             <p>為什麼上門取件比自己寄更便宜？怎麼預約？費用多少？真實案例告訴你聰明寄件方法。</p>
-            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/computer-equipment-shipping-guide" class="article-card">
@@ -256,7 +257,7 @@
             <div class="category">🆕 新文章</div>
             <h3>台灣電腦設備寄大陸攻略｜機箱/電源/馬達/大件設備郵寄指南</h3>
             <p>電腦機箱可以寄嗎？馬達怎麼寄？30-40kg大件設備收不收？完整設備寄送SOP＋各路線運費參考。</p>
-            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/electronics-repair-return-shipping" class="article-card">
@@ -264,7 +265,7 @@
             <div class="category">🆕 新文章</div>
             <h3>機器配件返修大陸攻略｜驅動器/伺服馬達/變頻器退運返修</h3>
             <p>台灣工廠設備故障？驅動器、伺服馬達、變頻器寄回大陸原廠維修一站式方案。雙向物流，過去修好再幫你運回來。</p>
-            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/toys-dolls-shipping-guide" class="article-card">
@@ -272,7 +273,7 @@
             <div class="category">🆕 新文章</div>
             <h3>台灣娃娃寄大陸攻略｜玩偶/公仔/玩具郵寄指南</h3>
             <p>娃娃可以寄大陸嗎？100個大量也收！原盒或重新打包都OK，絨毛玩偶到精緻BJD完整包裝教學＋貴州專線。</p>
-            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/used-electronics-repair-shipping" class="article-card">
@@ -280,7 +281,7 @@
             <div class="category">🆕 返修服務</div>
             <h3>機器配件返修大陸攻略｜驅動器/伺服馬達/變頻器退運返修</h3>
             <p>台灣工廠設備故障？驅動器、伺服馬達、變頻器寄回大陸原廠維修一站式方案。</p>
-            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
       </div>
@@ -296,7 +297,7 @@
             <div class="category">🆕 汽車零件</div>
             <h3>台灣汽車零件寄大陸攻略｜改裝件/原廠件/二手零件郵寄指南</h3>
             <p>避震器、輪框、大包圍、排氣管可以寄嗎？汽車零件寄大陸完整SOP，含包裝與海關注意事項。</p>
-            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
       </div>
@@ -312,7 +313,7 @@
             <div class="category">🆕 新文章</div>
             <h3>台灣個人行李寄大陸搬家全攻略：衣服/書籍/日用品郵寄指南</h3>
             <p>從台灣搬家回大陸？衣服、書籍、日用品、小家電均可寄。打包SOP＋大宗行李優惠方案。</p>
-            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
       </div>
@@ -328,7 +329,7 @@
             <div class="category">🆕 新文章</div>
             <h3>台灣書籍寄大陸【可以寄嗎】繁體書/漫畫/文創文具郵寄攻略</h3>
             <p>一般書籍走普貨全OK，限制級/政治敏感禁運。文創商品無限制。包裝技巧+運費NT$250起。</p>
-            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
       </div>
@@ -344,7 +345,7 @@
             <div class="category">🆕 新文章</div>
             <h3>台灣母嬰用品寄大陸完整指南：奶粉/尿布/奶瓶/玩具郵寄攻略</h3>
             <p>成人奶粉普貨直寄、嬰兒奶粉走敏感B、尿布無限制。12大品類一表看懂，包裝技巧+運費參考。</p>
-            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
       </div>
@@ -360,7 +361,7 @@
             <div class="category">🆕 新文章</div>
             <h3>台灣服飾鞋子寄大陸完整攻略：衣服/球鞋/包包/精品郵寄指南</h3>
             <p>四季衣物普貨直寄、品牌球鞋無限制、精品包建議敏感B。網購代購一次寄多件完整SOP。</p>
-            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
       </div>
@@ -376,7 +377,7 @@
             <div class="category">🆕 必讀</div>
             <h3>中華郵政vs速豹集運2026實測對比：台灣寄大陸哪個好？</h3>
             <p>郵局真的比專線便宜嗎？價格/時效/可寄品類/通關率/客服五大維度全面PK，看完就知道怎麼選。</p>
-            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/post-office-rejected-parcel-solution" class="article-card">
@@ -384,7 +385,7 @@
             <div class="category">🆕 疑難解決</div>
             <h3>郵局包裹被退件？台灣寄大陸敏感貨3種正確解法</h3>
             <p>郵局不收食品/保健品/化妝品怎麼辦？退件原因、運費退不退、3種解法一次講清楚。</p>
-            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/post-office-vs-express-speed" class="article-card">
@@ -392,7 +393,7 @@
             <div class="category">🆕 時效評測</div>
             <h3>郵局寄大陸vs專線時效實測：為什麼差3倍？</h3>
             <p>EMS 7天 vs 快件專線 3天，郵局為什麼就是慢？清關機制+運輸路線+處理優先級完整拆解。</p>
-            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
       </div>
@@ -408,7 +409,7 @@
             <div class="category" style="background:var(--secondary)">🍍 零食指南</div>
             <h3>台灣零食寄大陸終極指南2026｜18大品類一次搞定</h3>
             <p>鳳梨酥、泡麵、茶葉、月餅、肉乾、伴手禮…全部搞定！附18種零食通關一覽表，3-5天送達。</p>
-            <div class="meta"><span>2026年6月</span><span class="read-more">查看完整攻略 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>2026年6月</span><span class="read-more">查看完整攻略 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/cross-strait-bidirectional-logistics" class="article-card">
@@ -416,7 +417,7 @@
             <div class="category">雙向物流</div>
             <h3>兩岸雙向物流2026｜台灣⇄大陸怎麼寄最划算？</h3>
             <p>台灣寄大陸vs大陸寄台灣費用、時效、通關要求完整比較。速豹提供雙向物流服務。</p>
-            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/tw-to-cn-shipping-process" class="article-card">
@@ -424,7 +425,7 @@
             <div class="category">📋 必讀</div>
             <h3>台灣寄大陸流程2026：6步驟完整寄件攻略</h3>
             <p>第一次寄大陸？不確定流程？從確認可寄到簽收，6步驟圖解。HowTo結構化教學。</p>
-            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/cross-strait-logistics-comparison" class="article-card">
@@ -432,7 +433,7 @@
             <div class="category">📊 比較</div>
             <h3>兩岸物流推薦2026：順豐vs郵政vs集運專線，哪家好？</h3>
             <p>費用、時效、適用品項一次比較。敏感貨為什麼只能選集運專線？數據告訴你。</p>
-            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/taiwan-to-china-guide" class="article-card">
@@ -440,7 +441,7 @@
             <div class="category">必讀指南</div>
             <h3>2026台灣寄大陸最新指南：流程、費用、時效一次搞懂</h3>
             <p>完整介紹台灣寄大陸的基本流程、可以寄什麼商品、各渠道費用與時效對比，適合第一次寄件的新手閱讀。</p>
-            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/shipping-process-guide" class="article-card">
@@ -448,7 +449,7 @@
             <div class="category">流程教學</div>
             <h3>台灣寄大陸完整流程指南：5步驟教學（2026）</h3>
             <p>查詢→報價→打包→發貨→清關派送，5步驟圖解，含速豹vs郵局vs順豐對比表。</p>
-            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/shipping-packaging-guide" class="article-card">
@@ -456,7 +457,7 @@
             <div class="category">包裝教學</div>
             <h3>台灣寄大陸包裝完全指南：食品/液體/易碎品打包教學</h3>
             <p>5大品類包裝步驟、推薦材料、常見錯誤。錯誤包裝是卡關和破損的第一原因。</p>
-            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/tw-to-cn-cost" class="article-card">
@@ -464,7 +465,7 @@
             <div class="category">運費比較</div>
             <h3>台灣寄大陸多少錢？2026各渠道運費完整比較</h3>
             <p>詳細分析經濟專線、快件專線、敏感貨專線的價格差異，幫你找到最適合預算的寄件方案。</p>
-            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/tw-to-cn-logistics-comparison" class="article-card">
@@ -472,7 +473,7 @@
             <div class="category">時效對比</div>
             <h3>兩岸物流速度對比：快遞/專線/海運哪個快？</h3>
             <p>經濟專線7-14天、快件專線3-5天、敏感貨專線5-10天，各渠道時效完整解析，選擇最適合你的速度。</p>
-            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/tw-to-cn-shipping-guide" class="article-card">
@@ -480,7 +481,7 @@
             <div class="category">新手入門</div>
             <h3>台灣寄大陸完整流程：7步驟輕鬆學會寄件</h3>
             <p>從包裝、填單到追蹤，7步驟完整圖解。不論是保健品、茶葉、化妝品都適用的新手指南。</p>
-            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/tw-to-cn-prohibited-items" class="article-card">
@@ -488,7 +489,7 @@
             <div class="category">新手入門</div>
             <h3>台灣寄大陸禁運品完整清單：哪些東西千萬不能寄？</h3>
             <p>肉類、燕窩、香菇、保育類中藥等海關嚴格管制物品一次看懂。合法替代方案與安全寄送建議。</p>
-            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/tw-to-cn-customs" class="article-card">
@@ -496,7 +497,7 @@
             <div class="category">新手入門</div>
             <h3>台灣寄大陸海關規定：稅金、申報、免稅額一次搞懂</h3>
             <p>最新大陸海關進口規定：個人物品免稅額800元、進口稅金計算、申報流程完整解析。</p>
-            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/tw-to-cn-logistics-recommend" class="article-card">
@@ -504,7 +505,7 @@
             <div class="category">新手入門</div>
             <h3>兩岸物流推薦：台灣寄大陸快遞哪家好？費用時效完整比較</h3>
             <p>順豐、中華郵政、UPS與專業轉運服務詳細比較，幫你選擇最適合的寄件方案。</p>
-            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
       </div>
@@ -520,7 +521,7 @@
             <div class="category">保健品</div>
             <h3>台灣寄保健品到大陸：魚油、燕窩、維他命可以寄嗎？</h3>
             <p>保健品寄送完整攻略，含魚油、燕窩、維他命、膠原蛋白等商品的海關規定、包裝要求與快遞推薦。</p>
-            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/birds-nest-ginseng-shipping" class="article-card">
@@ -528,7 +529,7 @@
             <div class="category">養生品</div>
             <h3>燕窩蟲草可以寄大陸嗎？冬蟲夏草/蔘茸/側魚翅寄送攻略</h3>
             <p>高單價養生品完整寄送攻略：燕窩、冬蟲夏草、蔘茸、側魚翅的海關規定、包裝要求與運費參考。</p>
-            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/chinese-medicine-shipping" class="article-card">
@@ -536,7 +537,7 @@
             <div class="category">中藥</div>
             <h3>台灣中藥寄大陸2026：中藥材、科學中藥、藥丸郵寄完整攻略</h3>
             <p>科學中藥可以寄嗎？中藥材寄大陸規定詳解。個人自用合理數量可寄，CITES保護藥材嚴禁。</p>
-            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/taiwan-medicine-to-china" class="article-card">
@@ -544,7 +545,7 @@
             <div class="category">藥品</div>
             <h3>台灣藥品寄大陸2026：藥品寄送規定、數量限制與申報全攻略</h3>
             <p>台灣藥品寄大陸全解析：處方藥、成藥、藥膏哪些可以寄？快遞管道選擇、報關流程一次搞懂。</p>
-            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/first-aid-shipping" class="article-card">
@@ -552,7 +553,7 @@
             <div class="category">🆕 急救用品</div>
             <h3>急救用品寄大陸2026｜急救包/OK繃/紗布可以寄嗎？完整指南</h3>
             <p>OK繃、紗布、消毒棉片、急救包、止痛藥可以寄嗎？15種急救用品可寄禁運清單、海關規定、包裝要求與真實品牌案例。</p>
-            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/medical-supplies-shipping" class="article-card">
@@ -560,7 +561,7 @@
             <div class="category">🆕 急救用品</div>
             <h3>台灣急救藥品寄大陸指南：感冒藥/OK繃/紗布可以寄嗎？</h3>
             <p>急救包、感冒藥、止痛藥、OK繃、紗布、口罩、體溫計寄大陸攻略。非處方藥走敏感貨，處方藥不行。</p>
-            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/taiwan-medicine-to-china" class="article-card">
@@ -568,7 +569,7 @@
             <div class="category">中藥</div>
             <h3>台灣中藥寄大陸：中藥材可以寄嗎？數量限制、申報流程一次看懂</h3>
             <p>人參、枸杞、當歸、黃耆等中藥材寄送規定與禁寄中藥詳解。提供合法中藥寄送方案。</p>
-            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/battery-products-shipping" class="article-card">
@@ -576,7 +577,7 @@
             <div class="category">電子產品</div>
             <h3>電池產品寄大陸：鋰電池、充電寶、筆電、手機快遞指南</h3>
             <p>內置電池產品可寄，獨立鋰電池有嚴格限制。筆電、手機、耳機、Switch寄送全攻略與費用參考。</p>
-            <div class="meta"><span>新增 2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>新增 2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/tea-shipping-guide" class="article-card">
@@ -584,7 +585,7 @@
             <div class="category">茶葉</div>
             <h3>台灣茶葉寄大陸：高山茶、烏龍茶、紅茶快遞完整指南</h3>
             <p>茶葉寄送要注意什麼？包裝要求、數量限制、費用參考完整說明，讓你的高山茶安全送達大陸。</p>
-            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/perfume-shipping" class="article-card">
@@ -592,7 +593,7 @@
             <div class="category">🆕 香水寄送</div>
             <h3>香水寄大陸2026｜香水可以集運嗎？禁運條件與寄送攻略</h3>
             <p>含酒精液體香水禁運？固體香膏可寄！易燃標誌判斷法、海關稅率、包裝防碎指南與品牌案例。</p>
-            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/cosmetics-shipping" class="article-card">
@@ -600,7 +601,7 @@
             <div class="category">化妝品</div>
             <h3>台灣化妝品寄大陸：面膜、保養品快遞攻略與品牌限制</h3>
             <p>面膜、精華液、乳液可以寄嗎？化妝品寄送的品牌限制、包裝要求與快遞選擇完整攻略。</p>
-            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/food-shipping-guide" class="article-card">
@@ -608,7 +609,7 @@
             <div class="category">食品</div>
             <h3>台灣食品寄大陸指南：肉鬆、蛋黃酥、零食可以寄嗎？</h3>
             <p>台灣美食寄大陸完整指南。肉鬆、月餅、零食等食品的包裝要求、海關注意事項與寄送推薦。</p>
-            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/taiwan-snack-shipping" class="article-card">
@@ -616,7 +617,7 @@
             <div class="category">食品</div>
             <h3>台灣休閒食品寄大陸：鳳梨酥/餅乾/糖果/蜜餞</h3>
             <p>台灣休閒零食寄大陸攻略。鳳梨酥、餅乾、糖果、蜜餞、肉乾、魷魚絲郵寄指南。</p>
-            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/dragon-boat-zongzi-shipping" class="article-card">
@@ -630,7 +631,7 @@
             <div class="category">食品</div>
             <h3>中秋月餅可以寄大陸嗎？2026最新法規+月餅寄送攻略</h3>
             <p>中秋月餅能不能寄？台灣寄大陸月餅的海關規定、品牌限制、運費分析與完整寄送攻略。</p>
-            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/homemade-food-shipping" class="article-card">
@@ -638,7 +639,7 @@
             <div class="category">食品</div>
             <h3>台灣自製食品寄大陸2026｜手工餅乾/果醬/醃漬品郵寄攻略</h3>
             <p>自己做的餅乾、果醬、醃漬品可以寄大陸嗎？自製食品寄送規定、包裝要求與通關注意事項完整整理。</p>
-            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/case-milk-powder-herbs-jilin" class="article-card">
@@ -646,7 +647,7 @@
             <div class="category">客戶案例</div>
             <h3>客戶案例｜奶粉+中藥粉寄吉林延邊，4.5kg敏感貨NT$1,540</h3>
             <p>真實客戶委託：奶粉4罐+中藥粉1包寄吉林延邊。附完整諮詢過程、報價明細，敏感貨專線3-5天送達。</p>
-            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/taiwan-souvenir-shipping" class="article-card">
@@ -654,7 +655,7 @@
             <div class="category">伴手禮</div>
             <h3>台灣伴手禮寄大陸2026：鳳梨酥、茶葉、零食、月餅郵寄完整指南</h3>
             <p>台灣伴手禮可以寄大陸嗎？鳳梨酥、太陽餅、牛軋糖、肉乾等熱門伴手禮寄送攻略，品牌對照表一目了然。</p>
-            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/commercial-shipping" class="article-card">
@@ -662,7 +663,7 @@
             <div class="category">商業貨運</div>
             <h3>台灣寄大陸大宗貨運：商業批量寄送方案+費用</h3>
             <p>企業批量寄送、商業貨物、大宗物資的專屬運輸方案。海運/空運成本比較、長期合作優惠。</p>
-            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
       </div>
@@ -678,7 +679,7 @@
             <div class="category">工具</div>
             <h3>台灣寄大陸運費計算機｜線上估價工具</h3>
             <p>不知道運費多少？輸入包裹重量和品類，快速估算寄大陸運費。</p>
-            <div class="meta"><span>更新 2026年6月</span><span class="read-more">馬上試算 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年6月</span><span class="read-more">馬上試算 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
       </div>
@@ -690,7 +691,7 @@
             <div class="category">蝦皮賣家</div>
             <h3>蝦皮賣家發貨到大陸：流程、費用與物流選擇完整指南</h3>
             <p>蝦皮賣家如何發貨到大陸？跨境物流成本計算、渠道選擇、注意事項完整解析，幫你拓展大陸市場。</p>
-            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/taiwan-products-jd-tmall" class="article-card">
@@ -698,7 +699,7 @@
             <div class="category">電商賣家</div>
             <h3>台灣商品進京東/天貓攻略：入駐條件、店鋪類型、兩岸物流方案</h3>
             <p>台灣賣家如何在京東、天貓或天貓國際開店？完整入駐條件、商品證照要求與兩岸物流解決方案。</p>
-            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/taobao-consolidated-shipping" class="article-card">
@@ -706,7 +707,7 @@
             <div class="category">淘寶集運</div>
             <h3>淘寶集運台灣攻略：淘寶怎麼寄到大陸？步驟教學與費用比較</h3>
             <p>淘寶官方集運vs速豹集運哪個好？完整費用比較、操作步驟，適合台灣用戶的淘寶集運攻略。</p>
-            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/tw-to-cn-express-comparison" class="article-card">
@@ -714,7 +715,7 @@
             <div class="category">快遞比較</div>
             <h3>兩岸快遞比較：中華郵政/順豐/專線物流哪個好？</h3>
             <p>各大兩岸快遞服務完整比較，分析價格、時效、敏感貨處理能力，幫你選擇最適合的快遞方案。</p>
-            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/tw-to-cn-shipping-methods" class="article-card">
@@ -722,7 +723,7 @@
             <div class="category">快遞比較</div>
             <h3>台灣寄大陸快遞比較2026：空運、海運、快遞、經濟線哪個最划算？</h3>
             <p>四種專線完整對比：時效、價格、適合商品、注意事項。6個實際場景決策表，5分鐘找到最適合你的寄件方案。</p>
-            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/taiwan-to-china-shipping-time" class="article-card">
@@ -730,7 +731,7 @@
             <div class="category">快遞比較</div>
             <h3>台灣寄大陸要多久？2026最新時效完整攻略</h3>
             <p>台灣寄大陸快遞要幾天？空運、海運、經濟線的時效分析與各快遞方案比較，幫你掌握最佳寄送時機。</p>
-            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
       </div>
@@ -746,7 +747,7 @@
             <div class="category">🆕 退貨服務</div>
             <h3>台灣商品退貨寄回大陸攻略｜瑕疵品/保修品退回原廠完整流程</h3>
             <p>網購退貨、保固維修要寄回大陸怎麼做？退貨寄件SOP＋運費參考＋申報注意事項完整教學。</p>
-            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/tw-to-cn-returned" class="article-card">
@@ -754,7 +755,7 @@
             <div class="category">退件處理</div>
             <h3>台灣寄大陸被退件？常見原因與解決方案完整解析</h3>
             <p>包裹被退件是最崩潰的事。了解常見退件原因、清關失敗處理、預防方法，讓你的包裹順利送達。</p>
-            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年4月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/cross-strait-logistics-terms" class="article-card">
@@ -762,7 +763,7 @@
             <div class="category">物流知識</div>
             <h3>兩岸物流術語大全：小三通、海快、清關一次看懂</h3>
             <p>25個核心術語卡片式解釋，從運輸方式到關務文件，寄大陸不再被名詞困擾。</p>
-            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/ezway-tutorial" class="article-card">
@@ -770,7 +771,7 @@
             <div class="category">官方教程</div>
             <h3>EZWay易利委完整教學：實名認證4步驟圖解（2026）</h3>
             <p>台灣海關實名認證APP完整教學。下載→註冊→上傳證件→使用，收大陸包裹必看。</p>
-            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年5月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/express-comparison" class="article-card" style="border:2px solid var(--primary);background:linear-gradient(135deg,#FFF0E6,#fff)">
@@ -778,7 +779,7 @@
             <div class="category" style="background:#00B900">🏆 終極對比</div>
             <h3>台灣寄大陸快遞2026終極對比：5大渠道一次看懂</h3>
             <p>中華郵政、順豐、專線、空運、海運，費用/時效/品類完整評比。選對渠道省30%運費。</p>
-            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/sensitive-goods-shipping" class="article-card" style="border:2px solid var(--primary);background:linear-gradient(135deg,#FFF0E6,#fff)">
@@ -786,7 +787,7 @@
             <div class="category" style="background:var(--primary)">📦 敏感貨攻略</div>
             <h3>敏感貨寄大陸2026完整攻略：9大品類通關秘訣</h3>
             <p>保健品、茶葉、化妝品、食品、藥品…什麼能寄怎麼寄？專線包稅通關一次搞懂。</p>
-            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/cross-strait-logistics-report-2026" class="article-card" style="border:2px solid #1A1A2E;background:linear-gradient(135deg,#1A1A2E,#2D2D44)">
@@ -794,7 +795,7 @@
             <div class="category" style="background:#E65100">📊 市場報告</div>
             <h3 style="color:#fff">2026兩岸敏感貨物流市場報告（免費下載）</h3>
             <p style="color:rgba(255,255,255,.7)">9大品類通關率 · 10大退件原因 · 運費趨勢 · 海關政策。基於6年營運數據。</p>
-            <div class="meta"><span style="color:rgba(255,255,255,.5)">更新 2026年6月</span><span class="read-more" style="color:#E65100">下載報告 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span style="color:rgba(255,255,255,.5)">更新 2026年6月</span><span class="read-more" style="color:#E65100">下載報告 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/top-10-rejected-items" class="article-card" style="border:2px solid #DC2626;background:linear-gradient(135deg,#FEF2F2,#fff)">
@@ -802,7 +803,7 @@
             <div class="category" style="background:#DC2626">🚫 退件排行</div>
             <h3>2026最常被退件的10種物品：退件率排行榜</h3>
             <p>含生肉月餅100%退件、散裝茶葉40%、酒精化妝品30%...一次搞懂怎麼寄才不會被退。</p>
-            <div class="meta"><span>更新 2026年6月</span><span class="read-more">查看排行 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年6月</span><span class="read-more">查看排行 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/blood-glucose-meter-shipping" class="article-card">
@@ -810,7 +811,7 @@
             <div class="category">醫療器材</div>
             <h3>台灣血糖儀寄大陸攻略（2026）：規定+費用+實戰案例</h3>
             <p>血糖機可以寄嗎？海關規定、包裝要求、費用估算一次搞懂。附真實客戶案例。</p>
-            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/hair-care-shipping" class="article-card">
@@ -818,7 +819,7 @@
             <div class="category">保養品寄送</div>
             <h3>台灣洗髮精寄大陸（2026）：護髮素/髮膜郵寄攻略</h3>
             <p>洗髮精可以寄大陸！Amino Mason/蔻蘿蘭/潘婷日版常見品牌寄送全攻略。液體包裝+運費一次懂。</p>
-            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
         <a href="/blog/jewelry-crystal-shipping" class="article-card">
@@ -826,7 +827,7 @@
             <div class="category">🆕 首飾寄送</div>
             <h3>台灣水晶寄大陸（2026）：手鏈/首飾/珠寶郵寄攻略</h3>
             <p>水晶手鏈可以寄大陸！天然水晶、半寶石、銀飾走B類敏感貨3-5天送達。高價珠寶/純金不建議寄。</p>
-            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <i class="fas fa-arrow-right"></i></span></div>
+            <div class="meta"><span>更新 2026年6月</span><span class="read-more">閱讀全文 <svg class="icon" aria-hidden="true" ><use href="#arrow-right"/></svg></span></div>
           </div>
         </a>
       </div>
@@ -837,14 +838,14 @@
     <div class="container">
       <h2>還有其他問題？</h2>
       <p>直接加入 LINE，告訴我們你的寄件需求，3 分鐘內得到答覆</p>
-      <a href="https://line.me/ti/p/~subaotw5988" class="btn btn-primary" target="_blank" style="background:#fff;color:var(--secondary);font-size:16px;padding:14px 32px;" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><i class="fab fa-line"></i> 加入 LINE 客服</a>
+      <a href="https://line.me/ti/p/~subaotw5988" class="btn btn-primary" target="_blank" style="background:#fff;color:var(--secondary);font-size:16px;padding:14px 32px;" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> 加入 LINE 客服</a>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container">
       <div>
-        <h3><i class="fas fa-shipping-fast"></i> 速豹集運</h3>
+        <h3><svg class="icon" aria-hidden="true" ><use href="#shipping-fast"/></svg> 速豹集運</h3>
         <p style="font-size:14px;color:rgba(255,255,255,0.6);">專業台灣到大陸快遞服務，專營敏感貨專線</p>
       </div>
       <div>
@@ -861,7 +862,7 @@
       </div>
       <div>
         <h3>聯繫</h3>
-        <a href="https://line.me/ti/p/~subaotw5988" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><i class="fab fa-line"></i> LINE：subaotw5988</a>
+        <a href="https://line.me/ti/p/~subaotw5988" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE：subaotw5988</a>
         <a href="mailto:business@videotvai.com">Email：business@videotvai.com</a>
       </div>
     </div>
@@ -917,12 +918,12 @@
     LINE
   </a>
   <button class="icon-btn msg-btn" onclick="openContactModal()" aria-label="留言咨询" title="留言给我们">
-    <i class="fas fa-envelope"></i>
+    <svg class="icon" aria-hidden="true" ><use href="#envelope"/></svg>
   </button>
 </div>
 <div class="contact-modal" id="contactModal">
   <div class="modal-box">
-    <button class="close-btn" onclick="closeContactModal()"><i class="fas fa-times"></i></button>
+    <button class="close-btn" onclick="closeContactModal()"><svg class="icon" aria-hidden="true" ><use href="#times"/></svg></button>
     <div id="contactFormWrap">
       <h3>📬 給我們留言</h3>
       <p class="sub">填寫後我們會盡快回覆（LINE打不開也不用擔心）</p>
@@ -947,5 +948,14 @@ function closeContactModal(){document.getElementById('contactModal').classList.r
 function submitContactForm(e){e.preventDefault();var n=document.getElementById('cfName').value,c=document.getElementById('cfContact').value,i=document.getElementById('cfItem').value||'未填',m=document.getElementById('cfMsg').value||'未填';gtag('event','contact_form_submit',{event_category:'conversion',event_label:'floating_contact'});document.getElementById('contactFormWrap').style.display='none';document.getElementById('successMsg').style.display='block';fetch('https://formsubmit.co/ajax/business@videotvai.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,contact:c,item:i,message:m,_subject:'[速豹官網留言] '+n,})}).catch(function(){})}
 </script>
     document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});
+
+<svg style="display:none" aria-hidden="true">
+<symbol id="arrow-right" viewBox="0 0 24 24"><path fill="currentColor" d="M14.8 5.3a1 1 0 00-1.4 1.4L17.6 11H4a1 1 0 000 2h13.6l-4.2 4.3a1 1 0 001.4 1.4l6-6a1 1 0 000-1.4l-6-6z"/></symbol>
+<symbol id="bars" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2z"/></symbol>
+<symbol id="envelope" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4.2l-8 5.8-8-5.8V6l8 5.8L20 6v2.2z"/></symbol>
+<symbol id="line" viewBox="0 0 24 24"><path fill="currentColor" d="M19.4 9.8c0-3.7-3.6-6.8-8-6.8S3.4 6 3.4 9.8c0 3.4 3 6.2 7 6.7.3 0 .6.2.7.5l.2 1c0 .2 0 .4-.2.5l-.6.7c-.1.1-.1.3 0 .4.2.1.3.1.5 0 .6-.5 3.6-2.1 4.9-3.6.8-1 1.5-2.1 1.5-3.2zM8.6 11h-.4a.4.4 0 01-.4-.4V9.2c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4v1.4c0 .3-.2.4-.4.4zm1.5-1.9v1.5a.4.4 0 01-.4.4h-.4a.4.4 0 01-.4-.4V9.1c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4zm4.1 0c0-.2-.2-.4-.4-.4h-.6V9c0-.2-.2-.4-.4-.4h-.4a.4.4 0 00-.4.4v1.5c0 .2.2.4.4.4H12.4c.2 0 .4-.2.4-.4v-.4h.6v.4c0 .2.2.4.4.4h.4a.4.4 0 00.4-.4V9.1z"/></symbol>
+<symbol id="shipping-fast" viewBox="0 0 24 24"><path fill="currentColor" d="M1 3h13a2 2 0 012 2v1h4a1 1 0 01.7.3l3 4A2 2 0 0124 11v5a2 2 0 01-2 2h-1a3 3 0 01-6 0h-4a3 3 0 01-6 0H4a2 2 0 01-2-2V5a2 2 0 012-2H1zm16 4v3h3.6l-2.2-3H17zM5.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm11 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></symbol>
+<symbol id="times" viewBox="0 0 24 24"><path fill="currentColor" d="M18.3 5.7a1 1 0 00-1.4 0L12 10.6 7.1 5.7a1 1 0 00-1.4 1.4L10.6 12l-4.9 4.9a1 1 0 001.4 1.4L12 13.4l4.9 4.9a1 1 0 001.4-1.4L13.4 12l4.9-4.9a1 1 0 000-1.4z"/></symbol>
+</svg>
 </body>
 </html>

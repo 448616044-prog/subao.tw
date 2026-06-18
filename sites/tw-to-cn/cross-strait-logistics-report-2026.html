@@ -20,8 +20,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="image" href="images/subao-logo-new.webp" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -56,6 +54,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
   <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[];gtag('js',new Date());gtag('config','G-X2T4LGTKJ1')</script>
 <style>
+    .icon{width:1em;height:1em;display:inline-block;vertical-align:-0.125em;fill:currentColor}
 :root{--primary:#E65100;--primary-light:#FFF0E6;--primary-dark:#CC5500;--line-green:#00B900;--bg-white:#fff;--bg-light:#F8FAFB;--text-dark:#1A1A2E;--text-light:#6B7280;--text-secondary:#4B5563;--border:#E5E7EB;--shadow:0 2px 12px rgba(0,0,0,.08);--shadow-lg:0 8px 40px rgba(0,0,0,.12);--radius:12px;--radius-pill:50px;--transition:all .25s cubic-bezier(.4,0,.2,1);--font:'Noto Sans TC',sans-serif;--header-height:70px}
 *,::before,::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;font-size:16px}
@@ -148,15 +147,17 @@ body{font-family:var(--font);color:var(--text-dark);line-height:1.7;background:v
 </head>
 <body>
 
+
+
 <header class="header">
   <div class="container">
     <a href="/" class="logo"><img src="/images/subao-logo-new.png" alt="速豹集運" width="200" height="50"><span>速豹集運</span></a>
-    <button class="menu-toggle" aria-label="選單"><i class="fas fa-bars"></i></button>
+    <button class="menu-toggle" aria-label="選單"><svg class="icon" aria-hidden="true" ><use href="#bars"/></svg></button>
     <ul class="nav">
       <li><a href="/tw-to-cn">服務項目</a></li>
       <li><a href="/pricing">運費說明</a></li>
       <li class="dropdown">
-        <a href="#" onclick="return false" style="cursor:default">熱門攻略 <i class="fas fa-chevron-down"></i></a>
+        <a href="#" onclick="return false" style="cursor:default">熱門攻略 <svg class="icon" aria-hidden="true" ><use href="#chevron-down"/></svg></a>
         <div class="dropdown-menu">
           <a href="/express-comparison">🏆 快遞終極對比</a>
           <a href="/sensitive-goods-shipping">📦 敏感貨攻略</a>
@@ -166,7 +167,7 @@ body{font-family:var(--font);color:var(--text-dark);line-height:1.7;background:v
       </li>
       <li><a href="/article-list">文章攻略</a></li>
       <li><a href="/about">關於我們</a></li>
-      <li><a href="https://line.me/ti/p/~subaotw5988" target="_blank" rel="noopener" class="cta-btn"><i class="fab fa-line"></i>LINE 免費估價</a></li>
+      <li><a href="https://line.me/ti/p/~subaotw5988" target="_blank" rel="noopener" class="cta-btn"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg>LINE 免費估價</a></li>
     </ul>
   </div>
 </header>
@@ -297,7 +298,7 @@ body{font-family:var(--font);color:var(--text-dark);line-height:1.7;background:v
     <div class="cta-block">
       <h3>📥 下載完整報告 PDF</h3>
       <p>7章節 · 9大品類通關率 · 10大退件原因 · 運費趨勢分析</p>
-      <a href="/2026-cross-strait-sensitive-goods-logistics-report.pdf" class="btn-download" download onclick="gtag('event','report_download',{event_category:'conversion',event_label:'report_2026'})"><i class="fas fa-download"></i> 免費下載 PDF（176KB）</a>
+      <a href="/2026-cross-strait-sensitive-goods-logistics-report.pdf" class="btn-download" download onclick="gtag('event','report_download',{event_category:'conversion',event_label:'report_2026'})"><svg class="icon" aria-hidden="true" ><use href="#download"/></svg> 免費下載 PDF（176KB）</a>
       <p style="font-size:13px;opacity:.7;margin-top:12px">📊 延伸閱讀：<a href="/top-10-rejected-items" style="color:#fff;text-decoration:underline">2026最常被退件的10種物品 →</a></p>
     </div>
 
@@ -307,7 +308,7 @@ body{font-family:var(--font);color:var(--text-dark);line-height:1.7;background:v
 <footer class="footer">
   <div class="container">
     <div>
-      <h3><i class="fas fa-shipping-fast"></i> 速豹集運</h3>
+      <h3><svg class="icon" aria-hidden="true" ><use href="#shipping-fast"/></svg> 速豹集運</h3>
       <p style="font-size:14px;color:rgba(255,255,255,0.6);">專業台灣到大陸快遞服務<br>專營敏感貨專線</p>
     </div>
     <div>
@@ -327,5 +328,13 @@ body{font-family:var(--font);color:var(--text-dark);line-height:1.7;background:v
   </div>
 </footer>
 
+
+<svg style="display:none" aria-hidden="true">
+<symbol id="bars" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2z"/></symbol>
+<symbol id="chevron-down" viewBox="0 0 24 24"><path fill="currentColor" d="M5.3 8.3a1 1 0 011.4 0L12 13.6l5.3-5.3a1 1 0 111.4 1.4l-6 6a1 1 0 01-1.4 0l-6-6a1 1 0 010-1.4z"/></symbol>
+<symbol id="download" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a1 1 0 011 1v11.6l4.3-4.3a1 1 0 011.4 1.4l-6 6a1 1 0 01-1.4 0l-6-6a1 1 0 011.4-1.4L11 14.6V3a1 1 0 011-1zM3 19h18a1 1 0 010 2H3a1 1 0 010-2z"/></symbol>
+<symbol id="line" viewBox="0 0 24 24"><path fill="currentColor" d="M19.4 9.8c0-3.7-3.6-6.8-8-6.8S3.4 6 3.4 9.8c0 3.4 3 6.2 7 6.7.3 0 .6.2.7.5l.2 1c0 .2 0 .4-.2.5l-.6.7c-.1.1-.1.3 0 .4.2.1.3.1.5 0 .6-.5 3.6-2.1 4.9-3.6.8-1 1.5-2.1 1.5-3.2zM8.6 11h-.4a.4.4 0 01-.4-.4V9.2c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4v1.4c0 .3-.2.4-.4.4zm1.5-1.9v1.5a.4.4 0 01-.4.4h-.4a.4.4 0 01-.4-.4V9.1c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4zm4.1 0c0-.2-.2-.4-.4-.4h-.6V9c0-.2-.2-.4-.4-.4h-.4a.4.4 0 00-.4.4v1.5c0 .2.2.4.4.4H12.4c.2 0 .4-.2.4-.4v-.4h.6v.4c0 .2.2.4.4.4h.4a.4.4 0 00.4-.4V9.1z"/></symbol>
+<symbol id="shipping-fast" viewBox="0 0 24 24"><path fill="currentColor" d="M1 3h13a2 2 0 012 2v1h4a1 1 0 01.7.3l3 4A2 2 0 0124 11v5a2 2 0 01-2 2h-1a3 3 0 01-6 0h-4a3 3 0 01-6 0H4a2 2 0 01-2-2V5a2 2 0 012-2H1zm16 4v3h3.6l-2.2-3H17zM5.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm11 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></symbol>
+</svg>
 </body>
 </html>
