@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
   <style>
-:root{--primary:#FF6600;--primary-dark:#E65100;--secondary:#00B900;--bg:#F8F9FA;--bg-white:#fff;--bg-dark:#1a1a2e;--text:#333;--text-light:#666;--border:#e0e0e0;--radius:12px;--radius-lg:16px;--shadow:0 2px 12px rgba(0,0,0,0.08);--shadow-lg:0 4px 24px rgba(0,0,0,0.12)}
+:root{--primary:#E65100;--primary-dark:#E65100;--secondary:#00B900;--bg:#F8F9FA;--bg-white:#fff;--bg-dark:#1a1a2e;--text:#333;--text-light:#666;--border:#e0e0e0;--radius:12px;--radius-lg:16px;--shadow:0 2px 12px rgba(0,0,0,0.08);--shadow-lg:0 4px 24px rgba(0,0,0,0.12)}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Noto Sans TC',-apple-system,sans-serif;color:var(--text);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased}
 .container{max-width:1140px;margin:0 auto;padding:0 20px}
@@ -45,7 +45,7 @@ h3{font-size:18px;font-weight:700;margin:24px 0 12px;color:#333}
 .btn-line{background:#00B900;color:#fff}
 .btn-line:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,185,0,0.3)}
 .btn-primary{background:var(--primary);color:#fff;font-size:16px;padding:14px 32px;border-radius:28px}
-.btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(255,102,0,0.35)}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(230,81,0,0.35)}
 
 /* Mobile Nav */
 .mobile-nav{display:none;background:#fff;border-top:1px solid var(--border);position:fixed;top:60px;left:0;right:0;bottom:0;z-index:99;overflow-y:auto;padding:16px}
@@ -74,7 +74,7 @@ tr:nth-child(even){background:#fafafa}
 .info-box.red{background:#FFEBEE;border-left-color:#F44336}
 
 /* CTA Box */
-.cta-box{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;padding:36px;border-radius:var(--radius-lg);text-align:center;margin:40px 0;box-shadow:0 6px 30px rgba(255,102,0,0.3)}
+.cta-box{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;padding:36px;border-radius:var(--radius-lg);text-align:center;margin:40px 0;box-shadow:0 6px 30px rgba(230,81,0,0.3)}
 .cta-box h3{color:#fff;font-size:22px;margin-bottom:12px}
 .cta-box p{font-size:15px;opacity:0.9;margin-bottom:20px}
 
@@ -96,7 +96,7 @@ tr:nth-child(even){background:#fafafa}
 .floating-bar .icon-btn{width:52px;height:52px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px;transition:all .3s}
 .floating-bar .line-btn{background:#00B900;color:#fff;box-shadow:0 4px 16px rgba(0,185,0,0.35);text-decoration:none;font-weight:700;font-size:16px;font-family:Arial,Helvetica,sans-serif}
 .floating-bar .line-btn:hover{transform:scale(1.1)}
-.floating-bar .msg-btn{background:linear-gradient(135deg,#FF6600,#FF8800);color:#fff;box-shadow:0 4px 16px rgba(255,102,0,0.4)}
+.floating-bar .msg-btn{background:linear-gradient(135deg,#E65100,#E65100);color:#fff;box-shadow:0 4px 16px rgba(230,81,0,0.4)}
 .floating-bar .msg-btn:hover{transform:scale(1.1)}
 
 @media(max-width:992px){.nav,.header-cta{display:none}.menu-toggle{display:block}}
@@ -256,10 +256,10 @@ tr:nth-child(even){background:#fafafa}
   <div style="margin:40px 0;padding:24px;background:#f8f9fa;border-radius:var(--radius)">
     <h3 style="margin:0 0 16px">📚 相關文章</h3>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px">
-      <a href="/blog/food-shipping-guide" style="display:block;padding:12px 16px;background:#fff;border-radius:8px;font-size:14px;font-weight:500;color:var(--primary);text-decoration:none;border:1px solid var(--border);transition:all .2s" onmouseover="this.style.borderColor='#FF6600'" onmouseout="this.style.borderColor='#e0e0e0'">🍜 食品寄大陸完整攻略</a>
-      <a href="/blog/homemade-food-shipping" style="display:block;padding:12px 16px;background:#fff;border-radius:8px;font-size:14px;font-weight:500;color:var(--primary);text-decoration:none;border:1px solid var(--border);transition:all .2s" onmouseover="this.style.borderColor='#FF6600'" onmouseout="this.style.borderColor='#e0e0e0'">🏠 自製食品寄大陸</a>
-      <a href="/blog/mid-autumn-mooncake-shipping" style="display:block;padding:12px 16px;background:#fff;border-radius:8px;font-size:14px;font-weight:500;color:var(--primary);text-decoration:none;border:1px solid var(--border);transition:all .2s" onmouseover="this.style.borderColor='#FF6600'" onmouseout="this.style.borderColor='#e0e0e0'">🥮 中秋月餅寄大陸</a>
-      <a href="/pricing" style="display:block;padding:12px 16px;background:#fff;border-radius:8px;font-size:14px;font-weight:500;color:var(--primary);text-decoration:none;border:1px solid var(--border);transition:all .2s" onmouseover="this.style.borderColor='#FF6600'" onmouseout="this.style.borderColor='#e0e0e0'">💰 運費查詢</a>
+      <a href="/blog/food-shipping-guide" style="display:block;padding:12px 16px;background:#fff;border-radius:8px;font-size:14px;font-weight:500;color:var(--primary);text-decoration:none;border:1px solid var(--border);transition:all .2s" onmouseover="this.style.borderColor='#E65100'" onmouseout="this.style.borderColor='#e0e0e0'">🍜 食品寄大陸完整攻略</a>
+      <a href="/blog/homemade-food-shipping" style="display:block;padding:12px 16px;background:#fff;border-radius:8px;font-size:14px;font-weight:500;color:var(--primary);text-decoration:none;border:1px solid var(--border);transition:all .2s" onmouseover="this.style.borderColor='#E65100'" onmouseout="this.style.borderColor='#e0e0e0'">🏠 自製食品寄大陸</a>
+      <a href="/blog/mid-autumn-mooncake-shipping" style="display:block;padding:12px 16px;background:#fff;border-radius:8px;font-size:14px;font-weight:500;color:var(--primary);text-decoration:none;border:1px solid var(--border);transition:all .2s" onmouseover="this.style.borderColor='#E65100'" onmouseout="this.style.borderColor='#e0e0e0'">🥮 中秋月餅寄大陸</a>
+      <a href="/pricing" style="display:block;padding:12px 16px;background:#fff;border-radius:8px;font-size:14px;font-weight:500;color:var(--primary);text-decoration:none;border:1px solid var(--border);transition:all .2s" onmouseover="this.style.borderColor='#E65100'" onmouseout="this.style.borderColor='#e0e0e0'">💰 運費查詢</a>
     </div>
   </div>
 </article>

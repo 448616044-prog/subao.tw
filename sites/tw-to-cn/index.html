@@ -129,8 +129,8 @@
       --primary: #0066CC;
       --primary-dark: #004C99;
       --primary-light: #E6F0FA;
-      --secondary: #FF6600;
-      --secondary-dark: #CC5200;
+      --secondary: #E65100;
+      --secondary-dark: #BF360C;
       --line-green: #00B900;
       --bg-white: #FFFFFF;
       --bg-gray: #F5F7FA;
@@ -153,7 +153,7 @@
     a { text-decoration: none; color: inherit; }
     ul { list-style: none; }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-    .btn { display: inline-block; padding: 12px 28px; border-radius: var(--radius); font-weight: 700; font-size: 16px; cursor: pointer; border: none; transition: var(--transition); text-align: center; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 14px 28px; border-radius: var(--radius); font-weight: 700; font-size: 16px; cursor: pointer; border: none; transition: var(--transition); text-align: center; }
     .btn-primary { background: var(--primary); color: var(--text-white); }
     .btn-primary:hover { background: var(--primary-dark); transform: translateY(-2px); }
     .btn-secondary { background: var(--secondary); color: var(--text-white); }
@@ -346,7 +346,7 @@
 </head>
 <body>
   <!-- 公告栏 P1-1 -->
-  <div id="announcementBar" style="background:linear-gradient(135deg,#FF6600,#FF8800);color:#fff;text-align:center;padding:10px 16px;font-size:14px;position:relative;z-index:1001;display:flex;align-items:center;justify-content:center;gap:12px">
+  <div id="announcementBar" style="background:linear-gradient(135deg,#E65100,#E65100);color:#fff;text-align:center;padding:10px 16px;font-size:14px;position:relative;z-index:1001;display:flex;align-items:center;justify-content:center;gap:12px">
     <span>📢 敏感貨專線正常收件｜LINE即時報價，30分鐘內回覆</span>
     <a href="https://line.me/ti/p/~subaotw5988" target="_blank" style="color:#fff;font-weight:700;text-decoration:underline" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'announcement_bar'})">立即諮詢 →</a>
     <button onclick="document.getElementById('announcementBar').style.display='none'" style="position:absolute;right:12px;background:none;border:none;color:#fff;cursor:pointer;font-size:18px;padding:0 8px">&times;</button>
@@ -466,27 +466,27 @@
       <div class="quick-entry-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:900px;margin:0 auto">
         <a href="/can-i-ship" style="background:var(--bg-white);padding:24px;border-radius:var(--radius-lg);text-align:center;box-shadow:var(--shadow);transition:var(--transition);display:block" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
           <div style="font-size:36px;margin-bottom:8px">🔍</div>
-          <h4 style="font-weight:700;font-size:16px;margin:0 0 4px">可以寄嗎</h4>
+          <h3 style="font-weight:700;font-size:16px;margin:0 0 4px">可以寄嗎</h3>
           <p style="font-size:13px;color:var(--text-light);margin:0">一秒查詢商品能不能寄</p>
         </a>
         <a href="/pricing" style="background:var(--bg-white);padding:24px;border-radius:var(--radius-lg);text-align:center;box-shadow:var(--shadow);transition:var(--transition);display:block" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
           <div style="font-size:36px;margin-bottom:8px"><i class="fas fa-tag"></i></div>
-          <h4 style="font-weight:700;font-size:16px;margin:0 0 4px">運費報價</h4>
+          <h3 style="font-weight:700;font-size:16px;margin:0 0 4px">運費報價</h3>
           <p style="font-size:13px;color:var(--text-light);margin:0">透明定價，無隱藏費用</p>
         </a>
         <a href="/express-comparison" style="background:linear-gradient(135deg,#fef3c7,#fde68a);padding:24px;border-radius:var(--radius-lg);text-align:center;box-shadow:var(--shadow);transition:var(--transition);display:block;border:2px solid #f59e0b" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
           <div style="font-size:36px;margin-bottom:8px">🏆</div>
-          <h4 style="font-weight:700;font-size:16px;margin:0 0 4px;color:#92400e">快遞對比</h4>
+          <h3 style="font-weight:700;font-size:16px;margin:0 0 4px;color:#92400e">快遞對比</h3>
           <p style="font-size:13px;color:var(--text-light);margin:0">5大渠道終極評比</p>
         </a>
         <a href="/sensitive-goods-shipping" style="background:linear-gradient(135deg,#FFF0E6,#FFE0CC);padding:24px;border-radius:var(--radius-lg);text-align:center;box-shadow:var(--shadow);transition:var(--transition);display:block;border:2px solid var(--primary)" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
           <div style="font-size:36px;margin-bottom:8px">📦</div>
-          <h4 style="font-weight:700;font-size:16px;margin:0 0 4px;color:var(--primary-dark)">敏感貨攻略</h4>
+          <h3 style="font-weight:700;font-size:16px;margin:0 0 4px;color:var(--primary-dark)">敏感貨攻略</h3>
           <p style="font-size:13px;color:var(--text-light);margin:0">9大品類通關指南</p>
         </a>
         <a href="/pricing-calculator" style="background:var(--bg-white);padding:24px;border-radius:var(--radius-lg);text-align:center;box-shadow:var(--shadow);transition:var(--transition);display:block" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
           <div style="font-size:36px;margin-bottom:8px">🧮</div>
-          <h4 style="font-weight:700;font-size:16px;margin:0 0 4px">運費試算</h4>
+          <h3 style="font-weight:700;font-size:16px;margin:0 0 4px">運費試算</h3>
           <p style="font-size:13px;color:var(--text-light);margin:0">30秒快速估算運費</p>
         </a>
       </div>
@@ -564,27 +564,27 @@
       <div class="features-grid">
         <div class="feature-item">
           <div class="feature-icon"><i class="fas fa-leaf"></i></div>
-          <h4>敏感貨專線</h4>
+          <h4>敏感貨專線</h3>
           <p>保健品、茶葉、化妝品、食品，全部可寄</p>
         </div>
         <div class="feature-item">
           <div class="feature-icon"><i class="fas fa-clock"></i></div>
-          <h4>時效穩定</h4>
+          <h4>時效穩定</h3>
           <p>空運3-5天，經濟線7-12天，延誤即理賠</p>
         </div>
         <div class="feature-item">
           <div class="feature-icon"><i class="fas fa-yen-sign"></i></div>
-          <h4>價格透明</h4>
+          <h4>價格透明</h3>
           <p>下單前報價，絕無隱藏費用</p>
         </div>
         <div class="feature-item">
           <div class="feature-icon"><i class="fab fa-line"></i></div>
-          <h4>LINE客服</h4>
+          <h4>LINE客服</h3>
           <p>平均30分鐘內回覆，語音/圖片皆可</p>
         </div>
         <div class="feature-item">
           <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-          <h4>貨物保障</h4>
+          <h4>貨物保障</h3>
           <p>每筆訂單提供基本理賠，寄得更安心</p>
         </div>
       </div>
@@ -599,25 +599,25 @@
         <div class="process-step">
           <div class="step-number">1</div>
           <div class="step-icon"><i class="fas fa-comment-dots"></i></div>
-          <h4 class="step-title">LINE咨詢</h4>
+          <h4 class="step-title">LINE咨詢</h3>
           <p class="step-description">加入LINE，告知商品與重量，客服評估可寄性</p>
         </div>
         <div class="process-step">
           <div class="step-number">2</div>
           <div class="step-icon"><i class="fas fa-box"></i></div>
-          <h4 class="step-title">寄至倉庫</h4>
+          <h4 class="step-title">寄至倉庫</h3>
           <p class="step-description">將商品寄至速豹集運台灣倉庫（台北/高雄可面交）</p>
         </div>
         <div class="process-step">
           <div class="step-number">3</div>
           <div class="step-icon"><i class="fas fa-plane"></i></div>
-          <h4 class="step-title">跨境運輸</h4>
+          <h4 class="step-title">跨境運輸</h3>
           <p class="step-description">倉庫查驗包裝，支付運費後發貨，全程追蹤</p>
         </div>
         <div class="process-step">
           <div class="step-number">4</div>
           <div class="step-icon"><i class="fas fa-truck"></i></div>
-          <h4 class="step-title">送達大陸</h4>
+          <h4 class="step-title">送達大陸</h3>
           <p class="step-description">3-5天送至收件人手中，LINE通知送達</p>
         </div>
       </div>
@@ -699,7 +699,7 @@
           <div class="testimonial-author">
             <div class="author-avatar" style="background:#7c3aed;">客</div>
             <div class="author-info">
-              <h4>客戶 A（隱私保護）</h4>
+              <h4>客戶 A（隱私保護）</h3>
               <p>新北市．美妝代購</p>
             </div>
           </div>
@@ -711,7 +711,7 @@
           <div class="testimonial-author">
             <div class="author-avatar">黃</div>
             <div class="author-info">
-              <h4>黃小姐</h4>
+              <h4>黃小姐</h3>
               <p>台北市．保健品代購</p>
             </div>
           </div>
@@ -723,7 +723,7 @@
           <div class="testimonial-author">
             <div class="author-avatar">李</div>
             <div class="author-info">
-              <h4>李先生</h4>
+              <h4>李先生</h3>
               <p>南投縣．茶農</p>
             </div>
           </div>
@@ -735,7 +735,7 @@
           <div class="testimonial-author">
             <div class="author-avatar">陳</div>
             <div class="author-info">
-              <h4>陳小姐</h4>
+              <h4>陳小姐</h3>
               <p>高雄市．美妝電商</p>
             </div>
           </div>
@@ -893,9 +893,9 @@
 .floating-bar .icon-btn{width:52px;height:52px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px;transition:all .3s}
 .floating-bar .line-btn{background:#00B900;color:#fff;box-shadow:0 4px 16px rgba(0,185,0,0.35);text-decoration:none;font-weight:700;font-size:16px;font-family:Arial,Helvetica,sans-serif}
 .floating-bar .line-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(0,185,0,0.5)}
-.floating-bar .msg-btn{background:linear-gradient(135deg,#FF6600,#FF8800);color:#fff;box-shadow:0 4px 16px rgba(255,102,0,0.4);animation:pulse 2s infinite}
-.floating-bar .msg-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(255,102,0,0.5)}
-@keyframes pulse{0%,100%{box-shadow:0 4px 16px rgba(255,102,0,0.4)}50%{box-shadow:0 4px 24px rgba(255,102,0,0.6)}}
+.floating-bar .msg-btn{background:linear-gradient(135deg,#E65100,#E65100);color:#fff;box-shadow:0 4px 16px rgba(230,81,0,0.4);animation:pulse 2s infinite}
+.floating-bar .msg-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(230,81,0,0.5)}
+@keyframes pulse{0%,100%{box-shadow:0 4px 16px rgba(230,81,0,0.4)}50%{box-shadow:0 4px 24px rgba(230,81,0,0.6)}}
 .contact-modal{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:10000;align-items:center;justify-content:center}
 .contact-modal.active{display:flex}
 .contact-modal .modal-box{background:#fff;border-radius:16px;padding:32px;max-width:400px;width:90%;position:relative;animation:slideUp .3s}
@@ -906,9 +906,9 @@
 .contact-modal .field{margin-bottom:14px}
 .contact-modal .field label{display:block;font-size:13px;font-weight:600;color:#555;margin-bottom:4px}
 .contact-modal .field input,.contact-modal .field textarea{width:100%;padding:10px 14px;border:1px solid #e2e8f0;border-radius:8px;font-size:14px;font-family:inherit;outline:none;transition:border .2s}
-.contact-modal .field input:focus,.contact-modal .field textarea:focus{border-color:#FF6600}
+.contact-modal .field input:focus,.contact-modal .field textarea:focus{border-color:#E65100}
 .contact-modal .field textarea{height:80px;resize:none}
-.contact-modal .submit-btn{width:100%;padding:12px;background:linear-gradient(135deg,#FF6600,#FF8800);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
+.contact-modal .submit-btn{width:100%;padding:12px;background:linear-gradient(135deg,#E65100,#E65100);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
 .contact-modal .submit-btn:hover{transform:translateY(-1px)}
 .contact-modal .success-msg{display:none;text-align:center;padding:20px 0}
 .contact-modal .success-msg .check{font-size:48px;color:#10b981;margin-bottom:12px}

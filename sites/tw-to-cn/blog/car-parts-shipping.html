@@ -62,7 +62,7 @@
   }
   </script>
   <style>
-:root{--primary:#1A56DB;--primary-light:#E8F0FE;--secondary:#FF6600;--secondary-dark:#E65100;--line-green:#00B900;--bg-white:#fff;--bg-gray:#F8F9FA;--text-dark:#1E293B;--border:#E2E8F0;--shadow:0 2px 16px rgba(0,0,0,0.08);--radius:8px;--radius-lg:16px;--radius-pill:50px;--transition:all .25s ease}
+:root{--primary:#1A56DB;--primary-light:#E8F0FE;--secondary:#E65100;--secondary-dark:#E65100;--line-green:#00B900;--bg-white:#fff;--bg-gray:#F8F9FA;--text-dark:#1E293B;--border:#E2E8F0;--shadow:0 2px 16px rgba(0,0,0,0.08);--radius:8px;--radius-lg:16px;--radius-pill:50px;--transition:all .25s ease}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Microsoft JhengHei",sans-serif;color:var(--text-dark);line-height:1.7;background:var(--bg-gray)}
 .container{max-width:860px;margin:0 auto;padding:0 20px}
@@ -79,8 +79,8 @@ a{text-decoration:none;color:var(--primary)}
 .nav .btn-line:hover{color:#fff;background:#009900;transform:translateY(-1px)}
 .menu-toggle{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text-dark)}
 .mobile-menu{display:none}
-    .pillar-hero{padding:140px 0 60px;background:linear-gradient(135deg,#1A1A2E 0%,#2D2D44 50%,#FF6600 150%);color:#fff;text-align:center;position:relative;overflow:hidden}
-    .pillar-hero::before{content:'';position:absolute;top:-30%;right:-15%;width:500px;height:500px;border-radius:50%;background:rgba(255,102,0,.12);pointer-events:none}
+    .pillar-hero{padding:140px 0 60px;background:linear-gradient(135deg,#1A1A2E 0%,#2D2D44 50%,#E65100 150%);color:#fff;text-align:center;position:relative;overflow:hidden}
+    .pillar-hero::before{content:'';position:absolute;top:-30%;right:-15%;width:500px;height:500px;border-radius:50%;background:rgba(230,81,0,.12);pointer-events:none}
     .pillar-hero::after{content:'';position:absolute;bottom:-20%;left:-10%;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,.05);pointer-events:none}
     .pillar-hero .container{position:relative;z-index:1}
     .pillar-hero .badge-row{display:flex;justify-content:center;gap:10px;margin-bottom:20px;flex-wrap:wrap}
@@ -108,8 +108,8 @@ a{text-decoration:none;color:var(--primary)}
     .highlight h4{margin-bottom:8px;color:var(--primary)}
     .highlight.blue{background:#E8F4FD;border-left-color:#0077CC}
     .highlight.blue h4{color:#0077CC}
-    .highlight.orange{background:#FFF3E0;border-left-color:#FF6600}
-    .highlight.orange h4{color:#FF6600}
+    .highlight.orange{background:#FFF3E0;border-left-color:#E65100}
+    .highlight.orange h4{color:#E65100}
     .highlight.green{background:#E8F5E9;border-left-color:#2E7D32}
     .highlight.green h4{color:#2E7D32}
     .warning-box{background:#FFF3E0;padding:24px;border-radius:var(--radius);margin:24px 0;border-left:4px solid var(--secondary)}
@@ -162,9 +162,9 @@ a{text-decoration:none;color:var(--primary)}
     .floating-bar .icon-btn{width:52px;height:52px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px;transition:all .3s}
     .floating-bar .line-btn{background:#00B900;color:#fff;box-shadow:0 4px 16px rgba(0,185,0,0.35);text-decoration:none;font-weight:700;font-size:16px;font-family:Arial,Helvetica,sans-serif}
     .floating-bar .line-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(0,185,0,0.5)}
-    .floating-bar .msg-btn{background:linear-gradient(135deg,#FF6600,#FF8800);color:#fff;box-shadow:0 4px 16px rgba(255,102,0,0.4);animation:pulse 2s infinite}
-    .floating-bar .msg-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(255,102,0,0.5)}
-    @keyframes pulse{0%,100%{box-shadow:0 4px 16px rgba(255,102,0,0.4)}50%{box-shadow:0 4px 24px rgba(255,102,0,0.6)}}
+    .floating-bar .msg-btn{background:linear-gradient(135deg,#E65100,#E65100);color:#fff;box-shadow:0 4px 16px rgba(230,81,0,0.4);animation:pulse 2s infinite}
+    .floating-bar .msg-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(230,81,0,0.5)}
+    @keyframes pulse{0%,100%{box-shadow:0 4px 16px rgba(230,81,0,0.4)}50%{box-shadow:0 4px 24px rgba(230,81,0,0.6)}}
     .contact-modal{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:10000;align-items:center;justify-content:center}
     .contact-modal.active{display:flex}
     .contact-modal .modal-box{background:#fff;border-radius:16px;padding:32px;max-width:400px;width:90%;position:relative;animation:slideUp .3s}
@@ -175,9 +175,9 @@ a{text-decoration:none;color:var(--primary)}
     .contact-modal .field{margin-bottom:14px}
     .contact-modal .field label{display:block;font-size:13px;font-weight:600;color:#555;margin-bottom:4px}
     .contact-modal .field input,.contact-modal .field textarea{width:100%;padding:10px 14px;border:1px solid #e2e8f0;border-radius:8px;font-size:14px;font-family:inherit;outline:none;transition:border .2s}
-    .contact-modal .field input:focus,.contact-modal .field textarea:focus{border-color:#FF6600}
+    .contact-modal .field input:focus,.contact-modal .field textarea:focus{border-color:#E65100}
     .contact-modal .field textarea{height:80px;resize:none}
-    .contact-modal .submit-btn{width:100%;padding:12px;background:linear-gradient(135deg,#FF6600,#FF8800);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
+    .contact-modal .submit-btn{width:100%;padding:12px;background:linear-gradient(135deg,#E65100,#E65100);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
     .contact-modal .submit-btn:hover{transform:translateY(-1px)}
     .contact-modal .success-msg{display:none;text-align:center;padding:20px 0}
     .contact-modal .success-msg .check{font-size:48px;color:#10b981;margin-bottom:12px}
@@ -239,16 +239,16 @@ a{text-decoration:none;color:var(--primary)}
   </section>
 
   <div class="article-content">
-    <div style="background:linear-gradient(135deg,#1A1A2E 0%,#2D2D44 100%);border-left:4px solid #FF6600;border-radius:8px;padding:20px 24px;margin-bottom:32px;color:#fff">
+    <div style="background:linear-gradient(135deg,#1A1A2E 0%,#2D2D44 100%);border-left:4px solid #E65100;border-radius:8px;padding:20px 24px;margin-bottom:32px;color:#fff">
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
-        <span style="background:#FF6600;color:#fff;font-size:12px;font-weight:700;padding:2px 10px;border-radius:12px">速豹集運</span>
+        <span style="background:#E65100;color:#fff;font-size:12px;font-weight:700;padding:2px 10px;border-radius:12px">速豹集運</span>
         <span style="font-size:11px;opacity:0.7">✨ AI協助總結</span>
       </div>
       <p style="font-size:16px;line-height:1.8;margin:0">
         <strong>台灣汽車零件可以寄大陸！</strong>剎車片、濾清器、火星塞、傳感器等非液體非易燃汽配可走敏感貨專線寄送。<br>
         <strong>需要注意</strong>：液體類（機油/剎車油）不可寄、舊零件需確認是否受進口管制、品牌正品需保留購買憑證。<br>
         <strong>不能寄</strong>：安全氣囊、壓縮氣體罐、仿冒品。<br>
-        <a href="https://line.me/ti/p/~subaotw5988" style="color:#FF6600;font-weight:700" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">不確定能不能寄？傳零件照片30分鐘內回覆 →</a>
+        <a href="https://line.me/ti/p/~subaotw5988" style="color:#E65100;font-weight:700" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">不確定能不能寄？傳零件照片30分鐘內回覆 →</a>
       </p>
     </div>
 
