@@ -2,17 +2,17 @@
 
 ## 运行摘要
 
-- **最近执行**: 2026-06-16 23:55 CST
+- **最近执行**: 2026-06-17 23:55 CST
 - **推送脚本**: `baidu-push-runner.py`（direct curl 执行）
-- **Sitemap**: `sites/subaotw-cn/sitemap.xml`（71个URL，含重复）
+- **Sitemap**: `sites/subaotw-cn/sitemap.xml`（80个唯一URL）
 - **推送日志**: `baidu-push-log.md`
 
 ## 最近一次推送
 
-- 起点索引: 5 → 尝试推送 [5]-[9] 共 5 条
-- API 返回: `{"error":400,"message":"over quota"}` ❌
-- 原因: 今日百度配额已用完（每日5条，可能已有其他途径消耗）
-- 下次起点: **5**（未推进，下次重试同批URL）
+- 起点索引: 5 → 重试 [5]-[9] 共 5 条 ✅
+- API 返回: `{"remain":5,"success":5}`（HTTP 200）
+- 下次起点: **10**
+- 累计推送: 10/80 URL（12.5%）
 
 ## 注意事项
 

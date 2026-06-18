@@ -26,4 +26,15 @@
 - **API返回**: `{"error":400,"message":"over quota"}`
 - **状态**: ⚠️ 配额已满，索引未推进
 
-## next_start: 5
+## 2026-06-17 23:55
+- **推送URL数**: 5 ✅
+- **起点索引**: 5（重试上轮因配额未推的URL）
+- [5] https://www.subaotw.cn/faq
+- [6] https://www.subaotw.cn/pricing-calculator
+- [7] https://www.subaotw.cn/volume-calculator
+- [8] https://www.subaotw.cn/about
+- [9] https://www.subaotw.cn/contact
+- **API返回**: `{"remain":5,"success":5}`
+- **状态**: ✅ 全部推送成功
+
+## next_start: 10

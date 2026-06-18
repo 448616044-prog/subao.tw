@@ -1,5 +1,27 @@
 # 外链机会每日搜索 — 执行记录
 
+## 2026-06-17 执行
+
+### 搜索维度
+- 货代专属市场（FreightCue、ForwardingCompanies）
+- 中国B2B黄页（顺企网/11467）
+- 台湾贸易B2B（名优资源网、台湾贸易行、BizDirLib）
+- 全球免费企业目录（directoryof.business、GS Directory）
+- 货代导航网站（货代之家、货代导航网、货代网导航）
+- 台湾物流门户（物流.tw）
+
+### 核心发现
+- **FreightCue**（DR45+）— 101K+货代！Free for forwarders，高精准货代市场 🏆
+- **顺企网/11467**（DR45+）— 中国B2B黄页，台湾物流集运专区已存在
+- **ForwardingCompanies**（DR40+）— 货代评价目录，90 China已收录
+- **GS Directory** — 免费dofollow外链，人工审核24-48h
+
+### 新增平台数
+12个（A+级3个物流B2B高权重 + B+级5个台湾/全球目录 + C+级4个货代导航/物流门户）
+
+### 总表更新
+52 → 64目标 | 中高价值DA40+新增3个（FreightCue/ForwardingCompanies/顺企网）
+
 ## 2026-06-16 执行
 
 ### 搜索维度
