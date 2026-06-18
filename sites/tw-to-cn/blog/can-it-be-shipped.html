@@ -50,7 +50,7 @@
     .header{background:var(--bg-card);border-bottom:1px solid var(--border);position:fixed;top:0;left:0;right:0;z-index:100}
     .header .container{display:flex;align-items:center;justify-content:space-between;height:64px}
     .menu-toggle{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text-dark)}
-    .logo{font-size:20px;font-weight:700;color:var(--primary);text-decoration:none}.logo span{color:var(--accent);font-size:12px;margin-left:4px}
+    .logo{font-size:20px;font-weight:700;color:var(--primary);text-decoration:none}.logo img{background:#fff;max-height:50px;max-width:200px;width:auto;display:block}.logo span{color:var(--accent);font-size:12px;margin-left:4px}
     .nav{display:flex;gap:20px}.nav a{color:var(--text-mid);font-weight:500;text-decoration:none;font-size:14px}.nav a:hover{color:var(--primary)}
     .hero{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);color:#fff;padding:120px 0 40px;text-align:center}
     .hero h1{font-size:32px;font-weight:700;margin:16px 0;line-height:1.4}.hero p{font-size:16px;opacity:0.9}
@@ -70,7 +70,7 @@
     .faq-a{font-size:15px;color:var(--text-mid)}
     .related{margin-top:40px;padding-top:20px;border-top:1px solid var(--border)}
     .related h3{font-size:18px;margin-bottom:16px}
-    .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;max-width:900px;margin:0 auto;padding:0 20px}
     .related-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:16px;text-decoration:none;color:var(--text-dark);font-size:14px;transition:all .2s}
     .related-card:hover{border-color:var(--primary);transform:translateY(-2px)}
     .related-card strong{color:var(--primary);display:block;margin-bottom:4px}
@@ -255,7 +255,7 @@
     <div class="faq-box"><div class="faq-q">娃娃/玩偶/公仔可以寄大陸嗎？</div><div class="faq-a">可以！娃娃和玩具是不含電池/液體的一般貨品，通關最順暢。無論是絨毛布偶、精緻收藏娃娃還是塑膠公仔都可以寄。50-100個大量也收，原盒或重新打包都OK。貴州、四川等偏遠地區也可送達。詳見<a href="/blog/toys-dolls-shipping-guide">娃娃玩具寄大陸完整攻略</a>。</div></div>
 
     <!-- INLINE LINE CTA -->
-    <div style="background:linear-gradient(135deg,#00B900,#009900);color:#fff;padding:20px 24px;border-radius:12px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;box-shadow:0 4px 16px rgba(0,138,0,0.3)">
+    <div style="background:linear-gradient(135deg,#008A00,#009900);color:#fff;padding:20px 24px;border-radius:12px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;box-shadow:0 4px 16px rgba(0,138,0,0.3)">
       <div style="flex:1;min-width:200px"><p style="margin:0;font-size:16px;font-weight:700">📦 你的東西不在清單上？</p><p style="margin:4px 0 0;font-size:13px;opacity:0.9">傳照片到LINE，30分鐘內告訴你能不能寄！</p></div>
       <a href="https://line.me/ti/p/~subaotw5988" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#fff;color:#008A00;padding:10px 20px;border-radius:24px;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,0.15)" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> 問能不能寄</a>
     </div>

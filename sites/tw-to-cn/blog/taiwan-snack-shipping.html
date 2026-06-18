@@ -65,7 +65,7 @@
     .header{position:fixed;top:0;left:0;right:0;height:70px;background:var(--card);z-index:1000;box-shadow:var(--shadow)}
     .header .container{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:1200px}
     .logo{font-size:24px;font-weight:700;color:var(--primary)}
-    .nav{display:flex;align-items:center;gap:32px}
+    .logo img{background:#fff;max-height:50px;max-width:200px;width:auto;display:block}.nav{display:flex;align-items:center;gap:32px}
     .nav a{font-weight:500;color:var(--text);text-decoration:none;font-size:15px;transition:all .2s}
     .nav a:hover{color:var(--primary)}
     .nav-dropdown{position:relative;display:flex;align-items:center}
@@ -102,11 +102,11 @@
     .cta-box h3{color:#fff!important;font-size:20px;margin-bottom:8px}
     .cta-btn{display:inline-block;background:#008A00;color:#fff;padding:12px 32px;border-radius:50px;font-weight:700;font-size:16px;text-decoration:none;transition:all .2s}
     .cta-btn:hover{background:#009A00;transform:translateY(-2px)}
-    .related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin:24px 0}
+    .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;max-width:900px;margin:0 auto;padding:0 20px}
     .related-card{background:var(--bg);border-radius:12px;padding:18px;text-decoration:none;color:var(--text);box-shadow:var(--shadow-sm);transition:all .2s;border:1px solid var(--border)}
     .related-card:hover{border-color:var(--primary);transform:translateY(-2px)}
-    .related-card h3{font-size:15px;color:var(--primary);margin-bottom:4px}
-    .related-card p{font-size:13px;color:var(--text-light);margin:0}
+    .related-card h3{font-size:15px;font-weight:600;color:var(--text-dark);margin-bottom:8px;line-height:1.4}
+    .related-card p{font-size:13px;color:var(--text-light)}
     .footer{background:#111;color:#ddd;padding:40px 0 20px;text-align:center;font-size:13px}
     .footer a{color:#64748b;text-decoration:none}
     @media(max-width:768px){.hero h1{font-size:24px}.article-content{padding:24px 16px}.nav{display:none}}

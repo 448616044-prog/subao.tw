@@ -24,7 +24,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"></noscript>
   <style>
     .icon{width:1em;height:1em;display:inline-block;vertical-align:-0.125em;fill:currentColor}
-    :root{--primary:#0066CC;--primary-dark:#004C99;--primary-light:#E6F0FA;--secondary:#E65100;--secondary-dark:#CC5200;--line-green:#00B900;--bg-white:#FFF;--bg-gray:#F5F7FA;--bg-dark:#1A1A2E;--text-dark:#333;--text-light:#666;--text-white:#fff;--border:#E0E0E0;--shadow:0 2px 8px rgba(0,0,0,0.1);--shadow-lg:0 8px 24px rgba(0,0,0,0.15);--radius:8px;--radius-lg:16px;--transition:all 0.3s ease}
+    :root{--primary:#0066CC;--primary-dark:#004C99;--primary-light:#E6F0FA;--secondary:#E65100;--secondary-dark:#CC5200;--line-green:#008A00;--bg-white:#FFF;--bg-gray:#F5F7FA;--bg-dark:#1A1A2E;--text-dark:#333;--text-light:#666;--text-white:#fff;--border:#E0E0E0;--shadow:0 2px 8px rgba(0,0,0,0.1);--shadow-lg:0 8px 24px rgba(0,0,0,0.15);--radius:8px;--radius-lg:16px;--transition:all 0.3s ease}
     *{margin:0;padding:0;box-sizing:border-box}
     .container{max-width:1280px;margin:0 auto;padding:0 24px}
     body{font-family:'Noto Sans TC',sans-serif;color:var(--text-dark);line-height:1.8;font-size:16px;background:var(--bg-gray)}
@@ -85,7 +85,7 @@
     .faq-a{color:var(--text-dark);line-height:1.7}
     .related-articles{background:var(--bg-gray);padding:60px 0}
     .related-articles h2{font-size:22px;font-weight:700;margin-bottom:24px;text-align:center}
-    .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;max-width:900px;margin:0 auto;padding:0 20px}
     .related-card{background:var(--bg-white);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);transition:var(--transition)}
     .related-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
     .related-card h3{font-size:15px;font-weight:600;color:var(--text-dark);margin-bottom:8px;line-height:1.4}
@@ -114,7 +114,7 @@
     @media(max-width:768px){.nav{display:none}.menu-toggle{display:block}.article-hero h1{font-size:24px}.article-content{padding:24px;margin:-10px 10px 20px}.related-grid{grid-template-columns:1fr}.footer .container{grid-template-columns:1fr}.step-box{flex-direction:column}}
 
     /* 浮动底栏 */
-    .float-bar{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,#00B900 0%,#009900 100%);padding:12px 20px;z-index:998;display:none;align-items:center;justify-content:center;gap:16px;box-shadow:0 -4px 20px rgba(0,0,0,0.2)}
+    .float-bar{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,#008A00 0%,#009900 100%);padding:12px 20px;z-index:998;display:none;align-items:center;justify-content:center;gap:16px;box-shadow:0 -4px 20px rgba(0,0,0,0.2)}
     .float-bar.show{display:flex}
     .float-bar-text{flex:1;max-width:600px}
     .float-bar-text p{color:#fff;font-size:15px;font-weight:500;margin:0}
@@ -427,7 +427,7 @@
       <h3>💡 免稅額度計算範例</h3>
       <p><strong>情境：</strong>你從台灣寄一個包裹給在大陸的家人，內含茶葉（價值500元）和護膚品（價值300元）</p>
 <!-- INLINE LINE CTA -->
-<div style="background:linear-gradient(135deg,#00B900,#009900);color:#fff;padding:20px 24px;border-radius:12px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;box-shadow:0 4px 16px rgba(0,138,0,0.3)">
+<div style="background:linear-gradient(135deg,#008A00,#009900);color:#fff;padding:20px 24px;border-radius:12px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;box-shadow:0 4px 16px rgba(0,138,0,0.3)">
   <div style="flex:1;min-width:200px">
     <p style="margin:0;font-size:16px;font-weight:700">📦 不確定能不能寄？</p>
     <p style="margin:4px 0 0;font-size:13px;opacity:0.9">傳照片到LINE，30分鐘內免費評估！</p>

@@ -68,7 +68,7 @@
   </script>
   <style>
     .icon{width:1em;height:1em;display:inline-block;vertical-align:-0.125em;fill:currentColor}
-    :root{--primary:#0066CC;--primary-dark:#004C99;--primary-light:#E6F0FA;--secondary:#E65100;--secondary-dark:#CC5200;--line-green:#00B900;--bg-white:#FFF;--bg-gray:#F5F7FA;--bg-dark:#1A1A2E;--text-dark:#333;--text-light:#666;--text-white:#fff;--border:#E0E0E0;--shadow:0 2px 8px rgba(0,0,0,0.1);--shadow-lg:0 8px 24px rgba(0,0,0,0.15);--radius:8px;--radius-lg:16px;--transition:all 0.3s ease}
+    :root{--primary:#0066CC;--primary-dark:#004C99;--primary-light:#E6F0FA;--secondary:#E65100;--secondary-dark:#CC5200;--line-green:#008A00;--bg-white:#FFF;--bg-gray:#F5F7FA;--bg-dark:#1A1A2E;--text-dark:#333;--text-light:#666;--text-white:#fff;--border:#E0E0E0;--shadow:0 2px 8px rgba(0,0,0,0.1);--shadow-lg:0 8px 24px rgba(0,0,0,0.15);--radius:8px;--radius-lg:16px;--transition:all 0.3s ease}
     *{margin:0;padding:0;box-sizing:border-box}
     .container{max-width:1280px;margin:0 auto;padding:0 24px}
     body{font-family:'Noto Sans TC',sans-serif;color:var(--text-dark);line-height:1.8;font-size:16px;background:var(--bg-gray)}
@@ -118,7 +118,7 @@
     .article-content .cta-box .btn{background:#fff;color:var(--secondary);font-size:16px;padding:14px 32px}
     .related-articles{background:var(--bg-gray);padding:60px 0}
     .related-articles h2{font-size:22px;font-weight:700;margin-bottom:24px;text-align:center}
-    .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;max-width:900px;margin:0 auto;padding:0 20px}
     .related-card{background:var(--bg-white);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);transition:var(--transition)}
     .related-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
     .related-card h3{font-size:15px;font-weight:600;color:var(--text-dark);margin-bottom:8px;line-height:1.4}
@@ -237,7 +237,7 @@
 
   <div class="article-content">
     <div style="background:linear-gradient(135deg,#E3F2FD 0%,#BBDEFB 100%);border-left:4px solid #1976D2;border-radius:8px;padding:20px 24px;margin-bottom:32px">
-      <p style="font-size:16px;line-height:1.8;margin:0;color:#fff">
+      <p style="font-size:16px;line-height:1.8;margin:0;color:#1A237E">
         <strong>速豹提供台灣⇄大陸雙向物流服務</strong>，無論是台灣寄保健品、食品到大陸，還是大陸寄衣物、個人物品回台灣，都能一站式處理。<br>
         本文比較雙向物流的<strong>費用、時效、通關差異</strong>，幫助您根據需求選擇最適合的方案。<br>
         <a href="https://line.me/ti/p/~subaotw5988" style="color:#1976D2;font-weight:700" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">無論哪個方向，LINE諮詢立即報價 →</a>
@@ -288,7 +288,7 @@
       <li>食品寄台灣也需符合台灣食藥署相關規定</li>
     </ul>
 
-    <div style="background:linear-gradient(135deg,#00B900,#009900);color:#fff;padding:20px 24px;border-radius:12px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
+    <div style="background:linear-gradient(135deg,#008A00,#009900);color:#fff;padding:20px 24px;border-radius:12px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
       <div style="flex:1;min-width:200px">
         <p style="margin:0;font-size:16px;font-weight:700">🔄 雙向物流需求？</p>
         <p style="margin:4px 0 0;font-size:13px;opacity:0.9">不論哪個方向，LINE諮詢立即確認能否寄送+報價！</p>
@@ -399,7 +399,7 @@
   </footer>
 
   <style>
-.floating-cta{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:9999;background:linear-gradient(135deg,#00B900,#009900);color:#fff;padding:14px 28px;border-radius:30px;font-weight:700;font-size:15px;box-shadow:0 4px 20px rgba(0,138,0,0.4);text-decoration:none;display:flex;align-items:center;gap:8px;animation:pulse 2s infinite}
+.floating-cta{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:9999;background:linear-gradient(135deg,#008A00,#009900);color:#fff;padding:14px 28px;border-radius:30px;font-weight:700;font-size:15px;box-shadow:0 4px 20px rgba(0,138,0,0.4);text-decoration:none;display:flex;align-items:center;gap:8px;animation:pulse 2s infinite}
 .floating-cta:hover{transform:translateX(-50%) translateY(-2px)}
 @keyframes pulse{0%,100%{box-shadow:0 4px 20px rgba(0,138,0,0.4)}50%{box-shadow:0 4px 30px rgba(0,138,0,0.7)}}
 @media(min-width:769px){.floating-cta{left:auto;right:30px;transform:none}.floating-cta:hover{transform:translateY(-2px)}}

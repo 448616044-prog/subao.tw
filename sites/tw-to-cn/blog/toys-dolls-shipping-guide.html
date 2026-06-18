@@ -135,7 +135,7 @@
 
   <style>
     .icon{width:1em;height:1em;display:inline-block;vertical-align:-0.125em;fill:currentColor}
-    :root{--primary:#0066CC;--primary-dark:#004C99;--primary-light:#E6F0FA;--secondary:#E65100;--secondary-dark:#CC5200;--line-green:#00B900;--bg-white:#FFF;--bg-gray:#F5F7FA;--bg-dark:#1A1A2E;--text-dark:#333;--text-light:#666;--text-white:#fff;--border:#E0E0E0;--shadow:0 2px 8px rgba(0,0,0,0.1);--shadow-lg:0 8px 24px rgba(0,0,0,0.15);--radius:8px;--radius-lg:16px;--transition:all 0.3s ease}
+    :root{--primary:#0066CC;--primary-dark:#004C99;--primary-light:#E6F0FA;--secondary:#E65100;--secondary-dark:#CC5200;--line-green:#008A00;--bg-white:#FFF;--bg-gray:#F5F7FA;--bg-dark:#1A1A2E;--text-dark:#333;--text-light:#666;--text-white:#fff;--border:#E0E0E0;--shadow:0 2px 8px rgba(0,0,0,0.1);--shadow-lg:0 8px 24px rgba(0,0,0,0.15);--radius:8px;--radius-lg:16px;--transition:all 0.3s ease}
     *{margin:0;padding:0;box-sizing:border-box}
     .container{max-width:1280px;margin:0 auto;padding:0 24px}
     body{font-family:'Noto Sans TC',sans-serif;color:var(--text-dark);line-height:1.8;font-size:16px;background:var(--bg-gray)}
@@ -192,7 +192,7 @@
     .related-card{background:var(--bg-white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow);transition:var(--transition);display:block}
     .related-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
     .related-card .tag{display:inline-block;background:#FFF3E0;color:var(--secondary);padding:2px 8px;border-radius:4px;font-size:12px;margin-bottom:8px}
-    .related-card h3{font-size:16px;margin-bottom:6px;color:var(--text-dark)}
+    .related-card h3{font-size:15px;font-weight:600;color:var(--text-dark);margin-bottom:8px;line-height:1.4}
     .related-card p{font-size:13px;color:var(--text-light)}
     .footer{background:var(--bg-dark);color:var(--text-white);padding:40px 0 0}
     .footer .container{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px}
@@ -453,32 +453,12 @@
     <div class="container">
       <h2>相關文章</h2>
       <div class="related-grid">
-        <a href="/blog/shipping-packaging-guide" class="related-card">
-          <div class="tag">包裝教學
-          <a href="/express-comparison" class="related-card" style="border-color:var(--primary);background:linear-gradient(135deg,#FFF0E6,#fff)">
-            <div class="cat" style="color:var(--primary)">🏆 終極對比</div>
-            <h3>台灣寄大陸快遞2026終極對比</h3>
-            <p>5大渠道費用/時效/品類完整評比，一表看懂選對渠道</p>
-          </a>
-        </div>
-          <h3>寄大陸包裹包裝終極指南</h3>
-          <p>各類商品標準包裝SOP，娃娃包裝實例</p>
-        </a>
-        <a href="/blog/personal-belongings-shipping" class="related-card">
-          <div class="tag">搬家寄送</div>
-          <h3>台灣個人行李寄大陸搬家全攻略</h3>
-          <p>衣服、書籍、娃娃等日用品郵寄指南</p>
-        </a>
-        <a href="/blog/tw-to-cn-cost" class="related-card">
-          <div class="tag">運費比較</div>
-          <h3>台灣寄大陸多少錢？</h3>
-          <p>各渠道運費完整比較</p>
-        </a>
-        <a href="/pricing" class="related-card">
-          <div class="tag">價格查詢</div>
-          <h3>速豹集運運費說明</h3>
-          <p>全路線全品類透明定價</p>
-        </a>
+        <a href="/blog/shipping-packaging-guide" class="related-card"><div class="tag">包裝教學</div><h3>寄大陸包裹包裝終極指南</h3><p>各類商品標準包裝SOP，娃娃包裝實例</p></a>
+        <a href="/express-comparison" class="related-card"><div class="tag">🏆 終極對比</div><h3>台灣寄大陸快遞2026終極對比</h3><p>5大渠道費用/時效/品類完整評比，一表看懂選對渠道</p></a>
+        <a href="/blog/personal-belongings-shipping" class="related-card"><div class="tag">搬家寄送</div><h3>台灣個人行李寄大陸搬家全攻略</h3><p>衣服、書籍、娃娃等日用品郵寄指南</p></a>
+        <a href="/blog/tw-to-cn-cost" class="related-card"><div class="tag">運費比較</div><h3>台灣寄大陸多少錢？</h3><p>各渠道運費完整比較</p></a>
+        <a href="/pricing" class="related-card"><div class="tag">價格查詢</div><h3>速豹集運運費說明</h3><p>全路線全品類透明定價</p></a>
+        <a href="/blog/tw-to-cn-prohibited-items" class="related-card"><div class="tag">避免卡關</div><h3>台灣寄大陸禁運品清單</h3><p>哪些不能寄？一次搞懂</p></a>
       </div>
     </div>
   </section>

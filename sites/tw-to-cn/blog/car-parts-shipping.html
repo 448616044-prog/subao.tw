@@ -62,7 +62,7 @@
   }
   </script>
   <style>
-:root{--primary:#1A56DB;--primary-light:#E8F0FE;--secondary:#E65100;--secondary-dark:#E65100;--line-green:#00B900;--bg-white:#fff;--bg-gray:#F8F9FA;--text-dark:#1E293B;--border:#E2E8F0;--shadow:0 2px 16px rgba(0,0,0,0.08);--radius:8px;--radius-lg:16px;--radius-pill:50px;--transition:all .25s ease}
+:root{--primary:#1A56DB;--primary-light:#E8F0FE;--secondary:#E65100;--secondary-dark:#E65100;--line-green:#008A00;--bg-white:#fff;--bg-gray:#F8F9FA;--text-dark:#1E293B;--border:#E2E8F0;--shadow:0 2px 16px rgba(0,0,0,0.08);--radius:8px;--radius-lg:16px;--radius-pill:50px;--transition:all .25s ease}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Microsoft JhengHei",sans-serif;color:var(--text-dark);line-height:1.7;background:var(--bg-gray)}
 .container{max-width:860px;margin:0 auto;padding:0 20px}
@@ -127,12 +127,12 @@ a{text-decoration:none;color:var(--primary)}
     .faq-a{font-size:15px;color:var(--text-dark);line-height:1.7}
     .related-articles{padding:60px 0 40px;background:#fff}
     .related-articles h2{text-align:center;font-size:24px;font-weight:700;margin-bottom:32px}
-    .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:860px;margin:0 auto;padding:0 20px}
+    .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;max-width:900px;margin:0 auto;padding:0 20px}
     .related-card{display:block;padding:24px;background:var(--bg-gray);border-radius:var(--radius-lg);transition:var(--transition);border:1px solid transparent}
     .related-card:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:var(--primary-light)}
     .related-card .tag{display:inline-block;padding:2px 10px;background:var(--primary-light);color:var(--primary);border-radius:var(--radius-pill);font-size:12px;font-weight:600;margin-bottom:12px}
-    .related-card h3{font-size:16px;font-weight:700;color:var(--text-dark);margin-bottom:6px}
-    .related-card p{font-size:13px;color:#64748b;margin:0}
+    .related-card h3{font-size:15px;font-weight:600;color:var(--text-dark);margin-bottom:8px;line-height:1.4}
+    .related-card p{font-size:13px;color:var(--text-light)}
     .footer{background:#1A1A2E;color:#fff;padding:48px 0 24px}
     .footer .container{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;max-width:860px}
     .footer h3{font-size:16px;margin-bottom:16px;font-weight:700}
@@ -141,7 +141,7 @@ a{text-decoration:none;color:var(--primary)}
     .footer-bottom{text-align:center;padding-top:24px;margin-top:32px;border-top:1px solid rgba(255,255,255,0.1);font-size:13px;color:rgba(255,255,255,0.4)}
     .line-button{position:fixed;bottom:24px;right:24px;z-index:999;width:56px;height:56px;background:var(--line-green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;box-shadow:0 4px 16px rgba(0,138,0,0.35);transition:var(--transition);text-decoration:none}
     .line-button:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(0,138,0,0.5);color:#fff}
-    .float-bar{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,#00B900 0%,#009900 100%);padding:12px 20px;z-index:998;display:none;align-items:center;justify-content:center;gap:16px;box-shadow:0 -4px 20px rgba(0,0,0,0.2)}
+    .float-bar{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,#008A00 0%,#009900 100%);padding:12px 20px;z-index:998;display:none;align-items:center;justify-content:center;gap:16px;box-shadow:0 -4px 20px rgba(0,0,0,0.2)}
     .float-bar.show{display:flex}
     .float-bar-text{flex:1;max-width:600px}
     .float-bar-text p{color:#fff;font-size:15px;font-weight:500;margin:0}
@@ -285,7 +285,7 @@ a{text-decoration:none;color:var(--primary)}
       <p>汽車零件帶有品牌標識、金屬材質、部分含潤滑油脂殘留，普通快遞（順豐、郵局EMS）可能因無法確認品類安全性而拒收。敏感貨專線熟悉汽配品類，有合規的申報流程，可順利通關。關於兩岸貨物進出口法規，可參考<a href="https://web.customs.gov.tw" class="ext-link" target="_blank" rel="noopener">台灣關務署</a>及<a href="http://www.customs.gov.cn" class="ext-link" target="_blank" rel="noopener">大陸海關總署</a>的相關規定。</p>
     </div>
 
-    <div style="background:linear-gradient(135deg,#00B900,#009900);color:#fff;padding:20px 24px;border-radius:12px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;box-shadow:0 4px 16px rgba(0,138,0,0.3)">
+    <div style="background:linear-gradient(135deg,#008A00,#009900);color:#fff;padding:20px 24px;border-radius:12px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;box-shadow:0 4px 16px rgba(0,138,0,0.3)">
       <div style="flex:1;min-width:200px">
         <p style="margin:0;font-size:16px;font-weight:700">📦 不確定你的零件能不能寄？</p>
         <p style="margin:4px 0 0;font-size:13px;opacity:0.9">傳照片到LINE，30分鐘內免費評估！</p>
