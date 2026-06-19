@@ -1,5 +1,27 @@
 # 外链机会每日搜索 — 执行记录
 
+## 2026-06-18 执行
+
+### 搜索维度
+- 货代精准目录（Foreign-Trade、GFFD、ForwardersPN、TranzNova、FreightPages、ForwarderFocusDirectory）
+- 中国物流大平台（ShippingChina国际海运网、物通网chinawutong）
+- 台湾B2B贸易平台（CENS中經社、ttnet、manufacturers.com.tw、Commerce.com.tw）
+- 国际B2B平台（eWorldTrade、eTradeAsia亞洲貿易網、EC21、ECPlaza、TradeKey）
+- 全球货代目录（FreightEngage、InternationalForwarder）
+
+### 核心发现
+- **Foreign-Trade.com**（DR50+）— "List your Freight Forwarders"，全球最大B2B贸易枢纽，台湾TW在列表中，接收直接询价 🏆
+- **ShippingChina 国际海运网**（DR45+）— 数万家货代/船东，商务会员免费注册，已确认注册页
+- **物通网**（DR45+）— 中国最大物流信息平台，台湾分站已存在，免费注册免费发布
+- **GFFDirectory** — 广播至60,000+货代，免费会员注册
+- **ForwardersPN 货代黄页** — 免费入驻货代SPN平台
+
+### 新增平台数
+19个（A+级6个物流精准高权重 + B+级5个物流目录 + C+级9个台湾/国际B2B）
+
+### 总表更新
+64 → 83目标 | 高价值DA50+增至11个 | 中高价值DA40+新增6个
+
 ## 2026-06-17 执行
 
 ### 搜索维度

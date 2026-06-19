@@ -37,4 +37,15 @@
 - **API返回**: `{"remain":5,"success":5}`
 - **状态**: ✅ 全部推送成功
 
-## next_start: 10
+
+## 2026-06-18 23:59
+- **推送URL数**: 5
+- **起点索引**: 11
+- [11] https://www.subaotw.cn/tw-to-cn
+- [12] https://www.subaotw.cn/tw-to-cn/food-shipping
+- [13] https://www.subaotw.cn/guide/equipment-export-process
+- [14] https://www.subaotw.cn/equipment/cnc-export-taiwan
+- [15] https://www.subaotw.cn/equipment/injection-molding
+- **API返回**: `{'remain': 5, 'success': 5}`
+
+## next_start: 16
