@@ -48,4 +48,27 @@
 - [15] https://www.subaotw.cn/equipment/injection-molding
 - **API返回**: `{'remain': 5, 'success': 5}`
 
-## next_start: 16
+
+## 2026-06-20 00:01
+- **推送URL数**: 5
+- **起点索引**: 17
+- [17] https://www.subaotw.cn/equipment/cnc-export-taiwan
+- [18] https://www.subaotw.cn/equipment/construction-machinery
+- [19] https://www.subaotw.cn/equipment/food-processing
+- [20] https://www.subaotw.cn/equipment/injection-molding
+- [21] https://www.subaotw.cn/equipment/mechanical-parts
+- **API返回**: `{'remain': 5, 'success': 5}`
+
+## next_start: 22
+
+## 2026-06-20 00:11 batch
+- **推送URL数**: 5
+- **起点索引**: 22
+- [22] https://www.subaotw.cn/equipment/mining-equipment
+- [23] https://www.subaotw.cn/equipment/mold-tooling
+- [24] https://www.subaotw.cn/equipment/packaging-equipment
+- [25] https://www.subaotw.cn/equipment/plastic-machinery
+- [26] https://www.subaotw.cn/equipment/press-machine
+- **API返回**: {"remain": 0, "success": 5}
+
+## next_start: 27
