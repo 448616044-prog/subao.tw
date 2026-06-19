@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://subao.tw/</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://subao.tw/404</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://subao.tw/about</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://subao.tw/article-list</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subao.tw/can-i-ship</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subao.tw/contact-form</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subao.tw/cross-strait-logistics-report-2026</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subao.tw/customs-guide</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subao.tw/economy-shipping</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subao.tw/express-comparison</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subao.tw/faq</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subao.tw/fast-shipping</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subao.tw/line</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subao.tw/partners</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subao.tw/pricing</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subao.tw/pricing-calculator</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subao.tw/sensitive-goods-shipping</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subao.tw/top-10-rejected-items</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subao.tw/tw-to-cn</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subao.tw/volume-calculator</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subao.tw/warehouse</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subao.tw/widget</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subao.tw/widget/shipping-calculator</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://subao.tw/blog/baby-products-shipping</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://subao.tw/blog/battery-products-shipping</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://subao.tw/blog/birds-nest-ginseng-shipping</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -23,8 +40,10 @@
   <url><loc>https://subao.tw/blog/cross-strait-logistics-terms</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://subao.tw/blog/door-pickup-service</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://subao.tw/blog/dragon-boat-zongzi-shipping</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://subao.tw/blog/ecommerce-platform-return</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
   <url><loc>https://subao.tw/blog/electronics-repair-return-shipping</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://subao.tw/blog/electronics-shipping</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://subao.tw/blog/equipment-machinery-repair-return</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
   <url><loc>https://subao.tw/blog/ezway-tutorial</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://subao.tw/blog/first-aid-shipping</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://subao.tw/blog/food-shipping-guide</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -37,6 +56,7 @@
   <url><loc>https://subao.tw/blog/mid-autumn-mooncake-shipping</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://subao.tw/blog/perfume-shipping</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://subao.tw/blog/personal-belongings-shipping</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://subao.tw/blog/phone-laptop-repair-return</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
   <url><loc>https://subao.tw/blog/post-office-rejected-parcel-solution</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://subao.tw/blog/post-office-vs-express-speed</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://subao.tw/blog/post-office-vs-subao-comparison</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -66,23 +86,6 @@
   <url><loc>https://subao.tw/blog/tw-to-cn-shipping-methods</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://subao.tw/blog/tw-to-cn-shipping-process</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://subao.tw/blog/used-electronics-repair-shipping</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
-  <url><loc>https://subao.tw/can-i-ship</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://subao.tw/contact-form</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://subao.tw/cross-strait-logistics-report-2026</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://subao.tw/customs-guide</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://subao.tw/economy-shipping</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://subao.tw/express-comparison</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://subao.tw/faq</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://subao.tw/fast-shipping</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://subao.tw/line</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://subao.tw/partners</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://subao.tw/pricing</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://subao.tw/pricing-calculator</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://subao.tw/sensitive-goods-shipping</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://subao.tw/top-10-rejected-items</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://subao.tw/tw-to-cn</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://subao.tw/volume-calculator</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://subao.tw/warehouse</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://subao.tw/widget</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://subao.tw/widget/shipping-calculator</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subao.tw/404</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subao.tw/</loc><lastmod>2026-06-19</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
 </urlset>
