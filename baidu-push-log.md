@@ -59,7 +59,7 @@
 - [21] https://www.subaotw.cn/equipment/mechanical-parts
 - **API返回**: `{'remain': 5, 'success': 5}`
 
-## next_start: 22
+## next_start: 27
 
 ## 2026-06-20 00:11 batch
 - **推送URL数**: 5
@@ -70,5 +70,17 @@
 - [25] https://www.subaotw.cn/equipment/plastic-machinery
 - [26] https://www.subaotw.cn/equipment/press-machine
 - **API返回**: {"remain": 0, "success": 5}
+
+## next_start: 27
+
+## 2026-06-20 08:07 batch (继续)
+- **推送**: 5
+- **起点**: 22
+- **返回**: {"error": 400, "message": "over quota"}
+- [22] https://www.subaotw.cn/equipment/mining-equipment
+- [23] https://www.subaotw.cn/equipment/mold-tooling
+- [24] https://www.subaotw.cn/equipment/packaging-equipment
+- [25] https://www.subaotw.cn/equipment/plastic-machinery
+- [26] https://www.subaotw.cn/equipment/press-machine
 
 ## next_start: 27
