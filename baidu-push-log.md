@@ -84,3 +84,14 @@
 - [26] https://www.subaotw.cn/equipment/press-machine
 
 ## next_start: 27
+
+## 06-20 auto
+- **27**: 5 URLs
+- **return**: {"error": 400, "message": "over quota"}
+- https://www.subaotw.cn/equipment/printing-equipment
+- https://www.subaotw.cn/equipment/textile-machinery
+- https://www.subaotw.cn/equipment/woodworking
+- https://www.subaotw.cn/faq
+- https://www.subaotw.cn/furniture-shipping
+
+## next_start: 32
