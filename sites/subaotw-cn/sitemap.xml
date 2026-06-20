@@ -265,6 +265,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.subaotw.cn/guide/container-shipping-price.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.subaotw.cn/guide/cost-calculator.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -302,6 +308,12 @@
   </url>
   <url>
     <loc>https://www.subaotw.cn/guide/export-faq.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.subaotw.cn/guide/heavy-cargo-taiwan-guide.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -350,6 +362,12 @@
   </url>
   <url>
     <loc>https://www.subaotw.cn/guide/shipping-methods.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.subaotw.cn/guide/taiwan-customs-manual.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -440,6 +458,12 @@
   </url>
   <url>
     <loc>https://www.subaotw.cn/tw-to-cn/books-shipping.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.subaotw.cn/tw-to-cn/cheapest-shipping.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -548,6 +572,12 @@
   </url>
   <url>
     <loc>https://www.subaotw.cn/tw-to-cn/tea-shipping.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.subaotw.cn/tw-to-cn/ultimate-guide.html</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

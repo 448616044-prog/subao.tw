@@ -42,6 +42,7 @@ https://www.subaotw.cn/equipment/wuhan-export-taiwan.html
 https://www.subaotw.cn/equipment/xiamen-export-taiwan.html
 https://www.subaotw.cn/faq.html
 https://www.subaotw.cn/furniture-shipping.html
+https://www.subaotw.cn/guide/container-shipping-price.html
 https://www.subaotw.cn/guide/cost-calculator.html
 https://www.subaotw.cn/guide/customs-documents.html
 https://www.subaotw.cn/guide/ecfa-tariff.html
@@ -49,6 +50,7 @@ https://www.subaotw.cn/guide/equipment-export-process.html
 https://www.subaotw.cn/guide/equipment-repair-return.html
 https://www.subaotw.cn/guide/export-compliance.html
 https://www.subaotw.cn/guide/export-faq.html
+https://www.subaotw.cn/guide/heavy-cargo-taiwan-guide.html
 https://www.subaotw.cn/guide/index.html
 https://www.subaotw.cn/guide/insurance-guide.html
 https://www.subaotw.cn/guide/old-equipment-export.html
@@ -57,6 +59,7 @@ https://www.subaotw.cn/guide/packaging-standard.html
 https://www.subaotw.cn/guide/prohibited-items.html
 https://www.subaotw.cn/guide/shipping-compare.html
 https://www.subaotw.cn/guide/shipping-methods.html
+https://www.subaotw.cn/guide/taiwan-customs-manual.html
 https://www.subaotw.cn/guide/taiwan-import-tax.html
 https://www.subaotw.cn/guide/tw-cn-logistics-terms.html
 https://www.subaotw.cn/guide/weight-calculation.html
@@ -72,6 +75,7 @@ https://www.subaotw.cn/tw-to-cn.html
 https://www.subaotw.cn/tw-to-cn/baby-products.html
 https://www.subaotw.cn/tw-to-cn/battery-products.html
 https://www.subaotw.cn/tw-to-cn/books-shipping.html
+https://www.subaotw.cn/tw-to-cn/cheapest-shipping.html
 https://www.subaotw.cn/tw-to-cn/clothing-shipping.html
 https://www.subaotw.cn/tw-to-cn/complete-guide.html
 https://www.subaotw.cn/tw-to-cn/cosmetics-shipping.html
@@ -90,4 +94,5 @@ https://www.subaotw.cn/tw-to-cn/shipping-cost.html
 https://www.subaotw.cn/tw-to-cn/shipping-process.html
 https://www.subaotw.cn/tw-to-cn/souvenir-shipping.html
 https://www.subaotw.cn/tw-to-cn/tea-shipping.html
+https://www.subaotw.cn/tw-to-cn/ultimate-guide.html
 https://www.subaotw.cn/volume-calculator.html
