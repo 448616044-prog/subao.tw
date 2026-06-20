@@ -59,7 +59,6 @@
 - [21] https://www.subaotw.cn/equipment/mechanical-parts
 - **API返回**: `{'remain': 5, 'success': 5}`
 
-## next_start: 27
 
 ## 2026-06-20 00:11 batch
 - **推送URL数**: 5
@@ -71,7 +70,6 @@
 - [26] https://www.subaotw.cn/equipment/press-machine
 - **API返回**: {"remain": 0, "success": 5}
 
-## next_start: 27
 
 ## 2026-06-20 08:07 batch (继续)
 - **推送**: 5
@@ -83,7 +81,6 @@
 - [25] https://www.subaotw.cn/equipment/plastic-machinery
 - [26] https://www.subaotw.cn/equipment/press-machine
 
-## next_start: 27
 
 ## 06-20 auto
 - **27**: 5 URLs
@@ -93,5 +90,17 @@
 - https://www.subaotw.cn/equipment/woodworking
 - https://www.subaotw.cn/faq
 - https://www.subaotw.cn/furniture-shipping
+
+
+## 2026-06-21 00:03
+- **推送URL数**: 5
+- **起点索引**: 27
+- [27] https://www.subaotw.cn/equipment/mining-equipment.html
+- [28] https://www.subaotw.cn/equipment/mold-tooling.html
+- [29] https://www.subaotw.cn/equipment/ningbo-export-taiwan.html
+- [30] https://www.subaotw.cn/equipment/packaging-equipment.html
+- [31] https://www.subaotw.cn/equipment/plastic-machinery.html
+- **API返回**: `{'remain': 5, 'success': 5}`
+- **状态**: ✅ 推送成功
 
 ## next_start: 32

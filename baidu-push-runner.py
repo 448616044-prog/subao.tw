@@ -74,10 +74,22 @@ except Exception as e:
     error = str(e)
     print(f"\n❌ 推送失败: {e}")
 
-# ---- 4. Calculate next start for next run ----
-next_start = (start_idx + PUSH_SIZE) % total
+# ---- 4. Check for over quota / errors ----
+over_quota = False
+if result and isinstance(result, dict):
+    msg = str(result.get("message", result.get("error", ""))).lower()
+    if "over quota" in msg or (result.get("error") == 400 and "quota" in msg):
+        over_quota = True
+        print("⚠️ 配额已满 (over quota)，索引不推进，次日自动重试")
 
-# ---- 5. Append to log ----
+# ---- 5. Calculate next start for next run ----
+if over_quota or error:
+    # Don't advance — retry same batch next time
+    next_start = start_idx
+else:
+    next_start = (start_idx + PUSH_SIZE) % total
+
+# ---- 6. Append to log ----
 date_str = now.strftime("%Y-%m-%d %H:%M")
 entry_lines = [
     f"\n## {date_str}\n",
@@ -89,8 +101,13 @@ for i, u in enumerate(batch):
 
 if result:
     entry_lines.append(f"- **API返回**: `{result}`\n")
+    if over_quota:
+        entry_lines.append(f"- **状态**: ⚠️ 配额已满，索引未推进\n")
+    else:
+        entry_lines.append(f"- **状态**: ✅ 推送成功\n")
 if error:
     entry_lines.append(f"- **错误**: {error}\n")
+    entry_lines.append(f"- **状态**: ❌ 网络/请求错误，索引未推进\n")
 entry_lines.append(f"\n## next_start: {next_start}\n")
 
 # Create or append
