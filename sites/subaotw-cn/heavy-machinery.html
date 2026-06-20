@@ -51,6 +51,28 @@
   </script>
 </head>
 <body>
+    <header class="header">
+    <div class="container">
+      <a href="/" class="logo">速豹集运<span>两岸大件物流专家</span></a>
+      <button class="burger" aria-label="菜单" onclick="this.nextElementSibling.classList.toggle('open')">☰</button>
+      <nav class="nav">
+        <a href="/equipment/">大件物流</a>
+        <a href="/tw-to-cn/">台湾寄大陆</a>
+        <a href="/pricing-calculator">运费估算</a>
+        <a href="/volume-calculator">材积计算</a>
+        <a href="/guide/">物流指南</a>
+        <a href="/article-list">物流百科</a>
+        <a href="/contact">询价报价</a>
+        <a href="/about">关于我们</a>
+      </nav>
+    </div>
+  </header>
+  <div class="float-contact">
+    <a href="tel:13026603164" class="fc-tel" title="电话咨询"><span class="fc-text">📞 13026603164</span>📞</a>
+    <a href="javascript:void(0)" class="fc-wechat" title="添加微信" onclick="navigator.clipboard.writeText('13026603164');this.querySelector('.fc-tooltip').innerHTML='<strong>✅ 已复制</strong>微信：13026603164<br><span style=color:#07c160>打开微信添加好友</span>'"><div class="fc-tooltip"><strong>微信扫码或搜索</strong>微信号：13026603164<br><span class="fc-copy" onclick="event.stopPropagation();navigator.clipboard.writeText('13026603164');this.textContent='✅ 已复制'">📋 复制微信号</span></div>💬</a>
+  </div>
+
+
 <header class="navbar"><div class="container navbar-content">
   <a href="/" class="logo">速豹集运<span>两岸大件物流专家</span></a>
   <nav class="nav-links">
