@@ -593,10 +593,28 @@
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
   <url>
     <loc>https://www.subaotw.cn/sitemap-page.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://www.subaotw.cn/blog/gaming-console-to-taiwan</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.subaotw.cn/blog/phone-to-taiwan</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url><loc>https://www.subaotw.cn/blog/furniture-to-taiwan</loc><lastmod>2026-06-22</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.subaotw.cn/blog/daily-items-to-taiwan</loc><lastmod>2026-06-22</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.subaotw.cn/blog/home-appliances-to-taiwan</loc><lastmod>2026-06-22</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.subaotw.cn/blog/clothes-to-taiwan</loc><lastmod>2026-06-22</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.subaotw.cn/blog/food-to-taiwan</loc><lastmod>2026-06-22</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
