@@ -288,7 +288,7 @@ footer{background:#111;color:#ddd;padding:60px 24px 30px;margin-top:80px}
 
       <h2>5. 血糖儀寄大陸流程</h2>
       <ol>
-        <li><strong>LINE 諮詢：</strong>加 LINE（ID：734dooky），告知要寄血糖儀，客服提供報價。</li>
+        <li><strong>LINE 諮詢：</strong>加 LINE（ID：@734dooky），告知要寄血糖儀，客服提供報價。</li>
         <li><strong>包裹送倉：</strong>將血糖儀包裝好，寄到速豹台灣收貨倉庫。</li>
         <li><strong>資料提供：</strong>提供收件人身份證影本和商品明細。</li>
         <li><strong>出口報關：</strong>速豹處理台灣出口報關手續。</li>
@@ -388,7 +388,7 @@ footer{background:#111;color:#ddd;padding:60px 24px 30px;margin-top:80px}
     </div>
     <div class="footer-section">
       <h3>聯系我們</h3>
-      <a href="https://line.me/R/ti/p/@734dooky" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">LINE：734dooky</a>
+      <a href="https://line.me/R/ti/p/@734dooky" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">LINE：@734dooky</a>
       <a href="mailto:business@videotvai.com">Email：business@videotvai.com</a>
       <a href="/about">關於速豹</a>
     </div>
@@ -455,7 +455,7 @@ const mobileMenu=document.getElementById('mobileMenu');
 if(menuToggle&&mobileMenu){menuToggle.addEventListener('click',function(){mobileMenu.classList.toggle('active');var i=menuToggle.querySelector('i');mobileMenu.classList.contains('active')?(i.classList.remove('fa-bars'),i.classList.add('fa-times')):(i.classList.remove('fa-times'),i.classList.add('fa-bars'))})}
 function openContactModal(){document.getElementById('contactModal').classList.add('active')}
 function closeContactModal(){document.getElementById('contactModal').classList.remove('active')}
-function submitContactForm(e){e.preventDefault();var n=document.getElementById('cfName').value,t=document.getElementById('cfContact').value,i=document.getElementById('cfItem').value||'',m=document.getElementById('cfMsg').value||'',o='【速豹留言】\n稱呼：'+n+'\n聯繫方式：'+t+'\n想寄什麼：'+i+'\n備註：'+m;gtag('event','contact_form_submit',{event_category:'conversion',event_label:'blog_faq'});fetch('https://api.telegram.org/bot7951277743:AAEVQE9W7mUuDEV4jkmApIBnUaUObg9ROZc/sendMessage',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id:'-4795781625',text:o})}).then(function(){document.getElementById('contactFormWrap').style.display='none';document.getElementById('successMsg').style.display='block'}).catch(function(){alert('送出失敗，請直接LINE聯繫我們：734dooky')})}
+function submitContactForm(e){e.preventDefault();var n=document.getElementById('cfName').value,t=document.getElementById('cfContact').value,i=document.getElementById('cfItem').value||'',m=document.getElementById('cfMsg').value||'',o='【速豹留言】\n稱呼：'+n+'\n聯繫方式：'+t+'\n想寄什麼：'+i+'\n備註：'+m;gtag('event','contact_form_submit',{event_category:'conversion',event_label:'blog_faq'});fetch('https://api.telegram.org/bot7951277743:AAEVQE9W7mUuDEV4jkmApIBnUaUObg9ROZc/sendMessage',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id:'-4795781625',text:o})}).then(function(){document.getElementById('contactFormWrap').style.display='none';document.getElementById('successMsg').style.display='block'}).catch(function(){alert('送出失敗，請直接LINE聯繫我們：@734dooky')})}
 </script>
 
 <style>

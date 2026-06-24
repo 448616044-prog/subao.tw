@@ -11,7 +11,7 @@
 → 能寄的建議找專線集運
 
 我用的是速豹集運（https://subao.tw），已經固定用半年了
-空運廣東約5-7天，含稅價，LINE可以先問能不能寄（搜subaotw5988）
+空運廣東約5-7天，含稅價，LINE可以先問能不能寄（搜734dooky）
 
 詳細5大管道對比表：https://subao.tw/express-comparison
 
