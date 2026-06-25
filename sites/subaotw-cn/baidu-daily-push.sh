@@ -1,49 +1,55 @@
 #!/bin/bash
 # Baidu daily URL push — cron: 0 8 * * * cd /var/www/subaotw-cn && bash baidu-daily-push.sh
-# Quota: ~10-20 URLs/day for new sites (over quota = skip, try tomorrow)
+# Quota: ~10 URLs/day → pushes next unpushed batch from baidu-push-urls.txt
 
 cd "$(dirname "$0")"
 
 API="http://data.zz.baidu.com/urls?site=https://www.subaotw.cn&token=K4kVPs6NwjtWr4ij"
 TODAY=$(date +%Y-%m-%d)
 LOG="/tmp/baidu-push-subaotw.log"
+URL_FILE="baidu-push-urls.txt"
+PUSHED_FILE="baidu-pushed.txt"
 
-# Find recently changed files (last 24h)
-CHANGED=$(find . -name "*.html" -mtime -1 ! -name "404.html" 2>/dev/null | head -20)
+# Read all URLs
+mapfile -t ALL_URLS < "$URL_FILE"
 
-if [ -z "$CHANGED" ]; then
-  # Fallback: push key index pages
-  URLS=(
-    "https://www.subaotw.cn/"
-    "https://www.subaotw.cn/tw-to-cn/"
-    "https://www.subaotw.cn/equipment/"
-    "https://www.subaotw.cn/guide/"
-    "https://www.subaotw.cn/article-list"
-    "https://www.subaotw.cn/sitemap-page"
-  )
-else
-  URLS=()
-  for f in $CHANGED; do
-    f="${f#./}"
-    f="${f/.html/}"
-    [[ "$f" == *"/index" ]] && f="${f%/index}"
-    URLS+=("https://www.subaotw.cn/$f")
-  done
+# Read already pushed URLs
+declare -A PUSHED
+if [ -f "$PUSHED_FILE" ]; then
+  while IFS= read -r line; do
+    [[ "$line" =~ ^# ]] && continue
+    [[ -z "$line" ]] && continue
+    PUSHED["$line"]=1
+  done < "$PUSHED_FILE"
 fi
 
+# Find first 10 unpushed URLs
+BATCH=()
+for url in "${ALL_URLS[@]}"; do
+  [[ -z "$url" ]] && continue
+  [[ -n "${PUSHED[$url]}" ]] && continue
+  BATCH+=("$url")
+  [[ ${#BATCH[@]} -ge 10 ]] && break
+done
+
+if [ ${#BATCH[@]} -eq 0 ]; then
+  echo "[$TODAY] All URLs pushed! (${#ALL_URLS[@]} total)" >> "$LOG"
+  exit 0
+fi
+
+# Push batch
 count=0
-skipped=0
-for url in "${URLS[@]}"; do
+for url in "${BATCH[@]}"; do
   result=$(curl -s -X POST "$API" -H "Content-Type: text/plain" -d "$url" 2>&1)
   echo "[$TODAY] $url → $result" >> "$LOG"
   if echo "$result" | grep -q '"success"'; then
     ((count++))
+    echo "$url" >> "$PUSHED_FILE"
   elif echo "$result" | grep -q 'over quota'; then
-    ((skipped++))
-    echo "[$TODAY] Quota exceeded, stopping after $count successful" >> "$LOG"
+    echo "[$TODAY] Quota exceeded after $count" >> "$LOG"
     break
   fi
   sleep 1
 done
 
-echo "[$TODAY] Done: $count pushed, $skipped skipped (quota)" >> "$LOG"
+echo "[$TODAY] Done: $count pushed, $((${#ALL_URLS[@]} - $(wc -l < "$PUSHED_FILE" | tr -d ' '))) remaining" >> "$LOG"
