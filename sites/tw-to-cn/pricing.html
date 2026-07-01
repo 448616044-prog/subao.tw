@@ -199,14 +199,13 @@
     .footer a{display:block;margin-bottom:10px;color:rgba(255,255,255,0.7);font-size:14px;transition:var(--transition)}
     .footer a:hover{color:#fff}
     .footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:20px;margin-top:20px;text-align:center;color:rgba(255,255,255,0.5);font-size:13px}
-    .price-note{display:flex;align-items:flex-start;justify-content:center;gap:12px;background:linear-gradient(135deg,#FFF8E1 0%,#FFE0B2 100%);border:2px solid #FFCC80;border-left:6px solid var(--secondary);border-radius:12px;padding:20px 28px;margin:32px auto 48px;max-width:760px;font-size:14px;line-height:1.8;color:#3E2723;font-weight:500;box-shadow:0 2px 8px rgba(230,81,0,0.08)}
-    .price-note::before{content:'💡';font-size:20px;flex-shrink:0;margin-top:1px}
-    .price-note strong{color:var(--secondary);font-weight:700}
+    .price-note{text-align:center;color:var(--text-light);font-size:14px;margin-top:24px;margin-bottom:48px}
     @media(max-width:992px){.nav{display:none}.service-toggle{flex-direction:row;flex-wrap:wrap;width:auto;max-width:90%}
     .service-btn{min-width:160px;padding:12px 20px}
     .service-btn .icon{font-size:20px}
     .service-btn .name{font-size:14px;display:block;margin:4px 0 2px}
-    .service-btn .time{font-size:12px;display:block;margin:0}}.service-btn{width:100%;max-width:300px}.calc-form{grid-template-columns:1fr}.calc-btn{width:100%}.notes-grid{grid-template-columns:1fr}.footer .container{grid-template-columns:1fr 1fr}}
+    .service-btn .time{font-size:12px;display:block;margin:0}}
+    .service-btn{width:100%;max-width:300px}.calc-form{grid-template-columns:1fr}.calc-btn{width:100%}.notes-grid{grid-template-columns:1fr}.footer .container{grid-template-columns:1fr 1fr}}
     @media(max-width:768px){.pricing-grid{grid-template-columns:1fr}.category-legend{gap:12px}.footer .container{grid-template-columns:1fr}.page-hero h1{font-size:32px}.calculator{padding:24px}}
   </style>
 </head>
@@ -741,9 +740,7 @@
 
         <p class="price-note">※ 以上為每公斤參考價格，已含清關費用及派送費用｜10kg 以下加收 NT$100 派送費，滿 10kg 免收派送費｜取貨費單獨收取，具體以 LINE 客服報價為準</p>
       </div>
-    </section>
-
-<div class="calculator">
+      <div class="calculator">
         <div class="calc-header"><h3>⚡ 快速試算運費</h3><p>輸入商品類型和重量，馬上知道參考運費</p></div>
         <div class="calc-form">
           <div class="calc-field"><label>商品類型</label><select id="calc-type"><option value="A">A類 奶粉/舊衣服/日用雜物/食品</option><option value="B">B類 美妝/保健品/保養品/貼布</option><option value="C">C類 電器類（含電池產品）</option><option value="D">D類 中西藥</option></select></div>
