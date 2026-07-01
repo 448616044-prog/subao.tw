@@ -199,11 +199,71 @@
   </script>
 </head>
 <body>
-  <section class="section intro-section" style="padding-top:40px">
+  <header class="header" id="header">
+    <div class="container">
+      <a href="/" class="logo">
+        <picture>
+          <source srcset="images/subao-logo-new.webp" type="image/webp">
+          <img src="images/subao-logo-new.png" alt="速豹集運" width="200" height="50" fetchpriority="high" decoding="async">
+        </picture>
+      </a>
+      <nav class="nav" id="desktopNav">
+        <a href="/tw-to-cn" data-nav="tw-to-cn">台灣發大陸</a>
+        <div class="nav-dropdown"><a href="/pricing" data-nav="pricing">運費</a>
+        <div class="dd-menu"><a href="/pricing">運費報價</a><a href="/pricing-calculator">運費試算</a></div></div>
+        <a href="/can-i-ship" data-nav="can-i-ship">可以寄嗎</a>
+        <a href="/customs-guide" data-nav="customs-guide">關稅速查</a>
+        <a href="/volume-calculator" data-nav="volume-calculator">材積計算</a>
+        <a href="/article-list" data-nav="article-list">文章攻略</a>
+        <div class="nav-dropdown"><a href="#" onclick="return false" style="cursor:default">更多</a>
+        <div class="dd-menu"><a href="/pickup-service">🚚 上門取貨</a><a href="/faq">常見問題</a><a href="/express-comparison">快遞對比</a><a href="/sensitive-goods-shipping">敏感貨攻略</a><a href="/cross-strait-logistics-report-2026">📊 2026市場報告</a><a href="/top-10-rejected-items">🚫 退件Top10</a><a href="/partners">合作夥伴</a><a href="/about">關於我們</a></div></div>
+      </nav>
+      <div class="header-cta">
+        <a href="https://line.me/R/ti/p/@734dooky" class="btn btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
+          <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 咨詢
+        </a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="選單"><svg class="icon" aria-hidden="true" ><use href="#bars"/></svg></button>
+    </div>
+  </header>
+
+  <!-- 移動端菜單 -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/tw-to-cn" class="mobile-nav-link" data-nav="tw-to-cn">台灣發大陸</a>
+    <div class="m-dropdown">
+      <span>運費</span>
+      <div class="m-dropdown-links">
+        <a href="/pricing">運費報價</a>
+        <a href="/pricing-calculator">運費試算</a>
+      </div>
+    </div>
+    <a href="/can-i-ship" class="mobile-nav-link" data-nav="can-i-ship">可以寄嗎</a>
+    <a href="/customs-guide" class="mobile-nav-link" data-nav="customs-guide">關稅速查</a>
+    <a href="/volume-calculator" class="mobile-nav-link" data-nav="volume-calculator">材積計算</a>
+    <a href="/article-list" class="mobile-nav-link" data-nav="article-list">文章攻略</a>
+    <div class="m-dropdown">
+      <span>更多</span>
+      <div class="m-dropdown-links">
+        <a href="/pickup-service">🚚 上門取貨</a>
+        <a href="/faq">常見問題</a>
+        <a href="/express-comparison">快遞對比</a>
+        <a href="/sensitive-goods-shipping">敏感貨攻略</a>
+        <a href="/cross-strait-logistics-report-2026">📊 2026市場報告</a>
+        <a href="/top-10-rejected-items">🚫 退件Top10</a>
+        <a href="/partners">合作夥伴</a>
+        <a href="/about">關於我們</a>
+      </div>
+    </div>
+    <a href="https://line.me/R/ti/p/@734dooky" class="mobile-nav-link cta" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
+      <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> 加入LINE
+    </a>
+  </div>
+
+  <section class="section intro-section" style="padding-top:120px">
     <div class="container">
       <div class="intro-grid">
         <div class="intro-text">
-          <h2>為什麼要用上門取貨？</h2>
+          <h3>為什麼要用上門取貨？</h3>
           <p>寄東西到大陸最麻煩的，往往不是運費，而是<strong>「怎麼把東西送去寄」</strong>。你要自己打包、自己搬去超商或快遞站、自己排隊——尤其當你寄的是<strong>掃地機器人、整箱食品、大型包裹</strong>時，搬運就是一大難題。</p>
           <p>速豹上門取貨服務就是為了解決這個痛點：<strong>我們派人到你家/公司收件</strong>，你只需要把東西準備好，剩下的我們來。</p>
           <div class="intro-highlights">
@@ -230,7 +290,7 @@
       <div style="max-width:800px;margin:0 auto;overflow-x:auto">
         <table style="width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1)">
           <tr style="background:var(--primary);color:#fff"><th style="padding:14px 16px;text-align:left">方案</th><th style="padding:14px 16px;text-align:center">取貨費</th><th style="padding:14px 16px;text-align:center">運費(5kg)</th><th style="padding:14px 16px;text-align:center">總費用</th></tr>
-          <tr><td style="padding:12px 16px"><strong>速豹上門取貨</strong></td><td style="text-align:center;color:#008A00;font-weight:700">NT$0</td><td style="text-align:center">NT$900</td><td style="text-align:center;font-weight:700;color:#008A00">NT$900</td></tr>
+          <tr><td style="padding:12px 16px"><strong>速豹上門取貨</strong></td><td style="text-align:center;color:#008A00;font-weight:700">NT$100起</td><td style="text-align:center">NT$900</td><td style="text-align:center;font-weight:700;color:#008A00">NT$1,000起</td></tr>
           <tr style="background:var(--bg-gray)"><td style="padding:12px 16px">黑貓宅配→寄件站</td><td style="text-align:center;color:#CC0000">NT$130-250</td><td style="text-align:center">NT$900</td><td style="text-align:center;color:#CC0000">NT$1,030-1,150</td></tr>
           <tr><td style="padding:12px 16px">自己搬去超商寄</td><td style="text-align:center">免費（但費力）</td><td style="text-align:center">NT$900-1,200</td><td style="text-align:center">NT$900-1,200</td></tr>
           <tr style="background:var(--bg-gray)"><td style="padding:12px 16px">順豐到府取件</td><td style="text-align:center;color:#CC0000">NT$150+</td><td style="text-align:center;color:#CC0000">不收敏感貨</td><td style="text-align:center;color:#CC0000">❌ 無法寄</td></tr>
@@ -245,7 +305,7 @@
       <h2 class="section-title">📋 預約上門取貨 4 步驟</h2>
       <div class="flow-grid">
         <div class="flow-card"><div class="flow-num">1</div><h3>LINE 預約</h3><p>告知客服取件地址、聯絡電話、物品類型、希望取件時間。30秒搞定。</p></div>
-        <div class="flow-card"><div class="flow-num">2</div><h3>準備包裹</h3><p>把要寄的東西準備好（不用封箱，我們會帶包材）。傳照片給客服確認。</p></div>
+        <div class="flow-card"><div class="flow-num">2</div><h3>準備包裹</h3><p>把要寄的東西妥善包裝好（速豹不提供包材服務）。傳照片給客服確認包裹外觀與內容物。</p></div>
         <div class="flow-card"><div class="flow-num">3</div><h3>專人上門</h3><p>司機在約定時間到府取件。現場確認物品、當場秤重報價。</p></div>
         <div class="flow-card"><div class="flow-num">4</div><h3>追蹤送達</h3><p>取件後發送物流追蹤碼。LINE全程通知進度，3-5天送達大陸。</p></div>
       </div>
@@ -416,7 +476,18 @@ function submitContactForm(e){e.preventDefault();var n=document.getElementById('
 window.addEventListener('scroll',function(){
   var bar=document.getElementById('floatBar');
   if(bar){if(window.scrollY>600){bar.classList.add('show')}else{bar.classList.remove('show')}}
+  // header 阴影
+  var header=document.getElementById('header');
+  if(header){if(window.scrollY>50){header.classList.add('scrolled')}else{header.classList.remove('scrolled')}}
 });
+
+// mobile menu toggle
+(function(){
+  var toggle=document.getElementById('menuToggle');
+  var menu=document.getElementById('mobileMenu');
+  if(toggle&&menu){toggle.addEventListener('click',function(){menu.classList.toggle('active')})}
+  document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});
+})();
 </script>
 
 <!-- 浮动底栏 -->
@@ -459,7 +530,6 @@ window.addEventListener('scroll',function(){
     .m-dropdown-links a{display:block;padding:12px 8px;font-size:14px;color:var(--text-dark);border-bottom:1px solid #f0f0f0}
 </style>
 <a href="https://line.me/R/ti/p/@734dooky" class="floating-cta" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'about_floating_cta'})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 免費報價</a>
-    document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});
 
 <svg style="display:none" aria-hidden="true">
 <symbol id="bars" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2z"/></symbol>
