@@ -1,0 +1,6 @@
+# disavow.txt — subao.tw 垃圾外链清理
+# 创建日期：2026-05-26
+# 原因：清除低质量/付费外链平台，这些外链对网站权威度无益，长期可能触发Google垃圾外链惩罚
+
+domain:ranklinkpro.shop
+domain:fiverr-seo-for-business-growth.site

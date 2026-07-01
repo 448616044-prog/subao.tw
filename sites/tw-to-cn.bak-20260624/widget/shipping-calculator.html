@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>台灣寄大陸運費快算器 | 速豹集運</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:#f5f7fa;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+  .calc{background:#fff;border-radius:16px;padding:32px;max-width:480px;width:100%;box-shadow:0 8px 30px rgba(0,0,0,.12)}
+  .calc h2{font-size:22px;font-weight:700;color:#1a1a2e;margin-bottom:4px;text-align:center}
+  .calc .sub{font-size:13px;color:#999;text-align:center;margin-bottom:24px}
+  .field{margin-bottom:16px}
+  .field label{display:block;font-size:14px;font-weight:600;color:#333;margin-bottom:6px}
+  .field select,.field input{width:100%;padding:12px;border:2px solid #e2e8f0;border-radius:8px;font-size:15px;font-family:inherit;outline:none;transition:border .2s}
+  .field select:focus,.field input:focus{border-color:#0066CC}
+  .result{background:linear-gradient(135deg,#0066CC,#004C99);color:#fff;padding:20px;border-radius:12px;text-align:center;margin:20px 0;display:none}
+  .result .price{font-size:36px;font-weight:800}
+  .result .detail{font-size:13px;opacity:.85;margin-top:4px}
+  .btn{width:100%;padding:14px;background:linear-gradient(135deg,#E65100,#E65100);color:#fff;border:none;border-radius:10px;font-size:16px;font-weight:700;cursor:pointer;transition:.2s}
+  .btn:hover{transform:translateY(-1px)}
+  .cta{text-align:center;margin-top:16px;font-size:14px;color:#666}
+  .cta a{color:#008A00;font-weight:700;text-decoration:none}
+  .powered{text-align:center;font-size:11px;color:#ccc;margin-top:20px}
+  .powered a{color:#0066CC;text-decoration:none;font-weight:600}
+</style>
+<link rel="canonical" href="https://subao.tw/widget/shipping-calculator">
+</head>
+<body>
+<div class="calc">
+  <h2>📦 台灣寄大陸運費快算</h2>
+  <p class="sub">輸入重量與品類，5秒估價</p>
+  <div class="field">
+    <label>重量 (kg)</label>
+    <input type="number" id="weight" min="0.1" max="100" step="0.1" placeholder="例如：3">
+  </div>
+  <div class="field">
+    <label>商品類型</label>
+    <select id="type">
+      <option value="general">一般商品（衣服、書籍、文具）</option>
+      <option value="food">食品（零食、茶葉、伴手禮）</option>
+      <option value="cosmetics">化妝品/保養品</option>
+      <option value="health">保健品/藥品</option>
+      <option value="electronics">電子產品（含電池）</option>
+    </select>
+  </div>
+  <div class="field">
+    <label>目的地</label>
+    <select id="dest">
+      <option value="tier1">一線城市（上海/北京/廣州/深圳）</option>
+      <option value="tier2">其他城市</option>
+      <option value="remote">偏遠地區</option>
+    </select>
+  </div>
+  <button class="btn" onclick="calculate()">計算運費</button>
+  <div class="result" id="result">
+    <div class="price" id="price">NT$0</div>
+    <div class="detail" id="detail"></div>
+  </div>
+  <div class="cta">
+    精確報價？加入 <a href="https://line.me/R/ti/p/@734dooky" target="_blank">LINE 免費估價</a>
+  </div>
+</div>
+<div class="powered">
+  由 <a href="https://subao.tw" target="_blank">速豹集運</a> 提供 — 專業台灣↔大陸物流服務
+</div>
+
+<script>
+function calculate(){
+  var w=parseFloat(document.getElementById('weight').value)||0;
+  var t=document.getElementById('type').value;
+  var d=document.getElementById('dest').value;
+  if(w<=0||w>100){alert('請輸入有效重量（0.1-100kg）');return}
+
+  var base=0;
+  if(t==='general') base=130; else base=180;
+  var extra=0;
+  if(t==='general') extra=50; else if(t==='food'||t==='cosmetics') extra=68; else extra=80;
+  var totalWeight=(w<=1)?1:Math.ceil(w);
+  var price=base+((totalWeight-1)*extra);
+  if(d==='tier2') price+=30;
+  if(d==='remote') price+=80;
+  if(w>=10) price=Math.round(price*0.85);
+  if(w>=30) price=Math.round(price*0.75);
+
+  document.getElementById('price').textContent='NT$'+price.toLocaleString();
+  document.getElementById('detail').textContent='約'+w+'kg '+((t==='general')?'一般品':(t==='food')?'食品':(t==='cosmetics')?'化妝品':(t==='health')?'保健品':'電子產品')+' → '+((d==='tier1')?'一線城市':(d==='tier2')?'其他城市':'偏遠地區')+' | 參考時效 3-7天';
+  document.getElementById('result').style.display='block';
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 312" width="820" height="312">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F2027"/>
+      <stop offset="50%" style="stop-color:#203A43"/>
+      <stop offset="100%" style="stop-color:#2C5364"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B35"/>
+      <stop offset="100%" style="stop-color:#F7931E"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="820" height="312" fill="url(#bg)"/>
+
+  <!-- Shipping route line -->
+  <path d="M180 170 Q350 80 520 160 Q580 185 640 170" stroke="url(#accent)" stroke-width="2.5" fill="none" stroke-dasharray="8,6" opacity="0.7"/>
+
+  <!-- Taiwan island silhouette -->
+  <path d="M140 195 L130 190 L125 180 L128 168 L135 160 L148 155 L160 158 L168 165 L175 170 L178 178 L180 190 L178 200 L170 208 L160 210 L150 208 L140 202 Z"
+    fill="#FF6B35" opacity="0.9" filter="url(#glow)"/>
+
+  <!-- China mainland silhouette -->
+  <path d="M620 130 L640 125 L660 120 L680 118 L700 115 L720 118 L735 125 L745 135 L750 150 L748 165 L740 178 L730 185 L718 190 L700 195 L680 198 L660 200 L640 198 L628 192 L620 182 L618 170 L618 155 L620 140 Z"
+    fill="#F7931E" opacity="0.9" filter="url(#glow)"/>
+
+  <!-- Ship icon -->
+  <g transform="translate(440,152)" filter="url(#shadow)">
+    <path d="M0 25 L10 10 H40 L50 25 Z" fill="#fff" opacity="0.9"/>
+    <rect x="15" y="0" width="3" height="10" rx="1" fill="#fff" opacity="0.9"/>
+    <rect x="28" y="3" width="2" height="7" rx="1" fill="#fff" opacity="0.7"/>
+  </g>
+
+  <!-- Small wave dots along route -->
+  <circle cx="280" cy="145" r="2" fill="#FF6B35" opacity="0.5"/>
+  <circle cx="400" cy="175" r="2" fill="#FF6B35" opacity="0.5"/>
+  <circle cx="540" cy="155" r="2" fill="#FF6B35" opacity="0.5"/>
+
+  <!-- Label: Taiwan -->
+  <text x="148" y="235" font-family="Arial, sans-serif" font-size="12" fill="#FF6B35" text-anchor="middle" opacity="0.9">臺灣</text>
+
+  <!-- Label: China Mainland -->
+  <text x="680" y="215" font-family="Arial, sans-serif" font-size="12" fill="#F7931E" text-anchor="middle" opacity="0.9">中國大陸</text>
+
+  <!-- Brand text -->
+  <text x="410" y="50" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#FFFFFF" text-anchor="middle" filter="url(#shadow)">速豹集運</text>
+  <text x="410" y="82" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#F7931E" text-anchor="middle" letter-spacing="3">Subao Express</text>
+
+  <!-- Value props -->
+  <rect x="170" y="278" width="480" height="1" fill="url(#accent)" opacity="0.3"/>
+  <text x="170" y="300" font-family="Arial, sans-serif" font-size="11" fill="#aaa" text-anchor="middle">空運 3-5 天</text>
+  <text x="330" y="300" font-family="Arial, sans-serif" font-size="11" fill="#aaa" text-anchor="middle">海運 7-12 天</text>
+  <text x="490" y="300" font-family="Arial, sans-serif" font-size="11" fill="#aaa" text-anchor="middle">LINE 即時客服</text>
+  <text x="650" y="300" font-family="Arial, sans-serif" font-size="11" fill="#aaa" text-anchor="middle">合法合規</text>
+
+  <!-- URL -->
+  <text x="410" y="268" font-family="Arial, sans-serif" font-size="13" fill="#666" text-anchor="middle" letter-spacing="2">subao.tw</text>
+</svg>

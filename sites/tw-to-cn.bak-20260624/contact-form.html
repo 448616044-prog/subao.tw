@@ -1,0 +1,300 @@
+<!DOC
+    .header{position:fixed;top:0;left:0;right:0;height:70px;background:var(--bg-white);z-index:1000;transition:box-shadow .3s}
+    .header.scrolled{box-shadow:var(--shadow)}
+    .header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
+    .logo{font-size:24px;font-weight:700;color:var(--primary);flex-shrink:0}
+    .logo img{background:#fff;max-height:50px;max-width:200px;width:auto;display:block}
+    .nav{display:flex;align-items:center;gap:32px}
+    .nav a,.nav-dropdown>a{font-weight:500;color:var(--text-dark);transition:var(--transition);position:relative;font-size:16px;white-space:nowrap}
+    .nav a:hover,.nav a.active{color:var(--primary)}
+    .nav a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--primary);transition:var(--transition)}
+    .nav a:hover::after,.nav a.active::after{width:100%}
+    .nav-dropdown{position:relative;display:flex;align-items:center}
+    .nav-dropdown>a{padding-bottom:8px;margin-bottom:-8px}
+    .dd-menu{display:none;position:absolute;top:100%;left:0;min-width:170px;background:#fff;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,.12);padding:8px 0;z-index:100;margin-top:4px;border:1px solid #e8ecf0}
+    .nav-dropdown:hover .dd-menu,.nav-dropdown:focus-within .dd-menu{display:block}
+    .dd-menu a{display:block;padding:10px 16px;font-size:13px;color:var(--text-dark);transition:var(--transition)}
+    .dd-menu a:hover{background:var(--primary-light);color:var(--primary)}
+    .header-cta{display:flex;align-items:center;gap:12px;flex-shrink:0}
+    .btn-line:hover{background:#007000;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,138,0,.25)}
+
+.menu-toggle{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text-dark)}
+    @media(max-width:992px){.nav,.header-cta{display:none}.menu-toggle{display:block}}
+TYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聯絡速豹集運｜寄件諮詢與免費估價｜LINE即時回覆</title>
+  <meta name="description" content="聯絡我們 - 寄件諮詢。LINE即時諮詢，免費估價，最快3-5天送達。">
+  <meta property="og:title" content="聯絡速豹集運｜寄件諮詢與免費估價｜LINE即時回覆">
+  <meta property="og:description" content="聯絡我們 - 寄件諮詢。LINE即時諮詢，免費估價，最快3-5天送達。">
+  <meta property="og:image" content="https://subao.tw/images/subao-logo-new.webp">
+  <meta property="og:url" content="https://subao.tw/contact-form">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_TW">
+>
+  <link rel="canonical" href="https://subao.tw/contact-form">
+  <meta name="lastmod" content="2026-06-21">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="images/subao-logo-new.webp" fetchpriority="high">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" as="style" crossorigin fetchpriority="high">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"></noscript>
+
+  <style>
+    .icon{width:1em;height:1em;display:inline-block;vertical-align:-0.125em;fill:currentColor}
+    :root{--primary:#0066CC;--primary-dark:#004C99;--line-green:#008A00;--bg-white:#FFF;--bg-gray:#F5F7FA;--text-dark:#333;--text-light:#666;--shadow:0 2px 8px rgba(0,0,0,0.1)}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Noto Sans TC',sans-serif;color:var(--text-dark);background:var(--bg-gray);line-height:1.8}
+    a{text-decoration:none;color:inherit}
+    .container{max-width:800px;margin:0 auto;padding:0 20px}
+    .nav{display:flex;gap:28px}.nav a{font-weight:500}.nav a:hover{color:var(--primary)}
+    .btn{display:inline-block;padding:10px 20px;border-radius:8px;font-weight:700;font-size:14px;transition:all 0.3s}
+    .hero{padding:120px 0 40px;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);color:#fff;text-align:center}
+    .hero h1{font-size:28px;margin-bottom:12px}
+    .hero p{font-size:15px;opacity:0.9}
+    .main-content{padding:40px 0 60px}
+    .info-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-bottom:32px}
+    .info-card{background:#fff;border-radius:12px;padding:24px;box-shadow:var(--shadow);text-align:center}
+    .info-card .icon{font-size:32px;margin-bottom:12px}
+    .info-card h3{font-size:16px;margin-bottom:8px}
+    .info-card p{font-size:13px;color:var(--text-light)}
+    .form-wrapper{background:#fff;border-radius:12px;box-shadow:var(--shadow);overflow:hidden}
+    .footer-bar{text-align:center;padding:24px;background:#fff;border-radius:12px;margin-top:16px;box-shadow:var(--shadow)}
+    .footer-bar p{font-size:14px;color:var(--text-light);margin-bottom:12px}
+    .btn-back{display:inline-flex;align-items:center;gap:6px;background:var(--primary);color:#fff;padding:10px 20px;border-radius:8px;font-weight:700;transition:all 0.3s}
+    .btn-back:hover{background:var(--primary-dark)}
+
+    /* Dropdown nav */
+    .dropdown-menu a.active{background:var(--primary-light);color:var(--primary);font-weight:600}
+    
+    .btn-line{display:inline-flex;padding:10px 20px;background:var(--line-green);color:#fff;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;align-items:center;gap:6px;transition:var(--transition);white-space:nowrap}
+    .btn-line:hover{background:#007000;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,138,0,0.25)}
+    .mobile-menu{display:none}
+    @media(max-width:768px){.nav{display:none}.hero h1{font-size:22px}}
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-X2T4LGTKJ1');</script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首頁", "item": "https://subao.tw/"}, {"@type": "ListItem", "position": 2, "name": "聯絡我們"}]}
+  </script>
+
+</head>
+<body>
+
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="/" class="logo">
+        <picture>
+          <source srcset="images/subao-logo-new.webp" type="image/webp">
+          <img src="images/subao-logo-new.png" alt="速豹集運" width="200" height="50" fetchpriority="high" decoding="async">
+        </picture>
+      </a>
+                  <nav class="nav" id="desktopNav">
+        <a href="/tw-to-cn" data-nav="tw-to-cn">台灣發大陸</a>
+        <div class="nav-dropdown"><a href="/pricing" data-nav="pricing">運費</a>
+        <div class="dd-menu"><a href="/pricing">運費報價</a><a href="/pricing-calculator">運費試算</a></div></div>
+        <a href="/can-i-ship" data-nav="can-i-ship">可以寄嗎</a>
+        <a href="/customs-guide" data-nav="customs-guide">關稅速查</a>
+        <a href="/volume-calculator" data-nav="volume-calculator">材積計算</a>
+        <a href="/article-list" data-nav="article-list">文章攻略</a>
+        <div class="nav-dropdown"><a href="#" onclick="return false" style="cursor:default">更多</a>
+        <div class="dd-menu"><a href="/pickup-service">🚚 上門取貨</a><a href="/faq">常見問題</a><a href="/express-comparison">快遞對比</a><a href="/partners">合作夥伴</a><a href="/about">關於我們</a></div></div>
+      </nav>
+      <div class="header-cta">
+        <a href="https://line.me/R/ti/p/@734dooky" class="btn btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
+          <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 咨詢
+        </a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="選單"><svg class="icon" aria-hidden="true" ><use href="#bars"/></svg></button>
+    </div>
+  </header>
+
+<!-- 移動端菜單 -->
+      <div class="mobile-menu" id="mobileMenu">
+    <a href="/tw-to-cn" class="mobile-nav-link" data-nav="tw-to-cn">台灣發大陸</a>
+    <div class="m-dropdown">
+      <span>運費</span>
+      <div class="m-dropdown-links">
+        <a href="/pricing">運費報價</a>
+        <a href="/pricing-calculator">運費試算</a>
+      </div>
+    </div>
+    <a href="/can-i-ship" class="mobile-nav-link" data-nav="can-i-ship">可以寄嗎</a>
+    <a href="/customs-guide" class="mobile-nav-link" data-nav="customs-guide">關稅速查</a>
+    <a href="/volume-calculator" class="mobile-nav-link" data-nav="volume-calculator">材積計算</a>
+    <a href="/article-list" class="mobile-nav-link" data-nav="article-list">文章攻略</a>
+    <div class="m-dropdown">
+      <span>更多</span>
+      <div class="m-dropdown-links">
+        <a href="/pickup-service">🚚 上門取貨</a><a href="/faq">常見問題</a>
+        <a href="/express-comparison">快遞對比</a>
+        <a href="/partners">合作夥伴</a>
+        <a href="/about">關於我們</a>
+      </div>
+    </div>
+    <a href="https://line.me/R/ti/p/@734dooky" class="mobile-nav-link cta" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
+      <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> 加入LINE
+    </a>
+  </div>
+
+  <section class="hero" role="main" aria-label="主要內容">
+    <div class="container">
+      <h1>📋 聯絡我們</h1>
+      <p>不確定能不能寄？LINE打不開？填寫表單，我們會盡快回覆。</p>
+    </div>
+  </section>
+
+  <section class="main-content">
+    <div class="container">
+      <div class="info-cards">
+        <div class="info-card">
+          <div class="icon">📱</div>
+          <h3>LINE 優先聯繫</h3>
+          <p>正常情況下請使用 LINE<br><a href="https://line.me/R/ti/p/@734dooky" style="color:var(--primary);font-weight:700" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">@734dooky</a></p>
+        </div>
+        <div class="info-card">
+          <div class="icon">📝</div>
+          <h3>表單備用</h3>
+          <p>LINE打不開時填寫下方表單<br>我們收到後會主動聯繫</p>
+        </div>
+        <div class="info-card">
+          <div class="icon">⏱️</div>
+          <h3>30分鐘回覆</h3>
+          <p>無論LINE或表單<br>平均30分鐘內回應</p>
+        </div>
+      </div>
+
+      <div class="form-wrapper" id="mainFormWrapper">
+        <div id="mainFormWrap" style="padding:32px">
+          <h3 style="font-size:20px;font-weight:700;color:var(--text-dark);margin-bottom:4px">📬 給我們留言</h3>
+          <p style="font-size:13px;color:var(--text-light);margin-bottom:24px">填寫後我們會盡快回覆（LINE打不開也不用擔心）</p>
+          <form id="mainContactForm" onsubmit="submitMainForm(event)">
+            <div style="margin-bottom:16px">
+              <label style="display:block;font-size:13px;font-weight:600;color:#555;margin-bottom:4px">怎麼稱呼</label>
+              <input type="text" id="mName" placeholder="例如：張先生" required style="width:100%;padding:10px 14px;border:1px solid #e2e8f0;border-radius:8px;font-size:14px;font-family:inherit;outline:none">
+            </div>
+            <div style="margin-bottom:16px">
+              <label style="display:block;font-size:13px;font-weight:600;color:#555;margin-bottom:4px">聯繫方式</label>
+              <input type="text" id="mContact" placeholder="LINE ID / 微信 / 手機 / Email" required style="width:100%;padding:10px 14px;border:1px solid #e2e8f0;border-radius:8px;font-size:14px;font-family:inherit;outline:none">
+            </div>
+            <div style="margin-bottom:16px">
+              <label style="display:block;font-size:13px;font-weight:600;color:#555;margin-bottom:4px">想寄什麼</label>
+              <input type="text" id="mItem" placeholder="例如：保健品、茶葉、化妝品" style="width:100%;padding:10px 14px;border:1px solid #e2e8f0;border-radius:8px;font-size:14px;font-family:inherit;outline:none">
+            </div>
+            <div style="margin-bottom:16px">
+              <label style="display:block;font-size:13px;font-weight:600;color:#555;margin-bottom:4px">備註</label>
+              <textarea id="mMsg" placeholder="大概重量、目的地等資訊（選填）" style="width:100%;padding:10px 14px;border:1px solid #e2e8f0;border-radius:8px;font-size:14px;font-family:inherit;outline:none;height:100px;resize:none"></textarea>
+            </div>
+            <button type="submit" style="width:100%;padding:14px;background:linear-gradient(135deg,#E65100,#E65100);color:#fff;border:none;border-radius:10px;font-size:16px;font-weight:700;cursor:pointer">送出留言</button>
+          </form>
+        </div>
+        <div id="mainSuccessWrap" style="display:none;padding:60px 32px;text-align:center">
+          <div style="font-size:48px;color:#10b981;margin-bottom:12px">✅</div>
+          <p style="font-size:15px;color:#555">留言已送出！<br>我們會盡快聯繫您。</p>
+          <button onclick="document.getElementById('mainFormWrap').style.display='block';document.getElementById('mainSuccessWrap').style.display='none';document.getElementById('mainContactForm').reset()" style="margin-top:16px;padding:12px 32px;background:linear-gradient(135deg,#E65100,#E65100);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer">填寫新留言</button>
+        </div>
+      </div>
+
+      <div class="footer-bar">
+        <p>填寫完表單後，我們會在 <strong>30分鐘內</strong> 回覆您的郵箱或手機</p>
+        <a href="/" class="btn-back"><svg class="icon" aria-hidden="true" ><use href="#arrow-left"/></svg> 返回首頁</a>
+      </div>
+    </div>
+  </section>
+<!-- 悬浮按钮组 -->
+<style>
+.floating-bar{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+.floating-bar .icon-btn{width:52px;height:52px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px;transition:all .3s}
+.floating-bar .line-btn{background:#008A00;color:#fff;box-shadow:0 4px 16px rgba(0,138,0,0.35);text-decoration:none;font-weight:700;font-size:16px;font-family:Arial,Helvetica,sans-serif}
+.floating-bar .line-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(0,138,0,0.5)}
+.floating-bar .msg-btn{background:linear-gradient(135deg,#E65100,#E65100);color:#fff;box-shadow:0 4px 16px rgba(230,81,0,0.4);animation:pulse 2s infinite}
+.floating-bar .msg-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(230,81,0,0.5)}
+@keyframes pulse{0%,100%{box-shadow:0 4px 16px rgba(230,81,0,0.4)}50%{box-shadow:0 4px 24px rgba(230,81,0,0.6)}}
+.contact-modal{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:10000;align-items:center;justify-content:center}
+.contact-modal.active{display:flex}
+.contact-modal .modal-box{background:#fff;border-radius:16px;padding:32px;max-width:400px;width:90%;position:relative;animation:slideUp .3s}
+@keyframes slideUp{from{transform:translateY(40px);opacity:0}to{transform:translateY(0);opacity:1}}
+.contact-modal .close-btn{position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#999}
+.contact-modal h3{font-size:20px;font-weight:700;color:#333;margin:0 0 4px}
+.contact-modal .sub{font-size:13px;color:#999;margin-bottom:20px}
+.contact-modal .field{margin-bottom:14px}
+.contact-modal .field label{display:block;font-size:13px;font-weight:600;color:#555;margin-bottom:4px}
+.contact-modal .field input,.contact-modal .field textarea{width:100%;padding:10px 14px;border:1px solid #e2e8f0;border-radius:8px;font-size:14px;font-family:inherit;outline:none;transition:border .2s}
+.contact-modal .field input:focus,.contact-modal .field textarea:focus{border-color:#E65100}
+.contact-modal .field textarea{height:80px;resize:none}
+.contact-modal .submit-btn{width:100%;padding:12px;background:linear-gradient(135deg,#E65100,#E65100);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
+.contact-modal .submit-btn:hover{transform:translateY(-1px)}
+.contact-modal .success-msg{display:none;text-align:center;padding:20px 0}
+.contact-modal .success-msg .check{font-size:48px;color:#10b981;margin-bottom:12px}
+.contact-modal .success-msg p{font-size:15px;color:#555}
+
+    .mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;bottom:0;background:#fff;padding:24px;overflow-y:auto;z-index:999;box-shadow:0 4px 12px rgba(0,0,0,.1)}
+    .mobile-menu.active{display:block}
+    .mobile-nav-link{display:block;padding:16px 0;font-size:16px;font-weight:500;color:var(--text-dark);border-bottom:1px solid var(--border)}
+    .mobile-nav-link.active{color:var(--primary);font-weight:700}
+    .mobile-nav-link.cta{margin-top:24px;padding:16px 24px;background:var(--primary);color:#fff;border-radius:8px;text-align:center;border:none}
+    .m-dropdown>span{display:flex;justify-content:space-between;align-items:center;padding:16px 0;font-size:16px;font-weight:500;color:var(--text-dark);border-bottom:1px solid var(--border);cursor:pointer}
+    .m-dropdown>span::after{content:"▾";font-size:12px;transition:transform .2s}
+    .m-dropdown.open>span::after{transform:rotate(180deg)}
+    .m-dropdown-links{display:none;padding-left:16px}
+    .m-dropdown.open .m-dropdown-links{display:block}
+    .m-dropdown-links a{display:block;padding:12px 8px;font-size:14px;color:var(--text-dark);border-bottom:1px solid #f0f0f0}
+
+<div style="text-align:center;padding:20px;background:linear-gradient(135deg,#FFF0E6,#fff);border-radius:12px;margin:40px auto;max-width:800px;border:2px solid var(--primary)">
+  <p style="font-size:18px;font-weight:700;margin-bottom:8px">🏆 不確定選哪家快遞？</p>
+  <p style="font-size:15px;color:var(--text-light);margin-bottom:16px">查看<a href="/express-comparison" style="color:var(--primary);font-weight:700;text-decoration:underline">台灣寄大陸快遞2026終極對比</a>，5大渠道費用/時效一次比較</p>
+</div>
+</style>
+<div class="floating-bar">
+  <a href="https://line.me/R/ti/p/@734dooky" target="_blank" class="icon-btn line-btn" title="LINE即时咨询" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'floating_line'})">
+    LINE
+  </a>
+  <button class="icon-btn msg-btn" onclick="openContactModal()" aria-label="留言咨询" title="留言给我们">
+    <svg class="icon" aria-hidden="true" ><use href="#envelope"/></svg>
+  </button>
+</div>
+<div class="contact-modal" id="contactModal">
+  <div class="modal-box">
+    <button class="close-btn" onclick="closeContactModal()"><svg class="icon" aria-hidden="true" ><use href="#times"/></svg></button>
+    <div id="contactFormWrap">
+      <h3>📬 給我們留言</h3>
+      <p class="sub">填寫後我們會盡快回覆（LINE打不開也不用擔心）</p>
+      <form id="contactMsgForm" onsubmit="submitContactForm(event)">
+        <div class="field"><label>怎麼稱呼</label><input type="text" id="cfName" placeholder="例如：張先生" required></div>
+        <div class="field"><label>聯繫方式</label><input type="text" id="cfContact" placeholder="LINE ID / 微信 / 手機" required></div>
+        <div class="field"><label>想寄什麼</label><input type="text" id="cfItem" placeholder="例如：保健品、茶葉、化妝品"></div>
+        <div class="field"><label>備註</label><textarea id="cfMsg" placeholder="大概重量、目的地等資訊（選填）"></textarea></div>
+        <button type="submit" class="submit-btn">送出留言</button>
+      </form>
+    </div>
+    <div class="success-msg" id="successMsg">
+      <div class="check">✅</div>
+      <p>留言已送出！<br>我們會盡快聯繫您。</p>
+      <button class="submit-btn" style="margin-top:16px" onclick="closeContactModal()">關閉</button>
+    </div>
+  </div>
+</div>
+<script>
+function openContactModal(){document.getElementById('contactModal').classList.add('active')}
+function closeContactModal(){document.getElementById('contactModal').classList.remove('active');setTimeout(function(){document.getElementById('contactFormWrap').style.display='block';document.getElementById('successMsg').style.display='none';document.getElementById('contactMsgForm').reset()},300)}
+function submitContactForm(e){e.preventDefault();var n=document.getElementById('cfName').value,c=document.getElementById('cfContact').value,i=document.getElementById('cfItem').value||'未填',m=document.getElementById('cfMsg').value||'未填';gtag('event','contact_form_submit',{event_category:'conversion',event_label:'floating_contact'});document.getElementById('contactFormWrap').style.display='none';document.getElementById('successMsg').style.display='block';fetch('https://formsubmit.co/ajax/business@videotvai.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,contact:c,item:i,message:m,_subject:'[速豹官網留言] '+n,})}).catch(function(){})}
+function submitMainForm(e){e.preventDefault();var n=document.getElementById('mName').value,c=document.getElementById('mContact').value,i=document.getElementById('mItem').value||'未填',m=document.getElementById('mMsg').value||'未填';gtag('event','contact_form_submit',{event_category:'conversion',event_label:'main_contact_form'});document.getElementById('mainFormWrap').style.display='none';document.getElementById('mainSuccessWrap').style.display='block';fetch('https://formsubmit.co/ajax/business@videotvai.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,contact:c,item:i,message:m,_subject:'[速豹官網留言] '+n,})}).catch(function(){})}
+</script>
+    document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});
+
+<svg style="display:none" aria-hidden="true">
+<symbol id="arrow-left" viewBox="0 0 24 24"><path fill="currentColor" d="M9.2 5.3a1 1 0 011.4 1.4L6.4 11H20a1 1 0 010 2H6.4l4.2 4.3a1 1 0 01-1.4 1.4l-6-6a1 1 0 010-1.4l6-6z"/></symbol>
+<symbol id="bars" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2z"/></symbol>
+<symbol id="envelope" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4.2l-8 5.8-8-5.8V6l8 5.8L20 6v2.2z"/></symbol>
+<symbol id="line" viewBox="0 0 24 24"><path fill="currentColor" d="M19.4 9.8c0-3.7-3.6-6.8-8-6.8S3.4 6 3.4 9.8c0 3.4 3 6.2 7 6.7.3 0 .6.2.7.5l.2 1c0 .2 0 .4-.2.5l-.6.7c-.1.1-.1.3 0 .4.2.1.3.1.5 0 .6-.5 3.6-2.1 4.9-3.6.8-1 1.5-2.1 1.5-3.2zM8.6 11h-.4a.4.4 0 01-.4-.4V9.2c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4v1.4c0 .3-.2.4-.4.4zm1.5-1.9v1.5a.4.4 0 01-.4.4h-.4a.4.4 0 01-.4-.4V9.1c0-.2.2-.4.4-.4h.4c.2 0 .4.2.4.4zm4.1 0c0-.2-.2-.4-.4-.4h-.6V9c0-.2-.2-.4-.4-.4h-.4a.4.4 0 00-.4.4v1.5c0 .2.2.4.4.4H12.4c.2 0 .4-.2.4-.4v-.4h.6v.4c0 .2.2.4.4.4h.4a.4.4 0 00.4-.4V9.1z"/></symbol>
+<symbol id="times" viewBox="0 0 24 24"><path fill="currentColor" d="M18.3 5.7a1 1 0 00-1.4 0L12 10.6 7.1 5.7a1 1 0 00-1.4 1.4L10.6 12l-4.9 4.9a1 1 0 001.4 1.4L12 13.4l4.9 4.9a1 1 0 001.4-1.4L13.4 12l4.9-4.9a1 1 0 000-1.4z"/></symbol>
+</svg>
+</body>
+</html>

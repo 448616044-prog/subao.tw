@@ -1,0 +1,179 @@
+# Cloudflare Pages 301 重定向规则
+# 将 .html 后缀 URL 永久重定向到无后缀版本（避免重复内容）
+
+# =================== Blog 文章页面 ===================
+/blog/cosmetics-shipping.html /blog/cosmetics-shipping 301
+/blog/food-shipping-guide.html /blog/food-shipping-guide 301
+/blog/health-products-shipping.html /blog/health-products-shipping 301
+/blog/medicine-shipping.html /blog/taiwan-medicine-to-china 301
+/blog/mid-autumn-mooncake-shipping.html /blog/mid-autumn-mooncake-shipping 301
+/blog/shopee-shipping.html /blog/shopee-shipping 301
+/blog/taiwan-medicine-to-china.html /blog/taiwan-medicine-to-china 301
+/blog/taiwan-to-china-guide.html /blog/taiwan-to-china-guide 301
+/blog/taiwan-to-china-shipping-time.html /blog/taiwan-to-china-shipping-time 301
+/blog/taobao-consolidated-shipping.html /blog/taobao-consolidated-shipping 301
+/blog/tea-shipping-guide.html /blog/tea-shipping-guide 301
+/blog/tw-to-cn-cost.html /blog/tw-to-cn-cost 301
+/blog/tw-to-cn-customs.html /blog/tw-to-cn-customs 301
+/blog/tw-to-cn-express-comparison.html /blog/tw-to-cn-express-comparison 301
+/blog/tw-to-cn-logistics-comparison.html /blog/tw-to-cn-logistics-comparison 301
+/blog/tw-to-cn-logistics-recommend.html /blog/tw-to-cn-logistics-recommend 301
+/blog/tw-to-cn-prohibited-items.html /blog/tw-to-cn-prohibited-items 301
+/blog/tw-to-cn-returned.html /blog/tw-to-cn-returned 301
+/blog/tw-to-cn-shipping-guide.html /blog/tw-to-cn-shipping-guide 301
+/blog/tw-to-cn-shipping-methods.html /blog/tw-to-cn-shipping-methods 301
+
+# =================== 2026-06 新增文章 ===================
+/blog/chinese-medicine-shipping.html /blog/chinese-medicine-shipping 301
+/blog/can-it-be-shipped.html /blog/can-it-be-shipped 301
+/blog/electronics-shipping.html /blog/electronics-shipping 301
+/blog/personal-belongings-shipping.html /blog/personal-belongings-shipping 301
+
+# =================== 根目录页面 ===================
+/index / 301
+/index.html / 301
+/about.html /about 301
+/tw /tw-to-cn 301
+/cn /tw-to-cn 301
+/pricing.html /pricing 301
+/faq.html /faq 301
+/article-list.html /article-list 301
+/tw-to-cn.html /tw-to-cn 301
+/pricing-calculator.html /pricing-calculator 301
+/line.html /line 301
+/contact-form.html /contact-form 301
+/warehouse.html /warehouse 301
+
+# =================== 修复GSC备用页面问题 ===================
+# 旧文章URL（根目录已删除的文件）→ 301到blog对应页面
+/food-shipping-guide /blog/food-shipping-guide 301
+/taiwan-to-china-guide /blog/taiwan-to-china-guide 301
+
+# 根目录旧blog页面URL（无.html后缀）→ 301到/blog/对应页面（修复404问题）
+# 这些页面在根目录不存在，但用户/外链可能访问
+/tea-shipping-guide /blog/tea-shipping-guide 301
+/cosmetics-shipping /blog/cosmetics-shipping 301
+/health-products-shipping /blog/health-products-shipping 301
+/shopee-shipping /blog/shopee-shipping 301
+/taiwan-medicine-to-china /blog/taiwan-medicine-to-china 301
+/mid-autumn-mooncake-shipping /blog/mid-autumn-mooncake-shipping 301
+/taobao-consolidated-shipping /blog/taobao-consolidated-shipping 301
+/tw-to-cn-cost /blog/tw-to-cn-cost 301
+/tw-to-cn-customs /blog/tw-to-cn-customs 301
+/tw-to-cn-express-comparison /blog/tw-to-cn-express-comparison 301
+/tw-to-cn-logistics-comparison /blog/tw-to-cn-logistics-comparison 301
+/tw-to-cn-logistics-recommend /blog/tw-to-cn-logistics-recommend 301
+/tw-to-cn-prohibited-items /blog/tw-to-cn-prohibited-items 301
+/tw-to-cn-returned /blog/tw-to-cn-returned 301
+/tw-to-cn-shipping-guide /blog/tw-to-cn-shipping-guide 301
+/tw-to-cn-shipping-methods /blog/tw-to-cn-shipping-methods 301
+/taiwan-products-jd-tmall /blog/taiwan-products-jd-tmall 301
+/taiwan-to-china-shipping-time /blog/taiwan-to-china-shipping-time 301
+
+# 旧GSC覆盖的 /food-shipping-guide（已有→/blog/food-shipping-guide，上移确认）
+# ↑ 已在上方第39-40行定义，此处重复已删除
+
+# 旧article文件（已删除）→ 301到文章列表
+/article-01.html /article-list 301
+/article-05.html /article-list 301
+/article-10.html /article-list 301
+
+# 嵌套blog路径 → 精确301到正确blog页面（避免 /blog/blog/ 残留）
+# =================== 三层嵌套（/blog/blog/blog/X）===================
+# 直接301到最终目标，避免链式重定向
+/blog/blog/blog/about /about 301
+/blog/blog/blog/article-list /article-list 301
+/blog/blog/blog/cosmetics-shipping /blog/cosmetics-shipping 301
+/blog/blog/blog/food-shipping-guide /blog/food-shipping-guide 301
+/blog/blog/blog/faq /faq 301
+/blog/blog/blog/pricing /pricing 301
+# 兜底：未列出的三层嵌套 → 二层
+/blog/blog/blog/* /blog/:splat 301
+
+# =================== 二层嵌套（/blog/blog/X）===================
+# 直接301到最终目标，避免链式重定向
+/blog/blog/about /about 301
+/blog/blog/cosmetics-shipping /blog/cosmetics-shipping 301
+/blog/blog/food-shipping-guide /blog/food-shipping-guide 301
+/blog/blog/faq /faq 301
+/blog/blog/pricing /pricing 301
+# 兜底：未列出的二层嵌套 → 一层
+/blog/blog/* /blog/:splat 301
+
+# =================== SEO 修复 (2026-06-09) ===================
+# 重定向页（原 meta refresh）→ 服务端 301
+/blog/medicine-shipping /blog/taiwan-medicine-to-china 301
+
+# .htm 后缀 → .html（外部链接/笔误保护）
+/blog/food-shipping-guide.htm /blog/food-shipping-guide 301
+/blog/tw-to-cn-customs.htm /blog/tw-to-cn-customs 301
+/blog/shopee-shipping.htm /blog/shopee-shipping 301
+/blog/*.htm /blog/:splat 301
+
+# blog目录下不存在的页面（重定向到根目录对应页面）
+/blog/pricing /pricing 301
+/blog/pricing-calculator /pricing-calculator 301
+/blog/about /about 301
+/blog/faq /faq 301
+/blog/line /line 301
+/blog/article-list /article-list 301
+/blog/tw-to-cn /tw-to-cn 301
+/blog/shipping-process /blog/tw-to-cn-shipping-guide 301
+
+# 旧文件名（prohibited-items已改名为tw-to-cn-prohibited-items）
+/blog/prohibited-items.html /blog/tw-to-cn-prohibited-items 301
+
+# 旧文件名（customs-regulations已改名）
+/blog/customs-regulations.html /blog/tw-to-cn-customs 301
+
+# 旧文件名（recommended-logistics已改名）
+/blog/recommended-logistics.html /blog/tw-to-cn-logistics-recommend 301
+/blog/hangzhou-shipping-guide.html /blog/hangzhou-shipping-guide 301
+/blog/cross-strait-bidirectional-logistics.html /blog/cross-strait-bidirectional-logistics 301
+
+# =================== 2026-06-10 批量补全 .html → 无后缀 301 ===================
+/blog/battery-products-shipping.html /blog/battery-products-shipping 301
+/blog/birds-nest-ginseng-shipping.html /blog/birds-nest-ginseng-shipping 301
+/blog/blood-glucose-meter-shipping.html /blog/blood-glucose-meter-shipping 301
+/blog/case-milk-powder-herbs-jilin.html /blog/case-milk-powder-herbs-jilin 301
+/blog/commercial-shipping.html /blog/commercial-shipping 301
+/blog/computer-equipment-shipping-guide.html /blog/computer-equipment-shipping-guide 301
+/blog/cross-strait-logistics-comparison.html /blog/cross-strait-logistics-comparison 301
+/blog/cross-strait-logistics-terms.html /blog/cross-strait-logistics-terms 301
+/blog/ezway-tutorial.html /blog/ezway-tutorial 301
+/blog/shipping-packaging-guide.html /blog/shipping-packaging-guide 301
+/blog/shipping-process-guide.html /blog/shipping-process-guide 301
+/blog/taiwan-products-jd-tmall.html /blog/taiwan-products-jd-tmall 301
+/blog/taiwan-souvenir-shipping.html /blog/taiwan-souvenir-shipping 301
+/blog/toys-dolls-shipping-guide.html /blog/toys-dolls-shipping-guide 301
+/blog/tw-to-cn-shipping-process.html /blog/tw-to-cn-shipping-process 301
+/blog/computer-accessories-shipping.html /blog/computer-accessories-shipping 301
+
+# =================== 2026-06-14 补全 .html → clean URL ===================
+/can-i-ship.html /can-i-ship 301
+/cross-strait-logistics-report-2026.html /cross-strait-logistics-report-2026 301
+/customs-guide.html /customs-guide 301
+/economy-shipping.html /economy-shipping 301
+/fast-shipping.html /fast-shipping 301
+/partners.html /partners 301
+/sensitive-goods-shipping.html /sensitive-goods-shipping 301
+/top-10-rejected-items.html /top-10-rejected-items 301
+/volume-calculator.html /volume-calculator 301
+/blog/door-pickup-service.html /blog/door-pickup-service 301
+/blog/electronics-repair-return-shipping.html /blog/electronics-repair-return-shipping 301
+/blog/hair-care-shipping.html /blog/hair-care-shipping 301
+/blog/taiwan-snack-shipping.html /blog/taiwan-snack-shipping 301
+
+# =================== 2026-06-15 客戶需求新增 ===================
+/blog/used-electronics-repair-shipping.html /blog/used-electronics-repair-shipping 301
+/blog/homemade-food-shipping.html /blog/homemade-food-shipping 301
+/blog/product-return-shipping.html /blog/product-return-shipping 301
+
+# =================== 2026-06-16 補漏 .html → clean URL ===================
+/express-comparison.html /express-comparison 301
+/blog/jewelry-crystal-shipping.html /blog/jewelry-crystal-shipping 301
+/blog/taiwan-food-snacks-to-china.html /blog/taiwan-food-snacks-to-china 301
+
+# =================== 2026-06-16 安全网 ===================
+/blog/prohibited-items /blog/tw-to-cn-prohibited-items 301
+/blog/car-parts-shipping.html  /blog/car-parts-shipping  301
