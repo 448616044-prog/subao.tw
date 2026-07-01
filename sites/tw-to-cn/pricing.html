@@ -542,9 +542,14 @@
 function openContactModal(){document.getElementById('contactModal').classList.add('active')}
 function closeContactModal(){document.getElementById('contactModal').classList.remove('active');setTimeout(function(){document.getElementById('contactFormWrap').style.display='block';document.getElementById('successMsg').style.display='none';document.getElementById('contactMsgForm').reset()},300)}
 function submitContactForm(e){e.preventDefault();var n=document.getElementById('cfName').value,c=document.getElementById('cfContact').value,i=document.getElementById('cfItem').value||'未填',m=document.getElementById('cfMsg').value||'未填';gtag('event','contact_form_submit',{event_category:'conversion',event_label:'floating_contact'});document.getElementById('contactFormWrap').style.display='none';document.getElementById('successMsg').style.display='block';fetch('https://formsubmit.co/ajax/business@videotvai.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,contact:c,item:i,message:m,_subject:'[速豹官網留言] '+n,})}).catch(function(){})}
-);var f=e.target;f.style.display='none';document.getElementById('ldone').style.display='block';fetch('https://formsubmit.co/ajax/business@videotvai.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:'LINE: '+lid,contact:lid,item:litem,message:'來源: '+page+'\nLINE ID: '+lid+'\n物品: '+litem,_subject:'[速豹LEAD] '+lid+' - '+litem})}).catch(function(){})}
 </script>
-    document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.m-dropdown>span').forEach(function(s){
+    s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})
+  });
+});
+</script>
 
 <svg style="display:none" aria-hidden="true">
 <symbol id="bars" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2z"/></symbol>
