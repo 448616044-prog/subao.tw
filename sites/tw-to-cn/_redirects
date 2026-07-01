@@ -182,3 +182,6 @@
 /blog/small-appliances-shipping.html /blog/small-appliances-shipping 301
 /blog/used-phone-tablet-shipping.html /blog/used-phone-tablet-shipping 301
 /blog/bluetooth-earphones-watch-shipping.html /blog/bluetooth-earphones-watch-shipping 301
+# tw.html 旧版重定向
+/tw.html /tw-to-cn 301
+/cn.html /tw-to-cn 301
