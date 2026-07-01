@@ -692,4 +692,23 @@
   <url><loc>https://subao.tw/blog/bamboo-agricultural-shipping</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://subao.tw/blog/multi-parcel-consolidation</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
+
+  <url>
+    <loc>https://subao.tw/blog/small-appliances-shipping</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://subao.tw/blog/used-phone-tablet-shipping</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://subao.tw/blog/bluetooth-earphones-watch-shipping</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
 </urlset>
