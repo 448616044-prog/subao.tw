@@ -172,23 +172,24 @@
     .calc-result-value{font-size:40px;font-weight:700;color:var(--secondary)}
     .calc-result-detail{font-size:13px;color:var(--text-light);margin-top:8px}
     .notes-section{background:var(--bg-gray);padding:60px 0}
-    .notes-section h2{text-align:center;font-size:28px;font-weight:700;color:var(--text-dark);margin-bottom:40px}
-    .notes-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-    .note-card{background:var(--bg-white);border-radius:var(--radius-lg);padding:28px;box-shadow:var(--shadow);border-left:4px solid}
+    .notes-section h2{text-align:center;font-size:28px;font-weight:700;color:var(--text-dark);margin-bottom:32px}
+    .notes-grid{display:grid;grid-template-columns:1fr;gap:16px;max-width:880px;margin:0 auto}
+    .note-card{background:var(--bg-white);border-radius:var(--radius);padding:20px 24px;box-shadow:var(--shadow);border-left:4px solid;display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:start}
     .note-card.delivery{border-left-color:#3B82F6}
     .note-card.packaging{border-left-color:#10B981}
     .note-card.claims{border-left-color:#F59E0B}
     .note-card.prohibited{border-left-color:#EF4444}
-    .note-header{display:flex;align-items:center;gap:12px;margin-bottom:16px}
-    .note-icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px}
+    .note-header{display:flex;align-items:center;gap:10px}
+    .note-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
     .note-card.delivery .note-icon{background:rgba(59,130,246,0.1)}
     .note-card.packaging .note-icon{background:rgba(16,185,129,0.1)}
     .note-card.claims .note-icon{background:rgba(245,158,11,0.1)}
     .note-card.prohibited .note-icon{background:rgba(239,68,68,0.1)}
-    .note-title{font-size:18px;font-weight:700;color:var(--text-dark)}
-    .note-card ul{list-style:none}
-    .note-card li{position:relative;padding-left:20px;margin-bottom:10px;font-size:14px;color:var(--text-light);line-height:1.7}
-    .note-card li::before{content:'•';position:absolute;left:0;color:var(--text-light)}
+    .note-title{font-size:16px;font-weight:700;color:var(--text-dark);line-height:1.3}
+    .note-card ul{list-style:none;margin:0}
+    .note-card li{position:relative;padding-left:18px;margin-bottom:8px;font-size:14px;color:var(--text-mid);line-height:1.7}
+    .note-card li:last-child{margin-bottom:0}
+    .note-card li::before{content:'•';position:absolute;left:0;color:var(--primary)}
     .notes-vat{text-align:center;color:#EF4444;font-size:14px;font-weight:500;margin-top:32px}
     .cta-section{background:linear-gradient(135deg,var(--secondary) 0%,var(--secondary-dark) 100%);color:#fff;text-align:center;padding:60px 0}
     .cta-section h2{font-size:28px;margin-bottom:12px}
@@ -205,7 +206,8 @@
     .service-btn .icon{font-size:20px}
     .service-btn .name{font-size:14px;display:block;margin:4px 0 2px}
     .service-btn .time{font-size:12px;display:block;margin:0}}
-    .service-btn{width:100%;max-width:300px}.calc-form{grid-template-columns:1fr}.calc-btn{width:100%}.notes-grid{grid-template-columns:1fr}.footer .container{grid-template-columns:1fr 1fr}}
+    .service-btn{width:100%;max-width:300px}.calc-form{grid-template-columns:1fr}.calc-btn{width:100%}.notes-grid{grid-template-columns:1fr}
+    .note-card{grid-template-columns:1fr;gap:12px}.footer .container{grid-template-columns:1fr 1fr}}
     @media(max-width:768px){.pricing-grid{grid-template-columns:1fr}.category-legend{gap:12px}.footer .container{grid-template-columns:1fr}.page-hero h1{font-size:32px}.calculator{padding:24px}}
   </style>
 </head>
