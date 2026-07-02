@@ -59,7 +59,21 @@
     .timeline-item .day{font-size:12px;color:var(--muted)}
     .timeline-item .action{font-size:14px;font-weight:500}
     .footer{background:#1a1a2e;color:#ccc;text-align:center;padding:24px;font-size:13px;margin-top:40px}
-  </style>
+  
+.menu-toggle{display:none;background:none;border:none;font-size:22px;cursor:pointer;color:#333;padding:4px;flex-shrink:0}
+.mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;bottom:0;background:#fff;padding:24px;overflow-y:auto;z-index:999;box-shadow:0 4px 12px rgba(0,0,0,.1)}
+.mobile-menu.active{display:block}
+.mobile-nav-link{display:block;padding:16px 0;font-size:16px;font-weight:500;color:#333;border-bottom:1px solid #e0e0e0;text-decoration:none}
+.mobile-nav-link.cta{margin-top:24px;padding:16px 24px;background:#0066CC;color:#fff;border-radius:8px;text-align:center;border:none}
+.m-dropdown>span{display:flex;justify-content:space-between;align-items:center;padding:16px 0;font-size:16px;font-weight:500;color:#333;border-bottom:1px solid #e0e0e0;cursor:pointer}
+.m-dropdown>span::after{content:"▾";font-size:12px;transition:transform .2s}
+.m-dropdown.open>span::after{transform:rotate(180deg)}
+.m-dropdown-links{display:none;padding-left:16px}
+.m-dropdown.open .m-dropdown-links{display:block}
+.m-dropdown-links a{display:block;padding:12px 8px;font-size:14px;color:#333;border-bottom:1px solid #f0f0f0;text-decoration:none}
+@media(max-width:992px){.nav-links,.header-cta{display:none}.menu-toggle{display:block}}
+@media(max-width:768px){body{font-size:15px;overflow-x:hidden}.container{padding:0 16px}table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}}
+</style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -71,14 +85,23 @@
   </script>
 </head>
 <body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none"><symbol id="bars" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></symbol><symbol id="line" viewBox="0 0 24 24"><path d="M19.4 10.4c-.6-.6-1.5-.9-2.4-.9h-.2l.1-.5c.1-.5.1-1 0-1.5-.2-1-.8-1.8-1.7-2.4-.9-.5-1.9-.7-2.9-.5-1.7.3-3 1.5-3.5 3.1-.1.2-.1.5-.2.7V9h-.3c-1.7.3-3 1.5-3.5 3.1-.1.3-.2.6-.2.9 0 1.5.8 2.9 2.1 3.7l1-.9c-.9-.5-1.4-1.4-1.4-2.4 0-.2 0-.4.1-.6.3-1 1.2-1.8 2.2-2l.5-.1h1.2l-.2-1.2c-.1-.4-.1-.8 0-1.2.1-.6.5-1.1 1-1.4.5-.3 1-.4 1.5-.3.5.1.9.3 1.2.7.3.4.4.8.4 1.2 0 .5-.1.9-.2 1.4l-.4 1.5h.6c1.6 0 3 1 3.5 2.5.1.3.2.6.2.9 0 .8-.4 1.5-1 2l.9 1c.9-.7 1.4-1.7 1.4-2.8.1-.8-.2-1.5-.7-2.1z"/></symbol></svg>
 <header class="navbar">
   <div class="container navbar-content">
     <a href="/" class="logo">速豹<span>集運</span></a>
     <nav class="nav-links">
       <a href="/pricing">運費試算</a><a href="/prohibited-items">禁運清單</a><a href="/article-list">文章攻略</a><a href="/faq">常見問題</a><a href="/about">關於我們</a>
     </nav>
-  </div>
-</header>
+  
+<button class="menu-toggle" id="menuToggle" aria-label="選單"><svg class="icon" aria-hidden="true"><use href="#bars"/></svg></button>
+  
+<div class="mobile-menu" id="mobileMenu">
+<a href="/tw-to-cn" class="mobile-nav-link">台灣發大陸</a>
+<div class="m-dropdown"><span>運費</span><div class="m-dropdown-links"><a href="/pricing">運費報價</a><a href="/pricing-calculator">運費試算</a></div></div>
+<a href="/can-i-ship" class="mobile-nav-link">可以寄嗎</a><a href="/customs-guide" class="mobile-nav-link">關稅速查</a><a href="/volume-calculator" class="mobile-nav-link">材積計算</a><a href="/article-list" class="mobile-nav-link">文章攻略</a>
+<div class="m-dropdown"><span>更多</span><div class="m-dropdown-links"><a href="/pickup-service">🚚 上門取貨</a><a href="/faq">常見問題</a><a href="/express-comparison">快遞對比</a><a href="/partners">合作夥伴</a><a href="/about">關於我們</a></div></div>
+<a href="https://line.me/R/ti/p/@734dooky" class="mobile-nav-link cta" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><svg class="icon" aria-hidden="true"><use href="#line"/></svg> 加入LINE</a>
+</div>
 
 <main class="blog-container">
   <h1 class="blog-title">郵局寄大陸要等多久？EMS 14天vs專線3天【2026實測】台灣寄大陸時效全對比</h1>
@@ -179,4 +202,5 @@
   </div>
 </main>
 <footer class="footer"><div class="container"><p>© 2026 速豹集運 subao.tw | 台灣寄大陸專業物流</p></div></footer>
+<script>(function(){var h=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(h&&m){h.addEventListener("click",function(){m.classList.toggle("active")})};document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(){this.parentElement.classList.toggle("open")})})})()</script>
 </body></html>

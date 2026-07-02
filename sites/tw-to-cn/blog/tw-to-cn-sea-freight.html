@@ -251,6 +251,13 @@
     <button class="menu-toggle" id="menuToggle" aria-label="選單"><svg class="icon" aria-hidden="true"><use href="#bars"/></svg></button>
   </div>
 </header>
+<div class="mobile-menu" id="mobileMenu">
+<a href="/tw-to-cn" class="mobile-nav-link">台灣發大陸</a>
+<div class="m-dropdown"><span>運費</span><div class="m-dropdown-links"><a href="/pricing">運費報價</a><a href="/pricing-calculator">運費試算</a></div></div>
+<a href="/can-i-ship" class="mobile-nav-link">可以寄嗎</a><a href="/customs-guide" class="mobile-nav-link">關稅速查</a><a href="/volume-calculator" class="mobile-nav-link">材積計算</a><a href="/article-list" class="mobile-nav-link">文章攻略</a>
+<div class="m-dropdown"><span>更多</span><div class="m-dropdown-links"><a href="/pickup-service">🚚 上門取貨</a><a href="/faq">常見問題</a><a href="/express-comparison">快遞對比</a><a href="/partners">合作夥伴</a><a href="/about">關於我們</a></div></div>
+<a href="https://line.me/R/ti/p/@734dooky" class="mobile-nav-link cta" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><svg class="icon" aria-hidden="true"><use href="#line"/></svg> 加入LINE</a>
+</div>
 
 <section class="hero">
   <div class="container">
@@ -392,5 +399,6 @@
 </div>
 
 <script>function openContactModal(){document.getElementById('contactModal').classList.add('active')}function closeContactModal(){document.getElementById('contactModal').classList.remove('active');setTimeout(function(){document.getElementById('contactFormWrap').style.display='block';document.getElementById('successMsg').style.display='none';document.getElementById('contactMsgForm').reset()},300)}function submitContactForm(e){e.preventDefault();var n=document.getElementById('cfName').value,c=document.getElementById('cfContact').value,i=document.getElementById('cfItem').value||'未填',m=document.getElementById('cfMsg').value||'未填';gtag('event','contact_form_submit',{event_category:'conversion',event_label:'floating_contact'});document.getElementById('contactFormWrap').style.display='none';document.getElementById('successMsg').style.display='block';fetch('https://formsubmit.co/ajax/business@videotvai.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,contact:c,item:i,message:m,_subject:'[速豹官網留言] '+n})}).catch(function(){})}</script>
+<script>(function(){var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(t&&m){t.addEventListener("click",function(){m.classList.toggle("active")})}})()</script>
 </body>
 </html>
