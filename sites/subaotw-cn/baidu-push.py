@@ -34,9 +34,9 @@ if __name__ == "__main__":
     print(f"Total: {len(all_urls)} URLs")
     
     # Baidu free tier: ~10 URLs per push, resets daily
-    # Push in batches of 10
+    # Push ALL URLs in batches of 10
     batch = 10
-    for i in range(0, min(len(all_urls), 10 * 7), batch):
+    for i in range(0, len(all_urls), batch):
         chunk = all_urls[i:i+batch]
         try:
             result = push_urls(chunk)

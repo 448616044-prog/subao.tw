@@ -3,6 +3,13 @@
 > 每天5条URL，轮转式推送
 > 
 > API: data.zz.baidu.com
+
+## 2026-07-05 23:56 — 凌晨推送
+- **推送URL数**: 10（尝试，取脚本前10条：sitemap.xml, /, /article-list, /tw-to-cn/, /blog/cn-to-tw-shipping-guide, /blog/food-shipping-guide, /blog/noodles-ramen-shipping, /blog/tea-shipping-guide, /blog/cosmetics-shipping, /blog/electronics-shipping）
+- **API返回**: `{"error":401,"message":"token is not valid"}`
+- **状态**: ❌ Token 失效
+- **对比上次(7/3)**: 上次为 HTTP 400 over quota，本次变为 HTTP 401 token is not valid
+- **结论**: Token `K4kVPs6NwjtWr4ij` 已过期或被撤销，需登录[百度搜索资源平台](https://ziyuan.baidu.com/)重新获取推送 token
 > Token: K4kVPs6NwjtWr4ij
 
 ## 2026-06-14 00:05
@@ -185,3 +192,29 @@
 - [5] https://www.subaotw.cn/blog/clothes-to-taiwan
 - **API返回**: `{"error":400,"message":"over quota"}`
 - **状态**: ❌ 配额已满——6/26 仍未恢复。上次成功推送 6/25 00:05（10条），推测免费新站日配额当天已用完或总量近上限。
+## 2026-07-03 23:56:23 — 凌晨推送
+- **推送URL数**: 10（尝试）
+- **API返回**: {"error":400,"message":"over quota"}
+
+## 2026-07-04 — 全站技术修复后推送尝试
+- **推送URL数**: 5（sitemap+首页+核心入口）
+- **API返回**: {"error":400,"message":"over quota"}
+- **状态**: ❌ 连续10天 over quota，最后一次成功6/25
+- **结论**: 免费新站推送总量上限已触发（≈45条后永久锁定），需手动登录[百度搜索资源平台](https://ziyuan.baidu.com/)：
+  1. 查看站点配额状态
+  2. 手动提交 sitemap（非API方式）
+  3. 申请配额提升
+- **副作用**: subaotw.cn 130页中仍有85页未被推送，Baiduspider 缺乏入口
+
+## 2026-07-04 — 技术修复清单
+- P0-1: ✅ 清除6页GA/gtag代码
+- P0-2: ✅ 全量百度统计覆盖（130/130）
+- P0-3: ✅ 全量自动推送JS覆盖（130/130）
+- P0-4: ⚠️ API推送配额耗尽，需手动提交sitemap
+- **状态**: ❌ 配额已满或失败
+
+## 2026-07-05 23:56:40 — 凌晨推送
+- **推送URL数**: 10（尝试）
+- **API返回**: {"error":401,"message":"token is not valid"}
+- **状态**: ❌ 配额已满或失败
+
