@@ -4,7 +4,7 @@
 
 cd "$(dirname "$0")"
 
-API="http://data.zz.baidu.com/urls?site=https://www.subaotw.cn&token=K4kVPs6NwjtWr4ij"
+API="http://data.zz.baidu.com/urls?site=https://www.subaotw.cn&token=UAVg0xt7rxpTjzaL"
 TODAY=$(date +%Y-%m-%d)
 LOG="/tmp/baidu-push-subaotw.log"
 URL_FILE="baidu-push-urls.txt"

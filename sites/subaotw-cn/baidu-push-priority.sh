@@ -2,7 +2,7 @@
 # 高优先级百度推送 — 凌晨00:01执行，抢每日配额
 # 推送顺序：sitemap → hub页 → 高价值新内容 → 常规内容
 
-API="http://data.zz.baidu.com/urls?site=https://www.subaotw.cn&token=K4kVPs6NwjtWr4ij"
+API="http://data.zz.baidu.com/urls?site=https://www.subaotw.cn&token=UAVg0xt7rxpTjzaL"
 LOG="/tmp/baidu-push-priority.log"
 PUSH_LOG="/Users/mac/WorkBuddy/Claw/物流項目/baidu-push-log.md"
 

@@ -7,7 +7,7 @@ from datetime import datetime, timezone, timedelta
 
 SITEMAP_PATH = "/Users/mac/WorkBuddy/Claw/物流項目/sites/subaotw-cn/sitemap.xml"
 LOG_PATH = "/Users/mac/WorkBuddy/Claw/物流項目/baidu-push-log.md"
-BAIDU_API = "http://data.zz.baidu.com/urls?site=www.subaotw.cn&token=K4kVPs6NwjtWr4ij"
+BAIDU_API = "http://data.zz.baidu.com/urls?site=www.subaotw.cn&token=UAVg0xt7rxpTjzaL"
 PUSH_SIZE = 5
 
 # ---- 1. Parse sitemap, get unique URLs in document order ----

@@ -3,6 +3,24 @@
 > 每天5条URL，轮转式推送
 > 
 > API: data.zz.baidu.com
+> Token: UAVg0xt7rxpTjzaL（2026-07-07 更新）
+
+## 2026-07-07 22:45 — Token更新 + 首日10条推送
+- **Token更新**: K4kVPs6NwjtWr4ij → UAVg0xt7rxpTjzaL（旧账号恢复）
+- **批次1**: 5条 → remain=5, success=5
+  - https://www.subaotw.cn/
+  - https://www.subaotw.cn/tw-to-cn/
+  - https://www.subaotw.cn/equipment/
+  - https://www.subaotw.cn/guide/
+  - https://www.subaotw.cn/blog/cn-to-tw-shipping-guide
+- **批次2**: 5条 → remain=0, success=5
+  - https://www.subaotw.cn/blog/cn-to-tw-furniture-shipping
+  - https://www.subaotw.cn/blog/cn-to-tw-moving-guide
+  - https://www.subaotw.cn/blog/cn-to-tw-appliance-shipping
+  - https://www.subaotw.cn/blog/cn-to-tw-building-materials-shipping
+  - https://www.subaotw.cn/blog/cn-to-tw-equipment-shipping
+- **状态**: ✅ 全部成功，日配额用完
+- **累计推送**: 45 + 10 = 55/140
 
 ## 2026-07-05 23:56 — 凌晨推送
 - **推送URL数**: 10（尝试，取脚本前10条：sitemap.xml, /, /article-list, /tw-to-cn/, /blog/cn-to-tw-shipping-guide, /blog/food-shipping-guide, /blog/noodles-ramen-shipping, /blog/tea-shipping-guide, /blog/cosmetics-shipping, /blog/electronics-shipping）

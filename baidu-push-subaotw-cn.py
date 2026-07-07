@@ -4,7 +4,7 @@ import requests
 import os
 
 # 百度站长平台 — 主动推送 API（备案通过后在百度站长平台获取）
-BAIDU_API_URL = "http://data.zz.baidu.com/urls?site=https://www.subaotw.cn&token=K4kVPs6NwjtWr4ij"
+BAIDU_API_URL = "http://data.zz.baidu.com/urls?site=https://www.subaotw.cn&token=UAVg0xt7rxpTjzaL"
 
 SITE_DIR = "/Users/mac/WorkBuddy/Claw/物流項目/sites/subaotw-cn"
 
