@@ -30,6 +30,36 @@
 ### 总表更新
 197 → 239目标 | 高价值DA50+从68个增至86个（+18个） | 新增6个全新搜索维度
 
+## 2026-07-06 执行（第12轮）
+
+### 搜索维度
+- Yelo Marketing 400+目录提交站点全量交叉比对
+- 台湾在地黄页工商名录（twypage/taiwanonline/web393/taipei.freepage）
+- 全球货代联盟网络（GLA Family/Pangea Network）
+- 物流行业社区论坛（logistics.forum/free-logistics）
+- 高价值全球B2B商业目录（business.com/justlanded/citysearch/startupranking/ChamberofCommerce/local.com）
+- 中国B2B平台补充（k2sou/enuob2b）
+- 黄页88子站（物流专站wuliu.huangye88.com/台湾分站taiwan.huangye88.com）
+- 台湾公司登记平台（inc.com.tw/bussiness.tw/companys.com.tw）
+
+### 核心发现
+- **business.com（DA81）** — 🏆 全球B2B商业目录，明确Logistics & Transportation分类，免费listing
+- **justlanded.com（DA75）** — 🔥 全球外派人士社区，用户精准（正在跨国搬家的人），物流服务商入驻直接触达
+- **citysearch.com（DA73）/ startupranking.com（DA73）** — 高DA全球目录，Logistics分类可收录
+- **ChamberofCommerce.com（DA60）/ local.com（DA68）** — 商会目录+本地商业目录
+- **GLA Family（DR45-50）** — 🔥 全球物流联盟，会员目录展示网站链接
+- **FreightHub（DR40-45）** — 物流行业专业目录
+- **Pangea Network（DR40-45）** — 全球货代合作网络
+- **taipei.freepage.com.tw** — 🔥 **无CAPTCHA！**台北黄页免费網站登錄
+- **twypage.com + taiwanonline.com.tw** — 台湾在地黄页，明确免费收录
+- **wuliu.huangye88.com（DR45-50）** — 🔥 黄页88物流专业子站，精准物流B2B受众
+
+### 新增平台数
+24个（A++级6个高价值全球目录 / A+级5个物流专项平台 / B+++级8个台湾本地目录+B2B / C+++级5个行业社区+台湾补充）
+
+### 总表更新
+250 → 274目标 | 高价值DA50+从86个增至92个（+6个） | 新增7个全新搜索维度
+
 ## 2026-06-24 执行（第9轮）
 （见历史记录，共23个新增，174→197目标）
 

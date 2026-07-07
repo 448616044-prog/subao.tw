@@ -218,3 +218,8 @@
 - **API返回**: {"error":401,"message":"token is not valid"}
 - **状态**: ❌ 配额已满或失败
 
+## 2026-07-06 23:57:38 — 凌晨推送
+- **推送URL数**: 10（尝试）
+- **API返回**: {"error":401,"message":"token is not valid"}
+- **状态**: ❌ 配额已满或失败
+
