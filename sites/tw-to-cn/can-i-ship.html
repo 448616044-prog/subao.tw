@@ -5,10 +5,10 @@
   <link rel="icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>可以寄嗎？查詢工具｜台灣寄大陸快遞商品查詢｜速豹集運</title>
-  <meta name="description" content="不確定你的東西能不能寄大陸？快速查詢工具：輸入商品種類，立即顯示可寄/禁運/需確認。LINE免費評估，30秒確認能不能寄。">
-  <meta property="og:title" content="可以寄嗎？查詢工具｜台灣寄大陸快遞商品查詢｜速豹集運">
-  <meta property="og:description" content="可以寄嗎？查詢工具｜台灣寄大陸快遞商品查詢。LINE即時諮詢，免費估價，最快3-5天送達。">
+  <title>可以寄嗎？200+商品查詢工具｜台灣寄大陸快遞查詢｜速豹集運</title>
+  <meta name="description" content="不確定你的東西能不能寄大陸？200+種商品查詢工具：輸入商品名，立即顯示可寄/禁運/需確認、適用專線及關稅。LINE免費估價，30秒確認。">
+  <meta property="og:title" content="可以寄嗎？200+商品查詢工具｜台灣寄大陸快遞查詢｜速豹集運">
+  <meta property="og:description" content="200+種商品查詢工具：輸入商品名立即顯示可寄/禁運/需確認。LINE免費估價，最快3-5天送達。">
   <meta property="og:image" content="https://subao.tw/images/subao-logo-new.webp">
   <meta property="og:url" content="https://subao.tw/can-i-ship">
   <meta property="og:type" content="website">
@@ -23,7 +23,29 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"></noscript>
 
-  <script type="application/ld+json">
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "可以寄嗎？查詢工具",
+    "url": "https://subao.tw/can-i-ship",
+    "description": "台灣寄大陸商品查詢工具：輸入商品名稱即可查詢是否可寄送、適用專線及關稅資訊。覆蓋200+種常見商品。",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Web",
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "TWD"},
+    "provider": {
+      "@type": "Organization",
+      "name": "速豹集運",
+      "url": "https://subao.tw",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "lineContact": "@734dooky"
+      }
+    }
+  }
+  </script>
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -165,7 +187,7 @@
         <a href="/volume-calculator" data-nav="volume-calculator">材積計算</a>
         <a href="/article-list" data-nav="article-list">文章攻略</a>
         <div class="nav-dropdown"><a href="#" onclick="return false" style="cursor:default">更多</a>
-        <div class="dd-menu"><a href="/pickup-service">🚚 上門取貨</a><a href="/faq">常見問題</a><a href="/express-comparison">快遞對比</a><a href="/partners">合作夥伴</a><a href="/about">關於我們</a></div></div>
+        <div class="dd-menu"><a href="/pickup-service">🚚 上門取貨</a><a href="/faq">常見問題</a><a href="/express-comparison">快遞對比</a><a href="/tools">🛠️ 免費工具</a><a href="/partners">合作夥伴</a><a href="/about">關於我們</a></div></div>
       </nav>
       <div class="header-cta">
         <a href="https://line.me/R/ti/p/@734dooky" class="btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 咨詢</a>
@@ -193,6 +215,7 @@
         <a href="/pickup-service">🚚 上門取貨</a><a href="/faq">常見問題</a>
         <a href="/express-comparison">快遞對比</a>
         <a href="/partners">合作夥伴</a>
+        <a href="/tools">🛠️ 免費工具</a>
         <a href="/about">關於我們</a>
       </div>
     </div>
@@ -206,14 +229,14 @@
   <section class="page-hero">
     <div class="container">
       <h1>📦 可以寄嗎？一秒查詢</h1>
-      <p>輸入商品名稱，即時查詢台灣寄大陸是否可寄｜超過 150 種常見商品持續更新</p>
+      <p>輸入商品名稱，即時查詢台灣寄大陸是否可寄｜超過 200 種常見商品持續更新</p>
     </div>
   </section>
 
   <div class="search-wrap">
     <div class="container">
       <div class="search-box">
-        <input type="text" id="searchInput" placeholder="輸入商品名稱，例如：鳳梨酥、泡麵、魚油、面膜..." autocomplete="off">
+        <input type="text" id="searchInput" placeholder="搜尋 200+ 種商品，例如：鳳梨酥、泡麵、魚油、面膜..." autocomplete="off">
         <button onclick="doSearch()"><svg class="icon" aria-hidden="true" ><use href="#search"/></svg> 查詢</button>
       </div>
       <div class="search-suggestions">
@@ -464,7 +487,99 @@
       {id:"農產品",cat:"other",status:"cannot",note:"❌ 新鮮蔬果禁止寄大陸。",channel:"—",tax:"—"},
       {id:"寵物藥品",cat:"other",status:"cannot",note:"❌ 動物用藥品禁止個人寄送。",channel:"—",tax:"—"},
       {id:"活體植物",cat:"other",status:"cannot",note:"❌ 活體植物需檢疫審批，個人不可寄。",channel:"—",tax:"—"},
-    ];
+    
+      {id:"貓飼料",cat:"pet",status:"can",note:"乾飼料可寄。罐頭/濕食含肉類需確認。保留原包裝。",channel:"敏感貨專線",tax:"關稅5-15%"},
+      {id:"狗飼料",cat:"pet",status:"can",note:"乾飼料可寄。含肉類的濕食❌不行。",channel:"敏感貨專線",tax:"關稅5-15%"},
+      {id:"貓砂",cat:"pet",status:"can",note:"一般貓砂可寄。注意包裝密封防漏。",channel:"經濟專線",tax:"關稅5-10%"},
+      {id:"寵物零食",cat:"pet",status:"maybe",note:"不含肉類的寵物餅乾可寄。含肉乾/肉條的❌不行。",channel:"需確認",tax:"關稅5-15%"},
+      {id:"寵物玩具",cat:"pet",status:"can",note:"橡膠玩具、逗貓棒等可寄。",channel:"經濟專線",tax:"關稅5-10%"},
+      {id:"寵物營養品",cat:"pet",status:"can",note:"寵物維他命、關節保健品可寄。",channel:"敏感貨專線",tax:"關稅5-12%"},
+      {id:"水晶手鍊",cat:"jewelry",status:"can",note:"水晶、礦石飾品可寄。建議加固包裝防碎。",channel:"敏感貨專線",tax:"關稅5-15%"},
+      {id:"玉石",cat:"jewelry",status:"can",note:"一般玉石飾品可寄。需加強防碎包裝。",channel:"敏感貨專線",tax:"關稅5-15%"},
+      {id:"戒指",cat:"jewelry",status:"can",note:"銀戒、K金戒可寄。高價珠寶需申報價值。",channel:"敏感貨專線",tax:"關稅5-15%"},
+      {id:"項鍊",cat:"jewelry",status:"can",note:"一般飾品項鍊可寄。珍珠項鍊需防刮。",channel:"敏感貨專線",tax:"關稅5-15%"},
+      {id:"耳環",cat:"jewelry",status:"can",note:"可寄。尖銳款式需防刺破包裝。",channel:"敏感貨專線",tax:"關稅5-15%"},
+      {id:"銀飾",cat:"jewelry",status:"can",note:"銀飾、純銀首飾可寄。",channel:"敏感貨專線",tax:"關稅5-15%"},
+      {id:"吹風機",cat:"appliance",status:"can",note:"小家電可寄。需注意電壓規格不同（台灣110V，大陸220V）。",channel:"電器專線",tax:"關稅5-20%"},
+      {id:"電飯煲",cat:"appliance",status:"can",note:"小家電可寄。電壓需確認。",channel:"電器專線",tax:"關稅5-20%"},
+      {id:"掃地機器人",cat:"appliance",status:"can",note:"可寄。含鋰電池需申報。",channel:"電器專線",tax:"關稅5-20%"},
+      {id:"吸塵器",cat:"appliance",status:"can",note:"可寄。無線款含電池需申報。",channel:"電器專線",tax:"關稅5-20%"},
+      {id:"空氣清淨機",cat:"appliance",status:"can",note:"可寄。體積較大，建議走經濟專線。",channel:"經濟專線",tax:"關稅5-20%"},
+      {id:"除濕機",cat:"appliance",status:"can",note:"可寄。壓縮機式需確認冷媒類型。",channel:"需確認",tax:"關稅5-20%"},
+      {id:"電風扇",cat:"appliance",status:"can",note:"可寄。",channel:"經濟專線",tax:"關稅5-20%"},
+      {id:"烤箱",cat:"appliance",status:"can",note:"小家電可寄。大型烤箱體積大建議走海運。",channel:"電器專線",tax:"關稅5-20%"},
+      {id:"微波爐",cat:"appliance",status:"can",note:"可寄。大型家電運費較高。",channel:"經濟專線",tax:"關稅5-20%"},
+      {id:"血氧機",cat:"medical",status:"can",note:"家用醫療器材可寄。保留原包裝。",channel:"藥品專線",tax:"關稅0-5%"},
+      {id:"血壓計",cat:"medical",status:"can",note:"家用血壓計可寄。含電池需申報。",channel:"藥品專線",tax:"關稅0-5%"},
+      {id:"血糖機",cat:"medical",status:"can",note:"血糖機、血糖試紙可寄。",channel:"藥品專線",tax:"關稅0-5%"},
+      {id:"退燒藥",cat:"medical",status:"maybe",note:"成藥少量自用可嘗試。含處方成分的❌不行。",channel:"需確認",tax:"關稅6-20%"},
+      {id:"感冒藥",cat:"medical",status:"maybe",note:"成藥（非處方藥）少量自用可嘗試。",channel:"需確認",tax:"關稅6-20%"},
+      {id:"OK繃",cat:"medical",status:"can",note:"創可貼等一般醫療耗材可寄。",channel:"經濟專線",tax:"關稅0-5%"},
+      {id:"痠痛貼布",cat:"medical",status:"can",note:"外用貼布可寄。藥用貼布需確認成分。",channel:"敏感貨專線",tax:"關稅6-20%"},
+      {id:"驗孕棒",cat:"medical",status:"can",note:"一般驗孕試劑可寄。",channel:"敏感貨專線",tax:"關稅0-5%"},
+      {id:"球鞋",cat:"sports",status:"can",note:"運動鞋可寄。品牌鞋大量寄送可能需證明。",channel:"經濟專線",tax:"關稅6-17.5%+增值稅13%"},
+      {id:"健身器材",cat:"sports",status:"can",note:"小型健身器材（啞鈴、瑜珈墊）可寄。大型器材運費高。",channel:"經濟專線",tax:"關稅5-15%"},
+      {id:"瑜珈墊",cat:"sports",status:"can",note:"可寄。",channel:"經濟專線",tax:"關稅5-15%"},
+      {id:"籃球",cat:"sports",status:"can",note:"可寄。需洩氣後包裝。",channel:"經濟專線",tax:"關稅5-15%"},
+      {id:"高爾夫球具",cat:"sports",status:"can",note:"可寄。球桿較長需特殊包裝。",channel:"經濟專線",tax:"關稅5-15%"},
+      {id:"行車記錄器",cat:"car",status:"can",note:"可寄。含鋰電池需申報。",channel:"電器專線",tax:"關稅0%+增值稅13%"},
+      {id:"車用手機架",cat:"car",status:"can",note:"一般汽車配件可寄。",channel:"經濟專線",tax:"關稅5-15%"},
+      {id:"汽車香氛",cat:"car",status:"can",note:"可寄。液體類需密封包裝。",channel:"敏感貨專線",tax:"關稅5-10%"},
+      {id:"機油",cat:"car",status:"cannot",note:"❌ 機油、潤滑油等液體化學品禁止寄送。",channel:"—",tax:"—"},
+      {id:"吉他",cat:"instrument",status:"can",note:"可寄。需加固包裝（建議硬盒），琴弦放鬆。",channel:"經濟專線",tax:"關稅5-15%"},
+      {id:"烏克麗麗",cat:"instrument",status:"can",note:"小型樂器可寄。",channel:"經濟專線",tax:"關稅5-15%"},
+      {id:"電子琴",cat:"instrument",status:"can",note:"可寄。含電池需申報。",channel:"電器專線",tax:"關稅5-15%"},
+      {id:"樂譜",cat:"instrument",status:"can",note:"紙本樂譜可寄。",channel:"經濟專線",tax:"關稅0%+增值稅9%"},
+      {id:"舊衣服",cat:"used",status:"can",note:"舊衣物可寄。建議清洗後寄送。大量同款可能視為商業。",channel:"經濟專線",tax:"個人800元內免稅"},
+      {id:"舊手機",cat:"used",status:"can",note:"舊手機可寄。含電池需申報。建議清除個人資料。",channel:"快速專線",tax:"關稅0%+增值稅13%"},
+      {id:"舊電腦",cat:"used",status:"can",note:"舊筆電/桌機可寄。含電池需申報。",channel:"快速專線",tax:"關稅0%+增值稅13%"},
+      {id:"二手書",cat:"used",status:"can",note:"舊書可寄。10本以下個人自用免稅。",channel:"經濟專線",tax:"關稅0%+增值稅9%"},
+      {id:"二手家具",cat:"used",status:"can",note:"小型家具可寄。大型家具建議走海運。",channel:"經濟專線",tax:"關稅5-15%"},
+      {id:"綠豆糕",cat:"food",status:"can",note:"傳統糕餅可寄。注意保質期。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"鳳凰酥",cat:"food",status:"can",note:"含蛋黃的鳳梨酥❌不可。純鳳梨餡✅可寄。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"薯片",cat:"food",status:"can",note:"洋芋片等零食可寄。需防碎包裝。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"瓜子",cat:"food",status:"can",note:"葵花籽、南瓜籽可寄。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"關廟麵",cat:"food",status:"can",note:"乾麵條可寄。不含肉醬包即可。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"辣椒油",cat:"food",status:"can",note:"調味油品可寄。需密封防漏。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"麻油",cat:"food",status:"can",note:"食用油可寄。需密封防漏包裝。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"果醬",cat:"food",status:"can",note:"果醬、抹醬可寄。不含肉類即可。",channel:"敏感貨專線",tax:"個人800元內免稅"},
+      {id:"睫毛膏",cat:"cosmetic",status:"can",note:"彩妝品可寄。",channel:"敏感貨專線",tax:"關稅5-10%+增值稅13%"},
+      {id:"指甲油",cat:"cosmetic",status:"can",note:"指甲油含溶劑，可寄但需密封包裝防漏。少量自用為佳。",channel:"敏感貨專線",tax:"關稅5-10%+增值稅13%"},
+      {id:"身體乳",cat:"cosmetic",status:"can",note:"身體保養品可寄。",channel:"敏感貨專線",tax:"關稅5-10%+增值稅13%"},
+      {id:"洗髮精",cat:"cosmetic",status:"can",note:"洗護髮產品可寄。液體需密封防漏。",channel:"敏感貨專線",tax:"關稅5-10%+增值稅13%"},
+      {id:"沐浴乳",cat:"cosmetic",status:"can",note:"可寄。液體類需密封防漏。",channel:"敏感貨專線",tax:"關稅5-10%+增值稅13%"},
+      {id:"護手霜",cat:"cosmetic",status:"can",note:"可寄。",channel:"敏感貨專線",tax:"關稅5-10%+增值稅13%"},
+      {id:"鍵盤",cat:"electronic",status:"can",note:"電腦鍵盤可寄。無線鍵盤含電池需申報。",channel:"快速專線",tax:"關稅0%+增值稅13%"},
+      {id:"滑鼠",cat:"electronic",status:"can",note:"可寄。無線滑鼠含電池需申報。",channel:"快速專線",tax:"關稅0%+增值稅13%"},
+      {id:"螢幕",cat:"electronic",status:"can",note:"電腦螢幕可寄。需加強防碎包裝。",channel:"快速專線",tax:"關稅0%+增值稅13%"},
+      {id:"數據線",cat:"electronic",status:"can",note:"USB線、充電線可寄。",channel:"經濟專線",tax:"關稅0%+增值稅13%"},
+      {id:"隨身碟",cat:"electronic",status:"can",note:"USB隨身碟可寄。",channel:"經濟專線",tax:"關稅0%+增值稅13%"},
+      {id:"印表機",cat:"electronic",status:"can",note:"可寄。含墨水/碳粉需密封防漏。",channel:"快速專線",tax:"關稅0%+增值稅13%"},
+      {id:"掃描器",cat:"electronic",status:"can",note:"可寄。",channel:"快速專線",tax:"關稅0%+增值稅13%"},
+      {id:"藍牙喇叭",cat:"electronic",status:"can",note:"可寄。含鋰電池需申報。",channel:"快速專線",tax:"關稅0%+增值稅13%"},
+      {id:"川貝枇杷膏",cat:"medicine",status:"can",note:"可寄。",channel:"藥品專線",tax:"關稅6-20%+增值稅9%"},
+      {id:"八仙果",cat:"medicine",status:"can",note:"喉糖類中藥可寄。",channel:"藥品專線",tax:"關稅6-20%+增值稅9%"},
+      {id:"羅漢果",cat:"medicine",status:"can",note:"可寄。",channel:"藥品專線",tax:"關稅6-20%+增值稅9%"},
+      {id:"金銀花",cat:"medicine",status:"can",note:"可寄。",channel:"藥品專線",tax:"關稅6-20%+增值稅9%"},
+      {id:"黨參",cat:"medicine",status:"can",note:"一般中藥材可寄。",channel:"藥品專線",tax:"關稅6-20%+增值稅9%"},
+      {id:"天麻",cat:"medicine",status:"can",note:"一般中藥材可寄。野生天麻需瀕危物種證明。",channel:"需確認",tax:"關稅6-20%"},
+      {id:"阿膠",cat:"medicine",status:"maybe",note:"阿膠含動物成分，需確認是否可通關。建議先問客服。",channel:"需確認",tax:"關稅6-20%"},
+      {id:"鐵觀音",cat:"tea",status:"can",note:"可寄。真空包裝最佳。",channel:"敏感貨專線",tax:"關稅15%+增值稅9%"},
+      {id:"凍頂烏龍",cat:"tea",status:"can",note:"可寄。",channel:"敏感貨專線",tax:"關稅15%+增值稅9%"},
+      {id:"文山包種茶",cat:"tea",status:"can",note:"可寄。",channel:"敏感貨專線",tax:"關稅15%+增值稅9%"},
+      {id:"阿里山茶",cat:"tea",status:"can",note:"可寄。真空包裝最佳。",channel:"敏感貨專線",tax:"關稅15%+增值稅9%"},
+      {id:"棉被",cat:"daily",status:"can",note:"棉被、羽絨被可寄。體積大，建議走經濟專線。",channel:"經濟專線",tax:"關稅6-17.5%+增值稅13%"},
+      {id:"枕頭",cat:"daily",status:"can",note:"可寄。",channel:"經濟專線",tax:"關稅6-17.5%+增值稅13%"},
+      {id:"背包",cat:"daily",status:"can",note:"後背包、書包可寄。",channel:"經濟專線",tax:"關稅6-17.5%+增值稅13%"},
+      {id:"皮夾",cat:"daily",status:"can",note:"錢包、皮夾可寄。品牌皮夾大量可能需證明。",channel:"經濟專線",tax:"關稅6-17.5%+增值稅13%"},
+      {id:"雨傘",cat:"daily",status:"can",note:"可寄。",channel:"經濟專線",tax:"關稅5-15%"},
+      {id:"相框",cat:"daily",status:"can",note:"可寄。玻璃相框需防碎包裝。",channel:"經濟專線",tax:"關稅5-15%"},
+      {id:"拼圖",cat:"daily",status:"can",note:"可寄。",channel:"經濟專線",tax:"關稅5-15%"},
+      {id:"公仔",cat:"daily",status:"can",note:"布袋戲偶、公仔可寄。注意包裝防損。",channel:"經濟專線",tax:"關稅5-15%"},
+      {id:"燈具",cat:"daily",status:"can",note:"檯燈、吊燈可寄。需加強防碎包裝。",channel:"經濟專線",tax:"關稅5-15%"},
+      {id:"窗簾",cat:"daily",status:"can",note:"可寄。",channel:"經濟專線",tax:"關稅6-17.5%+增值稅13%"},
+      {id:"地毯",cat:"daily",status:"can",note:"小地毯可寄。大型地毯運費較高。",channel:"經濟專線",tax:"關稅6-17.5%+增值稅13%"},
+      {id:"時鐘",cat:"daily",status:"can",note:"掛鐘、鬧鐘可寄。含電池需申報。",channel:"經濟專線",tax:"關稅5-15%"},];
 
     // Build category display
     const cats = {
@@ -477,6 +592,15 @@
       electronic:{icon:"📱",name:"電子產品",items:[]},
       daily:{icon:"📦",name:"服飾／日用品",items:[]},
       other:{icon:"📋",name:"其他",items:[]},
+    pet:{icon:"🐾",name:"寵物用品",items:[]},
+    jewelry:{icon:"💎",name:"首飾／珠寶",items:[]},
+    appliance:{icon:"🔌",name:"小家電",items:[]},
+    medical:{icon:"🏥",name:"醫療用品",items:[]},
+    sports:{icon:"⚽",name:"運動用品",items:[]},
+    car:{icon:"🚗",name:"汽車用品",items:[]},
+    instrument:{icon:"🎸",name:"樂器",items:[]},
+    used:{icon:"🔄",name:"二手／舊物",items:[]},
+   
     };
 
     DB.forEach(function(item){
