@@ -24,7 +24,34 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"></noscript>
 <style>
+    :root {
+      --primary: #0066CC;
+      --primary-dark: #004C99;
+      --primary-light: #E6F0FA;
+      --secondary: #E65100;
+      --secondary-dark: #BF360C;
+      --line-green: #008A00;
+      --bg-white: #FFFFFF;
+      --bg-gray: #F5F7FA;
+      --bg-dark: #1A1A2E;
+      --text-dark: #333333;
+      --text-light: #666666;
+      --text-white: #FFFFFF;
+      --border: #E0E0E0;
+      --shadow: 0 2px 8px rgba(0,0,0,0.1);
+      --shadow-lg: 0 8px 24px rgba(0,0,0,0.15);
+      --radius: 8px;
+      --radius-lg: 16px;
+      --transition: all 0.3s ease;
+    }
     .icon{width:1em;height:1em;display:inline-block;vertical-align:-0.125em;fill:currentColor}
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; color: var(--text-dark); line-height: 1.6; font-size: 16px; background: var(--bg-white); }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    img { max-width: 100%; height: auto; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
     /* Hero */
     .line-hero {
       background: linear-gradient(135deg, #00B900 0%, #00a000 100%);
@@ -98,7 +125,6 @@
     
     .btn-line{display:inline-flex;padding:10px 20px;background:var(--line-green);color:#fff;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;align-items:center;gap:6px;transition:var(--transition);white-space:nowrap}
     .btn-line:hover{background:#007000;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,138,0,0.25)}
-    .mobile-menu{display:none}
 
 .menu-toggle{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text-dark)}
     @media(max-width:992px){.nav,.header-cta{display:none}.menu-toggle{display:block}}
@@ -263,73 +289,62 @@
       .section { padding: 40px 16px; }
     }
   
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 12px 24px;
-    font-size: 15px;
-    font-weight: 500;
-    border-radius: var(--radius-md);
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.btn { width: 100%; justify-content: center; }
-.footer-bottom {
-    padding-top: 40px;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    text-align: center;
-}
-.footer-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 60px;
-    margin-bottom: 60px;
-}
-.footer-grid { grid-template-columns: repeat(2, 1fr); }
-.footer-grid { grid-template-columns: 1fr; }
-.footer-grid { grid-template-columns: 1fr; gap: 32px; }
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border);
-    transition: all 0.3s ease;
-}
-.navbar-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 72px;
-}
-.navbar-content { height: 60px; }
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-.footer {
-    padding: 80px 0 40px;
-    background: var(--bg-dark);
-    color: rgba(255,255,255,0.8);
-}
-.nav-link {
-    display: flex;
-    align-items: center;
-    padding: 8px 16px;
-    font-size: 15px;
-    color: var(--text-dark);
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-@keyframes pulse {
-    0%, 100% { opacity: 1; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 24px;
+      font-size: 15px;
+      font-weight: 500;
+      border-radius: var(--radius);
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .site-footer { background: var(--bg-dark); color: rgba(255,255,255,0.8); padding: 60px 0 30px; }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-col h3 { color: #fff; font-size: 16px; font-weight: 700; margin-bottom: 16px; }
+    .footer-col p { font-size: 14px; line-height: 1.7; color: rgba(255,255,255,0.6); }
+    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul li a { color: rgba(255,255,255,0.7); font-size: 14px; transition: color 0.2s; }
+    .footer-col ul li a:hover { color: #fff; }
+    .footer-bottom {
+      padding-top: 30px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+      color: rgba(255,255,255,0.5);
+      font-size: 13px;
+    }
+    .floating-line-btn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9999;
+      width: 56px;
+      height: 56px;
+      background: #008A00;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      box-shadow: 0 4px 16px rgba(0,138,0,0.4);
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+    .floating-line-btn:hover { transform: scale(1.1); box-shadow: 0 6px 24px rgba(0,138,0,0.5); }
+    @media(max-width:768px) {
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .line-hero { padding: 60px 20px; }
+      .line-hero h1 { font-size: 1.8rem; }
+    }
 </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
@@ -567,7 +582,8 @@
       <div class="footer-col">
         <h3>幫助與支援</h3>
         <ul>
-          <li><a href="/pickup-service">🚚 上門取貨</a><a href="/faq">常見問題</a></li>
+          <li><a href="/pickup-service">🚚 上門取貨</a></li>
+          <li><a href="/faq">常見問題</a></li>
           <li><a href="/line">LINE 聯繫</a></li>
           <li><a href="mailto:business@videotvai.com">Email：business@videotvai.com</a></li>
           <li><a href="/about">關於我們</a></li>
@@ -579,6 +595,12 @@
     </div>
   </div>
 </footer>
+
+<!-- 跨页推广 -->
+<div style="text-align:center;padding:20px;background:linear-gradient(135deg,#FFF0E6,#fff);border-radius:12px;margin:40px auto;max-width:800px;border:2px solid var(--primary)">
+  <p style="font-size:18px;font-weight:700;margin-bottom:8px">🏆 不確定選哪家快遞？</p>
+  <p style="font-size:15px;color:var(--text-light);margin-bottom:0">查看<a href="/express-comparison" style="color:var(--primary);font-weight:700;text-decoration:underline">台灣寄大陸快遞2026終極對比</a>，5大渠道費用/時效一次比較</p>
+</div>
 
 <!-- Floating LINE Button -->
 <a href="https://line.me/R/ti/p/@734dooky" target="_blank" class="floating-line-btn" aria-label="LINE 聯繫速豹" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1})">
@@ -621,13 +643,6 @@
     .m-dropdown>span::after{content:"▾";font-size:12px;transition:transform .2s}
     .m-dropdown.open>span::after{transform:rotate(180deg)}
     .m-dropdown-links{display:none;padding-left:16px}
-    .m-dropdown.open .m-dropdown-links{display:block}
-    .m-dropdown-links a{display:block;padding:12px 8px;font-size:14px;color:var(--text-dark);border-bottom:1px solid #f0f0f0}
-
-<div style="text-align:center;padding:20px;background:linear-gradient(135deg,#FFF0E6,#fff);border-radius:12px;margin:40px auto;max-width:800px;border:2px solid var(--primary)">
-  <p style="font-size:18px;font-weight:700;margin-bottom:8px">🏆 不確定選哪家快遞？</p>
-  <p style="font-size:15px;color:var(--text-light);margin-bottom:16px">查看<a href="/express-comparison" style="color:var(--primary);font-weight:700;text-decoration:underline">台灣寄大陸快遞2026終極對比</a>，5大渠道費用/時效一次比較</p>
-</div>
 </style>
 <div class="floating-bar">
   <a href="https://line.me/R/ti/p/@734dooky" target="_blank" class="icon-btn line-btn" title="LINE即时咨询" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'floating_line'})">
