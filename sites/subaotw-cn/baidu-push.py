@@ -3,7 +3,7 @@
 import urllib.request
 import os
 
-API = "http://data.zz.baidu.com/urls?site=https://www.subaotw.cn&token=UAVg0xt7rxpTjzaL"
+API = "http://data.zz.baidu.com/urls?site=https://www.subaotw.cn&token=2zqNR8QtonmBaAF4"
 
 def push_urls(url_list):
     """推送URL列表到百度，返回结果"""

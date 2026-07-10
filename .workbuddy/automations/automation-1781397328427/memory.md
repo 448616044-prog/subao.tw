@@ -1,5 +1,58 @@
 # 外链机会每日搜索 — 执行记录
 
+## 2026-07-09 执行（第14轮）
+
+### 搜索维度
+- 12580台湾黄页网(taiwan.12580.tv) 免费登录
+- TheLifeTech 300+目录列表交叉比对
+- 航运B2B市场(AlicoTrade) + 物流可视平台(Freightower飞驼可视)
+- ServiceOrca 30免费商业列表 / SupaSubmit TOP 10 交叉比对
+- 美国主要商业目录矩阵(Superpages/DexKnows/Yellowbook/MerchantCircle/InsiderPages)
+- 台湾货运公会+分类广告交叉搜索
+- leaderweb 18个台湾B2B平台列表交叉比对
+
+### 核心发现
+- **taiwan.12580.tv** — 🔥 **12580台湾黄页网！**「欢迎将您的公司信息登录到12580台湾黄页」，12580团购旗下台湾黄页平台
+- **Superpages（DR85）** — 🏆 美国主要商业目录，免费"Manage your free listing"
+- **MerchantCircle（DR85）** — 🏆 美国商业目录+社交网络，dofollow外链
+- **AlicoTrade（DR35-45）** — 🔥 **「0₺ Membership fee」航运B2B市场**，520+船东+1850+货主完全免费入驻
+- **6个美国商业目录一次性发现**（Superpages DR85 / MerchantCircle DR85 / Yellowbook DR80 / DexKnows DR79 / InsiderPages DR77），高DR矩阵
+
+### 新增平台数
+8个（A+级6个台湾黄页+全球高DR目录 / B+++级2个物流专项）
+
+### 总表更新
+288 → 296目标 | 高价值DA50+从92个增至98个（+6个） | 新增5个全新搜索维度
+
+## 2026-07-08 执行（第13轮）
+
+### 搜索维度
+- LOYSEO 108 B2B平台第2轮补全交叉比对（第10轮已比76个，本轮补全剩余32个）
+- 台湾生活黄页(OpenTaiwan opentaiwan.com.tw)免费登錄
+- 台湾B2B商业媒合平台(taiwanb2b.org)
+- 台湾公司查询+企业曝光平台(findcompany.com.tw 2221家货运公司)
+- 商业运输物流垂直目录(fleetdirectory.com)
+- 台湾工商数据平台(bizinfo.tw / trade.asortdata.com)
+- ServiceOrca 30个免费商业列表站交叉比对
+- SupaSubmit TOP 10目录站点交叉比对
+- TheGuideX 322+已验证目录交叉比对
+- OpenAIToolsHub 300+免费外链站交叉比对
+- SERPSgrowth/DeepFreightBridge 物流行业链接建设指南
+
+### 核心发现
+- **opentaiwan.com.tw** — 🔥 **台湾生活黄页/工商名录网！**明确标示「免費登錄網站，歡迎台灣工商企業自由登錄與管理發佈工商名錄」，台湾本地黄页精准
+- **findcompany.com.tw** — 🔥 **2221家货运公司已收录！**台湾公司登记查询中心+企业曝光专属平台
+- **fleetdirectory.com** — 🔥 专注商业运输+物流公司的垂直目录，100%物流相关
+- **taiwanb2b.org** — 台湾在地B2B商业媒合平台，台湾工厂/公司/商品搜寻
+- **bizeurope.com（DR45）** — LOYSEO补全中DR最高的未收录B2B，欧洲商业目录
+- **7个全球B2B补充**（tradeboss DR37/traderscity DR39/waystocap DR35/toboc DR34/exportpages DR33/worldsources DR33）
+
+### 新增平台数
+14个（A+级4个台湾目录+物流行业 / B+++级7个全球B2B / C+++级2个台湾数据平台）
+
+### 总表更新
+274 → 288目标 | 本轮无新增DA50+平台 | 新增6个全新搜索维度
+
 ## 2026-06-25 执行（第10轮）
 
 ### 搜索维度

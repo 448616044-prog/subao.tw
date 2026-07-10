@@ -5,6 +5,30 @@
 > API: data.zz.baidu.com
 > Token: UAVg0xt7rxpTjzaL（2026-07-07 更新）
 
+## 2026-07-08 23:57 — 凌晨推送（自动化）
+- **Token K4kVPs6NwjtWr4ij**: ❌ HTTP 401 `token is not valid`
+- **Token UAVg0xt7rxpTjzaL（脚本内）**: ❌ HTTP 400 `over quota`
+- **推送URL数**: 10（尝试：sitemap.xml, /, /article-list, /tw-to-cn/, 6篇博客）
+- **状态**: ❌ 两 token 均不可用。全天2次尝试（00:01 + 23:57）均失败
+- **根因**: `UAVg0xt7rxpTjzaL` 有效但 7/7 22:45 的 10 条推送耗尽配额后未曾恢复
+
+## 2026-07-09 23:56 — 凌晨推送（自动化）
+- **Token K4kVPs6NwjtWr4ij**: ❌ HTTP 401 `token is not valid`
+- **Token UAVg0xt7rxpTjzaL**: ❌ HTTP 400 `over quota`
+- **推送URL数**: 10（尝试：sitemap.xml, /, /article-list, /tw-to-cn/, 6篇博客）
+- **状态**: ❌ 两个 token 均不可用
+- **连续失败**: 14天（最后一次成功 6/25）
+
+## 2026-07-08 00:01 — 凌晨推送
+- **Token K4kVPs6NwjtWr4ij**: ❌ HTTP 401 `token is not valid`
+- **Token UAVg0xt7rxpTjzaL（脚本内）**: ❌ HTTP 400 `over quota`
+- **推送URL数**: 10（尝试：sitemap.xml, /, /article-list, /tw-to-cn/, 6篇博客）
+- **状态**: ❌ 两个 token 均不可用。指定 token 失效；脚本 token 有效但日配额已耗尽
+- **建议**: 
+  1. `K4kVPs6NwjtWr4ij` 确认失效，不可再使用
+  2. `UAVg0xt7rxpTjzaL` 是当前有效 token，但需等次日配额恢复
+  3. 自动化脚本应更新为使用 `UAVg0xt7rxpTjzaL` 作为唯一 token
+
 ## 2026-07-07 22:45 — Token更新 + 首日10条推送
 - **Token更新**: K4kVPs6NwjtWr4ij → UAVg0xt7rxpTjzaL（旧账号恢复）
 - **批次1**: 5条 → remain=5, success=5
@@ -239,5 +263,10 @@
 ## 2026-07-06 23:57:38 — 凌晨推送
 - **推送URL数**: 10（尝试）
 - **API返回**: {"error":401,"message":"token is not valid"}
+- **状态**: ❌ 配额已满或失败
+
+## 2026-07-08 23:57:05 — 凌晨推送
+- **推送URL数**: 10（尝试）
+- **API返回**: {"error":401,"message":"site error"}
 - **状态**: ❌ 配额已满或失败
 

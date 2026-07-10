@@ -1,25 +1,33 @@
 # 百度推送自动化记忆
 
+## 2026-07-09 23:56
+- **结果**: ❌ 两 token 均失败
+  - `K4kVPs6NwjtWr4ij`: HTTP 401 `token is not valid`
+  - `UAVg0xt7rxpTjzaL`: HTTP 400 `over quota`
+- **连续失败天数**: 14天（最后一次成功 6/25）
+- **根因**: 
+  - `K4kVPs6NwjtWr4ij` 永久失效
+  - `UAVg0xt7rxpTjzaL` 有效但 7/7 后配额耗尽从未恢复，疑似触发百度免费新站终身配额上限
+- **累计推送**: 55/140 条 URL
+- **行动建议**:
+  1. `K4kVPs6NwjtWr4ij` 永久失效，不可再用
+  2. 登录 [百度搜索资源平台](https://ziyuan.baidu.com/) → subaotw.cn → 检查站点配额状态
+  3. 尝试手动提交 sitemap 替代 API 推送
+  4. 申请配额提升或联系百度客服
+
+## 2026-07-08 23:57
+- **结果**: ❌ 两 token 均失败
+- **连续失败天数**: 13天
+
 ## 2026-07-06 23:57
 - **结果**: ❌ token is not valid（HTTP 401）
-- **连续失败天数**: 2天（7/5 + 7/6）
-- **待推URL**: 脚本前10条（sitemap.xml, /, /article-list, /tw-to-cn/, 6篇博客）
-- **累计推送**: 45/130条 URL（自6/25后无成功，已连续11天无成功推送）
-- **Token状态**: `K4kVPs6NwjtWr4ij` 确认失效，需刷新
-- **行动建议**:
-  1. 登录 [百度搜索资源平台](https://ziyuan.baidu.com/) → 站点管理 → subaotw.cn → 数据引入 → 获取新 API 推送 token
-  2. 更新 token 到脚本第5行：`/Users/mac/WorkBuddy/Claw/物流項目/sites/subaotw-cn/baidu-push-priority.sh`
-  3. 同时检查站点配额状态（over quota 可能在 token 刷新后仍存在）
-  4. 若配额也耗尽，需手动提交 sitemap 作为替代方案
+- **连续失败天数**: 2天
 
 ## 2026-07-05 23:56
 - **结果**: ❌ token is not valid（HTTP 401）
-- 详情同上
 
 ## 2026-07-03 23:56
 - **结果**: ❌ over quota（HTTP 400）
-- 详情见上方
 
 ## 2026-06-26 08:06
 - **结果**: ❌ over quota
-- 详情见历史记录
