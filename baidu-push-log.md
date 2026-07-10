@@ -5,6 +5,12 @@
 > API: data.zz.baidu.com
 > Token: UAVg0xt7rxpTjzaL（2026-07-07 更新）
 
+## 2026-07-10 23:56 — 凌晨推送（自动化）
+- **Token K4kVPs6NwjtWr4ij**: ❌ HTTP 401 `token is not valid`
+- **推送URL数**: 10（尝试：sitemap.xml, /, /article-list, /tw-to-cn/, 6篇博客）
+- **状态**: ❌ token 永久失效，连续第15天失败
+- **根因**: `K4kVPs6NwjtWr4ij` 已确认永久失效，不可再用
+
 ## 2026-07-08 23:57 — 凌晨推送（自动化）
 - **Token K4kVPs6NwjtWr4ij**: ❌ HTTP 401 `token is not valid`
 - **Token UAVg0xt7rxpTjzaL（脚本内）**: ❌ HTTP 400 `over quota`

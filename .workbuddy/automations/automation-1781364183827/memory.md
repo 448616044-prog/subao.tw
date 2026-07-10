@@ -1,5 +1,14 @@
 # 百度推送自动化记忆
 
+## 2026-07-10 23:56
+- **结果**: ❌ `K4kVPs6NwjtWr4ij` HTTP 401 `token is not valid`
+- **连续失败天数**: 15天（最后一次成功 6/25）
+- **根因**: `K4kVPs6NwjtWr4ij` 永久失效，不可再用
+- **行动建议**: 
+  1. 🔴 **紧急**：登录 [百度搜索资源平台](https://ziyuan.baidu.com/) 获取新 token
+  2. 更新自动化指令中的 token
+  3. 或尝试手动提交 sitemap 替代 API 推送
+
 ## 2026-07-09 23:56
 - **结果**: ❌ 两 token 均失败
   - `K4kVPs6NwjtWr4ij`: HTTP 401 `token is not valid`
