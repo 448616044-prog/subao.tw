@@ -201,7 +201,7 @@
     .mobile-menu{display:none}
 
 .menu-toggle{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text-dark)}
-    @media(max-width:992px){.nav,.header-cta{display:none}.menu-toggle{display:block}}
+    @media(max-width:1300px){.nav,.header-cta{display:none !important}.menu-toggle{display:block !important}}
 .page-hero{padding:120px 0 60px;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);color:var(--text-white);text-align:center}
     .page-hero h1{font-size:40px;font-weight:700;margin-bottom:16px}
     .page-hero p{font-size:18px;opacity:0.9;max-width:600px;margin:0 auto}
@@ -686,5 +686,25 @@ function submitContactForm(e){e.preventDefault();var n=document.getElementById('
 <symbol id="truck" viewBox="0 0 24 24"><path fill="currentColor" d="M1 3h13a2 2 0 012 2v1h4a1 1 0 01.7.3l3 4A2 2 0 0124 11v5a2 2 0 01-2 2h-1a3 3 0 01-6 0h-4a3 3 0 01-6 0H4a2 2 0 01-2-2V5a2 2 0 012-2H1zm16 4v3h3.6l-2.2-3H17zM5.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm11 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></symbol>
 </svg>
 <script>(function(){var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(t&&m){t.addEventListener("click",function(){m.classList.toggle("active")})}})()</script>
+<script>
+(function(){
+  var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
+  document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
+})();
+window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
+</script>
+
+<script>
+(function(){
+  var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
+  document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
+})();
+window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
+</script>
+
 </body>
 </html>

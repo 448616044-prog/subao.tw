@@ -92,34 +92,39 @@
 .m-dropdown-links{display:none;padding-left:16px}
 .m-dropdown.open .m-dropdown-links{display:block}
 .m-dropdown-links a{display:block;padding:12px 8px;font-size:14px;color:#333;border-bottom:1px solid #f0f0f0;text-decoration:none}
-@media(max-width:992px){.nav,.header-cta{display:none}.menu-toggle{display:block}}
+@media(max-width:1300px){.header-cta{display:none !important}}
 @media(max-width:768px){body{font-size:15px;overflow-x:hidden}.hero h1{font-size:24px}.article-content{padding:24px 16px}.nav{display:none}.container{padding:0 16px}table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}}
   </style>
+
 </head>
 <body>
   <header class="header" id="header">
     <div class="container">
       <a href="/" class="logo">
         <picture>
-          <source srcset="/images/subao-logo-new.webp" type="image/webp">
-          <img src="/images/subao-logo-new.png" alt="速豹集運" width="200" height="50" fetchpriority="high" decoding="async">
+          <source srcset="images/subao-logo-new.webp" type="image/webp">
+          <img src="images/subao-logo-new.png" alt="速豹集運" width="200" height="50" fetchpriority="high" decoding="async">
         </picture>
       </a>
-      <nav class="nav">
-        <a href="/tw-to-cn">台灣發大陸</a>
-        <div class="nav-dropdown"><a href="/pricing">運費</a>
+            <nav class="nav" id="desktopNav">
+        <a href="/tw-to-cn" data-nav="tw-to-cn">台灣發大陸</a>
+        <div class="nav-dropdown"><a href="/pricing" data-nav="pricing">運費</a>
         <div class="dd-menu"><a href="/pricing">運費報價</a><a href="/pricing-calculator">運費試算</a></div></div>
-        <a href="/can-i-ship">可以寄嗎</a>
-        <a href="/customs-guide">關稅速查</a>
-        <a href="/volume-calculator">材積計算</a>
-        <a href="/article-list">文章攻略</a>
+        <a href="/can-i-ship" data-nav="can-i-ship">可以寄嗎</a>
+        <a href="/customs-guide" data-nav="customs-guide">關稅速查</a>
+        <a href="/volume-calculator" data-nav="volume-calculator">材積計算</a>
+        <a href="/article-list" data-nav="article-list">文章攻略</a>
+        <div class="nav-dropdown"><a href="/blog/tw-to-cn-repair-return-hub" data-nav="repair">🔧 退貨維修</a>
+        <div class="dd-menu"><a href="/blog/tw-to-cn-repair-return-hub">📋 退貨維修總覽</a><a href="/blog/ecommerce-platform-return">🛒 淘寶/拼多多退貨</a><a href="/blog/product-return-shipping">📦 商品退貨寄回</a><a href="/blog/tw-to-cn-returned">🚫 被退件怎麼辦</a><a href="/blog/phone-laptop-repair-return">💻 手機筆電寄修</a><a href="/blog/electronics-repair-return-shipping">🔌 電子零件返修</a><a href="/blog/used-electronics-repair-shipping">📱 二手3C返修</a><a href="/blog/equipment-machinery-repair-return">⚙️ 工廠設備返修</a></div></div>
         <div class="nav-dropdown"><a href="#" onclick="return false" style="cursor:default">更多</a>
-        <div class="dd-menu"><a href="/pickup-service">🚚 上門取貨</a><a href="/faq">常見問題</a><a href="/express-comparison">快遞對比</a><a href="/tools">🛠️ 免費工具</a><a href="/partners">合作夥伴</a><a href="/about">關於我們</a></div></div>
+        <div class="dd-menu"><a href="/pickup-service">🚚 上門取貨</a><a href="/faq">常見問題</a><a href="/express-comparison">快遞對比</a><a href="/sensitive-goods-shipping">敏感貨攻略</a><a href="/cross-strait-logistics-report-2026">📊 2026市場報告</a><a href="/top-10-rejected-items">🚫 退件Top10</a><a href="/tools">🛠️ 免費工具</a><a href="/partners">合作夥伴</a><a href="/about">關於我們</a></div></div>
       </nav>
       <div class="header-cta">
-        <a href="https://line.me/R/ti/p/@734dooky" class="btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1});gtag('event','generate_lead',{event_category:'lead',event_label:'line'})"><svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 咨詢</a>
+        <a href="https://line.me/R/ti/p/@734dooky" class="btn btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1});gtag('event','generate_lead',{event_category:'lead',event_label:'line'})">
+          <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 咨詢
+        </a>
       </div>
-<button class="menu-toggle" id="menuToggle" aria-label="選單"><svg class="icon" aria-hidden="true"><use href="#bars"/></svg></button>
+      <button class="menu-toggle" id="menuToggle" aria-label="選單"><svg class="icon" aria-hidden="true" ><use href="#bars"/></svg></button>
     </div>
   </header>
   <div class="mobile-menu" id="mobileMenu">
@@ -218,5 +223,27 @@
     </div>
   </footer>
   <script>(function(){var h=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(h&&m){h.addEventListener("click",function(){m.classList.toggle("active")})};document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(){this.parentElement.classList.toggle("open")})})})()</script>
+
+<script>
+window.addEventListener("DOMContentLoaded",function(){
+  var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
+  document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
+});
+window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
+</script>
+
+
+<script>
+(function(){
+  var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
+  document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
+})();
+window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
+</script>
+
 </body>
 </html>

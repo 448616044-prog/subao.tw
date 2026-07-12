@@ -182,7 +182,8 @@
       <p>拍個照片、列出清單傳給速豹客服，我們幫你分類估價。奶粉/尿布/奶瓶/玩具，一次搞定！</p>
       <a href="https://line.me/R/ti/p/@734dooky" class="btn">📱 LINE 免費估價</a>
     </div>
-  </article>
+  <p style="margin:20px 0;font-size:14px;color:var(--text-light)">📦 <a href="/blog/tw-to-cn-shipping-guide" style="color:var(--primary);font-weight:700">台灣寄大陸完整教學 → 費用試算＋7步驟</a></p>
+</article>
 
   <div style="margin-top:40px;padding:16px;background:#f9f7f3;border-radius:10px;font-size:14px;color:#666">
     <strong>相關文章：</strong>
@@ -194,4 +195,13 @@
 
 <footer class="footer"><div class="container"><p>© 2026 速豹集運 subao.tw | 台灣寄大陸專業物流</p></div></footer>
 <script>(function(){var h=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(h&&m){h.addEventListener("click",function(){m.classList.toggle("active")})};document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(){this.parentElement.classList.toggle("open")})})})()</script>
+<script>
+window.addEventListener("DOMContentLoaded",function(){
+  var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
+  document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
+});
+window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
+</script>
 </body></html>

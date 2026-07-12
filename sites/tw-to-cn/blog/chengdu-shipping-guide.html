@@ -131,7 +131,7 @@
     .header .container{display:flex;align-items:center;justify-content:space-between;height:100%}.logo{font-size:24px;font-weight:700;color:var(--primary);flex-shrink:0}.logo img{background:#fff;max-height:50px;max-width:200px;width:auto;display:block}
     .nav{display:flex;align-items:center;gap:24px}.nav a{font-weight:500;color:var(--text-dark);transition:var(--transition);font-size:15px;white-space:nowrap}.nav a:hover{color:var(--primary)}
     .header-cta{display:flex;align-items:center;gap:12px;flex-shrink:0}.btn{display:inline-block;padding:10px 20px;border-radius:var(--radius);font-weight:700;font-size:14px;cursor:pointer;border:none;transition:var(--transition)}.btn-line{background:var(--line-green);color:#fff}.btn-line:hover{background:#007000}.menu-toggle{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text-dark)}
-    @media(max-width:992px){.nav,.header-cta{display:none}.menu-toggle{display:block}}
+    @media(max-width:1300px){.header-cta{display:none !important}}
     .mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;bottom:0;background:#fff;padding:24px;overflow-y:auto;z-index:999;box-shadow:0 4px 12px rgba(0,0,0,.1)}.mobile-menu.active{display:block}
     .hero{padding:140px 0 60px;background:linear-gradient(135deg,#1A1A2E 0%,#1A1A2E 70%,#0066CC 150%);color:#fff;text-align:center;position:relative;overflow:hidden}.hero::before{content:'';position:absolute;top:-30%;right:-15%;width:500px;height:500px;border-radius:50%;background:rgba(0,102,204,.08);pointer-events:none}.hero .container{position:relative;z-index:1}.hero h1{font-size:34px;font-weight:800;line-height:1.35;margin-bottom:16px;max-width:800px;margin-left:auto;margin-right:auto}.hero .subtitle{font-size:18px;opacity:.85;max-width:650px;margin:0 auto 32px}.hero .btn-primary{display:inline-flex;align-items:center;gap:8px;padding:16px 36px;background:var(--line-green);color:#fff;border-radius:var(--radius-pill);font-size:16px;font-weight:700;transition:var(--transition)}.hero .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,138,0,.4)}
     .article-content{background:var(--bg-white);padding:48px;margin:-20px auto 40px;border-radius:var(--radius-lg);box-shadow:var(--shadow);max-width:900px}.article-content h2{font-size:22px;font-weight:700;color:var(--primary);margin:36px 0 16px;padding-bottom:8px;border-bottom:2px solid var(--primary-light)}.article-content h3{font-size:18px;font-weight:700;color:var(--text-dark);margin:24px 0 12px}.article-content p{margin-bottom:16px}.article-content ul,.article-content ol{margin:16px 0;padding-left:24px}.article-content li{margin-bottom:10px}.article-content table{width:100%;border-collapse:collapse;margin:24px 0}.article-content th,.article-content td{padding:10px 14px;border-bottom:1px solid var(--border);font-size:14px}.article-content th{background:var(--primary);color:#fff;font-weight:600}
@@ -143,6 +143,7 @@
     .floating-bar{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:12px}.floating-bar .icon-btn{width:52px;height:52px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px;transition:.3s}.floating-bar .line-btn{background:var(--line-green);color:#fff;box-shadow:0 4px 16px rgba(0,138,0,.35);text-decoration:none;font-weight:700;font-size:16px}.floating-bar .line-btn:hover{transform:scale(1.1)}.floating-bar .msg-btn{background:var(--secondary);color:#fff;box-shadow:0 4px 16px rgba(230,81,0,.4);animation:pulse 2s infinite}@keyframes pulse{0%,100%{box-shadow:0 4px 16px rgba(230,81,0,.4)}50%{box-shadow:0 4px 24px rgba(230,81,0,.6)}}
     .contact-modal{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:10000;align-items:center;justify-content:center}.contact-modal.active{display:flex}.contact-modal .modal-box{background:#fff;border-radius:16px;padding:32px;max-width:400px;width:90%;animation:slideUp .3s}@keyframes slideUp{from{transform:translateY(40px);opacity:0}to{transform:translateY(0);opacity:1}}.contact-modal .close-btn{position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#999}.contact-modal h3{font-size:20px;font-weight:700;color:#333;margin:0 0 4px}.contact-modal .sub{font-size:13px;color:#999;margin-bottom:20px}.contact-modal .field{margin-bottom:14px}.contact-modal .field label{display:block;font-size:13px;font-weight:600;color:#555;margin-bottom:4px}.contact-modal .field input,.contact-modal .field textarea{width:100%;padding:10px 14px;border:1px solid #e2e8f0;border-radius:8px;font-size:14px;font-family:inherit;outline:none}.contact-modal .field input:focus,.contact-modal .field textarea:focus{border-color:var(--secondary)}.contact-modal .field textarea{height:80px;resize:none}.contact-modal .submit-btn{width:100%;padding:12px;background:var(--secondary);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer}.contact-modal .success-msg{display:none;text-align:center;padding:20px 0}.contact-modal .success-msg .check{font-size:48px;color:#10b981;margin-bottom:12px}.contact-modal .success-msg p{font-size:15px;color:#555}
   </style>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-X2T4LGTKJ1');</script>
 </head>
@@ -154,12 +155,35 @@
 <symbol id="envelope" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4.2l-8 5.8-8-5.8V6l8 5.8L20 6v2.2z"/></symbol>
 </defs></svg>
 
-<header class="header" id="header"><div class="container">
-  <a href="/" class="logo"><picture><source srcset="/images/subao-logo-new.webp" type="image/webp"><img src="/images/subao-logo-new.png" alt="速豹集運" width="200" height="50" fetchpriority="high" decoding="async"></picture></a>
-  <nav class="nav"><a href="/tw-to-cn">台灣發大陸</a><a href="/pricing">運費</a><a href="/can-i-ship">可以寄嗎</a><a href="/article-list">文章攻略</a><a href="/express-comparison">快遞對比</a><a href="/about">關於我們</a></nav>
-  <div class="header-cta"><a href="https://line.me/R/ti/p/@734dooky" class="btn btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1});gtag('event','generate_lead',{event_category:'lead',event_label:'line'})"><svg class="icon" aria-hidden="true"><use href="#line"/></svg> LINE 咨詢</a></div>
-  <button class="menu-toggle" id="menuToggle"><svg class="icon" aria-hidden="true"><use href="#bars"/></svg></button>
-</div></header>
+<header class="header" id="header">
+    <div class="container">
+      <a href="/" class="logo">
+        <picture>
+          <source srcset="images/subao-logo-new.webp" type="image/webp">
+          <img src="images/subao-logo-new.png" alt="速豹集運" width="200" height="50" fetchpriority="high" decoding="async">
+        </picture>
+      </a>
+            <nav class="nav" id="desktopNav">
+        <a href="/tw-to-cn" data-nav="tw-to-cn">台灣發大陸</a>
+        <div class="nav-dropdown"><a href="/pricing" data-nav="pricing">運費</a>
+        <div class="dd-menu"><a href="/pricing">運費報價</a><a href="/pricing-calculator">運費試算</a></div></div>
+        <a href="/can-i-ship" data-nav="can-i-ship">可以寄嗎</a>
+        <a href="/customs-guide" data-nav="customs-guide">關稅速查</a>
+        <a href="/volume-calculator" data-nav="volume-calculator">材積計算</a>
+        <a href="/article-list" data-nav="article-list">文章攻略</a>
+        <div class="nav-dropdown"><a href="/blog/tw-to-cn-repair-return-hub" data-nav="repair">🔧 退貨維修</a>
+        <div class="dd-menu"><a href="/blog/tw-to-cn-repair-return-hub">📋 退貨維修總覽</a><a href="/blog/ecommerce-platform-return">🛒 淘寶/拼多多退貨</a><a href="/blog/product-return-shipping">📦 商品退貨寄回</a><a href="/blog/tw-to-cn-returned">🚫 被退件怎麼辦</a><a href="/blog/phone-laptop-repair-return">💻 手機筆電寄修</a><a href="/blog/electronics-repair-return-shipping">🔌 電子零件返修</a><a href="/blog/used-electronics-repair-shipping">📱 二手3C返修</a><a href="/blog/equipment-machinery-repair-return">⚙️ 工廠設備返修</a></div></div>
+        <div class="nav-dropdown"><a href="#" onclick="return false" style="cursor:default">更多</a>
+        <div class="dd-menu"><a href="/pickup-service">🚚 上門取貨</a><a href="/faq">常見問題</a><a href="/express-comparison">快遞對比</a><a href="/sensitive-goods-shipping">敏感貨攻略</a><a href="/cross-strait-logistics-report-2026">📊 2026市場報告</a><a href="/top-10-rejected-items">🚫 退件Top10</a><a href="/tools">🛠️ 免費工具</a><a href="/partners">合作夥伴</a><a href="/about">關於我們</a></div></div>
+      </nav>
+      <div class="header-cta">
+        <a href="https://line.me/R/ti/p/@734dooky" class="btn btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1});gtag('event','generate_lead',{event_category:'lead',event_label:'line'})">
+          <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 咨詢
+        </a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="選單"><svg class="icon" aria-hidden="true" ><use href="#bars"/></svg></button>
+    </div>
+  </header>
 <div class="mobile-menu" id="mobileMenu">
 <a href="/tw-to-cn" class="mobile-nav-link">台灣發大陸</a>
 <div class="m-dropdown"><span>運費</span><div class="m-dropdown-links"><a href="/pricing">運費報價</a><a href="/pricing-calculator">運費試算</a></div></div>
@@ -257,4 +281,31 @@
 <div class="success-msg" id="successMsg"><div class="check">✅</div><p>留言已送出！<br>我們會盡快聯繫您。</p><button class="submit-btn" style="margin-top:16px" onclick="closeContactModal()">關閉</button></div></div></div>
 <script>function openContactModal(){document.getElementById('contactModal').classList.add('active')}function closeContactModal(){document.getElementById('contactModal').classList.remove('active');setTimeout(function(){document.getElementById('contactFormWrap').style.display='block';document.getElementById('successMsg').style.display='none';document.getElementById('contactMsgForm').reset()},300)}function submitContactForm(e){e.preventDefault();var n=document.getElementById('cfName').value,c=document.getElementById('cfContact').value,i=document.getElementById('cfItem').value||'未填',m=document.getElementById('cfMsg').value||'未填';gtag('event','contact_form_submit',{event_category:'conversion',event_label:'floating_contact'});document.getElementById('contactFormWrap').style.display='none';document.getElementById('successMsg').style.display='block';fetch('https://formsubmit.co/ajax/business@videotvai.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,contact:c,item:i,message:m,_subject:'[速豹官網留言] '+n})}).catch(function(){})}</script>
 <script>(function(){var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(t&&m){t.addEventListener("click",function(){m.classList.toggle("active")})}})()</script>
+
+<script>
+window.addEventListener("DOMContentLoaded",function(){
+  var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
+  document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
+});
+window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
+</script>
+
+
+<style>
+.nav-dropdown{position:relative}.dd-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%);min-width:200px;background:#fff;border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,.1);padding:8px;opacity:0;visibility:hidden;pointer-events:none;transition:all .2s ease;z-index:50}.nav-dropdown:hover>.dd-menu,.nav-dropdown.open>.dd-menu{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0)}.dd-menu a{display:block;padding:10px 16px;font-size:14px;color:#555;border-radius:8px;text-decoration:none;white-space:nowrap}.dd-menu a:hover{background:#f5f7fa;color:var(--primary)}.header-cta{display:flex;align-items:center;gap:12px;flex-shrink:0}.btn-line{background:#06C755 !important;color:#fff !important;padding:10px 20px !important;border-radius:10px !important;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center;gap:6px}.btn-line:hover{background:#05b04c !important;color:#fff !important;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,128,0,.2)}.menu-toggle svg{width:24px;height:24px}@media(max-width:1300px){.nav,.header-cta{display:none !important}.menu-toggle{display:block !important}}
+</style>
+
+
+<script>
+(function(){
+  var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
+  document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
+})();
+window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
+</script>
+
 </body></html>

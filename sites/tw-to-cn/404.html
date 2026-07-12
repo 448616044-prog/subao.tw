@@ -57,5 +57,14 @@
 <span style="position:fixed;bottom:5px;right:20px;z-index:9996;font-size:11px;color:#888;background:rgba(255,255,255,0.9);padding:2px 8px;border-radius:4px">
   <a href="/contact-form" style="color:#666;text-decoration:underline">LINE打不開？點這留言</a>
 </span>
+<script>
+window.addEventListener("DOMContentLoaded",function(){
+  var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
+  document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
+});
+window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
+</script>
 </body>
 </html>

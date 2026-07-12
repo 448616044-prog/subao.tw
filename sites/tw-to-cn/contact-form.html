@@ -1,26 +1,4 @@
-<!DOC
-    .header{position:fixed;top:0;left:0;right:0;height:70px;background:var(--bg-white);z-index:1000;transition:box-shadow .3s}
-    .header.scrolled{box-shadow:var(--shadow)}
-    .header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
-    .logo{font-size:24px;font-weight:700;color:var(--primary);flex-shrink:0}
-    .logo img{background:#fff;max-height:50px;max-width:200px;width:auto;display:block}
-    .nav{display:flex;align-items:center;gap:32px}
-    .nav a,.nav-dropdown>a{font-weight:500;color:var(--text-dark);transition:var(--transition);position:relative;font-size:16px;white-space:nowrap}
-    .nav a:hover,.nav a.active{color:var(--primary)}
-    .nav a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--primary);transition:var(--transition)}
-    .nav a:hover::after,.nav a.active::after{width:100%}
-    .nav-dropdown{position:relative;display:flex;align-items:center}
-    .nav-dropdown>a{padding-bottom:8px;margin-bottom:-8px}
-    .dd-menu{display:none;position:absolute;top:100%;left:0;min-width:170px;background:#fff;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,.12);padding:8px 0;z-index:100;margin-top:4px;border:1px solid #e8ecf0}
-    .nav-dropdown:hover .dd-menu,.nav-dropdown:focus-within .dd-menu{display:block}
-    .dd-menu a{display:block;padding:10px 16px;font-size:13px;color:var(--text-dark);transition:var(--transition)}
-    .dd-menu a:hover{background:var(--primary-light);color:var(--primary)}
-    .header-cta{display:flex;align-items:center;gap:12px;flex-shrink:0}
-    .btn-line:hover{background:#007000;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,138,0,.25)}
-
-.menu-toggle{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text-dark)}
-    @media(max-width:992px){.nav,.header-cta{display:none}.menu-toggle{display:block}}
-TYPE html>
+<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
@@ -29,63 +7,351 @@ TYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>聯絡速豹集運｜寄件諮詢與免費估價｜LINE即時回覆</title>
   <meta name="description" content="LINE打不開？點這裡給速豹集運留言：填寫姓名/聯繫方式/寄送物品，客服24小時內回覆。免登入Google表單。">
-  <meta property="og:title" content="聯絡速豹集運｜寄件諮詢與免費估價｜LINE即時回覆">
-  <meta property="og:description" content="聯絡我們 - 寄件諮詢。LINE即時諮詢，免費估價，最快3-5天送達。">
+  <meta property="og:title" content="速豹集運｜台灣寄大陸快遞首選，敏感貨/茶葉/保健品/大件專業送達">
+  <meta property="og:description" content="台灣寄大陸快遞｜敏感貨、茶葉、保健品統統可寄。LINE即時諮詢，免費估價，最快3-5天送達。">
   <meta property="og:image" content="https://subao.tw/images/subao-logo-new.webp">
   <meta property="og:url" content="https://subao.tw/contact-form">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_TW">
   <meta name="twitter:card" content="summary_large_image">
->
-  <link rel="canonical" href="https://subao.tw/contact-form">
+  <meta name="keywords" content="台灣寄大陸, 台灣到大陸快遞, 敏感貨寄大陸, 保健品寄大陸, 茶葉寄大陸, 兩岸集運, 速豹集運">  <link rel="canonical" href="https://subao.tw/contact-form">
   <meta name="lastmod" content="2026-06-21">
+  <link rel="preload" as="image" href="images/subao-logo-new.webp" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="image" href="images/subao-logo-new.webp" fetchpriority="high">
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" as="style" crossorigin fetchpriority="high">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"></noscript>
-
+  
+  <!-- SEO 结构化数据 -->
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":{"@id":"https://subao.tw/","name":"首頁"}}]}</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "速豹集運",
+    "alternateName": "Subao Logistics",
+    "url": "https://subao.tw",
+    "logo": "https://subao.tw/images/subao-logo-new.png",
+    "description": "專業台灣到大陸快遞服務商，專營敏感貨專線，6年兩岸物流經驗",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "availableLanguage": ["Chinese", "Chinese Traditional"],
+      "url": "https://line.me/R/ti/p/@734dooky"
+    },
+    "sameAs": [
+      "https://line.me/R/ti/p/@734dooky"
+    ]
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "保健品可以寄到大陸嗎？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "魚油、維他命、燕窩、蜂膠等保健品可以通過敏感貨專線寄送。中藥材（人參、枸杞）屬禁運，請勿寄送。LINE提供圖片評估服務，寄送前先問我們。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "運費怎麼計算？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "按實際重量與體積重量（長×寬×高÷6000）取較大值計算。LINE告訴我們商品與重量，30分鐘內提供含稅報價。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "包裹被大陸海關扣住怎麼辦？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "速豹集運提供寄件前合規審查，大幅降低扣件機率。若不幸扣件，我們會主動通知並協助準備補件文件，多數情況補件後可放行。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "需要多久送達？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "快速專線3-5天，標準專線5-7天，經濟專線7-12天。實際時效受海關通關速度影響，我們會主動追蹤並通知進度。"
+        }
+      }
+    ]
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "速豹集運",
+    "description": "台灣到大陸快遞服務，敏感貨專線",
+    "url": "https://subao.tw",
+    "priceRange": "$$",
+    "serviceArea": {
+      "@type": "Country",
+      "name": "台灣"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "快遞服務",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "空運快遞",
+            "description": "3-5天送達"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "敏感貨專線",
+            "description": "保健品、茶葉、化妝品可寄"
+          }
+        }
+      ]
+    }
+  }
+  </script>
   <style>
     .icon{width:1em;height:1em;display:inline-block;vertical-align:-0.125em;fill:currentColor}
-    :root{--primary:#0066CC;--primary-dark:#004C99;--line-green:#008A00;--bg-white:#FFF;--bg-gray:#F5F7FA;--text-dark:#333;--text-light:#666;--shadow:0 2px 8px rgba(0,0,0,0.1)}
-    *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:'Noto Sans TC',sans-serif;color:var(--text-dark);background:var(--bg-gray);line-height:1.8}
-    a{text-decoration:none;color:inherit}
-    .container{max-width:800px;margin:0 auto;padding:0 20px}
-    .nav{display:flex;gap:28px}.nav a{font-weight:500}.nav a:hover{color:var(--primary)}
-    .btn{display:inline-block;padding:10px 20px;border-radius:8px;font-weight:700;font-size:14px;transition:all 0.3s}
-    .hero{padding:120px 0 40px;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);color:#fff;text-align:center}
-    .hero h1{font-size:28px;margin-bottom:12px}
-    .hero p{font-size:15px;opacity:0.9}
-    .main-content{padding:40px 0 60px}
-    .info-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-bottom:32px}
-    .info-card{background:#fff;border-radius:12px;padding:24px;box-shadow:var(--shadow);text-align:center}
-    .info-card .icon{font-size:32px;margin-bottom:12px}
-    .info-card h3{font-size:16px;margin-bottom:8px}
-    .info-card p{font-size:13px;color:var(--text-light)}
-    .form-wrapper{background:#fff;border-radius:12px;box-shadow:var(--shadow);overflow:hidden}
-    .footer-bar{text-align:center;padding:24px;background:#fff;border-radius:12px;margin-top:16px;box-shadow:var(--shadow)}
-    .footer-bar p{font-size:14px;color:var(--text-light);margin-bottom:12px}
-    .btn-back{display:inline-flex;align-items:center;gap:6px;background:var(--primary);color:#fff;padding:10px 20px;border-radius:8px;font-weight:700;transition:all 0.3s}
-    .btn-back:hover{background:var(--primary-dark)}
+    :root {
+      --primary: #0066CC;
+      --primary-dark: #004C99;
+      --primary-light: #E6F0FA;
+      --secondary: #E65100;
+      --secondary-dark: #BF360C;
+      --line-green: #008A00;
+      --bg-white: #FFFFFF;
+      --bg-gray: #F5F7FA;
+      --bg-dark: #1A1A2E;
+      --text-dark: #333333;
+      --text-light: #666666;
+      --text-white: #FFFFFF;
+      --border: #E0E0E0;
+      --shadow: 0 2px 8px rgba(0,0,0,0.1);
+      --shadow-lg: 0 8px 24px rgba(0,0,0,0.15);
+      --radius: 8px;
+      --radius-lg: 16px;
+      --transition: all 0.3s ease;
+      --header-height: 70px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; color: var(--text-dark); line-height: 1.6; font-size: 16px; }
+    img { max-width: 100%; height: auto; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 14px 28px; border-radius: var(--radius); font-weight: 700; font-size: 16px; cursor: pointer; border: none; transition: var(--transition); text-align: center; }
+    .btn-primary { background: var(--primary); color: var(--text-white); }
+    .btn-primary:hover { background: var(--primary-dark); transform: translateY(-2px); }
+    .btn-secondary { background: var(--secondary); color: var(--text-white); }
+    .btn-secondary:hover { background: var(--secondary-dark); transform: translateY(-2px); }
+
+    .btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
+    .btn-outline:hover { background: var(--primary); color: var(--text-white); }
+    .vs-strip { background: #fff; border-bottom: 1px solid #eee; }
+    .vs-strip .container { max-width: 1000px; padding: 44px 20px; }
+    .vs-strip-header { text-align: center; margin-bottom: 24px; }
+    .vs-strip-header h2 { font-size: 22px; font-weight: 700; color: #1a1a2e; margin: 0; line-height: 1.4; }
+    .vs-strip-header h2 span { color: #e65100; }
+    .vs-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .vs-card { background: #fffcf7; border: 1px solid #e0d8cc; border-radius: 12px; padding: 28px 20px; text-align: center; }
+    .vs-card .vs-label { font-size: 15px; color: #c62828; font-weight: 700; margin-bottom: 10px; }
+    .vs-card .vs-problem { font-size: 15px; color: #555; margin-bottom: 10px; line-height: 1.6; }
+    .vs-card .vs-solution { font-size: 17px; color: #2e7d32; font-weight: 700; }
+    .vs-link { text-align: center; margin-top: 20px; }
+    .vs-link a { font-size: 15px; color: var(--primary); font-weight: 700; text-decoration: none; border-bottom: 2px solid var(--primary); padding-bottom: 2px; }
+    .vs-link a:hover { opacity: .8; }
+    @media(max-width:768px){ .vs-cards{grid-template-columns:1fr} }
+    .section { padding: 80px 0; }
+    .section-title { text-align: center; font-size: 32px; font-weight: 700; margin-bottom: 16px; color: var(--text-dark); }
+    .section-subtitle { text-align: center; font-size: 18px; color: var(--text-light); margin-bottom: 48px; }
+    .header { position: fixed; top: 0; left: 0; right: 0; height: var(--header-height); background: var(--bg-white); z-index: 1000; transition: var(--transition); }
+    .header.scrolled { box-shadow: var(--shadow); }
+    .header .container { display: flex; align-items: center; justify-content: space-between; height: 100%; }
+    .logo { font-size: 24px; font-weight: 700; color: var(--primary); }
+    .logo img { background: #fff; max-height: 50px; max-width: 200px; width: auto; display: block; }
+    .nav { display: flex; align-items: center; gap: 32px; }
+    .nav a, .nav-dropdown > a { font-weight: 500; color: var(--text-dark); transition: var(--transition); position: relative; font-size: 16px; white-space: nowrap; }
+    .nav a:hover, .nav a.active { color: var(--primary); }
+    .nav a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--primary); transition: var(--transition); }
+    .nav a:hover::after, .nav a.active::after { width: 100%; }
+    .header-cta { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+    .menu-toggle { display: none; background: none; border: none; font-size: 24px; cursor: pointer; color: var(--text-dark); }
+    .hero { padding: 140px 0 80px; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: var(--text-white); min-height: 600px; display: flex; align-items: center; }
+    .hero-content { max-width: 600px; }
+    .hero h1 { font-size: 48px; font-weight: 700; line-height: 1.2; margin-bottom: 24px; }
+    .hero p { font-size: 20px; opacity: 0.9; margin-bottom: 32px; }
+    .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
+    .service-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: -60px; position: relative; z-index: 10; }
+    .service-card { background: var(--bg-white); border-radius: var(--radius-lg); padding: 40px; box-shadow: var(--shadow-lg); transition: var(--transition); }
+    .service-card:hover { transform: translateY(-8px); }
+    .service-card.twin { border-top: 4px solid var(--primary); }
+    .service-card.mainland { border-top: 4px solid var(--secondary); }
+    .service-card h3 { font-size: 24px; margin-bottom: 12px; }
+    .service-card p { color: var(--text-light); margin-bottom: 24px; }
+    .service-card .btn { width: 100%; }
+    .service-icon { font-size: 48px; margin-bottom: 20px; }
+    .twin .service-icon { color: var(--primary); }
+    .mainland .service-icon { color: var(--secondary); }
+    .features { background: var(--bg-gray); }
+    .features-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+    .feature-item { text-align: center; padding: 32px 20px; background: var(--bg-white); border-radius: var(--radius); transition: var(--transition); }
+    .feature-item:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .feature-icon { font-size: 40px; color: var(--primary); margin-bottom: 16px; }
+    .feature-item h3 { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+    .feature-item p { color: var(--text-light); font-size: 14px; }
+    .process { background: var(--bg-white); }
+    .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+    .process-step { text-align: center; padding: 32px 20px; background: var(--bg-gray); border-radius: var(--radius); position: relative; }
+    .process-step::after { content: '→'; position: absolute; top: 50%; right: -12px; transform: translateY(-50%); font-size: 24px; color: var(--primary); }
+    .process-step:last-child::after { display: none; }
+    .step-icon { font-size: 32px; color: var(--primary); margin-bottom: 16px; }
+    .step-number { width: 32px; height: 32px; background: var(--primary); color: var(--text-white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto 16px; }
+    .step-title { font-size: 16px; font-weight: 600; margin-bottom: 8px; }
+    .step-description { color: var(--text-light); font-size: 14px; }
+    .testimonials { background: var(--bg-gray); }
+    .testimonial-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .testimonial-card { background: var(--bg-white); border-radius: var(--radius); padding: 32px; box-shadow: var(--shadow); }
+    .testimonial-content { margin-bottom: 24px; }
+    .testimonial-author { display: flex; align-items: center; gap: 16px; }
+    .author-avatar { width: 50px; height: 50px; background: var(--primary); color: var(--text-white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; }
+    .author-info h3 { font-weight: 600; margin-bottom: 4px; }
+    .author-info p { color: var(--text-light); font-size: 14px; }
+    .cta { background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%); color: var(--text-white); text-align: center; padding: 80px 0; }
+    .cta h2 { font-size: 32px; margin-bottom: 16px; }
+    .cta p { font-size: 18px; margin-bottom: 32px; opacity: 0.9; }
+    .cta-buttons { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+    .footer { background: var(--bg-dark); color: var(--text-white); padding: 60px 0 30px; }
+    .footer-content { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; margin-bottom: 40px; }
+    .footer-section h3 { font-size: 18px; margin-bottom: 20px; }
+    .footer-section p, .footer-section a { color: rgba(255,255,255,0.8); margin-bottom: 12px; display: block; }
+    .footer-section a:hover { color: var(--text-white); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.2); padding-top: 30px; text-align: center; color: rgba(255,255,255,0.6); }
+    .faq { background: var(--bg-white); }
+    .faq-container { max-width: 800px; margin: 0 auto; }
+    .faq-item { background: var(--bg-gray); border-radius: var(--radius); margin-bottom: 16px; overflow: hidden; }
+    .faq-question { padding: 20px 24px; background: var(--bg-white); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+    .faq-question:hover { background: var(--primary-light); }
+    .faq-question h3 { font-size: 18px; font-weight: 600; }
+    .faq-answer { padding: 0 24px; max-height: 0; overflow: hidden; transition: var(--transition); background: var(--bg-gray); }
+    .faq-answer.active { padding: 24px; max-height: 500px; }
+    .faq-answer p { color: var(--text-light); line-height: 1.7; }
+    .faq-icon { font-size: 20px; color: var(--primary); transition: var(--transition); }
+    .faq-icon.active { transform: rotate(180deg); }
+    .article-section { background: var(--bg-gray); }
+    .article-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .article-card { background: var(--bg-white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: var(--transition); }
+    .article-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .article-card-body { padding: 24px; }
+    .article-card h3 { font-size: 16px; color: var(--primary); margin-bottom: 12px; }
+    .article-card p { color: var(--text-light); font-size: 14px; line-height: 1.6; }
+    .article-card .tag { display: inline-block; background: var(--primary-light); color: var(--primary); font-size: 12px; padding: 2px 8px; border-radius: 10px; margin-bottom: 8px; }
+    .stats-bar { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); padding: 32px 0; color: var(--text-white); }
+    .stats-bar .container { display: flex; justify-content: center; gap: 64px; flex-wrap: wrap; }
+    .stats-bar .stat-item { text-align: center; }
+    .stats-bar .stat-num { font-size: 36px; font-weight: 700; display: block; }
+    .stats-bar .stat-label { font-size: 14px; opacity: 0.85; }
+    .testimonial-new { border: 2px solid var(--primary); position: relative; }
+    .testimonial-new::before { content: '最新'; position: absolute; top: -1px; right: -1px; background: var(--primary); color: white; font-size: 11px; padding: 2px 8px; border-radius: 0 0 0 8px; font-weight: 700; }
 
     /* Dropdown nav */
-    .dropdown-menu a.active{background:var(--primary-light);color:var(--primary);font-weight:600}
-    
+    .nav-dropdown{position:relative;display:flex;align-items:center}
+    .nav-dropdown>a{padding-bottom:8px;margin-bottom:-8px}
+    .dd-menu{display:none;position:absolute;top:100%;left:0;min-width:170px;background:#fff;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,0.12);padding:8px 0;z-index:100;margin-top:4px;border:1px solid #e8ecf0}
+    .nav-dropdown>a{padding-bottom:8px;margin-bottom:-8px}
+    .nav-dropdown:hover .dd-menu,.nav-dropdown:focus-within .dd-menu{display:block}
+    .dd-menu a{display:block;padding:10px 16px;font-size:13px;color:var(--text-dark);text-decoration:none;transition:var(--transition)}
+    .dd-menu a:hover{background:var(--primary-light);color:var(--primary)}
     .btn-line{display:inline-flex;padding:10px 20px;background:var(--line-green);color:#fff;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;align-items:center;gap:6px;transition:var(--transition);white-space:nowrap}
     .btn-line:hover{background:#007000;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,138,0,0.25)}
     .mobile-menu{display:none}
-    @media(max-width:768px){.nav{display:none}.hero h1{font-size:22px}}
-  .site-footer{background:#1A1A2E;color:rgba(255,255,255,0.8);padding:0}
-</style>
+    @media (max-width: 992px) {
+      .nav { display: none; }
+      .menu-toggle { display: block; }
+
+      .mobile-menu {
+        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--bg-white);
+        padding: 24px;
+        overflow-y: auto;
+        z-index: 999;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+
+      .mobile-menu.active { display: block; }
+
+      .mobile-nav-link {
+        display: block;
+        padding: 16px 0;
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--text-dark);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .mobile-nav-link.cta {
+        margin-top: 24px;
+        padding: 16px 24px;
+        background: var(--primary);
+        color: #fff;
+        border-radius: var(--radius);
+        text-align: center;
+        border: none;
+      }
+      .service-cards { grid-template-columns: 1fr; }
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+      .process-steps { grid-template-columns: 1fr; }
+      .process-step::after { display: none; }
+      .testimonial-cards { grid-template-columns: 1fr; }
+      .footer-content { grid-template-columns: repeat(2, 1fr); }
+      .article-grid { grid-template-columns: 1fr; }
+      .quick-entry-grid { grid-template-columns: repeat(2, 1fr) !important; }
+      .m-dropdown>span { display: block; padding: 16px 0; font-size: 16px; font-weight: 500; color: var(--text-dark); border-bottom: 1px solid var(--border); cursor: pointer; }
+      .m-dropdown-links { display: none; padding: 8px 0 8px 16px; }
+      .m-dropdown.open .m-dropdown-links { display: block; }
+      .m-dropdown-links a { display: block; padding: 12px 0; font-size: 15px; color: var(--text-light); border-bottom: 1px solid var(--border); text-decoration: none; }
+      .m-dropdown-links a:last-child { border-bottom: none; }
+    }
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 36px; }
+      .section-title { font-size: 28px; }
+      .section { padding: 60px 0; }
+      .features-grid { grid-template-columns: 1fr; }
+      .footer-content { grid-template-columns: 1fr; }
+      .hero-buttons, .cta-buttons { flex-direction: column; align-items: center; }
+      .btn { width: 100%; max-width: 300px; }
+    }
+  </style>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-X2T4LGTKJ1');</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":{"@id":"https://subao.tw/","name":"首頁"}},{"@type":"ListItem","position":2,"name":"聯絡我們","item":{"@id":"https://subao.tw/contact-form","name":"聯絡我們"}}]}</script>
-
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X2T4LGTKJ1');
+  </script>
 </head>
-<body>
+
+
 
 
   <header class="header" id="header">
@@ -300,5 +566,6 @@ function submitMainForm(e){e.preventDefault();var n=document.getElementById('mNa
 </svg>
 <script>(function(){var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(t&&m){t.addEventListener("click",function(){m.classList.toggle("active")})}})()</script>
 <footer class="site-footer"><div class="container" style="text-align:center;padding:40px 20px"><p>© 2026 速豹集運 | <a href="/about">關於我們</a> | <a href="/partners">合作夥伴</a></p><p style="margin-top:8px">📱 LINE：@734dooky | 📧 business@videotvai.com</p><a href="https://line.me/R/ti/p/@734dooky" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#008A00;color:#fff;padding:10px 22px;border-radius:24px;font-weight:700;font-size:14px;text-decoration:none" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1});gtag('event','generate_lead',{event_category:'lead',event_label:'line'})"><svg class="icon" aria-hidden="true"><use href="#line"/></svg> LINE 即時評估</a></div></footer>
+
 </body>
 </html>

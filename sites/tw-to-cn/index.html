@@ -341,6 +341,7 @@
       .btn { width: 100%; max-width: 300px; }
     }
   </style>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
   <script>
@@ -571,16 +572,7 @@
     <div class="container" style="max-width:800px;">
       <h2 class="section-title">常見問題</h2>
       <p class="section-subtitle">第一次寄？這裡有你想要的答案</p>
-      <style>
-      .faq-item{border-bottom:1px solid var(--border)}
-      .faq-q{width:100%;background:none;border:none;padding:20px 0;font-size:16px;font-weight:600;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:var(--text-dark);font-family:inherit}
-      .faq-q:hover{color:var(--primary)}
-      .faq-q .arrow{transition:transform .3s;font-size:12px}
-      .faq-q.open .arrow{transform:rotate(180deg)}
-      .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
-      .faq-a.open{max-height:300px}
-      .faq-a p{padding-bottom:20px;color:var(--text-light);font-size:15px;line-height:1.8}
-      </style>
+      
       <div class="faq-list">
         <div class="faq-item">
           <button class="faq-q" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">保健品可以寄大陸嗎？<span class="arrow">▼</span></button>
@@ -970,32 +962,7 @@
     });
   </script>
 <!-- 悬浮按钮组 -->
-<style>
-.floating-bar{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
-.floating-bar .icon-btn{width:52px;height:52px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px;transition:all .3s}
-.floating-bar .line-btn{background:#008A00;color:#fff;box-shadow:0 4px 16px rgba(0,138,0,0.35);text-decoration:none;font-weight:700;font-size:16px;font-family:Arial,Helvetica,sans-serif}
-.floating-bar .line-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(0,138,0,0.5)}
-.floating-bar .msg-btn{background:linear-gradient(135deg,#E65100,#E65100);color:#fff;box-shadow:0 4px 16px rgba(230,81,0,0.4);animation:pulse 2s infinite}
-.floating-bar .msg-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(230,81,0,0.5)}
-@keyframes pulse{0%,100%{box-shadow:0 4px 16px rgba(230,81,0,0.4)}50%{box-shadow:0 4px 24px rgba(230,81,0,0.6)}}
-.contact-modal{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:10000;align-items:center;justify-content:center}
-.contact-modal.active{display:flex}
-.contact-modal .modal-box{background:#fff;border-radius:16px;padding:32px;max-width:400px;width:90%;position:relative;animation:slideUp .3s}
-@keyframes slideUp{from{transform:translateY(40px);opacity:0}to{transform:translateY(0);opacity:1}}
-.contact-modal .close-btn{position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#999}
-.contact-modal h3{font-size:20px;font-weight:700;color:#333;margin:0 0 4px}
-.contact-modal .sub{font-size:13px;color:#999;margin-bottom:20px}
-.contact-modal .field{margin-bottom:14px}
-.contact-modal .field label{display:block;font-size:13px;font-weight:600;color:#555;margin-bottom:4px}
-.contact-modal .field input,.contact-modal .field textarea{width:100%;padding:10px 14px;border:1px solid #e2e8f0;border-radius:8px;font-size:14px;font-family:inherit;outline:none;transition:border .2s}
-.contact-modal .field input:focus,.contact-modal .field textarea:focus{border-color:#E65100}
-.contact-modal .field textarea{height:80px;resize:none}
-.contact-modal .submit-btn{width:100%;padding:12px;background:linear-gradient(135deg,#E65100,#E65100);color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s}
-.contact-modal .submit-btn:hover{transform:translateY(-1px)}
-.contact-modal .success-msg{display:none;text-align:center;padding:20px 0}
-.contact-modal .success-msg .check{font-size:48px;color:#10b981;margin-bottom:12px}
-.contact-modal .success-msg p{font-size:15px;color:#555}
-</style>
+
 <div class="floating-bar">
   <a href="https://line.me/R/ti/p/@734dooky" target="_blank" class="icon-btn line-btn" title="LINE即时咨询" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'floating_line'});gtag('event','generate_lead',{event_category:'lead',event_label:'line'})">
     LINE
@@ -1049,5 +1016,38 @@ function submitContactForm(e){e.preventDefault();var n=document.getElementById('
 <symbol id="truck" viewBox="0 0 24 24"><path fill="currentColor" d="M1 3h13a2 2 0 012 2v1h4a1 1 0 01.7.3l3 4A2 2 0 0124 11v5a2 2 0 01-2 2h-1a3 3 0 01-6 0h-4a3 3 0 01-6 0H4a2 2 0 01-2-2V5a2 2 0 012-2H1zm16 4v3h3.6l-2.2-3H17zM5.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm11 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></symbol>
 <symbol id="yen-sign" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l-6 8h4v2H4v2h6v2H4v2h6v4h4v-4h6v-2h-6v-2h6v-2h-6v-2h4l-6-8z"/></symbol>
 </svg>
+
+<script>
+window.addEventListener("DOMContentLoaded",function(){
+  var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
+  document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
+});
+window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
+</script>
+
+
+<style>
+.contact-modal{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:10000;align-items:center;justify-content:center;padding:20px}
+.contact-modal.active{display:flex}
+.modal-box{background:#fff;border-radius:16px;padding:32px;max-width:440px;width:100%;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.2);max-height:90vh;overflow-y:auto}
+.close-btn{position:absolute;top:12px;right:12px;background:0;border:0;cursor:pointer;padding:8px;line-height:0;color:#999}
+.close-btn:hover{color:#333}
+.modal-box h3{font-size:20px;font-weight:700;color:#222;margin:0 0 4px}
+.modal-box .sub{font-size:13px;color:#999;margin:0 0 20px}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:13px;font-weight:600;color:#555;margin-bottom:6px}
+.field input,.field textarea{width:100%;padding:10px 14px;border:1px solid #e2e8f0;border-radius:8px;font-size:14px;font-family:inherit;outline:none;transition:border .2s;box-sizing:border-box}
+.field input:focus,.field textarea:focus{border-color:#E65100;box-shadow:0 0 0 3px rgba(230,81,0,.1)}
+.field textarea{height:80px;resize:vertical;min-height:60px}
+.submit-btn{width:100%;padding:12px;background:#E65100;color:#fff;border:0;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;transition:all .2s;font-family:inherit}
+.submit-btn:hover{background:#cc4a00;transform:translateY(-1px)}
+.success-msg{display:none;text-align:center;padding:20px 0}
+.success-msg .check{font-size:48px;color:#10b981;margin-bottom:12px}
+.success-msg p{font-size:15px;color:#555}
+@media(max-width:480px){.modal-box{padding:24px;max-width:95%}}
+</style>
+
 </body>
 </html>
