@@ -145,7 +145,7 @@
     .btn{display:inline-block;padding:10px 20px;border-radius:var(--radius);font-weight:700;font-size:14px;cursor:pointer;border:none;transition:var(--transition)}
     .btn-line{background:var(--line-green);color:#fff}.btn-line:hover{background:#007000}
     .menu-toggle{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text-dark)}
-    @media(max-width:992px){.nav,.header-cta{display:none}.menu-toggle{display:block}}
+    @media(max-width:1300px){.header-cta{display:none !important}}
     .mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;bottom:0;background:#fff;padding:24px;overflow-y:auto;z-index:999;box-shadow:0 4px 12px rgba(0,0,0,.1)}.mobile-menu.active{display:block}
     .pillar-hero{padding:140px 0 60px;background:linear-gradient(135deg,#1A1A2E 0%,#2D2D44 50%,#0066CC 150%);color:#fff;text-align:center}
     .pillar-hero::before{content:'';position:absolute;top:-30%;right:-15%;width:500px;height:500px;border-radius:50%;background:rgba(0,102,204,.12);pointer-events:none}
@@ -217,6 +217,7 @@
     .contact-modal .success-msg .check{font-size:48px;color:#10b981;margin-bottom:12px}
     .contact-modal .success-msg p{font-size:15px;color:#555}
   </style>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-X2T4LGTKJ1');</script>
 </head>
@@ -231,19 +232,34 @@
 </defs></svg>
 
 <header class="header" id="header">
-  <div class="container">
-    <a href="/" class="logo">
-      <picture><source srcset="/images/subao-logo-new.webp" type="image/webp"><img src="/images/subao-logo-new.png" alt="速豹集運" width="200" height="50" fetchpriority="high" decoding="async"></picture>
-    </a>
-    <nav class="nav">
-      <a href="/tw-to-cn">台灣發大陸</a><a href="/pricing">運費</a><a href="/can-i-ship">可以寄嗎</a><a href="/article-list">文章攻略</a><a href="/express-comparison">快遞對比</a><a href="/about">關於我們</a>
-    </nav>
-    <div class="header-cta">
-      <a href="https://line.me/R/ti/p/@734dooky" class="btn btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1});gtag('event','generate_lead',{event_category:'lead',event_label:'line'})"><svg class="icon" aria-hidden="true"><use href="#line"/></svg>LINE 咨詢</a>
+    <div class="container">
+      <a href="/" class="logo">
+        <picture>
+          <source srcset="images/subao-logo-new.webp" type="image/webp">
+          <img src="images/subao-logo-new.png" alt="速豹集運" width="200" height="50" fetchpriority="high" decoding="async">
+        </picture>
+      </a>
+            <nav class="nav" id="desktopNav">
+        <a href="/tw-to-cn" data-nav="tw-to-cn">台灣發大陸</a>
+        <div class="nav-dropdown"><a href="/pricing" data-nav="pricing">運費</a>
+        <div class="dd-menu"><a href="/pricing">運費報價</a><a href="/pricing-calculator">運費試算</a></div></div>
+        <a href="/can-i-ship" data-nav="can-i-ship">可以寄嗎</a>
+        <a href="/customs-guide" data-nav="customs-guide">關稅速查</a>
+        <a href="/volume-calculator" data-nav="volume-calculator">材積計算</a>
+        <a href="/article-list" data-nav="article-list">文章攻略</a>
+        <div class="nav-dropdown"><a href="/blog/tw-to-cn-repair-return-hub" data-nav="repair">🔧 退貨維修</a>
+        <div class="dd-menu"><a href="/blog/tw-to-cn-repair-return-hub">📋 退貨維修總覽</a><a href="/blog/ecommerce-platform-return">🛒 淘寶/拼多多退貨</a><a href="/blog/product-return-shipping">📦 商品退貨寄回</a><a href="/blog/tw-to-cn-returned">🚫 被退件怎麼辦</a><a href="/blog/phone-laptop-repair-return">💻 手機筆電寄修</a><a href="/blog/electronics-repair-return-shipping">🔌 電子零件返修</a><a href="/blog/used-electronics-repair-shipping">📱 二手3C返修</a><a href="/blog/equipment-machinery-repair-return">⚙️ 工廠設備返修</a></div></div>
+        <div class="nav-dropdown"><a href="#" onclick="return false" style="cursor:default">更多</a>
+        <div class="dd-menu"><a href="/pickup-service">🚚 上門取貨</a><a href="/faq">常見問題</a><a href="/express-comparison">快遞對比</a><a href="/sensitive-goods-shipping">敏感貨攻略</a><a href="/cross-strait-logistics-report-2026">📊 2026市場報告</a><a href="/top-10-rejected-items">🚫 退件Top10</a><a href="/tools">🛠️ 免費工具</a><a href="/partners">合作夥伴</a><a href="/about">關於我們</a></div></div>
+      </nav>
+      <div class="header-cta">
+        <a href="https://line.me/R/ti/p/@734dooky" class="btn btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1});gtag('event','generate_lead',{event_category:'lead',event_label:'line'})">
+          <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 咨詢
+        </a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="選單"><svg class="icon" aria-hidden="true" ><use href="#bars"/></svg></button>
     </div>
-    <button class="menu-toggle" id="menuToggle" aria-label="選單"><svg class="icon" aria-hidden="true"><use href="#bars"/></svg></button>
-  </div>
-</header>
+  </header>
 <div class="mobile-menu" id="mobileMenu">
 <a href="/tw-to-cn" class="mobile-nav-link">台灣發大陸</a>
 <div class="m-dropdown"><span>運費</span><div class="m-dropdown-links"><a href="/pricing">運費報價</a><a href="/pricing-calculator">運費試算</a></div></div>
@@ -329,6 +345,11 @@
     <h2>重點 QA</h2>
     <p>以下 FAQ 已用結構化資料標記，Google 搜尋可直接展示：</p>
 
+    <div class="faq-item" style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #E0E0E0">
+      <div class="faq-q" style="font-weight:700;color:var(--primary);margin-bottom:10px;font-size:17px">Q：一條根可以寄大陸嗎？貼布、藥膏、精油有什麼限制？</div>
+      <div class="faq-a" style="color:#333;line-height:1.7">可以。一條根貼布、藥膏、精油等外用產品可透過敏感貨專線寄送，NT$290/kg起。需工廠密封包裝，如實申報成分。含藥用成分的一條根產品（如金門一條根）需特別注意：液體精油需防漏包裝，貼布和軟膏正常寄送即可。建議每單不超過10盒。LINE傳成分表確認。</div>
+    </div>
+
     <div class="cta-box">
       <h3>📦 準備寄貼布藥膏到大陸？</h3>
       <p>加入LINE，傳貼布包裝照片 → 免費估價 → 確認分類 → 3-5天送達</p>
@@ -398,5 +419,32 @@ function closeContactModal(){document.getElementById('contactModal').classList.r
 function submitContactForm(e){e.preventDefault();var n=document.getElementById('cfName').value,c=document.getElementById('cfContact').value,i=document.getElementById('cfItem').value||'未填',m=document.getElementById('cfMsg').value||'未填';gtag('event','contact_form_submit',{event_category:'conversion',event_label:'floating_contact'});document.getElementById('contactFormWrap').style.display='none';document.getElementById('successMsg').style.display='block';fetch('https://formsubmit.co/ajax/business@videotvai.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,contact:c,item:i,message:m,_subject:'[速豹官網留言] '+n})}).catch(function(){})}
 </script>
 <script>(function(){var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(t&&m){t.addEventListener("click",function(){m.classList.toggle("active")})}})()</script>
+
+<script>
+window.addEventListener("DOMContentLoaded",function(){
+  var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
+  document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
+});
+window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
+</script>
+
+
+<style>
+.nav-dropdown{position:relative}.dd-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%);min-width:200px;background:#fff;border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,.1);padding:8px;opacity:0;visibility:hidden;pointer-events:none;transition:all .2s ease;z-index:50}.nav-dropdown:hover>.dd-menu,.nav-dropdown.open>.dd-menu{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0)}.dd-menu a{display:block;padding:10px 16px;font-size:14px;color:#555;border-radius:8px;text-decoration:none;white-space:nowrap}.dd-menu a:hover{background:#f5f7fa;color:var(--primary)}.header-cta{display:flex;align-items:center;gap:12px;flex-shrink:0}.btn-line{background:#06C755 !important;color:#fff !important;padding:10px 20px !important;border-radius:10px !important;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center;gap:6px}.btn-line:hover{background:#05b04c !important;color:#fff !important;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,128,0,.2)}.menu-toggle svg{width:24px;height:24px}@media(max-width:1300px){.nav,.header-cta{display:none !important}.menu-toggle{display:block !important}}
+</style>
+
+
+<script>
+(function(){
+  var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
+  document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
+})();
+window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
+</script>
+
 </body>
 </html>
