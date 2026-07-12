@@ -52,7 +52,7 @@
     .mobile-menu{display:none}
 
 .menu-toggle{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text-dark)}
-    @media(max-width:992px){.nav,.header-cta{display:none}.menu-toggle{display:block}}
+    @media(max-width:1300px){.header-cta{display:none !important}}
     .btn{display:inline-block;padding:10px 20px;border-radius:var(--radius);font-weight:700;font-size:14px;cursor:pointer;border:none;transition:var(--transition)}
     .btn-line{background:var(--line-green);color:#fff}.btn-line:hover{background:#007000}
     .article-hero{padding:120px 0 40px;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);color:var(--text-white)}
@@ -160,6 +160,7 @@
 
 .site-footer{background:#1A1A2E;color:rgba(255,255,255,0.8);padding:0}
 </style>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
   <script>
@@ -176,11 +177,11 @@
     <div class="container">
       <a href="/" class="logo">
         <picture>
-          <source srcset="/images/subao-logo-new.webp" type="image/webp">
-          <img src="/images/subao-logo-new.png" alt="速豹集運" width="200" height="50" fetchpriority="high" decoding="async">
+          <source srcset="images/subao-logo-new.webp" type="image/webp">
+          <img src="images/subao-logo-new.png" alt="速豹集運" width="200" height="50" fetchpriority="high" decoding="async">
         </picture>
       </a>
-                  <nav class="nav" id="desktopNav">
+            <nav class="nav" id="desktopNav">
         <a href="/tw-to-cn" data-nav="tw-to-cn">台灣發大陸</a>
         <div class="nav-dropdown"><a href="/pricing" data-nav="pricing">運費</a>
         <div class="dd-menu"><a href="/pricing">運費報價</a><a href="/pricing-calculator">運費試算</a></div></div>
@@ -188,8 +189,10 @@
         <a href="/customs-guide" data-nav="customs-guide">關稅速查</a>
         <a href="/volume-calculator" data-nav="volume-calculator">材積計算</a>
         <a href="/article-list" data-nav="article-list">文章攻略</a>
+        <div class="nav-dropdown"><a href="/blog/tw-to-cn-repair-return-hub" data-nav="repair">🔧 退貨維修</a>
+        <div class="dd-menu"><a href="/blog/tw-to-cn-repair-return-hub">📋 退貨維修總覽</a><a href="/blog/ecommerce-platform-return">🛒 淘寶/拼多多退貨</a><a href="/blog/product-return-shipping">📦 商品退貨寄回</a><a href="/blog/tw-to-cn-returned">🚫 被退件怎麼辦</a><a href="/blog/phone-laptop-repair-return">💻 手機筆電寄修</a><a href="/blog/electronics-repair-return-shipping">🔌 電子零件返修</a><a href="/blog/used-electronics-repair-shipping">📱 二手3C返修</a><a href="/blog/equipment-machinery-repair-return">⚙️ 工廠設備返修</a></div></div>
         <div class="nav-dropdown"><a href="#" onclick="return false" style="cursor:default">更多</a>
-        <div class="dd-menu"><a href="/pickup-service">🚚 上門取貨</a><a href="/faq">常見問題</a><a href="/express-comparison">快遞對比</a><a href="/tools">🛠️ 免費工具</a><a href="/partners">合作夥伴</a><a href="/about">關於我們</a></div></div>
+        <div class="dd-menu"><a href="/pickup-service">🚚 上門取貨</a><a href="/faq">常見問題</a><a href="/express-comparison">快遞對比</a><a href="/sensitive-goods-shipping">敏感貨攻略</a><a href="/cross-strait-logistics-report-2026">📊 2026市場報告</a><a href="/top-10-rejected-items">🚫 退件Top10</a><a href="/tools">🛠️ 免費工具</a><a href="/partners">合作夥伴</a><a href="/about">關於我們</a></div></div>
       </nav>
       <div class="header-cta">
         <a href="https://line.me/R/ti/p/@734dooky" class="btn btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1});gtag('event','generate_lead',{event_category:'lead',event_label:'line'})">
@@ -215,10 +218,26 @@
     <a href="/volume-calculator" class="mobile-nav-link" data-nav="volume-calculator">材積計算</a>
     <a href="/article-list" class="mobile-nav-link" data-nav="article-list">文章攻略</a>
     <div class="m-dropdown">
+      <span>🔧 退貨維修</span>
+      <div class="m-dropdown-links">
+        <a href="/blog/tw-to-cn-repair-return-hub">📋 退貨維修總覽</a>
+        <a href="/blog/ecommerce-platform-return">🛒 淘寶/拼多多退貨</a>
+        <a href="/blog/product-return-shipping">📦 商品退貨寄回</a>
+        <a href="/blog/tw-to-cn-returned">🚫 被退件怎麼辦</a>
+        <a href="/blog/phone-laptop-repair-return">💻 手機筆電寄修</a>
+        <a href="/blog/electronics-repair-return-shipping">🔌 電子零件返修</a>
+        <a href="/blog/used-electronics-repair-shipping">📱 二手3C返修</a>
+        <a href="/blog/equipment-machinery-repair-return">⚙️ 工廠設備返修</a>
+      </div>
+    </div>
+    <div class="m-dropdown">
       <span>更多</span>
       <div class="m-dropdown-links">
-        <a href="/pickup-service">🚚 上門取貨</a><a href="/faq">常見問題</a>
+        <a href="/faq">常見問題</a>
         <a href="/express-comparison">快遞對比</a>
+        <a href="/sensitive-goods-shipping">敏感貨攻略</a>
+        <a href="/cross-strait-logistics-report-2026">📊 2026市場報告</a>
+        <a href="/top-10-rejected-items">🚫 退件Top10</a>
         <a href="/partners">合作夥伴</a>
         <a href="/tools">🛠️ 免費工具</a>
         <a href="/about">關於我們</a>
@@ -228,6 +247,7 @@
       <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> 加入LINE
     </a>
   </div>
+
 
   <section class="pillar-hero">
   <div class="container">
@@ -258,21 +278,7 @@
 <strong>不能寄</strong>：指甲油（易燃）、噴霧型防曬（壓縮氣體）。<br>
 <a href="https://line.me/R/ti/p/@734dooky" style="color:#7B1FA2;font-weight:700" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1});gtag('event','generate_lead',{event_category:'lead',event_label:'line'})">化妝品能不能寄？傳產品包裝照片30分鐘內回覆 →</a><br>
     <!-- 🔴 QUICK-REF: 化妆品能不能寄？ -->
-    <style>
-      .quick-ref-cosm{background:linear-gradient(135deg,#F3E5F5,#EDE7F6);border:2px solid #7B1FA2;border-radius:16px;padding:24px 28px;margin:32px auto;max-width:860px}
-      .quick-ref-cosm h2{font-size:20px;color:#6A1B9A;margin:0 0 16px;display:flex;align-items:center;gap:8px}
-      .quick-ref-cosm .qr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px}
-      .quick-ref-cosm .qr-card{border-radius:12px;padding:16px;text-align:center;font-size:14px}
-      .quick-ref-cosm .qr-card.can{background:#E8F5E9;border:1px solid #A5D6A7}
-      .quick-ref-cosm .qr-card.cant{background:#FFEBEE;border:1px solid #EF9A9A}
-      .quick-ref-cosm .qr-card.warn{background:#FFF3E0;border:1px solid #FFCC80}
-      .quick-ref-cosm .qr-card .emoji{font-size:28px;margin-bottom:6px}
-      .quick-ref-cosm .qr-card .label{font-weight:700;font-size:15px;margin-bottom:4px}
-      .quick-ref-cosm .qr-card .items{color:#555;line-height:1.6;font-size:13px}
-      .qr-note{text-align:center;font-size:14px;color:#666;margin-top:12px}
-      .qr-note a{color:#7B1FA2;font-weight:700;text-decoration:underline}
-      @media(max-width:768px){.quick-ref-cosm .qr-grid{grid-template-columns:1fr}}
-    </style>
+    
     <div class="quick-ref-cosm">
       <h2>💄 30秒看懂：台灣化妝品能不能寄大陸？</h2>
       <div class="qr-grid">
@@ -620,7 +626,7 @@
       <tr><th>數量</th><th>預估重量</th><th>預估運費</th></tr>
       <tr><td>1瓶香水（50ml）</td><td>約0.4kg</td><td>NT$300-400</td></tr>
       <tr><td>2-3瓶香水</td><td>約0.8-1.2kg</td><td>NT$400-600</td></tr>
-      <tr><td>香水小樣 10支</td><td>約0.3kg</td><td>NT$250-350</td></tr>
+      <tr><td>香水小樣 10支</td><td>約0.3kg</td><td>NT$290-350</td></tr>
     </table>
 
     <h2>化妝品寄大陸常見問題</h2>
@@ -810,5 +816,27 @@
   <div style="margin:40pxrgin:40px
 <script>(function(){var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(t&&m){t.addEventListener("click",function(){m.classList.toggle("active")})}})()</script>
 <footer class="site-footer"><div class="container" style="text-align:center;padding:40px 20px"><p>© 2026 速豹集運 | <a href="/about">關於我們</a> | <a href="/partners">合作夥伴</a></p><p style="margin-top:8px">📱 LINE：@734dooky | 📧 business@videotvai.com</p><a href="https://line.me/R/ti/p/@734dooky" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#008A00;color:#fff;padding:10px 22px;border-radius:24px;font-weight:700;font-size:14px;text-decoration:none" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1});gtag('event','generate_lead',{event_category:'lead',event_label:'line'})"><svg class="icon" aria-hidden="true"><use href="#line"/></svg> LINE 即時評估</a></div></footer>
+
+<script>
+window.addEventListener("DOMContentLoaded",function(){
+  var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
+  document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
+});
+window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
+</script>
+
+
+<script>
+(function(){
+  var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
+  document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
+})();
+window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
+</script>
+
 </body>
 </html>

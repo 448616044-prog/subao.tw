@@ -171,7 +171,7 @@
     <h2>五、運費參考</h2>
     <table>
       <tr><th>重量</th><th>預估費用</th><th>適合的書量</th></tr>
-      <tr><td>1kg</td><td>約 NT$250-350</td><td>2-3本一般書籍</td></tr>
+      <tr><td>1kg</td><td>約 NT$290-350</td><td>2-3本一般書籍</td></tr>
       <tr><td>2kg</td><td>約 NT$400-500</td><td>5-7本一般書籍</td></tr>
       <tr><td>5kg</td><td>約 NT$800-1,000</td><td>約15-20本書</td></tr>
       <tr><td>10kg</td><td>約 NT$1,300-1,600</td><td>約40本書（整箱）</td></tr>
@@ -205,4 +205,13 @@
 
 <footer class="footer"><div class="container"><p>© 2026 速豹集運 subao.tw | 台灣寄大陸專業物流</p></div></footer>
 <script>(function(){var h=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(h&&m){h.addEventListener("click",function(){m.classList.toggle("active")})};document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(){this.parentElement.classList.toggle("open")})})})()</script>
+<script>
+window.addEventListener("DOMContentLoaded",function(){
+  var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
+  document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
+});
+window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
+</script>
 </body></html>

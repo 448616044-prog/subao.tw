@@ -179,7 +179,7 @@
     .mobile-menu{display:none}
 
 .menu-toggle{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text-dark)}
-    @media(max-width:992px){.nav,.header-cta{display:none}.menu-toggle{display:block}}
+    @media(max-width:1300px){.header-cta{display:none !important}}
     .btn{display:inline-block;padding:10px 20px;border-radius:var(--radius);font-weight:700;font-size:14px;cursor:pointer;border:none;transition:var(--transition)}
     .btn-line{background:var(--line-green);color:#fff}.btn-line:hover{background:#007000}
     .article-hero{padding:120px 0 40px;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);color:var(--text-white)}
@@ -240,6 +240,7 @@
 
 </style>
 
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-X2T4LGTKJ1');</script>
 </head>
@@ -250,11 +251,11 @@
     <div class="container">
       <a href="/" class="logo">
         <picture>
-          <source srcset="/images/subao-logo-new.webp" type="image/webp">
-          <img src="/images/subao-logo-new.png" alt="速豹集運" width="200" height="50" fetchpriority="high" decoding="async">
+          <source srcset="images/subao-logo-new.webp" type="image/webp">
+          <img src="images/subao-logo-new.png" alt="速豹集運" width="200" height="50" fetchpriority="high" decoding="async">
         </picture>
       </a>
-                  <nav class="nav" id="desktopNav">
+            <nav class="nav" id="desktopNav">
         <a href="/tw-to-cn" data-nav="tw-to-cn">台灣發大陸</a>
         <div class="nav-dropdown"><a href="/pricing" data-nav="pricing">運費</a>
         <div class="dd-menu"><a href="/pricing">運費報價</a><a href="/pricing-calculator">運費試算</a></div></div>
@@ -262,8 +263,10 @@
         <a href="/customs-guide" data-nav="customs-guide">關稅速查</a>
         <a href="/volume-calculator" data-nav="volume-calculator">材積計算</a>
         <a href="/article-list" data-nav="article-list">文章攻略</a>
+        <div class="nav-dropdown"><a href="/blog/tw-to-cn-repair-return-hub" data-nav="repair">🔧 退貨維修</a>
+        <div class="dd-menu"><a href="/blog/tw-to-cn-repair-return-hub">📋 退貨維修總覽</a><a href="/blog/ecommerce-platform-return">🛒 淘寶/拼多多退貨</a><a href="/blog/product-return-shipping">📦 商品退貨寄回</a><a href="/blog/tw-to-cn-returned">🚫 被退件怎麼辦</a><a href="/blog/phone-laptop-repair-return">💻 手機筆電寄修</a><a href="/blog/electronics-repair-return-shipping">🔌 電子零件返修</a><a href="/blog/used-electronics-repair-shipping">📱 二手3C返修</a><a href="/blog/equipment-machinery-repair-return">⚙️ 工廠設備返修</a></div></div>
         <div class="nav-dropdown"><a href="#" onclick="return false" style="cursor:default">更多</a>
-        <div class="dd-menu"><a href="/pickup-service">🚚 上門取貨</a><a href="/faq">常見問題</a><a href="/express-comparison">快遞對比</a><a href="/tools">🛠️ 免費工具</a><a href="/partners">合作夥伴</a><a href="/about">關於我們</a></div></div>
+        <div class="dd-menu"><a href="/pickup-service">🚚 上門取貨</a><a href="/faq">常見問題</a><a href="/express-comparison">快遞對比</a><a href="/sensitive-goods-shipping">敏感貨攻略</a><a href="/cross-strait-logistics-report-2026">📊 2026市場報告</a><a href="/top-10-rejected-items">🚫 退件Top10</a><a href="/tools">🛠️ 免費工具</a><a href="/partners">合作夥伴</a><a href="/about">關於我們</a></div></div>
       </nav>
       <div class="header-cta">
         <a href="https://line.me/R/ti/p/@734dooky" class="btn btn-line" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1});gtag('event','generate_lead',{event_category:'lead',event_label:'line'})">
@@ -289,10 +292,26 @@
     <a href="/volume-calculator" class="mobile-nav-link" data-nav="volume-calculator">材積計算</a>
     <a href="/article-list" class="mobile-nav-link" data-nav="article-list">文章攻略</a>
     <div class="m-dropdown">
+      <span>🔧 退貨維修</span>
+      <div class="m-dropdown-links">
+        <a href="/blog/tw-to-cn-repair-return-hub">📋 退貨維修總覽</a>
+        <a href="/blog/ecommerce-platform-return">🛒 淘寶/拼多多退貨</a>
+        <a href="/blog/product-return-shipping">📦 商品退貨寄回</a>
+        <a href="/blog/tw-to-cn-returned">🚫 被退件怎麼辦</a>
+        <a href="/blog/phone-laptop-repair-return">💻 手機筆電寄修</a>
+        <a href="/blog/electronics-repair-return-shipping">🔌 電子零件返修</a>
+        <a href="/blog/used-electronics-repair-shipping">📱 二手3C返修</a>
+        <a href="/blog/equipment-machinery-repair-return">⚙️ 工廠設備返修</a>
+      </div>
+    </div>
+    <div class="m-dropdown">
       <span>更多</span>
       <div class="m-dropdown-links">
-        <a href="/pickup-service">🚚 上門取貨</a><a href="/faq">常見問題</a>
+        <a href="/faq">常見問題</a>
         <a href="/express-comparison">快遞對比</a>
+        <a href="/sensitive-goods-shipping">敏感貨攻略</a>
+        <a href="/cross-strait-logistics-report-2026">📊 2026市場報告</a>
+        <a href="/top-10-rejected-items">🚫 退件Top10</a>
         <a href="/partners">合作夥伴</a>
         <a href="/tools">🛠️ 免費工具</a>
         <a href="/about">關於我們</a>
@@ -302,6 +321,7 @@
       <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> 加入LINE
     </a>
   </div>
+
 
   <section class="pillar-hero">
   <div class="container">
@@ -413,7 +433,7 @@
       <tr><th>比較維度</th><th>電腦設備（機箱/電源/馬達）</th><th>消費電子（手機/筆電）</th></tr>
       <tr><td>含鋰電池？</td><td>通常不含</td><td>內建鋰電池</td></tr>
       <tr><td>運輸管道</td><td>一般貨（普貨）</td><td>敏感貨專線</td></tr>
-      <tr><td>運費水平</td><td>NT$80-120/kg</td><td>NT$200-300/kg</td></tr>
+      <tr><td>運費水平</td><td>NT$80-120/kg</td><td>NT$290-350/kg</td></tr>
       <tr><td>時效</td><td>3-7天</td><td>3-7天</td></tr>
       <tr><td>通關難度</td><td>較簡單（認定性低）</td><td>較繁（鋰電池申報）</td></tr>
       <tr><td>單件重量上限</td><td>40kg</td><td>一般10kg以內</td></tr>
@@ -526,7 +546,7 @@
   <a href="https://line.me/R/ti/p/@734dooky" class="floating-cta" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'floating_cta'});gtag('event','generate_lead',{event_category:'lead',event_label:'line'})">
     <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 免費評估設備
   </a>
-<script>window.addEventListener("scroll",function(){var h=document.getElementById("header");if(h)h.classList.toggle("scrolled",window.scrollY>10)})</script>
+
 
 <svg style="display:none" aria-hidden="true">
 <symbol id="bars" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2zm0 5h18a1 1 0 010 2H3a1 1 0 010-2z"/></symbol>
@@ -537,5 +557,27 @@
 <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.3-6.2 3.3 1.2-6.8-5-4.9 6.9-1L12 2z"/></symbol>
 </svg>
 <script>(function(){var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(t&&m){t.addEventListener("click",function(){m.classList.toggle("active")})}})()</script>
+<script>window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)})</script>
+<script>
+window.addEventListener("DOMContentLoaded",function(){
+  var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
+  document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
+});
+window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
+</script>
+
+
+<script>
+(function(){
+  var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
+  document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
+})();
+window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
+</script>
+
 </body>
 </html>
