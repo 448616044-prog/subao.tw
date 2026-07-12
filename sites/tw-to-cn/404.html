@@ -25,6 +25,12 @@
     .suggestions li::before{content:'→';position:absolute;left:0;color:#0066CC}
     .suggestions a{color:#0066CC;text-decoration:none}
     .suggestions a:hover{text-decoration:underline}
+  .float-bar{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,#008A00 0%,#009900 100%);padding:12px 20px;z-index:998;display:none;align-items:center;justify-content:center;gap:16px;box-shadow:0 -4px 20px rgba(0,0,0,0.2)}
+  .float-bar.show{display:flex}
+  .float-bar-text{flex:1;max-width:600px}
+  .float-bar-text p{color:#fff;font-size:15px;font-weight:500;margin:0}
+  .float-bar-text small{color:rgba(255,255,255,0.8);font-size:12px}
+  .float-bar .btn-line-bar{background:#fff;color:#008A00;font-weight:700;padding:10px 24px;border-radius:24px;font-size:15px;white-space:nowrap}
   </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>

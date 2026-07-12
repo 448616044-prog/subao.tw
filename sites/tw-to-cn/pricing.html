@@ -180,7 +180,13 @@
 .m-dropdown-links a{display:block;padding:12px 8px;font-size:14px;color:#333;border-bottom:1px solid #f0f0f0;text-decoration:none}
 .nav-dropdown{position:relative}.dd-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%);min-width:200px;background:#fff;border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,.1);padding:8px;opacity:0;visibility:hidden;pointer-events:none;transition:all .2s ease;z-index:50}.nav-dropdown:hover>.dd-menu{opacity:1;visibility:visible;pointer-events:auto}.dd-menu a{display:block;padding:10px 16px;font-size:14px;color:#555;border-radius:8px;text-decoration:none;white-space:nowrap}.dd-menu a:hover{background:#f5f7fa;color:var(--primary)}.header-cta{display:flex;align-items:center;gap:12px;flex-shrink:0}.btn-line{background:#06C755;color:#fff;padding:10px 20px;border-radius:10px;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center;gap:6px}.btn-line:hover{background:#05b04c;color:#fff;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,128,0,.2)}@media(max-width:1300px){.nav,.header-cta{display:none !important}.menu-toggle{display:block !important}}
 @media(max-width:768px){body{font-size:15px;overflow-x:hidden}.container{padding:0 16px}table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}}
-</style>
+.float-bar{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,#008A00 0%,#009900 100%);padding:12px 20px;z-index:998;display:none;align-items:center;justify-content:center;gap:16px;box-shadow:0 -4px 20px rgba(0,0,0,0.2)}
+  .float-bar.show{display:flex}
+  .float-bar-text{flex:1;max-width:600px}
+  .float-bar-text p{color:#fff;font-size:15px;font-weight:500;margin:0}
+  .float-bar-text small{color:rgba(255,255,255,0.8);font-size:12px}
+  .float-bar .btn-line-bar{background:#fff;color:#008A00;font-weight:700;padding:10px 24px;border-radius:24px;font-size:15px;white-space:nowrap}
+  </style>
 </head>
 <body>
   <header class="header" id="header">
@@ -883,6 +889,8 @@
       </div>
   </div><div class="footer-bottom">© 2026 速豹集運 Subao Logistics. All rights reserved.</div></footer>
 
+<div class="float-bar" id="floatBar"><div class="float-bar-text"><p>📦 不確定能不能寄？<strong>傳照片免費評估</strong></p><small>LINE：@734dooky　平均30分鐘內回覆</small></div><a href="https://line.me/R/ti/p/@734dooky" class="btn-line-bar" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'float_bar'});gtag('event','generate_lead',{event_category:'lead',event_label:'line'})"><svg class="icon" aria-hidden="true"><use href="#line"/></svg> 免費評估</a></div>
+
 <script>
     var pricingData={economy:{south:{A:290,B:360,C:500,D:780},east:{A:290,B:360,C:500,D:780},center:{A:300,B:380,C:530,D:780},north:{A:320,B:390,C:530,D:780},southwest:{A:330,B:410,C:540,D:1080},northeast:{A:350,B:420,C:560,D:1080},northwest:{A:360,B:440,C:570,D:1080}},express:{south:{A:380,B:450,C:590,D:870},east:{A:380,B:450,C:590,D:870},center:{A:390,B:470,C:600,D:930},north:{A:410,B:480,C:620,D:990},southwest:{A:420,B:500,C:630,D:1050},northeast:{A:440,B:510,C:650,D:1110},northwest:{A:450,B:530,C:660,D:1170}}};
     var currentService='economy';
@@ -998,5 +1006,6 @@ function submitContactForm(e){e.preventDefault();var n=document.getElementById('
 window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
 </script>
 
+<script>document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});window.addEventListener('scroll',function(){var bar=document.getElementById('floatBar');if(bar){if(window.scrollY>400)bar.classList.add('show');else bar.classList.remove('show')}}})</script>
 </body>
 </html>
