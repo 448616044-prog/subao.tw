@@ -595,11 +595,11 @@
   </script>
 <!-- 悬浮按钮组 -->
 <style>
-.floating-bar{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
-.floating-bar .icon-btn{width:52px;height:52px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px;transition:all .3s}
-.floating-bar .line-btn{background:#008A00;color:#fff;box-shadow:0 4px 16px rgba(0,138,0,0.35);text-decoration:none;font-weight:700;font-size:16px;font-family:Arial,Helvetica,sans-serif}
+.floating-bar{position:fixed;right:16px;bottom:16px;z-index:9999;display:flex;flex-direction:column;gap:10px}
+.floating-bar .icon-btn{width:48px;height:48px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,.25);transition:transform .2s,box-shadow .2s}.icon-btn:hover{transform:scale(1.08);box-shadow:0 6px 16px rgba(0,0,0,.3)}
+.floating-bar .line-btn{background:#06C755;color:#fff}
 .floating-bar .line-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(0,138,0,0.5)}
-.floating-bar .msg-btn{background:linear-gradient(135deg,#E65100,#E65100);color:#fff;box-shadow:0 4px 16px rgba(230,81,0,0.4);animation:pulse 2s infinite}
+.floating-bar .msg-btn{background:#1976D2;color:#fff}
 .floating-bar .msg-btn:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(230,81,0,0.5)}
 @keyframes pulse{0%,100%{box-shadow:0 4px 16px rgba(230,81,0,0.4)}50%{box-shadow:0 4px 24px rgba(230,81,0,0.6)}}
 .contact-modal{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:10000;align-items:center;justify-content:center}
