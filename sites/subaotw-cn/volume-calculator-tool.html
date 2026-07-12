@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="applicable-device" content="pc,mobile">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>大陆寄台湾体积重计算器_材积重自动计算_海运空运计费重量查询 | 速豹集运2026</title>
+<meta name="description" content="大陆寄台湾体积重量计算器：长×宽×高÷6000自动算材积重。海运/空运计费重量对比。家具搬家设备运输按实重还是材积重？在线一秒算清。TEL:13026603164">
+<link rel="canonical" href="https://www.subaotw.cn/volume-calculator-tool">
+<style>body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;color:#333;line-height:1.8;margin:0;background:#f5f7fa}.container{max-width:900px;margin:0 auto;padding:0 20px}header{background:#0052D9;color:#fff;padding:16px 0}.hero{background:linear-gradient(135deg,#0052D9,#003DA5);color:#fff;padding:48px 0 32px}.hero h1{font-size:26px;margin:0}.calc{background:#fff;padding:32px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.08);margin:-20px auto 40px}input{border:2px solid #E0E0E0;border-radius:8px;padding:12px;font-size:16px;width:100%;margin:8px 0}input:focus{border-color:#0052D9;outline:none}label{font-weight:600;display:block;margin:12px 0 4px}.result{background:#E8F2FF;padding:20px;border-radius:12px;margin:20px 0;border-left:4px solid #0052D9}.result .big{font-size:28px;font-weight:700;color:#0052D9}.btn{background:#FF6F00;color:#fff;padding:14px 32px;border-radius:30px;font-weight:700;border:none;cursor:pointer;font-size:16px}.cta{background:#0052D9;color:#fff;text-align:center;padding:40px 0}.cta a{display:inline-block;background:#fff;color:#0052D9;padding:14px 32px;border-radius:30px;font-weight:700;text-decoration:none}footer{background:#1a1a2e;color:rgba(255,255,255,.5);padding:40px 0;text-align:center;font-size:14px}</style></head><body>
+<header><div class="container"><a href="/" style="color:#fff;text-decoration:none;font-size:20px;font-weight:700">速豹集运</a></div></header>
+<section class="hero"><div class="container"><h1>体积重量计算器</h1><p style="opacity:.9">海运/空运计费重量自动对比 · 材积重=长×宽×高÷6000</p></div></section>
+<div class="container"><div class="calc">
+<label>长度 (cm)</label><input type="number" id="l" placeholder="200" min="1">
+<label>宽度 (cm)</label><input type="number" id="w" placeholder="100" min="1">
+<label>高度 (cm)</label><input type="number" id="h" placeholder="150" min="1">
+<label>实际重量 (kg)</label><input type="number" id="rw" placeholder="500" min="1">
+<button class="btn" onclick="calc()">📐 计算计费重量</button>
+<div class="result" id="res" style="display:none"><p style="margin:0">计费重量（取实重和材积重较大值）</p><div class="big" id="billWeight">0 kg</div><p style="font-size:13px;color:#999">材积重=<span id="volWeight">0</span>kg · 实重=<span id="realWeight">0</span>kg</p></div>
+</div></div>
+<section class="cta"><div class="container"><h2>📞 不确定怎么算？</h2><p style="margin:12px 0">拨打 13026603164，专属客服帮你精确计算</p><a href="tel:13026603164">立即咨询 →</a></div></section>
+<footer><div class="container"><p>© 2026 速豹集运 · 湘ICP备2026016030号-2</p></div><div style="max-width:900px;margin:0 auto;padding:0 20px 20px;text-align:center;font-size:12px;color:#999"><p style="margin:0">大陆到台湾物流专线 · 家具海运搬家设备出口建材运输 · 门到门一站式服务 · 电话13026603164</p></div>
+</footer>
+<script>function calc(){var l=parseFloat(document.getElementById('l').value)||0;var w=parseFloat(document.getElementById('w').value)||0;var h=parseFloat(document.getElementById('h').value)||0;var rw=parseFloat(document.getElementById('rw').value)||0;var vw=Math.round(l*w*h/6000);var bw=Math.max(rw,vw);document.getElementById('volWeight').textContent=vw;document.getElementById('realWeight').textContent=rw;document.getElementById('billWeight').textContent=bw+' kg';document.getElementById('res').style.display='block'}</script>
+</body></html>

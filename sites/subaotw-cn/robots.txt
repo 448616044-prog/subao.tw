@@ -1,7 +1,11 @@
 User-agent: *
 Allow: /
-Sitemap: https://subaotw.cn/sitemap.xml
+Sitemap: https://www.subaotw.cn/sitemap.xml
 
 User-agent: Baiduspider
 Allow: /
+Crawl-delay: 1
 Disallow: /cdn-cgi/
+
+User-agent: Googlebot
+Allow: /
