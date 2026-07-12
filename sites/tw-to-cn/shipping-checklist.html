@@ -843,8 +843,7 @@
       </div>
   </div><div class="footer-bottom">© 2026 速豹集運 Subao Logistics. All rights reserved.</div></footer>
 
-<div class="float-bar" id="floatBar"><div class="float-bar-text"><p>📦 不確定能不能寄？<strong>傳照片免費評估</strong></p><small>LINE：@734dooky　平均30分鐘內回覆</small></div>
-  <script>
+<script>
     var pricingData={economy:{south:{A:290,B:360,C:500,D:780},east:{A:290,B:360,C:500,D:780},center:{A:300,B:380,C:530,D:780},north:{A:320,B:390,C:530,D:780},southwest:{A:330,B:410,C:540,D:1080},northeast:{A:350,B:420,C:560,D:1080},northwest:{A:360,B:440,C:570,D:1080}},express:{south:{A:380,B:450,C:590,D:870},east:{A:380,B:450,C:590,D:870},center:{A:390,B:470,C:600,D:930},north:{A:410,B:480,C:620,D:990},southwest:{A:420,B:500,C:630,D:1050},northeast:{A:440,B:510,C:650,D:1110},northwest:{A:450,B:530,C:660,D:1170}}};
     var currentService='economy';
     function switchService(service){currentService=service;document.querySelectorAll('.service-btn').forEach(function(btn){btn.classList.remove('active')});document.querySelectorAll('.pricing-grid').forEach(function(grid){grid.classList.remove('active')});if(service==='economy'){document.querySelector('.service-btn:nth-child(1)').classList.add('active');document.getElementById('pricing-economy').classList.add('active');}else{document.querySelector('.service-btn:nth-child(2)').classList.add('active');document.getElementById('pricing-express').classList.add('active');}}
