@@ -24,7 +24,7 @@
     "@type": "WebApplication",
     "name": "材積重量計算機",
     "url": "https://subao.tw/volume-calculator",
-    "description": "台灣寄大陸材積計算工具：輸入包裹長寬高與實際重量，即時計算體積重量（÷6000/5000/4000），自動比較計費重量。",
+    "description": "台灣寄大陸材積計算工具：輸入包裹長寬高與實際重量，即時計算體積重量（÷5000/6000/4000），自動比較計費重量。",
     "applicationCategory": "UtilityApplication",
     "operatingSystem": "Web",
     "offers": {"@type": "Offer", "price": "0", "priceCurrency": "TWD"},
@@ -45,7 +45,7 @@
     "@context": "https://schema.org",
     "@type": "HowTo",
     "name": "如何計算材積重量",
-    "description": "輸入包裹的長、寬、高及實際重量，即可計算材積重量（長×寬×高÷6000），並自動比較得出計費重量。",
+    "description": "輸入包裹的長、寬、高及實際重量，即可計算材積重量（長×寬×高÷5000），並自動比較得出計費重量。",
     "step": [
       {"@type":"HowToStep","name":"量測尺寸","text":"用捲尺量出包裹的長、寬、高，單位為公分（cm）。"},
       {"@type":"HowToStep","name":"輸入長寬高","text":"在計算機中輸入三個尺寸數值。"},
@@ -476,8 +476,8 @@
           <div class="field">
             <label>📐 材積公式</label>
             <select id="divisor">
+              <option value="5000" selected>÷ 5000（速豹專線標準）</option>
               <option value="6000">÷ 6000（國際空運標準）</option>
-              <option value="5000">÷ 5000（國際快遞）</option>
               <option value="4000">÷ 4000（海運拼櫃）</option>
             </select>
             <div class="unit">選擇適用的運輸方式</div>
@@ -495,7 +495,7 @@
           <div class="result-card" id="volumeBox">
             <div class="card-label">📐 體積重量</div>
             <div class="card-value" id="volumeVal">0 <span class="card-unit">kg</span></div>
-            <div class="card-formula" id="volFormula">30 × 20 × 15 ÷ 6000</div>
+            <div class="card-formula" id="volFormula">30 × 20 × 15 ÷ 5000</div>
             <span class="win-badge">🏆 計費重量</span>
           </div>
         </div>
@@ -511,7 +511,7 @@
           </thead>
           <tbody>
             <tr><td>國際快遞（DHL / FedEx / UPS）</td><td class="hl">長 × 寬 × 高 ÷ 5000</td><td>國際快遞包裹</td></tr>
-            <tr><td>一般空運 / 兩岸專線</td><td class="hl">長 × 寬 × 高 ÷ 6000</td><td>空運 / 兩岸快遞</td></tr>
+            <tr><td>速豹專線（兩岸集運）</td><td class="hl">長 × 寬 × 高 ÷ 5000</td><td>台灣 → 大陸集運</td></tr>
             <tr><td>海運拼櫃（CFS）</td><td class="hl">長 × 寬 × 高 ÷ 4000</td><td>海運散貨</td></tr>
             <tr><td>海運整櫃（FCL）</td><td>按櫃型計費</td><td>20呎 / 40呎櫃</td></tr>
           </tbody>
@@ -519,7 +519,7 @@
         <div class="info-banner" style="margin-top: 20px;">
           <span class="info-icon">💡</span>
           <div>
-            <strong>速豹集運採用國際空運標準 ÷6000 計算</strong><br>
+            <strong>速豹集運專線採用 ÷5000 計算</strong><br>
             計費重量 = MAX（實際重量，體積重量）。若體積重大於實際重，以體積重計費；反之以實際重計費。
           </div>
         </div>
@@ -582,7 +582,7 @@
       var w = parseFloat(document.getElementById('wid').value) || 0;
       var h = parseFloat(document.getElementById('hei').value) || 0;
       var actual = parseFloat(document.getElementById('actual').value) || 0;
-      var div = parseInt(document.getElementById('divisor').value) || 6000;
+      var div = parseInt(document.getElementById('divisor').value) || 5000;
       var vol = (l * w * h) / div;
 
       document.getElementById('resultRow').style.display = 'grid';

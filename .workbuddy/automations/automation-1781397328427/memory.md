@@ -1,5 +1,79 @@
 # 外链机会每日搜索 — 执行记录
 
+## 2026-07-13 执行（第18轮）
+
+### 搜索维度
+- 全球B2B平台物流专区（FOBGOODS 0年费入驻+International Logistic Service板块）
+- 免费数字货运平台（CSN Cargo Solutions Network "Zero fees" 500+货代）
+- 高DR美国商业目录补全（Ezlocal DR68 dofollow 15M+企业）
+- 国际货运撮合市场（Rapid Loadboard Free Registration 61年企业）
+- 全球货代免费验证网络（AAS Freight Forwarder Network Easyfresh联盟）
+- 台湾三大物流公会矩阵（TSAA船务代理+TAFLA航空货运+TFLA通关自动化）
+
+### 核心发现
+- **FOBGOODS (fobgoods.com)** — 🔥 **「0年费入驻」B2B+物流专区！** 深圳鸥波运营，专门设置"International Logistic Service"板块，FBA/专线/DHL/UPS/FedEx分类，免费注册
+- **CSN (cargosolutionsnetwork.com)** — 🔥 **"Zero fees"免费数字货运平台！** 英国团队，500+货代，150+国，10,000+航线。No licence fees, no platform tax
+- **Ezlocal (ezlocal.com)** — 🏆 **DR68！本轮最高DR！** 美国18年老牌商业目录，DA50，dofollow，15M+企业，可同步300+目录
+- **Rapid Loadboard (rapid.com.tr)** — 🔥 国际货运撮合市场，Free Registration，61年运输经验
+- **AAS Freight Forwarder Network** — 🔥 全球货代验证目录，Easyfresh+First Worldwide背书，completely free
+- **台湾三大物流公会完整发现** — TSAA(船务)+TAFLA(空运1200+会员)+TFLA(通关)，全部FIATA台湾代表
+
+### 新增平台数
+8个（A+级3个物流垂直B2B+高DR目录 / B+++级2个全球物流目录/货运市场 / C+++级3个台湾公会/物流协会）
+
+### 总表更新
+336 → 344目标 | 高价值DA50+从103个增至104个（+Ezlocal DR68） | 新增6个全新搜索维度
+
+## 2026-07-12 执行（第17轮）
+
+### 搜索维度
+- 台湾本土网站目录矩阵（dir.twseo/Cathaylist/freeseo/TaiwanSpot 4个目录交叉搜索）
+- Trackload全球货运/物流/仓储/报关公司免费目录
+- FreightGlobal全球货代免费网络（Free membership）
+- yellowpages.com.tw 台湾B2B黄页市场（不同于美国yellowpages.com）
+- Track123物流商免费入驻平台（1700+物流商，对接Shopify）
+- 台湾货运公会名录（route-permitted-truck全国联合会/tco桃园公会）
+- ccift法国工商会台湾会员目录
+
+### 核心发现
+- **dir.twseo.org + cathaylist.com.tw + freeseo.com.tw + TaiwanSpot** — 🔥 台湾本土目录矩阵！4个台湾网站目录被SEO博客反复推荐，纯表单提交大概率无CAPTCHA
+- **FreightGlobal Network** — 🔥 "Free membership: No joining fee, No annual fee"！100%物流精准
+- **Trackload Freight Directory** — 🔥 全球货运/物流/仓储/报关公司免费目录，"register free account"
+- **yellowpages.com.tw** — 🔥 台湾B2B黄页，已有物流分类+13家供应商，免费注册
+- **Track123** — 🔥 1700+物流商平台，免费入驻+专属展示页+官网外链，DA45-55
+
+### 新增平台数
+11个（A+级5个台湾目录+物流垂直平台 / B+++级3个台湾目录+物流入驻 / C+++级3个公会商会补充）
+
+### 总表更新
+325 → 336目标 | 高价值DA50+从102个增至103个（+Track123） | 新增6个全新搜索维度
+
+## 2026-07-11 执行（第16轮）
+
+### 搜索维度
+- JYTRACK 热门集运库(jiyun520.com) 500+集运公司入驻+企业入驻
+- CalculateCBM 全球货代目录(calculatecbm.com) 50K+货代免费提交
+- Freight Club 物流专属目录(freightclub.net) 免费注册含网站链接
+- 台湾批發貨源(world168.com.tw) + Coolbuy(openstore.com.tw) 台湾B2B批发平台
+- SEOinbounds 100+免费商业列表站交叉比对(Opendi/Yalwa/Tupalo/Fyple/2FindLocal)
+- Balharainfotech 100+美国商业目录交叉比对(YellowBot/BusinessMagnet/B2BYellowpages)
+- Adpost/Locanto 全球分类广告平台
+- eBusinessPages/iGlobal 国际商业目录
+- 名站在线(fwol.cn) 中文目录导航
+
+### 核心发现
+- **JYTRACK (jiyun520.com)** — 🔥🔥🔥 **500+集运公司入驻！**「企业入驻」+「集运库」展示，台湾集运分类，100%集运行业精准！本次最大发现
+- **CalculateCBM Directory** — 🔥🔥 50,190+ verified Freight Forwarders，"List your company for free"，24-48h审核，100K+月用户
+- **Freight Club Directory (freightclub.net)** — 🔥 物流专属目录，"Register Your Logistics Company for FREE"，中国已有9家
+- **Opendi** — 3M+月访问，完全免费注册，全球目录DA45-50
+- **Tupalo (DA56) / YellowBot (DA58) / Locanto (DA58)** — 3个DA50+新平台
+
+### 新增平台数
+18个（A+级3个集运/物流专项平台 / B+++级7个台湾B2B+全球目录 / C+++级8个通用目录+分类广告）
+
+### 总表更新
+307 → 325目标 | 高价值DA50+从99个增至102个（+Tupalo/YellowBot/Locanto） | 新增9个全新搜索维度
+
 ## 2026-07-10 执行（第15轮）
 
 ### 搜索维度

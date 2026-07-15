@@ -1,9 +1,31 @@
+## 2026-07-13 23:56 — 凌晨推送（自动化）
+- **Token**: K4kVPs6NwjtWr4ij ❌ HTTP 401 `token is not valid`
+- **推送URL数**: 10（尝试：sitemap.xml, /, /article-list, /tw-to-cn/, 6篇博客）
+- **状态**: ❌ 连续第18天失败
+- **根因**: `K4kVPs6NwjtWr4ij` 永久失效，不可再用
+
 # subaotw.cn 百度主动推送日志
 
-> 每天5条URL，轮转式推送
+> 每天10条URL，轮转式推送
 > 
 > API: data.zz.baidu.com
-> Token: UAVg0xt7rxpTjzaL（2026-07-07 更新）
+> Token: 全部失效 — 见下方分析
+
+## 2026-07-12 23:56 — 凌晨推送（自动化）
+- **Token K4kVPs6NwjtWr4ij**: ❌ HTTP 401 `token is not valid`
+- **推送URL数**: 10（尝试：sitemap.xml, /, /article-list, /tw-to-cn/, 6篇博客）
+- **状态**: ❌ 连续第17天失败
+- **根因**: `K4kVPs6NwjtWr4ij` 永久失效，不可再用
+
+## 2026-07-11 23:57 — 凌晨推送（自动化）
+- **Token 2zqNR8QtonmBaAF4（脚本内置）**: ❌ HTTP 401 `site error`
+- **Token K4kVPs6NwjtWr4ij（用户指令）**: ❌ HTTP 401 `token is not valid`
+- **推送URL数**: 10（尝试：sitemap.xml, /, /article-list, /tw-to-cn/, 6篇博客）
+- **状态**: ❌ 两个 token 均永久失效，连续第16天失败
+- **根因**: 
+  - `K4kVPs6NwjtWr4ij`：永久失效 `token is not valid`
+  - `2zqNR8QtonmBaAF4`：站点不匹配 `site error`（非本站 token）
+  - `UAVg0xt7rxpTjzaL`：over quota（已在 7/7 耗尽，从未恢复）
 
 ## 2026-07-10 23:56 — 凌晨推送（自动化）
 - **Token K4kVPs6NwjtWr4ij**: ❌ HTTP 401 `token is not valid`
@@ -272,6 +294,11 @@
 - **状态**: ❌ 配额已满或失败
 
 ## 2026-07-08 23:57:05 — 凌晨推送
+- **推送URL数**: 10（尝试）
+- **API返回**: {"error":401,"message":"site error"}
+- **状态**: ❌ 配额已满或失败
+
+## 2026-07-11 23:57:08 — 凌晨推送
 - **推送URL数**: 10（尝试）
 - **API返回**: {"error":401,"message":"site error"}
 - **状态**: ❌ 配额已满或失败

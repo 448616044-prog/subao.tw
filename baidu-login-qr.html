@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>百度扫码登录 - 速豹集运</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#1a1a2e; display:flex; justify-content:center; align-items:center; min-height:100vh; font-family:-apple-system,sans-serif; }
+  .card { background:#fff; border-radius:16px; padding:40px; text-align:center; max-width:400px; box-shadow:0 20px 60px rgba(0,0,0,0.3); }
+  h2 { color:#333; margin-bottom:8px; }
+  p { color:#666; font-size:14px; margin-bottom:20px; }
+  .qr-box { background:#f8f9fa; border-radius:12px; padding:20px; display:inline-block; }
+  .qr-box img { width:200px; height:200px; }
+  .hint { margin-top:16px; padding:12px; background:#fff3cd; border-radius:8px; font-size:13px; color:#856404; }
+  .refresh { margin-top:16px; display:inline-block; padding:10px 24px; background:#4e6ef2; color:#fff; border-radius:8px; text-decoration:none; font-size:14px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h2>百度账号登录</h2>
+  <p>请用 <strong>百度App</strong> 扫描下方二维码</p>
+  <div class="qr-box">
+    <img src="baidu-qr-login.png" alt="百度登录二维码">
+  </div>
+  <div class="hint">
+    ⚠️ 二维码30秒后会过期<br>
+    打开百度App → 扫一扫 → 对准屏幕上的码
+  </div>
+  <p style="margin-top:16px; font-size:12px; color:#999;">
+    扫码后告诉我，我检测登录状态
+  </p>
+</div>
+</body>
+</html>

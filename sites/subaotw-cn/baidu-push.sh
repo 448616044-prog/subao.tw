@@ -10,5 +10,5 @@ https://www.subaotw.cn/blog/electronics-shipping
 https://www.subaotw.cn/blog/express-compare-guide
 https://www.subaotw.cn/blog/food-shipping-guide
 https://www.subaotw.cn/blog/food-to-taiwan'
-curl -s -H 'Content-Type:text/plain' --data-binary "$URLS" "http://data.zz.baidu.com/urls?site=https://www.subaotw.cn&token=2zqNR8QtonmBaAF4"
+curl -s -H 'Content-Type:text/plain' --data-binary "$URLS" "http://data.zz.baidu.com/urls?site=https://www.subaotw.cn&token=UAVg0xt7rxpTjzaL"
 echo ""
