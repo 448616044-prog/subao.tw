@@ -1,6 +1,6 @@
 {
   "gsc": {
-    "period": "2026-06-18 to 2026-07-16",
+    "period": "2026-06-19 to 2026-07-17",
     "data": {
       "queries": [
         {
@@ -13,9 +13,9 @@
         {
           "query": "鳳梨酥可以寄大陸嗎",
           "clicks": 10,
-          "impressions": 80,
-          "ctr": 12.5,
-          "position": 4.5
+          "impressions": 79,
+          "ctr": 12.7,
+          "position": 4.4
         },
         {
           "query": "速豹",
@@ -32,18 +32,18 @@
           "position": 3.9
         },
         {
-          "query": "台灣可以寄泡麵到大陸嗎",
-          "clicks": 5,
-          "impressions": 47,
-          "ctr": 10.6,
-          "position": 4.4
-        },
-        {
           "query": "台灣寄大陸",
           "clicks": 5,
-          "impressions": 47,
-          "ctr": 10.6,
-          "position": 13.4
+          "impressions": 46,
+          "ctr": 10.9,
+          "position": 13.2
+        },
+        {
+          "query": "台灣可以寄泡麵到大陸嗎",
+          "clicks": 4,
+          "impressions": 43,
+          "ctr": 9.3,
+          "position": 4.0
         },
         {
           "query": "台灣寄大陸零食推薦",
@@ -55,9 +55,9 @@
         {
           "query": "泡麵寄大陸",
           "clicks": 4,
-          "impressions": 10,
-          "ctr": 40.0,
-          "position": 3.8
+          "impressions": 9,
+          "ctr": 44.4,
+          "position": 4.1
         },
         {
           "query": "維力炸醬麵可以寄大陸嗎",
@@ -83,16 +83,16 @@
         {
           "query": "台灣可以寄食物到大陸嗎",
           "clicks": 3,
-          "impressions": 32,
-          "ctr": 9.4,
-          "position": 6.2
+          "impressions": 30,
+          "ctr": 10.0,
+          "position": 5.8
         },
         {
           "query": "台灣寄手機到大陸",
           "clicks": 3,
-          "impressions": 16,
-          "ctr": 18.8,
-          "position": 8.2
+          "impressions": 15,
+          "ctr": 20.0,
+          "position": 6.9
         },
         {
           "query": "台灣寄零食到大陸",
@@ -123,13 +123,6 @@
           "position": 9.6
         },
         {
-          "query": "台灣茶葉寄大陸",
-          "clicks": 2,
-          "impressions": 7,
-          "ctr": 28.6,
-          "position": 5.9
-        },
-        {
           "query": "台灣零食寄大陸",
           "clicks": 2,
           "impressions": 31,
@@ -146,16 +139,16 @@
         {
           "query": "泡麵能寄大陸嗎",
           "clicks": 2,
-          "impressions": 17,
-          "ctr": 11.8,
-          "position": 4.5
+          "impressions": 16,
+          "ctr": 12.5,
+          "position": 4.2
         },
         {
           "query": "茶葉寄大陸限制",
           "clicks": 2,
-          "impressions": 22,
-          "ctr": 9.1,
-          "position": 7
+          "impressions": 21,
+          "ctr": 9.5,
+          "position": 6.9
         },
         {
           "query": "速豹物流",
@@ -181,9 +174,9 @@
         {
           "query": "鳳凰酥可以帶去大陸嗎2026",
           "clicks": 2,
-          "impressions": 20,
-          "ctr": 10.0,
-          "position": 10.5
+          "impressions": 19,
+          "ctr": 10.5,
+          "position": 10.6
         },
         {
           "query": "一條根可以寄大陸嗎",
@@ -212,20 +205,27 @@
           "impressions": 5,
           "ctr": 20.0,
           "position": 5.4
+        },
+        {
+          "query": "保健食品可以寄大陸嗎",
+          "clicks": 1,
+          "impressions": 9,
+          "ctr": 11.1,
+          "position": 10.1
         }
       ],
       "pages": [
         {
           "page": "/blog/food-shipping-guide",
-          "clicks": 261,
-          "impressions": 4246,
-          "ctr": 6.1,
-          "position": 5.6
+          "clicks": 257,
+          "impressions": 4149,
+          "ctr": 6.2,
+          "position": 5.5
         },
         {
           "page": "/",
           "clicks": 120,
-          "impressions": 553,
+          "impressions": 552,
           "ctr": 21.7,
           "position": 4.4
         },
@@ -239,30 +239,30 @@
         {
           "page": "/blog/battery-products-shipping",
           "clicks": 68,
-          "impressions": 1070,
+          "impressions": 1064,
           "ctr": 6.4,
           "position": 7.2
         },
         {
           "page": "/blog/electronics-shipping",
-          "clicks": 66,
-          "impressions": 965,
+          "clicks": 65,
+          "impressions": 951,
           "ctr": 6.8,
           "position": 6.5
         },
         {
           "page": "/blog/tw-to-cn-shipping-guide",
           "clicks": 58,
-          "impressions": 2584,
-          "ctr": 2.2,
+          "impressions": 2570,
+          "ctr": 2.3,
           "position": 8.9
         },
         {
           "page": "/blog/cosmetics-shipping",
-          "clicks": 56,
-          "impressions": 1083,
-          "ctr": 5.2,
-          "position": 5.2
+          "clicks": 53,
+          "impressions": 1053,
+          "ctr": 5.0,
+          "position": 5.1
         },
         {
           "page": "/blog/taiwan-souvenir-shipping",
@@ -274,16 +274,16 @@
         {
           "page": "/blog/tw-to-cn-prohibited-items",
           "clicks": 40,
-          "impressions": 1286,
+          "impressions": 1274,
           "ctr": 3.1,
           "position": 7.3
         },
         {
           "page": "/blog/tea-shipping-guide",
-          "clicks": 38,
-          "impressions": 1014,
+          "clicks": 37,
+          "impressions": 1000,
           "ctr": 3.7,
-          "position": 7.0
+          "position": 6.9
         },
         {
           "page": "/blog/jewelry-shipping",
@@ -295,8 +295,8 @@
         {
           "page": "/blog/jewelry-crystal-shipping",
           "clicks": 27,
-          "impressions": 449,
-          "ctr": 6.0,
+          "impressions": 439,
+          "ctr": 6.2,
           "position": 5.5
         },
         {
@@ -309,42 +309,42 @@
         {
           "page": "/blog/electronics-repair-return-shipping",
           "clicks": 26,
-          "impressions": 442,
-          "ctr": 5.9,
+          "impressions": 436,
+          "ctr": 6.0,
           "position": 7.0
         },
         {
           "page": "/blog/health-products-shipping",
           "clicks": 26,
-          "impressions": 682,
-          "ctr": 3.8,
+          "impressions": 674,
+          "ctr": 3.9,
           "position": 7.5
         },
         {
           "page": "/blog/shopee-shipping",
           "clicks": 24,
-          "impressions": 343,
-          "ctr": 7.0,
+          "impressions": 339,
+          "ctr": 7.1,
           "position": 5.0
         },
         {
           "page": "/blog/tw-to-cn-customs",
           "clicks": 22,
-          "impressions": 435,
-          "ctr": 5.1,
+          "impressions": 425,
+          "ctr": 5.2,
           "position": 7.0
         },
         {
           "page": "/blog/baby-products-shipping",
-          "clicks": 19,
-          "impressions": 193,
-          "ctr": 9.8,
+          "clicks": 18,
+          "impressions": 187,
+          "ctr": 9.6,
           "position": 5.6
         },
         {
           "page": "/sensitive-goods-shipping",
           "clicks": 18,
-          "impressions": 277,
+          "impressions": 276,
           "ctr": 6.5,
           "position": 6.2
         },
@@ -358,9 +358,9 @@
         {
           "page": "/blog/ezway-tutorial",
           "clicks": 16,
-          "impressions": 898,
+          "impressions": 894,
           "ctr": 1.8,
-          "position": 9.8
+          "position": 9.7
         },
         {
           "page": "/blog/taiwan-snack-shipping",
@@ -372,16 +372,9 @@
         {
           "page": "/blog/taiwan-to-china-guide",
           "clicks": 16,
-          "impressions": 298,
+          "impressions": 297,
           "ctr": 5.4,
-          "position": 6.9
-        },
-        {
-          "page": "/blog/computer-equipment-shipping-guide",
-          "clicks": 15,
-          "impressions": 233,
-          "ctr": 6.4,
-          "position": 5.8
+          "position": 6.8
         },
         {
           "page": "/blog/tw-to-cn-logistics-recommend",
@@ -396,6 +389,13 @@
           "impressions": 185,
           "ctr": 8.1,
           "position": 7.0
+        },
+        {
+          "page": "/blog/computer-equipment-shipping-guide",
+          "clicks": 14,
+          "impressions": 229,
+          "ctr": 6.1,
+          "position": 5.8
         },
         {
           "page": "/blog/perfume-shipping",
@@ -429,23 +429,23 @@
       "countries": [
         {
           "country": "twn",
-          "clicks": 1400,
-          "impressions": 23676
+          "clicks": 1389,
+          "impressions": 23389
         },
         {
           "country": "chn",
-          "clicks": 32,
-          "impressions": 399
+          "clicks": 31,
+          "impressions": 395
         },
         {
           "country": "hkg",
           "clicks": 15,
-          "impressions": 490
+          "impressions": 487
         },
         {
           "country": "jpn",
           "clicks": 8,
-          "impressions": 172
+          "impressions": 169
         },
         {
           "country": "mac",
@@ -455,7 +455,7 @@
         {
           "country": "usa",
           "clicks": 4,
-          "impressions": 287
+          "impressions": 280
         },
         {
           "country": "vnm",
@@ -490,7 +490,7 @@
         {
           "country": "sgp",
           "clicks": 1,
-          "impressions": 77
+          "impressions": 76
         },
         {
           "country": "tha",
@@ -531,34 +531,27 @@
       "devices": [
         {
           "device": "MOBILE",
-          "clicks": 1071,
-          "impressions": 19067
+          "clicks": 1062,
+          "impressions": 18820
         },
         {
           "device": "DESKTOP",
-          "clicks": 386,
-          "impressions": 6410
+          "clicks": 383,
+          "impressions": 6346
         },
         {
           "device": "TABLET",
           "clicks": 16,
-          "impressions": 155
+          "impressions": 154
         }
       ],
       "summary": {
-        "total_clicks": 1473,
-        "total_impressions": 25632,
-        "avg_ctr": 5.7,
-        "avg_position": 6.9
+        "total_clicks": 1461,
+        "total_impressions": 25320,
+        "avg_ctr": 5.8,
+        "avg_position": 6.8
       },
       "daily_trend": [
-        {
-          "date": "2026-06-18",
-          "clicks": 12,
-          "impressions": 312,
-          "ctr": 3.8,
-          "position": 8.4
-        },
         {
           "date": "2026-06-19",
           "clicks": 14,
@@ -745,7 +738,7 @@
     }
   },
   "ga4": {
-    "period": "2026-06-18 to 2026-07-16",
+    "period": "2026-06-19 to 2026-07-17",
     "data": {
       "daily_overview": [
         {
@@ -776,6 +769,15 @@
           "eventCount": "642"
         },
         {
+          "date": "20260716",
+          "activeUsers": "99",
+          "sessions": "119",
+          "screenPageViews": "178",
+          "newUsers": "94",
+          "averageSessionDuration": "192.67562168907563",
+          "eventCount": "602"
+        },
+        {
           "date": "20260702",
           "activeUsers": "93",
           "sessions": "109",
@@ -792,15 +794,6 @@
           "newUsers": "85",
           "averageSessionDuration": "202.87016980869566",
           "eventCount": "734"
-        },
-        {
-          "date": "20260716",
-          "activeUsers": "89",
-          "sessions": "106",
-          "screenPageViews": "165",
-          "newUsers": "87",
-          "averageSessionDuration": "209.52352950943396",
-          "eventCount": "550"
         },
         {
           "date": "20260709",
@@ -965,15 +958,6 @@
           "eventCount": "333"
         },
         {
-          "date": "20260618",
-          "activeUsers": "34",
-          "sessions": "44",
-          "screenPageViews": "98",
-          "newUsers": "33",
-          "averageSessionDuration": "115.54615052272726",
-          "eventCount": "330"
-        },
-        {
           "date": "20260624",
           "activeUsers": "34",
           "sessions": "49",
@@ -999,32 +983,41 @@
           "newUsers": "19",
           "averageSessionDuration": "96.075338291666654",
           "eventCount": "124"
+        },
+        {
+          "date": "20260619",
+          "activeUsers": "16",
+          "sessions": "22",
+          "screenPageViews": "60",
+          "newUsers": "13",
+          "averageSessionDuration": "276.23190945454547",
+          "eventCount": "198"
         }
       ],
       "channels": [
         {
           "sessionSource": "google",
-          "sessions": "1597",
-          "activeUsers": "1184",
-          "newUsers": "1182",
-          "averageSessionDuration": "221.9855987100814",
-          "eventCount": "10273"
+          "sessions": "1575",
+          "activeUsers": "1171",
+          "newUsers": "1167",
+          "averageSessionDuration": "222.78058347936508",
+          "eventCount": "10083"
         },
         {
           "sessionSource": "(direct)",
-          "sessions": "361",
-          "activeUsers": "300",
-          "newUsers": "304",
-          "averageSessionDuration": "93.99610738781162",
-          "eventCount": "2042"
+          "sessions": "347",
+          "activeUsers": "286",
+          "newUsers": "290",
+          "averageSessionDuration": "95.871421942363128",
+          "eventCount": "1941"
         },
         {
           "sessionSource": "tw.search.yahoo.com",
-          "sessions": "104",
-          "activeUsers": "85",
-          "newUsers": "85",
-          "averageSessionDuration": "265.31123675",
-          "eventCount": "526"
+          "sessions": "103",
+          "activeUsers": "84",
+          "newUsers": "84",
+          "averageSessionDuration": "267.17639027184464",
+          "eventCount": "520"
         },
         {
           "sessionSource": "bing",
@@ -1036,27 +1029,27 @@
         },
         {
           "sessionSource": "chatgpt.com",
-          "sessions": "49",
-          "activeUsers": "43",
-          "newUsers": "41",
-          "averageSessionDuration": "135.99192802040815",
-          "eventCount": "287"
+          "sessions": "50",
+          "activeUsers": "44",
+          "newUsers": "42",
+          "averageSessionDuration": "133.16651692",
+          "eventCount": "289"
         },
         {
           "sessionSource": "(not set)",
-          "sessions": "43",
-          "activeUsers": "42",
+          "sessions": "47",
+          "activeUsers": "46",
           "newUsers": "0",
-          "averageSessionDuration": "174.96490465116278",
-          "eventCount": "147"
+          "averageSessionDuration": "160.29016370212767",
+          "eventCount": "155"
         },
         {
           "sessionSource": "(data not available)",
-          "sessions": "12",
-          "activeUsers": "12",
-          "newUsers": "12",
-          "averageSessionDuration": "206.87953241666665",
-          "eventCount": "55"
+          "sessions": "15",
+          "activeUsers": "15",
+          "newUsers": "15",
+          "averageSessionDuration": "165.50362593333332",
+          "eventCount": "64"
         },
         {
           "sessionSource": "yahoo",
@@ -1086,38 +1079,38 @@
       "top_pages": [
         {
           "pagePath": "/",
-          "screenPageViews": "651",
-          "activeUsers": "270",
-          "averageSessionDuration": "141.9435999336493",
-          "bounceRate": "0.33886255924170616"
+          "screenPageViews": "639",
+          "activeUsers": "261",
+          "averageSessionDuration": "146.28579535784311",
+          "bounceRate": "0.32843137254901961"
         },
         {
           "pagePath": "/blog/food-shipping-guide",
-          "screenPageViews": "424",
-          "activeUsers": "330",
-          "averageSessionDuration": "89.419475577836423",
-          "bounceRate": "0.34300791556728233"
+          "screenPageViews": "419",
+          "activeUsers": "325",
+          "averageSessionDuration": "90.070198037533515",
+          "bounceRate": "0.33512064343163539"
         },
         {
           "pagePath": "/pricing",
-          "screenPageViews": "375",
+          "screenPageViews": "374",
           "activeUsers": "132",
-          "averageSessionDuration": "147.31665511894272",
-          "bounceRate": "0.1894273127753304"
+          "averageSessionDuration": "147.96141713274335",
+          "bounceRate": "0.18584070796460178"
         },
         {
           "pagePath": "/blog/noodles-ramen-shipping",
-          "screenPageViews": "251",
-          "activeUsers": "161",
-          "averageSessionDuration": "166.73889655897435",
-          "bounceRate": "0.3487179487179487"
+          "screenPageViews": "252",
+          "activeUsers": "162",
+          "averageSessionDuration": "165.88818790306121",
+          "bounceRate": "0.35204081632653061"
         },
         {
           "pagePath": "/tw-to-cn",
-          "screenPageViews": "239",
-          "activeUsers": "107",
-          "averageSessionDuration": "247.24640845624998",
-          "bounceRate": "0.1375"
+          "screenPageViews": "230",
+          "activeUsers": "105",
+          "averageSessionDuration": "256.24567203267975",
+          "bounceRate": "0.1437908496732026"
         },
         {
           "pagePath": "/pricing-calculator",
@@ -1128,31 +1121,31 @@
         },
         {
           "pagePath": "/can-i-ship",
-          "screenPageViews": "135",
+          "screenPageViews": "136",
           "activeUsers": "79",
-          "averageSessionDuration": "114.2393595754717",
-          "bounceRate": "0.14150943396226415"
+          "averageSessionDuration": "113.17170200934579",
+          "bounceRate": "0.14018691588785046"
         },
         {
           "pagePath": "/article-list",
-          "screenPageViews": "118",
-          "activeUsers": "27",
-          "averageSessionDuration": "113.55531021311475",
-          "bounceRate": "0.049180327868852458"
+          "screenPageViews": "113",
+          "activeUsers": "26",
+          "averageSessionDuration": "118.05833270689655",
+          "bounceRate": "0.034482758620689655"
         },
         {
           "pagePath": "/blog/cosmetics-shipping",
-          "screenPageViews": "100",
-          "activeUsers": "82",
-          "averageSessionDuration": "83.001127117647044",
-          "bounceRate": "0.50980392156862742"
+          "screenPageViews": "95",
+          "activeUsers": "77",
+          "averageSessionDuration": "80.11445128125",
+          "bounceRate": "0.5"
         },
         {
           "pagePath": "/blog/tw-to-cn-shipping-guide",
-          "screenPageViews": "96",
-          "activeUsers": "80",
-          "averageSessionDuration": "65.50708986956522",
-          "bounceRate": "0.41304347826086957"
+          "screenPageViews": "95",
+          "activeUsers": "79",
+          "averageSessionDuration": "64.495071527472533",
+          "bounceRate": "0.4175824175824176"
         },
         {
           "pagePath": "/about",
@@ -1165,22 +1158,22 @@
           "pagePath": "/pickup-service",
           "screenPageViews": "91",
           "activeUsers": "48",
-          "averageSessionDuration": "121.76179098507464",
-          "bounceRate": "0.074626865671641784"
+          "averageSessionDuration": "123.07788659701494",
+          "bounceRate": "0.059701492537313432"
         },
         {
           "pagePath": "/blog/tw-to-cn-prohibited-items",
-          "screenPageViews": "89",
-          "activeUsers": "77",
-          "averageSessionDuration": "124.74298679761904",
-          "bounceRate": "0.38095238095238093"
+          "screenPageViews": "87",
+          "activeUsers": "78",
+          "averageSessionDuration": "123.26960730588236",
+          "bounceRate": "0.4"
         },
         {
           "pagePath": "/blog/battery-products-shipping",
-          "screenPageViews": "85",
-          "activeUsers": "73",
-          "averageSessionDuration": "125.813555875",
-          "bounceRate": "0.34090909090909088"
+          "screenPageViews": "83",
+          "activeUsers": "72",
+          "averageSessionDuration": "128.62135830232558",
+          "bounceRate": "0.33720930232558138"
         },
         {
           "pagePath": "/customs-guide",
@@ -1198,10 +1191,10 @@
         },
         {
           "pagePath": "/blog/tea-shipping-guide",
-          "screenPageViews": "64",
-          "activeUsers": "56",
-          "averageSessionDuration": "84.525936111111108",
-          "bounceRate": "0.46031746031746029"
+          "screenPageViews": "63",
+          "activeUsers": "55",
+          "averageSessionDuration": "85.857600629032248",
+          "bounceRate": "0.45161290322580644"
         },
         {
           "pagePath": "/blog/tw-to-cn-customs",
@@ -1227,46 +1220,46 @@
       ],
       "landing_pages": [
         {
-          "landingPage": "/",
-          "sessions": "334",
-          "activeUsers": "218",
-          "bounceRate": "0.39520958083832336"
+          "landingPage": "/blog/food-shipping-guide",
+          "sessions": "324",
+          "activeUsers": "287",
+          "bounceRate": "0.3611111111111111"
         },
         {
-          "landingPage": "/blog/food-shipping-guide",
-          "sessions": "329",
-          "activeUsers": "291",
-          "bounceRate": "0.36778115501519759"
+          "landingPage": "/",
+          "sessions": "323",
+          "activeUsers": "209",
+          "bounceRate": "0.38390092879256965"
         },
         {
           "landingPage": "/blog/noodles-ramen-shipping",
-          "sessions": "129",
-          "activeUsers": "108",
-          "bounceRate": "0.47286821705426357"
+          "sessions": "130",
+          "activeUsers": "109",
+          "bounceRate": "0.47692307692307695"
         },
         {
           "landingPage": "(not set)",
-          "sessions": "99",
-          "activeUsers": "78",
-          "bounceRate": "0.9494949494949495"
+          "sessions": "97",
+          "activeUsers": "77",
+          "bounceRate": "0.95876288659793818"
         },
         {
           "landingPage": "/blog/cosmetics-shipping",
-          "sessions": "89",
-          "activeUsers": "76",
-          "bounceRate": "0.5168539325842697"
+          "sessions": "84",
+          "activeUsers": "71",
+          "bounceRate": "0.51190476190476186"
         },
         {
           "landingPage": "/blog/tw-to-cn-shipping-guide",
-          "sessions": "82",
-          "activeUsers": "75",
-          "bounceRate": "0.42682926829268292"
+          "sessions": "81",
+          "activeUsers": "74",
+          "bounceRate": "0.43209876543209874"
         },
         {
           "landingPage": "/blog/battery-products-shipping",
-          "sessions": "77",
-          "activeUsers": "72",
-          "bounceRate": "0.2857142857142857"
+          "sessions": "75",
+          "activeUsers": "71",
+          "bounceRate": "0.28"
         },
         {
           "landingPage": "/pricing",
@@ -1276,9 +1269,9 @@
         },
         {
           "landingPage": "/blog/tw-to-cn-prohibited-items",
-          "sessions": "57",
-          "activeUsers": "56",
-          "bounceRate": "0.47368421052631576"
+          "sessions": "56",
+          "activeUsers": "55",
+          "bounceRate": "0.4642857142857143"
         },
         {
           "landingPage": "/blog/tw-to-cn-customs",
@@ -1293,40 +1286,40 @@
           "bounceRate": "0.42307692307692307"
         },
         {
-          "landingPage": "/blog/tea-shipping-guide",
-          "sessions": "50",
-          "activeUsers": "46",
-          "bounceRate": "0.52"
-        },
-        {
           "landingPage": "",
-          "sessions": "44",
-          "activeUsers": "38",
+          "sessions": "51",
+          "activeUsers": "42",
           "bounceRate": "1"
         },
         {
-          "landingPage": "/blog/taiwan-to-china-guide",
-          "sessions": "36",
-          "activeUsers": "35",
-          "bounceRate": "0.27777777777777779"
+          "landingPage": "/blog/tea-shipping-guide",
+          "sessions": "49",
+          "activeUsers": "45",
+          "bounceRate": "0.51020408163265307"
         },
         {
-          "landingPage": "/blog/electronics-repair-return-shipping",
+          "landingPage": "/blog/health-products-shipping",
+          "sessions": "36",
+          "activeUsers": "35",
+          "bounceRate": "0.5"
+        },
+        {
+          "landingPage": "/blog/taiwan-to-china-guide",
           "sessions": "35",
-          "activeUsers": "32",
-          "bounceRate": "0.2"
+          "activeUsers": "34",
+          "bounceRate": "0.2857142857142857"
         }
       ],
       "geo": [
         {
           "country": "Taiwan",
-          "activeUsers": "1457",
-          "sessions": "1928"
+          "activeUsers": "1437",
+          "sessions": "1899"
         },
         {
           "country": "China",
-          "activeUsers": "66",
-          "sessions": "98"
+          "activeUsers": "64",
+          "sessions": "96"
         },
         {
           "country": "United States",
@@ -1335,8 +1328,8 @@
         },
         {
           "country": "Singapore",
-          "activeUsers": "34",
-          "sessions": "36"
+          "activeUsers": "33",
+          "sessions": "35"
         },
         {
           "country": "Hong Kong",
@@ -1414,7 +1407,7 @@
           "sessions": "2"
         },
         {
-          "country": "Netherlands",
+          "country": "Myanmar (Burma)",
           "activeUsers": "2",
           "sessions": "2"
         }
@@ -1422,23 +1415,23 @@
       "events": [
         {
           "eventName": "page_view",
-          "eventCount": "4428"
+          "eventCount": "4367"
         },
         {
           "eventName": "user_engagement",
-          "eventCount": "3358"
+          "eventCount": "3281"
         },
         {
           "eventName": "session_start",
-          "eventCount": "2232"
+          "eventCount": "2211"
         },
         {
           "eventName": "first_visit",
-          "eventCount": "1704"
+          "eventCount": "1688"
         },
         {
           "eventName": "scroll",
-          "eventCount": "1099"
+          "eventCount": "1062"
         },
         {
           "eventName": "click",
@@ -1454,23 +1447,23 @@
         },
         {
           "eventName": "can_i_ship_search",
-          "eventCount": "112"
+          "eventCount": "114"
         },
         {
           "eventName": "generate_lead",
-          "eventCount": "103"
+          "eventCount": "105"
         }
       ],
       "devices": [
         {
           "deviceCategory": "mobile",
-          "activeUsers": "1093",
-          "sessions": "1374"
+          "activeUsers": "1081",
+          "sessions": "1360"
         },
         {
           "deviceCategory": "desktop",
-          "activeUsers": "606",
-          "sessions": "835"
+          "activeUsers": "599",
+          "sessions": "822"
         },
         {
           "deviceCategory": "tablet",
@@ -1481,23 +1474,23 @@
       "new_vs_returning": [
         {
           "newVsReturning": "new",
-          "activeUsers": "1694",
-          "sessions": "1717"
+          "activeUsers": "1678",
+          "sessions": "1688"
         },
         {
           "newVsReturning": "returning",
-          "activeUsers": "228",
-          "sessions": "410"
+          "activeUsers": "240",
+          "sessions": "421"
         },
         {
           "newVsReturning": "",
-          "activeUsers": "82",
-          "sessions": "90"
+          "activeUsers": "45",
+          "sessions": "49"
         },
         {
           "newVsReturning": "(not set)",
           "activeUsers": "0",
-          "sessions": "82"
+          "sessions": "85"
         }
       ]
     }

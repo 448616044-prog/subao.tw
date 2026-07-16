@@ -1,3 +1,10 @@
+## 2026-07-16 23:56 — 凌晨推送（自动化）
+- **Token `K4kVPs6NwjtWr4ij`** (指令指定): ❌ HTTP 401 `token is not valid`
+- **Token `UAVg0xt7rxpTjzaL`** (脚本默认): ❌ HTTP 401 `site error`
+- **推送URL数**: 10（尝试：sitemap.xml, /, /article-list, /tw-to-cn/, 6篇博客）
+- **状态**: ❌ 双 token 均失败，连续第20天失败
+- **根因**: 三个已知 token 全部失效，无可用 token；需登录百度搜索资源平台获取新 token
+
 ## 2026-07-15 23:56 — 凌晨推送（自动化）
 - **Token `UAVg0xt7rxpTjzaL`** (脚本默认): ❌ HTTP 401 `site error`
 - **Token `K4kVPs6NwjtWr4ij`** (指令指定): ❌ HTTP 401 `token is not valid`
@@ -319,3 +326,8 @@
 - **API返回**: {"error":401,"message":"site error"}
 - **状态**: ❌ 配额已满或失败
 
+
+## 2026-07-16 22:54
+- 提交sitemap.xml: 400
+- 批量URL推送: 10个高优先URL
+- 剩余quota: 9-10
