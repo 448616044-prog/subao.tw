@@ -1,3 +1,14 @@
+## 2026-07-15 23:56 — 凌晨推送（自动化）
+- **Token `UAVg0xt7rxpTjzaL`** (脚本默认): ❌ HTTP 401 `site error`
+- **Token `K4kVPs6NwjtWr4ij`** (指令指定): ❌ HTTP 401 `token is not valid`
+- **推送URL数**: 10（尝试：sitemap.xml, /, /article-list, /tw-to-cn/, 6篇博客）
+- **状态**: ❌ 双 token 均失败，连续第19天失败
+- **根因**:
+  - `K4kVPs6NwjtWr4ij` → 永久失效
+  - `UAVg0xt7rxpTjzaL` → 站点不匹配
+  - `2zqNR8QtonmBaAF4` → 站点不匹配（历史验证）
+- **行动建议**: 🔴 登录 [百度搜索资源平台](https://ziyuan.baidu.com/) → subaotw.cn → 获取新 token
+
 ## 2026-07-13 23:56 — 凌晨推送（自动化）
 - **Token**: K4kVPs6NwjtWr4ij ❌ HTTP 401 `token is not valid`
 - **推送URL数**: 10（尝试：sitemap.xml, /, /article-list, /tw-to-cn/, 6篇博客）
@@ -299,6 +310,11 @@
 - **状态**: ❌ 配额已满或失败
 
 ## 2026-07-11 23:57:08 — 凌晨推送
+- **推送URL数**: 10（尝试）
+- **API返回**: {"error":401,"message":"site error"}
+- **状态**: ❌ 配额已满或失败
+
+## 2026-07-15 23:56:43 — 凌晨推送
 - **推送URL数**: 10（尝试）
 - **API返回**: {"error":401,"message":"site error"}
 - **状态**: ❌ 配额已满或失败

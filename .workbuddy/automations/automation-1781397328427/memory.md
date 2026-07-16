@@ -1,5 +1,29 @@
 # 外链机会每日搜索 — 执行记录
 
+## 2026-07-15 执行（第19轮）
+
+### 搜索维度
+- 250+全球货代网络列表交叉比对（GemsLinks 250+ Freight Forwarder Networks）
+- 2026全球目录三大权威来源交叉去重（TheGuideX 290+ / BacklinksWebsites 100+ / MarketMystique 400+）
+- 中国专项货代联盟+新一代全球货代网络
+- 台湾本地物流目录补全
+
+### 核心发现
+- **China Forwarders Alliance (chinaforwardersalliance.com)** — 🔥 RWSolutions品牌（2002年起），专注连接全球货代与中国市场的专项网络。两岸物流定位完美匹配，免费申请
+- **ONE Globe Alliance (oneglobealliance.com)** — 🔥 2026新启动的新一代货代联盟！10K+会员，Digital Dashboard，Silver入门级可获得会员目录展示
+- **OnToplist (ontoplist.com)** — 🔥 **DA48 dofollow！无CAPTCHA！** 直接表单提交，免费商业目录。多个2026 SEO列表推荐为高质量外链源
+- **Bizidex (bizidex.com)** — DA61，全球商业目录，本轮DR最高的新通用目录
+- **EntireWeb (entireweb.com)** — DA52，瑞典老牌搜索引擎+目录
+- **Viesearch / MisterWhat / Plazoo / WhatUseek** — 4个补充通用目录（DA38-48）
+
+### 新增平台数
+10个（A+级2个全球货代网络 / B+++级7个优质通用目录）
+
+### 总表更新
+344 → 354目标 | 高价值DA50+从104个增至105个（+EntireWeb DA52；Bizidex DA61） | 新增3个全新搜索维度
+
+---
+
 ## 2026-07-13 执行（第18轮）
 
 ### 搜索维度
