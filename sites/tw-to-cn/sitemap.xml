@@ -361,6 +361,12 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://subao.tw/blog/taiwan-gift-list</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://subao.tw/blog/taiwan-to-china-guide</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
