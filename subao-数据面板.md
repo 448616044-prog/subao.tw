@@ -114,7 +114,19 @@
 - **首次发现**: 2026-06-13
 - **最后抓取**: 2026-07-17
 - **影响**: 1页
-- **状态**: 🔴 待修复
+- **状态**: ✅ 已修复（2026-07-17 21:39）
+
+### 隐藏问题：全站Schema扫描发现4个解析错误
+- blog/real-customer-cases.html
+- blog/cross-strait-logistics-data-2026.html
+- blog/health-products-shipping.html
+- blog/ezway-tutorial.html
+- **状态**: ✅ 全部已修复（2026-07-17 22:00）
+
+### 全站Schema扫描结果
+- 322/322 JSON-LD 全部有效
+- 0个解析错误
+- 0个孤立FAQ
 
 ### 错误2: 缺少逗号"}"或"]"
 - **URL**: https://subao.tw/blog/taiwan-snack-shipping
