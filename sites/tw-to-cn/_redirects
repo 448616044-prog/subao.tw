@@ -185,3 +185,4 @@
 # tw.html 旧版重定向
 /tw.html /tw-to-cn 301
 /cn.html /tw-to-cn 301
+/contact /contact-form 301
