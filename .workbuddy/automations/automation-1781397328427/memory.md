@@ -1,5 +1,57 @@
 # 外链机会每日搜索 — 执行记录
 
+## 2026-07-19 执行（第22轮）
+
+### 搜索维度
+- MindMingles 90+ / ProximaDots 100+ / eRankSolutions 20+ / Befreshes 100+ / websupportsservices 60+ — 五源交叉比对去重
+- Shipzy.ai 2026新兴货代绩效排名网络（BetaList 2026-03上线）
+- GetTransport 国际货运撮合市场（7,000+承运商，30min响应）
+- ShippingSail 航运专属免费目录（直接表单提交无CAPTCHA）
+- 全新高DA .info/.com.ar域名通用目录类别挖掘
+
+### 核心发现
+- **Shipzy.ai** — 🔥🔥 **2026年3月新上线的货代绩效排名网络！** 2,500+货代+122国家+13家实时船公司API（80%全球TEU覆盖）。"Sign up free and claim your public profile"。对飚WCA/JCtrans但价格仅1/20，免费版可获取公共档案页+网站链接。BetaList 2026年3月Featured。早期入驻红利！
+- **ShippingSail** — 🔥 **无CAPTCHA纯表单！** "List your shipping company free of cost"，5字段极简提交。航运/物流专属免费目录。人工审核
+- **GetTransport** — 🔥 **"Free registration"国际货运撮合市场！** 7,000+承运商，支持空运/海运/陆运/铁路，有中文版本+亚洲跨境电商物流专题文章
+- **corpdirectory.info (DA66) + 24directory.com.ar (DA68) + mywebdirectory.com.ar (DA67)** — 3个DA65+高价值通用目录，2026多源确认为dofollow免费目录
+- **13个DA60+通用目录** — MindMingles / ProximaDots / eRank 三源交叉确认
+
+### 新增平台数
+34个（A+级3个：货代网络+航运目录+货运市场 / B+++级13个：DA60+通用目录 / C+++级21个：DA30-59补充目录）
+
+### 总表更新
+433 → 467目标 | 高价值DA50+从125个增至141个（+16个：corpdirectory DA66 + 24directory DA68 + mywebdirectory DA67 + vbdirectory DA65 + prsl DA64 + widedir DA64 + linksef DA63 + ourdirectory DA63 + darkdir DA62 + 82470 DA62 + deeperlinks DA61 + thedirectory DA60 + addnewlink DA60 + 000directory DA59 + golddirectory DA56 + 40billion DA52） | 新增5个全新搜索维度
+
+### 无CAPTCHA可自动提交新增
+- ShippingSail 🔥 无CAPTCHA纯表单
+- topsinamerica 🔥 Free Forever无需注册直接提交
+
+---
+
+
+### 搜索维度
+- Appcosoftware Top 50+免费目录提交站全量交叉比对
+- theearningengine 250+商业列表站交叉去重
+- 2025-2026年新兴货代网络挖掘（Net Zero Logistics Network）
+- 中国物流黄页平台搜索（好运物流网等）
+- leadcreators.ca + theguidex.com 多源去重交叉比对
+
+### 核心发现
+- **businesslistings.net.au** — 🏆 **DA70！本轮最高DA！** 澳大利亚权威商业列表，免费注册含网站链接
+- **Net Zero Logistics Network (netzerologistics.network)** — 🔥 **2025-2026新成立的环保货代网络！** 免费加入，可持续物流+碳排放管理，早期入驻红利
+- **好运物流网 (haoyun56.com)** — 🔥 **「永久免费全公开」中国物流信息平台！** 免费注册展示物流公司信息+网站链接
+- **somuch.com (DA62) / alive-directory.com (DA52) / intelseek.com (DA49)** — 3个DA45+高价值通用目录
+- **semfirms.com (DA50)** — B2B服务商目录，免费创建企业档案+dofollow
+- **36个DA38-49通用目录批量收录** — Appcosoftware Top 50 + theearningengine 250+ 双源交叉去重
+
+### 新增平台数
+51个（A+级2个物流专项 / B+++级6个高DA通用目录 / C+++级43个通用目录+补充平台）
+
+### 总表更新
+382 → 433目标 | 高价值DA50+净增4个（+businesslistings.net.au DA70 / +somuch.com DA62 / +alive-directory DA52 / +semfirms DA50） | 新增2个全新搜索维度
+
+---
+
 ## 2026-07-16 执行（第20轮）
 
 ### 搜索维度
