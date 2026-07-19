@@ -2,7 +2,7 @@
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<meta name="lastmod" content="2026-07-17">
+<meta name="lastmod" content="2026-07-19">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>台灣寄大陸運費快算器 | 速豹集運</title>
   <meta name="description" content="台灣寄大陸運費快算器：輸入重量和尺寸，即時計算運費。支援經濟/標準/快速三種專線對比。">
@@ -93,7 +93,7 @@ function calculate(){
   if(w>=30) price=Math.round(price*0.75);
 
   document.getElementById('price').textContent='NT$'+price.toLocaleString();
-  document.getElementById('detail').textContent='約'+w+'kg '+((t==='general')?'一般品':(t==='food')?'食品':(t==='cosmetics')?'化妝品':(t==='health')?'保健品':'電子產品')+' → '+((d==='tier1')?'一線城市':(d==='tier2')?'其他城市':'偏遠地區')+' | 參考時效 3-7天';
+  document.getElementById('detail').textContent='約'+w+'kg '+((t==='general')?'一般品':(t==='food')?'食品':(t==='cosmetics')?'化妝品':(t==='health')?'保健品':'電子產品')+' → '+((d==='tier1')?'一線城市':(d==='tier2')?'其他城市':'偏遠地區')+' | 參考時效 5-10天';
   document.getElementById('result').style.display='block';
 }
 </script>
