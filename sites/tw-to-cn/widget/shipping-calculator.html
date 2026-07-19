@@ -93,7 +93,7 @@ function calculate(){
   if(w>=30) price=Math.round(price*0.75);
 
   document.getElementById('price').textContent='NT$'+price.toLocaleString();
-  document.getElementById('detail').textContent='約'+w+'kg '+((t==='general')?'一般品':(t==='food')?'食品':(t==='cosmetics')?'化妝品':(t==='health')?'保健品':'電子產品')+' → '+((d==='tier1')?'一線城市':(d==='tier2')?'其他城市':'偏遠地區')+' | 參考時效 5-10天';
+  document.getElementById('detail').textContent='約'+w+'kg '+((t==='general')?'一般品':(t==='food')?'食品':(t==='cosmetics')?'化妝品':(t==='health')?'保健品':'電子產品')+' → '+((d==='tier1')?'一線城市':(d==='tier2')?'其他城市':'偏遠地區')+' | 參考時效 5-7天';
   document.getElementById('result').style.display='block';
 }
 </script>
