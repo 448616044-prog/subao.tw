@@ -132,7 +132,7 @@
     .nav{display:flex;align-items:center;gap:24px}.nav a{font-weight:500;color:var(--text-dark);transition:var(--transition);font-size:15px;white-space:nowrap}.nav a:hover{color:var(--primary)}
     .header-cta{display:flex;align-items:center;gap:12px;flex-shrink:0}.btn{display:inline-block;padding:10px 20px;border-radius:var(--radius);font-weight:700;font-size:14px;cursor:pointer;border:none;transition:var(--transition)}.btn-line{background:var(--line-green);color:#fff}.btn-line:hover{background:#007000}.menu-toggle{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text-dark)}
     @media(max-width:1300px){.header-cta{display:none !important}}
-    .mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;bottom:0;background:#fff;padding:24px;overflow-y:auto;z-index:999;box-shadow:0 4px 12px rgba(0,0,0,.1)}.mobile-menu.active{display:block}
+    .mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;bottom:0;background:#fff;padding:24px;overflow-y:auto;z-index:999;box-shadow:0 4px 12px rgba(0,0,0,.1);overflow-x:hidden}.mobile-menu.active{display:block}
     .hero{padding:140px 0 60px;background:linear-gradient(135deg,#1A1A2E 0%,#1A1A2E 70%,#0066CC 150%);color:#fff;text-align:center;position:relative;overflow:hidden}.hero::before{content:'';position:absolute;top:-30%;right:-15%;width:500px;height:500px;border-radius:50%;background:rgba(0,102,204,.08);pointer-events:none}.hero .container{position:relative;z-index:1}.hero h1{font-size:34px;font-weight:800;line-height:1.35;margin-bottom:16px;max-width:800px;margin-left:auto;margin-right:auto}.hero .subtitle{font-size:18px;opacity:.85;max-width:650px;margin:0 auto 32px}.hero .btn-primary{display:inline-flex;align-items:center;gap:8px;padding:16px 36px;background:var(--line-green);color:#fff;border-radius:var(--radius-pill);font-size:16px;font-weight:700;transition:var(--transition)}.hero .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,138,0,.4)}
     .article-content{background:var(--bg-white);padding:48px;margin:-20px auto 40px;border-radius:var(--radius-lg);box-shadow:var(--shadow);max-width:900px}.article-content h2{font-size:22px;font-weight:700;color:var(--primary);margin:36px 0 16px;padding-bottom:8px;border-bottom:2px solid var(--primary-light)}.article-content h3{font-size:18px;font-weight:700;color:var(--text-dark);margin:24px 0 12px}.article-content p{margin-bottom:16px}.article-content ul,.article-content ol{margin:16px 0;padding-left:24px}.article-content li{margin-bottom:10px}.article-content table{width:100%;border-collapse:collapse;margin:24px 0}.article-content th,.article-content td{padding:10px 14px;border-bottom:1px solid var(--border);font-size:14px}.article-content th{background:var(--primary);color:#fff;font-weight:600}
     .tip-box{background:var(--primary-light);padding:20px;border-radius:var(--radius);margin-bottom:24px;border-left:4px solid var(--primary)}.cta-box{background:linear-gradient(135deg,var(--secondary),var(--secondary-dark));color:#fff;padding:32px;border-radius:var(--radius-lg);text-align:center;margin:40px 0}.cta-box h3{font-size:20px;margin-bottom:12px;color:#fff}.cta-box p{margin-bottom:20px;opacity:.9;color:#fff}.cta-box .btn{background:#fff;color:var(--secondary);font-size:16px;padding:14px 32px}.mid-cta{background:linear-gradient(135deg,#FFF9F0,#FFF3E0);border:2px solid var(--secondary);border-radius:12px;padding:24px;margin:32px 0;text-align:center}.mid-cta h3{color:var(--secondary);font-size:17px;margin-bottom:8px}.mid-cta p{color:#666;font-size:14px;margin-bottom:16px}.mid-cta .btn{background:var(--secondary);color:#fff;font-size:15px;padding:12px 28px;border-radius:24px}
@@ -159,8 +159,8 @@
     <div class="container">
       <a href="/" class="logo">
         <picture>
-          <source srcset="images/subao-logo-new.webp" type="image/webp">
-          <img src="images/subao-logo-new.png" alt="速豹集運" width="200" height="50" fetchpriority="high" decoding="async">
+          <source srcset="/images/subao-logo-new.webp" type="image/webp">
+          <img src="/images/subao-logo-new.png" alt="速豹集運" width="200" height="50" fetchpriority="high" decoding="async">
         </picture>
       </a>
             <nav class="nav" id="desktopNav">
@@ -185,6 +185,7 @@
     </div>
   </header>
 <div class="mobile-menu" id="mobileMenu">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--primary-light)"><span style="font-weight:700;font-size:18px;color:var(--text-dark)">導航選單</span><button id="mobileClose" aria-label="關閉選單" style="background:none;border:none;font-size:28px;cursor:pointer;color:var(--text-light);padding:4px 8px;line-height:1">&times;</button></div>
 <a href="/tw-to-cn" class="mobile-nav-link">台灣發大陸</a>
 <div class="m-dropdown"><span>運費</span><div class="m-dropdown-links"><a href="/pricing">運費報價</a><a href="/pricing-calculator">運費試算</a></div></div>
 <a href="/can-i-ship" class="mobile-nav-link">可以寄嗎</a><a href="/customs-guide" class="mobile-nav-link">關稅速查</a><a href="/volume-calculator" class="mobile-nav-link">材積計算</a><a href="/article-list" class="mobile-nav-link">文章攻略</a>
@@ -282,12 +283,12 @@
 <div id="contactFormWrap"><h3>📬 給我們留言</h3><p class="sub">填寫後我們會盡快回覆</p><form id="contactMsgForm" onsubmit="submitContactForm(event)"><div class="field"><label>怎麼稱呼</label><input type="text" id="cfName" placeholder="例如：張先生" required></div><div class="field"><label>聯繫方式</label><input type="text" id="cfContact" placeholder="LINE ID / 微信 / 手機" required></div><div class="field"><label>目的地城市</label><input type="text" id="cfItem" placeholder="例如：廣州天河區"></div><div class="field"><label>備註</label><textarea id="cfMsg" placeholder="寄什麼、重量（選填）"></textarea></div><button type="submit" class="submit-btn">送出留言</button></form></div>
 <div class="success-msg" id="successMsg"><div class="check">✅</div><p>留言已送出！<br>我們會盡快聯繫您。</p><button class="submit-btn" style="margin-top:16px" onclick="closeContactModal()">關閉</button></div></div></div>
 <script>function openContactModal(){document.getElementById('contactModal').classList.add('active')}function closeContactModal(){document.getElementById('contactModal').classList.remove('active');setTimeout(function(){document.getElementById('contactFormWrap').style.display='block';document.getElementById('successMsg').style.display='none';document.getElementById('contactMsgForm').reset()},300)}function submitContactForm(e){e.preventDefault();var n=document.getElementById('cfName').value,c=document.getElementById('cfContact').value,i=document.getElementById('cfItem').value||'未填',m=document.getElementById('cfMsg').value||'未填';gtag('event','contact_form_submit',{event_category:'conversion',event_label:'floating_contact'});document.getElementById('contactFormWrap').style.display='none';document.getElementById('successMsg').style.display='block';fetch('https://formsubmit.co/ajax/business@videotvai.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,contact:c,item:i,message:m,_subject:'[速豹官網留言] '+n})}).catch(function(){})}</script>
-<script>(function(){var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(t&&m){t.addEventListener("click",function(){m.classList.toggle("active")})}})()</script>
+<script>(function(){var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(t&&m){t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")})}})()</script>
 
 <script>
 window.addEventListener("DOMContentLoaded",function(){
   var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
-  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")});
   document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
   document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
 });
@@ -296,19 +297,31 @@ window.addEventListener("scroll",function(){var h=document.querySelector(".heade
 
 
 <style>
-.nav-dropdown{position:relative}.dd-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%);min-width:200px;background:#fff;border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,.1);padding:8px;opacity:0;visibility:hidden;pointer-events:none;transition:all .2s ease;z-index:50}.nav-dropdown:hover>.dd-menu,.nav-dropdown.open>.dd-menu{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0)}.dd-menu a{display:block;padding:10px 16px;font-size:14px;color:#555;border-radius:8px;text-decoration:none;white-space:nowrap}.dd-menu a:hover{background:#f5f7fa;color:var(--primary)}.header-cta{display:flex;align-items:center;gap:12px;flex-shrink:0}.btn-line{background:#06C755 !important;color:#fff !important;padding:10px 20px !important;border-radius:10px !important;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center;gap:6px}.btn-line:hover{background:#05b04c !important;color:#fff !important;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,128,0,.2)}.menu-toggle svg{width:24px;height:24px}@media(max-width:1300px){.nav,.header-cta{display:none !important}.menu-toggle{display:block !important}}
+.nav-dropdown{position:relative}.dd-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%);min-width:200px;background:#fff;border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,.1);padding:8px;opacity:0;visibility:hidden;pointer-events:none;transition:all .2s ease;z-index:50}.nav-dropdown:hover>.dd-menu,.nav-dropdown.open>.dd-menu{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0)}.dd-menu a{display:block;padding:10px 16px;font-size:14px;color:#555;border-radius:8px;text-decoration:none;white-space:nowrap}.dd-menu a:hover{background:#f5f7fa;color:var(--primary)}.header-cta{display:flex;align-items:center;gap:12px;flex-shrink:0}.btn-line{background:#06C755 !important;color:#fff !important;padding:10px 20px !important;border-radius:10px !important;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center;gap:6px}.btn-line:hover{background:#05b04c !important;color:#fff !important;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,128,0,.2)}.menu-toggle svg{width:24px;height:24px}@media(max-width:1300px){.nav,.header-cta{display:none !important}.menu-toggle{display:block !important}}@media(max-width:1050px){.nav{display:none}.menu-toggle{display:block}.mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;bottom:0;background:var(--bg-white);padding:24px;overflow-y:auto;overflow-x:hidden;z-index:1100;box-shadow:0 4px 12px rgba(0,0,0,0.1);}.mobile-menu.active{display:block}body.menu-open{overflow:hidden}}
 </style>
 
 
 <script>
 (function(){
   var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
-  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")});
   document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
   document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
 })();
 window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
 </script>
 
-<script>document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});window.addEventListener('scroll',function(){var bar=document.getElementById('floatBar');if(bar){if(window.scrollY>400)bar.classList.add('show');else bar.classList.remove('show')}}})</script>
+<script>document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});window.addEventListener('scroll',function(){var bar=document.getElementById('floatBar');if(bar){if(window.scrollY>400)bar.classList.add('show');else bar.classList.remove('show')}}})
+  var mc=document.getElementById('mobileClose');
+  if(mc)mc.addEventListener('click',function(){
+    document.getElementById('mobileMenu').classList.remove('active');
+    document.body.classList.remove('menu-open');
+  });
+  document.querySelectorAll('#mobileMenu .mobile-nav-link, #mobileMenu .m-dropdown-links a').forEach(function(l){
+    l.addEventListener('click',function(){
+      document.getElementById('mobileMenu').classList.remove('active');
+      document.body.classList.remove('menu-open');
+    });
+  });
+</script>
 </body></html>

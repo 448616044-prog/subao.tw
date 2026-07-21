@@ -47,8 +47,8 @@
     .nav .btn-line:hover{background:#05a648;color:#fff}
     .nav .btn-line svg{width:18px;height:18px}
     
-    @media(max-width:768px){
-      .nav{display:none}
+    @media(max-width:1050px){
+      .nav{display:none}.menu-toggle{display:block}
       .header .container{height:56px}
     }
     
@@ -349,6 +349,18 @@
 
 <script>
 window.addEventListener('scroll',function(){var h=document.querySelector('.header');if(h)h.classList.toggle('scrolled',window.scrollY>20)});
+
+  var mc=document.getElementById('mobileClose');
+  if(mc)mc.addEventListener('click',function(){
+    document.getElementById('mobileMenu').classList.remove('active');
+    document.body.classList.remove('menu-open');
+  });
+  document.querySelectorAll('#mobileMenu .mobile-nav-link, #mobileMenu .m-dropdown-links a').forEach(function(l){
+    l.addEventListener('click',function(){
+      document.getElementById('mobileMenu').classList.remove('active');
+      document.body.classList.remove('menu-open');
+    });
+  });
 </script>
 
 </body>

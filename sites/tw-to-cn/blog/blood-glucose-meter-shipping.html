@@ -136,8 +136,8 @@ footer{background:#111;color:#ddd;padding:60px 24px 30px;margin-top:80px}
     <div class="container">
       <a href="/" class="logo">
         <picture>
-          <source srcset="images/subao-logo-new.webp" type="image/webp">
-          <img src="images/subao-logo-new.png" alt="速豹集運" width="200" height="50" fetchpriority="high" decoding="async">
+          <source srcset="/images/subao-logo-new.webp" type="image/webp">
+          <img src="/images/subao-logo-new.png" alt="速豹集運" width="200" height="50" fetchpriority="high" decoding="async">
         </picture>
       </a>
             <nav class="nav" id="desktopNav">
@@ -162,6 +162,7 @@ footer{background:#111;color:#ddd;padding:60px 24px 30px;margin-top:80px}
     </div>
   </header>
 <div class="mobile-menu" id="mobileMenu">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--primary-light)"><span style="font-weight:700;font-size:18px;color:var(--text-dark)">導航選單</span><button id="mobileClose" aria-label="關閉選單" style="background:none;border:none;font-size:28px;cursor:pointer;color:var(--text-light);padding:4px 8px;line-height:1">&times;</button></div>
 <a href="/tw-to-cn" class="mobile-nav-link">台灣發大陸</a>
 <div class="m-dropdown"><span>運費</span><div class="m-dropdown-links"><a href="/pricing">運費報價</a><a href="/pricing-calculator">運費試算</a></div></div>
 <a href="/can-i-ship" class="mobile-nav-link">可以寄嗎</a><a href="/customs-guide" class="mobile-nav-link">關稅速查</a><a href="/volume-calculator" class="mobile-nav-link">材積計算</a><a href="/article-list" class="mobile-nav-link">文章攻略</a>
@@ -407,7 +408,7 @@ document.querySelectorAll('.faq-q').forEach(function(q){q.addEventListener('clic
 var header=document.getElementById('header');window.addEventListener('scroll',function(){header.classList.toggle('scrolled',window.scrollY>10)});
 const menuToggle=document.getElementById('menuToggle');
 const mobileMenu=document.getElementById('mobileMenu');
-if(menuToggle&&mobileMenu){menuToggle.addEventListener('click',function(){mobileMenu.classList.toggle('active');var i=menuToggle.querySelector('i');mobileMenu.classList.contains('active')?(i.classList.remove('fa-bars'),i.classList.add('fa-times')):(i.classList.remove('fa-times'),i.classList.add('fa-bars'))})}
+if(menuToggle&&mobileMenu){menuToggle.addEventListener('click',function(){mobileMenu.classList.toggle('active');document.body.classList.toggle("menu-open");var i=menuToggle.querySelector('i');mobileMenu.classList.contains('active')?(i.classList.remove('fa-bars'),i.classList.add('fa-times')):(i.classList.remove('fa-times'),i.classList.add('fa-bars'))})}
 function openContactModal(){document.getElementById('contactModal').classList.add('active')}
 function closeContactModal(){document.getElementById('contactModal').classList.remove('active')}
 function submitContactForm(e){e.preventDefault();var n=document.getElementById('cfName').value,t=document.getElementById('cfContact').value,i=document.getElementById('cfItem').value||'',m=document.getElementById('cfMsg').value||'',o='【速豹留言】\n稱呼：'+n+'\n聯繫方式：'+t+'\n想寄什麼：'+i+'\n備註：'+m;gtag('event','contact_form_submit',{event_category:'conversion',event_label:'blog_faq'});fetch('https://api.telegram.org/bot7951277743:AAEVQE9W7mUuDEV4jkmApIBnUaUObg9ROZc/sendMessage',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id:'-4795781625',text:o})}).then(function(){document.getElementById('contactFormWrap').style.display='none';document.getElementById('successMsg').style.display='block'}).catch(function(){alert('送出失敗，請直接LINE聯繫我們：@734dooky')})}
@@ -457,7 +458,7 @@ function submitContactForm(e){e.preventDefault();var n=document.getElementById('
 <script>
 window.addEventListener("DOMContentLoaded",function(){
   var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
-  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")});
   document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
   document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
 });
@@ -483,9 +484,21 @@ window.addEventListener("scroll",function(){var h=document.querySelector(".heade
 .success-msg{display:none;text-align:center;padding:20px 0}
 .success-msg .check{font-size:48px;color:#10b981;margin-bottom:12px}
 .success-msg p{font-size:15px;color:#555}
-@media(max-width:480px){.modal-box{padding:24px;max-width:95%}}
+@media(max-width:480px){.modal-box{padding:24px;max-width:95%}}@media(max-width:1050px){.nav{display:none}.menu-toggle{display:block}.mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;bottom:0;background:var(--bg-white);padding:24px;overflow-y:auto;overflow-x:hidden;z-index:1100;box-shadow:0 4px 12px rgba(0,0,0,0.1);}.mobile-menu.active{display:block}body.menu-open{overflow:hidden}}
 </style>
 
-<script>document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});window.addEventListener('scroll',function(){var bar=document.getElementById('floatBar');if(bar){if(window.scrollY>400)bar.classList.add('show');else bar.classList.remove('show')}}})</script>
+<script>document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});window.addEventListener('scroll',function(){var bar=document.getElementById('floatBar');if(bar){if(window.scrollY>400)bar.classList.add('show');else bar.classList.remove('show')}}})
+  var mc=document.getElementById('mobileClose');
+  if(mc)mc.addEventListener('click',function(){
+    document.getElementById('mobileMenu').classList.remove('active');
+    document.body.classList.remove('menu-open');
+  });
+  document.querySelectorAll('#mobileMenu .mobile-nav-link, #mobileMenu .m-dropdown-links a').forEach(function(l){
+    l.addEventListener('click',function(){
+      document.getElementById('mobileMenu').classList.remove('active');
+      document.body.classList.remove('menu-open');
+    });
+  });
+</script>
 </body>
 </html>

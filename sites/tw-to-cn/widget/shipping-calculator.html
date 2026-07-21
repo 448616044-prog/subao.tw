@@ -32,7 +32,7 @@
   .cta a{color:#008A00;font-weight:700;text-decoration:none}
   .powered{text-align:center;font-size:11px;color:#ccc;margin-top:20px}
   .powered a{color:#0066CC;text-decoration:none;font-weight:600}
-</style>
+@media(max-width:1050px){.nav{display:none}.menu-toggle{display:block}.mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;bottom:0;background:var(--bg-white);padding:24px;overflow-y:auto;overflow-x:hidden;z-index:1100;box-shadow:0 4px 12px rgba(0,0,0,0.1);}.mobile-menu.active{display:block}body.menu-open{overflow:hidden}}</style>
 <link rel="canonical" href="https://subao.tw/widget/shipping-calculator">
 <script type="application/ld+json">
 {
@@ -110,11 +110,23 @@ function calculate(){
 <script>
 window.addEventListener("DOMContentLoaded",function(){
   var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
-  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")});
   document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
   document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
 });
 window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
+
+  var mc=document.getElementById('mobileClose');
+  if(mc)mc.addEventListener('click',function(){
+    document.getElementById('mobileMenu').classList.remove('active');
+    document.body.classList.remove('menu-open');
+  });
+  document.querySelectorAll('#mobileMenu .mobile-nav-link, #mobileMenu .m-dropdown-links a').forEach(function(l){
+    l.addEventListener('click',function(){
+      document.getElementById('mobileMenu').classList.remove('active');
+      document.body.classList.remove('menu-open');
+    });
+  });
 </script>
 </body>
 </html>

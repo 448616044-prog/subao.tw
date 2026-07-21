@@ -123,7 +123,7 @@
     .cta-section{background:linear-gradient(135deg,var(--secondary) 0%,var(--secondary-dark) 100%);color:#fff;text-align:center;padding:60px 0}
     .cta-section h2{font-size:28px;margin-bottom:12px}
     .cta-section p{font-size:18px;margin-bottom:24px;opacity:0.9}
-    @media(max-width:992px){.nav{display:none}.footer .container{grid-template-columns:1fr 1fr}}
+    @media(max-width:1050px){.nav{display:none}.menu-toggle{display:block}.footer .container{grid-template-columns:1fr 1fr}}
     @media(max-width:768px){.page-hero h1{font-size:28px}.articles-grid{grid-template-columns:1fr}.footer .container{grid-template-columns:1fr}}
   .float-bar{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,#008A00 0%,#009900 100%);padding:12px 20px;z-index:998;display:none;align-items:center;justify-content:center;gap:16px;box-shadow:0 -4px 20px rgba(0,0,0,0.2)}
   .float-bar.show{display:flex}
@@ -182,6 +182,7 @@
   </header>
 
         <div class="mobile-menu" id="mobileMenu">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--primary-light)"><span style="font-weight:700;font-size:18px;color:var(--text-dark)">導航選單</span><button id="mobileClose" aria-label="關閉選單" style="background:none;border:none;font-size:28px;cursor:pointer;color:var(--text-light);padding:4px 8px;line-height:1">&times;</button></div>
     <a href="/tw-to-cn" class="mobile-nav-link" data-nav="tw-to-cn">台灣發大陸</a>
     <div class="m-dropdown">
       <span>運費</span>
@@ -1379,12 +1380,12 @@ function submitContactForm(e){e.preventDefault();var n=document.getElementById('
 <symbol id="shipping-fast" viewBox="0 0 24 24"><path fill="currentColor" d="M1 3h13a2 2 0 012 2v1h4a1 1 0 01.7.3l3 4A2 2 0 0124 11v5a2 2 0 01-2 2h-1a3 3 0 01-6 0h-4a3 3 0 01-6 0H4a2 2 0 01-2-2V5a2 2 0 012-2H1zm16 4v3h3.6l-2.2-3H17zM5.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm11 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></symbol>
 <symbol id="times" viewBox="0 0 24 24"><path fill="currentColor" d="M18.3 5.7a1 1 0 00-1.4 0L12 10.6 7.1 5.7a1 1 0 00-1.4 1.4L10.6 12l-4.9 4.9a1 1 0 001.4 1.4L12 13.4l4.9 4.9a1 1 0 001.4-1.4L13.4 12l4.9-4.9a1 1 0 000-1.4z"/></symbol>
 </svg>
-<script>(function(){var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(t&&m){t.addEventListener("click",function(){m.classList.toggle("active")})}})()</script>
+<script>(function(){var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(t&&m){t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")})}})()</script>
 
 <script>
 window.addEventListener("DOMContentLoaded",function(){
   var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
-  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")});
   document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
   document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
 });
@@ -1421,14 +1422,26 @@ window.addEventListener("scroll",function(){var h=document.querySelector(".heade
 <script>
 (function(){
   var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
-  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")});
   document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
   document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
 })();
 window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
 </script>
 
-<script>document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});window.addEventListener('scroll',function(){var bar=document.getElementById('floatBar');if(bar){if(window.scrollY>400)bar.classList.add('show');else bar.classList.remove('show')}}})</script>
+<script>document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});window.addEventListener('scroll',function(){var bar=document.getElementById('floatBar');if(bar){if(window.scrollY>400)bar.classList.add('show');else bar.classList.remove('show')}}})
+  var mc=document.getElementById('mobileClose');
+  if(mc)mc.addEventListener('click',function(){
+    document.getElementById('mobileMenu').classList.remove('active');
+    document.body.classList.remove('menu-open');
+  });
+  document.querySelectorAll('#mobileMenu .mobile-nav-link, #mobileMenu .m-dropdown-links a').forEach(function(l){
+    l.addEventListener('click',function(){
+      document.getElementById('mobileMenu').classList.remove('active');
+      document.body.classList.remove('menu-open');
+    });
+  });
+</script>
 </body>
 </html>
 

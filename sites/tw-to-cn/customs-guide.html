@@ -196,7 +196,7 @@
     .footer-section a:hover{color:var(--text-white)}
     .footer-bottom{border-top:1px solid rgba(255,255,255,0.2);padding-top:30px;text-align:center;color:rgba(255,255,255,0.6)}
 
-    @media(max-width:992px){.nav{display:none}.flow-cards{grid-template-columns:1fr 1fr}.flow-card::after{display:none}}
+    @media(max-width:1050px){.nav{display:none}.menu-toggle{display:block}.flow-cards{grid-template-columns:1fr 1fr}.flow-card::after{display:none}}
     @media(max-width:768px){.flow-cards,.footer-content{grid-template-columns:1fr}.page-hero h1{font-size:28px}}
   .float-bar{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,#008A00 0%,#009900 100%);padding:12px 20px;z-index:998;display:none;align-items:center;justify-content:center;gap:16px;box-shadow:0 -4px 20px rgba(0,0,0,0.2)}
   .float-bar.show{display:flex}
@@ -250,6 +250,7 @@
   </header>
 
         <div class="mobile-menu" id="mobileMenu">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--primary-light)"><span style="font-weight:700;font-size:18px;color:var(--text-dark)">導航選單</span><button id="mobileClose" aria-label="關閉選單" style="background:none;border:none;font-size:28px;cursor:pointer;color:var(--text-light);padding:4px 8px;line-height:1">&times;</button></div>
     <a href="/tw-to-cn" class="mobile-nav-link" data-nav="tw-to-cn">台灣發大陸</a>
     <div class="m-dropdown">
       <span>運費</span>
@@ -709,7 +710,7 @@
     var mobileMenu = document.getElementById('mobileMenu');
     if(menuToggle && mobileMenu){
       menuToggle.addEventListener('click', function(){
-        mobileMenu.classList.toggle('active');
+        mobileMenu.classList.toggle('active');document.body.classList.toggle("menu-open");
         var icon = menuToggle.querySelector('i');
         icon.classList.toggle('fa-bars');
         icon.classList.toggle('fa-times');
@@ -759,7 +760,7 @@
 <script>
 window.addEventListener("DOMContentLoaded",function(){
   var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
-  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")});
   document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
   document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
 });
@@ -788,6 +789,18 @@ window.addEventListener("scroll",function(){var h=document.querySelector(".heade
 @media(max-width:480px){.modal-box{padding:24px;max-width:95%}}
 </style>
 
-<script>document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});window.addEventListener('scroll',function(){var bar=document.getElementById('floatBar');if(bar){if(window.scrollY>400)bar.classList.add('show');else bar.classList.remove('show')}}})</script>
+<script>document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});window.addEventListener('scroll',function(){var bar=document.getElementById('floatBar');if(bar){if(window.scrollY>400)bar.classList.add('show');else bar.classList.remove('show')}}})
+  var mc=document.getElementById('mobileClose');
+  if(mc)mc.addEventListener('click',function(){
+    document.getElementById('mobileMenu').classList.remove('active');
+    document.body.classList.remove('menu-open');
+  });
+  document.querySelectorAll('#mobileMenu .mobile-nav-link, #mobileMenu .m-dropdown-links a').forEach(function(l){
+    l.addEventListener('click',function(){
+      document.getElementById('mobileMenu').classList.remove('active');
+      document.body.classList.remove('menu-open');
+    });
+  });
+</script>
 </body>
 </html>

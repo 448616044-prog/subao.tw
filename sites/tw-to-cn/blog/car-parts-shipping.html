@@ -140,7 +140,7 @@ a{text-decoration:none;color:var(--primary)}
     .contact-modal .success-msg{display:none;text-align:center;padding:20px 0}
     .contact-modal .success-msg .check{font-size:48px;color:#10b981;margin-bottom:12px}
     .contact-modal .success-msg p{font-size:15px;color:#555}
-    @media(max-width:768px){.nav{display:none}.menu-toggle{display:block}.mobile-menu.open{display:block;position:fixed;top:60px;left:0;right:0;background:#fff;padding:0 20px 20px;z-index:999;box-shadow:0 4px 16px rgba(0,0,0,0.1);max-height:80vh;overflow-y:auto}.pillar-hero h1{font-size:26px}.article-content{padding:24px;margin:-10px 10px 20px}.related-grid{grid-template-columns:1fr}.footer .container{grid-template-columns:1fr}.footer{text-align:center}}
+    @media(max-width:1050px){.nav{display:none}.menu-toggle{display:block}.mobile-menu.open{display:block;position:fixed;top:60px;left:0;right:0;background:#fff;padding:0 20px 20px;z-index:999;box-shadow:0 4px 16px rgba(0,0,0,0.1);max-height:80vh;overflow-y:auto}.pillar-hero h1{font-size:26px}.article-content{padding:24px;margin:-10px 10px 20px}.related-grid{grid-template-columns:1fr}.footer .container{grid-template-columns:1fr}.footer{text-align:center}}
   </style>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
@@ -155,8 +155,8 @@ a{text-decoration:none;color:var(--primary)}
     <div class="container">
       <a href="/" class="logo">
         <picture>
-          <source srcset="images/subao-logo-new.webp" type="image/webp">
-          <img src="images/subao-logo-new.png" alt="速豹集運" width="200" height="50" fetchpriority="high" decoding="async">
+          <source srcset="/images/subao-logo-new.webp" type="image/webp">
+          <img src="/images/subao-logo-new.png" alt="速豹集運" width="200" height="50" fetchpriority="high" decoding="async">
         </picture>
       </a>
             <nav class="nav" id="desktopNav">
@@ -181,6 +181,7 @@ a{text-decoration:none;color:var(--primary)}
     </div>
   </header>
   <div class="mobile-menu" id="mobileMenu">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--primary-light)"><span style="font-weight:700;font-size:18px;color:var(--text-dark)">導航選單</span><button id="mobileClose" aria-label="關閉選單" style="background:none;border:none;font-size:28px;cursor:pointer;color:var(--text-light);padding:4px 8px;line-height:1">&times;</button></div>
     <a href="/tw-to-cn" class="mobile-nav-link">台灣發大陸</a>
     <a href="/pricing" class="mobile-nav-link">運費</a>
     <a href="/can-i-ship" class="mobile-nav-link">可以寄嗎</a>
@@ -417,12 +418,12 @@ a{text-decoration:none;color:var(--primary)}
     function closeContactModal(){document.getElementById('contactModal').classList.remove('active');setTimeout(function(){document.getElementById('contactFormWrap').style.display='block';document.getElementById('successMsg').style.display='none';document.getElementById('contactMsgForm').reset()},300)}
     function submitContactForm(e){e.preventDefault();var n=document.getElementById('cfName').value,c=document.getElementById('cfContact').value,i=document.getElementById('cfItem').value||'未填',m=document.getElementById('cfMsg').value||'未填';gtag('event','contact_form_submit',{event_category:'conversion',event_label:'floating_contact'});document.getElementById('contactFormWrap').style.display='none';document.getElementById('successMsg').style.display='block';fetch('https://formsubmit.co/ajax/business@videotvai.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,contact:c,item:i,message:m,_subject:'[速豹官網留言] '+n,})}).catch(function(){})}
   </script>
-<script>(function(){var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(t&&m){t.addEventListener("click",function(){m.classList.toggle("active")})}})()</script>
+<script>(function(){var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(t&&m){t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")})}})()</script>
 
 <script>
 window.addEventListener("DOMContentLoaded",function(){
   var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
-  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")});
   document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
   document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
 });
@@ -438,13 +439,25 @@ window.addEventListener("scroll",function(){var h=document.querySelector(".heade
 <script>
 (function(){
   var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
-  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")});
   document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
   document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
 })();
 window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
 </script>
 
-<script>document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});window.addEventListener('scroll',function(){var bar=document.getElementById('floatBar');if(bar){if(window.scrollY>400)bar.classList.add('show');else bar.classList.remove('show')}}})</script>
+<script>document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});window.addEventListener('scroll',function(){var bar=document.getElementById('floatBar');if(bar){if(window.scrollY>400)bar.classList.add('show');else bar.classList.remove('show')}}})
+  var mc=document.getElementById('mobileClose');
+  if(mc)mc.addEventListener('click',function(){
+    document.getElementById('mobileMenu').classList.remove('active');
+    document.body.classList.remove('menu-open');
+  });
+  document.querySelectorAll('#mobileMenu .mobile-nav-link, #mobileMenu .m-dropdown-links a').forEach(function(l){
+    l.addEventListener('click',function(){
+      document.getElementById('mobileMenu').classList.remove('active');
+      document.body.classList.remove('menu-open');
+    });
+  });
+</script>
 </body>
 </html>

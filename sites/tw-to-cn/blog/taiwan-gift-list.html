@@ -42,7 +42,7 @@
     .nav a{color:var(--text-dark);text-decoration:none;font-size:14px;padding:4px 0;border-bottom:2px solid transparent;transition:all .2s}
     .nav a:hover{color:var(--primary);border-bottom-color:var(--primary)}
     .menu-toggle{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text-dark)}
-    @media(max-width:768px){.nav{display:none}.menu-toggle{display:block}}
+    @media(max-width:1050px){.nav{display:none}.menu-toggle{display:block}.mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;bottom:0;background:var(--bg-white);padding:24px;overflow-y:auto;overflow-x:hidden;z-index:1100;box-shadow:0 4px 12px rgba(0,0,0,0.1)}.mobile-menu.active{display:block}body.menu-open{overflow:hidden}}
     
     .hero{background:linear-gradient(135deg,#E65100,#FF6D00);color:#fff;padding:100px 24px 60px;text-align:center}
     .hero h1{font-size:clamp(1.5rem,3vw,2rem);margin-bottom:12px;line-height:1.4}
@@ -237,6 +237,18 @@ var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMen
 if(!m){m=document.createElement("div");m.id="mobileMenu";m.style.cssText="display:none;position:fixed;top:64px;left:0;right:0;bottom:0;background:#fff;padding:24px;overflow-y:auto;z-index:1100;box-shadow:0 4px 12px rgba(0,0,0,.1)";
 var nav=document.querySelector(".nav");var links=nav?nav.cloneNode(true):null;if(links){links.style.cssText="display:flex;flex-direction:column;gap:16px";m.appendChild(links)}document.body.appendChild(m)}
 if(t&&m)t.addEventListener("click",function(){m.style.display=m.style.display==="block"?"none":"block"})
+
+  var mc=document.getElementById('mobileClose');
+  if(mc)mc.addEventListener('click',function(){
+    document.getElementById('mobileMenu').classList.remove('active');
+    document.body.classList.remove('menu-open');
+  });
+  document.querySelectorAll('#mobileMenu .mobile-nav-link, #mobileMenu .m-dropdown-links a').forEach(function(l){
+    l.addEventListener('click',function(){
+      document.getElementById('mobileMenu').classList.remove('active');
+      document.body.classList.remove('menu-open');
+    });
+  });
 </script>
 </body>
 </html>

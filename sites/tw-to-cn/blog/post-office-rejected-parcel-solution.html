@@ -60,7 +60,7 @@
     .footer{background:#1a1a2e;color:#ccc;text-align:center;padding:24px;font-size:13px;margin-top:40px}
   
 .menu-toggle{display:none;background:none;border:none;font-size:22px;cursor:pointer;color:#333;padding:4px;flex-shrink:0}
-.mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;bottom:0;background:#fff;padding:24px;overflow-y:auto;z-index:999;box-shadow:0 4px 12px rgba(0,0,0,.1)}
+.mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;bottom:0;background:#fff;padding:24px;overflow-y:auto;z-index:999;box-shadow:0 4px 12px rgba(0,0,0,.1);overflow-x:hidden}
 .mobile-menu.active{display:block}
 .mobile-nav-link{display:block;padding:16px 0;font-size:16px;font-weight:500;color:#333;border-bottom:1px solid #e0e0e0;text-decoration:none}
 .mobile-nav-link.cta{margin-top:24px;padding:16px 24px;background:#0066CC;color:#fff;border-radius:8px;text-align:center;border:none}
@@ -71,7 +71,7 @@
 .m-dropdown.open .m-dropdown-links{display:block}
 .m-dropdown-links a{display:block;padding:12px 8px;font-size:14px;color:#333;border-bottom:1px solid #f0f0f0;text-decoration:none}
 @media(max-width:992px){.nav-links,.header-cta{display:none}.menu-toggle{display:block}}
-@media(max-width:768px){body{font-size:15px;overflow-x:hidden}.container{padding:0 16px}table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}}
+@media(max-width:768px){body{font-size:15px;overflow-x:hidden}.container{padding:0 16px}table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}}@media(max-width:1050px){.nav{display:none}.menu-toggle{display:block}.mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;bottom:0;background:var(--bg-white);padding:24px;overflow-y:auto;overflow-x:hidden;z-index:1100;box-shadow:0 4px 12px rgba(0,0,0,0.1);}.mobile-menu.active{display:block}body.menu-open{overflow:hidden}}
 .float-bar{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,#008A00 0%,#009900 100%);padding:12px 20px;z-index:998;display:none;align-items:center;justify-content:center;gap:16px;box-shadow:0 -4px 20px rgba(0,0,0,0.2)}
   .float-bar.show{display:flex}
   .float-bar-text{flex:1;max-width:600px}
@@ -101,6 +101,7 @@
 <button class="menu-toggle" id="menuToggle" aria-label="選單"><svg class="icon" aria-hidden="true"><use href="#bars"/></svg></button>
   
 <div class="mobile-menu" id="mobileMenu">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--primary-light)"><span style="font-weight:700;font-size:18px;color:var(--text-dark)">導航選單</span><button id="mobileClose" aria-label="關閉選單" style="background:none;border:none;font-size:28px;cursor:pointer;color:var(--text-light);padding:4px 8px;line-height:1">&times;</button></div>
 <a href="/tw-to-cn" class="mobile-nav-link">台灣發大陸</a>
 <div class="m-dropdown"><span>運費</span><div class="m-dropdown-links"><a href="/pricing">運費報價</a><a href="/pricing-calculator">運費試算</a></div></div>
 <a href="/can-i-ship" class="mobile-nav-link">可以寄嗎</a><a href="/customs-guide" class="mobile-nav-link">關稅速查</a><a href="/volume-calculator" class="mobile-nav-link">材積計算</a><a href="/article-list" class="mobile-nav-link">文章攻略</a>
@@ -204,15 +205,27 @@
 
 <div class="float-bar" id="floatBar"><div class="float-bar-text"><p>📦 不確定能不能寄？<strong>傳照片免費評估</strong></p><small>LINE：@734dooky　平均30分鐘內回覆</small></div><a href="https://line.me/R/ti/p/@734dooky" class="btn-line-bar" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'float_bar'});gtag('event','generate_lead',{event_category:'lead',event_label:'line'})"><svg class="icon" aria-hidden="true"><use href="#line"/></svg> 免費評估</a></div>
 
-<script>(function(){var h=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(h&&m){h.addEventListener("click",function(){m.classList.toggle("active")})};document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(){this.parentElement.classList.toggle("open")})})})()</script>
+<script>(function(){var h=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(h&&m){h.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")})};document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(){this.parentElement.classList.toggle("open")})})})()</script>
 <script>
 window.addEventListener("DOMContentLoaded",function(){
   var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
-  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active")});
+  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")});
   document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
   document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
 });
 window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)});
 </script>
-<script>document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});window.addEventListener('scroll',function(){var bar=document.getElementById('floatBar');if(bar){if(window.scrollY>400)bar.classList.add('show');else bar.classList.remove('show')}}})</script>
+<script>document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});window.addEventListener('scroll',function(){var bar=document.getElementById('floatBar');if(bar){if(window.scrollY>400)bar.classList.add('show');else bar.classList.remove('show')}}})
+  var mc=document.getElementById('mobileClose');
+  if(mc)mc.addEventListener('click',function(){
+    document.getElementById('mobileMenu').classList.remove('active');
+    document.body.classList.remove('menu-open');
+  });
+  document.querySelectorAll('#mobileMenu .mobile-nav-link, #mobileMenu .m-dropdown-links a').forEach(function(l){
+    l.addEventListener('click',function(){
+      document.getElementById('mobileMenu').classList.remove('active');
+      document.body.classList.remove('menu-open');
+    });
+  });
+</script>
 </body></html>
