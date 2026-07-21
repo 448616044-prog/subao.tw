@@ -1,12 +1,17 @@
 # Cloudflare Pages 301 重定向规则
 # 将 .html 后缀 URL 永久重定向到无后缀版本（避免重复内容）
 
+# =================== 工具页面（特殊处理 /tools → /tools/）===================
+/tools /tools/ 301
+
 # =================== Blog 文章页面 ===================
 /blog/cosmetics-shipping.html /blog/cosmetics-shipping 301
+/blog/essential-oil-shipping.html /blog/essential-oil-shipping 301
 /blog/food-shipping-guide.html /blog/food-shipping-guide 301
 /blog/health-products-shipping.html /blog/health-products-shipping 301
 /blog/medicine-shipping.html /blog/taiwan-medicine-to-china 301
 /blog/mid-autumn-mooncake-shipping.html /blog/mid-autumn-mooncake-shipping 301
+/blog/shipping-process.html /blog/tw-to-cn-shipping-guide 301
 /blog/shopee-shipping.html /blog/shopee-shipping 301
 /blog/taiwan-medicine-to-china.html /blog/taiwan-medicine-to-china 301
 /blog/taiwan-to-china-guide.html /blog/taiwan-to-china-guide 301
@@ -75,7 +80,14 @@
 
 # 旧article文件（已删除）→ 301到文章列表
 /article-01.html /article-list 301
+/article-02.html /article-list 301
+/article-03.html /article-list 301
+/article-04.html /article-list 301
 /article-05.html /article-list 301
+/article-06.html /article-list 301
+/article-07.html /article-list 301
+/article-08.html /article-list 301
+/article-09.html /article-list 301
 /article-10.html /article-list 301
 
 # 嵌套blog路径 → 精确301到正确blog页面（避免 /blog/blog/ 残留）
