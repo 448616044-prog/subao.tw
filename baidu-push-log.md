@@ -1,3 +1,9 @@
+## 2026-07-21 23:56 — 凌晨推送（自动化）
+- **Token `K4kVPs6NwjtWr4ij`**: ❌ HTTP 401 `token is not valid`
+- **推送URL数**: 10（尝试：sitemap.xml, /, /article-list, /tw-to-cn/, 6篇博客）
+- **状态**: ❌ 连续第26天失败
+- **根因**: token 永久失效；需登录 [百度搜索资源平台](https://ziyuan.baidu.com/) 获取新 token
+
 ## 2026-07-21 00:01 — 凌晨推送（自动化）
 - **Token `K4kVPs6NwjtWr4ij`**: ❌ HTTP 401 `token is not valid`
 - **推送URL数**: 10（尝试：sitemap.xml, /, /article-list, /tw-to-cn/, 6篇博客）

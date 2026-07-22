@@ -1,5 +1,9 @@
 # 百度推送自动化记忆
 
+## 2026-07-21 23:56
+- **结果**: ❌ `K4kVPs6NwjtWr4ij` HTTP 401 `token is not valid`（连续第26天）
+- **行动**: 🔴 所有已知 token 均失效，此自动化完全无效，直到获取新 token
+
 ## 2026-07-21 00:01
 - **结果**: ❌ `K4kVPs6NwjtWr4ij` HTTP 401 `token is not valid`（连续第25天）
 - **行动**: 🔴 所有已知 token 均失效，此自动化完全无效，直到获取新 token

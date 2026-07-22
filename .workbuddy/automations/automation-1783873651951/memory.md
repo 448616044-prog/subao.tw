@@ -1,5 +1,13 @@
 # subaotw.cn 每日百度推送 + 收录监控 — 执行历史
 
+## 2026-07-22 01:10 — 自动执行
+- **百度推送**: ❌ 401 site error（连续第 11 天，token 过期未修复）
+- **收录检查**: site:subaotw.cn → 0 收录结果
+- **腾讯云部署**: ✅ 成功（nginx reload OK，主页 200，20KB）
+- **网站状态**: subaotw.cn → 301 → www.subaotw.cn (200 OK)
+- **站点内容**: 158 个 HTML 文件，67 个总文件
+- **待处理**: 百度 token 需更新（脚本用 UAVg0xt7rxpTjzaL）
+
 ## 2026-07-21 01:07 — 自动执行
 - **百度推送**: ❌ 401 site error（连续第 10 天，token 过期未修复）
 - **收录检查**: site:subaotw.cn → 0 收录结果
