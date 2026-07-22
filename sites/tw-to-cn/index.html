@@ -279,7 +279,7 @@
     .dd-menu a:hover{background:var(--primary-light);color:var(--primary)}
     .btn-line{display:inline-flex;padding:10px 20px;background:var(--line-green);color:#fff;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;align-items:center;gap:6px;transition:var(--transition);white-space:nowrap}
     .btn-line:hover{background:#007000;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,138,0,0.25)}
-    .mobile-menu{display:none}
+    .mobile-menu{overflow-x:hidden;display:none}
     @media(max-width:1300px){.header-cta{display:none !important}}
     @media (max-width: 1050px) {
       .nav { display: none; }
@@ -349,7 +349,9 @@
   .float-bar-text p{color:#fff;font-size:15px;font-weight:500;margin:0}
   .float-bar-text small{color:rgba(255,255,255,0.8);font-size:12px}
   .float-bar .btn-line-bar{background:#fff;color:#008A00;font-weight:700;padding:10px 24px;border-radius:24px;font-size:15px;white-space:nowrap}
-  </style>
+  
+body.menu-open{overflow:hidden}
+</style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
@@ -1032,6 +1034,8 @@ window.addEventListener("scroll",function(){var h=document.querySelector(".heade
 .success-msg .check{font-size:48px;color:#10b981;margin-bottom:12px}
 .success-msg p{font-size:15px;color:#555}
 @media(max-width:480px){.modal-box{padding:24px;max-width:95%}}
+
+body.menu-open{overflow:hidden}
 </style>
 
 <script>document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});window.addEventListener('scroll',function(){var bar=document.getElementById('floatBar');if(bar){if(window.scrollY>150)bar.classList.add('show');else bar.classList.remove('show')}})

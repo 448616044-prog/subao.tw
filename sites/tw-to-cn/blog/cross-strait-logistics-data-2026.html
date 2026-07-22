@@ -154,5 +154,16 @@ header{background:#fff;box-shadow:var(--shadow);padding:16px 0;position:sticky;t
     });
   });
 </script>
+
+<script>
+(function(){
+var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
+if(t&&m){t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")})}
+var mc=document.getElementById("mobileClose");
+if(mc)mc.addEventListener("click",function(){m.classList.remove("active");document.body.classList.remove("menu-open")});
+document.querySelectorAll("#mobileMenu a").forEach(function(l){l.addEventListener("click",function(){m.classList.remove("active");document.body.classList.remove("menu-open")})})
+})()
+</script>
+
 </body>
 </html>

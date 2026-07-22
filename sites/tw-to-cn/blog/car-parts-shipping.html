@@ -141,7 +141,11 @@ a{text-decoration:none;color:var(--primary)}
     .contact-modal .success-msg .check{font-size:48px;color:#10b981;margin-bottom:12px}
     .contact-modal .success-msg p{font-size:15px;color:#555}
     @media(max-width:1050px){.nav{display:none}.menu-toggle{display:block}.mobile-menu.open{display:block;position:fixed;top:60px;left:0;right:0;background:#fff;padding:0 20px 20px;z-index:999;box-shadow:0 4px 16px rgba(0,0,0,0.1);max-height:80vh;overflow-y:auto}.pillar-hero h1{font-size:26px}.article-content{padding:24px;margin:-10px 10px 20px}.related-grid{grid-template-columns:1fr}.footer .container{grid-template-columns:1fr}.footer{text-align:center}}
-  </style>
+  
+body.menu-open{overflow:hidden}
+@media(max-width:1050px){.nav{display:none}.menu-toggle{display:block}.mobile-menu{overflow-x:hidden}}
+
+</style>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
   <script>
@@ -433,6 +437,10 @@ window.addEventListener("scroll",function(){var h=document.querySelector(".heade
 
 <style>
 .nav-dropdown{position:relative}.dd-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%);min-width:200px;background:#fff;border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,.1);padding:8px;opacity:0;visibility:hidden;pointer-events:none;transition:all .2s ease;z-index:50}.nav-dropdown:hover>.dd-menu,.nav-dropdown.open>.dd-menu{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0)}.dd-menu a{display:block;padding:10px 16px;font-size:14px;color:#555;border-radius:8px;text-decoration:none;white-space:nowrap}.dd-menu a:hover{background:#f5f7fa;color:var(--primary)}.header-cta{display:flex;align-items:center;gap:12px;flex-shrink:0}.btn-line{background:#06C755 !important;color:#fff !important;padding:10px 20px !important;border-radius:10px !important;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center;gap:6px}.btn-line:hover{background:#05b04c !important;color:#fff !important;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,128,0,.2)}.menu-toggle svg{width:24px;height:24px}@media(max-width:1300px){.nav,.header-cta{display:none !important}.menu-toggle{display:block !important}}
+
+body.menu-open{overflow:hidden}
+@media(max-width:1050px){.nav{display:none}.menu-toggle{display:block}.mobile-menu{overflow-x:hidden}}
+
 </style>
 
 

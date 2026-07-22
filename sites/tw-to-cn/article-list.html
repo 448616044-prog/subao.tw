@@ -88,7 +88,7 @@
     .dd-menu a:hover{background:var(--primary-light);color:var(--primary)}
     .header-cta{display:flex;align-items:center;gap:12px;flex-shrink:0}
     .btn-line:hover{background:#007000;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,138,0,.25)}
-    .mobile-menu{display:none}
+    .mobile-menu{overflow-x:hidden;display:none}
 
 .menu-toggle{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text-dark)}
     @media(max-width:1300px){.header-cta{display:none !important}}
@@ -135,7 +135,9 @@
     body > section.section:last-of-type{padding-bottom:0}
     body > section.section:last-of-type .section{padding-bottom:0 !important}
 
-  </style>
+  
+body.menu-open{overflow:hidden}
+</style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
@@ -1416,7 +1418,9 @@ window.addEventListener("scroll",function(){var h=document.querySelector(".heade
     body > section.section:last-of-type{padding-bottom:0}
     body > section.section:last-of-type .section{padding-bottom:0 !important}
 
-  </style>
+  
+body.menu-open{overflow:hidden}
+</style>
 
 
 <script>
