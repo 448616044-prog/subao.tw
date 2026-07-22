@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>台灣寄大陸運費快速估算器 — Taiwan to China Shipping Calculator</title>
+<meta name="description" content="免費台灣寄大陸運費計算機，輸入重量和品類即時估算運費。支援食品/保健品/化妝品/3C等敏感貨品類。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,sans-serif;background:#f5f7fa;color:#333;line-height:1.6;min-height:100vh;display:flex;flex-direction:column}
+header{background:linear-gradient(135deg,#0066CC,#004C99);color:#fff;padding:32px 20px;text-align:center}
+header h1{font-size:24px;margin-bottom:8px}
+header p{opacity:.85;font-size:15px}
+main{max-width:500px;margin:24px auto;padding:0 16px;flex:1}
+.card{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.08);margin-bottom:20px}
+label{display:block;font-weight:600;margin-bottom:6px;font-size:14px}
+input,select{width:100%;padding:12px;border:2px solid #e0e0e0;border-radius:8px;font-size:16px;margin-bottom:16px;font-family:inherit}
+input:focus,select:focus{outline:none;border-color:#0066CC}
+.result{background:#f0f9ff;border:2px solid #0066CC;border-radius:12px;padding:20px;text-align:center;display:none}
+.result .price{font-size:36px;font-weight:700;color:#0066CC}
+.result .detail{font-size:13px;color:#666;margin-top:8px}
+.btn{display:block;width:100%;padding:14px;background:#0066CC;color:#fff;border:none;border-radius:8px;font-size:16px;font-weight:600;cursor:pointer;transition:.2s}
+.btn:hover{background:#004C99}
+footer{text-align:center;padding:24px;font-size:13px;color:#888}
+footer a{color:#0066CC}
+.note{font-size:12px;color:#999;text-align:center;margin-top:8px}
+</style>
+</head>
+<body>
+<header>
+  <h1>📦 台灣寄大陸運費估算器</h1>
+  <p>輸入重量和品類，快速估算運費（NT$）</p>
+</header>
+<main>
+  <div class="card">
+    <label>包裹重量（kg）</label>
+    <input type="number" id="weight" placeholder="例如：3.5" min="0.1" step="0.1" value="2">
+
+    <label>貨物品類</label>
+    <select id="category">
+      <option value="general">普貨（衣物/書籍/玩具/小家电）</option>
+      <option value="sensitive" selected>敏感貨（食品/茶葉/保健品/化妝品）</option>
+      <option value="special">特貨（手機/平板/筆電/含電池）</option>
+    </select>
+
+    <label>目的地（可選）</label>
+    <select id="region">
+      <option value="east">華東（上海/江蘇/浙江）</option>
+      <option value="south">華南（廣東/福建/廣西）</option>
+      <option value="north">華北（北京/天津/河北）</option>
+      <option value="central">華中（湖南/湖北/河南）</option>
+      <option value="west">西部（四川/重慶/陕西）</option>
+    </select>
+
+    <button class="btn" onclick="calculate()">計算運費</button>
+  </div>
+
+  <div class="result" id="result">
+    <div>預估運費</div>
+    <div class="price" id="priceDisplay">—</div>
+    <div class="detail" id="detailDisplay"></div>
+  </div>
+
+  <p class="note">* 此為快速估算，實際費用以物流商報價為準。含包稅雙清。</p>
+</main>
+<footer>
+  <p>Powered by <a href="https://subao.tw" target="_blank" rel="noopener">速豹集運 subao.tw</a> — 台灣寄大陸敏感貨專家</p>
+  <p>Source code on <a href="https://github.com/subao-logistics/tw-cn-shipping-calc" target="_blank" rel="noopener">GitHub</a></p>
+</footer>
+
+<script>
+const RATES={
+  general:{east:290,south:290,north:320,central:310,west:360},
+  sensitive:{east:290,south:290,north:340,central:330,west:380},
+  special:{east:350,south:350,north:390,central:380,west:430}
+};
+const MIN={general:290,sensitive:290,special:350};
+
+function calculate(){
+  const w=parseFloat(document.getElementById("weight").value)||0;
+  const cat=document.getElementById("category").value;
+  const reg=document.getElementById("region").value;
+  if(w<=0){alert("請輸入有效重量");return}
+
+  const rate=RATES[cat][reg];
+  const base=Math.max(w*rate,MIN[cat]);
+  const delivery=w>=10?0:100;
+  const total=base+delivery;
+
+  document.getElementById("priceDisplay").textContent="NT$ "+total.toLocaleString();
+  document.getElementById("detailDisplay").innerHTML=
+    w+"kg × NT$"+rate+"/kg = NT$"+base.toLocaleString()+"<br>"+
+    (delivery>0?"派送費 NT$"+delivery+"（滿10kg免）<br>":"滿10kg免派送費 ✅<br>")+
+    "已含包稅雙清｜空運5-7天";
+  document.getElementById("result").style.display="block";
+}
+</script>
+</body>
+</html>
