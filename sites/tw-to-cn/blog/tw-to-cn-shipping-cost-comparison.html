@@ -42,7 +42,15 @@ footer{background:#1a1a2e;color:rgba(255,255,255,.5);padding:40px 0;text-align:c
   </style>
 </head>
 <body>
-<header><div class="header-inner"><a href="/" style="font-size:20px;font-weight:700;color:var(--primary);text-decoration:none">速豹集運</a></div></header>
+<header><div class="header-inner"><a href="/" style="font-size:20px;font-weight:700;color:var(--primary);text-decoration:none">速豹集運</a></div><button class="menu-toggle" id="menuToggle" aria-label="選單" style="display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text);padding:8px">☰</button></div></header>
+<div class="mobile-menu" id="mobileMenu" style="display:none;position:fixed;top:64px;left:0;right:0;bottom:0;background:#fff;padding:24px;overflow-y:auto;overflow-x:hidden;z-index:1100;box-shadow:0 4px 12px rgba(0,0,0,0.1)">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid #E8F2FF"><span style="font-weight:700;font-size:18px">導航選單</span><button id="mobileClose" aria-label="關閉選單" style="background:none;border:none;font-size:28px;cursor:pointer;color:#999;padding:4px 8px;line-height:1">&times;</button></div>
+<div style="display:flex;flex-direction:column;gap:4px"><a href="/" style="display:block;padding:12px 16px;color:#333;text-decoration:none;border-radius:8px;font-size:15px;font-weight:500">首頁</a>
+<a href="/tw-to-cn" style="display:block;padding:12px 16px;color:#333;text-decoration:none;border-radius:8px;font-size:15px;font-weight:500">台灣寄大陸</a>
+<a href="/pricing" style="display:block;padding:12px 16px;color:#333;text-decoration:none;border-radius:8px;font-size:15px;font-weight:500">運費價格</a>
+<a href="/can-i-ship" style="display:block;padding:12px 16px;color:#333;text-decoration:none;border-radius:8px;font-size:15px;font-weight:500">可以寄嗎</a>
+<a href="/tools" style="display:block;padding:12px 16px;color:#333;text-decoration:none;border-radius:8px;font-size:15px;font-weight:500">工具</a></div></div>
+<header class="header" style="position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.95);backdrop-filter:blur(10px)"><div class="container" style="display:flex;align-items:center;justify-content:space-between;height:64px"></header>
 <section class="hero"><div class="container">
 <h1>2026台灣寄大陸費用完整對比</h1>
 <p>速豹/順豐/郵局EMS/DHL — 各重量段費用+時效+敏感貨能力一次對比</p>
