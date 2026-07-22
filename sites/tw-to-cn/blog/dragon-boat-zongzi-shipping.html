@@ -206,7 +206,7 @@ tr:nth-child(even){background:#fafafa}
 <body>
 
 <!-- Announcement Bar -->
-<div id="announcementBar" style="background:#00695C;color:#fff;text-align:center;padding:8px 16px;font-size:14px;position:relative">
+<div id="announcementBar" style="flex-wrap:wrap;background:#00695C;color:#fff;text-align:center;padding:8px 16px;font-size:14px;position:relative">
   <span>🍘 端午粽子寄大陸 · 敏感貨專線正常收件，5-7天送達，節日心意隨時可寄</span>
   <a href="https://line.me/R/ti/p/@734dooky" target="_blank" style="color:#fff;font-weight:700;text-decoration:underline" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'bar_dragon'});gtag('event','generate_lead',{event_category:'lead',event_label:'line'})"> 立即諮詢 →</a>
   <button onclick="document.getElementById('announcementBar').style.display='none'" style="position:absolute;right:12px;background:none;border:none;color:#fff;cursor:pointer;font-size:18px;min-width:48px;min-height:48px;display:inline-flex;align-items:center;justify-content:center">&times;</button>
@@ -239,7 +239,7 @@ tr:nth-child(even){background:#fafafa}
           <svg class="icon" aria-hidden="true" ><use href="#line"/></svg> LINE 咨詢
         </a>
       </div>
-      <button class="menu-toggle" id="menuToggle" aria-label="選單"><svg class="icon" aria-hidden="true" ><use href="#bars"/></svg></button>
+      <button class="menu-toggle" id="menuToggle" style="position:relative;z-index:1101" aria-label="選單"><svg class="icon" aria-hidden="true" ><use href="#bars"/></svg></button>
     </div>
   </header>
 <div class="mobile-menu" id="mobileMenu">
