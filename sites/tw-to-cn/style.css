@@ -1433,7 +1433,8 @@ h1, h2, h3, h4, h5, h6 {
     .page-title { font-size: 2rem; }
 
     /* Prevent table-induced horizontal overflow on blog pages */
-    .blog-post, .post-content, article { overflow-x: hidden; max-width: 100vw; }
+    .blog-post, .post-content, article, .article-content, .container { overflow-x: hidden; max-width: 100vw; }
+    html, body { overflow-x: hidden; }
 }
 
 @media (max-width: 375px) {

@@ -672,12 +672,7 @@
     }
 
     // Enter key
-    document.getElementById('searchInput').addEventListener('keydown',function(e){if(e.key==='Enter')doSearch()});
-
-    // Mobile menu
-    var menuToggle=document.getElementById('menuToggle'),mobileMenu=document.getElementById('mobileMenu');
-    menuToggle.addEventListener('click',function(){mobileMenu.classList.toggle('active');document.body.classList.toggle("menu-open");var icon=menuToggle.querySelector('i');icon.classList.toggle('fa-bars');icon.classList.toggle('fa-times')});
-    mobileMenu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mobileMenu.classList.remove('active');menuToggle.querySelector('i').classList.remove('fa-times');menuToggle.querySelector('i').classList.add('fa-bars')})});
+    document.getElementById('searchInput').addEventListener('keydown',function(e){if(e.key==='Enter')doSearch()});menuToggle.querySelector('i').classList.remove('fa-times');menuToggle.querySelector('i').classList.add('fa-bars')})});
     document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});
 
     // Scroll
