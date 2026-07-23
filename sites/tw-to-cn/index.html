@@ -342,8 +342,9 @@
       .footer-content { grid-template-columns: 1fr; }
       .hero-buttons, .cta-buttons { flex-direction: column; align-items: center; }
       .btn { width: 100%; max-width: 300px; }
-      #announcementBar { padding: 8px 12px; font-size: 13px; }
+      #announcementBar { padding: 8px 12px !important; font-size: 13px !important; }
       .features-grid { gap: 16px; overflow-x: hidden; }
+      .quick-entry-grid { grid-template-columns: 1fr !important; gap: 12px !important; }
     }
   .float-bar{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,#008A00 0%,#009900 100%);padding:12px 20px;z-index:998;display:none;align-items:center;justify-content:center;gap:16px;box-shadow:0 -4px 20px rgba(0,0,0,0.2)}
   .float-bar.show{display:flex}
@@ -563,7 +564,7 @@ body.menu-open{overflow:hidden}
     <div class="container">
       <h2 class="section-title">🛠️ 免費跨境工具</h2>
       <p style="text-align:center;color:var(--text-light);font-size:15px;margin-bottom:32px">不需註冊、完全免費、手機也能用</p>
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:960px;margin:0 auto">
+      <div class="quick-entry-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:960px;margin:0 auto">
         <a href="/can-i-ship" style="background:linear-gradient(135deg,#E8F5E9,#FFF8E1);border:1px solid #A5D6A7;border-radius:12px;padding:20px;text-align:center;transition:all .2s;color:inherit" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,.12)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
           <div style="font-size:36px;margin-bottom:8px">📦</div>
           <div style="font-weight:700;font-size:16px;margin-bottom:4px">可以寄嗎？</div>
