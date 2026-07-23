@@ -613,14 +613,6 @@
       }
     }
 
-    // Mobile menu
-    document.getElementById('menuToggle').addEventListener('click', function() {
-      var menu = document.getElementById('mobileMenu');
-      menu.classList.toggle('active');document.body.classList.toggle("menu-open");
-      var icon = this.querySelector('i');
-      icon.classList.toggle('fa-bars');
-      icon.classList.toggle('fa-times');
-    });
     document.querySelectorAll('#mobileMenu a').forEach(function(a) {
       a.addEventListener('click', function() { document.getElementById('mobileMenu').classList.remove('active'); });
     });

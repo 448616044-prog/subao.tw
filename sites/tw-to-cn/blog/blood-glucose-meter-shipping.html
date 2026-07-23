@@ -129,7 +129,19 @@ footer{background:#111;color:#ddd;padding:60px 24px 30px;margin-top:80px}
   .float-bar .btn-line-bar{background:#fff;color:#008A00;font-weight:700;padding:10px 24px;border-radius:24px;font-size:15px;white-space:nowrap}
   </style>
 
-<style>html,body{overflow-x:hidden}</style></head>
+<style>html,body{overflow-x:hidden}</style><style>
+.mobile-nav-link{display:block;padding:14px 0;font-size:16px;font-weight:500;color:var(--text-dark);border-bottom:1px solid var(--border);text-decoration:none}
+.mobile-nav-link.cta{margin-top:16px;padding:14px 20px;background:var(--primary);color:#fff;border-radius:8px;text-align:center;border:none;display:flex;align-items:center;justify-content:center;gap:6px}
+.mobile-nav-link.active{color:var(--primary);font-weight:700}
+.m-dropdown>span{display:block;padding:14px 0;font-size:16px;font-weight:500;color:var(--text-dark);border-bottom:1px solid var(--border);cursor:pointer;position:relative}
+.m-dropdown>span::after{content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);font-size:20px;color:var(--text-light);transition:transform .2s}
+.m-dropdown.open>span::after{content:"−"}
+.m-dropdown-links{display:none;padding:8px 0 8px 16px;background:#f9f9f9}
+.m-dropdown.open .m-dropdown-links{display:block}
+.m-dropdown-links a{display:block;padding:10px 0;font-size:15px;color:var(--text-light);text-decoration:none;border-bottom:1px solid #eee}
+.m-dropdown-links a:last-child{border-bottom:none}
+#mobileClose{background:none;border:none;font-size:28px;cursor:pointer;color:#999;line-height:1}
+</style></head>
 <body>
 
 <header class="header" id="header">
