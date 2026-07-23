@@ -31,7 +31,7 @@
     .container{max-width:1280px;margin:0 auto;padding:0 24px}
     body{overflow-x:hidden;font-family:'Noto Sans TC',sans-serif;color:var(--text-dark);line-height:1.8;font-size:16px;background:var(--bg-gray)}
     a{text-decoration:none;color:inherit}
-        .header{position:fixed;top:0;left:0;right:0;height:70px;background:var(--bg-white);z-index:1000;transition:box-shadow .3s}
+        .header{position:fixed;top:0;left:0;right:0;height:70px;background:var(--bg-white);z-index:1100;transition:box-shadow .3s}
     .header.scrolled{box-shadow:var(--shadow)}
     .header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
     .logo{font-size:24px;font-weight:700;color:var(--primary);flex-shrink:0}
@@ -804,7 +804,6 @@
 </section>
 
   <div style="margin:40pxrgin:40px
-<script>(function(){var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(t&&m){t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")})}})()</script>
 <footer class="site-footer"><div class="container" style="text-align:center;padding:40px 20px"><p>© 2026 速豹集運 | <a href="/about">關於我們</a> | <a href="/partners">合作夥伴</a></p><p style="margin-top:8px">📱 LINE：@734dooky | 📧 business@videotvai.com</p><a href="https://line.me/R/ti/p/@734dooky" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#008A00;color:#fff;padding:10px 22px;border-radius:24px;font-weight:700;font-size:14px;text-decoration:none" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'line_consult',value:1});gtag('event','generate_lead',{event_category:'lead',event_label:'line'})"><svg class="icon" aria-hidden="true"><use href="#line"/></svg> LINE 即時評估</a></div></footer>
 
 <div class="float-bar" id="floatBar"><div class="float-bar-text"><p>📦 不確定能不能寄？<strong>傳照片免費評估</strong></p><small>LINE：@734dooky　平均30分鐘內回覆</small></div><a href="https://line.me/R/ti/p/@734dooky" class="btn-line-bar" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'float_bar'});gtag('event','generate_lead',{event_category:'lead',event_label:'line'})"><svg class="icon" aria-hidden="true"><use href="#line"/></svg> 免費評估</a></div>
@@ -823,7 +822,7 @@ window.addEventListener("scroll",function(){var h=document.querySelector(".heade
 <script>
 (function(){
   var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
-  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")});
+  if(t&&m)t;
   document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
   document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
 })();

@@ -127,7 +127,7 @@
     :root{--primary:#0066CC;--primary-dark:#004C99;--primary-light:#E6F0FA;--secondary:#E65100;--secondary-dark:#CC5200;--line-green:#008A00;--bg-white:#FFF;--bg-gray:#F5F7FA;--bg-dark:#1A1A2E;--text-dark:#333;--text-light:#666;--text-white:#fff;--border:#E0E0E0;--shadow:0 2px 8px rgba(0,0,0,.1);--shadow-lg:0 8px 24px rgba(0,0,0,.15);--radius:8px;--radius-lg:16px;--radius-pill:30px;--transition:all .3s ease}
     *{margin:0;padding:0;box-sizing:border-box}.container{max-width:1280px;margin:0 auto;padding:0 24px}
     body{overflow-x:hidden;font-family:'Noto Sans TC',sans-serif;color:var(--text-dark);line-height:1.8;font-size:16px;background:var(--bg-gray)}a{text-decoration:none;color:inherit}
-    .header{position:fixed;top:0;left:0;right:0;height:70px;background:var(--bg-white);z-index:1000;transition:box-shadow .3s}.header.scrolled{box-shadow:var(--shadow)}
+    .header{position:fixed;top:0;left:0;right:0;height:70px;background:var(--bg-white);z-index:1100;transition:box-shadow .3s}.header.scrolled{box-shadow:var(--shadow)}
     .header .container{display:flex;align-items:center;justify-content:space-between;height:100%}.logo{font-size:24px;font-weight:700;color:var(--primary);flex-shrink:0}.logo img{background:#fff;max-height:50px;max-width:200px;width:auto;display:block}
     .nav{display:flex;align-items:center;gap:24px}.nav a{font-weight:500;color:var(--text-dark);transition:var(--transition);font-size:15px;white-space:nowrap}.nav a:hover{color:var(--primary)}
     .header-cta{display:flex;align-items:center;gap:12px;flex-shrink:0}.btn{display:inline-block;padding:10px 20px;border-radius:var(--radius);font-weight:700;font-size:14px;cursor:pointer;border:none;transition:var(--transition)}.btn-line{background:var(--line-green);color:#fff}.btn-line:hover{background:#007000}.menu-toggle{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text-dark)}
@@ -284,7 +284,6 @@
 <div id="contactFormWrap"><h3>📬 給我們留言</h3><p class="sub">填寫後我們會盡快回覆</p><form id="contactMsgForm" onsubmit="submitContactForm(event)"><div class="field"><label>怎麼稱呼</label><input type="text" id="cfName" placeholder="例如：張先生" required></div><div class="field"><label>聯繫方式</label><input type="text" id="cfContact" placeholder="LINE ID / 微信 / 手機" required></div><div class="field"><label>目的地城市</label><input type="text" id="cfItem" placeholder="例如：杭州西湖區"></div><div class="field"><label>備註</label><textarea id="cfMsg" placeholder="寄什麼、重量（選填）"></textarea></div><button type="submit" class="submit-btn">送出留言</button></form></div>
 <div class="success-msg" id="successMsg"><div class="check">✅</div><p>留言已送出！<br>我們會盡快聯繫您。</p><button class="submit-btn" style="margin-top:16px" onclick="closeContactModal()">關閉</button></div></div></div>
 <script>function openContactModal(){document.getElementById('contactModal').classList.add('active')}function closeContactModal(){document.getElementById('contactModal').classList.remove('active');setTimeout(function(){document.getElementById('contactFormWrap').style.display='block';document.getElementById('successMsg').style.display='none';document.getElementById('contactMsgForm').reset()},300)}function submitContactForm(e){e.preventDefault();var n=document.getElementById('cfName').value,c=document.getElementById('cfContact').value,i=document.getElementById('cfItem').value||'未填',m=document.getElementById('cfMsg').value||'未填';gtag('event','contact_form_submit',{event_category:'conversion',event_label:'floating_contact'});document.getElementById('contactFormWrap').style.display='none';document.getElementById('successMsg').style.display='block';fetch('https://formsubmit.co/ajax/business@videotvai.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,contact:c,item:i,message:m,_subject:'[速豹官網留言] '+n})}).catch(function(){})}</script>
-<script>(function(){var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(t&&m){t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")})}})()</script>
 
 <script>
 window.addEventListener("DOMContentLoaded",function(){
@@ -305,7 +304,7 @@ window.addEventListener("scroll",function(){var h=document.querySelector(".heade
 <script>
 (function(){
   var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
-  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")});
+  if(t&&m)t;
   document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
   document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
 })();

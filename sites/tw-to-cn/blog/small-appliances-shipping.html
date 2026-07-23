@@ -57,7 +57,7 @@ svg.icon{width:1em;height:1em;display:inline-block;vertical-align:-.125em;fill:c
 .container{max-width:900px;margin:0 auto;padding:0 20px}
 .btn{display:inline-flex;align-items:center;gap:6px;padding:12px 24px;border-radius:28px;font-weight:700;font-size:15px;cursor:pointer;border:none;transition:var(--transition)}
 .btn-line{background:linear-gradient(135deg,#4CAF50,#388E3C);color:#fff}
-.header{position:fixed;top:0;left:0;right:0;height:70px;background:var(--bg-white);z-index:1000;transition:box-shadow .3s;border-bottom:1px solid #E8ECF0}
+.header{position:fixed;top:0;left:0;right:0;height:70px;background:var(--bg-white);z-index:1100;transition:box-shadow .3s;border-bottom:1px solid #E8ECF0}
 .header.scrolled{box-shadow:var(--shadow)}
 .header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
 .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;color:var(--primary)}
@@ -316,7 +316,6 @@ svg.icon{width:1em;height:1em;display:inline-block;vertical-align:-.125em;fill:c
     window.addEventListener("scroll",function(){var h=document.getElementById("header");h.classList.toggle("scrolled",window.scrollY>10)});
     document.querySelectorAll('.faq-question').forEach(function(q){q.addEventListener('click',function(){this.parentElement.classList.toggle('open')})});
   </script>
-<script>(function(){var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(t&&m){t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")})}})()</script>
 
 <script>
 window.addEventListener("DOMContentLoaded",function(){
@@ -337,7 +336,7 @@ window.addEventListener("scroll",function(){var h=document.querySelector(".heade
 <script>
 (function(){
   var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
-  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")});
+  if(t&&m)t;
   document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
   document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
 })();

@@ -29,7 +29,7 @@
     *{margin:0;padding:0;box-sizing:border-box}
     body{overflow-x:hidden;font-family:'Noto Sans TC',sans-serif;color:var(--text-dark);line-height:1.8;font-size:16px;background:var(--bg-gray)}
     a{text-decoration:none;color:inherit}
-    .header{position:fixed;top:0;left:0;right:0;height:70px;background:var(--bg-white);z-index:1000;transition:box-shadow .3s}.header.scrolled{box-shadow:var(--shadow)}.header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
+    .header{position:fixed;top:0;left:0;right:0;height:70px;background:var(--bg-white);z-index:1100;transition:box-shadow .3s}.header.scrolled{box-shadow:var(--shadow)}.header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
     .menu-toggle{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text-dark)}.logo{font-size:24px;font-weight:700;color:var(--primary);flex-shrink:0}.logo img{background:#fff;max-height:50px;max-width:200px;width:auto;display:block}
     .header .container{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:1200px}
     .container{max-width:900px;margin:0 auto;padding:0 20px}
@@ -540,7 +540,6 @@ function submitContactForm(e){e.preventDefault();var n=document.getElementById('
 <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.3-6.2 3.3 1.2-6.8-5-4.9 6.9-1L12 2z"/></symbol>
 <symbol id="times" viewBox="0 0 24 24"><path fill="currentColor" d="M18.3 5.7a1 1 0 00-1.4 0L12 10.6 7.1 5.7a1 1 0 00-1.4 1.4L10.6 12l-4.9 4.9a1 1 0 001.4 1.4L12 13.4l4.9 4.9a1 1 0 001.4-1.4L13.4 12l4.9-4.9a1 1 0 000-1.4z"/></symbol>
 </svg>
-<script>(function(){var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(t&&m){t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")})}})()</script>
 <script>window.addEventListener("scroll",function(){var h=document.querySelector(".header");if(h)h.classList.toggle("scrolled",window.scrollY>20)})</script>
 <script>
 window.addEventListener("DOMContentLoaded",function(){
@@ -583,7 +582,7 @@ window.addEventListener("scroll",function(){var h=document.querySelector(".heade
 <script>
 (function(){
   var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
-  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")});
+  if(t&&m)t;
   document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
   document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
 })();

@@ -104,7 +104,7 @@
 
     /* Section */
     
-    .header{position:fixed;top:0;left:0;right:0;height:70px;background:var(--bg-white);z-index:1000;transition:box-shadow .3s}
+    .header{position:fixed;top:0;left:0;right:0;height:70px;background:var(--bg-white);z-index:1100;transition:box-shadow .3s}
     .header.scrolled{box-shadow:var(--shadow)}
     .header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
     .logo{font-size:24px;font-weight:700;color:var(--primary);flex-shrink:0}
@@ -660,7 +660,6 @@ function submitContactForm(e){e.preventDefault();var n=document.getElementById('
 <symbol id="times" viewBox="0 0 24 24"><path fill="currentColor" d="M18.3 5.7a1 1 0 00-1.4 0L12 10.6 7.1 5.7a1 1 0 00-1.4 1.4L10.6 12l-4.9 4.9a1 1 0 001.4 1.4L12 13.4l4.9 4.9a1 1 0 001.4-1.4L13.4 12l4.9-4.9a1 1 0 000-1.4z"/></symbol>
 <symbol id="undo-alt" viewBox="0 0 24 24"><path fill="currentColor" d="M5.3 2.3a1 1 0 011.4 1.4L4.4 6H14a8 8 0 010 16H4a1 1 0 010-2h10a6 6 0 000-12H4.4l2.3 2.3a1 1 0 01-1.4 1.4l-4-4a1 1 0 010-1.4l4-4z"/></symbol>
 </svg>
-<script>(function(){var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");if(t&&m){t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")})}})()</script>
 
 <script>
 window.addEventListener("DOMContentLoaded",function(){
@@ -698,7 +697,7 @@ window.addEventListener("scroll",function(){var h=document.querySelector(".heade
 <script>
 (function(){
   var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
-  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")});
+  if(t&&m)t;
   document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
   document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
 })();

@@ -180,7 +180,7 @@
     .section { padding: 80px 0; }
     .section-title { text-align: center; font-size: 32px; font-weight: 700; margin-bottom: 16px; color: var(--text-dark); }
     .section-subtitle { text-align: center; font-size: 18px; color: var(--text-light); margin-bottom: 48px; }
-    .header { position: fixed; top: 0; left: 0; right: 0; height: var(--header-height); background: var(--bg-white); z-index: 1000; transition: var(--transition); }
+    .header { position: fixed; top: 0; left: 0; right: 0; height: var(--header-height); background: var(--bg-white); z-index: 1100; transition: var(--transition); }
     .header.scrolled { box-shadow: var(--shadow); }
     .header .container { display: flex; align-items: center; justify-content: space-between; height: 100%; }
     .logo { font-size: 24px; font-weight: 700; color: var(--primary); }
@@ -342,6 +342,8 @@
       .footer-content { grid-template-columns: 1fr; }
       .hero-buttons, .cta-buttons { flex-direction: column; align-items: center; }
       .btn { width: 100%; max-width: 300px; }
+      #announcementBar { padding: 8px 12px; font-size: 13px; }
+      .features-grid { gap: 16px; overflow-x: hidden; }
     }
   .float-bar{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,#008A00 0%,#009900 100%);padding:12px 20px;z-index:998;display:none;align-items:center;justify-content:center;gap:16px;box-shadow:0 -4px 20px rgba(0,0,0,0.2)}
   .float-bar.show{display:flex}
@@ -366,7 +368,7 @@ body.menu-open{overflow:hidden}
 
 
   <!-- 公告栏 P1-1 -->
-  <div id="announcementBar" style="flex-wrap:wrap;background:linear-gradient(135deg,#E65100,#E65100);color:#fff;text-align:center;padding:10px 16px;font-size:14px;position:relative;z-index:1001;display:flex;align-items:center;justify-content:center;gap:12px">
+  <div id="announcementBar" style="flex-wrap:wrap;background:linear-gradient(135deg,#E65100,#E65100);color:#fff;text-align:center;padding:10px 16px;font-size:14px;position:relative;z-index:900;display:flex;align-items:center;justify-content:center;gap:12px">
     <span>📦 不確定能不能寄？LINE傳照片免費評估，30分鐘回覆</span>
     <a href="https://line.me/R/ti/p/@734dooky" target="_blank" style="color:#fff;font-weight:700;text-decoration:underline;display:inline-flex;align-items:center;min-height:48px" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'announcement_bar'});gtag('event','generate_lead',{event_category:'lead',event_label:'line'})">免費評估 →</a>
     <button onclick="document.getElementById('announcementBar').style.display='none'" style="position:absolute;right:12px;background:none;border:none;color:#fff;cursor:pointer;font-size:18px;min-width:48px;min-height:48px;display:inline-flex;align-items:center;justify-content:center">&times;</button>
