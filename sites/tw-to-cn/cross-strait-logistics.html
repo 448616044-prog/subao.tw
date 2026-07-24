@@ -100,6 +100,12 @@
       <button class="menu-toggle" id="menuToggle" aria-label="選單"><svg class="icon" aria-hidden="true"><use href="#bars"/></svg></button>
     </div>
   </header>
+<div class="top-promo-bar" id="topPromo">
+  <span class="top-promo-text">📦 不確定能不能寄？</span>
+  <a href="https://line.me/R/ti/p/@734dooky" class="top-promo-btn" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'top_promo'});gtag('event','generate_lead',{event_category:'lead',event_label:'line'})">LINE 免費估價 →</a>
+  <button class="top-promo-close" onclick="closeTopPromo()" aria-label="關閉">×</button>
+</div>
+
   <div class="mobile-menu" id="mobileMenu">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--primary-light)"><span style="font-weight:700;font-size:18px">導航選單</span><button id="mobileClose" aria-label="關閉選單" style="background:none;border:none;font-size:28px;cursor:pointer;color:var(--text-light);padding:4px 8px;line-height:1">&times;</button></div>
     <a href="/tw-to-cn" class="mobile-nav-link">台灣發大陸</a>

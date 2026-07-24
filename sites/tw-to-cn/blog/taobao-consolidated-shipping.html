@@ -134,6 +134,14 @@
     .float-bar .btn-line-bar{background:#fff;color:#008A00;font-weight:700;padding:10px 24px;border-radius:24px;font-size:15px;white-space:nowrap}
   .float-bar-close{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:none;color:rgba(255,255,255,.7);font-size:20px;cursor:pointer;padding:4px 8px;line-height:1}
   .float-bar-close:hover{color:#fff}
+.top-promo-bar{position:fixed;top:70px;left:0;right:0;background:linear-gradient(135deg,#E65100 0%,#CC5200 100%);color:#fff;padding:8px 16px;display:flex;align-items:center;justify-content:center;gap:12px;z-index:1099;font-size:14px;box-shadow:0 2px 8px rgba(0,0,0,0.15)}
+.top-promo-text{font-weight:500}
+.top-promo-btn{background:#fff;color:#E65100;padding:6px 16px;border-radius:20px;font-weight:700;font-size:13px;text-decoration:none;white-space:nowrap}
+.top-promo-btn:hover{background:#fff5f0}
+.top-promo-close{position:absolute;right:10px;background:none;border:none;color:rgba(255,255,255,.7);font-size:20px;cursor:pointer;padding:2px 6px;line-height:1}
+.top-promo-close:hover{color:#fff}
+.top-promo-bar.hidden{display:none}
+@media(max-width:767px){.top-promo-bar{display:none !important}}
   @media(max-width:767px){.float-bar{display:none !important}}
     .float-bar .btn-line-bar:hover{background:#f0f0f0}
     /* 文中间距CTA */
@@ -202,6 +210,12 @@
       <button class="menu-toggle" id="menuToggle" style="position:relative;z-index:1101" aria-label="選單"><svg class="icon" aria-hidden="true" ><use href="#bars"/></svg></button>
     </div>
   </header>
+<div class="top-promo-bar" id="topPromo">
+  <span class="top-promo-text">📦 不確定能不能寄？</span>
+  <a href="https://line.me/R/ti/p/@734dooky" class="top-promo-btn" target="_blank" onclick="gtag('event','line_click',{event_category:'conversion',event_label:'top_promo'});gtag('event','generate_lead',{event_category:'lead',event_label:'line'})">LINE 免費估價 →</a>
+  <button class="top-promo-close" onclick="closeTopPromo()" aria-label="關閉">×</button>
+</div>
+
 
 <!-- 移動端菜單 -->
       <div class="mobile-menu" id="mobileMenu">
