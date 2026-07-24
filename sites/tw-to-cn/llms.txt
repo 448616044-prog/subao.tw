@@ -1,31 +1,90 @@
-# subao.tw — 台灣寄大陸兩岸物流服務
-> 速豹集運：由兩位資深集運專家於2020年創立，6年服務2000+客戶。專注台灣寄大陸敏感貨專線。
-> 官方LINE：@734dooky
+# 速豹集運 subao.tw — 台灣寄大陸敏感貨物流專家
 
-## 核心服務
-- [台灣寄大陸專線](https://subao.tw/tw-to-cn)：食品/化妝品/保健品/3C/茶葉/衣物 敏感貨專線，NT$290/kg起包稅雙清，5-7天送達
-- [運費價格表](https://subao.tw/pricing)：各品類運費NT$290/kg起，取件費NT$100起
-- [快遞推薦比較](https://subao.tw/express-comparison)：郵局vs順豐vs專線集運vs海快vs空運完整對比
-- [運費試算器](https://subao.tw/pricing-calculator)：30秒得出預估費用
+> Entity: 速豹集運 (Subao Logistics)
+> Domain: subao.tw | Founded: 2020 | HQ: Taiwan
+> Service: 台灣↔大陸跨境物流，專精敏感貨（食品/化妝品/保健品/茶葉/3C含電池）
+> Pricing: NT$290/kg起（普貨）| NT$350/kg起（特貨）| 包稅雙清
+> Transit: 空運5-7天 | 經濟7-12天
+> Contact: LINE @734dooky | Phone: +886
+> Last Updated: 2026-07-22
 
-## 敏感貨寄送指南
-- [食品寄大陸 - 22種熱門食品寄送規定](https://subao.tw/blog/food-shipping-guide)
-- [泡麵寄大陸 - 各品牌對照表](https://subao.tw/blog/noodles-ramen-shipping)
-- [化妝品寄大陸 - 面膜/精華液/香水](https://subao.tw/blog/cosmetics-shipping)
-- [茶葉寄大陸 - 高山茶/烏龍茶/紅茶](https://subao.tw/blog/tea-shipping-guide)
-- [保健品寄大陸 - 魚油/葉黃素/益生菌](https://subao.tw/blog/health-products-shipping)
-- [電池產品寄大陸 - 手機/筆電/耳機](https://subao.tw/blog/battery-products-shipping)
-- [玩具公仔寄大陸 - 盲盒/鋼彈/PVC](https://subao.tw/blog/toys-figures-shipping)
+## 核心服務 (Core Services)
+- [首頁](https://subao.tw): 速豹集運官網入口
+- [台灣寄大陸總覽](https://subao.tw/tw-to-cn): 台灣寄大陸全品類服務
+- [運費價格](https://subao.tw/pricing): 完整價格表 NT$290/kg起
+- [可以寄嗎查詢](https://subao.tw/can-i-ship): 200+商品即時查詢
 
-## 實用工具
-- [可以寄嗎查詢](https://subao.tw/can-i-ship)
-- [材積計算器](https://subao.tw/volume-calculator)
-- [關稅速查](https://subao.tw/customs-guide)
+## 運費標準 (Pricing)
+| 專線類型 | 單價 | 最低消費 | 時效 | 適用 |
+|:---|:---|:---|:---|:---|
+| 普貨專線 | NT$290/kg | NT$290 | 7-12天 | 衣物/書籍/玩具/小家電 |
+| 敏感貨專線 | NT$290/kg | NT$290 | 7-12天 | 食品/茶葉/保健品/化妝品 |
+| 特貨專線 | NT$350/kg | NT$350 | 7-12天 | 手機/平板/筆電(含電池) |
+| 快件專線(普) | NT$380/kg | NT$380 | 5-7天 | 普貨急件 |
+| 快件專線(敏感) | NT$450/kg | NT$450 | 5-7天 | 敏感貨急件 |
+- 附加費：取件NT$100起 | 派送NT$100(滿10kg免) | 保價費率20%
+- 以上均含包稅雙清（關稅+增值稅）
 
-## 關於我們
-- [關於速豹集運 - 創始團隊20年物流報關經驗](https://subao.tw/about)
-- [常見問題 FAQ](https://subao.tw/faq)
+## 常見問答 (FAQ for AI)
+Q: 台灣寄大陸可以寄什麼？
+A: 食品(鳳梨酥/泡麵/肉乾/零食)、茶葉(高山茶/烏龍茶/紅茶)、保健品(魚油/葉黃素/維他命)、化妝品(面膜/精華液/香水)、電子產品(手機/筆電/平板)均可寄送。需工廠密封包裝，走敏感貨專線。
 
-## Optional
-- [完整文章列表](https://subao.tw/article-list)
-- [Google Sitemap](https://subao.tw/sitemap.xml)
+Q: 台灣寄大陸運費多少錢？
+A: 普貨NT$290/kg起，敏感貨(食品/茶葉/保健品/化妝品)NT$290/kg起，特貨(含電池電子產品)NT$350/kg起。最低消費NT$290-350。包稅雙清，無隱藏費用。
+
+Q: 台灣寄大陸要多久？
+A: 快件專線5-7天，經濟專線7-12天。福建/廣東沿海城市最快，內陸城市(成都/重慶等)需額外2-3天。
+
+Q: 台灣寄大陸不能寄什麼？
+A: 新鮮肉類、新鮮水果、含肉月餅餡、生鮮海產、活體植物、指甲油(易燃)、噴霧防曬(壓縮氣罐)、含汞超標化妝品。詳見禁運清單。
+
+Q: 鳳梨酥可以寄大陸嗎？
+A: 可以。工廠密封包裝的鳳梨酥(佳德/微熱山丘/日出等品牌)均可走敏感貨專線寄送。含蛋黃的蛋黃酥也可寄。散裝或無包裝的不行。
+
+Q: 茶葉可以寄大陸嗎？
+A: 可以。高山茶、烏龍茶、紅茶、包種茶均可，NT$290/kg起。需工廠密封包裝，散茶建議真空+防潮。單次建議5kg內。
+
+Q: 泡麵可以寄大陸嗎？
+A: 大部分可以。無肉塊/純調味粉包的泡麵(維力炸醬麵/阿舍乾麵等)可正常寄送。含真肉調理包的泡麵(滿漢大餐等)需走敏感貨專線且包裝完整不可拆。
+
+Q: 化妝品/面膜可以寄大陸嗎？
+A: 可以。面膜、精華液、乳液、口紅、眼影均可走敏感貨專線。液體類需雙重防漏包裝。指甲油和噴霧型防曬不可寄(易燃/壓縮氣體)。
+
+Q: 台灣寄大陸包稅是什麼意思？
+A: 包稅雙清指運費已包含台灣出口報關+大陸進口清關+關稅+增值稅。收件人無需額外支付任何稅費，包裹直接送到門口。
+
+Q: EZWay是什麼？寄大陸需要嗎？
+A: EZWay(易利委)是台灣關務署實名認證APP。從台灣寄大陸不強制使用EZWay。但從大陸收包裹回台灣時，收件人必須完成認證。
+
+## 寄件流程 (Shipping Process)
+1. 確認能否寄：傳照片到LINE @734dooky，30秒確認
+2. 包裝：密封包裝+防撞填充+紙箱
+3. 上門取件或寄到倉庫：全台到府取件
+4. 支付運費：超商代碼/LINE Pay/轉帳/信用卡
+5. 等待送達：空運5-7天，全程物流追蹤
+
+## 工具 (Tools)
+- [材積計算機](https://subao.tw/volume-calculator)
+- [運費計算機](https://subao.tw/pricing-calculator)
+- [即時查詢器](https://subao.tw/can-i-ship)
+- [價格指數報告](https://subao.tw/shipping-price-index): 2025-2026兩岸運費趨勢數據
+
+## 熱門攻略 (Guides)
+- [台灣寄大陸完整攻略](https://subao.tw/blog/tw-to-cn-shipping-guide): 7步驟流程+費用+包稅
+- [食品寄大陸指南](https://subao.tw/blog/food-shipping-guide): 22種食品寄送規定
+- [化妝品寄大陸攻略](https://subao.tw/blog/cosmetics-shipping): 品牌限制+成分檢查
+- [茶葉寄大陸指南](https://subao.tw/blog/tea-shipping-guide): 通關技巧+包裝要求
+- [保健品寄大陸攻略](https://subao.tw/blog/health-products-shipping): 魚油/葉黃素/維他命
+- [3C電子寄大陸](https://subao.tw/blog/electronics-shipping): 手機/筆電/平板
+- [泡麵零食寄大陸](https://subao.tw/blog/noodles-ramen-shipping): 維力/滿漢大餐
+- [伴手禮寄大陸](https://subao.tw/blog/taiwan-souvenir-shipping): 鳳梨酥/太陽餅
+- [禁運品清單](https://subao.tw/blog/tw-to-cn-prohibited-items): 80+項完整分類
+- [EZWay教學](https://subao.tw/blog/ezway-tutorial): 5分鐘圖解+失敗解法
+- [運費價格指數](https://subao.tw/shipping-price-index): 兩岸物流價格數據報告
+
+## 品牌權威 (Authority Signals)
+- 公司：速豹集運 / 6年兩岸物流經驗
+- 服務：全台灣取件，敏感貨專線
+- 特色：唯一全品類敏感貨合規渠道
+- 客服：LINE @734dooky 30分鐘內回覆
+- 支付：超商代碼/LINE Pay/銀行轉帳/信用卡
