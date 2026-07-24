@@ -149,6 +149,9 @@
     .float-bar-text p{color:#fff;font-size:15px;font-weight:500;margin:0}
     .float-bar-text small{color:rgba(255,255,255,0.8);font-size:12px}
     .float-bar .btn-line-bar{background:#fff;color:#008A00;font-weight:700;padding:10px 24px;border-radius:24px;font-size:15px;white-space:nowrap}
+  .float-bar-close{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:none;color:rgba(255,255,255,.7);font-size:20px;cursor:pointer;padding:4px 8px;line-height:1}
+  .float-bar-close:hover{color:#fff}
+  @media(max-width:767px){.float-bar{display:none !important}}
   
 body.menu-open{overflow:hidden}
 </style>
@@ -413,5 +416,6 @@ body.menu-open{overflow:hidden}
     });
   });
 </script>
+<script>function closeFloatBar(){var bar=document.getElementById('floatBar');if(bar){bar.style.display='none';var d=new Date();d.setDate(d.getDate()+7);document.cookie='floatbar_closed=1;expires='+d.toUTCString()+';path=/'}}if(document.cookie.indexOf('floatbar_closed=1')===-1&&window.innerWidth>=768){(function(){var bar=document.getElementById('floatBar');if(bar)bar.style.removeProperty('display')})()}</script>
 </body>
 </html>
