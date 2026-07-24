@@ -144,9 +144,9 @@
     .dd-menu a:hover{background:var(--primary-light);color:var(--primary)}
     .header-cta{display:flex;align-items:center;gap:12px;flex-shrink:0}
     .btn-line:hover{background:#007000;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,138,0,.25)}
-    .mobile-menu{overflow-x:hidden;display:none}
-.mobile-menu.active{display:block}
-.mobile-menu.active{display:block}
+    .mobile-menu{overflow-x:hidden;display:none};z-index:1101
+.mobile-menu.active{display:block};z-index:1101
+.mobile-menu.active{display:block};z-index:1101
 
 .menu-toggle{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text-dark)}
     @media(max-width:1300px){.header-cta{display:none !important}}
@@ -206,7 +206,7 @@
 .top-promo-close{position:absolute;right:10px;background:none;border:none;color:rgba(255,255,255,.7);font-size:20px;cursor:pointer;padding:2px 6px;line-height:1}
 .top-promo-close:hover{color:#fff}
 .top-promo-bar.hidden{display:none}
-@media(max-width:767px){.top-promo-bar{display:none !important}}
+@media(max-width:1023px){#topPromo{display:none !important}}
   @media(max-width:767px){.float-bar{display:none !important}}
   
 body.menu-open{overflow:hidden}
