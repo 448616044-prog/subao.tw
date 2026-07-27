@@ -46,7 +46,7 @@
 2. **計算物流成本**，看是否還有空間 → [運費試算器](https://subao.tw/pricing-calculator)
 3. **傳商品照片詢價**，報價後再決定
 
-我目前合作的是 [速豹集運](https://subao.tw)，他們專做敏感貨，效率很高。LINE：**subaotw5988**
+我目前合作的是 [速豹集運](https://subao.tw)，他們專做敏感貨，效率很高。LINE：**@734dooky**
 
 ---
 

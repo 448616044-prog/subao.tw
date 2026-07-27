@@ -1,5 +1,144 @@
 # 外链机会每日搜索 — 执行记录
 
+## 2026-07-27 执行（第30轮）
+
+### 搜索维度
+- 零CAPTCHA免注册目录深挖（zearches AI时代新目录范式）
+- 国际货代原生注册平台（ez-cargo两岸物流精准匹配）
+- 台湾物流B2B垂直平台（Niceshipping 56 Pro）
+- 全球权威企业数据库（Dun & Bradstreet DUNS）
+- 美国商业目录补充（USdirectory）
+
+### 核心发现
+- **ez-cargo.net** — 🔥🔥🔥 国际货代纯表单无CAPTCHA注册！有"網站首頁位址"栏位，两岸路线全覆盖（大陸⇄台灣），100%物流精准
+- **zearches.com** — 🔥🔥🔥 零门槛！免注册！免CAPTCHA！"No account required"直接填URL提交，AI search时代新目录
+- **Niceshipping 56 Pro (56pro.niceshipping.com.tw)** — 🔥🔥 台湾物流B2B整合平台，15000+会员，免费注册
+- **Dun & Bradstreet (dnb.com)** — 🔥 DR79！全球最权威企业数据库（1841年成立），免费D-U-N-S Number申请
+- **USdirectory (usdirectory.com)** — DR56美国商业目录
+
+### 新增平台数
+5个（A+++级2个零CAPTCHA：ez-cargo + zearches / A+级2个：Niceshipping + D&B / B+++级1个：USdirectory）
+
+### 总表更新
+526 → 531目标 | 高价值DA50+从149增至150（+Dun & Bradstreet DA75-80） | 新增5个搜索维度
+
+### 无CAPTCHA可自动提交新增
+- ez-cargo 🔥🔥🔥 纯表单无CAPTCHA，網站首頁位址栏位直接填subao.tw
+- zearches 🔥🔥🔥 免注册免CAPTCHA，直接填URL+描述提交
+
+### 重点优先行动
+- ez-cargo 和 zearches 零CAPTCHA立即可自动提交，本轮效率极高
+
+---
+
+## 2026-07-26 执行（第29轮）
+
+### 搜索维度
+- 全球货代社群专属目录挖掘（Forwarder Focus Directory社区）
+- LinkedIn推广型物流目录发现（FreightValuation）
+- 新兴全球货运撮合网络探测（LogisticsGlobalNetwork）
+- 全球货代联盟网络补充搜索（GCA/Global Air Cargo Alliance排除已收录）
+
+### 核心发现
+- **Forwarder Focus Directory (forwarderfocusdirectory.com)** — 🔥 "Join for FREE"！350+全球会员，80,000+联系人邮件列表。Application Form下载→email提交，完全无CAPTCHA。100%物流货代行业精准
+- **FreightValuation (freightvaluation.com)** — 🔥 PREMIUM STANDARD完全免费("Price: NIL")！含网站链接+Logo+完整档案。9,770+ LinkedIn关注者。34个细分物流服务分类。LinkedIn官方确认"Free of Cost"
+- **LogisticsGlobalNetwork (logisticsglobalnetwork.com)** — 🔥 "$0 Cost To List Your Company"！190+国家覆盖，Target Y1: 10,000成员早期入驻红利
+
+### 新增平台数
+3个（B+++级3个全球物流货代专属目录，全部无CAPTCHA可自动提交）
+
+### 总表更新
+523 → 526目标 | 高价值DA50+保持149 | 新增3个全新搜索维度
+
+### 无CAPTCHA可自动提交新增
+- Forwarder Focus Directory 🔥 email提交，无CAPTCHA
+- FreightValuation 🔥 简单注册，无CAPTCHA
+- LogisticsGlobalNetwork 🔥 免费注册，无CAPTCHA
+
+### 重点优先行动
+- 3个平台全部无CAPTCHA可立即自动提交，本轮发现效率极高
+
+### 搜索维度
+- 2026权威SEO目录列表交叉比对（smartupworld 100+ / seoinbounds 300+ / appcosoftware 50+ 三源去重）
+- 台湾分类广告平台矩阵补充（azclassifiedads台湾分站发现）
+- 商会类目录扩展（chamberofcommerce.org vs .com差异挖掘）
+- 已收录518平台全量去重比对
+
+### 核心发现
+- **chamberofcommerce.org** — 🏆 DA55！与已收录的chamberofcommerce.com(A65)完全不同独立站点，全球商会目录dofollow免费商业列表
+- **submitexpress.com** — DA42 dofollow，长期运营（2000-）SEO目录��交平台
+- **azclassifiedads.com** — 🔥 台湾免费分类广告专页（Taiwan Cities多城市覆盖），免注册发布
+- **seofriendly.com** — DA35 dofollow通用目录补充
+- **weboworld.com** — DA25通用目录填充
+
+### 新增平台数
+5个（A+级2个 / B+++级2个 / C+++级1个）
+
+### 总表更新
+518 → 523目标 | 高价值DA50+从149个保持149（chamberofcommerce.org DA55与.com算不同站点但DA均达50+） | 新增2个全新搜索维度
+
+### 重点优先行动
+- chamberofcommerce.org → 🏆 优先注册提交，DA55商会目录dofollow
+- submitexpress.com → DA42 dofollow目录提交
+
+---
+
+## 2026-07-24 执行（第27轮）
+
+### 搜索维度
+- 全球贸易权威目录挖掘（GTR Directory DA50-60，22年出版历史）
+- 运输/物流专属免费目录补充（CargoTrax 2000年起运营）
+- 物流行业头部媒体内容营销渠道（Shipping and Freight Resource）
+- 已收录平台去重比对（Shiportrade/FreightEngage/businessdirectory.com.tw/TaiwanYello均已收录确认）
+
+### 核心发现
+- **GTR Directory (gtreview.com)** — 🔥🔥 全球贸易金融最权威目录！DA 50-60，22版出版历史，2,000+ contacts，35K+读者。免费email提交（scheung@gtreview.com），**第23版截止2026年7月31日！**
+- **CargoTrax (cargotrax.com)** — 🔥 无CAPTCHA纯表单！运输/物流专属免费目录，搜索→未收录→添加公司，2000年起运营
+- **Shipping and Freight Resource (shippingandfreightresource.com)** — 物流行业头部媒体，DA 45-50，数百万全球读者，内容营销渠道
+
+### 新增平台数
+3个（A+级1个：GTR Directory DA50-60 / B+++级1个：CargoTrax / C+++级1个：Shipping and Freight Resource）
+
+### 总表更新
+515 → 518目标 | 高价值DA50+从148个增至149个（+GTR Directory DA50-60） | 新增3个搜索维度
+
+### 无CAPTCHA可自动提交新增
+- CargoTrax 🔥 无CAPTCHA纯表单（搜索→未收录→添加）
+- GTR Directory 🔥 email提交，无CAPTCHA，需7/31前提交
+
+---
+
+## 2026-07-23 执行（第26轮）
+
+### 搜索维度
+- 台湾SEO博客推荐的免费分类广告平台矩阵（seookay/madeintaiwan.com.tw 15+平台交叉比对）
+- 全球供应链目录挖掘（freightconnects 纯表单提交）
+- 德国商会台湾企业名录（AHK Taiwan 免费基础方案）
+- 全球商业目录+物流分类（Afodel Transport & Logistics）
+- 中国物流货站黄页补充（货站118无需注册）
+- 台湾免费分类广告生态深入（holyads/too.tw/ads948/trade193/tuanci）
+
+### 核心发现
+- **AHK Taiwan (taiwan.ahk.de)** — 🔥 德国工商总会台湾名錄！免费基础方案含公司描述+地址+网站链接，DA40-50，德国商会背书
+- **FreightConnects (freightconnects.com)** — 🔥 纯表单无CAPTCHA！全球供应链目录，台湾(Taiwan)国家选项，Shipper/Forwarder/Manufacturer均可免费提交
+- **Afodel 全球商业目录** — Transport & Logistics分类，免费企业档案含官网链接+联系方式+图片
+- **推痕网 (tuanci.com)** — 中文分类目录+外链推广，「物流快递」分类精准匹配
+- **货站118 (huozhan118.com)** — 🔥 无需注册直接发布！物流货站黄页，免费信息发布
+- **台湾免费分类广告矩阵** — holyads.net / too.tw / ads948.com / trade193.com.tw 4个台湾在地免费广告平台
+
+### 新增平台数
+9个（A+级2个：AHK Taiwan + Afodel / B+++级4个：FreightConnects + 推痕网 + holyads + too.tw / C+++级3个：ads948 + trade193 + 货站118）
+
+### 总表更新
+506 → 515目标 | 高价值DA50+保持148（AHK Taiwan DA40-50未达标） | 新增6个搜索维度
+
+### 无CAPTCHA可自动提交新增
+- FreightConnects 🔥 纯表单提交
+- 货站118 🔥 无需注册直接发布
+- Afodel 🔥 大概率无CAPTCHA
+
+---
+
 ## 2026-07-22 执行（第25轮）
 
 ### 搜索维度

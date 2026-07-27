@@ -28,3 +28,18 @@
 - 下周 P0: 图片性能优化 + 「台灣寄大陸費用對比 2026」Pillar Page
 
 **报告路径**: `weekly-audit-20260720.md`
+
+---
+
+## 2026-07-27 执行
+
+**结果**：
+- Broken Links: 156/160 OK，2个404（cross-strait-logistics-guide, baby-formula-milk-powder-shipping），2个timeout
+- Google 索引: 🔴 site:subao.tw 仍不返回本站结果（连续3周），但 GSC 有展现证明收录
+- Core Web Vitals: ⚠️ PageSpeed API 连续第3周 429 配额耗尽，无法获取
+- Schema: ✅ food-shipping-guide（5 block: Article+FAQPage(19)+HowTo+Breadcrumb+WebPage）、tw-to-cn-shipping-guide（@graph: 4类型含FAQPage(22)）、首页（Breadcrumb+FAQPage+meta完整）全部合格
+- 竞品: 3168.tw news/193 更新7月全攻略，mingsung 英文站扩展陆运服务，twtk56.com 新站崛起
+- 政策: 泉州→台中大三通海运快件进口试点（大陆→台湾方向）
+- 内容差距: 「台灣寄大陸費用對比 2026」Pillar Page 连续第3周建议但仍未发布（P0）
+
+**报告路径**: `weekly-audit-20260727.md`
