@@ -1,5 +1,33 @@
 # 外链机会每日搜索 — 执行记录
 
+## 2026-07-28 执行（第31轮）
+
+### 搜索维度
+- 零CAPTCHA免注册目录深挖（shipping-international纯表单+tarkle零门槛）
+- 独立域名物流货运目录补充（cbmcalculator不同于calculatecbm）
+- 2026 SEO目录列表交叉比对（freedirectorysubmit/abstractdirectory/blahoo/cipinet去重）
+
+### 核心发现
+- **shipping-international.com** — 🔥🔥 纯HTML表单无CAPTCHA！国际航运公司目录，Taiwan在国别下拉菜单中，URL字段直填。15个物流分类可选。100%航运物流精准！
+- **tarkle.com/startups** — 🔥🔥 零注册！零CAPTCHA！零邮箱验证！"No account creation." 免费永久dofollow，DR33持续增长。前250免费
+- **cbmcalculator.com** — 🔥 与calculatecbm.com不同域名！永久免费货运列表，8个服务分类。已有台湾物流公司收录
+- **freedirectorysubmit.com / abstractdirectory.net / blahoo.net / cipinet.com** — 4个通用目录补充
+
+### 新增平台数
+7个（A+++级2个零CAPTCHA：shipping-international + tarkle / A+级1个物流垂直：cbmcalculator / B+++级1个补充目录 / C+++级3个通用目录）
+
+### 总表更新
+531 → 538目标 | 高价值DA50+保持150 | 新增4个搜索维度
+
+### 无CAPTCHA可自动提交新增
+- shipping-international 🔥🔥 纯表单无CAPTCHA，Taiwan国家可选，URL直接填
+- tarkle 🔥🔥 零注册零CAPTCHA零邮箱，免费永久dofollow
+
+### 重点优先行动
+- shipping-international 和 tarkle 零CAPTCHA立即可自动提交，本轮效率很高
+
+---
+
 ## 2026-07-27 执行（第30轮）
 
 ### 搜索维度
