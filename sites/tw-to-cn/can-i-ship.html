@@ -701,7 +701,7 @@
     }
 
     // Enter key
-    document.getElementById('searchInput').addEventListener('keydown',function(e){if(e.key==='Enter')doSearch()});menuToggle.querySelector('i').classList.remove('fa-times');menuToggle.querySelector('i').classList.add('fa-bars');
+    document.getElementById('searchInput').addEventListener('keydown',function(e){if(e.key==='Enter')doSearch()});var mt=menuToggle.querySelector('i');if(mt){mt.classList.remove('fa-times');mt.classList.add('fa-bars')};
     document.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();this.parentElement.classList.toggle('open')})});
 
     // Scroll
