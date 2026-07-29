@@ -1,5 +1,34 @@
 # 外链机会每日搜索 — 执行记录
 
+## 2026-07-29 执行（第32轮）
+
+### 搜索维度
+- 全球B2B物流撮合市场挖掘（NavilinkGlobal "$0 Free to Start" 150+国货代市场）
+- 全球数字货运平台（Cogoport "Join 80+ forwarders" 6000+月出货量）
+- 纯货运目录补充（freight.biz 1221家货运公司免费收录）
+- 通用目录物流分类交叉比对（allfindhere "Shipping & logistics" 分类）
+
+### 核心发现
+- **Cogoport (cogoport.com)** — 🔥🔥 DA45-55全球数字货运平台！"Join 80+ active freight forwarders"，6000+月出货量。货运代理免费注册为合作伙伴，获取公司档案页。192+国家覆盖。需文档验证但免费
+- **freight.biz** — 🔥 100%货运垂直目录！"Add your company for Free"，1221家公司已收录。Taiwan在列表中。通过OneEntry表单提交，大概率无CAPTCHA
+- **NavilinkGlobal (navilinkglobal.com)** — 🔥 "$0 Free to Start, No Credit Card"，150+国B2B物流撮合，新平台早期红利
+- **allfindhere.com** — 全球免费商业目录，明确"Shipping & logistics"分类，completely free
+
+### 新增平台数
+4个（A++级1个：Cogoport DA45-55 / A+级1个：freight.biz / A级1个：NavilinkGlobal / B+++级1个：allfindhere）
+
+### 总表更新
+538 → 542目标 | 高价值DA50+保持150（Cogoport DA45-55未达标DA50） | 新增4个搜索维度
+
+### 无CAPTCHA可自动提交新增
+- freight.biz 🔥 简单表单大概率无CAPTCHA，OneEntry提交
+
+### 重点优先行动
+- Cogoport物流B2B平台高权威值得优先注册（需准备营业执照文档）
+- freight.biz简单表单提交立即可做
+
+---
+
 ## 2026-07-28 执行（第31轮）
 
 ### 搜索维度
