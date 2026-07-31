@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""subaotw.cn 百度每日推送 — 从队列推10条最新URL，标记已推送"""
+"""subaotw.cn 百度每日推送 — 从队列推10条最新URL（API日配额10条），标记已推送"""
 import requests, os
 from datetime import date
 
