@@ -1,5 +1,39 @@
 # 外链机会每日搜索 — 执行记录
 
+## 2026-08-01 执行（第34轮）
+
+### 搜索维度
+- 全球货运代理免费目录补充挖掘（forwardingcompanies.com 6000+货代确认已收录）
+- 欧洲运输门户+公司目录发现（transporti.net 22K+运输用户 Freight Forwarder分类）
+- 全球货代网络付费平台筛选排除（GCA Network gcahkg.com 确认为$675+/年付费会员制）
+- 全球B2B物流撮合市场补充搜索（CargoLinked/freight.biz/freightnet已确认收录）
+- 通用免费目录交叉比对去重（PRLog/cargoyellowpages/freightpages/forwarderspn已收录排除）
+
+### 核心发现
+- **transporti.net** — 🔥 **欧洲运输门户！22,546运输用户。**"Free advertising: Register for free and info about your company available through users catalogue"。明确「Freight Forwarder (shipping)」分类，还有Truck/Sea Cargo/Air Cargo/Railway等分类。China在国别下拉列表。URL字段+公司描述+多语言沟通。注册表单无CAPTCHA（公司名+邮箱+地址+电话+国别+URL+描述+服务分类）。含货运交易平台+运输公司目录双重功能。虽DA低（~15-25），但100%运输物流垂直，精准行业相关性
+
+### 排除确认
+- **GCA Network (gcahkg.com)** → ❌ 付费会员制：LinkedIn确认Gold Membership $675/年（原价$1348），非免费外链机会
+- **forwardingcompanies.com** → ✅ 已收录于A6，确认免费注册+6000+货代
+- **PRLog freight forwarder section** → PRLog已收录（A13），此为其子页面
+- **CargoYellowPages** → 已尝试但注册失败，不新增
+- **FreightPages** → 已收录B19
+
+### 新增平台数
+1个（B+++级1个：欧洲运输门户transporti.net）
+
+### 总表更新
+545 → 546目标 | 高价值DA50+保持150 | 新增1个搜索维度
+
+### 无CAPTCHA可自动提交新增
+- transporti.net 🔥 注册表单无CAPTCHA，简单填表即完成
+
+### 重点优先行动
+- transporti.net 注册表单简单无CAPTCHA，注册后在运输公司目录展示含URL+描述，立即可做
+- 本轮新增较少但经过严格去重比对，确保不收录重复平台
+
+---
+
 ## 2026-07-30 执行（第33轮）
 
 ### 搜索维度
