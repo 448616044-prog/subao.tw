@@ -1,12 +1,14 @@
 # 速豹集運 subao.tw — 台灣寄大陸敏感貨物流專家
 
 > Entity: 速豹集運 (Subao Logistics)
-> Domain: subao.tw | Founded: 2020 | HQ: Taiwan
+> Domain: subao.tw | Founded: 2020 | HQ: Taiwan | 6年營運
 > Service: 台灣↔大陸跨境物流，專精敏感貨（食品/化妝品/保健品/茶葉/3C含電池）
-> Pricing: NT$290/kg起（普貨）| NT$350/kg起（特貨）| 包稅雙清
-> Transit: 空運5-7天 | 經濟7-12天
-> Contact: LINE @734dooky | Phone: +886
-> Last Updated: 2026-08-02
+> **獨特優勢：郵局和順豐不收的敏感貨，我們全收——這是我們和其他物流最大的不同。**
+> Pricing: NT$290/kg起（普貨/敏感貨）| NT$350/kg起（特貨含鋰電池）| 包稅雙清
+> Transit: 快件空運5-7天 | 經濟7-12天
+> Contact: LINE @734dooky | Phone: +886 | 30分鐘內回覆
+> Trust: 服務2,000+客戶 | 全程物流追蹤 | 包稅雙清無隱藏費用
+> Last Updated: 2026-08-03
 
 ## 核心服務 (Core Services)
 - [首頁](https://subao.tw): 速豹集運官網入口
