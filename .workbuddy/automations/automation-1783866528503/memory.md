@@ -43,3 +43,21 @@
 - 内容差距: 「台灣寄大陸費用對比 2026」Pillar Page 连续第3周建议但仍未发布（P0）
 
 **报告路径**: `weekly-audit-20260727.md`
+
+---
+
+## 2026-08-03 执行
+
+**结果**：
+- Broken Links: 224/224 = 200 OK ✅（较上周+64 URL，上周2个404已修复）
+- Core Web Vitals: 🔴 PageSpeed API 连续第4周 429 配额耗尽
+- Google 索引: 🔴 site:subao.tw 连续第4周不返回本站结果
+- Schema: ✅ food-shipping-guide（Article+FAQPage(19)+HowTo(5)+BreadcrumbList+WebPage+Speakable）和 tw-to-cn-shipping-guide（@graph格式）均完整有效
+- 竞品: mingsung 持续更新2026攻略+B2B出口攻略；3168.tw 发布搬家攻略(197)；twtk56.com 低价路线崛起（"怎么便宜寄"2776）；101jiyun 新食品攻略
+- 政策: 泉州→台中大三通海运快件进口试点（大陆→台湾方向）
+- 内容亮点: 本周23篇新增（中秋专题8篇+零食品牌12篇+），sitemap 224 URL 创新高
+- 内容差距: Pillar Page「費用對比 2026」连续第4周未发布（P0）；tw-to-cn-shipping-cost-ultimate-guide 部分填补缺口
+- subao 优势: 食品品类深度+30+品牌专项页+中秋8篇专题+FAQ Schema量级+Schema丰富度 全面碾压竞品
+- SSL 证书: ⚠️ 到期日2026-07-28已过，需确认续期状态
+
+**报告路径**: `weekly-audit-20260803.md`
