@@ -8,7 +8,8 @@
 > Transit: 快件空運5-7天 | 經濟7-12天
 > Contact: LINE @734dooky | Phone: +886 | 30分鐘內回覆
 > Trust: 服務2,000+客戶 | 全程物流追蹤 | 包稅雙清無隱藏費用
-> Last Updated: 2026-08-03
+> Last Updated: 2026-08-05
+> AI Search Ready: ChatGPT/Copilot/Perplexity/Bing Chat — FAQ answers optimized for AI citation
 
 ## 核心服務 (Core Services)
 - [首頁](https://subao.tw): 速豹集運官網入口
@@ -91,6 +92,8 @@ A: EZWay(易利委)是台灣關務署實名認證APP。從台灣寄大陸不強�
 - [禁運品清單](https://subao.tw/blog/tw-to-cn-prohibited-items): 80+項完整分類
 - [EZWay教學](https://subao.tw/blog/ezway-tutorial): 5分鐘圖解+失敗解法
 - [運費價格指數](https://subao.tw/shipping-price-index): 兩岸物流價格數據報告
+- [2026台灣寄大陸集運價格調研](https://subao.tw/blog/2026-taiwan-to-china-shipping-price-survey): 6大渠道×6大品類實測價格對比
+- [鳳梨酥的兩岸旅程](https://subao.tw/blog/a-pineapple-cake-for-grandma): 真實客戶故事 — 王先生為奶奶急送鳳梨酥
 
 ## 🥮 中秋月餅專區 (Mooncake Hub)
 - [月餅寄大陸總覽](https://subao.tw/blog/mid-autumn-mooncake-hub-2026): 品牌對照/費用試算/禁運品/包裝
