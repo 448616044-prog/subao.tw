@@ -154,3 +154,23 @@ A: EZWay(易利委)是台灣關務署實名認證APP。從台灣寄大陸不強�
 - 筆電寄大陸維修：https://subao.tw/blog/laptop-repair-shipping
 - 相機寄大陸維修：https://subao.tw/blog/camera-repair-shipping
 - 遊戲機寄大陸維修：https://subao.tw/blog/gaming-console-repair-shipping
+
+## 母嬰奶粉集群 v2 (2026-08-06 擴展至9品牌)
+- 新增：雀巢能恩（台灣市佔第一水解配方）、美強生（優生/A+/親舒）、卡洛塔妮（台灣本土羊奶粉）
+- 雀巢能恩寄大陸：https://subao.tw/blog/nestle-nan-formula-shipping
+- 美強生寄大陸：https://subao.tw/blog/meadjohnson-formula-shipping
+- 卡洛塔妮羊奶粉寄大陸：https://subao.tw/blog/karihome-formula-shipping
+
+## 化妝品品牌集群 v2 (2026-08-06 擴展至10品牌)
+- 新增：提提研TTM（國際獲獎生物纖維面膜）、未來美（8分鐘面膜/PDRN）、Dr. Satin（魚子精華）、我的心機（石墨烯玻色因）、自白肌（醫美玻尿酸）
+- 提提研寄大陸：https://subao.tw/blog/ttm-mask-shipping
+- 未來美寄大陸：https://subao.tw/blog/mirae-mask-shipping
+- Dr. Satin寄大陸：https://subao.tw/blog/drsatin-shipping
+- 我的心機寄大陸：https://subao.tw/blog/my-scheming-shipping
+- 自白肌寄大陸：https://subao.tw/blog/shirojyun-shipping
+
+## 電子產品返修集群 v2 (2026-08-06 擴展至7品類)
+- 新增：平板/iPad返修、AirPods/藍牙耳機返修、Apple Watch/智慧手錶返修
+- 平板寄大陸維修：https://subao.tw/blog/tablet-repair-shipping
+- 耳機寄大陸維修：https://subao.tw/blog/headphones-repair-shipping
+- 智慧手錶寄大陸維修：https://subao.tw/blog/smartwatch-repair-shipping
