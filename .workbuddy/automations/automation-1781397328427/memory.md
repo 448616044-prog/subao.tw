@@ -1,5 +1,81 @@
 # 外链机会每日搜索 — 执行记录
 
+## 2026-08-06 执行（第39轮）
+
+### 搜索维度
+- 全球3PL仓储物流目录补录（3PLHub+Slotted+3PLManager+FindMy3PL四源，第38轮已发现未正式添加）
+- 中国物流专线平台补录（56城16万条专线，第38轮已发现未正式添加）
+- 全球B2B物流分类目录补录（Haubot零平台费，第38轮已发现未正式添加）
+- 全球货运撮合市场挖掘（BookMyVessel印度市场1200+货代+9000+ shipments）
+- 台湾城市分类信息矩阵补充（城惠网cityhui+桃园生活网tylife）
+- 瑞士B2B物流生态平台发现（4finance.ch零成本入门）
+- 台湾产业垂直目录补充（台湾茶葉網teatea）
+
+### 核心发现
+- **56城物流网 (56cheng.com)** — 🔥🔥 3万物流商+16万条物流专线，2006年创办中国物流之都平台。100%物流垂直
+- **Haubot (haubot.com)** — 🔥 "No fees, No hidden costs"零平台费B2B！Transport & Logistics专属分类，2026新平台
+- **Slotted (slotted.com)** — 🔥 免费3PL listing，"No credit card required"
+- **BookMyVessel (bookmyvessel.com)** — 🔥 1200+货代9000+ shipments，印度起家全球货运撮合市场
+- **城惠网 (cityhui.net)** + **桃园生活网 (tylife.taiwan.idv.tw)** — 台湾本地分类信息+工商名录矩阵
+
+### 排除确认
+- 第38轮6个平台（56城/3PLHub/Slotted/Haubot/3PLManager/FindMy3PL）在stats中提到但从未正式添加条目，本轮补录
+- Forwarder Focus Directory / AAS Network / Freightnet等均在之前轮次已收录
+- Shipzy.ai / Freightos / Container xChange等已确认在之前轮次收录
+
+### 新增平台数
+14个（正式补录第38轮6个：A+级1个中国物流专线平台+B+++级3个全球3PL+B2B目录+C++级2个3PL仓储目录 / 第39轮新增8个：A+级3个全球货运+台湾本地+C++级2个）
+
+### 总表更新
+579 → 587目标 | 高价值DA50+保持150 | 新增3个搜索维度
+
+### 无CAPTCHA可自动提交新增
+- 56城 🔥🔥 简单注册表单大概率无CAPTCHA
+- 3PLHub/Slotted/Haubot/3PLManager/FindMy3PL 🔥 全部简单表单大概率无CAPTCHA
+- BookMyVessel/城惠网/桃园生活网/4finance/台湾茶葉網 简单表单大概率无CAPTCHA
+
+### 重点优先行动
+- 56城物流网 → 🔥🔥 100%物流垂直，16万条专线，立即可注册
+- Haubot → 🔥 零平台费B2B，Transport & Logistics分类，立即可注册
+- Slotted → 🔥 免费3PL listing无需信用卡
+- 城惠网+桃园生活网 → 台湾本地流量精准
+
+---
+
+## 2026-08-05 执行（第37轮）
+
+### 搜索维度
+- 全球物流垂直目录深度挖掘（National Logistics Directory AI驱动物流匹配平台 274K+月流量）
+- 海事航运专属目录+社群发现（ShipOracle全球海运目录+网络社区）
+- 2026新兴物流/供应链SaaS目录交叉比对
+- 免费B2B物流平台补充搜索（52jpg 12个精选B2B+seoriddhi即时批准目录去重）
+
+### 核心发现
+- **National Logistics Directory (nationallogisticsdirectory.com)** — 🔥🔥 **AI驱动物流目录！** 274K+月流量，20K+发现页，25+物流分类（3PL/海运/空运/仓储/国际运输等）。"List your company for free"，100%物流垂直。平台增长迅速已在LinkedIn有活跃存在。早期入驻红利
+- **ShipOracle (shiporacle.com)** — 🔥 **全球海事航运目录+社群！** "add your company's profile to the Worldwide Shipping Directory for free"，UK运营。免费创建公司档案含网站链接+港口覆盖。支持发布货盘/船位到Marketplace Feed。No hidden fees。100%海事航运精准
+
+### 排除确认
+- 12个B2B平台（52jpg文章：ThomasNet/Europages/Kompass/EC21/TradeKey/WholesaleCentral/IndiaMART等）→ 全部已在之前轮次收录
+- seoriddhi即时批准目录 → 100+通用目录已在前序轮次大规模收录
+- IATA CargoLink → 仅对IATA认证货代开放，不符合subao.tw资质
+- Nationallogisticsdirectory 和 shiporacle 均确认不在571目标库中
+
+### 新增平台数
+2个（A+级2个全球物流垂直目录：National Logistics Directory + ShipOracle）
+
+### 总表更新
+571 → 573目标 | 高价值DA50+保持150 | 新增2个搜索维度
+
+### 无CAPTCHA可自动提交新增
+- National Logistics Directory 🔥🔥 免费注册简单表单，大概率无CAPTCHA
+- ShipOracle 🔥 免费注册，大概率无CAPTCHA
+
+### 重点优先行动
+- National Logistics Directory → 🔥🔥 100%物流垂直，274K+月流量，立即可注册
+- ShipOracle → 🔥 海事航运精准目录，免费profile，立即可注册
+
+---
+
 ## 2026-08-02 执行（第36轮）
 
 ### 搜索维度

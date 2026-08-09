@@ -1,0 +1,5 @@
+channel,min_days,avg_days,max_days,delay_reason
+sf_express_international,3,5,7,海關查驗
+china_post_ems,5,8,15,航班排程
+subao_air_express,5,7,10,小三通船期
+subao_sea_freight,20,25,35,海運船期加清關

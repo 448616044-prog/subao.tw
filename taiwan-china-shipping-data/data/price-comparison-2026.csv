@@ -1,0 +1,25 @@
+weight_kg,channel,price_ntd,per_kg_ntd,notes
+1,china_post_ems,300,300,500g 起
+1,sf_express_international,400,400,
+1,subao_air_express,290,290,起价 NT$290
+2,china_post_ems,400,200,
+2,sf_express_international,600,300,
+2,subao_air_express,380,190,推荐
+5,china_post_ems,600,120,每500g加价
+5,sf_express_international,1000,200,
+5,subao_air_express,750,150,推荐
+10,china_post_ems,1100,110,
+10,sf_express_international,1800,180,
+10,subao_air_express,1450,145,推荐
+20,china_post_ems,1900,95,
+20,sf_express_international,3200,160,
+20,subao_sea_freight,1800,90,推荐（大件）
+20,subao_air_express,2600,130,
+30,china_post_ems,2700,90,
+30,sf_express_international,4500,150,
+30,subao_sea_freight,2400,80,推荐
+30,subao_air_express,3900,130,
+50,china_post_ems,4500,90,
+50,sf_express_international,7500,150,
+50,subao_sea_freight,3500,70,推荐（最便宜）
+50,subao_air_express,6500,130,

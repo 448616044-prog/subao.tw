@@ -1,0 +1,15 @@
+category,item,china_post,sf_express,subao_specialized
+food,dried_noodles,no,no,yes
+food,instant_noodles,no,no,yes
+food,sealed_snacks,no,no,yes
+food,fresh_meat,no,no,no
+food,fresh_fruit,no,no,no
+supplements,vitamins,no,no,yes
+supplements,fish_oil,no,no,yes
+cosmetics,skincare_liquid,no,limited,yes
+cosmetics,perfume,no,limited_2,yes
+tea,dry_tea_leaves,limited,no,yes
+electronics,phone,no,yes,yes
+electronics,laptop,no,yes,yes
+weapons,any,no,no,no
+drugs,illegal,no,no,no
