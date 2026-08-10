@@ -794,6 +794,15 @@
           "eventCount": "1059"
         },
         {
+          "date": "20260810",
+          "activeUsers": "164",
+          "sessions": "209",
+          "screenPageViews": "303",
+          "newUsers": "141",
+          "averageSessionDuration": "176.38316199521532",
+          "eventCount": "974"
+        },
+        {
           "date": "20260806",
           "activeUsers": "160",
           "sessions": "205",
@@ -878,10 +887,10 @@
           "date": "20260809",
           "activeUsers": "140",
           "sessions": "170",
-          "screenPageViews": "311",
+          "screenPageViews": "312",
           "newUsers": "128",
           "averageSessionDuration": "292.59089986470588",
-          "eventCount": "938"
+          "eventCount": "939"
         },
         {
           "date": "20260722",
@@ -965,15 +974,6 @@
           "eventCount": "585"
         },
         {
-          "date": "20260810",
-          "activeUsers": "94",
-          "sessions": "121",
-          "screenPageViews": "182",
-          "newUsers": "78",
-          "averageSessionDuration": "199.39669672727274",
-          "eventCount": "582"
-        },
-        {
           "date": "20260718",
           "activeUsers": "93",
           "sessions": "119",
@@ -1004,43 +1004,43 @@
       "channels": [
         {
           "sessionSource": "google",
-          "sessions": "3733",
-          "activeUsers": "2741",
-          "newUsers": "2711",
-          "averageSessionDuration": "202.34756996597909",
-          "eventCount": "20365"
+          "sessions": "3805",
+          "activeUsers": "2794",
+          "newUsers": "2764",
+          "averageSessionDuration": "200.71788322049935",
+          "eventCount": "20624"
         },
         {
           "sessionSource": "(direct)",
-          "sessions": "656",
-          "activeUsers": "534",
-          "newUsers": "542",
-          "averageSessionDuration": "176.18457253963416",
-          "eventCount": "3331"
+          "sessions": "662",
+          "activeUsers": "540",
+          "newUsers": "548",
+          "averageSessionDuration": "175.72622041087612",
+          "eventCount": "3363"
         },
         {
           "sessionSource": "tw.search.yahoo.com",
-          "sessions": "205",
-          "activeUsers": "146",
-          "newUsers": "145",
-          "averageSessionDuration": "193.53070255121952",
-          "eventCount": "1049"
+          "sessions": "211",
+          "activeUsers": "148",
+          "newUsers": "147",
+          "averageSessionDuration": "188.02745982464455",
+          "eventCount": "1063"
         },
         {
           "sessionSource": "(not set)",
-          "sessions": "119",
-          "activeUsers": "108",
+          "sessions": "154",
+          "activeUsers": "143",
           "newUsers": "1",
-          "averageSessionDuration": "163.14981171428573",
-          "eventCount": "395"
+          "averageSessionDuration": "149.54651201298702",
+          "eventCount": "477"
         },
         {
           "sessionSource": "bing",
-          "sessions": "109",
-          "activeUsers": "87",
-          "newUsers": "85",
-          "averageSessionDuration": "344.79769513761471",
-          "eventCount": "686"
+          "sessions": "110",
+          "activeUsers": "88",
+          "newUsers": "86",
+          "averageSessionDuration": "341.66317063636365",
+          "eventCount": "689"
         },
         {
           "sessionSource": "chatgpt.com",
@@ -1067,99 +1067,99 @@
           "eventCount": "17"
         },
         {
+          "sessionSource": "copilot.com",
+          "sessions": "4",
+          "activeUsers": "4",
+          "newUsers": "4",
+          "averageSessionDuration": "35.12746925",
+          "eventCount": "13"
+        },
+        {
           "sessionSource": "m.facebook.com",
           "sessions": "4",
           "activeUsers": "4",
           "newUsers": "4",
           "averageSessionDuration": "0",
           "eventCount": "12"
-        },
-        {
-          "sessionSource": "copilot.com",
-          "sessions": "3",
-          "activeUsers": "3",
-          "newUsers": "3",
-          "averageSessionDuration": "46.836625666666663",
-          "eventCount": "10"
         }
       ],
       "top_pages": [
         {
           "pagePath": "/",
-          "screenPageViews": "988",
-          "activeUsers": "533",
-          "averageSessionDuration": "139.27543984287618",
-          "bounceRate": "0.31424766977363516"
+          "screenPageViews": "997",
+          "activeUsers": "543",
+          "averageSessionDuration": "137.59621337319319",
+          "bounceRate": "0.32325886990801578"
         },
         {
           "pagePath": "/blog/food-shipping-guide",
-          "screenPageViews": "673",
-          "activeUsers": "531",
-          "averageSessionDuration": "146.26275582659932",
-          "bounceRate": "0.28956228956228958"
+          "screenPageViews": "688",
+          "activeUsers": "548",
+          "averageSessionDuration": "144.04699367757775",
+          "bounceRate": "0.30769230769230771"
         },
         {
           "pagePath": "/blog/noodles-ramen-shipping",
-          "screenPageViews": "557",
-          "activeUsers": "423",
-          "averageSessionDuration": "165.92084298818898",
-          "bounceRate": "0.39370078740157483"
+          "screenPageViews": "564",
+          "activeUsers": "428",
+          "averageSessionDuration": "163.34842681782948",
+          "bounceRate": "0.40310077519379844"
         },
         {
           "pagePath": "/pricing",
-          "screenPageViews": "407",
-          "activeUsers": "248",
-          "averageSessionDuration": "152.86493755555554",
-          "bounceRate": "0.21367521367521367"
+          "screenPageViews": "411",
+          "activeUsers": "253",
+          "averageSessionDuration": "156.38285907843138",
+          "bounceRate": "0.22408963585434175"
         },
         {
           "pagePath": "/blog/tw-to-cn-shipping-guide",
-          "screenPageViews": "400",
-          "activeUsers": "304",
-          "averageSessionDuration": "201.27164296428572",
-          "bounceRate": "0.25"
+          "screenPageViews": "405",
+          "activeUsers": "310",
+          "averageSessionDuration": "203.82871697837837",
+          "bounceRate": "0.25675675675675674"
         },
         {
           "pagePath": "/tw-to-cn",
-          "screenPageViews": "386",
-          "activeUsers": "248",
-          "averageSessionDuration": "149.45570627439025",
-          "bounceRate": "0.17073170731707318"
+          "screenPageViews": "391",
+          "activeUsers": "254",
+          "averageSessionDuration": "153.02077016417911",
+          "bounceRate": "0.18208955223880596"
         },
         {
           "pagePath": "/pricing-calculator",
-          "screenPageViews": "337",
-          "activeUsers": "229",
-          "averageSessionDuration": "152.79329044912282",
-          "bounceRate": "0.21403508771929824"
+          "screenPageViews": "346",
+          "activeUsers": "234",
+          "averageSessionDuration": "149.75699809556315",
+          "bounceRate": "0.22184300341296928"
         },
         {
           "pagePath": "/can-i-ship",
-          "screenPageViews": "260",
-          "activeUsers": "149",
-          "averageSessionDuration": "121.34313541206032",
-          "bounceRate": "0.16080402010050251"
+          "screenPageViews": "261",
+          "activeUsers": "150",
+          "averageSessionDuration": "120.73641973500001",
+          "bounceRate": "0.16"
         },
         {
           "pagePath": "/blog/tw-to-cn-prohibited-items",
-          "screenPageViews": "187",
-          "activeUsers": "148",
-          "averageSessionDuration": "110.03364445945947",
-          "bounceRate": "0.36216216216216218"
+          "screenPageViews": "188",
+          "activeUsers": "149",
+          "averageSessionDuration": "109.82288773655914",
+          "bounceRate": "0.36559139784946237"
         },
         {
           "pagePath": "/blog/battery-products-shipping",
-          "screenPageViews": "169",
-          "activeUsers": "140",
-          "averageSessionDuration": "115.72312129268293",
-          "bounceRate": "0.40243902439024393"
+          "screenPageViews": "175",
+          "activeUsers": "145",
+          "averageSessionDuration": "112.62993712941177",
+          "bounceRate": "0.42352941176470588"
         },
         {
           "pagePath": "/blog/cosmetics-shipping",
-          "screenPageViews": "165",
-          "activeUsers": "127",
-          "averageSessionDuration": "99.439635211538473",
-          "bounceRate": "0.46794871794871795"
+          "screenPageViews": "168",
+          "activeUsers": "129",
+          "averageSessionDuration": "99.585709594936716",
+          "bounceRate": "0.46835443037974683"
         },
         {
           "pagePath": "/blog/taiwan-souvenir-shipping",
@@ -1170,24 +1170,24 @@
         },
         {
           "pagePath": "/about",
-          "screenPageViews": "153",
+          "screenPageViews": "155",
           "activeUsers": "89",
-          "averageSessionDuration": "148.10464550769231",
-          "bounceRate": "0.25384615384615383"
+          "averageSessionDuration": "145.86063572727272",
+          "bounceRate": "0.26515151515151514"
         },
         {
           "pagePath": "/blog/tw-to-cn-cost",
-          "screenPageViews": "147",
-          "activeUsers": "99",
-          "averageSessionDuration": "115.87758726618705",
-          "bounceRate": "0.48920863309352519"
+          "screenPageViews": "149",
+          "activeUsers": "102",
+          "averageSessionDuration": "113.92697739436619",
+          "bounceRate": "0.5"
         },
         {
           "pagePath": "/blog/ezway-tutorial",
-          "screenPageViews": "142",
-          "activeUsers": "127",
-          "averageSessionDuration": "85.252595160583951",
-          "bounceRate": "0.5036496350364964"
+          "screenPageViews": "144",
+          "activeUsers": "129",
+          "averageSessionDuration": "84.025939115107917",
+          "bounceRate": "0.51079136690647486"
         },
         {
           "pagePath": "/customs-guide",
@@ -1198,51 +1198,51 @@
         },
         {
           "pagePath": "/blog/tea-shipping-guide",
-          "screenPageViews": "132",
-          "activeUsers": "92",
-          "averageSessionDuration": "153.47074687179489",
-          "bounceRate": "0.3504273504273504"
+          "screenPageViews": "133",
+          "activeUsers": "93",
+          "averageSessionDuration": "152.45993306779661",
+          "bounceRate": "0.3559322033898305"
         },
         {
           "pagePath": "/blog/tw-to-cn-customs",
-          "screenPageViews": "125",
-          "activeUsers": "109",
-          "averageSessionDuration": "174.18940118032785",
-          "bounceRate": "0.41803278688524592"
+          "screenPageViews": "128",
+          "activeUsers": "111",
+          "averageSessionDuration": "173.163318464",
+          "bounceRate": "0.432"
         },
         {
           "pagePath": "/article-list",
-          "screenPageViews": "122",
+          "screenPageViews": "123",
           "activeUsers": "49",
-          "averageSessionDuration": "108.96075312987013",
-          "bounceRate": "0.16883116883116883"
+          "averageSessionDuration": "108.12948164102563",
+          "bounceRate": "0.16666666666666666"
         },
         {
           "pagePath": "/pickup-service",
-          "screenPageViews": "115",
-          "activeUsers": "87",
-          "averageSessionDuration": "145.3056786491228",
-          "bounceRate": "0.19298245614035087"
+          "screenPageViews": "116",
+          "activeUsers": "88",
+          "averageSessionDuration": "144.46931226956522",
+          "bounceRate": "0.2"
         }
       ],
       "landing_pages": [
         {
           "landingPage": "/",
-          "sessions": "573",
-          "activeUsers": "422",
-          "bounceRate": "0.34904013961605584"
+          "sessions": "581",
+          "activeUsers": "430",
+          "bounceRate": "0.35456110154905335"
         },
         {
           "landingPage": "/blog/food-shipping-guide",
-          "sessions": "506",
-          "activeUsers": "466",
-          "bounceRate": "0.31225296442687744"
+          "sessions": "517",
+          "activeUsers": "477",
+          "bounceRate": "0.32495164410058025"
         },
         {
           "landingPage": "/blog/noodles-ramen-shipping",
-          "sessions": "395",
-          "activeUsers": "342",
-          "bounceRate": "0.46582278481012657"
+          "sessions": "402",
+          "activeUsers": "347",
+          "bounceRate": "0.47512437810945274"
         },
         {
           "landingPage": "(not set)",
@@ -1252,45 +1252,51 @@
         },
         {
           "landingPage": "/blog/tw-to-cn-shipping-guide",
-          "sessions": "194",
-          "activeUsers": "177",
-          "bounceRate": "0.35567010309278352"
+          "sessions": "197",
+          "activeUsers": "180",
+          "bounceRate": "0.36548223350253806"
         },
         {
           "landingPage": "/blog/battery-products-shipping",
-          "sessions": "152",
-          "activeUsers": "137",
-          "bounceRate": "0.38157894736842107"
+          "sessions": "158",
+          "activeUsers": "142",
+          "bounceRate": "0.4050632911392405"
         },
         {
           "landingPage": "/blog/cosmetics-shipping",
-          "sessions": "135",
-          "activeUsers": "113",
-          "bounceRate": "0.49629629629629629"
+          "sessions": "137",
+          "activeUsers": "115",
+          "bounceRate": "0.5036496350364964"
         },
         {
           "landingPage": "/blog/ezway-tutorial",
-          "sessions": "127",
-          "activeUsers": "119",
-          "bounceRate": "0.52755905511811019"
+          "sessions": "129",
+          "activeUsers": "121",
+          "bounceRate": "0.53488372093023251"
         },
         {
           "landingPage": "/blog/tw-to-cn-prohibited-items",
-          "sessions": "126",
-          "activeUsers": "107",
-          "bounceRate": "0.44444444444444442"
+          "sessions": "127",
+          "activeUsers": "108",
+          "bounceRate": "0.44881889763779526"
+        },
+        {
+          "landingPage": "",
+          "sessions": "124",
+          "activeUsers": "108",
+          "bounceRate": "0.99193548387096775"
         },
         {
           "landingPage": "/blog/tw-to-cn-cost",
-          "sessions": "123",
-          "activeUsers": "89",
-          "bounceRate": "0.51219512195121952"
+          "sessions": "124",
+          "activeUsers": "90",
+          "bounceRate": "0.5161290322580645"
         },
         {
           "landingPage": "/blog/tw-to-cn-customs",
-          "sessions": "108",
-          "activeUsers": "102",
-          "bounceRate": "0.40740740740740738"
+          "sessions": "110",
+          "activeUsers": "104",
+          "bounceRate": "0.41818181818181815"
         },
         {
           "landingPage": "/blog/taiwan-souvenir-shipping",
@@ -1305,23 +1311,17 @@
           "bounceRate": "0.35416666666666669"
         },
         {
-          "landingPage": "",
-          "sessions": "95",
-          "activeUsers": "83",
-          "bounceRate": "0.98947368421052628"
-        },
-        {
           "landingPage": "/blog/jewelry-shipping",
-          "sessions": "86",
-          "activeUsers": "81",
-          "bounceRate": "0.30232558139534882"
+          "sessions": "87",
+          "activeUsers": "82",
+          "bounceRate": "0.31034482758620691"
         }
       ],
       "geo": [
         {
           "country": "Taiwan",
-          "activeUsers": "3190",
-          "sessions": "4416"
+          "activeUsers": "3250",
+          "sessions": "4497"
         },
         {
           "country": "Hong Kong",
@@ -1330,8 +1330,8 @@
         },
         {
           "country": "United States",
-          "activeUsers": "75",
-          "sessions": "76"
+          "activeUsers": "78",
+          "sessions": "79"
         },
         {
           "country": "China",
@@ -1340,13 +1340,13 @@
         },
         {
           "country": "Japan",
-          "activeUsers": "57",
-          "sessions": "63"
+          "activeUsers": "58",
+          "sessions": "66"
         },
         {
           "country": "Singapore",
-          "activeUsers": "48",
-          "sessions": "49"
+          "activeUsers": "49",
+          "sessions": "50"
         },
         {
           "country": "Brazil",
@@ -1359,13 +1359,13 @@
           "sessions": "10"
         },
         {
-          "country": "Vietnam",
+          "country": "South Korea",
           "activeUsers": "9",
-          "sessions": "10"
+          "sessions": "11"
         },
         {
-          "country": "South Korea",
-          "activeUsers": "8",
+          "country": "Vietnam",
+          "activeUsers": "9",
           "sessions": "10"
         },
         {
@@ -1380,8 +1380,8 @@
         },
         {
           "country": "Netherlands",
-          "activeUsers": "5",
-          "sessions": "5"
+          "activeUsers": "6",
+          "sessions": "6"
         },
         {
           "country": "Australia",
@@ -1422,39 +1422,39 @@
       "events": [
         {
           "eventName": "page_view",
-          "eventCount": "8229"
+          "eventCount": "8351"
         },
         {
           "eventName": "user_engagement",
-          "eventCount": "5807"
+          "eventCount": "5881"
         },
         {
           "eventName": "session_start",
-          "eventCount": "4874"
+          "eventCount": "4960"
         },
         {
           "eventName": "first_visit",
-          "eventCount": "3605"
+          "eventCount": "3668"
         },
         {
           "eventName": "scroll",
-          "eventCount": "1615"
+          "eventCount": "1632"
         },
         {
           "eventName": "click",
-          "eventCount": "727"
+          "eventCount": "740"
+        },
+        {
+          "eventName": "generate_lead",
+          "eventCount": "619"
+        },
+        {
+          "eventName": "line_click",
+          "eventCount": "614"
         },
         {
           "eventName": "calculator_result",
           "eventCount": "611"
-        },
-        {
-          "eventName": "generate_lead",
-          "eventCount": "609"
-        },
-        {
-          "eventName": "line_click",
-          "eventCount": "606"
         },
         {
           "eventName": "can_i_ship_search",
@@ -1464,13 +1464,13 @@
       "devices": [
         {
           "deviceCategory": "mobile",
-          "activeUsers": "2511",
-          "sessions": "3379"
+          "activeUsers": "2554",
+          "sessions": "3431"
         },
         {
           "deviceCategory": "desktop",
-          "activeUsers": "1102",
-          "sessions": "1516"
+          "activeUsers": "1126",
+          "sessions": "1547"
         },
         {
           "deviceCategory": "tablet",
@@ -1481,18 +1481,18 @@
       "new_vs_returning": [
         {
           "newVsReturning": "new",
-          "activeUsers": "3589",
-          "sessions": "3682"
+          "activeUsers": "3652",
+          "sessions": "3748"
         },
         {
           "newVsReturning": "returning",
-          "activeUsers": "529",
-          "sessions": "908"
+          "activeUsers": "531",
+          "sessions": "917"
         },
         {
           "newVsReturning": "",
-          "activeUsers": "95",
-          "sessions": "98"
+          "activeUsers": "126",
+          "sessions": "130"
         },
         {
           "newVsReturning": "(not set)",
