@@ -61,3 +61,21 @@
 - SSL 证书: ⚠️ 到期日2026-07-28已过，需确认续期状态
 
 **报告路径**: `weekly-audit-20260803.md`
+
+---
+
+## 2026-08-10 执行
+
+**结果**：
+- Broken Links: 262/262 = 100% OK ✅（+38 URL，零错误）
+- Core Web Vitals: 🔴 PageSpeed API 连续第5周 429 配额耗尽
+- Google 索引: 🔴 site:subao.tw 连续第5周不返回本站结果
+- Schema: ✅ food-shipping-guide（Article+FAQPage(19)+HowTo(5)+Breadcrumb+WebPage+Speakable）、tw-to-cn-shipping-guide（@graph: Article+FAQPage(22)+HowTo(7)+Breadcrumb+WebPage）、首页（Breadcrumb+FAQPage）全部合格
+- 竞品: 🆕 **tyaward.com.tw 新竞品崛起**（3篇高质量内容：免税解析+运送指南+四管道对比）；mingsung B2B出口攻略持续；3168.tw 物流时效对比(62)；twtk56 低价路线(2776)+注意事项(2791)；ttnews.tw 比价指南
+- 政策: 泉州→台中大三通海运快件进口试点（大陆→台湾方向），无新政策
+- 内容更新: 本周仅3篇（8/9：義美食品/科學麵/統一麵），较上周23篇大幅下降
+- 内容差距: 「費用對比 2026」Pillar Page 连续第6周未发布（P0）；tyaward 免税解析内容 subao 覆盖不足（P1）
+- SSL 证书: ✅ 已续期，有效期至 2026-09-25
+- 关键建议: P0 费用对比 Pillar Page + 应对 tyaward 崛起 + 申请 PageSpeed API Key
+
+**报告路径**: `weekly-audit-20260810.md`
