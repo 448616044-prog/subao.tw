@@ -16,19 +16,19 @@ INDEXING_API = "https://indexing.googleapis.com/v3/urlNotifications:publish"
 SCOPE = "https://www.googleapis.com/auth/indexing"
 
 URLS = [
-    "https://subao.tw/blog/gaming-console-repair-shipping",
-    "https://subao.tw/blog/phone-shipping-guide",
-    "https://subao.tw/blog/iphone-shipping",
-    "https://subao.tw/blog/samsung-phone-shipping",
-    "https://subao.tw/blog/google-pixel-shipping",
-    "https://subao.tw/blog/asus-phone-shipping",
-    "https://subao.tw/blog/tw-to-cn-cost",
-    "https://subao.tw/blog/tw-to-cn-shipping-guide",
-    "https://subao.tw/shipping-cost-comparison",
-    "https://subao.tw/pricing",
+    "https://subao.tw/tw-to-cn-packing-guide-2026",
+    "https://subao.tw/tw-to-cn-case-studies-2026",
+    "https://subao.tw/alishan-tea-shipping",
+    "https://subao.tw/taiwan-oolong-tea-brands-shipping",
+    "https://subao.tw/taiwan-gift-combo-shipping-2026",
+    "https://subao.tw/musical-instrument-shipping",
+    "https://subao.tw/artwork-shipping-to-china",
+    "https://subao.tw/pet-supplies-shipping-to-china",
+    "https://subao.tw/luxury-bags-shipping-to-china",
+    "https://subao.tw/coffee-shipping-to-china",
+    "https://subao.tw/tw-to-cn-quick-start-guide",
+    "https://subao.tw/tw-to-cn-shipping-time-comparison",
     "https://subao.tw/sitemap.xml",
-    "https://subao.tw/article-list",
-    "https://subao.tw/cross-strait-logistics-price-index-2026",
 ]
 
 

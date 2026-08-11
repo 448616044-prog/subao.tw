@@ -1,6 +1,38 @@
 # 外链机会每日搜索 — 执行记录
 
-## 2026-08-09 执行（第40轮）
+## 2026-08-10 执行（第41轮）
+
+### 搜索维度
+- 全球货代专属目录深度挖掘（ForwarderData 30,000+企业免费入驻）
+- 台湾本地工商黄页矩阵补充（twbizpage.com物流运输分类）
+- eTaiwan网站群+台湾分类广告平台交叉搜索
+- 多源去重比对（azfreight/business.com.tw/forwarderspn等已收录平台排除）
+
+### 核心发现
+- **ForwarderData (forwarderdata.com)** — 🔥🔥 30,000+货代全球目录！749家公司已收录，「Join Us for Free with your own listing NOW」，100%物流垂直
+- **twbizpage.com 台灣工商黃頁** — 🔥 台湾工商黄页，物流運輸分类（汽車貨運業/理貨包裝業/倉儲業），免费刊登入口
+
+### 排除确认
+- forwarderspn.com → ✅ 已收录A11
+- azfreight.com → ✅ 已收录A60
+- business.com.tw → ✅ 已收录C2
+- freight.biz / freightclub.net / trackload / alovair-sea → 均已收录
+
+### 新增平台数
+2个（A+级1个：ForwarderData / B+级1个：twbizpage.com）
+
+### 总表更新
+592 → 594目标 | 高价值DA50+保持150 | 新增2个
+
+### 无CAPTCHA可自动提交新增
+- ForwarderData 🔥🔥 免费注册大概率无CAPTCHA
+- twbizpage.com 🔥 免费刊登入口，大概率无CAPTCHA
+
+### 重点优先行动
+- ForwarderData → 🔥🔥 100%物流垂直30K+企业，立即注册提交
+
+---
+
 
 ### 搜索维度
 - 中国免费物流信息平台深挖（5源新发现：互比/鹰智/西海岸/万邦/物流网）
