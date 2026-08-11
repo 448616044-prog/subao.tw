@@ -16,18 +16,9 @@ INDEXING_API = "https://indexing.googleapis.com/v3/urlNotifications:publish"
 SCOPE = "https://www.googleapis.com/auth/indexing"
 
 URLS = [
-    "https://subao.tw/tw-to-cn-packing-guide-2026",
-    "https://subao.tw/tw-to-cn-case-studies-2026",
-    "https://subao.tw/alishan-tea-shipping",
-    "https://subao.tw/taiwan-oolong-tea-brands-shipping",
-    "https://subao.tw/taiwan-gift-combo-shipping-2026",
-    "https://subao.tw/musical-instrument-shipping",
-    "https://subao.tw/artwork-shipping-to-china",
-    "https://subao.tw/pet-supplies-shipping-to-china",
-    "https://subao.tw/luxury-bags-shipping-to-china",
-    "https://subao.tw/coffee-shipping-to-china",
-    "https://subao.tw/tw-to-cn-quick-start-guide",
-    "https://subao.tw/tw-to-cn-shipping-time-comparison",
+    "https://subao.tw/blog/mooncake-shipping-guide-2026",
+    "https://subao.tw/blog/clothes-shipping-guide",
+    "https://subao.tw/blog/tw-to-cn-food-restrictions-2026",
     "https://subao.tw/sitemap.xml",
 ]
 
