@@ -7,6 +7,16 @@ SERVER="ubuntu@175.178.184.141"
 SITE_DIR="/var/www/subaotw-cn"
 LOCAL_DIR="/Users/mac/WorkBuddy/Claw/物流項目/sites/subaotw-cn"
 
+echo "🔍 部署前验证 JS 语法..."
+python3 /Users/mac/WorkBuddy/Claw/物流項目/scripts/validate-js.py --quick 2>&1 || {
+  echo ""
+  echo "❌ JS 语法检查未通过，取消部署！"
+  echo "   修复后重新运行: python3 scripts/validate-js.py --quick"
+  exit 1
+}
+echo "✅ JS 语法检查通过"
+echo ""
+
 echo "🚀 部署 subaotw.cn..."
 
 # 1. 创建服务器目录
