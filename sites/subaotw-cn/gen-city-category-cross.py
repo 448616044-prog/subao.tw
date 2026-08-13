@@ -15,6 +15,14 @@ CITIES = {
     'qingdao': {'name': '青岛', 'port': '前湾港', 'zone': '华北', 'transit': '7-9天', 'advantage': '北方最大港口，机械设备/建材出口台湾最佳选择', 'radius': '济南、潍坊、烟台'},
     'tianjin': {'name': '天津', 'port': '天津港', 'zone': '华北', 'transit': '7-9天', 'advantage': '华北第二大港，重工业设备/钢材出口便利', 'radius': '北京、廊坊、唐山'},
     'suzhou': {'name': '苏州', 'port': '经上海港', 'zone': '华东', 'transit': '6-8天', 'advantage': '制造业重镇，电子产品/精密设备出口台湾的最佳陆运+海运节点', 'radius': '无锡、常州、南通'},
+    'chengdu': {'name': '成都', 'port': '经重庆港/泸州港', 'zone': '西南', 'transit': '8-10天', 'advantage': '西南最大城市，家具/建材/食品出口台湾的重要货源地', 'radius': '绵阳、德阳、乐山'},
+    'chongqing': {'name': '重庆', 'port': '果园港/寸滩港', 'zone': '西南', 'transit': '7-9天', 'advantage': '长江上游最大内河港口，西南货物出海台湾的最佳水运节点', 'radius': '泸州、宜宾、遵义'},
+    'wuhan': {'name': '武汉', 'port': '阳逻港', 'zone': '华中', 'transit': '6-8天', 'advantage': '长江中游最大港口，华中货物出海台湾的核心枢纽', 'radius': '襄阳、宜昌、黄石'},
+    'hangzhou': {'name': '杭州', 'port': '经宁波港', 'zone': '华东', 'transit': '6-8天', 'advantage': '电商之都，家居/文创/食品出口台湾货源丰富', 'radius': '嘉兴、湖州、绍兴'},
+    'nanjing': {'name': '南京', 'port': '龙潭港', 'zone': '华东', 'transit': '5-7天', 'advantage': '长江下游重要港口，华东货物出口台湾便捷节点', 'radius': '镇江、扬州、马鞍山'},
+    'zhengzhou': {'name': '郑州', 'port': '经青岛港', 'zone': '中原', 'transit': '8-10天', 'advantage': '中原交通枢纽，机械设备/食品出口台湾的重要货源地', 'radius': '洛阳、开封、新乡'},
+    'xian': {'name': '西安', 'port': '经青岛港/连云港', 'zone': '西北', 'transit': '9-11天', 'advantage': '西北核心城市，特色食品/手工艺品出口台湾货源', 'radius': '咸阳、宝鸡、渭南'},
+    'changsha': {'name': '长沙', 'port': '经广州港/上海港', 'zone': '华中', 'transit': '7-9天', 'advantage': '华中消费重镇，食品/文创/家居出口台湾货源丰富', 'radius': '株洲、湘潭、岳阳'},
 }
 
 CATEGORIES = {
