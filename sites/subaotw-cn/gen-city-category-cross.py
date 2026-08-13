@@ -23,6 +23,14 @@ CITIES = {
     'zhengzhou': {'name': '郑州', 'port': '经青岛港', 'zone': '中原', 'transit': '8-10天', 'advantage': '中原交通枢纽，机械设备/食品出口台湾的重要货源地', 'radius': '洛阳、开封、新乡'},
     'xian': {'name': '西安', 'port': '经青岛港/连云港', 'zone': '西北', 'transit': '9-11天', 'advantage': '西北核心城市，特色食品/手工艺品出口台湾货源', 'radius': '咸阳、宝鸡、渭南'},
     'changsha': {'name': '长沙', 'port': '经广州港/上海港', 'zone': '华中', 'transit': '7-9天', 'advantage': '华中消费重镇，食品/文创/家居出口台湾货源丰富', 'radius': '株洲、湘潭、岳阳'},
+    'dongguan': {'name': '东莞', 'port': '经深圳港/虎门港', 'zone': '华南', 'transit': '4-6天', 'advantage': '世界工厂，电子/家具/玩具出口台湾货源密集', 'radius': '深圳、惠州、广州东部'},
+    'foshan': {'name': '佛山', 'port': '经广州南沙港', 'zone': '华南', 'transit': '4-6天', 'advantage': '建材陶瓷之都，瓷砖/卫浴/家具出口台湾重镇', 'radius': '广州、中山、江门'},
+    'fuzhou': {'name': '福州', 'port': '福州港/江阴港', 'zone': '东南', 'transit': '3-5天', 'advantage': '东南沿海港口，食品/建材/工艺品出口台湾便捷', 'radius': '莆田、宁德、三明'},
+    'wenzhou': {'name': '温州', 'port': '经宁波港/温州港', 'zone': '华东', 'transit': '5-7天', 'advantage': '民营经济活跃，鞋服/小商品/五金出口台湾货源', 'radius': '台州、丽水、金华'},
+    'quanzhou': {'name': '泉州', 'port': '泉州港/围头港', 'zone': '东南', 'transit': '2-4天', 'advantage': '闽南制造业重镇，鞋服/陶瓷/食品出口台湾的传统货源地', 'radius': '厦门、漳州、莆田'},
+    'wuxi': {'name': '无锡', 'port': '经上海港/江阴港', 'zone': '华东', 'transit': '6-8天', 'advantage': '长三角制造业强市，机械/电子/纺织出口台湾货源', 'radius': '苏州、常州、江阴'},
+    'changzhou': {'name': '常州', 'port': '经上海港', 'zone': '华东', 'transit': '6-8天', 'advantage': '苏南制造重镇，机械/光伏/家居出口台湾货源', 'radius': '无锡、镇江、宜兴'},
+    'nantong': {'name': '南通', 'port': '南通港/经上海港', 'zone': '华东', 'transit': '6-8天', 'advantage': '沿海制造业城市，纺织/家具/机械出口台湾便捷', 'radius': '苏州、盐城、泰州'},
 }
 
 CATEGORIES = {
