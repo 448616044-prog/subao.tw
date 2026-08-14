@@ -1786,7 +1786,7 @@ function submitContactForm(e){e.preventDefault();var n=document.getElementById('
 <script>
 window.addEventListener("DOMContentLoaded",function(){
   var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
-  if(t&&m)t.addEventListener("click",function(){m.classList.toggle("active");document.body.classList.toggle("menu-open")});</script>
+  ;</script>
 <script>
   document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
   document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
@@ -1826,7 +1826,7 @@ body.menu-open{overflow:hidden}
 <script>
 (function(){
   var t=document.getElementById("menuToggle"),m=document.getElementById("mobileMenu");
-  if(t&&m)t;
+  
   document.querySelectorAll(".m-dropdown>span").forEach(function(s){s.addEventListener("click",function(e){e.stopPropagation();s.parentElement.classList.toggle("open")})});
   document.querySelectorAll(".nav-dropdown").forEach(function(n){n.addEventListener("click",function(e){e.stopPropagation();n.classList.toggle("open")})});
 })();
@@ -1847,5 +1847,13 @@ window.addEventListener("scroll",function(){var h=document.querySelector(".heade
   });
 </script>
 <script src="/js/line-float.js" defer></script>
-</div></div></div></div></body>
+</div></div></div></div><script>
+document.addEventListener('DOMContentLoaded',function(){
+  var mt=document.getElementById('menuToggle'),mm=document.getElementById('mobileMenu'),mc=document.getElementById('mobileClose');
+  if(mt&&mm){mt.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();mm.classList.toggle('active');document.body.classList.toggle('menu-open')})}
+  if(mc&&mm){mc.addEventListener('click',function(){mm.classList.remove('active');document.body.classList.remove('menu-open')})}
+  if(mm){mm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mm.classList.remove('active');document.body.classList.remove('menu-open')})})}
+});
+</script>
+</body>
 </html>

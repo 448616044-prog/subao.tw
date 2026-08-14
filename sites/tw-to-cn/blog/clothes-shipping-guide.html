@@ -95,4 +95,12 @@
 <script src="/script.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2T4LGTKJ1"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-X2T4LGTKJ1')</script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var mt=document.getElementById('menuToggle'),mm=document.getElementById('mobileMenu'),mc=document.getElementById('mobileClose');
+  if(mt&&mm){mt.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();mm.classList.toggle('active');document.body.classList.toggle('menu-open')})}
+  if(mc&&mm){mc.addEventListener('click',function(){mm.classList.remove('active');document.body.classList.remove('menu-open')})}
+  if(mm){mm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mm.classList.remove('active');document.body.classList.remove('menu-open')})})}
+});
+</script>
 </body></html>
