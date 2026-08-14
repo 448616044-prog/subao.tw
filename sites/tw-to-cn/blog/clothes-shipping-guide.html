@@ -103,4 +103,10 @@ document.addEventListener('DOMContentLoaded',function(){
   if(mm){mm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mm.classList.remove('active');document.body.classList.remove('menu-open')})})}
 });
 </script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var mm=document.getElementById('mobileMenu');
+  if(mm){mm.querySelectorAll('.m-dropdown>span').forEach(function(s){s.addEventListener('click',function(e){e.stopPropagation();s.parentElement.classList.toggle('open')})});}
+});
+</script>
 </body></html>
