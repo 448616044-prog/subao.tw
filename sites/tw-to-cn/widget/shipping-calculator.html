@@ -136,11 +136,15 @@ function calculate(){
   // 重量向上取整，最少 1kg（標準集運計費規則）
   var totalKg = Math.max(1, Math.ceil(w));
   var unitPrice = PRICE_TABLE[currentService][r][t];
-  var totalPrice = totalKg * unitPrice;
+  var baseCost = totalKg * unitPrice;
+  // 派送費：不足 10kg 加收 NT$100，滿 10kg 免收（與官方計費規則一致）
+  var surcharge = w < 10 ? 100 : 0;
+  var totalPrice = baseCost + surcharge;
 
   document.getElementById('price').textContent = 'NT$ ' + totalPrice.toLocaleString();
   document.getElementById('detail').innerHTML =
-    SERVICE_INFO[currentService].name + ' | 約 ' + w + 'kg，向上取整 ' + totalKg + 'kg × NT$' + unitPrice.toLocaleString() + '/kg<br>' +
+    SERVICE_INFO[currentService].name + ' | 約 ' + w + 'kg，向上取整 ' + totalKg + 'kg × NT$' + unitPrice.toLocaleString() + '/kg' +
+    (surcharge > 0 ? ' + NT$100 派送費（不足10kg）' : '（滿10kg免派送費）') + '<br>' +
     '目的地：' + REGION_NAMES[r] + ' | 商品：' + TYPE_NAMES[t] + ' | ' + SERVICE_INFO[currentService].eta;
   document.getElementById('result').classList.add('show');
 }
