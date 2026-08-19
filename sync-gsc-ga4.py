@@ -199,6 +199,12 @@ def fetch_ga4_data(credentials_file):
     # 3h. 新老用户
     ga4_query(["newVsReturning"], ["activeUsers", "sessions"], "new_vs_returning", 5)
 
+    # 3i. 按日转化事件（line_click / calculator_result / generate_lead）——LINE 添加纳入每日监控
+    event_daily = ga4_query(
+        ["date", "eventName"], ["eventCount"], "daily_events", 300,
+        order_by=[{"dimension": {"dimensionName": "date"}, "desc": False}]
+    )
+
     print(f"  GA4 ✅: {sum(len(v) for k,v in results['ga4']['data'].items() if isinstance(v, list))} rows total", flush=True)
     return results
 
@@ -288,6 +294,26 @@ def generate_panel(all_data, panel_file):
         for g in geo[:10]:
             lines.append(f"| {g.get('country', '')} | {g.get('activeUsers', '')} | {g.get('sessions', '')} |")
         lines.append("")
+
+    # --- GA4 按日转化事件（LINE/计算器/留言） ---
+    daily_events = all_data.get("ga4", {}).get("data", {}).get("daily_events", [])
+    if daily_events:
+        focus_events = {"line_click", "calculator_result", "generate_lead"}
+        # 按日期聚合 3 个关键事件
+        agg = {}
+        for e in daily_events:
+            if e.get("eventName") in focus_events:
+                d = e["date"]
+                agg.setdefault(d, {}).setdefault(e["eventName"], 0)
+                agg[d][e["eventName"]] = int(e.get("eventCount", 0))
+        if agg:
+            lines.append("## 📱 GA4 按日转化事件（LINE/计算器/留言）")
+            lines.append(f"| 日期 | line_click | calculator_result | generate_lead |")
+            lines.append(f"|:---|:---:|:---:|:---:|")
+            for d in sorted(agg.keys())[-14:]:
+                ev = agg[d]
+                lines.append(f"| {d} | {ev.get('line_click', 0)} | {ev.get('calculator_result', 0)} | {ev.get('generate_lead', 0)} |")
+            lines.append("")
 
     # --- Footer ---
     lines.append(f"\n*自动更新于 {now.strftime('%Y-%m-%d %H:%M')} | 数据周期: {period}*")
