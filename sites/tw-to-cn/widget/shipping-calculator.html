@@ -141,10 +141,11 @@ function calculate(){
   var surcharge = w < 10 ? 100 : 0;
   var totalPrice = baseCost + surcharge;
 
-  document.getElementById('price').textContent = 'NT$ ' + totalPrice.toLocaleString();
+  // 展示层优化（2026-08-20）：主价格显示「单价/kg 起」大字，派送费与总价放明细小字（避免总价390吓退用户）
+  document.getElementById('price').textContent = 'NT$' + unitPrice.toLocaleString() + '/kg 起';
   document.getElementById('detail').innerHTML =
-    SERVICE_INFO[currentService].name + ' | 約 ' + w + 'kg，向上取整 ' + totalKg + 'kg × NT$' + unitPrice.toLocaleString() + '/kg' +
-    (surcharge > 0 ? ' + NT$100 派送費（不足10kg）' : '（滿10kg免派送費）') + '<br>' +
+    SERVICE_INFO[currentService].name + ' | 約 ' + w + 'kg，向上取整 ' + totalKg + 'kg × NT$' + unitPrice.toLocaleString() + '/kg = NT$' + baseCost.toLocaleString() +
+    (surcharge > 0 ? ' + NT$100 派送費（不足10kg）' : '（滿10kg免派送費）') + ' = 合計 NT$' + totalPrice.toLocaleString() + '<br>' +
     '目的地：' + REGION_NAMES[r] + ' | 商品：' + TYPE_NAMES[t] + ' | ' + SERVICE_INFO[currentService].eta;
   document.getElementById('result').classList.add('show');
 }
