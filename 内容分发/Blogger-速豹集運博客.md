@@ -53,7 +53,7 @@
 我們官網有更詳細的禁運品清單和費用表：
 👉 https://subao.tw
 
-有包裹想寄先問 LINE @subaotw5988，告訴我品項+重量，免費估價。
+有包裹想寄先問 LINE @734dooky，告訴我品項+重量，免費估價。
 
 ---
 
@@ -95,5 +95,5 @@
 
 完整禁運品清單 + 最新海關政策 → https://subao.tw/tw-to-cn-prohibited-items（這是官方整理的，隨時更新）
 
-LINE：@subaotw5988
+LINE：@734dooky
 官網：https://subao.tw
