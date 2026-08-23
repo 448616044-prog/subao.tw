@@ -217,3 +217,46 @@
 /blog/mid-autumn-mooncake-shipping /blog/mid-autumn-mooncake-hub-2026 301
 /blog/mooncake-shipping-guide-2026 /blog/mid-autumn-mooncake-hub-2026 301
 /blog/mooncake-shipping-guide-2026.html /blog/mid-autumn-mooncake-hub-2026 301
+
+# =================== 2026-08-23 关键词蚕食收敛（第二轮）===================
+# 「花雕雞麵」模板残留页（H2 仍为乖乖，内容黑洞）→ 正确页
+/blog/huadiao-chicken-noodles-shipping /blog/hua-diao-chicken-noodles-shipping 301
+/blog/huadiao-chicken-noodles-shipping.html /blog/hua-diao-chicken-noodles-shipping 301
+
+# 「佳德鳳梨酥」typo 拼写合并（chiade → chiate 官方拼写，且 chiate 内链更强）
+/blog/chiade-pineapple-cake-shipping /blog/chiate-pineapple-cake-shipping 301
+/blog/chiade-pineapple-cake-shipping.html /blog/chiate-pineapple-cake-shipping 301
+
+# 「寵物用品寄大陸」重复页收敛（to-china 变体 0 内链）
+/blog/pet-supplies-shipping-to-china /blog/pet-supplies-shipping 301
+/blog/pet-supplies-shipping-to-china.html /blog/pet-supplies-shipping 301
+
+# 「兩岸物流數據報告」重复页收敛
+/blog/cross-strait-logistics-data-report-2026 /blog/cross-strait-logistics-data-2026 301
+/blog/cross-strait-logistics-data-report-2026.html /blog/cross-strait-logistics-data-2026 301
+
+# 「禁運清單」重复页收敛（complete-2026 + 简体bug页 list → 主页 99内链）
+/blog/tw-to-cn-prohibited-items-complete-2026 /blog/tw-to-cn-prohibited-items 301
+/blog/tw-to-cn-prohibited-items-complete-2026.html /blog/tw-to-cn-prohibited-items 301
+/blog/tw-to-cn-prohibited-items-list /blog/tw-to-cn-prohibited-items 301
+/blog/tw-to-cn-prohibited-items-list.html /blog/tw-to-cn-prohibited-items 301
+
+# 「城市页」中英 URL 重复收敛（中文URL孤儿1内链 → 英文拼音主页面5-27内链）
+/blog/%E4%B8%8A%E6%B5%B7-shipping-guide /blog/shanghai-shipping-guide 301
+/blog/%E4%B8%8A%E6%B5%B7-shipping-guide.html /blog/shanghai-shipping-guide 301
+/blog/%E5%8D%97%E4%BA%AC-shipping-guide /blog/nanjing-shipping-guide 301
+/blog/%E5%8D%97%E4%BA%AC-shipping-guide.html /blog/nanjing-shipping-guide 301
+/blog/%E5%BB%88%E9%96%80-shipping-guide /blog/xiamen-shipping-guide 301
+/blog/%E5%BB%88%E9%96%80-shipping-guide.html /blog/xiamen-shipping-guide 301
+/blog/%E5%BB%A3%E5%B7%9E-shipping-guide /blog/guangzhou-shipping-guide 301
+/blog/%E5%BB%A3%E5%B7%9E-shipping-guide.html /blog/guangzhou-shipping-guide 301
+/blog/%E6%88%90%E9%83%BD-shipping-guide /blog/chengdu-shipping-guide 301
+/blog/%E6%88%90%E9%83%BD-shipping-guide.html /blog/chengdu-shipping-guide 301
+/blog/%E6%9D%AD%E5%B7%9E-shipping-guide /blog/hangzhou-shipping-guide 301
+/blog/%E6%9D%AD%E5%B7%9E-shipping-guide.html /blog/hangzhou-shipping-guide 301
+/blog/%E6%AD%A6%E6%BC%A2-shipping-guide /blog/wuhan-shipping-guide 301
+/blog/%E6%AD%A6%E6%BC%A2-shipping-guide.html /blog/wuhan-shipping-guide 301
+/blog/%E6%B7%B1%E5%9C%B3-shipping-guide /blog/shenzhen-shipping-guide 301
+/blog/%E6%B7%B1%E5%9C%B3-shipping-guide.html /blog/shenzhen-shipping-guide 301
+/blog/%E9%87%8D%E6%85%B6-shipping-guide /blog/chongqing-shipping-guide 301
+/blog/%E9%87%8D%E6%85%B6-shipping-guide.html /blog/chongqing-shipping-guide 301
