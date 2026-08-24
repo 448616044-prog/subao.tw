@@ -260,3 +260,10 @@
 /blog/%E6%B7%B1%E5%9C%B3-shipping-guide.html /blog/shenzhen-shipping-guide 301
 /blog/%E9%87%8D%E6%85%B6-shipping-guide /blog/chongqing-shipping-guide 301
 /blog/%E9%87%8D%E6%85%B6-shipping-guide.html /blog/chongqing-shipping-guide 301
+
+# =================== 2026-08-24 价格指数页三合一 ===================
+# 「兩岸物流價格指數」重复页收敛（3个价格指数页 → 保留 logistics-price-index）
+/shipping-price-index /logistics-price-index 301
+/shipping-price-index.html /logistics-price-index 301
+/cross-strait-logistics-price-index-2026 /logistics-price-index 301
+/cross-strait-logistics-price-index-2026.html /logistics-price-index 301
