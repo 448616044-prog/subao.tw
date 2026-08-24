@@ -267,3 +267,10 @@
 /shipping-price-index.html /logistics-price-index 301
 /cross-strait-logistics-price-index-2026 /logistics-price-index 301
 /cross-strait-logistics-price-index-2026.html /logistics-price-index 301
+
+# =================== 2026-08-25 零食页三合一 ===================
+# 「台灣零食寄大陸」重复页收敛（3个零食页 → 保留 taiwan-snack-shipping 唯一 pillar）
+/blog/taiwan-snack-recommend /blog/taiwan-snack-shipping 301
+/blog/taiwan-snack-recommend.html /blog/taiwan-snack-shipping 301
+/blog/taiwan-food-snacks-to-china /blog/taiwan-snack-shipping 301
+/blog/taiwan-food-snacks-to-china.html /blog/taiwan-snack-shipping 301
