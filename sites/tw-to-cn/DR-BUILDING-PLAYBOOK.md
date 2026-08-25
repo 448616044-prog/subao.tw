@@ -103,8 +103,9 @@ LINE：@734dooky
 ```
 
 ### 发布站点
-1. **Medium** — DR 90+ | https://medium.com → 发布全文（可加 2-3 个链接）
-2. **Pixnet** — DR 65+ | https://pixnet.net → 发布到博客
+1. ~~**Medium** — DR 90+ | https://medium.com → 发布全文（可加 2-3 个链接）~~
+   - ⚠️ **2026-08-22 实测无效**：自营号 @trantutrinhaceo6145 发 2 篇（食品/泡麵寄大陸），`site:medium.com` 零收录；Medium 对机房 IP 全面 Cloudflare 封锁；用户文外链为 nofollow、挂在 @username 路径不传导 DR。**Medium 降级为品牌提及/内容分发，不再作为 DR 主力。**
+2. **Pixnet** — DR 65+ | https://pixnet.net → 发布到博客（✅ 台湾场景实测可收录、可抓取，优先于 Medium）
 3. **Matters** — DR 55+ | https://matters.town → 发布全文
 4. **Dcard** — DR 70+ | https://dcard.tw → 发到物流/购物版
 5. **PTT** — DR 60+ | 发到快递/两岸版 → 注意格式
