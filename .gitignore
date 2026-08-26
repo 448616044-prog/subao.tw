@@ -16,3 +16,22 @@ npm-debug.log*
 # Python cache
 __pycache__/
 *.pyc
+
+# 本地工作区/自动化状态（勿入仓）
+.workbuddy/
+screenshots/
+gsc-ga4-raw.json
+
+# 独立业务仓（勿混入主仓）
+sites/subaog-com/
+subaog-com-*
+
+# 本地报告/数据/遗留文件
+subao-tw-daily-report-*.md
+weekly-audit-*.md
+outreach-opportunities-*.md
+dr-progress-*.md
+dr-*.md
+
+# 备份
+sites/tw-to-cn.bak-*/
