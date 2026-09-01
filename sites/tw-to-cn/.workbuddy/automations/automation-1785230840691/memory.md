@@ -5,3 +5,4 @@
 | 2026-08-02 | Google Trust Services (WE1) | 2026-09-25 | 53 天 | ✅ 正常 |
 | 2026-08-09 | Google Trust Services (WE1) | 2026-09-25 | 46 天 | ✅ 正常 |
 | 2026-08-16 | Google Trust Services (WE1) | 2026-09-25 | 39 天 | 🟡 温和提醒 |
+| 2026-08-31 | Google Trust Services (WE1) | 2026-11-23 | 84 天 | ✅ 正常（证书已自动续期） |
