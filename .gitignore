@@ -25,6 +25,10 @@ gsc-ga4-raw.json
 # 独立业务仓（勿混入主仓）
 sites/subaog-com/
 subaog-com-*
+# subaotw.cn 大陆站已于 2026-09-02 拆分为独立仓库：
+#   git@github.com:448616044-prog/subaotw-cn.git
+# 本地路径保留但不再由本仓跟踪（部署走新仓 GitHub Actions）
+sites/subaotw-cn/
 
 # 本地报告/数据/遗留文件
 subao-tw-daily-report-*.md
