@@ -17,8 +17,8 @@
   var style = document.createElement('style');
   style.textContent = [
     '#lineFloatBtn {',
-    '  position: fixed; bottom: 24px; right: 20px; z-index: 9999;',
-    '  width: 56px; height: 56px; border-radius: 50%;',
+    '  position: fixed; bottom: 24px; left: 16px; right: auto; z-index: 9999;',
+    '  width: 48px; height: 48px; border-radius: 50%;',
     '  background: #06C755; box-shadow: 0 4px 16px rgba(6,199,85,0.4);',
     '  display: flex; align-items: center; justify-content: center;',
     '  cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;',
@@ -32,7 +32,7 @@
     '  50% { box-shadow: 0 4px 24px rgba(6,199,85,0.7); }',
     '}',
     '@media (min-width: 769px) {',
-    '  #lineFloatBtn { bottom: 32px; right: 32px; width: 60px; height: 60px; }',
+    '  #lineFloatBtn { left: auto; right: 32px; bottom: 32px; width: 60px; height: 60px; }',
     '}'
   ].join('\n');
 
